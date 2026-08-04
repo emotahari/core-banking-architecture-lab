@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">اینفوگرافیک اسپرینت اول: نقشه بانک، زبان و مرزها</title>
+  <desc id="desc">برنامه دو هفته‌ای شامل Capability تا Contract و Strategic DDD و مالکیت</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#071a2b"/>
+      <stop offset="1" stop-color="#123b4d"/>
+    </linearGradient>
+    <linearGradient id="w1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0f766e"/>
+      <stop offset="1" stop-color="#14b8a6"/>
+    </linearGradient>
+    <linearGradient id="w2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7c3aed"/>
+      <stop offset="1" stop-color="#a855f7"/>
+    </linearGradient>
+    <style>
+      .fa { font-family: Vazirmatn, Tahoma, Arial, sans-serif; }
+      .en { font-family: Inter, Arial, sans-serif; }
+      .muted { fill: #b9d3dc; }
+      .white { fill: #ffffff; }
+      .dark { fill: #0b2233; }
+    </style>
+  </defs>
+
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+  <circle cx="1450" cy="90" r="220" fill="#14b8a6" opacity=".08"/>
+  <circle cx="120" cy="920" r="260" fill="#a855f7" opacity=".08"/>
+
+  <text x="1500" y="76" class="fa white" font-size="30" font-weight="600" text-anchor="end">CORE BANKING ARCHITECTURE LAB</text>
+  <text x="1500" y="138" class="fa white" font-size="54" font-weight="800" text-anchor="end">اسپرینت ۰۱ — نقشهٔ بانک، زبان و مرزها</text>
+  <text x="1500" y="184" class="fa muted" font-size="25" text-anchor="end">دو هفته · دوازده ساعت · از توانمندی تا مرز، مالکیت و قرارداد</text>
+
+  <g>
+    <rect x="830" y="245" width="680" height="530" rx="28" fill="#000000" opacity=".18"/>
+    <rect x="110" y="245" width="680" height="530" rx="28" fill="#000000" opacity=".18"/>
+    <rect x="820" y="235" width="680" height="530" rx="28" fill="#f8fafc"/>
+    <rect x="100" y="235" width="680" height="530" rx="28" fill="#f8fafc"/>
+  </g>
+
+  <rect x="820" y="235" width="680" height="94" rx="28" fill="url(#w1)"/>
+  <rect x="820" y="301" width="680" height="28" fill="url(#w1)"/>
+  <text x="1458" y="282" class="fa white" font-size="34" font-weight="800" text-anchor="end">هفتهٔ اول — از توانمندی تا قرارداد</text>
+  <text x="1458" y="316" class="fa white" font-size="18" text-anchor="end">پرسش: چرا هر جزء نرم‌افزاری وجود دارد؟</text>
+
+  <g class="fa dark" font-size="22">
+    <circle cx="1450" cy="376" r="19" fill="#14b8a6"/><text x="1415" y="384" text-anchor="end">روز اول — زبان معماری و ثبت خط پایه</text>
+    <circle cx="1450" cy="432" r="19" fill="#14b8a6"/><text x="1415" y="440" text-anchor="end">روز دوم — تمایز Capability، Process، Service و System</text>
+    <circle cx="1450" cy="488" r="19" fill="#14b8a6"/><text x="1415" y="496" text-anchor="end">روز سوم — از Domain تا API و Event</text>
+    <circle cx="1450" cy="544" r="19" fill="#14b8a6"/><text x="1415" y="552" text-anchor="end">روز چهارم — مرز، انسجام، وابستگی و پنهان‌سازی</text>
+    <circle cx="1450" cy="600" r="19" fill="#14b8a6"/><text x="1415" y="608" text-anchor="end">روز پنجم — نقشهٔ توانمندی بانک و BIAN 14</text>
+    <circle cx="1450" cy="656" r="19" fill="#14b8a6"/><text x="1415" y="664" text-anchor="end">روز ششم — Money، شناسهٔ نوع‌دار، تست واحد و CI</text>
+    <circle cx="1450" cy="712" r="19" fill="#14b8a6"/><text x="1415" y="720" text-anchor="end">روز هفتم — واژه‌نامه، گزارش و دفاع کوتاه</text>
+  </g>
+
+  <rect x="100" y="235" width="680" height="94" rx="28" fill="url(#w2)"/>
+  <rect x="100" y="301" width="680" height="28" fill="url(#w2)"/>
+  <text x="738" y="282" class="fa white" font-size="30" font-weight="800" text-anchor="end">هفتهٔ دوم — طراحی دامنه‌محور راهبردی و مالکیت</text>
+  <text x="738" y="316" class="fa white" font-size="18" text-anchor="end">پرسش: مدل، داده و تصمیم دقیقاً در کدام مرز معنا دارند؟</text>
+
+  <g class="fa dark" font-size="22">
+    <circle cx="730" cy="376" r="19" fill="#a855f7"/><text x="695" y="384" text-anchor="end">روز اول — زیردامین Core، Supporting و Generic</text>
+    <circle cx="730" cy="432" r="19" fill="#a855f7"/><text x="695" y="440" text-anchor="end">روز دوم — Bounded Context و زبان مشترک</text>
+    <circle cx="730" cy="488" r="19" fill="#a855f7"/><text x="695" y="496" text-anchor="end">روز سوم — الگوهای Context Map</text>
+    <circle cx="730" cy="544" r="19" fill="#a855f7"/><text x="695" y="552" text-anchor="end">روز چهارم — مرجع حقیقت و مالکیت داده/تصمیم</text>
+    <circle cx="730" cy="600" r="19" fill="#a855f7"/><text x="695" y="608" text-anchor="end">روز پنجم — شش ماژول منطقی Spring Modulith</text>
+    <circle cx="730" cy="656" r="19" fill="#a855f7"/><text x="695" y="664" text-anchor="end">روز ششم — راستی‌آزمایی و Fitness Test ماژول</text>
+    <circle cx="730" cy="712" r="19" fill="#a855f7"/><text x="695" y="720" text-anchor="end">روز هفتم — Gate مسدودی قضایی سپرده</text>
+  </g>
+
+  <rect x="100" y="810" width="1400" height="128" rx="25" fill="#ffffff" opacity=".96"/>
+  <text x="1460" y="850" class="fa dark" font-size="25" font-weight="800" text-anchor="end">خروجی قابل دفاع</text>
+  <text x="1460" y="889" class="fa dark" font-size="21" text-anchor="end">نقشهٔ توانمندی · نقشهٔ دامین و Context · ماتریس مالکیت · شش پروندهٔ دامینی · شش ماژول · آزمون معماری</text>
+  <text x="1460" y="922" class="fa" fill="#7c3aed" font-size="20" font-weight="700" text-anchor="end">Gate: هیچ نامزد سرویس بدون توانمندی، مالک و دلیل مرزبندی پذیرفته نمی‌شود.</text>
+
+  <text x="100" y="978" class="en muted" font-size="17">VERSION 1.0 · 2026-08-03 · STATUS: S01/W01/D01 DOING</text>
+</svg>
