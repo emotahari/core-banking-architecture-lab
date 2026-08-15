@@ -1,22 +1,30 @@
-# Day 09 Exercise — UPI Capability/Contract Review
+<!-- bidi: rtl; code: ltr -->
+<div dir="rtl" align="right">
 
-- Timebox: 8 minutes after reading the case
-- Input: [UPI Case File](../case-studies/week-01-upi-fa.md)
-- Output: Fact/Inference table + Traceability chain + ADR-lite
+# <bdi dir="ltr">Day 09 Exercise</bdi> — <bdi dir="ltr">UPI Capability/Contract Review</bdi>
 
-## 1. Evidence discipline
+- <bdi dir="ltr">Timebox: 8 minutes after reading the case</bdi>
+- <bdi dir="ltr">Input:</bdi> [<bdi dir="ltr">UPI Case File</bdi>](../case-studies/week-01-upi-fa.md)
+- <bdi dir="ltr">Output: Fact/Inference table</bdi> + <bdi dir="ltr">Traceability chain</bdi> + <bdi dir="ltr">ADR-lite</bdi>
+
+## <bdi dir="ltr">1. Evidence discipline</bdi>
 
 از پرونده استخراج کن:
 
-| Statement | Label: FACT/INFERENCE/UNKNOWN | Source or reason |
+| <bdi dir="ltr">Statement</bdi> | <bdi dir="ltr">Label: FACT/INFERENCE/UNKNOWN</bdi> | <bdi dir="ltr">Source or reason</bdi> |
 |---|---|---|
-| پنج Fact |  |  |
-| سه Inference |  |  |
-| سه Unknown |  |  |
+| پنج <bdi dir="ltr">Fact</bdi> |  |  |
+| سه <bdi dir="ltr">Inference</bdi> |  |  |
+| سه <bdi dir="ltr">Unknown</bdi> |  |  |
 
-## 2. Traceability
+## <bdi dir="ltr">2. Traceability</bdi>
 
 زنجیرهٔ زیر را کامل کن:
+
+
+</div>
+
+<div dir="ltr" align="left">
 
 ```text
 Instant interoperable payment capability
@@ -26,21 +34,31 @@ Instant interoperable payment capability
 → command/result/events
 ```
 
-برای این پنج مورد Authority بنویس:
+</div>
 
-- Payer account balance
-- Participant routing
-- App experience
-- Transaction status
-- Complaint resolution
+<div dir="rtl" align="right">
 
-## 3. Failure loop
 
-حلقهٔ `timeout → status check → load → more timeout` را در چهار گام و با یک Control پیشنهادی برای هر گام بنویس. Controlها Hypothesis هستند؛ آن‌ها را Fact جاری UPI معرفی نکن.
+برای این پنج مورد <bdi dir="ltr">Authority</bdi> بنویس:
 
-## 4. ADR-lite
+- <bdi dir="ltr">Payer account balance</bdi>
+- <bdi dir="ltr">Participant routing</bdi>
+- <bdi dir="ltr">App experience</bdi>
+- <bdi dir="ltr">Transaction status</bdi>
+- <bdi dir="ltr">Complaint resolution</bdi>
 
-**Question:** آیا Core Banking Lab باید یک UPI-like central hub بسازد؟
+## <bdi dir="ltr">3. Failure loop</bdi>
+
+حلقهٔ <bdi dir="ltr">`timeout → status check → load → more timeout`</bdi> را در چهار گام و با یک <bdi dir="ltr">Control</bdi> پیشنهادی برای هر گام بنویس. <bdi dir="ltr">Control</bdi>ها <bdi dir="ltr">Hypothesis</bdi> هستند؛ آن‌ها را <bdi dir="ltr">Fact</bdi> جاری <bdi dir="ltr">UPI</bdi> معرفی نکن.
+
+## <bdi dir="ltr">4. ADR-lite</bdi>
+
+**<bdi dir="ltr">Question:</bdi>** آیا <bdi dir="ltr">Core Banking Lab</bdi> باید یک <bdi dir="ltr">UPI-like central hub</bdi> بسازد؟
+
+
+</div>
+
+<div dir="ltr" align="left">
 
 ```text
 Context:
@@ -52,11 +70,18 @@ Consequences:
 Revisit trigger:
 ```
 
-## Acceptance criteria
+</div>
 
-- App، Network و Bank core یکی فرض نشوند.
-- NPCI مالک ماندهٔ حساب معرفی نشود.
-- دست‌کم یک Detail فنی `UNKNOWN` باقی بماند.
-- Outage به درس Rate limit/Retry و Ownership متصل شود.
-- تصمیم ADR از Scale و Context پروژهٔ خودمان دفاع شود، نه از محبوبیت UPI.
+<div dir="rtl" align="right">
 
+
+## <bdi dir="ltr">Acceptance criteria</bdi>
+
+- <bdi dir="ltr">App</bdi>، <bdi dir="ltr">Network</bdi> و <bdi dir="ltr">Bank core</bdi> یکی فرض نشوند.
+- <bdi dir="ltr">NPCI</bdi> مالک ماندهٔ حساب معرفی نشود.
+- دست‌کم یک <bdi dir="ltr">Detail</bdi> فنی <bdi dir="ltr">`UNKNOWN`</bdi> باقی بماند.
+- <bdi dir="ltr">Outage</bdi> به درس <bdi dir="ltr">Rate limit/Retry</bdi> و <bdi dir="ltr">Ownership</bdi> متصل شود.
+- تصمیم <bdi dir="ltr">ADR</bdi> از <bdi dir="ltr">Scale</bdi> و <bdi dir="ltr">Context</bdi> پروژهٔ خودمان دفاع شود، نه از محبوبیت <bdi dir="ltr">UPI.</bdi>
+
+
+</div>

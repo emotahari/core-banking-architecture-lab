@@ -1,40 +1,45 @@
-# Domain Dossier — Product & Agreement
+<!-- bidi: rtl; code: ltr -->
+<div dir="rtl" align="right">
 
-- Version: 0.1
-- Status: Not started
-- Claim type: Hypothesis until reviewed
-- Full structure: [Domain Dossier Template](../domain-dossier-template.md)
+# <bdi dir="ltr">Domain Dossier</bdi> — <bdi dir="ltr">Product</bdi> & <bdi dir="ltr">Agreement</bdi>
 
-## Purpose and outcome
+- <bdi dir="ltr">Version: 0.1</bdi>
+- <bdi dir="ltr">Status: Not started</bdi>
+- <bdi dir="ltr">Claim type: Hypothesis until reviewed</bdi>
+- <bdi dir="ltr">Full structure:</bdi> [<bdi dir="ltr">Domain Dossier Template</bdi>](../domain-dossier-template.md)
+
+## <bdi dir="ltr">Purpose and outcome</bdi>
 
 
-## In scope / out of scope
+## <bdi dir="ltr">In scope</bdi> / <bdi dir="ltr">out of scope</bdi>
 
-| In scope | Out of scope | Boundary reason |
+| <bdi dir="ltr">In scope</bdi> | <bdi dir="ltr">Out of scope</bdi> | <bdi dir="ltr">Boundary reason</bdi> |
 |---|---|---|
 |  |  |  |
 
-## Ubiquitous Language
+## <bdi dir="ltr">Ubiquitous Language</bdi>
 
-| Term | Meaning here | Not the same as |
+| <bdi dir="ltr">Term</bdi> | <bdi dir="ltr">Meaning here</bdi> | <bdi dir="ltr">Not the same as</bdi> |
 |---|---|---|
-| Product |  |  |
-| Product version |  |  |
-| Offering |  |  |
-| Agreement |  |  |
-| Effective terms |  |  |
+| <bdi dir="ltr">Product</bdi> |  |  |
+| <bdi dir="ltr">Product version</bdi> |  |  |
+| <bdi dir="ltr">Offering</bdi> |  |  |
+| <bdi dir="ltr">Agreement</bdi> |  |  |
+| <bdi dir="ltr">Effective terms</bdi> |  |  |
 
-## Ownership and non-ownership
+## <bdi dir="ltr">Ownership and non-ownership</bdi>
 
-| Fact/Decision | Owns / must not own | Authority if external | Copy type |
+| <bdi dir="ltr">Fact/Decision</bdi> | <bdi dir="ltr">Owns</bdi> / <bdi dir="ltr">must not own</bdi> | <bdi dir="ltr">Authority if external</bdi> | <bdi dir="ltr">Copy type</bdi> |
 |---|---|---|---|
 |  |  |  |  |
 
-## Context relationships and module hypothesis
+## <bdi dir="ltr">Context relationships and module hypothesis</bdi>
 
 
-## Open questions
+## <bdi dir="ltr">Open questions</bdi>
 
-1. آیا Product و Agreement واقعاً یک Bounded Context هستند یا فقط برای Lab در یک Module قرار گرفته‌اند؟
+1. آیا <bdi dir="ltr">Product</bdi> و <bdi dir="ltr">Agreement</bdi> واقعاً یک <bdi dir="ltr">Bounded Context</bdi> هستند یا فقط برای <bdi dir="ltr">Lab</bdi> در یک <bdi dir="ltr">Module</bdi> قرار گرفته‌اند؟
 2. 
 3. 
+
+</div>

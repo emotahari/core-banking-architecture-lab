@@ -1,26 +1,34 @@
-# Day 05 — تبدیل فرضیهٔ مرزها به Spring Modulith
+<!-- bidi: rtl; code: ltr -->
+<div dir="rtl" align="right">
 
-- Day budget: 100 minutes — 20 lesson/reference + 75 implementation + 5 exit ticket
-- Output: six logical Application Modules + dependency policy
-- Code root: `backend/banking-modulith`
-- Versions: Java 21، Spring Boot 4.1.0، Spring Modulith 2.1.0
+# <bdi dir="ltr">Day 05</bdi> — تبدیل فرضیهٔ مرزها به <bdi dir="ltr">Spring Modulith</bdi>
+
+- <bdi dir="ltr">Day budget: 100 minutes</bdi> — <bdi dir="ltr">20 lesson/reference</bdi> + <bdi dir="ltr">75 implementation</bdi> + <bdi dir="ltr">5 exit ticket</bdi>
+- <bdi dir="ltr">Output: six logical Application Modules</bdi> + <bdi dir="ltr">dependency policy</bdi>
+- <bdi dir="ltr">Code root:</bdi> <bdi dir="ltr">`backend/banking-modulith`</bdi>
+- <bdi dir="ltr">Versions: Java 21</bdi>، <bdi dir="ltr">Spring Boot 4.1.0</bdi>، <bdi dir="ltr">Spring Modulith 2.1.0</bdi>
 
 ## 1. هدف قابل سنجش
 
 در پایان باید بتوانی:
 
-1. توضیح بدهی چرا Application Module یک Boundary منطقی است، نه Microservice.
-2. شش Module را بر اساس Packageهای Function-first بسازی.
-3. Provided Interface، Internal Implementation و Required Interface را تشخیص بدهی.
-4. `@ApplicationModule`، `allowedDependencies` و `@NamedInterface` را درست به‌کار ببری.
-5. Dependency Policy را از Context Map استخراج کنی؛ نه از ترتیب Controllerها.
-6. از ساخت `common` یا Shared Entity بدون دلیل جلوگیری کنی.
+1. توضیح بدهی چرا <bdi dir="ltr">Application Module</bdi> یک <bdi dir="ltr">Boundary</bdi> منطقی است، نه <bdi dir="ltr">Microservice.</bdi>
+2. شش <bdi dir="ltr">Module</bdi> را بر اساس <bdi dir="ltr">Package</bdi>های <bdi dir="ltr">Function-first</bdi> بسازی.
+3. <bdi dir="ltr">Provided Interface</bdi>، <bdi dir="ltr">Internal Implementation</bdi> و <bdi dir="ltr">Required Interface</bdi> را تشخیص بدهی.
+4. <bdi dir="ltr">`@ApplicationModule`</bdi>، <bdi dir="ltr">`allowedDependencies`</bdi> و <bdi dir="ltr">`@NamedInterface`</bdi> را درست به‌کار ببری.
+5. <bdi dir="ltr">Dependency Policy</bdi> را از <bdi dir="ltr">Context Map</bdi> استخراج کنی؛ نه از ترتیب <bdi dir="ltr">Controller</bdi>ها.
+6. از ساخت <bdi dir="ltr">`common`</bdi> یا <bdi dir="ltr">Shared Entity</bdi> بدون دلیل جلوگیری کنی.
 
 ## 2. چرا بعد از چهار روز تحلیل وارد کد می‌شویم؟
 
-Package Structure یک تصمیم بی‌اثر نیست. Dependencyهای Compile-time و دسترسی به Typeها به‌تدریج مدل ذهنی تیم را تثبیت می‌کنند. اگر از روز اول Packageها را بر اساس جدول یا Layer بسازیم، حتی یک Domain Map خوب نیز در کد بی‌اثر می‌شود.
+<bdi dir="ltr">Package Structure</bdi> یک تصمیم بی‌اثر نیست. <bdi dir="ltr">Dependency</bdi>های <bdi dir="ltr">Compile-time</bdi> و دسترسی به <bdi dir="ltr">Type</bdi>ها به‌تدریج مدل ذهنی تیم را تثبیت می‌کنند. اگر از روز اول <bdi dir="ltr">Package</bdi>ها را بر اساس جدول یا <bdi dir="ltr">Layer</bdi> بسازیم، حتی یک <bdi dir="ltr">Domain Map</bdi> خوب نیز در کد بی‌اثر می‌شود.
 
 ترتیب این هفته عمداً چنین بود:
+
+
+</div>
+
+<div dir="ltr" align="left">
 
 ~~~text
 Subdomain strategy
@@ -30,54 +38,74 @@ Subdomain strategy
   → module hypothesis in code
 ~~~
 
-امروز کد «اثبات» نمی‌کند Boundary دامینی درست است. کد فقط فرضیهٔ فعلی را:
+</div>
+
+<div dir="rtl" align="right">
+
+
+امروز کد «اثبات» نمی‌کند <bdi dir="ltr">Boundary</bdi> دامینی درست است. کد فقط فرضیهٔ فعلی را:
 
 - آشکار می‌کند؛
-- Dependencyهای آن را قابل‌مشاهده می‌کند؛
+- <bdi dir="ltr">Dependency</bdi>های آن را قابل‌مشاهده می‌کند؛
 - نقض آن را قابل‌آزمون می‌کند؛
-- امکان Refactor آینده را بالا می‌برد.
+- امکان <bdi dir="ltr">Refactor</bdi> آینده را بالا می‌برد.
 
-## 3. Application Module در Spring Modulith
+## <bdi dir="ltr">3. Application Module</bdi> در <bdi dir="ltr">Spring Modulith</bdi>
 
-طبق [مستند رسمی Fundamentals](https://docs.spring.io/spring-modulith/reference/fundamentals.html)، یک Application Module واحدی از Functionality است که سه بخش دارد:
+طبق [مستند رسمی <bdi dir="ltr">Fundamentals</bdi>](https://docs.spring.io/spring-modulith/reference/fundamentals.html)، یک <bdi dir="ltr">Application Module</bdi> واحدی از <bdi dir="ltr">Functionality</bdi> است که سه بخش دارد:
 
-### Provided Interface
+### <bdi dir="ltr">Provided Interface</bdi>
 
-آنچه Module به دیگر Moduleها عرضه می‌کند:
+آنچه <bdi dir="ltr">Module</bdi> به دیگر <bdi dir="ltr">Module</bdi>ها عرضه می‌کند:
 
-- Spring Beanهای Public API
-- Command/Query facadeهای منطقی
-- Application/Domain Eventهای Published
-- Typeهای Contract که عمداً Expose شده‌اند
+- <bdi dir="ltr">Spring Bean</bdi>های <bdi dir="ltr">Public API</bdi>
+- <bdi dir="ltr">Command/Query facade</bdi>های منطقی
+- <bdi dir="ltr">Application/Domain Event</bdi>های <bdi dir="ltr">Published</bdi>
+- <bdi dir="ltr">Type</bdi>های <bdi dir="ltr">Contract</bdi> که عمداً <bdi dir="ltr">Expose</bdi> شده‌اند
 
-Provided Interface با REST Controller یکی نیست. REST می‌تواند Adapter بیرونی باشد؛ Module API یک Boundary داخل Application است.
+<bdi dir="ltr">Provided Interface</bdi> با <bdi dir="ltr">REST Controller</bdi> یکی نیست. <bdi dir="ltr">REST</bdi> می‌تواند <bdi dir="ltr">Adapter</bdi> بیرونی باشد؛ <bdi dir="ltr">Module API</bdi> یک <bdi dir="ltr">Boundary</bdi> داخل <bdi dir="ltr">Application</bdi> است.
 
-### Internal Implementation
+### <bdi dir="ltr">Internal Implementation</bdi>
 
-جزئیاتی که دیگر Moduleها نباید بدانند:
+جزئیاتی که دیگر <bdi dir="ltr">Module</bdi>ها نباید بدانند:
 
-- Domain model internals
-- Repository implementations
-- Policy/Strategy implementations
-- JPA mappings
-- workflow details
+- <bdi dir="ltr">Domain model internals</bdi>
+- <bdi dir="ltr">Repository implementations</bdi>
+- <bdi dir="ltr">Policy/Strategy implementations</bdi>
+- <bdi dir="ltr">JPA mappings</bdi>
+- <bdi dir="ltr">workflow details</bdi>
 
-ممکن است Type داخلی برای استفاده در Subpackageهای همان Module `public` باشد، اما Spring Modulith دسترسی Module دیگر به Subpackage داخلی را رد می‌کند.
+ممکن است <bdi dir="ltr">Type</bdi> داخلی برای استفاده در <bdi dir="ltr">Subpackage</bdi>های همان <bdi dir="ltr">Module</bdi> <bdi dir="ltr">`public`</bdi> باشد، اما <bdi dir="ltr">Spring Modulith</bdi> دسترسی <bdi dir="ltr">Module</bdi> دیگر به <bdi dir="ltr">Subpackage</bdi> داخلی را رد می‌کند.
 
-### Required Interface
+### <bdi dir="ltr">Required Interface</bdi>
 
-API یا Eventهایی از Moduleهای دیگر که این Module برای کارکردن نیاز دارد. Required Interface باید در Dependency Policy صریح باشد.
+<bdi dir="ltr">API</bdi> یا <bdi dir="ltr">Event</bdi>هایی از <bdi dir="ltr">Module</bdi>های دیگر که این <bdi dir="ltr">Module</bdi> برای کارکردن نیاز دارد. <bdi dir="ltr">Required Interface</bdi> باید در <bdi dir="ltr">Dependency Policy</bdi> صریح باشد.
 
-## 4. کشف Module با Package
+## 4. کشف <bdi dir="ltr">Module</bdi> با <bdi dir="ltr">Package</bdi>
 
-Application اصلی در Package زیر است:
+<bdi dir="ltr">Application</bdi> اصلی در <bdi dir="ltr">Package</bdi> زیر است:
+
+
+</div>
+
+<div dir="ltr" align="left">
 
 ~~~text
 com.example.corebankinglab
 └── CoreBankingLabApplication
 ~~~
 
-در Detection پیش‌فرض Spring Modulith، هر Direct Subpackage زیر Package اصلی یک Application Module Candidate است:
+</div>
+
+<div dir="rtl" align="right">
+
+
+در <bdi dir="ltr">Detection</bdi> پیش‌فرض <bdi dir="ltr">Spring Modulith</bdi>، هر <bdi dir="ltr">Direct Subpackage</bdi> زیر <bdi dir="ltr">Package</bdi> اصلی یک <bdi dir="ltr">Application Module Candidate</bdi> است:
+
+
+</div>
+
+<div dir="ltr" align="left">
 
 ~~~text
 com.example.corebankinglab.partycustomer
@@ -88,16 +116,26 @@ com.example.corebankinglab.payments
 com.example.corebankinglab.accounting
 ~~~
 
-برای Lab، این شش Module یک فرضیهٔ آموزشی‌اند. Domain Map ممکن است نشان دهد Product Catalog و Agreement دو Bounded Context هستند، اما برای Sprint 01 می‌توانند در یک Module موقت قرار بگیرند؛ این تفاوت باید در Dossier به‌عنوان Constraint/Decision ثبت شود.
+</div>
 
-## 5. API Package و Internal Package
+<div dir="rtl" align="right">
 
-در Module بستهٔ پیش‌فرض:
 
-- Typeهای Public در Base Package، API قابل‌دسترسی Module هستند.
-- Subpackageها Internal محسوب می‌شوند، مگر اینکه صریحاً Named Interface شوند.
+برای <bdi dir="ltr">Lab</bdi>، این شش <bdi dir="ltr">Module</bdi> یک فرضیهٔ آموزشی‌اند. <bdi dir="ltr">Domain Map</bdi> ممکن است نشان دهد <bdi dir="ltr">Product Catalog</bdi> و <bdi dir="ltr">Agreement</bdi> دو <bdi dir="ltr">Bounded Context</bdi> هستند، اما برای <bdi dir="ltr">Sprint 01</bdi> می‌توانند در یک <bdi dir="ltr">Module</bdi> موقت قرار بگیرند؛ این تفاوت باید در <bdi dir="ltr">Dossier</bdi> به‌عنوان <bdi dir="ltr">Constraint/Decision</bdi> ثبت شود.
+
+## <bdi dir="ltr">5. API Package</bdi> و <bdi dir="ltr">Internal Package</bdi>
+
+در <bdi dir="ltr">Module</bdi> بستهٔ پیش‌فرض:
+
+- <bdi dir="ltr">Type</bdi>های <bdi dir="ltr">Public</bdi> در <bdi dir="ltr">Base Package</bdi>، <bdi dir="ltr">API</bdi> قابل‌دسترسی <bdi dir="ltr">Module</bdi> هستند.
+- <bdi dir="ltr">Subpackage</bdi>ها <bdi dir="ltr">Internal</bdi> محسوب می‌شوند، مگر اینکه صریحاً <bdi dir="ltr">Named Interface</bdi> شوند.
 
 نمونه:
+
+
+</div>
+
+<div dir="ltr" align="left">
 
 ~~~text
 deposits/
@@ -113,11 +151,21 @@ deposits/
     └── persistence/
 ~~~
 
-در این هفته نیاز نیست منطق Deposits را پیاده کنی. هدف ساخت Boundary و Verification است. کلاس و Interface مصنوعی صرفاً برای پرکردن Folder نساز؛ هر Type باید Purpose داشته باشد.
+</div>
 
-## 6. `package-info.java` برای Module
+<div dir="rtl" align="right">
 
-نمونهٔ هدایت‌شده برای Deposits در اولین مرحله و بدون Dependency مستقیم:
+
+در این هفته نیاز نیست منطق <bdi dir="ltr">Deposits</bdi> را پیاده کنی. هدف ساخت <bdi dir="ltr">Boundary</bdi> و <bdi dir="ltr">Verification</bdi> است. کلاس و <bdi dir="ltr">Interface</bdi> مصنوعی صرفاً برای پرکردن <bdi dir="ltr">Folder</bdi> نساز؛ هر <bdi dir="ltr">Type</bdi> باید <bdi dir="ltr">Purpose</bdi> داشته باشد.
+
+## 6. <bdi dir="ltr">`package-info.java`</bdi> برای <bdi dir="ltr">Module</bdi>
+
+نمونهٔ هدایت‌شده برای <bdi dir="ltr">Deposits</bdi> در اولین مرحله و بدون <bdi dir="ltr">Dependency</bdi> مستقیم:
+
+
+</div>
+
+<div dir="ltr" align="left">
 
 ```java
 @org.springframework.modulith.ApplicationModule(
@@ -127,25 +175,45 @@ deposits/
 package com.example.corebankinglab.deposits;
 ```
 
+</div>
+
+<div dir="rtl" align="right">
+
+
 نکات:
 
-- آرایهٔ خالی یعنی Dependency به Module دیگر مجاز نیست.
-- حذف `allowedDependencies` یعنی Spring Modulith Dependencyهای Module را از این Attribute محدود نمی‌کند؛ Internal-access و Cycle checks همچنان قواعد خود را دارند.
-- Module به‌صورت پیش‌فرض `CLOSED` است.
-- `OPEN` برای Migration تدریجی Legacy وجود دارد؛ استفاده از آن در Lab جدید، Encapsulation را تضعیف می‌کند و ممنوع است مگر ADR مستقل.
+- آرایهٔ خالی یعنی <bdi dir="ltr">Dependency</bdi> به <bdi dir="ltr">Module</bdi> دیگر مجاز نیست.
+- حذف <bdi dir="ltr">`allowedDependencies`</bdi> یعنی <bdi dir="ltr">Spring Modulith Dependency</bdi>های <bdi dir="ltr">Module</bdi> را از این <bdi dir="ltr">Attribute</bdi> محدود نمی‌کند؛ <bdi dir="ltr">Internal-access</bdi> و <bdi dir="ltr">Cycle checks</bdi> همچنان قواعد خود را دارند.
+- <bdi dir="ltr">Module</bdi> به‌صورت پیش‌فرض <bdi dir="ltr">`CLOSED`</bdi> است.
+- <bdi dir="ltr">`OPEN`</bdi> برای <bdi dir="ltr">Migration</bdi> تدریجی <bdi dir="ltr">Legacy</bdi> وجود دارد؛ استفاده از آن در <bdi dir="ltr">Lab</bdi> جدید، <bdi dir="ltr">Encapsulation</bdi> را تضعیف می‌کند و ممنوع است مگر <bdi dir="ltr">ADR</bdi> مستقل.
 
-## 7. Named Interface
+## <bdi dir="ltr">7. Named Interface</bdi>
 
-Base Package API پیش‌فرض را عرضه می‌کند. اگر یک Subpackage مشخص نیز باید Expose شود، آن را Named Interface کن.
+<bdi dir="ltr">Base Package API</bdi> پیش‌فرض را عرضه می‌کند. اگر یک <bdi dir="ltr">Subpackage</bdi> مشخص نیز باید <bdi dir="ltr">Expose</bdi> شود، آن را <bdi dir="ltr">Named Interface</bdi> کن.
 
 مثال:
+
+
+</div>
+
+<div dir="ltr" align="left">
 
 ```java
 @org.springframework.modulith.NamedInterface("events")
 package com.example.corebankinglab.deposits.events;
 ```
 
-اکنون یک Module مصرف‌کننده می‌تواند در `allowedDependencies` دقیقاً به این Interface اشاره کند:
+</div>
+
+<div dir="rtl" align="right">
+
+
+اکنون یک <bdi dir="ltr">Module</bdi> مصرف‌کننده می‌تواند در <bdi dir="ltr">`allowedDependencies`</bdi> دقیقاً به این <bdi dir="ltr">Interface</bdi> اشاره کند:
+
+
+</div>
+
+<div dir="ltr" align="left">
 
 ```java
 @org.springframework.modulith.ApplicationModule(
@@ -154,9 +222,19 @@ package com.example.corebankinglab.deposits.events;
 package com.example.corebankinglab.accounting;
 ```
 
-این کد فقط Syntax را نشان می‌دهد. اینکه Accounting واقعاً باید Compile-time به `deposits::events` وابسته باشد یا Contract در Integration Boundary دیگری قرار گیرد، یک تصمیم معماری بعدی است. امروز هر Dependency را با Context Map و Ownership دفاع کن.
+</div>
 
-می‌توان بیش از یک Dependency را نوشت:
+<div dir="rtl" align="right">
+
+
+این کد فقط <bdi dir="ltr">Syntax</bdi> را نشان می‌دهد. اینکه <bdi dir="ltr">Accounting</bdi> واقعاً باید <bdi dir="ltr">Compile-time</bdi> به <bdi dir="ltr">`deposits::events`</bdi> وابسته باشد یا <bdi dir="ltr">Contract</bdi> در <bdi dir="ltr">Integration Boundary</bdi> دیگری قرار گیرد، یک تصمیم معماری بعدی است. امروز هر <bdi dir="ltr">Dependency</bdi> را با <bdi dir="ltr">Context Map</bdi> و <bdi dir="ltr">Ownership</bdi> دفاع کن.
+
+می‌توان بیش از یک <bdi dir="ltr">Dependency</bdi> را نوشت:
+
+
+</div>
+
+<div dir="ltr" align="left">
 
 ```java
 @org.springframework.modulith.ApplicationModule(
@@ -168,11 +246,21 @@ package com.example.corebankinglab.accounting;
 package com.example.corebankinglab.lending;
 ```
 
-این نمونه نیز پاسخ نهایی Lab نیست. Named Interfaceها باید واقعاً در Provider تعریف شده باشند و نام‌ها از Language همان Boundary بیایند.
+</div>
 
-## 8. Function-first، نه Layer-first
+<div dir="rtl" align="right">
+
+
+این نمونه نیز پاسخ نهایی <bdi dir="ltr">Lab</bdi> نیست. <bdi dir="ltr">Named Interface</bdi>ها باید واقعاً در <bdi dir="ltr">Provider</bdi> تعریف شده باشند و نام‌ها از <bdi dir="ltr">Language</bdi> همان <bdi dir="ltr">Boundary</bdi> بیایند.
+
+## <bdi dir="ltr">8. Function-first</bdi>، نه <bdi dir="ltr">Layer-first</bdi>
 
 ساختار ضعیف:
+
+
+</div>
+
+<div dir="ltr" align="left">
 
 ~~~text
 controller/
@@ -182,9 +270,19 @@ entity/
 dto/
 ~~~
 
-این ساختار همهٔ Domainها را در Layerهای افقی مخلوط می‌کند و دسترسی متقابل را آسان می‌سازد.
+</div>
+
+<div dir="rtl" align="right">
+
+
+این ساختار همهٔ <bdi dir="ltr">Domain</bdi>ها را در <bdi dir="ltr">Layer</bdi>های افقی مخلوط می‌کند و دسترسی متقابل را آسان می‌سازد.
 
 ساختار بهتر:
+
+
+</div>
+
+<div dir="ltr" align="left">
 
 ~~~text
 partycustomer/
@@ -195,100 +293,120 @@ payments/
 accounting/
 ~~~
 
-هر Module می‌تواند در داخل خودش Layer یا Hexagonal structure داشته باشد؛ آن موضوع Sprint 02 است. ابتدا Boundary کسب‌وکاری، سپس ساختار داخلی.
+</div>
 
-## 9. Dependency Policy از کجا می‌آید؟
+<div dir="rtl" align="right">
 
-برای هر Dependency Candidate این سؤال‌ها را پاسخ بده:
 
-1. کدام Use Case واقعاً آن را نیاز دارد؟
-2. Provider کدام Fact/Capability را مالک است؟
-3. Consumer به Reference، Snapshot، Query، Command یا Event نیاز دارد؟
-4. آیا Dependency به یک Named Interface کوچک محدود می‌شود؟
-5. آیا Event یا Translation می‌تواند Compile-time Coupling را کمتر کند؟
-6. اگر Provider تغییر کند، چه چیزی در Consumer Recompile/Release می‌شود؟
-7. آیا Dependency معکوس یا Cycle ایجاد می‌کند؟
+هر <bdi dir="ltr">Module</bdi> می‌تواند در داخل خودش <bdi dir="ltr">Layer</bdi> یا <bdi dir="ltr">Hexagonal structure</bdi> داشته باشد؛ آن موضوع <bdi dir="ltr">Sprint 02</bdi> است. ابتدا <bdi dir="ltr">Boundary</bdi> کسب‌وکاری، سپس ساختار داخلی.
 
-وجود یک فلش در Sequence Diagram به‌تنهایی مجوز Import Typeهای داخلی نیست.
+## <bdi dir="ltr">9. Dependency Policy</bdi> از کجا می‌آید؟
 
-## 10. Mapping پیشنهادی اولیه، نه پاسخ قطعی
+برای هر <bdi dir="ltr">Dependency Candidate</bdi> این سؤال‌ها را پاسخ بده:
 
-| Problem-space hypothesis | Lab module | نکته |
+1. کدام <bdi dir="ltr">Use Case</bdi> واقعاً آن را نیاز دارد؟
+2. <bdi dir="ltr">Provider</bdi> کدام <bdi dir="ltr">Fact/Capability</bdi> را مالک است؟
+3. <bdi dir="ltr">Consumer</bdi> به <bdi dir="ltr">Reference</bdi>، <bdi dir="ltr">Snapshot</bdi>، <bdi dir="ltr">Query</bdi>، <bdi dir="ltr">Command</bdi> یا <bdi dir="ltr">Event</bdi> نیاز دارد؟
+4. آیا <bdi dir="ltr">Dependency</bdi> به یک <bdi dir="ltr">Named Interface</bdi> کوچک محدود می‌شود؟
+5. آیا <bdi dir="ltr">Event</bdi> یا <bdi dir="ltr">Translation</bdi> می‌تواند <bdi dir="ltr">Compile-time Coupling</bdi> را کمتر کند؟
+6. اگر <bdi dir="ltr">Provider</bdi> تغییر کند، چه چیزی در <bdi dir="ltr">Consumer Recompile/Release</bdi> می‌شود؟
+7. آیا <bdi dir="ltr">Dependency</bdi> معکوس یا <bdi dir="ltr">Cycle</bdi> ایجاد می‌کند؟
+
+وجود یک فلش در <bdi dir="ltr">Sequence Diagram</bdi> به‌تنهایی مجوز <bdi dir="ltr">Import Type</bdi>های داخلی نیست.
+
+## <bdi dir="ltr">10. Mapping</bdi> پیشنهادی اولیه، نه پاسخ قطعی
+
+| <bdi dir="ltr">Problem-space hypothesis</bdi> | <bdi dir="ltr">Lab module</bdi> | نکته |
 |---|---|---|
-| Party/Customer Identity and Relationship | `partycustomer` | Consumerها Reference/Snapshot می‌گیرند |
-| Product Catalog + Agreement | `productagreement` | ممکن است بعداً به دو Context/Module تفکیک شود |
-| Deposit Account Servicing | `deposits` | مانده و Hold عملیاتی را محصور می‌کند |
-| Loan Lifecycle/Servicing | `lending` | مانده و برنامهٔ عملیاتی Loan |
-| Payment Order/Clearing/Settlement | `payments` | Channel مالک Payment State نیست |
-| Journal/Subledger/GL | `accounting` | Operational Domain state را مالک نمی‌شود |
+| <bdi dir="ltr">Party/Customer Identity and Relationship</bdi> | <bdi dir="ltr">`partycustomer`</bdi> | <bdi dir="ltr">Consumer</bdi>ها <bdi dir="ltr">Reference/Snapshot</bdi> می‌گیرند |
+| <bdi dir="ltr">Product Catalog</bdi> + <bdi dir="ltr">Agreement</bdi> | <bdi dir="ltr">`productagreement`</bdi> | ممکن است بعداً به دو <bdi dir="ltr">Context/Module</bdi> تفکیک شود |
+| <bdi dir="ltr">Deposit Account Servicing</bdi> | <bdi dir="ltr">`deposits`</bdi> | مانده و <bdi dir="ltr">Hold</bdi> عملیاتی را محصور می‌کند |
+| <bdi dir="ltr">Loan Lifecycle/Servicing</bdi> | <bdi dir="ltr">`lending`</bdi> | مانده و برنامهٔ عملیاتی <bdi dir="ltr">Loan</bdi> |
+| <bdi dir="ltr">Payment Order/Clearing/Settlement</bdi> | <bdi dir="ltr">`payments`</bdi> | <bdi dir="ltr">Channel</bdi> مالک <bdi dir="ltr">Payment State</bdi> نیست |
+| <bdi dir="ltr">Journal/Subledger/GL</bdi> | <bdi dir="ltr">`accounting`</bdi> | <bdi dir="ltr">Operational Domain state</bdi> را مالک نمی‌شود |
 
-`Legal Orders` در Gate یک Context خارجی/near-core است و الزاماً Module هفتم Lab در این Sprint نیست. Contract آن با Deposits باید در Context Map نشان داده شود.
+<bdi dir="ltr">`Legal Orders`</bdi> در <bdi dir="ltr">Gate</bdi> یک <bdi dir="ltr">Context</bdi> خارجی/<bdi dir="ltr">near-core</bdi> است و الزاماً <bdi dir="ltr">Module</bdi> هفتم <bdi dir="ltr">Lab</bdi> در این <bdi dir="ltr">Sprint</bdi> نیست. <bdi dir="ltr">Contract</bdi> آن با <bdi dir="ltr">Deposits</bdi> باید در <bdi dir="ltr">Context Map</bdi> نشان داده شود.
 
-## 11. Typeهای مشترک و دام `common`
+## <bdi dir="ltr">11. Type</bdi>های مشترک و دام <bdi dir="ltr">`common`</bdi>
 
-Week 01 ممکن است `Money` و Typed IDها را ساخته باشی. اکنون باید محل آن‌ها را آگاهانه بازبینی کنی.
+<bdi dir="ltr">Week 01</bdi> ممکن است <bdi dir="ltr">`Money`</bdi> و <bdi dir="ltr">Typed ID</bdi>ها را ساخته باشی. اکنون باید محل آن‌ها را آگاهانه بازبینی کنی.
 
-### Typed ID
+### <bdi dir="ltr">Typed ID</bdi>
 
-- `CustomerId` بهتر است Contract type متعلق به Authority یا Published Reference باشد.
-- `AccountId` نباید با شمارهٔ حساب بانکی یا Accounting Account ID یکی فرض شود.
-- Import کردن Entity کامل برای گرفتن ID ممنوع است.
+- <bdi dir="ltr">`CustomerId`</bdi> بهتر است <bdi dir="ltr">Contract type</bdi> متعلق به <bdi dir="ltr">Authority</bdi> یا <bdi dir="ltr">Published Reference</bdi> باشد.
+- <bdi dir="ltr">`AccountId`</bdi> نباید با شمارهٔ حساب بانکی یا <bdi dir="ltr">Accounting Account ID</bdi> یکی فرض شود.
+- <bdi dir="ltr">Import</bdi> کردن <bdi dir="ltr">Entity</bdi> کامل برای گرفتن <bdi dir="ltr">ID</bdi> ممنوع است.
 
-### Money
+### <bdi dir="ltr">Money</bdi>
 
-مفهوم پایهٔ Amount/Currency می‌تواند بسیار کوچک و مشترک باشد، اما Policyهای Scale، Rounding و Sign ممکن است Contextual باشند. سه گزینهٔ قابل بررسی:
+مفهوم پایهٔ <bdi dir="ltr">Amount/Currency</bdi> می‌تواند بسیار کوچک و مشترک باشد، اما <bdi dir="ltr">Policy</bdi>های <bdi dir="ltr">Scale</bdi>، <bdi dir="ltr">Rounding</bdi> و <bdi dir="ltr">Sign</bdi> ممکن است <bdi dir="ltr">Contextual</bdi> باشند. سه گزینهٔ قابل بررسی:
 
-1. Value Object مستقل در هر Context با Semantic خاص
-2. Shared Kernel بسیار کوچک با Governance سخت‌گیرانه
-3. Boundary Contract type و Translation به مدل داخلی
+1. <bdi dir="ltr">Value Object</bdi> مستقل در هر <bdi dir="ltr">Context</bdi> با <bdi dir="ltr">Semantic</bdi> خاص
+2. <bdi dir="ltr">Shared Kernel</bdi> بسیار کوچک با <bdi dir="ltr">Governance</bdi> سخت‌گیرانه
+3. <bdi dir="ltr">Boundary Contract type</bdi> و <bdi dir="ltr">Translation</bdi> به مدل داخلی
 
-در این Sprint یک Package عمومی `common` نساز. ابتدا Usage، Owner و Change coupling را ثبت کن. Shared Kernel یک تصمیم صریح است، نه سطل Typeهای راحت.
+در این <bdi dir="ltr">Sprint</bdi> یک <bdi dir="ltr">Package</bdi> عمومی <bdi dir="ltr">`common`</bdi> نساز. ابتدا <bdi dir="ltr">Usage</bdi>، <bdi dir="ltr">Owner</bdi> و <bdi dir="ltr">Change coupling</bdi> را ثبت کن. <bdi dir="ltr">Shared Kernel</bdi> یک تصمیم صریح است، نه سطل <bdi dir="ltr">Type</bdi>های راحت.
 
 ## 12. برنامهٔ ۷۵ دقیقه‌ای اجرا
 
-### دقیقهٔ 0 تا 5 — Baseline
+### دقیقهٔ 0 تا 5 — <bdi dir="ltr">Baseline</bdi>
 
-از مسیر `backend/banking-modulith` اجرا کن:
+از مسیر <bdi dir="ltr">`backend/banking-modulith`</bdi> اجرا کن:
+
+
+</div>
+
+<div dir="ltr" align="left">
 
 ~~~bash
 mvn verify
 ~~~
 
-نتیجه و Commit پایه را ثبت کن. اگر Baseline قرمز است، Module work را روی شکست قبلی بنا نکن.
+</div>
 
-### دقیقهٔ 5 تا 15 — Dependency Plan
+<div dir="rtl" align="right">
 
-[Module Dependency Policy](../artifacts/module-dependency-policy.md) را باز کن. برای شش Module، Purpose و Provided/Required Interface فرضی را بنویس. هنوز Import نساز.
 
-### دقیقهٔ 15 تا 35 — Base Packages
+نتیجه و <bdi dir="ltr">Commit</bdi> پایه را ثبت کن. اگر <bdi dir="ltr">Baseline</bdi> قرمز است، <bdi dir="ltr">Module work</bdi> را روی شکست قبلی بنا نکن.
 
-شش Direct Subpackage و `package-info.java` بساز. در مرحلهٔ اول `allowedDependencies = {}` قرار بده تا هر Dependency بعدی آگاهانه اضافه شود.
+### دقیقهٔ 5 تا 15 — <bdi dir="ltr">Dependency Plan</bdi>
 
-### دقیقهٔ 35 تا 50 — Public/Internal Boundary
+[<bdi dir="ltr">Module Dependency Policy</bdi>](../artifacts/module-dependency-policy.md) را باز کن. برای شش <bdi dir="ltr">Module</bdi>، <bdi dir="ltr">Purpose</bdi> و <bdi dir="ltr">Provided/Required Interface</bdi> فرضی را بنویس. هنوز <bdi dir="ltr">Import</bdi> نساز.
 
-برای هر Module:
+### دقیقهٔ 15 تا 35 — <bdi dir="ltr">Base Packages</bdi>
 
-- یک Public API واقعی یا Placeholder مستندشدهٔ حداقلی در Base Package
-- یک `internal` package
-- بدون Public Entity مشترک
+شش <bdi dir="ltr">Direct Subpackage</bdi> و <bdi dir="ltr">`package-info.java`</bdi> بساز. در مرحلهٔ اول <bdi dir="ltr">`allowedDependencies = {}`</bdi> قرار بده تا هر <bdi dir="ltr">Dependency</bdi> بعدی آگاهانه اضافه شود.
 
-اگر هنوز Use Case مشخصی نداری، `package-info.java` و Module description کافی است؛ API مصنوعی نساز.
+### دقیقهٔ 35 تا 50 — <bdi dir="ltr">Public/Internal Boundary</bdi>
 
-### دقیقهٔ 50 تا 60 — Named Interfaces
+برای هر <bdi dir="ltr">Module:</bdi>
 
-فقط Named Interfaceهایی را بساز که Context Map نیاز آن‌ها را نشان داده است. برای هر مورد دلیل و Consumer را در Policy ثبت کن.
+- یک <bdi dir="ltr">Public API</bdi> واقعی یا <bdi dir="ltr">Placeholder</bdi> مستندشدهٔ حداقلی در <bdi dir="ltr">Base Package</bdi>
+- یک <bdi dir="ltr">`internal`</bdi> <bdi dir="ltr">package</bdi>
+- بدون <bdi dir="ltr">Public Entity</bdi> مشترک
 
-### دقیقهٔ 60 تا 68 — Allowed Dependencies
+اگر هنوز <bdi dir="ltr">Use Case</bdi> مشخصی نداری، <bdi dir="ltr">`package-info.java`</bdi> و <bdi dir="ltr">Module description</bdi> کافی است؛ <bdi dir="ltr">API</bdi> مصنوعی نساز.
 
-Dependencyهای لازم را یکی‌یکی اضافه کن. اگر برای حل Compile به Dependency متقابل نیاز شد، توقف کن: احتمالاً Contract یا Direction مشکل دارد.
+### دقیقهٔ 50 تا 60 — <bdi dir="ltr">Named Interfaces</bdi>
 
-### دقیقهٔ 68 تا 75 — Inspect and verify
+فقط <bdi dir="ltr">Named Interface</bdi>هایی را بساز که <bdi dir="ltr">Context Map</bdi> نیاز آن‌ها را نشان داده است. برای هر مورد دلیل و <bdi dir="ltr">Consumer</bdi> را در <bdi dir="ltr">Policy</bdi> ثبت کن.
 
-با `ApplicationModules` ساختار کشف‌شده را چاپ کن و سپس Verification را اجرا کن. تست رسمی روز ششم اضافه می‌شود، ولی امروز باید شش Module تشخیص داده شوند.
+### دقیقهٔ 60 تا 68 — <bdi dir="ltr">Allowed Dependencies</bdi>
 
-## 13. مشاهدهٔ مدل Moduleها
+<bdi dir="ltr">Dependency</bdi>های لازم را یکی‌یکی اضافه کن. اگر برای حل <bdi dir="ltr">Compile</bdi> به <bdi dir="ltr">Dependency</bdi> متقابل نیاز شد، توقف کن: احتمالاً <bdi dir="ltr">Contract</bdi> یا <bdi dir="ltr">Direction</bdi> مشکل دارد.
+
+### دقیقهٔ 68 تا 75 — <bdi dir="ltr">Inspect and verify</bdi>
+
+با <bdi dir="ltr">`ApplicationModules`</bdi> ساختار کشف‌شده را چاپ کن و سپس <bdi dir="ltr">Verification</bdi> را اجرا کن. تست رسمی روز ششم اضافه می‌شود، ولی امروز باید شش <bdi dir="ltr">Module</bdi> تشخیص داده شوند.
+
+## 13. مشاهدهٔ مدل <bdi dir="ltr">Module</bdi>ها
 
 نمونهٔ کد موقت یا تست:
+
+
+</div>
+
+<div dir="ltr" align="left">
 
 ```java
 var modules = org.springframework.modulith.core.ApplicationModules
@@ -297,66 +415,73 @@ var modules = org.springframework.modulith.core.ApplicationModules
 modules.forEach(System.out::println);
 ```
 
+</div>
+
+<div dir="rtl" align="right">
+
+
 خروجی را برای این موارد بخوان:
 
-- Logical name
-- Base package
-- Spring beans
-- Exposed types
-- Direct dependencies
+- <bdi dir="ltr">Logical name</bdi>
+- <bdi dir="ltr">Base package</bdi>
+- <bdi dir="ltr">Spring beans</bdi>
+- <bdi dir="ltr">Exposed types</bdi>
+- <bdi dir="ltr">Direct dependencies</bdi>
 
-صرف دیدن شش نام کافی نیست؛ Public surface و Dependencyها را نیز بررسی کن.
+صرف دیدن شش نام کافی نیست؛ <bdi dir="ltr">Public surface</bdi> و <bdi dir="ltr">Dependency</bdi>ها را نیز بررسی کن.
 
 ## 14. خطاهای رایج
 
-### شش Domain مساوی شش Microservice
+### شش <bdi dir="ltr">Domain</bdi> مساوی شش <bdi dir="ltr">Microservice</bdi>
 
-ما فقط شش Module داخل یک Deployment ساخته‌ایم. استخراج Service نیازمند ADR، NFR، Team autonomy، Data و Operational evidence است.
+ما فقط شش <bdi dir="ltr">Module</bdi> داخل یک <bdi dir="ltr">Deployment</bdi> ساخته‌ایم. استخراج <bdi dir="ltr">Service</bdi> نیازمند <bdi dir="ltr">ADR</bdi>، <bdi dir="ltr">NFR</bdi>، <bdi dir="ltr">Team autonomy</bdi>، <bdi dir="ltr">Data</bdi> و <bdi dir="ltr">Operational evidence</bdi> است.
 
-### `internal` فقط Convention است
+### <bdi dir="ltr">`internal`</bdi> فقط <bdi dir="ltr">Convention</bdi> است
 
-اگر Architecture Test نباشد، Developer می‌تواند Type عمومی داخل Subpackage را Import کند. Day 06 آن را enforce می‌کند.
+اگر <bdi dir="ltr">Architecture Test</bdi> نباشد، <bdi dir="ltr">Developer</bdi> می‌تواند <bdi dir="ltr">Type</bdi> عمومی داخل <bdi dir="ltr">Subpackage</bdi> را <bdi dir="ltr">Import</bdi> کند. <bdi dir="ltr">Day 06</bdi> آن را <bdi dir="ltr">enforce</bdi> می‌کند.
 
-### همه‌چیز Public در Base Package
+### همه‌چیز <bdi dir="ltr">Public</bdi> در <bdi dir="ltr">Base Package</bdi>
 
-هر Public Type در Base Package بخشی از Provided Interface است. Surface بزرگ Coupling را زیاد می‌کند.
+هر <bdi dir="ltr">Public Type</bdi> در <bdi dir="ltr">Base Package</bdi> بخشی از <bdi dir="ltr">Provided Interface</bdi> است. <bdi dir="ltr">Surface</bdi> بزرگ <bdi dir="ltr">Coupling</bdi> را زیاد می‌کند.
 
-### Named Interface برای هر Folder
+### <bdi dir="ltr">Named Interface</bdi> برای هر <bdi dir="ltr">Folder</bdi>
 
-Named Interface باید Consumer و Contract مشخص داشته باشد؛ نه اینکه Encapsulation را بی‌اثر کند.
+<bdi dir="ltr">Named Interface</bdi> باید <bdi dir="ltr">Consumer</bdi> و <bdi dir="ltr">Contract</bdi> مشخص داشته باشد؛ نه اینکه <bdi dir="ltr">Encapsulation</bdi> را بی‌اثر کند.
 
-### Dependency برای استفادهٔ دوباره از Entity
+### <bdi dir="ltr">Dependency</bdi> برای استفادهٔ دوباره از <bdi dir="ltr">Entity</bdi>
 
-Reuse کد دلیل کافی برای وابستگی Domain نیست. Contract، Reference یا Translation را بررسی کن.
+<bdi dir="ltr">Reuse</bdi> کد دلیل کافی برای وابستگی <bdi dir="ltr">Domain</bdi> نیست. <bdi dir="ltr">Contract</bdi>، <bdi dir="ltr">Reference</bdi> یا <bdi dir="ltr">Translation</bdi> را بررسی کن.
 
-### Cycle را با Event پنهان‌کردن
+### <bdi dir="ltr">Cycle</bdi> را با <bdi dir="ltr">Event</bdi> پنهان‌کردن
 
-اگر مدل و فرآیند ذاتاً دوری و مبهم است، عوض‌کردن Method call با Event نامفهوم مسئله را حل نمی‌کند. Ownership و Direction را دوباره تحلیل کن.
+اگر مدل و فرآیند ذاتاً دوری و مبهم است، عوض‌کردن <bdi dir="ltr">Method call</bdi> با <bdi dir="ltr">Event</bdi> نامفهوم مسئله را حل نمی‌کند. <bdi dir="ltr">Ownership</bdi> و <bdi dir="ltr">Direction</bdi> را دوباره تحلیل کن.
 
 ## 15. تمرین مستقل
 
-[Day 05 Exercise — Module Skeleton](../exercises/day-05-module-skeleton.md) را اجرا کن. کد را خودت بنویس و Output ماژول‌ها و تصمیم Dependency را در Workbook ثبت کن.
+[<bdi dir="ltr">Day 05 Exercise</bdi> — <bdi dir="ltr">Module Skeleton</bdi>](../exercises/day-05-module-skeleton.md) را اجرا کن. کد را خودت بنویس و <bdi dir="ltr">Output</bdi> ماژول‌ها و تصمیم <bdi dir="ltr">Dependency</bdi> را در <bdi dir="ltr">Workbook</bdi> ثبت کن.
 
 ## 16. معیار ارزیابی
 
 | معیار | امتیاز |
 |---|---:|
-| شش Module بر اساس Direct Subpackage | ۲ |
-| API/Internal boundary عمدی | ۲ |
-| Named Interface محدود و معنادار | ۲ |
-| Allowed dependencies مستدل و بدون Cycle | ۲ |
-| Policy و Traceability به Context Map | ۲ |
+| شش <bdi dir="ltr">Module</bdi> بر اساس <bdi dir="ltr">Direct Subpackage</bdi> | ۲ |
+| <bdi dir="ltr">API/Internal boundary</bdi> عمدی | ۲ |
+| <bdi dir="ltr">Named Interface</bdi> محدود و معنادار | ۲ |
+| <bdi dir="ltr">Allowed dependencies</bdi> مستدل و بدون <bdi dir="ltr">Cycle</bdi> | ۲ |
+| <bdi dir="ltr">Policy</bdi> و <bdi dir="ltr">Traceability</bdi> به <bdi dir="ltr">Context Map</bdi> | ۲ |
 | **جمع** | **۱۰** |
 
-حد عبور: ۷ از ۱۰. استفاده از Open Module یا Import داخلی بدون ADR پذیرفته نیست.
+حد عبور: ۷ از ۱۰. استفاده از <bdi dir="ltr">Open Module</bdi> یا <bdi dir="ltr">Import</bdi> داخلی بدون <bdi dir="ltr">ADR</bdi> پذیرفته نیست.
 
 ## 17. آزمون خروج
 
-پس از پایان کدنویسی، [Day 05 Exit Ticket](../quizzes/day-05-exit-ticket.md) را بدون مراجعه به درس پاسخ بده.
+پس از پایان کدنویسی، [<bdi dir="ltr">Day 05 Exit Ticket</bdi>](../quizzes/day-05-exit-ticket.md) را بدون مراجعه به درس پاسخ بده.
 
 ## 18. منابع اصلی
 
-- [Spring Modulith Fundamentals 2.1.0](https://docs.spring.io/spring-modulith/reference/fundamentals.html)
-- [ApplicationModule Javadoc 2.1.0](https://docs.spring.io/spring-modulith/docs/2.1.0/api/org/springframework/modulith/ApplicationModule.html)
+- [<bdi dir="ltr">Spring Modulith Fundamentals 2.1.0</bdi>](https://docs.spring.io/spring-modulith/reference/fundamentals.html)
+- [<bdi dir="ltr">ApplicationModule Javadoc 2.1.0</bdi>](https://docs.spring.io/spring-modulith/docs/2.1.0/api/org/springframework/modulith/ApplicationModule.html)
 
-Syntaxهای `allowedDependencies`، آرایهٔ خالی، Closed Module و Named Interface با مستند رسمی 2.1.0 تطبیق داده شده‌اند.
+<bdi dir="ltr">Syntax</bdi>های <bdi dir="ltr">`allowedDependencies`</bdi>، آرایهٔ خالی، <bdi dir="ltr">Closed Module</bdi> و <bdi dir="ltr">Named Interface</bdi> با مستند رسمی 2.1.0 تطبیق داده شده‌اند.
+
+</div>

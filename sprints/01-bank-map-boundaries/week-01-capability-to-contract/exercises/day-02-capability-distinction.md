@@ -1,12 +1,15 @@
-# Day 02 Exercise — Capability Distinction Matrix
+<!-- bidi: rtl; code: ltr -->
+<div dir="rtl" align="right">
 
-- Timebox: 18 minutes
-- Output: [Distinction Matrix](../artifacts/distinction-matrix-template.md)
-- Rule: برچسب بدون Reason امتیاز ندارد.
+# <bdi dir="ltr">Day 02 Exercise</bdi> — <bdi dir="ltr">Capability Distinction Matrix</bdi>
+
+- <bdi dir="ltr">Timebox: 18 minutes</bdi>
+- <bdi dir="ltr">Output:</bdi> [<bdi dir="ltr">Distinction Matrix</bdi>](../artifacts/distinction-matrix-template.md)
+- <bdi dir="ltr">Rule:</bdi> برچسب بدون <bdi dir="ltr">Reason</bdi> امتیاز ندارد.
 
 ## بخش A — طبقه‌بندی ۱۵ عبارت
 
-برای هر عبارت `Primary type`، دلیل، تفسیر جایگزین احتمالی و نسخهٔ اصلاح‌شده را ثبت کن:
+برای هر عبارت <bdi dir="ltr">`Primary type`</bdi>، دلیل، تفسیر جایگزین احتمالی و نسخهٔ اصلاح‌شده را ثبت کن:
 
 1. سامانهٔ تسهیلات
 2. مدیریت تعهدات اعتباری
@@ -17,8 +20,8 @@
 7. سپردهٔ قرض‌الحسنه جاری
 8. سامانهٔ سپرده
 9. اعمال مسدودی قضایی
-10. `POST /accounts/{id}/holds`
-11. `FundsHeld`
+10. <bdi dir="ltr">`POST /accounts/{id}/holds`</bdi>
+11. <bdi dir="ltr">`FundsHeld`</bdi>
 12. انتقال آنی وجه
 13. فرایند انتقال بین‌شعبه‌ای
 14. ادارهٔ چک
@@ -26,14 +29,29 @@
 
 نوع‌های مجاز:
 
+
+</div>
+
+<div dir="ltr" align="left">
+
 ```text
 Capability | Value Stream | Process | Business Service | Product
 Organization Unit | System/Application | Use Case | API | Event | Ambiguous
 ```
 
-## بخش B — سه Capability کامل
+</div>
 
-سه موردی را که Capability دانستی با این کارت تکمیل کن:
+<div dir="rtl" align="right">
+
+
+## بخش B — سه <bdi dir="ltr">Capability</bdi> کامل
+
+سه موردی را که <bdi dir="ltr">Capability</bdi> دانستی با این کارت تکمیل کن:
+
+
+</div>
+
+<div dir="ltr" align="left">
 
 ```text
 Name:
@@ -46,19 +64,36 @@ KPI candidate:
 Current systems (evidence only):
 ```
 
-## بخش C — Reverse test
+</div>
 
-سه System/API/Event فهرست را به Capability بالادست برگردان. زنجیره را کوتاه بنویس:
+<div dir="rtl" align="right">
+
+
+## بخش C — <bdi dir="ltr">Reverse test</bdi>
+
+سه <bdi dir="ltr">System/API/Event</bdi> فهرست را به <bdi dir="ltr">Capability</bdi> بالادست برگردان. زنجیره را کوتاه بنویس:
+
+
+</div>
+
+<div dir="ltr" align="left">
 
 ```text
 technical/current element → use/process → capability
 ```
 
-## Acceptance criteria
+</div>
+
+<div dir="rtl" align="right">
+
+
+## <bdi dir="ltr">Acceptance criteria</bdi>
 
 - حداقل ۱۲ مورد درست و مستدل طبقه‌بندی شده باشد.
-- برای دست‌کم سه مورد `Ambiguous`، زاویهٔ دید توضیح داده شود.
-- هیچ نام سامانه، تیم یا API به‌تنهایی Capability پذیرفته نشود.
-- سه Capability دارای Outcome، Owner و KPI باشند.
-- از طبقه‌بندی، تعداد Microservice نتیجه گرفته نشود.
+- برای دست‌کم سه مورد <bdi dir="ltr">`Ambiguous`</bdi>، زاویهٔ دید توضیح داده شود.
+- هیچ نام سامانه، تیم یا <bdi dir="ltr">API</bdi> به‌تنهایی <bdi dir="ltr">Capability</bdi> پذیرفته نشود.
+- سه <bdi dir="ltr">Capability</bdi> دارای <bdi dir="ltr">Outcome</bdi>، <bdi dir="ltr">Owner</bdi> و <bdi dir="ltr">KPI</bdi> باشند.
+- از طبقه‌بندی، تعداد <bdi dir="ltr">Microservice</bdi> نتیجه گرفته نشود.
 
+
+</div>

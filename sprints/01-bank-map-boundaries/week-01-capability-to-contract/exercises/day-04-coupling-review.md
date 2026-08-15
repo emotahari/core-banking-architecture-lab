@@ -1,10 +1,18 @@
-# Day 04 Exercise — Coupling Review
+<!-- bidi: rtl; code: ltr -->
+<div dir="rtl" align="right">
 
-- Timebox: 23 minutes
-- Output: [Coupling Review Template](../artifacts/coupling-review-template.md)
-- Goal: نقد Evidence-based، نه استفادهٔ شعاری از SOLID
+# <bdi dir="ltr">Day 04 Exercise</bdi> — <bdi dir="ltr">Coupling Review</bdi>
+
+- <bdi dir="ltr">Timebox: 23 minutes</bdi>
+- <bdi dir="ltr">Output:</bdi> [<bdi dir="ltr">Coupling Review Template</bdi>](../artifacts/coupling-review-template.md)
+- <bdi dir="ltr">Goal:</bdi> نقد <bdi dir="ltr">Evidence-based</bdi>، نه استفادهٔ شعاری از <bdi dir="ltr">SOLID</bdi>
 
 ## طراحی مورد نقد
+
+
+</div>
+
+<div dir="ltr" align="left">
 
 ```text
 LoanDisbursementOrchestrator.disburse(loanId, depositNo)
@@ -17,44 +25,61 @@ LoanDisbursementOrchestrator.disburse(loanId, depositNo)
   7. return documentNo to channel
 ```
 
-هر شش Component به یک دیتابیس و مدل مشترک دسترسی دارند. Channel می‌داند Step 3 تا 6 به همین ترتیب اجرا می‌شوند.
+</div>
 
-## بخش A — Smell و Coupling map
+<div dir="rtl" align="right">
+
+
+هر شش <bdi dir="ltr">Component</bdi> به یک دیتابیس و مدل مشترک دسترسی دارند. <bdi dir="ltr">Channel</bdi> می‌داند <bdi dir="ltr">Step 3</bdi> تا 6 به همین ترتیب اجرا می‌شوند.
+
+## بخش A — <bdi dir="ltr">Smell</bdi> و <bdi dir="ltr">Coupling map</bdi>
 
 حداقل هشت مورد پیدا کن. برای هر مورد بنویس:
 
-| Location/step | Coupling type | Hidden knowledge | Concrete change/failure risk |
+| <bdi dir="ltr">Location/step</bdi> | <bdi dir="ltr">Coupling type</bdi> | <bdi dir="ltr">Hidden knowledge</bdi> | <bdi dir="ltr">Concrete change/failure risk</bdi> |
 |---|---|---|---|
 |  |  |  |  |
 
-از این نوع‌ها استفاده کن: Structural، Data، Behavioral، Temporal، Change، Operational.
+از این نوع‌ها استفاده کن: <bdi dir="ltr">Structural</bdi>، <bdi dir="ltr">Data</bdi>، <bdi dir="ltr">Behavioral</bdi>، <bdi dir="ltr">Temporal</bdi>، <bdi dir="ltr">Change</bdi>، <bdi dir="ltr">Operational.</bdi>
 
-## بخش B — Cohesion و Authority
+## بخش B — <bdi dir="ltr">Cohesion</bdi> و <bdi dir="ltr">Authority</bdi>
 
-برای Lending، Deposits، Accounting، Notification و Channel یک جملهٔ مسئولیت و Factهای تحت Authority بنویس. سپس مشخص کن Orchestrator کدام Authorityها را تصاحب کرده است.
+برای <bdi dir="ltr">Lending</bdi>، <bdi dir="ltr">Deposits</bdi>، <bdi dir="ltr">Accounting</bdi>، <bdi dir="ltr">Notification</bdi> و <bdi dir="ltr">Channel</bdi> یک جملهٔ مسئولیت و <bdi dir="ltr">Fact</bdi>های تحت <bdi dir="ltr">Authority</bdi> بنویس. سپس مشخص کن <bdi dir="ltr">Orchestrator</bdi> کدام <bdi dir="ltr">Authority</bdi>ها را تصاحب کرده است.
 
-## بخش C — Encapsulation vs Information Hiding
+## بخش C — <bdi dir="ltr">Encapsulation vs Information Hiding</bdi>
 
 دو مثال جدا بده:
 
-1. Invariantی که Encapsulation آن شکسته شده است.
-2. تصمیم داخلی‌ای که باید Information Hidden باشد ولی نشت کرده است.
+1. <bdi dir="ltr">Invariant</bdi>ی که <bdi dir="ltr">Encapsulation</bdi> آن شکسته شده است.
+2. تصمیم داخلی‌ای که باید <bdi dir="ltr">Information Hidden</bdi> باشد ولی نشت کرده است.
 
-## بخش D — Redesign
+## بخش D — <bdi dir="ltr">Redesign</bdi>
 
-راه‌حل را بدون انتخاب Transport بازنویسی کن:
+راه‌حل را بدون انتخاب <bdi dir="ltr">Transport</bdi> بازنویسی کن:
+
+
+</div>
+
+<div dir="ltr" align="left">
 
 ```text
 Owner → Intent/Contract → Owner → Fact/Result
 ```
 
-حداقل یک Failure را توضیح بده: Deposit Credit انجام شده ولی پاسخ به Lending گم شده است. فقط Expected safety property را بنویس؛ طراحی Idempotency/Saga به Weekهای بعد موکول است.
+</div>
 
-## Acceptance criteria
+<div dir="rtl" align="right">
 
-- حداقل پنج نوع Coupling با شاهد مشخص شود.
-- Redesign به CRUD عمومی یا Database share متکی نباشد.
-- مرز مدل از مرز Deployment جدا بماند.
-- شماره سند باعث Coupling همگام بی‌دلیل عملیات اصلی نشود؛ Trade-off ثبت شود.
-- یک Debt و یک Open question باقی بماند.
 
+حداقل یک <bdi dir="ltr">Failure</bdi> را توضیح بده: <bdi dir="ltr">Deposit Credit</bdi> انجام شده ولی پاسخ به <bdi dir="ltr">Lending</bdi> گم شده است. فقط <bdi dir="ltr">Expected safety property</bdi> را بنویس؛ طراحی <bdi dir="ltr">Idempotency/Saga</bdi> به <bdi dir="ltr">Week</bdi>های بعد موکول است.
+
+## <bdi dir="ltr">Acceptance criteria</bdi>
+
+- حداقل پنج نوع <bdi dir="ltr">Coupling</bdi> با شاهد مشخص شود.
+- <bdi dir="ltr">Redesign</bdi> به <bdi dir="ltr">CRUD</bdi> عمومی یا <bdi dir="ltr">Database share</bdi> متکی نباشد.
+- مرز مدل از مرز <bdi dir="ltr">Deployment</bdi> جدا بماند.
+- شماره سند باعث <bdi dir="ltr">Coupling</bdi> همگام بی‌دلیل عملیات اصلی نشود؛ <bdi dir="ltr">Trade-off</bdi> ثبت شود.
+- یک <bdi dir="ltr">Debt</bdi> و یک <bdi dir="ltr">Open question</bdi> باقی بماند.
+
+
+</div>

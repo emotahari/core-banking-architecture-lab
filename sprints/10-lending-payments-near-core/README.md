@@ -1,18 +1,23 @@
-# Sprint 10 — Lending، Collections و Payments
+<!-- bidi: rtl; code: ltr -->
+<div dir="rtl" align="right">
 
-- Weeks: 19–20
-- Status: Backlog
+# <bdi dir="ltr">Sprint 10</bdi> — <bdi dir="ltr">Lending</bdi>، <bdi dir="ltr">Collections</bdi> و <bdi dir="ltr">Payments</bdi>
 
-## Week 19
+- <bdi dir="ltr">Weeks: 19</bdi>–20
+- <bdi dir="ltr">Status: Backlog</bdi>
 
-چرخهٔ Lending، Schedule، Collateral، Delinquency، Collections، Restructuring و Recovery.
+## <bdi dir="ltr">Week 19</bdi>
 
-## Week 20
+چرخهٔ <bdi dir="ltr">Lending</bdi>، <bdi dir="ltr">Schedule</bdi>، <bdi dir="ltr">Collateral</bdi>، <bdi dir="ltr">Delinquency</bdi>، <bdi dir="ltr">Collections</bdi>، <bdi dir="ltr">Restructuring</bdi> و <bdi dir="ltr">Recovery.</bdi>
 
-Payment Order، Clearing/Settlement، Reversal/Refund/Return، Card، Channel، Cheque و ISO 20022 ACL.
+## <bdi dir="ltr">Week 20</bdi>
 
-## Gate
+<bdi dir="ltr">Payment Order</bdi>، <bdi dir="ltr">Clearing/Settlement</bdi>، <bdi dir="ltr">Reversal/Refund/Return</bdi>، <bdi dir="ltr">Card</bdi>، <bdi dir="ltr">Channel</bdi>، <bdi dir="ltr">Cheque</bdi> و <bdi dir="ltr">ISO 20022 ACL.</bdi>
 
-هر State، داده و تصمیم دقیقاً یک مالک دارد؛ Channel مالک مانده و Collections مالک بدهی نیست.
+## <bdi dir="ltr">Gate</bdi>
 
-محتوا و اینفوگرافیک روزانه هنگام ورود این Sprint تولید و Version می‌شوند.
+هر <bdi dir="ltr">State</bdi>، داده و تصمیم دقیقاً یک مالک دارد؛ <bdi dir="ltr">Channel</bdi> مالک مانده و <bdi dir="ltr">Collections</bdi> مالک بدهی نیست.
+
+محتوا و اینفوگرافیک روزانه هنگام ورود این <bdi dir="ltr">Sprint</bdi> تولید و <bdi dir="ltr">Version</bdi> می‌شوند.
+
+</div>

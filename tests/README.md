@@ -1,7 +1,12 @@
-# Tests
+<!-- bidi: rtl; code: ltr -->
+<div dir="rtl" align="right">
 
-- end-to-end: سه برش عمودی نهایی
-- failure: Duplicate، Timeout، Out-of-order و شکست وابستگی
-- performance: Throughput، Latency، Lock Wait و Hot Row
+# <bdi dir="ltr">Tests</bdi>
 
-درصد Coverage هدف اصلی نیست؛ پوشش Invariant، Contract، Failure و Financial Correctness هدف است.
+- <bdi dir="ltr">end-to-end:</bdi> سه برش عمودی نهایی
+- <bdi dir="ltr">failure: Duplicate</bdi>، <bdi dir="ltr">Timeout</bdi>، <bdi dir="ltr">Out-of-order</bdi> و شکست وابستگی
+- <bdi dir="ltr">performance: Throughput</bdi>، <bdi dir="ltr">Latency</bdi>، <bdi dir="ltr">Lock Wait</bdi> و <bdi dir="ltr">Hot Row</bdi>
+
+درصد <bdi dir="ltr">Coverage</bdi> هدف اصلی نیست؛ پوشش <bdi dir="ltr">Invariant</bdi>، <bdi dir="ltr">Contract</bdi>، <bdi dir="ltr">Failure</bdi> و <bdi dir="ltr">Financial Correctness</bdi> هدف است.
+
+</div>

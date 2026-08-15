@@ -1,18 +1,23 @@
-# Sprint 12 — یکپارچه‌سازی، مهاجرت و دفاع نهایی
+<!-- bidi: rtl; code: ltr -->
+<div dir="rtl" align="right">
 
-- Weeks: 23–24
-- Status: Backlog
+# <bdi dir="ltr">Sprint 12</bdi> — یکپارچه‌سازی، مهاجرت و دفاع نهایی
 
-## Week 23
+- <bdi dir="ltr">Weeks: 23</bdi>–24
+- <bdi dir="ltr">Status: Backlog</bdi>
 
-سه سناریوی End-to-End، Evidence Pack، Failure/Load Test و Migration Roadmap با Parallel Run و Cutover.
+## <bdi dir="ltr">Week 23</bdi>
 
-## Week 24
+سه سناریوی <bdi dir="ltr">End-to-End</bdi>، <bdi dir="ltr">Evidence Pack</bdi>، <bdi dir="ltr">Failure/Load Test</bdi> و <bdi dir="ltr">Migration Roadmap</bdi> با <bdi dir="ltr">Parallel Run</bdi> و <bdi dir="ltr">Cutover.</bdi>
 
-دفاع ۹۰ دقیقه‌ای معماری از Capability تا Runtime، Ownership، Accounting، Failure و Migration.
+## <bdi dir="ltr">Week 24</bdi>
 
-## Gate
+دفاع ۹۰ دقیقه‌ای معماری از <bdi dir="ltr">Capability</bdi> تا <bdi dir="ltr">Runtime</bdi>، <bdi dir="ltr">Ownership</bdi>، <bdi dir="ltr">Accounting</bdi>، <bdi dir="ltr">Failure</bdi> و <bdi dir="ltr">Migration.</bdi>
 
-حداقل ۷۵ از ۱۰۰، عبور از کف چهار حوزهٔ حیاتی و اجرای واقعی هر سه Vertical Slice.
+## <bdi dir="ltr">Gate</bdi>
 
-محتوا و اینفوگرافیک روزانه هنگام ورود این Sprint تولید و Version می‌شوند.
+حداقل ۷۵ از ۱۰۰، عبور از کف چهار حوزهٔ حیاتی و اجرای واقعی هر سه <bdi dir="ltr">Vertical Slice.</bdi>
+
+محتوا و اینفوگرافیک روزانه هنگام ورود این <bdi dir="ltr">Sprint</bdi> تولید و <bdi dir="ltr">Version</bdi> می‌شوند.
+
+</div>

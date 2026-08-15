@@ -1,20 +1,33 @@
-# Day 05 Artifact — BIAN 14 Gap Check
+<!-- bidi: rtl; code: ltr -->
+<div dir="rtl" align="right">
 
-- Local map version:
-- BIAN version: 14.0
-- Check date:
-- Reviewer:
-- Rule: Local map first; BIAN second.
+# <bdi dir="ltr">Day 05 Artifact</bdi> — <bdi dir="ltr">BIAN 14 Gap Check</bdi>
 
-## Status vocabulary
+- <bdi dir="ltr">Local map version:</bdi>
+- <bdi dir="ltr">BIAN version: 14.0</bdi>
+- <bdi dir="ltr">Check date:</bdi>
+- <bdi dir="ltr">Reviewer:</bdi>
+- <bdi dir="ltr">Rule: Local map first</bdi>; <bdi dir="ltr">BIAN second.</bdi>
+
+## <bdi dir="ltr">Status vocabulary</bdi>
+
+
+</div>
+
+<div dir="ltr" align="left">
 
 ```text
 MATCH | PARTIAL | GAP-LOCAL | GAP-OUR-MAP | FALSE-FRIEND | NOT-APPLICABLE
 ```
 
-## Mapping
+</div>
 
-| Local capability | Local definition | BIAN element/link | Status | Scope difference | Local decision | Evidence/date |
+<div dir="rtl" align="right">
+
+
+## <bdi dir="ltr">Mapping</bdi>
+
+| <bdi dir="ltr">Local capability</bdi> | <bdi dir="ltr">Local definition</bdi> | <bdi dir="ltr">BIAN element/link</bdi> | <bdi dir="ltr">Status</bdi> | <bdi dir="ltr">Scope difference</bdi> | <bdi dir="ltr">Local decision</bdi> | <bdi dir="ltr">Evidence/date</bdi> |
 |---|---|---|---|---|---|---|
 |  |  |  |  |  |  |  |
 |  |  |  |  |  |  |  |
@@ -27,35 +40,37 @@ MATCH | PARTIAL | GAP-LOCAL | GAP-OUR-MAP | FALSE-FRIEND | NOT-APPLICABLE
 |  |  |  |  |  |  |  |
 |  |  |  |  |  |  |  |
 
-## Mandatory false-friend review
+## <bdi dir="ltr">Mandatory false-friend review</bdi>
 
-| Candidate | Similar name | Why it may differ | Decision |
+| <bdi dir="ltr">Candidate</bdi> | <bdi dir="ltr">Similar name</bdi> | <bdi dir="ltr">Why it may differ</bdi> | <bdi dir="ltr">Decision</bdi> |
 |---|---|---|---|
-| Current Account |  |  |  |
-| Customer Relationship Management |  |  |  |
-| Financial Accounting |  |  |  |
+| <bdi dir="ltr">Current Account</bdi> |  |  |  |
+| <bdi dir="ltr">Customer Relationship Management</bdi> |  |  |  |
+| <bdi dir="ltr">Financial Accounting</bdi> |  |  |  |
 
-## Gaps and changes
+## <bdi dir="ltr">Gaps and changes</bdi>
 
-| Change to local map | Triggered by | Before | After | Consequence |
+| <bdi dir="ltr">Change to local map</bdi> | <bdi dir="ltr">Triggered by</bdi> | <bdi dir="ltr">Before</bdi> | <bdi dir="ltr">After</bdi> | <bdi dir="ltr">Consequence</bdi> |
 |---|---|---|---|---|
 |  |  |  |  |  |
 
-## Deployment disclaimer
+## <bdi dir="ltr">Deployment disclaimer</bdi>
 
-برای هر BIAN Service Domain که بعدها Service Candidate می‌شود، این Evidenceها هنوز لازم‌اند:
+برای هر <bdi dir="ltr">BIAN Service Domain</bdi> که بعدها <bdi dir="ltr">Service Candidate</bdi> می‌شود، این <bdi dir="ltr">Evidence</bdi>ها هنوز لازم‌اند:
 
 - [ ] مدل و زبان محلی مستقل
-- [ ] Transaction/aggregate boundary
-- [ ] Team/change ownership
-- [ ] Scaling/availability profile
-- [ ] Contract و failure semantics
-- [ ] Cost/benefit استقرار مستقل
+- [ ] <bdi dir="ltr">Transaction/aggregate boundary</bdi>
+- [ ] <bdi dir="ltr">Team/change ownership</bdi>
+- [ ] <bdi dir="ltr">Scaling/availability profile</bdi>
+- [ ] <bdi dir="ltr">Contract</bdi> و <bdi dir="ltr">failure semantics</bdi>
+- [ ] <bdi dir="ltr">Cost/benefit</bdi> استقرار مستقل
 
-## Conclusion
+## <bdi dir="ltr">Conclusion</bdi>
 
-- Most useful BIAN match:
-- Most important missing capability:
-- Most dangerous false friend:
-- What remains unknown:
+- <bdi dir="ltr">Most useful BIAN match:</bdi>
+- <bdi dir="ltr">Most important missing capability:</bdi>
+- <bdi dir="ltr">Most dangerous false friend:</bdi>
+- <bdi dir="ltr">What remains unknown:</bdi>
 
+
+</div>

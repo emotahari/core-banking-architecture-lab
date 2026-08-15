@@ -1,18 +1,23 @@
-# Sprint 07 — Accounting Facts، Ledger و GL
+<!-- bidi: rtl; code: ltr -->
+<div dir="rtl" align="right">
 
-- Weeks: 13–14
-- Status: Backlog
+# <bdi dir="ltr">Sprint 07</bdi> — <bdi dir="ltr">Accounting Facts</bdi>، <bdi dir="ltr">Ledger</bdi> و <bdi dir="ltr">GL</bdi>
 
-## Week 13
+- <bdi dir="ltr">Weeks: 13</bdi>–14
+- <bdi dir="ltr">Status: Backlog</bdi>
 
-Domain Event → Accounting Translator → Accounting Fact → Rule Engine → Journal Entry.
+## <bdi dir="ltr">Week 13</bdi>
 
-## Week 14
+<bdi dir="ltr">Domain Event</bdi> → <bdi dir="ltr">Accounting Translator</bdi> → <bdi dir="ltr">Accounting Fact</bdi> → <bdi dir="ltr">Rule Engine</bdi> → <bdi dir="ltr">Journal Entry.</bdi>
 
-Double-entry، Chart of Accounts، Journal/Line، GL/SL/Auxiliary، Effective-dated Rules، Reversal و Correction.
+## <bdi dir="ltr">Week 14</bdi>
 
-## Gate
+<bdi dir="ltr">Double-entry</bdi>، <bdi dir="ltr">Chart of Accounts</bdi>، <bdi dir="ltr">Journal/Line</bdi>، <bdi dir="ltr">GL/SL/Auxiliary</bdi>، <bdi dir="ltr">Effective-dated Rules</bdi>، <bdi dir="ltr">Reversal</bdi> و <bdi dir="ltr">Correction.</bdi>
 
-توازن سند، حفظ جزئیات Subledger و Versionپذیری قواعد حسابداری باید با تست اثبات شوند.
+## <bdi dir="ltr">Gate</bdi>
 
-محتوا و اینفوگرافیک روزانه هنگام ورود این Sprint تولید و Version می‌شوند.
+توازن سند، حفظ جزئیات <bdi dir="ltr">Subledger</bdi> و <bdi dir="ltr">Version</bdi>پذیری قواعد حسابداری باید با تست اثبات شوند.
+
+محتوا و اینفوگرافیک روزانه هنگام ورود این <bdi dir="ltr">Sprint</bdi> تولید و <bdi dir="ltr">Version</bdi> می‌شوند.
+
+</div>
