@@ -148,98 +148,164 @@ translation through explicit contracts
 
 ممکن است دو تیم برای یک مفهوم از <bdi dir="ltr">`Loan Contract`</bdi> و <bdi dir="ltr">`Facility Agreement`</bdi> استفاده کنند. پیش از ساخت دو <bdi dir="ltr">Context</bdi> باید بررسی کنیم آیا واقعاً <bdi dir="ltr">Rule/Lifecycle</bdi> متفاوت است یا صرفاً اختلاف نام تاریخی است.
 
-### <bdi dir="ltr">7.3 Rule Conflict</bdu�6����k�w��y</bdi> | <bdi dir="ltr">Deposits decides whether account can accept credit now</bdi> |
-| <bdi dir="ltr">State owner</bdi> | <bdi dir="ltr">Deposits records transaction and updates its balance</bdi> |
-| <bdi dir="ltr">Resulting fact</bdi> | <bdi dir="ltr">`DepositCredited`</bdi> <bdi dir="ltr">or explicit rejection fact/result</bdi> |
-| <bdi dir="ltr">Process observer</bdi> | <bdi dir="ltr">Lending/Process Manager advances its own status</bdi> |
-| <bdi dir="ltr">Financial consumer</bdi> | <bdi dir="ltr">Accounting produces relevant Journal from valid facts</bdi> |
+### <bdi dir="ltr">7.3 Rule Conflict</bdi>
 
-این تفکیک مانع آن می‌شود که <bdi dir="ltr">Orchestrator</bdi> به <bdi dir="ltr">Super-Domain</bdi> و مالک همه‌چیز تبدیل شود.
+در <bdi dir="ltr">Deposits</bdi>، <bdi dir="ltr">Account</bdi> بسته نباید <bdi dir="ltr">Debit</bdi> عملیاتی جدید بپذیرد. در <bdi dir="ltr">Accounting</bdi>، یک حساب <bdi dir="ltr">GL</bdi> بسته‌شده در دوره ممکن است هنوز برای <bdi dir="ltr">Adjustment</bdi> کنترل‌شده نیاز به <bdi dir="ltr">Posting</bdi> خاص داشته باشد. واژهٔ <bdi dir="ltr">`closed account`</bdi> قواعد متفاوت دارد.
 
-## <bdi dir="ltr">11. Correction</bdi> و <bdi dir="ltr">Reconciliation</bdi> بخشی از <bdi dir="ltr">Ownership</bdi> است
+### <bdi dir="ltr">7.4 Lifecycle Conflict</bdi>
 
-<bdi dir="ltr">Owner</bdi> فقط <bdi dir="ltr">Happy Path</bdi> را مالک نیست. باید روشن باشد:
+<bdi dir="ltr">Product Definition</bdi> می‌تواند <bdi dir="ltr">Version</bdi> جدید بگیرد. <bdi dir="ltr">Agreement</bdi> منعقدشده نباید با تغییر <bdi dir="ltr">Product</bdi> آینده خودکار عوض شود. تفاوت <bdi dir="ltr">Lifecycle</bdi> نشانهٔ قوی جدایی مدل <bdi dir="ltr">Product</bdi> و <bdi dir="ltr">Executed Agreement</bdi> است.
 
-- چه کسی خطا را تشخیص می‌دهد؟
-- چه کسی مجاز به <bdi dir="ltr">Correction</bdi> است؟
-- <bdi dir="ltr">Correction</bdi> با <bdi dir="ltr">Update</bdi>، <bdi dir="ltr">Reversal</bdi> یا <bdi dir="ltr">Compensating Fact</bdi> انجام می‌شود؟
-- <bdi dir="ltr">Audit trail</bdi> کجاست؟
-- چه کسی اختلاف میان <bdi dir="ltr">Operational</bdi> و <bdi dir="ltr">Accounting Projection</bdi> را پیگیری می‌کند؟
+### <bdi dir="ltr">7.5 Authority Conflict</bdi>
 
-جزئیات <bdi dir="ltr">Accounting/Reversal</bdi> در <bdi dir="ltr">Sprint</bdi>های بعد می‌آید، اما در <bdi dir="ltr">Matrix</bdi> حداقل <bdi dir="ltr">`Reconciliation owner`</bdi> و <bdi dir="ltr">`Open Question`</bdi> باید ثبت شود.
+اگر <bdi dir="ltr">Lending</bdi> می‌گوید <bdi dir="ltr">Customer eligible</bdi> است و <bdi dir="ltr">Customer Context</bdi> می‌گوید <bdi dir="ltr">KYC</bdi> معتبر است، این‌ها شاید دو <bdi dir="ltr">Decision</bdi> متفاوت باشند:
 
-## 12. خطاهای رایج
+- <bdi dir="ltr">KYC validity</bdi> متعلق به <bdi dir="ltr">Customer/Compliance</bdi>
+- <bdi dir="ltr">Credit eligibility</bdi> متعلق به <bdi dir="ltr">Lending/Credit Decision</bdi>
 
-### مالکیت مشترک
+تلاش برای یک <bdi dir="ltr">Boolean</bdi> مشترک <bdi dir="ltr">`isValidCustomer`</bdi> دو معنای تصمیم را پنهان می‌کند.
 
-«<bdi dir="ltr">Lending</bdi> و <bdi dir="ltr">Accounting</bdi> هر دو مالک ماندهٔ تسهیلات‌اند» ابهام <bdi dir="ltr">Semantic</bdi> را پنهان می‌کند. دو مانده را نام‌گذاری کن.
+### <bdi dir="ltr">7.6 Change Coupling</bdi>
 
-### <bdi dir="ltr">Database</bdi> برابر <bdi dir="ltr">Owner</bdi>
+اگر تغییر یک <bdi dir="ltr">Rule</bdi> در <bdi dir="ltr">Product Pricing</bdi> همیشه مجبور است <bdi dir="ltr">Deposit Balance Model</bdi> را <bdi dir="ltr">Release</bdi> کند، <bdi dir="ltr">Boundary</bdi> یا <bdi dir="ltr">Contract</bdi> احتمالاً اطلاعات داخلی را نشت داده است.
 
-داشتن جدول یا <bdi dir="ltr">Replica</bdi> به معنی <bdi dir="ltr">Authority</bdi> نیست. در <bdi dir="ltr">Migration</bdi> ممکن است رکورد فیزیکی موقتاً جای دیگری باشد.
+## 8. مثال بانکی: <bdi dir="ltr">Product</bdi> و <bdi dir="ltr">Agreement</bdi>
 
-### <bdi dir="ltr">Event Consumer</bdi> برابر <bdi dir="ltr">Owner</bdi>
+فرض کن محصول مرابحه نسخهٔ 7 این ویژگی‌ها را دارد:
 
-<bdi dir="ltr">Accounting</bdi> با مصرف <bdi dir="ltr">`LoanGranted`</bdi> مالک <bdi dir="ltr">Loan</bdi> نمی‌شود. <bdi dir="ltr">Projection</bdi> نیز <bdi dir="ltr">Authority</bdi> نمی‌سازد.
+- دامنهٔ مبلغ مجاز
+- نرخ/سود مصوب
+- مدت‌های قابل انتخاب
+- وثایق مجاز
+- تاریخ اعتبار نسخه
 
-### <bdi dir="ltr">Orchestrator</bdi> برابر <bdi dir="ltr">Owner</bdi>
+مشتری در تاریخ مشخص قرارداد می‌بندد. پس از آن نسخهٔ 8 محصول منتشر می‌شود.
 
-<bdi dir="ltr">Process Manager Step Status</bdi> را نگه می‌دارد؛ <bdi dir="ltr">Fact</bdi>های <bdi dir="ltr">Domain</bdi> را جعل یا تصاحب نمی‌کند.
+دو مدل داریم:
 
-### <bdi dir="ltr">Snapshot</bdi> بدون زمان و <bdi dir="ltr">Version</bdi>
+### <bdi dir="ltr">Product Catalog Model</bdi>
 
-کپی بدون <bdi dir="ltr">Provenance</bdi> به‌سرعت به <bdi dir="ltr">Master</bdi> پنهان و متناقض تبدیل می‌شود.
+- <bdi dir="ltr">Product</bdi> و <bdi dir="ltr">ProductVersion</bdi>
+- شرایط قابل عرضه
+- <bdi dir="ltr">Eligibility policy</bdi> عمومی
+- <bdi dir="ltr">Lifecycle</bdi> انتشار/بازنشستگی نسخه
 
-### «همه‌چیز را همگام <bdi dir="ltr">Query</bdi> کنیم»
+### <bdi dir="ltr">Executed Agreement Model</bdi>
 
-<bdi dir="ltr">Query</bdi> زنده برای <bdi dir="ltr">Product terms</bdi> قرارداد گذشته یا شواهد تصمیم می‌تواند تاریخچه را خراب کند. <bdi dir="ltr">Reference</bdi>، <bdi dir="ltr">Snapshot</bdi> و <bdi dir="ltr">Cache</bdi> باید بر اساس <bdi dir="ltr">Use Case</bdi> انتخاب شوند.
+- طرفین قرارداد
+- شرایط قطعی و <bdi dir="ltr">Snapshot</bdi>شده
+- تاریخ مؤثر
+- تعهدات و وضعیت حقوقی
+- اصلاحیه‌های معتبر
 
-### <bdi dir="ltr">RACI</bdi> به‌جای <bdi dir="ltr">Data Authority</bdi>
+اگر <bdi dir="ltr">Agreement</bdi> فقط <bdi dir="ltr">`productId`</bdi> را نگه دارد و هر بار شرایط فعلی <bdi dir="ltr">Product</bdi> را <bdi dir="ltr">Query</bdi> کند، قرارداد گذشته با تغییر آینده عوض می‌شود. <bdi dir="ltr">Boundary</bdi> مناسب، تفاوت بین **<bdi dir="ltr">Reference</bdi>** و **<bdi dir="ltr">Snapshot</bdi>** را آشکار می‌کند.
 
-<bdi dir="ltr">RACI</bdi> سازمانی مفید است، ولی نمی‌گوید کدام <bdi dir="ltr">Context</bdi> مجاز به <bdi dir="ltr">Transition State</bdi> و انتشار <bdi dir="ltr">Fact</bdi> است. هر دو <bdi dir="ltr">Artifact</bdi> ممکن است لازم باشند.
+ممکن است این دو مدل فعلاً در یک <bdi dir="ltr">Deployable Application</bdi> یا حتی یک <bdi dir="ltr">Module</bdi> آموزشی باشند؛ اما زبان و <bdi dir="ltr">Lifecycle</bdi> آن‌ها باید جدا بماند. این مثال نشان می‌دهد <bdi dir="ltr">Mapping</bdi> میان <bdi dir="ltr">Context</bdi>، <bdi dir="ltr">Module</bdi> و <bdi dir="ltr">Service</bdi> الزاماً یک‌به‌یک نیست.
 
-## 13. روش تکمیل <bdi dir="ltr">Ownership Matrix</bdi>
+## 9. مثال بانکی: <bdi dir="ltr">Customer</bdi> در سه <bdi dir="ltr">Context</bdi>
 
-برای هر ردیف:
+### <bdi dir="ltr">Party</bdi> & <bdi dir="ltr">Customer Context</bdi>
 
-1. <bdi dir="ltr">Semantic</bdi> را آن‌قدر دقیق کن که یک <bdi dir="ltr">Fact</bdi> باشد.
-2. <bdi dir="ltr">Context Authority</bdi> را انتخاب کن.
-3. دیگر <bdi dir="ltr">Context</bdi>ها را <bdi dir="ltr">`Reference/Snapshot/Projection/Cache/Consumer/Not Allowed`</bdi> علامت بزن.
-4. <bdi dir="ltr">Freshness</bdi> و <bdi dir="ltr">History rule</bdi> را ثبت کن.
-5. <bdi dir="ltr">Decision</bdi>های وابسته را جدا بنویس.
-6. <bdi dir="ltr">Reconciliation owner</bdi> و <bdi dir="ltr">Correction path</bdi> را مشخص یا <bdi dir="ltr">Open Question</bdi> کن.
-7. با یک <bdi dir="ltr">Failure</bdi> یا <bdi dir="ltr">Change</bdi> واقعی تصمیم را آزمایش کن.
+- هویت <bdi dir="ltr">Party</bdi>
+- نوع شخص حقیقی/حقوقی
+- اطلاعات پایه
+- وضعیت <bdi dir="ltr">KYC</bdi> و رابطهٔ مشتری
 
-## 14. تمرین هدایت‌شده
+### <bdi dir="ltr">Lending Context</bdi>
 
-برای <bdi dir="ltr">`Product Definition`</bdi> و <bdi dir="ltr">`Executed Agreement Terms`</bdi> دو ردیف مستقل بساز. اگر <bdi dir="ltr">Owner</bdi> و <bdi dir="ltr">Lifecycle</bdi> هر دو را یکی نوشتی، سناریوی انتشار <bdi dir="ltr">ProductVersion</bdi> جدید پس از انعقاد قرارداد را اجرا کن و پاسخ را بازبینی کن.
+- <bdi dir="ltr">Borrower/Obligor role</bdi>
+- <bdi dir="ltr">Credit exposure</bdi>
+- <bdi dir="ltr">Eligibility</bdi> و <bdi dir="ltr">Risk attributes</bdi> موردنیاز تصمیم
+- <bdi dir="ltr">Snapshot</bdi> شواهد تصمیم در زمان اعطا
 
-## 15. تمرین مستقل
+### <bdi dir="ltr">Accounting Context</bdi>
 
-[<bdi dir="ltr">Day 04 Exercise</bdi> — <bdi dir="ltr">Ownership Matrix</bdi>](../exercises/day-04-ownership-matrix.md) را انجام بده. حداقل ۱۲ <bdi dir="ltr">Fact</bdi> و پنج <bdi dir="ltr">Decision</bdi> را تحلیل کن.
+- <bdi dir="ltr">Party/Customer reference</bdi> برای تفصیل، گزارش یا <bdi dir="ltr">Audit</bdi>
+- نه مالک <bdi dir="ltr">KYC</bdi>
+- نه مالک <bdi dir="ltr">Credit Eligibility</bdi>
 
-## 16. معیار ارزیابی
+یک <bdi dir="ltr">`CustomerId`</bdi> مشترک می‌تواند <bdi dir="ltr">Correlation</bdi> ایجاد کند؛ اما مدل <bdi dir="ltr">Customer</bdi> در هر <bdi dir="ltr">Context</bdi> متفاوت است. <bdi dir="ltr">Lending</bdi> نباید اطلاعات هویتی را بدون <bdi dir="ltr">Contract</bdi> تغییر دهد و <bdi dir="ltr">Accounting</bdi> نباید از روی <bdi dir="ltr">Journal</bdi> تصمیم بگیرد <bdi dir="ltr">Customer</bdi> از نظر <bdi dir="ltr">KYC</bdi> معتبر است.
+
+## <bdi dir="ltr">10. Boundary Hypothesis</bdi> چگونه نوشته می‌شود؟
+
+یک <bdi dir="ltr">Boundary</bdi> خوب از روی اسم انتخاب نمی‌شود. قالب:
+
+> به‌دلیل تفاوت در [<bdi dir="ltr">Language/Rules/Lifecycle/Authority/Change</bdi>]، فرض می‌کنیم مدل A و B در دو <bdi dir="ltr">Bounded Context</bdi> قرار گیرند. این فرض با [مصاحبه، مثال، تغییر واقعی، تست] اعتبارسنجی می‌شود. <bdi dir="ltr">Counter-evidence</bdi> فعلی [X] است.
+
+نمونه:
+
+> به‌دلیل تفاوت <bdi dir="ltr">Lifecycle</bdi> میان <bdi dir="ltr">ProductVersion</bdi> و <bdi dir="ltr">ExecutedAgreement</bdi> و نیاز به ثابت‌ماندن شروط قرارداد، فرض می‌کنیم <bdi dir="ltr">Product Catalog</bdi> و <bdi dir="ltr">Agreement Management</bdi> دو <bdi dir="ltr">Context</bdi> متمایزند. این فرض با بررسی سناریوی اصلاح محصول، الحاقیهٔ قرارداد و <bdi dir="ltr">Owner</bdi> تصمیم اعتبارسنجی می‌شود. <bdi dir="ltr">Counter-evidence:</bdi> در ساختار فعلی یک تیم و یک <bdi dir="ltr">Database</bdi> هر دو را نگه می‌دارند.
+
+ساختار فعلی <bdi dir="ltr">Counter-evidence</bdi> یا <bdi dir="ltr">Constraint</bdi> است؛ ولی به‌تنهایی مدل مسئله را رد نمی‌کند.
+
+## 11. خطاهای رایج
+
+### <bdi dir="ltr">Context</bdi> را با <bdi dir="ltr">Namespace</bdi> یکی گرفتن
+
+ساخت <bdi dir="ltr">Package</bdi> یک <bdi dir="ltr">Boundary</bdi> را <bdi dir="ltr">enforce</bdi> می‌کند، اما وجود <bdi dir="ltr">Package</bdi> دلیل دامینی آن نیست.
+
+### <bdi dir="ltr">Context</bdi> را با تیم یکی گرفتن
+
+<bdi dir="ltr">Team Topology</bdi> مهم است، ولی چارت تاریخی نمی‌تواند تعریف مدل را به‌تنهایی تعیین کند.
+
+### یک مدل <bdi dir="ltr">Canonical</bdi> برای کل بانک
+
+<bdi dir="ltr">Canonical Enterprise Model</bdi> اغلب تفاوت معناها را با فیلد <bdi dir="ltr">Optional</bdi> پنهان می‌کند. <bdi dir="ltr">Published Language</bdi> برای <bdi dir="ltr">Integration</bdi> با <bdi dir="ltr">Universal Domain Model</bdi> یکی نیست.
+
+### مرز بر اساس <bdi dir="ltr">CRUD</bdi>
+
+<bdi dir="ltr">`CustomerCRUDContext`</bdi> دربارهٔ رفتار و دانش چیزی نمی‌گوید. <bdi dir="ltr">Use Case</bdi> و <bdi dir="ltr">Rule</bdi> باید مرز را روشن کنند.
+
+### هر تفاوت واژه یک <bdi dir="ltr">Context</bdi>
+
+اختلاف نام ممکن است فقط <bdi dir="ltr">Synonym</bdi> باشد. <bdi dir="ltr">Context</bdi> جدید هزینهٔ ترجمه، <bdi dir="ltr">Governance</bdi> و <bdi dir="ltr">Integration</bdi> دارد و نیازمند چند شاهد است.
+
+### یک <bdi dir="ltr">Context</bdi> برابر یک <bdi dir="ltr">Microservice</bdi>
+
+<bdi dir="ltr">Bounded Context</bdi> یک <bdi dir="ltr">Boundary</bdi> مدل است؛ <bdi dir="ltr">Microservice Boundary</bdi> علاوه بر آن به <bdi dir="ltr">Scale</bdi>، <bdi dir="ltr">Team Autonomy</bdi>، <bdi dir="ltr">Availability</bdi>، <bdi dir="ltr">Data</bdi> و <bdi dir="ltr">Operations</bdi> پاسخ می‌دهد.
+
+## 12. تمرین هدایت‌شده
+
+برای واژهٔ <bdi dir="ltr">`Transaction`</bdi> سه معنا بنویس:
+
+1. <bdi dir="ltr">Deposits</bdi>
+2. <bdi dir="ltr">Payments</bdi>
+3. <bdi dir="ltr">Accounting</bdi>
+
+برای هرکدام پاسخ بده:
+
+- <bdi dir="ltr">Trigger</bdi> چیست؟
+- <bdi dir="ltr">Lifecycle</bdi> چیست؟
+- <bdi dir="ltr">Completion</bdi> چه معنایی دارد؟
+- <bdi dir="ltr">Owner</bdi> وضعیت کیست؟
+
+اگر پاسخ‌ها یکسان نیستند، یک <bdi dir="ltr">Entity</bdi> مشترک <bdi dir="ltr">`Transaction`</bdi> احتمالاً مدل ضعیفی است.
+
+## 13. تمرین مستقل
+
+[<bdi dir="ltr">Day 02 Exercise</bdi> — <bdi dir="ltr">Language Conflicts</bdi>](../exercises/day-02-language-conflicts.md) را انجام بده. حداقل پنج اصطلاح را در دو یا چند <bdi dir="ltr">Context</bdi> تحلیل کن و برای دو <bdi dir="ltr">Boundary Hypothesis</bdi> شواهد موافق و مخالف بنویس.
+
+## 14. معیار ارزیابی
 
 | معیار | امتیاز |
 |---|---:|
-| <bdi dir="ltr">Semantic</bdi> دقیق و یک <bdi dir="ltr">Authority</bdi> | ۳ |
-| تفکیک <bdi dir="ltr">Data/Decision/Process ownership</bdi> | ۲ |
-| استفادهٔ درست از <bdi dir="ltr">Copy types</bdi> | ۲ |
-| <bdi dir="ltr">Freshness/History/Reconciliation</bdi> | ۲ |
-| تشخیص <bdi dir="ltr">Forbidden ownership</bdi> | ۱ |
+| تعریف دقیق <bdi dir="ltr">Bounded Context</bdi> | ۲ |
+| تشخیص معنای <bdi dir="ltr">Contextual</bdi> واژه‌ها | ۲ |
+| تفکیک <bdi dir="ltr">Context</bdi> از <bdi dir="ltr">Domain/System/Module/Service</bdi> | ۲ |
+| <bdi dir="ltr">Boundary Hypothesis</bdi> با چند <bdi dir="ltr">Force</bdi> | ۳ |
+| ثبت <bdi dir="ltr">Counter-evidence/Open Question</bdi> | ۱ |
 | **جمع** | **۱۰** |
 
-حد عبور: ۷ از ۱۰. وجود <bdi dir="ltr">Authority</bdi> مشترک برای یک <bdi dir="ltr">Fact</bdi> با معنای یکسان <bdi dir="ltr">Critical Error</bdi> است.
+حد عبور: ۷ از ۱۰.
 
-## 17. آزمون خروج
+## 15. آزمون خروج
 
-درس را ببند و [<bdi dir="ltr">Day 04 Exit Ticket</bdi>](../quizzes/day-04-exit-ticket.md) را پاسخ بده.
+درس را ببند و [<bdi dir="ltr">Day 02 Exit Ticket</bdi>](../quizzes/day-02-exit-ticket.md) را پاسخ بده.
 
-## 18. منابع
+## 16. منبع اصلی
 
-- [<bdi dir="ltr">DDD Reference</bdi> — <bdi dir="ltr">Bounded Context and Context Map</bdi>](https://www.domainlanguage.com/wp-content/uploads/2016/05/DDD_Reference_2015-03.pdf)
-- [<bdi dir="ltr">BIAN Service Landscape 14.0</bdi>](https://bian.org/deliverables/service-landscape/) برای <bdi dir="ltr">Gap Check</bdi> مسئولیت‌ها، نه واگذاری <bdi dir="ltr">Ownership</bdi> محلی
+- [<bdi dir="ltr">Domain-Driven Design Reference</bdi> — <bdi dir="ltr">Bounded Context and Ubiquitous Language</bdi>](https://www.domainlanguage.com/wp-content/uploads/2016/05/DDD_Reference_2015-03.pdf)
 
-الگوی <bdi dir="ltr">Copy</bdi> و ماتریس <bdi dir="ltr">Authority</bdi> در این درس یک <bdi dir="ltr">Synthesis</bdi> معماری برای <bdi dir="ltr">Lab</bdi> است و باید با مقررات، خبرگان و <bdi dir="ltr">Operating Model</bdi> بانک اعتبارسنجی شود.
+تعریف‌ها از مرجع <bdi dir="ltr">DDD</bdi> گرفته شده‌اند؛ مثال‌ها و <bdi dir="ltr">Boundary</bdi>های بانکی این درس، مدل آموزشی و <bdi dir="ltr">Hypothesis</bdi> هستند.
 
 </div>
