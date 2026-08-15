@@ -47,43 +47,43 @@
     <rect x="1390" y="270" width="300" height="52" rx="26" fill="#7c3aed"/>
     <text x="1540" y="305" class="white" font-size="19" font-weight="800" text-anchor="middle">روز اول · پنجاه دقیقه</text>
     <text x="1660" y="357" class="ink" font-size="29" font-weight="800" text-anchor="end">دامین و زیردامین</text>
-    <text x="1660" y="395" class="ink" font-size="20" text-anchor="end">Core، Supporting و Generic با مثال بانکی</text>
+    <text x="1660" y="395" class="ink" font-size="20" text-anchor="end">طبقه‌بندی راهبردی در سه سطح با مثال بانکی</text>
     <text x="1010" y="416" fill="#7c3aed" font-size="18" font-weight="700">EVIDENCE: SUBDOMAIN MATRIX</text>
 
     <rect x="540" y="270" width="300" height="52" rx="26" fill="#7c3aed"/>
     <text x="690" y="305" class="white" font-size="18" font-weight="800" text-anchor="middle">روز دوم · چهل‌وپنج دقیقه</text>
     <text x="810" y="357" class="ink" font-size="29" font-weight="800" text-anchor="end">مدل و زبان در مرز</text>
-    <text x="810" y="395" class="ink" font-size="20" text-anchor="end">Bounded Context و Ubiquitous Language</text>
+    <text x="810" y="395" class="ink" font-size="20" text-anchor="end">مرز اعتبار مدل و زبان مشترک دامنه</text>
     <text x="160" y="416" fill="#7c3aed" font-size="18" font-weight="700">EVIDENCE: LANGUAGE CONFLICTS</text>
 
     <rect x="1390" y="490" width="300" height="52" rx="26" fill="#7c3aed"/>
     <text x="1540" y="525" class="white" font-size="19" font-weight="800" text-anchor="middle">روز سوم · پنجاه دقیقه</text>
     <text x="1660" y="577" class="ink" font-size="29" font-weight="800" text-anchor="end">رابطهٔ مرزهای دامینی</text>
-    <text x="1660" y="615" class="ink" font-size="20" text-anchor="end">Customer/Supplier، Conformist، ACL، Published Language</text>
+    <text x="1660" y="615" class="ink" font-size="20" text-anchor="end">چهار الگوی اصلی رابطه، قدرت و ترجمه</text>
     <text x="1010" y="636" fill="#7c3aed" font-size="18" font-weight="700">EVIDENCE: CONTEXT MAP</text>
 
     <rect x="540" y="490" width="300" height="52" rx="26" fill="#7c3aed"/>
     <text x="690" y="525" class="white" font-size="18" font-weight="800" text-anchor="middle">روز چهارم · پنجاه دقیقه</text>
     <text x="810" y="577" class="ink" font-size="29" font-weight="800" text-anchor="end">مالکیت داده و تصمیم</text>
-    <text x="810" y="615" class="ink" font-size="20" text-anchor="end">Source of Truth برای شش دامین</text>
+    <text x="810" y="615" class="ink" font-size="20" text-anchor="end">مرجع معتبر داده و تصمیم برای شش دامنه</text>
     <text x="160" y="636" fill="#7c3aed" font-size="18" font-weight="700">EVIDENCE: OWNERSHIP MATRIX V1</text>
 
     <rect x="1390" y="710" width="300" height="52" rx="26" fill="#7c3aed"/>
     <text x="1540" y="745" class="white" font-size="18" font-weight="800" text-anchor="middle">روز پنجم · صد دقیقه</text>
     <text x="1660" y="797" class="ink" font-size="29" font-weight="800" text-anchor="end">شش ماژول منطقی</text>
-    <text x="1660" y="835" class="ink" font-size="20" text-anchor="end">Spring Modulith + API/Internal + Dependency مجاز</text>
+    <text x="1660" y="835" class="ink" font-size="20" text-anchor="end">مرز عمومی و داخلی، ماژول و وابستگی مجاز</text>
     <text x="1010" y="856" fill="#7c3aed" font-size="18" font-weight="700">EVIDENCE: MODULE SKELETON</text>
 
     <rect x="540" y="710" width="300" height="52" rx="26" fill="#7c3aed"/>
     <text x="690" y="745" class="white" font-size="17" font-weight="800" text-anchor="middle">روز ششم · چهل‌وپنج دقیقه</text>
     <text x="810" y="797" class="ink" font-size="29" font-weight="800" text-anchor="end">آزمون سلامت معماری</text>
-    <text x="810" y="835" class="ink" font-size="20" text-anchor="end">Cycle، Internal Access و Module Verification</text>
+    <text x="810" y="835" class="ink" font-size="20" text-anchor="end">چرخه، دسترسی داخلی و راستی‌آزمایی ماژول</text>
     <text x="160" y="856" fill="#7c3aed" font-size="18" font-weight="700">EVIDENCE: ARCHITECTURE TEST</text>
 
     <rect x="870" y="930" width="350" height="52" rx="26" fill="#7c3aed"/>
     <text x="1045" y="965" class="white" font-size="18" font-weight="800" text-anchor="middle">روز هفتم · بیست دقیقه</text>
     <text x="1235" y="1017" class="ink" font-size="29" font-weight="800" text-anchor="end">دروازهٔ اسپرینت اول</text>
-    <text x="1235" y="1055" class="ink" font-size="20" text-anchor="end">دفاع مسدودی قضایی از Capability تا Event</text>
+    <text x="1235" y="1055" class="ink" font-size="20" text-anchor="end">دفاع مسدودی قضایی، از توانمندی تا رویداد</text>
     <text x="585" y="1076" fill="#7c3aed" font-size="18" font-weight="700">EVIDENCE: GATE RECORD</text>
   </g>
 

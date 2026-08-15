@@ -21,7 +21,8 @@ mvn spring-boot:run
 - Application skeleton: آماده
 - Context smoke test: آماده
 - Value Objectها: تمرین Day 06
-- شش Application Module: تمرین Week 02 / Day 05
+- شش Application Module: [تمرین Week 02 / Day 05](../../sprints/01-bank-map-boundaries/week-02-strategic-ddd-ownership/exercises/day-05-module-skeleton.md)
+- Module Verification: [تمرین Week 02 / Day 06](../../sprints/01-bank-map-boundaries/week-02-strategic-ddd-ownership/exercises/day-06-module-verification.md)
 
 ## قواعد
 
