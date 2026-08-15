@@ -74,6 +74,15 @@
 6. Refactor و ثبت تصمیم
 7. دفاع کوتاه و گزارش
 
+### مسیر توسعه‌یافته از Week 02
+
+هفت نقطهٔ کنترل و ۳۶۰ دقیقهٔ بالا بدون کاهش حفظ می‌شوند. برای تقویت هم‌زمان مهارت کدنویسی و شناخت صنعت، دو جلسه به انتهای هر هفته افزوده شده است:
+
+8. **Code Craft Lab — ۱۰۵ دقیقه:** Clean Code، Refactoring، Design Pattern، تست و Code Review روی همان مسئلهٔ بانکی
+9. **Core Banking Case File — ۴۵ دقیقه:** داستان مستند یک Core Banking یا سامانهٔ بانکی واقعی از تولد تا معماری، خطاها و دستاوردهای جاری
+
+نسخهٔ کامل برنامه از Week 02 برابر ۵۱۰ دقیقه است. قرارداد، Definition of Done و نقشهٔ موضوعات در [الحاقیهٔ ثابت هفتگی](docs/course/expanded-weekly-tracks.md) آمده است.
+
 قواعد مشارکت، نام Branch و Commit و Definition of Done در [CONTRIBUTING.md](CONTRIBUTING.md) ثبت شده‌اند.
 
 ## خط پایهٔ فنی

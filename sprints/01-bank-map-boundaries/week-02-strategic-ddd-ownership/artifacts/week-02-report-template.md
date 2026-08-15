@@ -18,6 +18,9 @@
 | Six Module skeleton |  |  |  |
 | Architecture verification |  |  |  |
 | Sprint Gate |  |  |  |
+| Code Craft refactoring lab |  |  |  |
+| Pattern Decision + code review |  |  |  |
+| Monzo case-file architecture review |  |  |  |
 
 ## Model changes
 
@@ -33,6 +36,26 @@
 - negative violation tested:
 - evidence of failure:
 - evidence after repair:
+
+## Code Craft extension
+
+- baseline characterization result:
+- smell with highest change risk:
+- Strategy/Factory decision:
+- alternative considered:
+- new edge test:
+- final `mvn verify`:
+- complexity/debt added:
+
+## Core Banking case-file extension
+
+- case: Monzo
+- most important documented failure:
+- architecture fact:
+- architecture inference:
+- important unknown:
+- decision not to copy:
+- lesson applied to this Lab:
 
 ## Open questions carried forward
 

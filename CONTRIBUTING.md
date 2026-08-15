@@ -34,6 +34,8 @@ Backlog → Ready → Doing → Review → Gate → Done
 - تصمیم غیر بدیهی در ADR ثبت شود.
 - گزارش هفته تکمیل شود.
 - دفاع ده‌دقیقه‌ای قابل ارائه باشد.
+- از Week 02، Code Craft Lab شامل Baseline، Characterization Test، Pattern Decision، Edge Test و Self-review تکمیل شود.
+- از Week 02، Core Banking Case File با تفکیک Fact/Inference/Unknown و یک تصمیم قابل انتقال مرور شود.
 
 مورد نامرتبط با عبارت Not Applicable و دلیل ثبت می‌شود؛ خالی نمی‌ماند.
 

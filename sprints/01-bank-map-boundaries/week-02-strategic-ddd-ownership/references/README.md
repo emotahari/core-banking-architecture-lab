@@ -93,6 +93,20 @@ BIAN 14.0 در فوریهٔ ۲۰۲۶ منتشر شده است. در این هف�
 | ۵ | Spring Modulith Fundamentals | Module/API/Internal/Dependency | ۱۵ دقیقه |
 | ۶ | Verification + Testing | `verify()` و Module Test | ۱۸ دقیقه |
 | ۷ | BIAN + Artifactهای خودت | Gap Check نهایی | ۵ دقیقه |
+| ۸ | Fowler Refactoring catalog + درس فارسی | Refactor، Strategy decision و Tell-Don’t-Ask | ۱۰ دقیقه داخل بودجهٔ افزوده |
+| ۹ | منابع رسمی Monzo + FCA داخل Case File | Timeline، معماری جاری، شکست و درس انتقالی | لینک‌ها داخل پرونده |
+
+## منابع افزودهٔ Code Craft
+
+- [Catalog of Refactorings](https://refactoring.com/catalog/) — مرجع حرکت‌های کوچک و نام‌گذاری Refactorها
+- [Replace Conditional with Polymorphism](https://refactoring.com/catalog/replaceConditionalWithPolymorphism.html) — گزینهٔ مشروط برای Variation واقعی
+- [Tell, Don’t Ask](https://martinfowler.com/bliki/TellDontAsk.html) — هم اصل و هم هشدار دربارهٔ استفادهٔ افراطی
+- *Design Patterns* از Gamma, Helm, Johnson و Vlissides — تعریف Strategy/Factory
+- *Effective Java, 3rd Edition* از Joshua Bloch — Type safety، Immutability و API design
+
+## منابع افزودهٔ پروندهٔ Monzo
+
+Source register کامل و تاریخ کنترل در [پروندهٔ Week 02](../case-studies/week-02-monzo-fa.md) آمده است. برای ادعای جاری، نوشتهٔ ۲۰۱۶ را به‌تنهایی منبع Technology stack سال ۲۰۲۶ قرار نده.
 
 ## قواعد استناد در Artifactها
 
