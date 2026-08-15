@@ -1,12 +1,15 @@
-# Day 01 Submission — Architecture Baseline
+<!-- bidi: rtl; code: ltr -->
+<div dir="rtl" align="right">
 
-- Status: Not submitted
-- Started at:
-- Time spent:
+# <bdi dir="ltr">Day 01 Submission</bdi> — <bdi dir="ltr">Architecture Baseline</bdi>
+
+- <bdi dir="ltr">Status: Not submitted</bdi>
+- <bdi dir="ltr">Started at:</bdi>
+- <bdi dir="ltr">Time spent:</bdi>
 
 ## پاسخ خام؛ قبل از درس
 
-### 1. Capabilityها
+### <bdi dir="ltr">1. Capability</bdi>ها
 
 امکان تعریف مشتری جدید و واکشی اطلاعات مشتری فراهم باشد سامانه تسهیلات امکان تعریف محصول مرابحه را داشته باشد، ورک فلو تصویب تا دریافت اقساط را پشتیبانی کند، امکان تولید قرارداد برای تسیلات با مشتری فراهم باشد، امکان انتقال وجه از سرفصل به حساب سپرده قابل انجام و رهگیری باشد، بتواند اسناد حسابداری اعطا را ثبت کند.
 
@@ -26,7 +29,7 @@
 
 درخواست انجام تراکنش انجام تراکنش و متاثر کردن مانده ثبت اسناد
 
-### 6. API/Command و Event
+### <bdi dir="ltr">6. API/Command</bdi> و <bdi dir="ltr">Event</bdi>
 
 درخواست تولید قرارداد و ثبت اسناد حسابداری ایونت، این سوال رو درست متوجه نشدم
 
@@ -34,19 +37,31 @@
 
 امکان استعلام واریز بر اساس کد یکتا و ادامه فرایند بر اساس نتیجه استعلام
 
-### 8. زمان و نحوهٔ درگیری Accounting
+### 8. زمان و نحوهٔ درگیری <bdi dir="ltr">Accounting</bdi>
 
 ارکسترتور انجام تراکنش بعد انجام انتقال وجه به سپرده
 
-### 9. Diagram
+### <bdi dir="ltr">9. Diagram</bdi>
+
+
+</div>
+
+<div dir="ltr" align="left">
 
 ~~~mermaid
 تعریف محصول تسهیلات ایجاد قرارداد اعطا وام ثبت اسناد حسابداری
+~~~
+
+</div>
+
+<div dir="rtl" align="right">
+
+
 ### 10. فرض‌های پنهان
 
-1. TODO
-2. TODO
-3. TODO
+1. <bdi dir="ltr">TODO</bdi>
+2. <bdi dir="ltr">TODO</bdi>
+3. <bdi dir="ltr">TODO</bdi>
 
 ---
 
@@ -58,16 +73,18 @@
 
 توانمندی ها رو به چیزی شبیه توانایی مدیریت تسهیلات و  توانایی مدیریت سپرده تغییر میدم، اجزای منطقس میشه تسهیلات و سپرده
 
-### زنجیرهٔ Traceability
+### زنجیرهٔ <bdi dir="ltr">Traceability</bdi>
 
-| Capability | Domain/Subdomain | Bounded Context | Module/Service Candidate | Use Case | Command/Query | API/Event |
+| <bdi dir="ltr">Capability</bdi> | <bdi dir="ltr">Domain/Subdomain</bdi> | <bdi dir="ltr">Bounded Context</bdi> | <bdi dir="ltr">Module/Service Candidate</bdi> | <bdi dir="ltr">Use Case</bdi> | <bdi dir="ltr">Command/Query</bdi> | <bdi dir="ltr">API/Event</bdi> |
 |---|---|---|---|---|---|---|
 | توانایی مدیریت تسهیلات | تسهیلات | به روزرسانی مانده تسهیلات | سرویس  | سرویس مسدودسازی مانده سپردخ | درخواست تغییر وضعیت مانده سپرده | مانده سپرده مسدود گردید |
 
-### کدام بخش هنوز Hypothesis است؟
+### کدام بخش هنوز <bdi dir="ltr">Hypothesis</bdi> است؟
 
-TODO
+<bdi dir="ltr">TODO</bdi>
 
 ### پرسش‌هایی که باید در هفته‌های بعد پاسخ داده شوند
 
-TODO
+<bdi dir="ltr">TODO</bdi>
+
+</div>

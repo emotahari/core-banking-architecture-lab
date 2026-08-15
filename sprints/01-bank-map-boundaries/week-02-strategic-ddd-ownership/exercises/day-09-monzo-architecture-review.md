@@ -1,57 +1,62 @@
-# Day 09 Exercise — Monzo Architecture Review
+<!-- bidi: rtl; code: ltr -->
+<div dir="rtl" align="right">
 
-- Timebox: 15 minutes after reading the case file
-- Output: one-page review in Week 02 Workbook
-- Rule: فقط از شواهد پرونده استفاده کن؛ حدس را با `INFERENCE` یا `UNKNOWN` برچسب بزن.
+# <bdi dir="ltr">Day 09 Exercise</bdi> — <bdi dir="ltr">Monzo Architecture Review</bdi>
 
-## Part 1 — Five-point timeline
+- <bdi dir="ltr">Timebox: 15 minutes after reading the case file</bdi>
+- <bdi dir="ltr">Output: one-page review in Week 02 Workbook</bdi>
+- <bdi dir="ltr">Rule:</bdi> فقط از شواهد پرونده استفاده کن؛ حدس را با <bdi dir="ltr">`INFERENCE`</bdi> یا <bdi dir="ltr">`UNKNOWN`</bdi> برچسب بزن.
 
-پنج نقطه‌ای را انتخاب کن که تغییر Capability و Architecture را هم‌زمان نشان می‌دهند:
+## <bdi dir="ltr">Part 1</bdi> — <bdi dir="ltr">Five-point timeline</bdi>
 
-| Date/phase | Business/domain change | Architecture/technology response | New risk |
+پنج نقطه‌ای را انتخاب کن که تغییر <bdi dir="ltr">Capability</bdi> و <bdi dir="ltr">Architecture</bdi> را هم‌زمان نشان می‌دهند:
+
+| <bdi dir="ltr">Date/phase</bdi> | <bdi dir="ltr">Business/domain change</bdi> | <bdi dir="ltr">Architecture/technology response</bdi> | <bdi dir="ltr">New risk</bdi> |
 |---|---|---|---|
 |  |  |  |  |
 
-## Part 2 — Fact / Inference / Unknown
+## <bdi dir="ltr">Part 2</bdi> — <bdi dir="ltr">Fact</bdi> / <bdi dir="ltr">Inference</bdi> / <bdi dir="ltr">Unknown</bdi>
 
 شش ادعا بنویس؛ حداقل دو مورد از هر نوع:
 
-| Claim | FACT / INFERENCE / UNKNOWN | Evidence or reason |
+| <bdi dir="ltr">Claim</bdi> | <bdi dir="ltr">FACT</bdi> / <bdi dir="ltr">INFERENCE</bdi> / <bdi dir="ltr">UNKNOWN</bdi> | <bdi dir="ltr">Evidence or reason</bdi> |
 |---|---|---|
 |  |  |  |
 
-حداقل یکی از ادعاها باید دربارهٔ Domain/Bounded Context و یکی دربارهٔ Technology stack فعلی باشد.
+حداقل یکی از ادعاها باید دربارهٔ <bdi dir="ltr">Domain/Bounded Context</bdi> و یکی دربارهٔ <bdi dir="ltr">Technology stack</bdi> فعلی باشد.
 
-## Part 3 — Ownership analysis
+## <bdi dir="ltr">Part 3</bdi> — <bdi dir="ltr">Ownership analysis</bdi>
 
-برای Failure کنترل‌های Financial Crime پاسخ بده:
+برای <bdi dir="ltr">Failure</bdi> کنترل‌های <bdi dir="ltr">Financial Crime</bdi> پاسخ بده:
 
-1. کدام Business decisionها Owner لازم داشتند؟
-2. کدام داده‌ها برای Onboarding/Risk/Monitoring Authority لازم داشتند؟
-3. چرا یک Microservice جدید به‌تنهایی راه‌حل نبود؟
-4. چه Fitness Function یا Control evidence می‌توانست هشدار زودتری بدهد؟
+1. کدام <bdi dir="ltr">Business decision</bdi>ها <bdi dir="ltr">Owner</bdi> لازم داشتند؟
+2. کدام داده‌ها برای <bdi dir="ltr">Onboarding/Risk/Monitoring Authority</bdi> لازم داشتند؟
+3. چرا یک <bdi dir="ltr">Microservice</bdi> جدید به‌تنهایی راه‌حل نبود؟
+4. چه <bdi dir="ltr">Fitness Function</bdi> یا <bdi dir="ltr">Control evidence</bdi> می‌توانست هشدار زودتری بدهد؟
 
-## Part 4 — ADR-lite
+## <bdi dir="ltr">Part 4</bdi> — <bdi dir="ltr">ADR-lite</bdi>
 
-### Decision question
+### <bdi dir="ltr">Decision question</bdi>
 
-آیا `banking-modulith` ما باید با استناد به Monzo از همین حالا Microservice-first شود؟
+آیا <bdi dir="ltr">`banking-modulith`</bdi> ما باید با استناد به <bdi dir="ltr">Monzo</bdi> از همین حالا <bdi dir="ltr">Microservice-first</bdi> شود؟
 
-### Required format
+### <bdi dir="ltr">Required format</bdi>
 
-- Context:
-- Forces:
-- Option A — retain Modular Monolith:
-- Option B — Microservice-first:
-- Decision:
-- Consequences:
-- Verification:
-- Revisit trigger:
+- <bdi dir="ltr">Context:</bdi>
+- <bdi dir="ltr">Forces:</bdi>
+- <bdi dir="ltr">Option A</bdi> — <bdi dir="ltr">retain Modular Monolith:</bdi>
+- <bdi dir="ltr">Option B</bdi> — <bdi dir="ltr">Microservice-first:</bdi>
+- <bdi dir="ltr">Decision:</bdi>
+- <bdi dir="ltr">Consequences:</bdi>
+- <bdi dir="ltr">Verification:</bdi>
+- <bdi dir="ltr">Revisit trigger:</bdi>
 
-## Acceptance criteria
+## <bdi dir="ltr">Acceptance criteria</bdi>
 
-- Timeline فقط Feature list نیست و Risk را نشان می‌دهد.
-- Fact و Inference مخلوط نشده‌اند.
-- Architecture جاری از Architecture تاریخی تفکیک شده است.
-- FCA finding به «یک Bug» تقلیل داده نشده است.
-- ADR-lite از Monzo درس می‌گیرد، اما Stack و Scale آن را Copy نمی‌کند.
+- <bdi dir="ltr">Timeline</bdi> فقط <bdi dir="ltr">Feature list</bdi> نیست و <bdi dir="ltr">Risk</bdi> را نشان می‌دهد.
+- <bdi dir="ltr">Fact</bdi> و <bdi dir="ltr">Inference</bdi> مخلوط نشده‌اند.
+- <bdi dir="ltr">Architecture</bdi> جاری از <bdi dir="ltr">Architecture</bdi> تاریخی تفکیک شده است.
+- <bdi dir="ltr">FCA finding</bdi> به «یک <bdi dir="ltr">Bug</bdi>» تقلیل داده نشده است.
+- <bdi dir="ltr">ADR-lite</bdi> از <bdi dir="ltr">Monzo</bdi> درس می‌گیرد، اما <bdi dir="ltr">Stack</bdi> و <bdi dir="ltr">Scale</bdi> آن را <bdi dir="ltr">Copy</bdi> نمی‌کند.
+
+</div>

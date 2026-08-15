@@ -1,18 +1,23 @@
-# Sprint 06 — Saga، شکست و Observability
+<!-- bidi: rtl; code: ltr -->
+<div dir="rtl" align="right">
 
-- Weeks: 11–12
-- Status: Backlog
+# <bdi dir="ltr">Sprint 06</bdi> — <bdi dir="ltr">Saga</bdi>، شکست و <bdi dir="ltr">Observability</bdi>
 
-## Week 11
+- <bdi dir="ltr">Weeks: 11</bdi>–12
+- <bdi dir="ltr">Status: Backlog</bdi>
 
-Process Manager، Saga، Orchestration/Choreography، State Machine، Timeout و Business Correlation.
+## <bdi dir="ltr">Week 11</bdi>
 
-## Week 12
+<bdi dir="ltr">Process Manager</bdi>، <bdi dir="ltr">Saga</bdi>، <bdi dir="ltr">Orchestration/Choreography</bdi>، <bdi dir="ltr">State Machine</bdi>، <bdi dir="ltr">Timeout</bdi> و <bdi dir="ltr">Business Correlation.</bdi>
 
-Rollback، Reversal، Compensation، Retry، DLQ، Reconciliation، Trace، Metric و Log Correlation.
+## <bdi dir="ltr">Week 12</bdi>
 
-## Gate
+<bdi dir="ltr">Rollback</bdi>، <bdi dir="ltr">Reversal</bdi>، <bdi dir="ltr">Compensation</bdi>، <bdi dir="ltr">Retry</bdi>، <bdi dir="ltr">DLQ</bdi>، <bdi dir="ltr">Reconciliation</bdi>، <bdi dir="ltr">Trace</bdi>، <bdi dir="ltr">Metric</bdi> و <bdi dir="ltr">Log Correlation.</bdi>
 
-جریان اعطا بدون Global Transaction و بدون فرض Exactly-once باید در شکست‌های واقعی ایمن بماند.
+## <bdi dir="ltr">Gate</bdi>
 
-محتوا و اینفوگرافیک روزانه هنگام ورود این Sprint تولید و Version می‌شوند.
+جریان اعطا بدون <bdi dir="ltr">Global Transaction</bdi> و بدون فرض <bdi dir="ltr">Exactly-once</bdi> باید در شکست‌های واقعی ایمن بماند.
+
+محتوا و اینفوگرافیک روزانه هنگام ورود این <bdi dir="ltr">Sprint</bdi> تولید و <bdi dir="ltr">Version</bdi> می‌شوند.
+
+</div>

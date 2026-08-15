@@ -8,6 +8,15 @@ permissions:
   contents: read
 
 jobs:
+  markdown-bidi:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+      - name: Verify Persian Markdown direction
+        run: python3 scripts/markdown_bidi.py --check
+
   banking-modulith:
     runs-on: ubuntu-latest
     timeout-minutes: 15

@@ -1,12 +1,15 @@
-# Day 02 Artifact — Distinction Matrix
+<!-- bidi: rtl; code: ltr -->
+<div dir="rtl" align="right">
 
-- Version: 0.1
-- Status: Working
-- Scope: ۱۵ عبارت بانکی Week 01
+# <bdi dir="ltr">Day 02 Artifact</bdi> — <bdi dir="ltr">Distinction Matrix</bdi>
 
-## Matrix
+- <bdi dir="ltr">Version: 0.1</bdi>
+- <bdi dir="ltr">Status: Working</bdi>
+- <bdi dir="ltr">Scope:</bdi> ۱۵ عبارت بانکی <bdi dir="ltr">Week 01</bdi>
 
-| # | Phrase | Primary type | Why | Alternative interpretation | Better name/next question |
+## <bdi dir="ltr">Matrix</bdi>
+
+| # | <bdi dir="ltr">Phrase</bdi> | <bdi dir="ltr">Primary type</bdi> | <bdi dir="ltr">Why</bdi> | <bdi dir="ltr">Alternative interpretation</bdi> | <bdi dir="ltr">Better name/next question</bdi> |
 |---:|---|---|---|---|---|
 | 1 |  |  |  |  |  |
 | 2 |  |  |  |  |  |
@@ -24,56 +27,58 @@
 | 14 |  |  |  |  |  |
 | 15 |  |  |  |  |  |
 
-## Capability cards
+## <bdi dir="ltr">Capability cards</bdi>
 
-### Capability 1
+### <bdi dir="ltr">Capability 1</bdi>
 
-- Name:
-- Definition:
-- Outcome:
-- Includes:
-- Excludes:
-- Proposed business owner:
-- KPI candidate:
-- Current systems as evidence:
-- Open question:
+- <bdi dir="ltr">Name:</bdi>
+- <bdi dir="ltr">Definition:</bdi>
+- <bdi dir="ltr">Outcome:</bdi>
+- <bdi dir="ltr">Includes:</bdi>
+- <bdi dir="ltr">Excludes:</bdi>
+- <bdi dir="ltr">Proposed business owner:</bdi>
+- <bdi dir="ltr">KPI candidate:</bdi>
+- <bdi dir="ltr">Current systems as evidence:</bdi>
+- <bdi dir="ltr">Open question:</bdi>
 
-### Capability 2
+### <bdi dir="ltr">Capability 2</bdi>
 
-- Name:
-- Definition:
-- Outcome:
-- Includes:
-- Excludes:
-- Proposed business owner:
-- KPI candidate:
-- Current systems as evidence:
-- Open question:
+- <bdi dir="ltr">Name:</bdi>
+- <bdi dir="ltr">Definition:</bdi>
+- <bdi dir="ltr">Outcome:</bdi>
+- <bdi dir="ltr">Includes:</bdi>
+- <bdi dir="ltr">Excludes:</bdi>
+- <bdi dir="ltr">Proposed business owner:</bdi>
+- <bdi dir="ltr">KPI candidate:</bdi>
+- <bdi dir="ltr">Current systems as evidence:</bdi>
+- <bdi dir="ltr">Open question:</bdi>
 
-### Capability 3
+### <bdi dir="ltr">Capability 3</bdi>
 
-- Name:
-- Definition:
-- Outcome:
-- Includes:
-- Excludes:
-- Proposed business owner:
-- KPI candidate:
-- Current systems as evidence:
-- Open question:
+- <bdi dir="ltr">Name:</bdi>
+- <bdi dir="ltr">Definition:</bdi>
+- <bdi dir="ltr">Outcome:</bdi>
+- <bdi dir="ltr">Includes:</bdi>
+- <bdi dir="ltr">Excludes:</bdi>
+- <bdi dir="ltr">Proposed business owner:</bdi>
+- <bdi dir="ltr">KPI candidate:</bdi>
+- <bdi dir="ltr">Current systems as evidence:</bdi>
+- <bdi dir="ltr">Open question:</bdi>
 
-## Reverse trace
+## <bdi dir="ltr">Reverse trace</bdi>
 
-| Technical/current element | Use case/process | Parent capability | Evidence |
+| <bdi dir="ltr">Technical/current element</bdi> | <bdi dir="ltr">Use case/process</bdi> | <bdi dir="ltr">Parent capability</bdi> | <bdi dir="ltr">Evidence</bdi> |
 |---|---|---|---|
 |  |  |  |  |
 |  |  |  |  |
 |  |  |  |  |
 
-## Review
+## <bdi dir="ltr">Review</bdi>
 
-- Most ambiguous phrase:
-- Most important correction:
-- Remaining disagreement:
-- Reviewer/status/date:
+- <bdi dir="ltr">Most ambiguous phrase:</bdi>
+- <bdi dir="ltr">Most important correction:</bdi>
+- <bdi dir="ltr">Remaining disagreement:</bdi>
+- <bdi dir="ltr">Reviewer/status/date:</bdi>
 
+
+</div>

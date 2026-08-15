@@ -1,18 +1,23 @@
-# Sprint 05 — Event، Kafka و Outbox/Inbox
+<!-- bidi: rtl; code: ltr -->
+<div dir="rtl" align="right">
 
-- Weeks: 09–10
-- Status: Backlog
+# <bdi dir="ltr">Sprint 05</bdi> — <bdi dir="ltr">Event</bdi>، <bdi dir="ltr">Kafka</bdi> و <bdi dir="ltr">Outbox/Inbox</bdi>
 
-## Week 09
+- <bdi dir="ltr">Weeks: 09</bdi>–10
+- <bdi dir="ltr">Status: Backlog</bdi>
 
-Command، Domain Event، Integration Event، Event Envelope، Semantic Contract و Evolution.
+## <bdi dir="ltr">Week 09</bdi>
 
-## Week 10
+<bdi dir="ltr">Command</bdi>، <bdi dir="ltr">Domain Event</bdi>، <bdi dir="ltr">Integration Event</bdi>، <bdi dir="ltr">Event Envelope</bdi>، <bdi dir="ltr">Semantic Contract</bdi> و <bdi dir="ltr">Evolution.</bdi>
 
-Kafka، Partition Key، Ordering، At-least-once، Outbox، Inbox، Idempotency و Replay.
+## <bdi dir="ltr">Week 10</bdi>
 
-## Gate
+<bdi dir="ltr">Kafka</bdi>، <bdi dir="ltr">Partition Key</bdi>، <bdi dir="ltr">Ordering</bdi>، <bdi dir="ltr">At-least-once</bdi>، <bdi dir="ltr">Outbox</bdi>، <bdi dir="ltr">Inbox</bdi>، <bdi dir="ltr">Idempotency</bdi> و <bdi dir="ltr">Replay.</bdi>
 
-Duplicate مالی باید صفر باشد و Ordering فقط در محدوده‌ای تضمین شود که Business Key آن را لازم می‌کند.
+## <bdi dir="ltr">Gate</bdi>
 
-محتوا و اینفوگرافیک روزانه هنگام ورود این Sprint تولید و Version می‌شوند.
+<bdi dir="ltr">Duplicate</bdi> مالی باید صفر باشد و <bdi dir="ltr">Ordering</bdi> فقط در محدوده‌ای تضمین شود که <bdi dir="ltr">Business Key</bdi> آن را لازم می‌کند.
+
+محتوا و اینفوگرافیک روزانه هنگام ورود این <bdi dir="ltr">Sprint</bdi> تولید و <bdi dir="ltr">Version</bdi> می‌شوند.
+
+</div>

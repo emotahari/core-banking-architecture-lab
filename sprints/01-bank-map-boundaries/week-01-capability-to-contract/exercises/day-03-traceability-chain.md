@@ -1,14 +1,22 @@
-# Day 03 Exercise — Two Traceability Chains
+<!-- bidi: rtl; code: ltr -->
+<div dir="rtl" align="right">
 
-- Timebox: 21 minutes
-- Output: دو نسخه از [Traceability Chain Template](../artifacts/traceability-chain-template.md)
-- Scenarios: مسدودی قضایی سپرده و اعطای تسهیلات
+# <bdi dir="ltr">Day 03 Exercise</bdi> — <bdi dir="ltr">Two Traceability Chains</bdi>
 
-## Chain A — مسدودی قضایی
+- <bdi dir="ltr">Timebox: 21 minutes</bdi>
+- <bdi dir="ltr">Output:</bdi> دو نسخه از [<bdi dir="ltr">Traceability Chain Template</bdi>](../artifacts/traceability-chain-template.md)
+- <bdi dir="ltr">Scenarios:</bdi> مسدودی قضایی سپرده و اعطای تسهیلات
 
-فرض کن حکمی معتبر برای Hold مبلغ ۵۰٬۰۰۰٬۰۰۰ ریال روی یک سپرده دریافت شده است. مشتری ممکن است موجودی دفتری ۸۰٬۰۰۰٬۰۰۰ ریال داشته باشد، اما فقط مبلغ غیرمسدود قابل برداشت است.
+## <bdi dir="ltr">Chain A</bdi> — مسدودی قضایی
+
+فرض کن حکمی معتبر برای <bdi dir="ltr">Hold</bdi> مبلغ ۵۰٬۰۰۰٬۰۰۰ ریال روی یک سپرده دریافت شده است. مشتری ممکن است موجودی دفتری ۸۰٬۰۰۰٬۰۰۰ ریال داشته باشد، اما فقط مبلغ غیرمسدود قابل برداشت است.
 
 زنجیره را از این عناصر عبور بده:
+
+
+</div>
+
+<div dir="ltr" align="left">
 
 ```text
 Trigger/Outcome
@@ -21,44 +29,51 @@ Trigger/Outcome
 → Result/Event
 ```
 
-برای هر عنصر Owner، Evidence و یک Open question بنویس.
+</div>
 
-## Chain B — اعطا و واریز
+<div dir="rtl" align="right">
 
-قرارداد مرابحه مصوب است. مبلغ ۱۰۰٬۰۰۰٬۰۰۰ ریال باید دقیقاً یک‌بار به سپردهٔ جاری مشتری واریز شود و Fact مالی آن قابل ثبت باشد.
 
-حداقل این Ownershipها را جدا کن:
+برای هر عنصر <bdi dir="ltr">Owner</bdi>، <bdi dir="ltr">Evidence</bdi> و یک <bdi dir="ltr">Open question</bdi> بنویس.
+
+## <bdi dir="ltr">Chain B</bdi> — اعطا و واریز
+
+قرارداد مرابحه مصوب است. مبلغ ۱۰۰٬۰۰۰٬۰۰۰ ریال باید دقیقاً یک‌بار به سپردهٔ جاری مشتری واریز شود و <bdi dir="ltr">Fact</bdi> مالی آن قابل ثبت باشد.
+
+حداقل این <bdi dir="ltr">Ownership</bdi>ها را جدا کن:
 
 - وضعیت و تصمیم اعطا
 - ماندهٔ اصل تسهیلات
 - ماندهٔ قابل برداشت سپرده
-- نتیجهٔ Credit
-- Journal مالی
+- نتیجهٔ <bdi dir="ltr">Credit</bdi>
+- <bdi dir="ltr">Journal</bdi> مالی
 
-هنوز REST، Kafka، Saga یا دیتابیس را انتخاب نکن.
+هنوز <bdi dir="ltr">REST</bdi>، <bdi dir="ltr">Kafka</bdi>، <bdi dir="ltr">Saga</bdi> یا دیتابیس را انتخاب نکن.
 
-## Reverse trace
+## <bdi dir="ltr">Reverse trace</bdi>
 
-برای این دو Contract candidate مسیر برگشت تا Capability را بنویس:
+برای این دو <bdi dir="ltr">Contract candidate</bdi> مسیر برگشت تا <bdi dir="ltr">Capability</bdi> را بنویس:
 
-1. `PlaceFundsHold`
-2. `DepositCredited`
+1. <bdi dir="ltr">`PlaceFundsHold`</bdi>
+2. <bdi dir="ltr">`DepositCredited`</bdi>
 
-اگر Contract به دو Capability نامرتبط برمی‌گردد، Scope یا نام آن را بازبینی کن.
+اگر <bdi dir="ltr">Contract</bdi> به دو <bdi dir="ltr">Capability</bdi> نامرتبط برمی‌گردد، <bdi dir="ltr">Scope</bdi> یا نام آن را بازبینی کن.
 
-## Consistency checks
+## <bdi dir="ltr">Consistency checks</bdi>
 
-- Command به زمان امر و Event به Fact گذشته نام‌گذاری شده است.
-- هیچ Contextی جدول Context دیگر را Update نمی‌کند.
-- Service Candidate به‌عنوان Hypothesis علامت خورده، نه تصمیم Deployment.
-- API/Event حداقل دادهٔ معنایی لازم را دارد، نه Entity dump.
-- Unknownهای Transport و Failure پنهان نشده‌اند.
+- <bdi dir="ltr">Command</bdi> به زمان امر و <bdi dir="ltr">Event</bdi> به <bdi dir="ltr">Fact</bdi> گذشته نام‌گذاری شده است.
+- هیچ <bdi dir="ltr">Context</bdi>ی جدول <bdi dir="ltr">Context</bdi> دیگر را <bdi dir="ltr">Update</bdi> نمی‌کند.
+- <bdi dir="ltr">Service Candidate</bdi> به‌عنوان <bdi dir="ltr">Hypothesis</bdi> علامت خورده، نه تصمیم <bdi dir="ltr">Deployment.</bdi>
+- <bdi dir="ltr">API/Event</bdi> حداقل دادهٔ معنایی لازم را دارد، نه <bdi dir="ltr">Entity dump.</bdi>
+- <bdi dir="ltr">Unknown</bdi>های <bdi dir="ltr">Transport</bdi> و <bdi dir="ltr">Failure</bdi> پنهان نشده‌اند.
 
-## Acceptance criteria
+## <bdi dir="ltr">Acceptance criteria</bdi>
 
-- هر دو Chain کامل و قابل Reverse tracing باشند.
-- هر Fact دقیقاً یک Authority اولیه داشته باشد.
-- تفاوت Legal Order با Operational Hold روشن باشد.
-- Accounting مالک available balance معرفی نشود.
-- حداقل چهار Unknown واقعی ثبت شود.
+- هر دو <bdi dir="ltr">Chain</bdi> کامل و قابل <bdi dir="ltr">Reverse tracing</bdi> باشند.
+- هر <bdi dir="ltr">Fact</bdi> دقیقاً یک <bdi dir="ltr">Authority</bdi> اولیه داشته باشد.
+- تفاوت <bdi dir="ltr">Legal Order</bdi> با <bdi dir="ltr">Operational Hold</bdi> روشن باشد.
+- <bdi dir="ltr">Accounting</bdi> مالک <bdi dir="ltr">available balance</bdi> معرفی نشود.
+- حداقل چهار <bdi dir="ltr">Unknown</bdi> واقعی ثبت شود.
 
+
+</div>

@@ -1,119 +1,144 @@
-# Day 08 Exercise — Transfer Fee Refactoring Kata
+<!-- bidi: rtl; code: ltr -->
+<div dir="rtl" align="right">
 
-- Timebox: 65 minutes coding + 10 minutes self-review
-- Working directory: `backend/banking-modulith`
-- Starter package: `com.example.corebankinglab.craftsmanship.week02`
-- Output: refactored code + tests + [Code Review Checklist](../artifacts/day-08-code-review-checklist.md)
+# <bdi dir="ltr">Day 08 Exercise</bdi> — <bdi dir="ltr">Transfer Fee Refactoring Kata</bdi>
 
-## Rule of the exercise
+- <bdi dir="ltr">Timebox: 65 minutes coding</bdi> + <bdi dir="ltr">10 minutes self-review</bdi>
+- <bdi dir="ltr">Working directory:</bdi> <bdi dir="ltr">`backend/banking-modulith`</bdi>
+- <bdi dir="ltr">Starter package:</bdi> <bdi dir="ltr">`com.example.corebankinglab.craftsmanship.week02`</bdi>
+- <bdi dir="ltr">Output: refactored code</bdi> + <bdi dir="ltr">tests</bdi> + [<bdi dir="ltr">Code Review Checklist</bdi>](../artifacts/day-08-code-review-checklist.md)
 
-قواعد عددی Baseline را در Refactor تغییر نده. نرخ‌ها ساختگی‌اند، اما Characterization behavior باید ثابت بماند. هر Rule change پیشنهادی را فقط در بخش `OPEN` ثبت کن.
+## <bdi dir="ltr">Rule of the exercise</bdi>
 
-## Step 0 — Record the baseline
+قواعد عددی <bdi dir="ltr">Baseline</bdi> را در <bdi dir="ltr">Refactor</bdi> تغییر نده. نرخ‌ها ساختگی‌اند، اما <bdi dir="ltr">Characterization behavior</bdi> باید ثابت بماند. هر <bdi dir="ltr">Rule change</bdi> پیشنهادی را فقط در بخش <bdi dir="ltr">`OPEN`</bdi> ثبت کن.
+
+## <bdi dir="ltr">Step 0</bdi> — <bdi dir="ltr">Record the baseline</bdi>
+
+
+</div>
+
+<div dir="ltr" align="left">
 
 ```bash
 mvn -Dtest=LegacyTransferFeeCalculatorCharacterizationTest test
 ```
 
+</div>
+
+<div dir="rtl" align="right">
+
+
 ثبت کن:
 
-- تعداد Testها
+- تعداد <bdi dir="ltr">Test</bdi>ها
 - نتیجه
 - مدت اجرا
-- Commit/SHA یا وضعیت Worktree
+- <bdi dir="ltr">Commit/SHA</bdi> یا وضعیت <bdi dir="ltr">Worktree</bdi>
 
-## Step 1 — Create your smell map
+## <bdi dir="ltr">Step 1</bdi> — <bdi dir="ltr">Create your smell map</bdi>
 
-حداقل پنج Smell را با این قالب بنویس:
+حداقل پنج <bdi dir="ltr">Smell</bdi> را با این قالب بنویس:
 
-| File:line or symbol | Smell | Concrete change risk | Proposed smallest move |
+| <bdi dir="ltr">File:line or symbol</bdi> | <bdi dir="ltr">Smell</bdi> | <bdi dir="ltr">Concrete change risk</bdi> | <bdi dir="ltr">Proposed smallest move</bdi> |
 |---|---|---|---|
 |  |  |  |  |
 
-عبارت‌هایی مانند «کد کثیف است» یا «SOLID رعایت نشده» بدون محل و اثر امتیاز ندارد.
+عبارت‌هایی مانند «کد کثیف است» یا «<bdi dir="ltr">SOLID</bdi> رعایت نشده» بدون محل و اثر امتیاز ندارد.
 
-## Step 2 — Add one characterization/edge test
+## <bdi dir="ltr">Step 2</bdi> — <bdi dir="ltr">Add one characterization/edge test</bdi>
 
-یکی از Unknownهای زیر را انتخاب کن یا مورد بهتری پیدا کن:
+یکی از <bdi dir="ltr">Unknown</bdi>های زیر را انتخاب کن یا مورد بهتری پیدا کن:
 
-- Blank rail
-- Case sensitivity
-- discount on zero-fee rail
-- overflow boundary
-- ordering of cap and discount
+- <bdi dir="ltr">Blank rail</bdi>
+- <bdi dir="ltr">Case sensitivity</bdi>
+- <bdi dir="ltr">discount on zero-fee rail</bdi>
+- <bdi dir="ltr">overflow boundary</bdi>
+- <bdi dir="ltr">ordering of cap and discount</bdi>
 
-اگر Expected behavior از Fixture قابل استنتاج نیست، آن را به‌عنوان `OPEN` نگه دار و یک Edge Case دیگر را Test کن. Rule بانکی را حدس نزن.
+اگر <bdi dir="ltr">Expected behavior</bdi> از <bdi dir="ltr">Fixture</bdi> قابل استنتاج نیست، آن را به‌عنوان <bdi dir="ltr">`OPEN`</bdi> نگه دار و یک <bdi dir="ltr">Edge Case</bdi> دیگر را <bdi dir="ltr">Test</bdi> کن. <bdi dir="ltr">Rule</bdi> بانکی را حدس نزن.
 
-## Step 3 — Refactor in green steps
+## <bdi dir="ltr">Step 3</bdi> — <bdi dir="ltr">Refactor in green steps</bdi>
 
-حداقل چهار Checkpoint داشته باش:
+حداقل چهار <bdi dir="ltr">Checkpoint</bdi> داشته باش:
 
-1. type-safe Rail
-2. named pricing constants/rules
-3. separated selection and calculation
-4. explicit customer pricing meaning
+1. <bdi dir="ltr">type-safe Rail</bdi>
+2. <bdi dir="ltr">named pricing constants/rules</bdi>
+3. <bdi dir="ltr">separated selection and calculation</bdi>
+4. <bdi dir="ltr">explicit customer pricing meaning</bdi>
 
-پس از هر Checkpoint تست را اجرا کن. اگر Git در دسترس است، Commit کوچک بساز؛ در غیر این صورت Diff/زمان Checkpoint را ثبت کن.
+پس از هر <bdi dir="ltr">Checkpoint</bdi> تست را اجرا کن. اگر <bdi dir="ltr">Git</bdi> در دسترس است، <bdi dir="ltr">Commit</bdi> کوچک بساز؛ در غیر این صورت <bdi dir="ltr">Diff/</bdi>زمان <bdi dir="ltr">Checkpoint</bdi> را ثبت کن.
 
-## Step 4 — Make the pattern decision
+## <bdi dir="ltr">Step 4</bdi> — <bdi dir="ltr">Make the pattern decision</bdi>
 
 یکی از این دو خروجی هر دو معتبر است:
 
-### Option A — Keep an explicit switch
+### <bdi dir="ltr">Option A</bdi> — <bdi dir="ltr">Keep an explicit switch</bdi>
 
-اگر سه حالت بسته و ساده‌اند، یک `switch` خوانا با Methodهای کوچک نگه دار. توضیح بده چه Revisit Triggerی Strategy را لازم می‌کند.
+اگر سه حالت بسته و ساده‌اند، یک <bdi dir="ltr">`switch`</bdi> خوانا با <bdi dir="ltr">Method</bdi>های کوچک نگه دار. توضیح بده چه <bdi dir="ltr">Revisit Trigger</bdi>ی <bdi dir="ltr">Strategy</bdi> را لازم می‌کند.
 
-### Option B — Introduce Strategy + Registry/Factory
+### <bdi dir="ltr">Option B</bdi> — <bdi dir="ltr">Introduce Strategy</bdi> + <bdi dir="ltr">Registry/Factory</bdi>
 
-اگر Variation مستقل را کافی می‌دانی:
+اگر <bdi dir="ltr">Variation</bdi> مستقل را کافی می‌دانی:
 
-- Contract کوچک و دامینی بساز.
-- هر Policy را مستقل تست کن.
-- Selection را در Registry/Factory متمرکز کن.
-- Missing/Duplicate policy را Fail-fast کن.
-- Discount را آگاهانه قبل یا بعد از Base fee اعمال کن؛ رفتار موجود را حفظ کن.
+- <bdi dir="ltr">Contract</bdi> کوچک و دامینی بساز.
+- هر <bdi dir="ltr">Policy</bdi> را مستقل تست کن.
+- <bdi dir="ltr">Selection</bdi> را در <bdi dir="ltr">Registry/Factory</bdi> متمرکز کن.
+- <bdi dir="ltr">Missing/Duplicate policy</bdi> را <bdi dir="ltr">Fail-fast</bdi> کن.
+- <bdi dir="ltr">Discount</bdi> را آگاهانه قبل یا بعد از <bdi dir="ltr">Base fee</bdi> اعمال کن؛ رفتار موجود را حفظ کن.
 
-در هیچ گزینه‌ای Reflection، Annotation scanning، Spring Context یا Database لازم نیست.
+در هیچ گزینه‌ای <bdi dir="ltr">Reflection</bdi>، <bdi dir="ltr">Annotation scanning</bdi>، <bdi dir="ltr">Spring Context</bdi> یا <bdi dir="ltr">Database</bdi> لازم نیست.
 
-## Step 5 — Remove the flag meaningfully
+## <bdi dir="ltr">Step 5</bdi> — <bdi dir="ltr">Remove the flag meaningfully</bdi>
 
-`boolean preferredCustomer` را با یک مفهوم صریح جایگزین کن. فقط تغییر نام پارامتر Boolean کافی نیست. Signature جدید باید بدون خواندن Implementation قابل فهم باشد.
+<bdi dir="ltr">`boolean preferredCustomer`</bdi> را با یک مفهوم صریح جایگزین کن. فقط تغییر نام پارامتر <bdi dir="ltr">Boolean</bdi> کافی نیست. <bdi dir="ltr">Signature</bdi> جدید باید بدون خواندن <bdi dir="ltr">Implementation</bdi> قابل فهم باشد.
 
-## Step 6 — Final verification
+## <bdi dir="ltr">Step 6</bdi> — <bdi dir="ltr">Final verification</bdi>
+
+
+</div>
+
+<div dir="ltr" align="left">
 
 ```bash
 mvn verify
 ```
 
-Baseline اصلی Week 02 نیز باید سبز بماند. Refactor محلی نباید Module Verification یا Spring context را بشکند.
+</div>
 
-## Step 7 — Self-review
+<div dir="rtl" align="right">
 
-[Code Review Checklist](../artifacts/day-08-code-review-checklist.md) را کامل کن و به این سه سؤال پاسخ بده:
 
-1. کدام Change coupling واقعاً کمتر شد؟
-2. Pattern انتخابی چه Complexity تازه‌ای ایجاد کرد؟
-3. اگر فقط یک Rail داشتیم، کدام Typeها را حذف می‌کردی؟
+<bdi dir="ltr">Baseline</bdi> اصلی <bdi dir="ltr">Week 02</bdi> نیز باید سبز بماند. <bdi dir="ltr">Refactor</bdi> محلی نباید <bdi dir="ltr">Module Verification</bdi> یا <bdi dir="ltr">Spring context</bdi> را بشکند.
 
-## Acceptance criteria
+## <bdi dir="ltr">Step 7</bdi> — <bdi dir="ltr">Self-review</bdi>
 
-- همهٔ Characterization testهای قبلی سبزند.
-- حداقل یک Edge Test جدید وجود دارد.
-- String rail از Core calculation حذف شده است.
-- Magic literalها نام و Scope معنادار دارند.
-- Flag argument با Concept صریح جایگزین شده است.
-- Strategy یا رد آن با Forces دفاع شده است.
-- هیچ `common`, `utils`, `BaseStrategy`, `AbstractFactoryFactory` یا Spring Bean غیرضروری ایجاد نشده است.
-- `mvn verify` سبز است.
+[<bdi dir="ltr">Code Review Checklist</bdi>](../artifacts/day-08-code-review-checklist.md) را کامل کن و به این سه سؤال پاسخ بده:
 
-## Required evidence in Workbook
+1. کدام <bdi dir="ltr">Change coupling</bdi> واقعاً کمتر شد؟
+2. <bdi dir="ltr">Pattern</bdi> انتخابی چه <bdi dir="ltr">Complexity</bdi> تازه‌ای ایجاد کرد؟
+3. اگر فقط یک <bdi dir="ltr">Rail</bdi> داشتیم، کدام <bdi dir="ltr">Type</bdi>ها را حذف می‌کردی؟
 
-1. Baseline output
-2. Smell Map
-3. Pattern Decision
-4. فهرست Checkpointها
-5. Test جدید
-6. Final test output
-7. Self-review و Debt باقی‌مانده
+## <bdi dir="ltr">Acceptance criteria</bdi>
 
-راه‌حل کامل در مخزن قرار نگرفته است. هدف این تمرین مشاهدهٔ تصمیم و Refactor توست، نه مقایسهٔ ظاهری با یک Class diagram آماده.
+- همهٔ <bdi dir="ltr">Characterization test</bdi>های قبلی سبزند.
+- حداقل یک <bdi dir="ltr">Edge Test</bdi> جدید وجود دارد.
+- <bdi dir="ltr">String rail</bdi> از <bdi dir="ltr">Core calculation</bdi> حذف شده است.
+- <bdi dir="ltr">Magic literal</bdi>ها نام و <bdi dir="ltr">Scope</bdi> معنادار دارند.
+- <bdi dir="ltr">Flag argument</bdi> با <bdi dir="ltr">Concept</bdi> صریح جایگزین شده است.
+- <bdi dir="ltr">Strategy</bdi> یا رد آن با <bdi dir="ltr">Forces</bdi> دفاع شده است.
+- هیچ <bdi dir="ltr">`common`</bdi>, <bdi dir="ltr">`utils`</bdi>, <bdi dir="ltr">`BaseStrategy`</bdi>, <bdi dir="ltr">`AbstractFactoryFactory`</bdi> یا <bdi dir="ltr">Spring Bean</bdi> غیرضروری ایجاد نشده است.
+- <bdi dir="ltr">`mvn verify`</bdi> سبز است.
+
+## <bdi dir="ltr">Required evidence in Workbook</bdi>
+
+1. <bdi dir="ltr">Baseline output</bdi>
+2. <bdi dir="ltr">Smell Map</bdi>
+3. <bdi dir="ltr">Pattern Decision</bdi>
+4. فهرست <bdi dir="ltr">Checkpoint</bdi>ها
+5. <bdi dir="ltr">Test</bdi> جدید
+6. <bdi dir="ltr">Final test output</bdi>
+7. <bdi dir="ltr">Self-review</bdi> و <bdi dir="ltr">Debt</bdi> باقی‌مانده
+
+راه‌حل کامل در مخزن قرار نگرفته است. هدف این تمرین مشاهدهٔ تصمیم و <bdi dir="ltr">Refactor</bdi> توست، نه مقایسهٔ ظاهری با یک <bdi dir="ltr">Class diagram</bdi> آماده.
+
+</div>

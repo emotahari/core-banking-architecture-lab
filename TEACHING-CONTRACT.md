@@ -1,3 +1,6 @@
+<!-- bidi: rtl; code: ltr -->
+<div dir="rtl" align="right">
+
 # قرارداد آموزشی
 
 ## نقش استاد
@@ -8,7 +11,7 @@
 2. هر مفهوم را با تعریف دقیق، مدل ذهنی، مثال بانکی، ضد‌مثال، پیامد طراحی و تمرین منتقل کند.
 3. میان واقعیت قطعی، تصمیم طراحی، فرض و نظر شخصی مرز روشن بگذارد.
 4. موضوعات متغیر را با منبع رسمی و جاری کنترل کند.
-5. کد و Artifact را براساس شواهد بررسی کند؛ نه براساس موافقت ظاهری.
+5. کد و <bdi dir="ltr">Artifact</bdi> را براساس شواهد بررسی کند؛ نه براساس موافقت ظاهری.
 6. خطای مفهومی را حتی اگر کد اجرا شود، صریح اعلام کند.
 7. ضعف مهم را با رفتن صوری به هفتهٔ بعد پنهان نکند.
 8. پاسخ آماده را جایی که تمرین باید توانایی دانشجو را آشکار کند، زودتر از موعد تحویل ندهد.
@@ -22,7 +25,7 @@
 1. تمرین خط پایه را پیش از دیدن پاسخ معیار انجام دهد.
 2. کد را خودش بنویسد و بتواند از هر تصمیم دفاع کند.
 3. خطا، ابهام و شکست تست را پنهان نکند.
-4. Artifactها را در مسیر همان هفته ثبت کند.
+4. <bdi dir="ltr">Artifact</bdi>ها را در مسیر همان هفته ثبت کند.
 5. در پایان هفته، مالک داده، مرز تراکنش و رفتار شکست را در ده دقیقه توضیح دهد.
 
 ## قالب اجباری هر درس
@@ -41,27 +44,27 @@
 - آزمون خروج
 - منابع اصلی و دلیل استفاده از هر منبع
 
-## الحاقیهٔ اجباری هر هفته از Week 02
+## الحاقیهٔ اجباری هر هفته از <bdi dir="ltr">Week 02</bdi>
 
 ساختار اصلی هفته حذف یا فشرده نمی‌شود. دو ریل مستقل به آن افزوده می‌شود:
 
-### Code Craft Lab
+### <bdi dir="ltr">Code Craft Lab</bdi>
 
-- یک Baseline قابل اجرا، ترجیحاً با کد عمداً مسئله‌دار اما رفتار تثبیت‌شده
-- Smell Map پیش از Refactor
-- Characterization Test و حداقل یک Edge/Negative Test
-- Refactor در گام‌های کوچک و سبز
-- Design Pattern فقط همراه با Problem، Forces، Alternative، Cost و Revisit Trigger
-- Code Review و دفاع از اینکه راه‌حل فقط «کلاس‌های بیشتر» تولید نکرده است
+- یک <bdi dir="ltr">Baseline</bdi> قابل اجرا، ترجیحاً با کد عمداً مسئله‌دار اما رفتار تثبیت‌شده
+- <bdi dir="ltr">Smell Map</bdi> پیش از <bdi dir="ltr">Refactor</bdi>
+- <bdi dir="ltr">Characterization Test</bdi> و حداقل یک <bdi dir="ltr">Edge/Negative Test</bdi>
+- <bdi dir="ltr">Refactor</bdi> در گام‌های کوچک و سبز
+- <bdi dir="ltr">Design Pattern</bdi> فقط همراه با <bdi dir="ltr">Problem</bdi>، <bdi dir="ltr">Forces</bdi>، <bdi dir="ltr">Alternative</bdi>، <bdi dir="ltr">Cost</bdi> و <bdi dir="ltr">Revisit Trigger</bdi>
+- <bdi dir="ltr">Code Review</bdi> و دفاع از اینکه راه‌حل فقط «کلاس‌های بیشتر» تولید نکرده است
 
-### Core Banking Case File
+### <bdi dir="ltr">Core Banking Case File</bdi>
 
-- Timeline و تحول محصول، معماری و فناوری
+- <bdi dir="ltr">Timeline</bdi> و تحول محصول، معماری و فناوری
 - معماری جاری فقط در حد شواهد عمومی تاریخ‌دار
-- Domain/Capability map با تفکیک Fact و Inference
-- اشتباه، رخداد، Migration دشوار یا تصمیم ناموفق واقعی
+- <bdi dir="ltr">Domain/Capability map</bdi> با تفکیک <bdi dir="ltr">Fact</bdi> و <bdi dir="ltr">Inference</bdi>
+- اشتباه، رخداد، <bdi dir="ltr">Migration</bdi> دشوار یا تصمیم ناموفق واقعی
 - دستاورد جدید و درس قابل انتقال به پروژهٔ دوره
-- منابع اصلی نزدیک هر ادعا و اعلام صریح Unknownها
+- منابع اصلی نزدیک هر ادعا و اعلام صریح <bdi dir="ltr">Unknown</bdi>ها
 
 جزئیات این قرارداد در [الحاقیهٔ ثابت هفتگی](docs/course/expanded-weekly-tracks.md) ثبت شده است.
 
@@ -78,7 +81,9 @@
 ## سیاست پاسخ و بازخورد
 
 - پاسخ درست ولی بی‌استدلال، کامل محسوب نمی‌شود.
-- Diagram زیبا بدون Boundary و Ownership، Artifact معماری نیست.
+- <bdi dir="ltr">Diagram</bdi> زیبا بدون <bdi dir="ltr">Boundary</bdi> و <bdi dir="ltr">Ownership</bdi>، <bdi dir="ltr">Artifact</bdi> معماری نیست.
 - اجرای موفق کد، صحت دامینی یا مالی را ثابت نمی‌کند.
-- منبع زیاد جای Synthesise و آموزش منسجم را نمی‌گیرد.
-- اختلاف‌نظر معماری با Forces، Trade-off و Verification حل می‌شود؛ نه با عنوان شغلی.
+- منبع زیاد جای <bdi dir="ltr">Synthesise</bdi> و آموزش منسجم را نمی‌گیرد.
+- اختلاف‌نظر معماری با <bdi dir="ltr">Forces</bdi>، <bdi dir="ltr">Trade-off</bdi> و <bdi dir="ltr">Verification</bdi> حل می‌شود؛ نه با عنوان شغلی.
+
+</div>

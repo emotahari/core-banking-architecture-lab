@@ -1,6 +1,11 @@
-# Backend
+<!-- bidi: rtl; code: ltr -->
+<div dir="rtl" align="right">
 
-نقطهٔ شروع پروژه یک Modular Monolith است. تا زمانی که ADR و شواهد مستقل‌بودن استقرار وجود ندارد، پوشه‌های service به معنی تصمیم قطعی Microservice نیستند.
+# <bdi dir="ltr">Backend</bdi>
 
-- banking-modulith: برنامهٔ اصلی در اسپرینت‌های آغازین
+نقطهٔ شروع پروژه یک <bdi dir="ltr">Modular Monolith</bdi> است. تا زمانی که <bdi dir="ltr">ADR</bdi> و شواهد مستقل‌بودن استقرار وجود ندارد، پوشه‌های <bdi dir="ltr">service</bdi> به معنی تصمیم قطعی <bdi dir="ltr">Microservice</bdi> نیستند.
+
+- <bdi dir="ltr">banking-modulith:</bdi> برنامهٔ اصلی در اسپرینت‌های آغازین
 - سرویس‌های مستقل: فقط در زمان استخراج موجه ایجاد می‌شوند
+
+</div>

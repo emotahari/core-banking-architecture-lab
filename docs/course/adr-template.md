@@ -1,41 +1,46 @@
-# ADR-NNNN: عنوان تصمیم
+<!-- bidi: rtl; code: ltr -->
+<div dir="rtl" align="right">
 
-- Status: Proposed
-- Date:
-- Owners:
-- Scope:
+# <bdi dir="ltr">ADR-NNNN:</bdi> عنوان تصمیم
 
-## Context
+- <bdi dir="ltr">Status: Proposed</bdi>
+- <bdi dir="ltr">Date:</bdi>
+- <bdi dir="ltr">Owners:</bdi>
+- <bdi dir="ltr">Scope:</bdi>
+
+## <bdi dir="ltr">Context</bdi>
 
 مسئله و محدودیت‌هایی که تصمیم را ضروری کرده‌اند.
 
-## Forces
+## <bdi dir="ltr">Forces</bdi>
 
 - نیروی تصمیم اول
 - نیروی تصمیم دوم
 
-## Options
+## <bdi dir="ltr">Options</bdi>
 
-### Option A
-
-شرح، مزیت، هزینه و ریسک.
-
-### Option B
+### <bdi dir="ltr">Option A</bdi>
 
 شرح، مزیت، هزینه و ریسک.
 
-## Decision
+### <bdi dir="ltr">Option B</bdi>
+
+شرح، مزیت، هزینه و ریسک.
+
+## <bdi dir="ltr">Decision</bdi>
 
 انتخاب و دلیل.
 
-## Consequences
+## <bdi dir="ltr">Consequences</bdi>
 
 پیامدهای مثبت، منفی و بدهی پذیرفته‌شده.
 
-## Verification
+## <bdi dir="ltr">Verification</bdi>
 
-کدام تست، Metric، Prototype یا Review نشان می‌دهد تصمیم درست کار می‌کند؟
+کدام تست، <bdi dir="ltr">Metric</bdi>، <bdi dir="ltr">Prototype</bdi> یا <bdi dir="ltr">Review</bdi> نشان می‌دهد تصمیم درست کار می‌کند؟
 
-## Revisit Trigger
+## <bdi dir="ltr">Revisit Trigger</bdi>
 
 با وقوع چه تغییر یا مشاهده‌ای تصمیم باید دوباره بررسی شود؟
+
+</div>

@@ -1,58 +1,73 @@
-# Day 06 Exercise — Money and Typed IDs
+<!-- bidi: rtl; code: ltr -->
+<div dir="rtl" align="right">
 
-- Timebox: 60 minutes
-- مسیر کد: backend/banking-modulith
-- هدف: ساخت Value Objectهایی که خطا را در مرز مدل متوقف می‌کنند.
+# <bdi dir="ltr">Day 06 Exercise</bdi> — <bdi dir="ltr">Money and Typed IDs</bdi>
 
-## Typeهای لازم
+- <bdi dir="ltr">Timebox: 60 minutes</bdi>
+- مسیر کد: <bdi dir="ltr">backend/banking-modulith</bdi>
+- هدف: ساخت <bdi dir="ltr">Value Object</bdi>هایی که خطا را در مرز مدل متوقف می‌کنند.
 
-- Money
-- AccountId
-- CustomerId
-- BranchId
+## <bdi dir="ltr">Type</bdi>های لازم
 
-## Contract طراحی Money
+- <bdi dir="ltr">Money</bdi>
+- <bdi dir="ltr">AccountId</bdi>
+- <bdi dir="ltr">CustomerId</bdi>
+- <bdi dir="ltr">BranchId</bdi>
 
-1. Immutable باشد.
-2. amount و currency تهی نباشند.
-3. Equality عددی از تفاوت Scale ظاهری BigDecimal آسیب نبیند؛ 100.0 و 100.00 در یک Currency برابر باشند.
-4. جمع و تفریق فقط برای Currency یکسان مجاز باشد.
-5. هیچ Rounding پنهانی در Factory یا Arithmetic رخ ندهد.
-6. هر عملیات نیازمند Rounding، Scale و RoundingMode را صریح دریافت کند.
-7. Money عمومی می‌تواند Signed باشد؛ مثبت‌بودن مبلغ قاعدهٔ Use Case است، نه ذات Money.
-8. toString برای نمایش UI یا سند رسمی مبنا نیست؛ Formatting مسئولیت جدا دارد.
+## <bdi dir="ltr">Contract</bdi> طراحی <bdi dir="ltr">Money</bdi>
 
-## Contract طراحی Typed ID
+1. <bdi dir="ltr">Immutable</bdi> باشد.
+2. <bdi dir="ltr">amount</bdi> و <bdi dir="ltr">currency</bdi> تهی نباشند.
+3. <bdi dir="ltr">Equality</bdi> عددی از تفاوت <bdi dir="ltr">Scale</bdi> ظاهری <bdi dir="ltr">BigDecimal</bdi> آسیب نبیند؛ 100.0 و 100.00 در یک <bdi dir="ltr">Currency</bdi> برابر باشند.
+4. جمع و تفریق فقط برای <bdi dir="ltr">Currency</bdi> یکسان مجاز باشد.
+5. هیچ <bdi dir="ltr">Rounding</bdi> پنهانی در <bdi dir="ltr">Factory</bdi> یا <bdi dir="ltr">Arithmetic</bdi> رخ ندهد.
+6. هر عملیات نیازمند <bdi dir="ltr">Rounding</bdi>، <bdi dir="ltr">Scale</bdi> و <bdi dir="ltr">RoundingMode</bdi> را صریح دریافت کند.
+7. <bdi dir="ltr">Money</bdi> عمومی می‌تواند <bdi dir="ltr">Signed</bdi> باشد؛ مثبت‌بودن مبلغ قاعدهٔ <bdi dir="ltr">Use Case</bdi> است، نه ذات <bdi dir="ltr">Money.</bdi>
+8. <bdi dir="ltr">toString</bdi> برای نمایش <bdi dir="ltr">UI</bdi> یا سند رسمی مبنا نیست؛ <bdi dir="ltr">Formatting</bdi> مسئولیت جدا دارد.
 
-1. هر ID Type مستقل باشد تا CustomerId تصادفی جای AccountId استفاده نشود.
-2. مقدار تهی و String نامعتبر رد شود.
-3. Parsing در Factory روشن باشد.
-4. ID داخلی با شمارهٔ حساب، CIF یا کد شعبه اشتباه نشود.
+## <bdi dir="ltr">Contract</bdi> طراحی <bdi dir="ltr">Typed ID</bdi>
+
+1. هر <bdi dir="ltr">ID Type</bdi> مستقل باشد تا <bdi dir="ltr">CustomerId</bdi> تصادفی جای <bdi dir="ltr">AccountId</bdi> استفاده نشود.
+2. مقدار تهی و <bdi dir="ltr">String</bdi> نامعتبر رد شود.
+3. <bdi dir="ltr">Parsing</bdi> در <bdi dir="ltr">Factory</bdi> روشن باشد.
+4. <bdi dir="ltr">ID</bdi> داخلی با شمارهٔ حساب، <bdi dir="ltr">CIF</bdi> یا کد شعبه اشتباه نشود.
 
 ## تست‌های اجباری
 
-- sameNumericAmountWithDifferentScaleIsEqual
-- differentCurrenciesAreNotEqual
-- addingDifferentCurrenciesFails
-- nullAmountFails
-- nullCurrencyFails
-- roundingMustBeExplicit
-- validIdsCanBeParsed
-- invalidIdsFailFast
-- typedIdsWithSameRawValueAreNotInterchangeable در سطح طراحی/کامپایل توضیح داده شود.
+- <bdi dir="ltr">sameNumericAmountWithDifferentScaleIsEqual</bdi>
+- <bdi dir="ltr">differentCurrenciesAreNotEqual</bdi>
+- <bdi dir="ltr">addingDifferentCurrenciesFails</bdi>
+- <bdi dir="ltr">nullAmountFails</bdi>
+- <bdi dir="ltr">nullCurrencyFails</bdi>
+- <bdi dir="ltr">roundingMustBeExplicit</bdi>
+- <bdi dir="ltr">validIdsCanBeParsed</bdi>
+- <bdi dir="ltr">invalidIdsFailFast</bdi>
+- <bdi dir="ltr">typedIdsWithSameRawValueAreNotInterchangeable</bdi> در سطح طراحی/کامپایل توضیح داده شود.
 
 ## تصمیمی که باید ثبت شود
 
 در یک یادداشت کوتاه توضیح بده:
 
-- چرا Money منفی را در Value Object عمومی ممنوع یا مجاز کردی؟
-- Currency Scale Policy متعلق به Money است یا Product/Accounting Context؟
-- چرا استفادهٔ مستقیم از double برای مبلغ بانکی رد می‌شود؟
+- چرا <bdi dir="ltr">Money</bdi> منفی را در <bdi dir="ltr">Value Object</bdi> عمومی ممنوع یا مجاز کردی؟
+- <bdi dir="ltr">Currency Scale Policy</bdi> متعلق به <bdi dir="ltr">Money</bdi> است یا <bdi dir="ltr">Product/Accounting Context</bdi>؟
+- چرا استفادهٔ مستقیم از <bdi dir="ltr">double</bdi> برای مبلغ بانکی رد می‌شود؟
 
 ## قبولی
+
+
+</div>
+
+<div dir="ltr" align="left">
 
 ~~~bash
 mvn verify
 ~~~
 
-باید سبز باشد و هیچ Setter یا Dependency به Spring/JPA در Value Objectها وجود نداشته باشد.
+</div>
+
+<div dir="rtl" align="right">
+
+
+باید سبز باشد و هیچ <bdi dir="ltr">Setter</bdi> یا <bdi dir="ltr">Dependency</bdi> به <bdi dir="ltr">Spring/JPA</bdi> در <bdi dir="ltr">Value Object</bdi>ها وجود نداشته باشد.
+
+</div>

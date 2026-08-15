@@ -1,29 +1,37 @@
-# Day 06 — Architecture Fitness Test و Module Verification
+<!-- bidi: rtl; code: ltr -->
+<div dir="rtl" align="right">
 
-- Day budget: 45 minutes — 10 review + 30 exercise + 5 exit ticket
-- Output: automated module verification + one negative experiment
-- Tool: Spring Modulith 2.1.0
+# <bdi dir="ltr">Day 06</bdi> — <bdi dir="ltr">Architecture Fitness Test</bdi> و <bdi dir="ltr">Module Verification</bdi>
+
+- <bdi dir="ltr">Day budget: 45 minutes</bdi> — <bdi dir="ltr">10 review</bdi> + <bdi dir="ltr">30 exercise</bdi> + <bdi dir="ltr">5 exit ticket</bdi>
+- <bdi dir="ltr">Output: automated module verification</bdi> + <bdi dir="ltr">one negative experiment</bdi>
+- <bdi dir="ltr">Tool: Spring Modulith 2.1.0</bdi>
 
 ## 1. هدف قابل سنجش
 
 در پایان باید بتوانی:
 
-1. Architecture Principle را به Fitness Function قابل اجرا تبدیل کنی.
-2. `ApplicationModules.verify()` را در Build قرار بدهی.
-3. سه گروه نقضی را که Spring Modulith بررسی می‌کند توضیح بدهی.
-4. یک نقض Internal Access یا Cycle را عمداً ایجاد، مشاهده و اصلاح کنی.
-5. محدودیت Verification را بشناسی و آن را با صحت دامینی اشتباه نگیری.
-6. Scopeهای `@ApplicationModuleTest` را برای روزهای بعد انتخاب کنی.
+1. <bdi dir="ltr">Architecture Principle</bdi> را به <bdi dir="ltr">Fitness Function</bdi> قابل اجرا تبدیل کنی.
+2. <bdi dir="ltr">`ApplicationModules.verify()`</bdi> را در <bdi dir="ltr">Build</bdi> قرار بدهی.
+3. سه گروه نقضی را که <bdi dir="ltr">Spring Modulith</bdi> بررسی می‌کند توضیح بدهی.
+4. یک نقض <bdi dir="ltr">Internal Access</bdi> یا <bdi dir="ltr">Cycle</bdi> را عمداً ایجاد، مشاهده و اصلاح کنی.
+5. محدودیت <bdi dir="ltr">Verification</bdi> را بشناسی و آن را با صحت دامینی اشتباه نگیری.
+6. <bdi dir="ltr">Scope</bdi>های <bdi dir="ltr">`@ApplicationModuleTest`</bdi> را برای روزهای بعد انتخاب کنی.
 
 ## 2. از تصمیم معماری تا شاهد اجرایی
 
-جملهٔ زیر Principle است:
+جملهٔ زیر <bdi dir="ltr">Principle</bdi> است:
 
-> Moduleها نباید جزئیات داخلی یکدیگر را مصرف کنند.
+> <bdi dir="ltr">Module</bdi>ها نباید جزئیات داخلی یکدیگر را مصرف کنند.
 
-اگر فقط در Wiki بماند، با اولین Deadline دور زده می‌شود. Fitness Function آن را به شرطی تبدیل می‌کند که Build بتواند نقضش را تشخیص دهد.
+اگر فقط در <bdi dir="ltr">Wiki</bdi> بماند، با اولین <bdi dir="ltr">Deadline</bdi> دور زده می‌شود. <bdi dir="ltr">Fitness Function</bdi> آن را به شرطی تبدیل می‌کند که <bdi dir="ltr">Build</bdi> بتواند نقضش را تشخیص دهد.
 
 مدل ذهنی:
+
+
+</div>
+
+<div dir="ltr" align="left">
 
 ~~~text
 architectural intent
@@ -35,50 +43,70 @@ fast violation feedback
 evolution with guardrails
 ~~~
 
-Fitness Function باید:
+</div>
 
-- با Property مهم مرتبط باشد؛
-- تا حد ممکن Objective و تکرارپذیر باشد؛
-- در CI اجرا شود؛
+<div dir="rtl" align="right">
+
+
+<bdi dir="ltr">Fitness Function</bdi> باید:
+
+- با <bdi dir="ltr">Property</bdi> مهم مرتبط باشد؛
+- تا حد ممکن <bdi dir="ltr">Objective</bdi> و تکرارپذیر باشد؛
+- در <bdi dir="ltr">CI</bdi> اجرا شود؛
 - پیام شکست قابل‌فهم بدهد؛
 - هزینهٔ نگهداری معقول داشته باشد؛
-- با تغییر عمدی معماری، همراه ADR تغییر کند.
+- با تغییر عمدی معماری، همراه <bdi dir="ltr">ADR</bdi> تغییر کند.
 
-## 3. چه چیزی را Spring Modulith Verify می‌کند؟
+## 3. چه چیزی را <bdi dir="ltr">Spring Modulith Verify</bdi> می‌کند؟
 
-طبق [مستند رسمی Verification](https://docs.spring.io/spring-modulith/reference/verification.html)، فراخوانی زیر ساختار را بررسی می‌کند:
+طبق [مستند رسمی <bdi dir="ltr">Verification</bdi>](https://docs.spring.io/spring-modulith/reference/verification.html)، فراخوانی زیر ساختار را بررسی می‌کند:
+
+
+</div>
+
+<div dir="ltr" align="left">
 
 ```java
 ApplicationModules.of(CoreBankingLabApplication.class).verify();
 ```
 
+</div>
+
+<div dir="rtl" align="right">
+
+
 سه کنترل اصلی:
 
-### 3.1 No Module Cycles
+### <bdi dir="ltr">3.1 No Module Cycles</bdi>
 
-گراف Dependency میان Application Moduleها باید Directed Acyclic Graph باشد. اگر Lending به Deposits و Deposits به Lending وابسته شود، امکان Release/Refactor مستقل کاهش می‌یابد و Ownership معمولاً مبهم است.
+گراف <bdi dir="ltr">Dependency</bdi> میان <bdi dir="ltr">Application Module</bdi>ها باید <bdi dir="ltr">Directed Acyclic Graph</bdi> باشد. اگر <bdi dir="ltr">Lending</bdi> به <bdi dir="ltr">Deposits</bdi> و <bdi dir="ltr">Deposits</bdi> به <bdi dir="ltr">Lending</bdi> وابسته شود، امکان <bdi dir="ltr">Release/Refactor</bdi> مستقل کاهش می‌یابد و <bdi dir="ltr">Ownership</bdi> معمولاً مبهم است.
 
-Cycle همیشه با حذف یک Import تصادفی حل نمی‌شود. باید بپرسی:
+<bdi dir="ltr">Cycle</bdi> همیشه با حذف یک <bdi dir="ltr">Import</bdi> تصادفی حل نمی‌شود. باید بپرسی:
 
-- آیا Direction اشتباه است؟
-- آیا Contract در Module نامناسب قرار دارد؟
-- آیا یک Fact باید Event شود؟
-- آیا Shared concept واقعاً Shared Kernel کوچک است؟
-- آیا دو Module در واقع Cohesion بالایی دارند و Boundary غلط است؟
+- آیا <bdi dir="ltr">Direction</bdi> اشتباه است؟
+- آیا <bdi dir="ltr">Contract</bdi> در <bdi dir="ltr">Module</bdi> نامناسب قرار دارد؟
+- آیا یک <bdi dir="ltr">Fact</bdi> باید <bdi dir="ltr">Event</bdi> شود؟
+- آیا <bdi dir="ltr">Shared concept</bdi> واقعاً <bdi dir="ltr">Shared Kernel</bdi> کوچک است؟
+- آیا دو <bdi dir="ltr">Module</bdi> در واقع <bdi dir="ltr">Cohesion</bdi> بالایی دارند و <bdi dir="ltr">Boundary</bdi> غلط است؟
 
-### 3.2 No Access to Internal Packages
+### <bdi dir="ltr">3.2 No Access to Internal Packages</bdi>
 
-Module دیگر فقط به API Base Package یا Named Interface صریح دسترسی دارد. Import از Subpackage داخلی نقض Encapsulation است، حتی اگر Type در Java `public` باشد.
+<bdi dir="ltr">Module</bdi> دیگر فقط به <bdi dir="ltr">API Base Package</bdi> یا <bdi dir="ltr">Named Interface</bdi> صریح دسترسی دارد. <bdi dir="ltr">Import</bdi> از <bdi dir="ltr">Subpackage</bdi> داخلی نقض <bdi dir="ltr">Encapsulation</bdi> است، حتی اگر <bdi dir="ltr">Type</bdi> در <bdi dir="ltr">Java</bdi> <bdi dir="ltr">`public`</bdi> باشد.
 
-### 3.3 Explicit Allowed Dependencies
+### <bdi dir="ltr">3.3 Explicit Allowed Dependencies</bdi>
 
-اگر `allowedDependencies` تعریف شده باشد، Dependency خارج از فهرست رد می‌شود. این کنترل «چه کسی می‌تواند به چه Interface‌ای وابسته باشد» را قابل اجرا می‌کند.
+اگر <bdi dir="ltr">`allowedDependencies`</bdi> تعریف شده باشد، <bdi dir="ltr">Dependency</bdi> خارج از فهرست رد می‌شود. این کنترل «چه کسی می‌تواند به چه <bdi dir="ltr">Interface</bdi>‌ای وابسته باشد» را قابل اجرا می‌کند.
 
-یک Module با `allowedDependencies = {}` هیچ Dependency به Module دیگر را مجاز نمی‌کند. حذف Attribute یعنی این محدودیت صریح اعمال نمی‌شود؛ بنابراین برای Lab از Allowlist آگاهانه استفاده می‌کنیم.
+یک <bdi dir="ltr">Module</bdi> با <bdi dir="ltr">`allowedDependencies = {}`</bdi> هیچ <bdi dir="ltr">Dependency</bdi> به <bdi dir="ltr">Module</bdi> دیگر را مجاز نمی‌کند. حذف <bdi dir="ltr">Attribute</bdi> یعنی این محدودیت صریح اعمال نمی‌شود؛ بنابراین برای <bdi dir="ltr">Lab</bdi> از <bdi dir="ltr">Allowlist</bdi> آگاهانه استفاده می‌کنیم.
 
 ## 4. تست پایه
 
 فایل زیر را بساز:
+
+
+</div>
+
+<div dir="ltr" align="left">
 
 ~~~text
 backend/banking-modulith/src/test/java/
@@ -86,7 +114,17 @@ backend/banking-modulith/src/test/java/
     └── ModulithArchitectureTests.java
 ~~~
 
+</div>
+
+<div dir="rtl" align="right">
+
+
 محتوا:
+
+
+</div>
+
+<div dir="ltr" align="left">
 
 ```java
 package com.example.corebankinglab;
@@ -105,18 +143,38 @@ class ModulithArchitectureTests {
 }
 ```
 
+</div>
+
+<div dir="rtl" align="right">
+
+
 سپس:
+
+
+</div>
+
+<div dir="ltr" align="left">
 
 ~~~bash
 cd backend/banking-modulith
 mvn verify
 ~~~
 
-این Test باید بخشی از `mvn verify` و CI باشد؛ اجرای دستی گهگاهی Fitness Function مستمر نیست.
+</div>
 
-## 5. Inspection قبل از Verification
+<div dir="rtl" align="right">
 
-گاهی Verification سبز است چون Moduleها اصلاً آن‌گونه که انتظار داشتی کشف نشده‌اند. مدل را چاپ کن:
+
+این <bdi dir="ltr">Test</bdi> باید بخشی از <bdi dir="ltr">`mvn verify`</bdi> و <bdi dir="ltr">CI</bdi> باشد؛ اجرای دستی گهگاهی <bdi dir="ltr">Fitness Function</bdi> مستمر نیست.
+
+## <bdi dir="ltr">5. Inspection</bdi> قبل از <bdi dir="ltr">Verification</bdi>
+
+گاهی <bdi dir="ltr">Verification</bdi> سبز است چون <bdi dir="ltr">Module</bdi>ها اصلاً آن‌گونه که انتظار داشتی کشف نشده‌اند. مدل را چاپ کن:
+
+
+</div>
+
+<div dir="ltr" align="left">
 
 ```java
 var modules = ApplicationModules.of(CoreBankingLabApplication.class);
@@ -124,47 +182,57 @@ modules.forEach(System.out::println);
 modules.verify();
 ```
 
+</div>
+
+<div dir="rtl" align="right">
+
+
 کنترل کن:
 
-- دقیقاً Moduleهای مورد انتظار کشف شده‌اند.
-- Base Package درست است.
-- API Surface بیش از حد بزرگ نیست.
-- Dependencyهای مستقیم با Policy هماهنگ‌اند.
+- دقیقاً <bdi dir="ltr">Module</bdi>های مورد انتظار کشف شده‌اند.
+- <bdi dir="ltr">Base Package</bdi> درست است.
+- <bdi dir="ltr">API Surface</bdi> بیش از حد بزرگ نیست.
+- <bdi dir="ltr">Dependency</bdi>های مستقیم با <bdi dir="ltr">Policy</bdi> هماهنگ‌اند.
 
-تست سبز روی مدل کشف‌شدهٔ اشتباه، Evidence کافی نیست.
+تست سبز روی مدل کشف‌شدهٔ اشتباه، <bdi dir="ltr">Evidence</bdi> کافی نیست.
 
 ## 6. آزمایش منفی اجباری
 
-Fitness Function را فقط در حالت سبز اعتماد نکن. باید نشان بدهی نقض موردنظر را واقعاً می‌گیرد.
+<bdi dir="ltr">Fitness Function</bdi> را فقط در حالت سبز اعتماد نکن. باید نشان بدهی نقض موردنظر را واقعاً می‌گیرد.
 
-### گزینهٔ A: Internal Package Access
+### گزینهٔ <bdi dir="ltr">A: Internal Package Access</bdi>
 
-1. یک Type موقت Public در `deposits.internal` بساز.
-2. از `lending` آن را Import و Reference کن.
-3. `mvn verify` را اجرا کن.
-4. متن نقض را در Workbook ثبت کن.
-5. Reference موقت و Type آزمایشی را حذف کن.
-6. دوباره `mvn verify` را اجرا کن و نتیجهٔ سبز را ثبت کن.
+1. یک <bdi dir="ltr">Type</bdi> موقت <bdi dir="ltr">Public</bdi> در <bdi dir="ltr">`deposits.internal`</bdi> بساز.
+2. از <bdi dir="ltr">`lending`</bdi> آن را <bdi dir="ltr">Import</bdi> و <bdi dir="ltr">Reference</bdi> کن.
+3. <bdi dir="ltr">`mvn verify`</bdi> را اجرا کن.
+4. متن نقض را در <bdi dir="ltr">Workbook</bdi> ثبت کن.
+5. <bdi dir="ltr">Reference</bdi> موقت و <bdi dir="ltr">Type</bdi> آزمایشی را حذف کن.
+6. دوباره <bdi dir="ltr">`mvn verify`</bdi> را اجرا کن و نتیجهٔ سبز را ثبت کن.
 
-این کد نقض‌کننده نباید Commit نهایی شود. فقط Evidence شکست و اصلاح در Submission می‌ماند.
+این کد نقض‌کننده نباید <bdi dir="ltr">Commit</bdi> نهایی شود. فقط <bdi dir="ltr">Evidence</bdi> شکست و اصلاح در <bdi dir="ltr">Submission</bdi> می‌ماند.
 
-### گزینهٔ B: Unauthorized Dependency
+### گزینهٔ <bdi dir="ltr">B: Unauthorized Dependency</bdi>
 
-1. Moduleای با `allowedDependencies = {}` انتخاب کن.
-2. به API Public یک Module دیگر Reference موقت بده.
-3. شکست Allowlist را ثبت و سپس اصلاح کن.
+1. <bdi dir="ltr">Module</bdi>ای با <bdi dir="ltr">`allowedDependencies = {}`</bdi> انتخاب کن.
+2. به <bdi dir="ltr">API Public</bdi> یک <bdi dir="ltr">Module</bdi> دیگر <bdi dir="ltr">Reference</bdi> موقت بده.
+3. شکست <bdi dir="ltr">Allowlist</bdi> را ثبت و سپس اصلاح کن.
 
-### گزینهٔ C: Cycle
+### گزینهٔ <bdi dir="ltr">C: Cycle</bdi>
 
-فقط اگر دو Dependency مجاز فعلی داری، یک Dependency معکوس موقت بساز و Cycle را مشاهده کن. برای دیدن Cycle، قواعد دیگر نباید زودتر همان Dependency را به دلیل متفاوت رد کنند؛ در غیر این صورت آزمایش مبهم می‌شود.
+فقط اگر دو <bdi dir="ltr">Dependency</bdi> مجاز فعلی داری، یک <bdi dir="ltr">Dependency</bdi> معکوس موقت بساز و <bdi dir="ltr">Cycle</bdi> را مشاهده کن. برای دیدن <bdi dir="ltr">Cycle</bdi>، قواعد دیگر نباید زودتر همان <bdi dir="ltr">Dependency</bdi> را به دلیل متفاوت رد کنند؛ در غیر این صورت آزمایش مبهم می‌شود.
 
 برای این هفته گزینهٔ A پیشنهاد می‌شود، چون علت شکست روشن‌تر است.
 
-## 7. `verify()` در برابر `detectViolations()`
+## 7. <bdi dir="ltr">`verify()`</bdi> در برابر <bdi dir="ltr">`detectViolations()`</bdi>
 
-`verify()` در صورت نقض Exception می‌دهد و Test را Fail می‌کند. انتخاب استاندارد CI همین است.
+<bdi dir="ltr">`verify()`</bdi> در صورت نقض <bdi dir="ltr">Exception</bdi> می‌دهد و <bdi dir="ltr">Test</bdi> را <bdi dir="ltr">Fail</bdi> می‌کند. انتخاب استاندارد <bdi dir="ltr">CI</bdi> همین است.
 
-`detectViolations()` مجموعهٔ نقض‌ها را برای پردازش بیشتر می‌دهد:
+<bdi dir="ltr">`detectViolations()`</bdi> مجموعهٔ نقض‌ها را برای پردازش بیشتر می‌دهد:
+
+
+</div>
+
+<div dir="ltr" align="left">
 
 ```java
 var violations = ApplicationModules
@@ -175,28 +243,38 @@ violations.getMessages().forEach(System.out::println);
 violations.throwIfPresent();
 ```
 
-این مسیر برای مشاهده و پردازش فهرست نقض‌هاست، اما Build را همچنان Fail می‌کند. اگر در آینده از `filter(Predicate<Violation>)` برای Exception استفاده شد، Predicate باید فقط نقض‌های غیرمستثنا را باقی بگذارد. Filter کردن برای سبزکردن ظاهری Build ممنوع است، مگر اینکه:
+</div>
 
-- Debt دقیقاً شناسایی شده باشد؛
-- Scope کوچک باشد؛
-- Owner و Expiry date داشته باشد؛
-- ADR و Issue اصلاح وجود داشته باشد.
+<div dir="rtl" align="right">
 
-نادیده‌گرفتن عمومی نقض، Fitness Function را نمایشی می‌کند.
 
-## 8. Module Integration Test
+این مسیر برای مشاهده و پردازش فهرست نقض‌هاست، اما <bdi dir="ltr">Build</bdi> را همچنان <bdi dir="ltr">Fail</bdi> می‌کند. اگر در آینده از <bdi dir="ltr">`filter(Predicate<Violation>)`</bdi> برای <bdi dir="ltr">Exception</bdi> استفاده شد، <bdi dir="ltr">Predicate</bdi> باید فقط نقض‌های غیرمستثنا را باقی بگذارد. <bdi dir="ltr">Filter</bdi> کردن برای سبزکردن ظاهری <bdi dir="ltr">Build</bdi> ممنوع است، مگر اینکه:
 
-`verify()` Structure را بررسی می‌کند. برای Behavior داخل یک Module، Spring Modulith ابزار `@ApplicationModuleTest` دارد.
+- <bdi dir="ltr">Debt</bdi> دقیقاً شناسایی شده باشد؛
+- <bdi dir="ltr">Scope</bdi> کوچک باشد؛
+- <bdi dir="ltr">Owner</bdi> و <bdi dir="ltr">Expiry date</bdi> داشته باشد؛
+- <bdi dir="ltr">ADR</bdi> و <bdi dir="ltr">Issue</bdi> اصلاح وجود داشته باشد.
 
-طبق [Testing Reference](https://docs.spring.io/spring-modulith/reference/testing.html)، Modeها:
+نادیده‌گرفتن عمومی نقض، <bdi dir="ltr">Fitness Function</bdi> را نمایشی می‌کند.
 
-| Mode | Scope | کاربرد |
+## <bdi dir="ltr">8. Module Integration Test</bdi>
+
+<bdi dir="ltr">`verify()`</bdi> <bdi dir="ltr">Structure</bdi> را بررسی می‌کند. برای <bdi dir="ltr">Behavior</bdi> داخل یک <bdi dir="ltr">Module</bdi>، <bdi dir="ltr">Spring Modulith</bdi> ابزار <bdi dir="ltr">`@ApplicationModuleTest`</bdi> دارد.
+
+طبق [<bdi dir="ltr">Testing Reference</bdi>](https://docs.spring.io/spring-modulith/reference/testing.html)، <bdi dir="ltr">Mode</bdi>ها:
+
+| <bdi dir="ltr">Mode</bdi> | <bdi dir="ltr">Scope</bdi> | کاربرد |
 |---|---|---|
-| `STANDALONE` | فقط Module جاری | Default؛ استقلال و Mock کردن Efferent Dependencyها |
-| `DIRECT_DEPENDENCIES` | Module + Dependencyهای مستقیم | Integration محدود |
-| `ALL_DEPENDENCIES` | Module + تمام Dependency tree | سناریوی گسترده‌تر، با هزینه و Coupling بیشتر |
+| <bdi dir="ltr">`STANDALONE`</bdi> | فقط <bdi dir="ltr">Module</bdi> جاری | <bdi dir="ltr">Default</bdi>؛ استقلال و <bdi dir="ltr">Mock</bdi> کردن <bdi dir="ltr">Efferent Dependency</bdi>ها |
+| <bdi dir="ltr">`DIRECT_DEPENDENCIES`</bdi> | <bdi dir="ltr">Module</bdi> + <bdi dir="ltr">Dependency</bdi>های مستقیم | <bdi dir="ltr">Integration</bdi> محدود |
+| <bdi dir="ltr">`ALL_DEPENDENCIES`</bdi> | <bdi dir="ltr">Module</bdi> + تمام <bdi dir="ltr">Dependency tree</bdi> | سناریوی گسترده‌تر، با هزینه و <bdi dir="ltr">Coupling</bdi> بیشتر |
 
-نمونهٔ Skeleton:
+نمونهٔ <bdi dir="ltr">Skeleton:</bdi>
+
+
+</div>
+
+<div dir="ltr" align="left">
 
 ```java
 package com.example.corebankinglab.deposits;
@@ -209,101 +287,108 @@ class DepositsModuleTests {
 }
 ```
 
-اگر برای بالا آمدن یک Module دائماً `ALL_DEPENDENCIES` لازم است، احتمال High Coupling یا Boundary ضعیف را بررسی کن. واکنش اول نباید بزرگ‌کردن Test scope باشد؛ Dependency بیرونی را می‌توان در `STANDALONE` Mock کرد.
+</div>
 
-در Sprint 01، Architecture Verification اجباری و Module behavior test در حد Skeleton/Design است. Domain behavior از Sprint 02 اضافه می‌شود.
+<div dir="rtl" align="right">
+
+
+اگر برای بالا آمدن یک <bdi dir="ltr">Module</bdi> دائماً <bdi dir="ltr">`ALL_DEPENDENCIES`</bdi> لازم است، احتمال <bdi dir="ltr">High Coupling</bdi> یا <bdi dir="ltr">Boundary</bdi> ضعیف را بررسی کن. واکنش اول نباید بزرگ‌کردن <bdi dir="ltr">Test scope</bdi> باشد؛ <bdi dir="ltr">Dependency</bdi> بیرونی را می‌توان در <bdi dir="ltr">`STANDALONE`</bdi> <bdi dir="ltr">Mock</bdi> کرد.
+
+در <bdi dir="ltr">Sprint 01</bdi>، <bdi dir="ltr">Architecture Verification</bdi> اجباری و <bdi dir="ltr">Module behavior test</bdi> در حد <bdi dir="ltr">Skeleton/Design</bdi> است. <bdi dir="ltr">Domain behavior</bdi> از <bdi dir="ltr">Sprint 02</bdi> اضافه می‌شود.
 
 ## 9. چه چیزی را این تست ثابت نمی‌کند؟
 
-`ApplicationModules.verify()` نمی‌تواند ثابت کند:
+<bdi dir="ltr">`ApplicationModules.verify()`</bdi> نمی‌تواند ثابت کند:
 
-- Bounded Contextها از نظر کسب‌وکار درست کشف شده‌اند.
-- Owner داده و Decision درست است.
-- Event نام و Semantic درست دارد.
-- دو Module یک جدول مشترک را مستقیم Update نمی‌کنند.
-- HTTP call runtime باعث Cycle یا Availability coupling نشده است.
-- تراکنش، Idempotency، Retry یا Reconciliation صحیح است.
-- Journal balanced است.
-- NFRهای Latency و Availability برآورده شده‌اند.
+- <bdi dir="ltr">Bounded Context</bdi>ها از نظر کسب‌وکار درست کشف شده‌اند.
+- <bdi dir="ltr">Owner</bdi> داده و <bdi dir="ltr">Decision</bdi> درست است.
+- <bdi dir="ltr">Event</bdi> نام و <bdi dir="ltr">Semantic</bdi> درست دارد.
+- دو <bdi dir="ltr">Module</bdi> یک جدول مشترک را مستقیم <bdi dir="ltr">Update</bdi> نمی‌کنند.
+- <bdi dir="ltr">HTTP call runtime</bdi> باعث <bdi dir="ltr">Cycle</bdi> یا <bdi dir="ltr">Availability coupling</bdi> نشده است.
+- تراکنش، <bdi dir="ltr">Idempotency</bdi>، <bdi dir="ltr">Retry</bdi> یا <bdi dir="ltr">Reconciliation</bdi> صحیح است.
+- <bdi dir="ltr">Journal balanced</bdi> است.
+- <bdi dir="ltr">NFR</bdi>های <bdi dir="ltr">Latency</bdi> و <bdi dir="ltr">Availability</bdi> برآورده شده‌اند.
 
-به همین دلیل Architecture Evidence لایه‌ای است:
+به همین دلیل <bdi dir="ltr">Architecture Evidence</bdi> لایه‌ای است:
 
-| Concern | Evidence |
+| <bdi dir="ltr">Concern</bdi> | <bdi dir="ltr">Evidence</bdi> |
 |---|---|
-| Strategic boundary | Domain/Context Map + expert review |
-| Ownership | Ownership Matrix + scenario defense |
-| Compile-time module rules | `ApplicationModules.verify()` |
-| Module behavior | Unit + `@ApplicationModuleTest` |
-| Runtime contracts | Contract/integration tests در Sprintهای بعد |
-| Data ownership | Schema access rules + migration checks در Sprintهای بعد |
-| Distributed failure | Failure tests + reconciliation evidence در Sprintهای بعد |
+| <bdi dir="ltr">Strategic boundary</bdi> | <bdi dir="ltr">Domain/Context Map</bdi> + <bdi dir="ltr">expert review</bdi> |
+| <bdi dir="ltr">Ownership</bdi> | <bdi dir="ltr">Ownership Matrix</bdi> + <bdi dir="ltr">scenario defense</bdi> |
+| <bdi dir="ltr">Compile-time module rules</bdi> | <bdi dir="ltr">`ApplicationModules.verify()`</bdi> |
+| <bdi dir="ltr">Module behavior</bdi> | <bdi dir="ltr">Unit</bdi> + <bdi dir="ltr">`@ApplicationModuleTest`</bdi> |
+| <bdi dir="ltr">Runtime contracts</bdi> | <bdi dir="ltr">Contract/integration tests</bdi> در <bdi dir="ltr">Sprint</bdi>های بعد |
+| <bdi dir="ltr">Data ownership</bdi> | <bdi dir="ltr">Schema access rules</bdi> + <bdi dir="ltr">migration checks</bdi> در <bdi dir="ltr">Sprint</bdi>های بعد |
+| <bdi dir="ltr">Distributed failure</bdi> | <bdi dir="ltr">Failure tests</bdi> + <bdi dir="ltr">reconciliation evidence</bdi> در <bdi dir="ltr">Sprint</bdi>های بعد |
 
-یک Test سبز همهٔ معماری را تأیید نمی‌کند؛ فقط Property تعریف‌شده را تأیید می‌کند.
+یک <bdi dir="ltr">Test</bdi> سبز همهٔ معماری را تأیید نمی‌کند؛ فقط <bdi dir="ltr">Property</bdi> تعریف‌شده را تأیید می‌کند.
 
-## 10. Fitness Functionهای آینده
+## <bdi dir="ltr">10. Fitness Function</bdi>های آینده
 
-این هفته فقط Baseline است. در ادامه می‌توانیم قواعد زیر را اضافه کنیم:
+این هفته فقط <bdi dir="ltr">Baseline</bdi> است. در ادامه می‌توانیم قواعد زیر را اضافه کنیم:
 
-- Domain code نباید به Spring/JPA وابسته باشد.
-- Controller نباید Repository را مستقیم فراخوانی کند.
-- Eventها باید Immutable و Versioned باشند.
-- هیچ Service به Schema دیگری دسترسی نداشته باشد.
-- Journal باید balanced باشد.
-- Contract compatibility باید در CI کنترل شود.
-- Dependency vulnerability و Secret scanning باید پاس شوند.
+- <bdi dir="ltr">Domain code</bdi> نباید به <bdi dir="ltr">Spring/JPA</bdi> وابسته باشد.
+- <bdi dir="ltr">Controller</bdi> نباید <bdi dir="ltr">Repository</bdi> را مستقیم فراخوانی کند.
+- <bdi dir="ltr">Event</bdi>ها باید <bdi dir="ltr">Immutable</bdi> و <bdi dir="ltr">Versioned</bdi> باشند.
+- هیچ <bdi dir="ltr">Service</bdi> به <bdi dir="ltr">Schema</bdi> دیگری دسترسی نداشته باشد.
+- <bdi dir="ltr">Journal</bdi> باید <bdi dir="ltr">balanced</bdi> باشد.
+- <bdi dir="ltr">Contract compatibility</bdi> باید در <bdi dir="ltr">CI</bdi> کنترل شود.
+- <bdi dir="ltr">Dependency vulnerability</bdi> و <bdi dir="ltr">Secret scanning</bdi> باید پاس شوند.
 
-هر Rule باید به Risk معماری واقعی وصل باشد؛ زیادکردن Test بدون Intent روشن، Noise تولید می‌کند.
+هر <bdi dir="ltr">Rule</bdi> باید به <bdi dir="ltr">Risk</bdi> معماری واقعی وصل باشد؛ زیادکردن <bdi dir="ltr">Test</bdi> بدون <bdi dir="ltr">Intent</bdi> روشن، <bdi dir="ltr">Noise</bdi> تولید می‌کند.
 
 ## 11. خطاهای رایج
 
-### Test سبز، پس Boundary درست است
+### <bdi dir="ltr">Test</bdi> سبز، پس <bdi dir="ltr">Boundary</bdi> درست است
 
-ابزار فقط قواعد ساختاری را روی Package layout فعلی اجرا می‌کند. Domain review همچنان لازم است.
+ابزار فقط قواعد ساختاری را روی <bdi dir="ltr">Package layout</bdi> فعلی اجرا می‌کند. <bdi dir="ltr">Domain review</bdi> همچنان لازم است.
 
-### نقض را با Public کردن Package حل کنیم
+### نقض را با <bdi dir="ltr">Public</bdi> کردن <bdi dir="ltr">Package</bdi> حل کنیم
 
-Public/Named کردن Type باید Contract decision باشد؛ نه راه فرار از Test.
+<bdi dir="ltr">Public/Named</bdi> کردن <bdi dir="ltr">Type</bdi> باید <bdi dir="ltr">Contract decision</bdi> باشد؛ نه راه فرار از <bdi dir="ltr">Test.</bdi>
 
-### Module را Open کنیم
+### <bdi dir="ltr">Module</bdi> را <bdi dir="ltr">Open</bdi> کنیم
 
-Open Module برای Migration Legacy مفید است، ولی در کد جدید Encapsulation را تضعیف می‌کند.
+<bdi dir="ltr">Open Module</bdi> برای <bdi dir="ltr">Migration Legacy</bdi> مفید است، ولی در کد جدید <bdi dir="ltr">Encapsulation</bdi> را تضعیف می‌کند.
 
-### Cycle را با `common` بشکنیم
+### <bdi dir="ltr">Cycle</bdi> را با <bdi dir="ltr">`common`</bdi> بشکنیم
 
-انتقال همهٔ Typeها به `common` Cycle ظاهری را حذف و مدل مشترک عظیم می‌سازد. Ownership و Direction را اصلاح کن.
+انتقال همهٔ <bdi dir="ltr">Type</bdi>ها به <bdi dir="ltr">`common`</bdi> <bdi dir="ltr">Cycle</bdi> ظاهری را حذف و مدل مشترک عظیم می‌سازد. <bdi dir="ltr">Ownership</bdi> و <bdi dir="ltr">Direction</bdi> را اصلاح کن.
 
-### فقط Happy Path Test
+### فقط <bdi dir="ltr">Happy Path Test</bdi>
 
-بدون آزمایش منفی نمی‌دانی Fitness Function واقعاً نقض را می‌گیرد یا Module detection ناقص است.
+بدون آزمایش منفی نمی‌دانی <bdi dir="ltr">Fitness Function</bdi> واقعاً نقض را می‌گیرد یا <bdi dir="ltr">Module detection</bdi> ناقص است.
 
-### Filter دائمی نقض‌ها
+### <bdi dir="ltr">Filter</bdi> دائمی نقض‌ها
 
-Exception list بدون Owner و Expiry به معماری واقعی تبدیل می‌شود.
+<bdi dir="ltr">Exception list</bdi> بدون <bdi dir="ltr">Owner</bdi> و <bdi dir="ltr">Expiry</bdi> به معماری واقعی تبدیل می‌شود.
 
 ## 12. تمرین مستقل
 
-[Day 06 Exercise — Module Verification](../exercises/day-06-module-verification.md) را انجام بده. خروجی قرمز آزمایش منفی و خروجی سبز پس از اصلاح هر دو لازم‌اند.
+[<bdi dir="ltr">Day 06 Exercise</bdi> — <bdi dir="ltr">Module Verification</bdi>](../exercises/day-06-module-verification.md) را انجام بده. خروجی قرمز آزمایش منفی و خروجی سبز پس از اصلاح هر دو لازم‌اند.
 
 ## 13. معیار ارزیابی
 
 | معیار | امتیاز |
 |---|---:|
-| Architecture test در `mvn verify` | ۲ |
-| شش Module درست کشف شده | ۲ |
-| Negative experiment معتبر | ۲ |
-| Repair و نتیجهٔ سبز | ۲ |
-| بیان محدودیت Test و Evidenceهای مکمل | ۲ |
+| <bdi dir="ltr">Architecture test</bdi> در <bdi dir="ltr">`mvn verify`</bdi> | ۲ |
+| شش <bdi dir="ltr">Module</bdi> درست کشف شده | ۲ |
+| <bdi dir="ltr">Negative experiment</bdi> معتبر | ۲ |
+| <bdi dir="ltr">Repair</bdi> و نتیجهٔ سبز | ۲ |
+| بیان محدودیت <bdi dir="ltr">Test</bdi> و <bdi dir="ltr">Evidence</bdi>های مکمل | ۲ |
 | **جمع** | **۱۰** |
 
-حد عبور: ۸ از ۱۰. فقط Screenshot سبز بدون Negative evidence حداکثر ۶ می‌گیرد.
+حد عبور: ۸ از ۱۰. فقط <bdi dir="ltr">Screenshot</bdi> سبز بدون <bdi dir="ltr">Negative evidence</bdi> حداکثر ۶ می‌گیرد.
 
 ## 14. آزمون خروج
 
-درس را ببند و [Day 06 Exit Ticket](../quizzes/day-06-exit-ticket.md) را پاسخ بده.
+درس را ببند و [<bdi dir="ltr">Day 06 Exit Ticket</bdi>](../quizzes/day-06-exit-ticket.md) را پاسخ بده.
 
 ## 15. منابع اصلی
 
-- [Spring Modulith — Verification](https://docs.spring.io/spring-modulith/reference/verification.html)
-- [Spring Modulith — Module Testing](https://docs.spring.io/spring-modulith/reference/testing.html)
+- [<bdi dir="ltr">Spring Modulith</bdi> — <bdi dir="ltr">Verification</bdi>](https://docs.spring.io/spring-modulith/reference/verification.html)
+- [<bdi dir="ltr">Spring Modulith</bdi> — <bdi dir="ltr">Module Testing</bdi>](https://docs.spring.io/spring-modulith/reference/testing.html)
 
-APIها و سه Rule اصلی Verification با مستند رسمی نسخهٔ 2.1.0 تطبیق داده شده‌اند.
+<bdi dir="ltr">API</bdi>ها و سه <bdi dir="ltr">Rule</bdi> اصلی <bdi dir="ltr">Verification</bdi> با مستند رسمی نسخهٔ 2.1.0 تطبیق داده شده‌اند.
+
+</div>

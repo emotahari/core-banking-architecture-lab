@@ -1,6 +1,9 @@
-# Day 01 Exercise — Architecture Baseline
+<!-- bidi: rtl; code: ltr -->
+<div dir="rtl" align="right">
 
-- Timebox: 12 minutes
+# <bdi dir="ltr">Day 01 Exercise</bdi> — <bdi dir="ltr">Architecture Baseline</bdi>
+
+- <bdi dir="ltr">Timebox: 12 minutes</bdi>
 - منابع: ممنوع
 - هدف: سنجش مدل ذهنی فعلی، نه گرفتن نمره
 
@@ -10,29 +13,31 @@
 
 در این مرحله فرض کن:
 
-- Party/Customer، Product/Agreement، Lending، Deposits و Accounting سامانه‌ها یا حوزه‌های قابل تشخیص سازمان‌اند.
+- <bdi dir="ltr">Party/Customer</bdi>، <bdi dir="ltr">Product/Agreement</bdi>، <bdi dir="ltr">Lending</bdi>، <bdi dir="ltr">Deposits</bdi> و <bdi dir="ltr">Accounting</bdi> سامانه‌ها یا حوزه‌های قابل تشخیص سازمان‌اند.
 - پاسخ یک سرویس ممکن است گم شود.
 - درخواست تکراری ممکن است برسد.
-- دربارهٔ Kafka، Saga یا نوع دیتابیس هنوز تصمیم نگرفته‌ایم.
+- دربارهٔ <bdi dir="ltr">Kafka</bdi>، <bdi dir="ltr">Saga</bdi> یا نوع دیتابیس هنوز تصمیم نگرفته‌ایم.
 
 ## بدون مطالعه پاسخ بده
 
-1. بانک برای انجام این سناریو به چه Capabilityهایی نیاز دارد؟ حداکثر ۸ مورد.
-2. اجزای منطقی راه‌حل را نام ببر. هنوز لازم نیست Microservice باشند.
+1. بانک برای انجام این سناریو به چه <bdi dir="ltr">Capability</bdi>هایی نیاز دارد؟ حداکثر ۸ مورد.
+2. اجزای منطقی راه‌حل را نام ببر. هنوز لازم نیست <bdi dir="ltr">Microservice</bdi> باشند.
 3. ترتیب تعامل اجزا را در ۵ تا ۱۰ گام بنویس.
 4. مالک هر مورد را مشخص کن:
    - وضعیت اعطای تسهیلات
    - ماندهٔ اصل تسهیلات
    - ماندهٔ قابل برداشت سپرده
    - وضعیت واریز
-   - Journal Entry
+   - <bdi dir="ltr">Journal Entry</bdi>
 5. مرز یا مرزهای تراکنش را کجا می‌گذاری و چرا؟
-6. کدام تعامل را API/Command و کدام اطلاع‌رسانی را Event می‌دانی؟
+6. کدام تعامل را <bdi dir="ltr">API/Command</bdi> و کدام اطلاع‌رسانی را <bdi dir="ltr">Event</bdi> می‌دانی؟
 7. اگر واریز موفق شود ولی پاسخ گم شود، چه رفتاری انتظار داری؟
-8. Accounting را چه کسی و در چه زمانی درگیر می‌کند؟
-9. یک Diagram بسیار ساده بکش. Mermaid یا متن مرحله‌ای کافی است.
+8. <bdi dir="ltr">Accounting</bdi> را چه کسی و در چه زمانی درگیر می‌کند؟
+9. یک <bdi dir="ltr">Diagram</bdi> بسیار ساده بکش. <bdi dir="ltr">Mermaid</bdi> یا متن مرحله‌ای کافی است.
 10. سه فرضی را که در پاسخ خودت پنهان کرده‌ای بنویس.
 
 ## قانون مهم
 
-پس از خواندن درس، پاسخ خام را پاک نکن. بخش «بازنگری پس از درس» را در همان Submission اضافه کن تا تفاوت مدل ذهنی قابل مشاهده باشد.
+پس از خواندن درس، پاسخ خام را پاک نکن. بخش «بازنگری پس از درس» را در همان <bdi dir="ltr">Submission</bdi> اضافه کن تا تفاوت مدل ذهنی قابل مشاهده باشد.
+
+</div>

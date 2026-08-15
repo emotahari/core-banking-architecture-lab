@@ -1,66 +1,69 @@
-# References — Week 01
+<!-- bidi: rtl; code: ltr -->
+<div dir="rtl" align="right">
 
-- Last checked: 15 August 2026
-- Rule: منبع برای پاسخ‌دادن به سؤال روز خوانده می‌شود؛ نه برای گشتن بی‌هدف یا Copy کردن Blueprint.
+# <bdi dir="ltr">References</bdi> — <bdi dir="ltr">Week 01</bdi>
+
+- <bdi dir="ltr">Last checked: 15 August 2026</bdi>
+- <bdi dir="ltr">Rule:</bdi> منبع برای پاسخ‌دادن به سؤال روز خوانده می‌شود؛ نه برای گشتن بی‌هدف یا <bdi dir="ltr">Copy</bdi> کردن <bdi dir="ltr">Blueprint.</bdi>
 
 ## مسیر روزانه
 
 | روز | منبع | بخش/هدف | بودجه |
 |---|---|---|---:|
-| 01 | درس Synthesised + BIAN overview | زبان پایه و نقش BIAN | داخل بودجهٔ درس |
-| 02 | TOGAF Business Capabilities | Capability در برابر راه‌حل | ۵ دقیقه |
-| 03 | Traceability lesson | Intent، Fact و Owner | داخل درس |
-| 04 | Parnas/Fowler references | Information Hiding و Coupling | ۵ دقیقه |
-| 05 | BIAN 14 Portal/Release Notes | Gap Check پس از Map محلی | ۲۰ دقیقه |
-| 06 | Java BigDecimal/Currency docs | Equality، Scale و Rounding | ۵ دقیقه |
-| 08 | Fowler Refactoring catalog | Refactor مرحله‌ای | ۵ دقیقه |
-| 09 | Source Register پروندهٔ UPI | Fact/Inference/Unknown | داخل ۴۵ دقیقه |
+| 01 | درس <bdi dir="ltr">Synthesised</bdi> + <bdi dir="ltr">BIAN overview</bdi> | زبان پایه و نقش <bdi dir="ltr">BIAN</bdi> | داخل بودجهٔ درس |
+| 02 | <bdi dir="ltr">TOGAF Business Capabilities</bdi> | <bdi dir="ltr">Capability</bdi> در برابر راه‌حل | ۵ دقیقه |
+| 03 | <bdi dir="ltr">Traceability lesson</bdi> | <bdi dir="ltr">Intent</bdi>، <bdi dir="ltr">Fact</bdi> و <bdi dir="ltr">Owner</bdi> | داخل درس |
+| 04 | <bdi dir="ltr">Parnas/Fowler references</bdi> | <bdi dir="ltr">Information Hiding</bdi> و <bdi dir="ltr">Coupling</bdi> | ۵ دقیقه |
+| 05 | <bdi dir="ltr">BIAN 14 Portal/Release Notes</bdi> | <bdi dir="ltr">Gap Check</bdi> پس از <bdi dir="ltr">Map</bdi> محلی | ۲۰ دقیقه |
+| 06 | <bdi dir="ltr">Java BigDecimal/Currency docs</bdi> | <bdi dir="ltr">Equality</bdi>، <bdi dir="ltr">Scale</bdi> و <bdi dir="ltr">Rounding</bdi> | ۵ دقیقه |
+| 08 | <bdi dir="ltr">Fowler Refactoring catalog</bdi> | <bdi dir="ltr">Refactor</bdi> مرحله‌ای | ۵ دقیقه |
+| 09 | <bdi dir="ltr">Source Register</bdi> پروندهٔ <bdi dir="ltr">UPI</bdi> | <bdi dir="ltr">Fact/Inference/Unknown</bdi> | داخل ۴۵ دقیقه |
 
-## اجباری — معماری و BIAN
+## اجباری — معماری و <bdi dir="ltr">BIAN</bdi>
 
-### 1. TOGAF Business Capabilities
+### <bdi dir="ltr">1. TOGAF Business Capabilities</bdi>
 
 - مرجع: https://pubs.opengroup.org/togaf-standard/business-architecture/business-capabilities.html
-- استفاده: Capability به‌عنوان توانایی پایدار کسب‌وکار؛ نه Process/System
-- قرار نیست: کل TOGAF خوانده یا Capability Map به Architecture کامل تبدیل شود.
+- استفاده: <bdi dir="ltr">Capability</bdi> به‌عنوان توانایی پایدار کسب‌وکار؛ نه <bdi dir="ltr">Process/System</bdi>
+- قرار نیست: کل <bdi dir="ltr">TOGAF</bdi> خوانده یا <bdi dir="ltr">Capability Map</bdi> به <bdi dir="ltr">Architecture</bdi> کامل تبدیل شود.
 
-### 2. BIAN Service Landscape 14.0
+### <bdi dir="ltr">2. BIAN Service Landscape 14.0</bdi>
 
 - مرجع: https://bian.org/deliverables/service-landscape/
-- استفاده: شناخت نقش Service Landscape و ورود به Repository نسخهٔ 14
+- استفاده: شناخت نقش <bdi dir="ltr">Service Landscape</bdi> و ورود به <bdi dir="ltr">Repository</bdi> نسخهٔ 14
 - زمان: ۱۰ دقیقه
-- قرار نیست: کل Landscape حفظ یا هر Service Domain به Microservice تبدیل شود.
+- قرار نیست: کل <bdi dir="ltr">Landscape</bdi> حفظ یا هر <bdi dir="ltr">Service Domain</bdi> به <bdi dir="ltr">Microservice</bdi> تبدیل شود.
 
-### 3. BIAN 14.0 Release Notes
+### <bdi dir="ltr">3. BIAN 14.0 Release Notes</bdi>
 
 - مرجع: https://bian.org/wp-content/uploads/2026/02/BIAN-v14.0-Release-Notes-v1.0_-Final-Version.pdf
-- بخش: صفحات ۶ تا ۹ و جدول Metrics
-- استفاده: فهم Artifactها، شیوهٔ مدل‌سازی و محدودیت نسخه
+- بخش: صفحات ۶ تا ۹ و جدول <bdi dir="ltr">Metrics</bdi>
+- استفاده: فهم <bdi dir="ltr">Artifact</bdi>ها، شیوهٔ مدل‌سازی و محدودیت نسخه
 - زمان: ۱۵ دقیقه
-- دادهٔ کنترل‌شدهٔ دوره: ۳۲۲ Service Domain، ۳۸ Business Domain، ۵۸۶ Business Capability و ۲۴۲ Semantic API
+- دادهٔ کنترل‌شدهٔ دوره: ۳۲۲ <bdi dir="ltr">Service Domain</bdi>، ۳۸ <bdi dir="ltr">Business Domain</bdi>، ۵۸۶ <bdi dir="ltr">Business Capability</bdi> و ۲۴۲ <bdi dir="ltr">Semantic API</bdi>
 
-### 4. BIAN 14 Architecture Portal
+### <bdi dir="ltr">4. BIAN 14 Architecture Portal</bdi>
 
 - مرجع: https://bian.org/servicelandscape-14-0-0/
-- استفاده در Day 05: Gap Check برای Capability Map ساخته‌شده
+- استفاده در <bdi dir="ltr">Day 05: Gap Check</bdi> برای <bdi dir="ltr">Capability Map</bdi> ساخته‌شده
 - زمان: ۲۰ دقیقه
-- روش: ابتدا Map خودمان، سپس جست‌وجوی BIAN؛ نه برعکس.
+- روش: ابتدا <bdi dir="ltr">Map</bdi> خودمان، سپس جست‌وجوی <bdi dir="ltr">BIAN</bdi>؛ نه برعکس.
 
 ## اجباری — طراحی کد
 
-### Java BigDecimal
+### <bdi dir="ltr">Java BigDecimal</bdi>
 
 - مرجع: https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/math/BigDecimal.html
-- استفاده: تفاوت `equals` و `compareTo`، Scale و RoundingMode
-- هشدار: انتخاب Scale دامینی از مستند Java استخراج نمی‌شود.
+- استفاده: تفاوت <bdi dir="ltr">`equals`</bdi> و <bdi dir="ltr">`compareTo`</bdi>، <bdi dir="ltr">Scale</bdi> و <bdi dir="ltr">RoundingMode</bdi>
+- هشدار: انتخاب <bdi dir="ltr">Scale</bdi> دامینی از مستند <bdi dir="ltr">Java</bdi> استخراج نمی‌شود.
 
-### Java Currency
+### <bdi dir="ltr">Java Currency</bdi>
 
 - مرجع: https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Currency.html
-- استفاده: نمایش Type-safe کد Currency
-- هشدار: Fraction digits پیش‌فرض Currency جای Rule محصول/حسابداری نیست.
+- استفاده: نمایش <bdi dir="ltr">Type-safe</bdi> کد <bdi dir="ltr">Currency</bdi>
+- هشدار: <bdi dir="ltr">Fraction digits</bdi> پیش‌فرض <bdi dir="ltr">Currency</bdi> جای <bdi dir="ltr">Rule</bdi> محصول/حسابداری نیست.
 
-### Martin Fowler — Refactoring Catalog
+### <bdi dir="ltr">Martin Fowler</bdi> — <bdi dir="ltr">Refactoring Catalog</bdi>
 
 - مرجع: https://refactoring.com/catalog/
 - استفاده: گام کوچک و حفظ رفتار
@@ -68,20 +71,20 @@
 
 ## مرجع فنی محیط
 
-### Spring Boot 4.1 System Requirements
+### <bdi dir="ltr">Spring Boot 4.1 System Requirements</bdi>
 
 - مرجع: https://docs.spring.io/spring-boot/system-requirements.html
-- دلیل: کنترل Java و Maven موردنیاز
-- تصمیم پروژه: Java 21
+- دلیل: کنترل <bdi dir="ltr">Java</bdi> و <bdi dir="ltr">Maven</bdi> موردنیاز
+- تصمیم پروژه: <bdi dir="ltr">Java 21</bdi>
 
-### Spring Modulith
+### <bdi dir="ltr">Spring Modulith</bdi>
 
 - مرجع: https://spring.io/projects/spring-modulith
-- دلیل: آماده‌سازی Week 02 و فهم Module دارای API آشکار و Internal implementation
+- دلیل: آماده‌سازی <bdi dir="ltr">Week 02</bdi> و فهم <bdi dir="ltr">Module</bdi> دارای <bdi dir="ltr">API</bdi> آشکار و <bdi dir="ltr">Internal implementation</bdi>
 
-## پروندهٔ UPI
+## پروندهٔ <bdi dir="ltr">UPI</bdi>
 
-Source Register کامل، برچسب Fact/Inference و تاریخ کنترل داخل [UPI Case File](../case-studies/week-01-upi-fa.md) است. منابع اصلی:
+<bdi dir="ltr">Source Register</bdi> کامل، برچسب <bdi dir="ltr">Fact/Inference</bdi> و تاریخ کنترل داخل [<bdi dir="ltr">UPI Case File</bdi>](../case-studies/week-01-upi-fa.md) است. منابع اصلی:
 
 - https://www.npci.org.in/product/upi/about-upi
 - https://www.npci.org.in/product/upi/product-statistics
@@ -90,16 +93,18 @@ Source Register کامل، برچسب Fact/Inference و تاریخ کنترل د
 
 ## تکمیلی
 
-- Parnas, *On the Criteria To Be Used in Decomposing Systems into Modules* — Information Hiding
-- Martin Fowler, *Refactoring, 2nd Edition*
-- Eric Evans, *Domain-Driven Design* — Bounded Context و Value Object
-- Joshua Bloch, *Effective Java, 3rd Edition* — Immutability، factories و equals/hashCode
+- <bdi dir="ltr">Parnas</bdi>, *<bdi dir="ltr">On the Criteria To Be Used in Decomposing Systems into Modules</bdi>* — <bdi dir="ltr">Information Hiding</bdi>
+- <bdi dir="ltr">Martin Fowler</bdi>, *<bdi dir="ltr">Refactoring</bdi>, <bdi dir="ltr">2nd Edition</bdi>*
+- <bdi dir="ltr">Eric Evans</bdi>, *<bdi dir="ltr">Domain-Driven Design</bdi>* — <bdi dir="ltr">Bounded Context</bdi> و <bdi dir="ltr">Value Object</bdi>
+- <bdi dir="ltr">Joshua Bloch</bdi>, *<bdi dir="ltr">Effective Java</bdi>, <bdi dir="ltr">3rd Edition</bdi>* — <bdi dir="ltr">Immutability</bdi>، <bdi dir="ltr">factories</bdi> و <bdi dir="ltr">equals/hashCode</bdi>
 
 ## سیاست منبع
 
-- منبع اصلی برای Factهای نسخه‌ای اولویت دارد.
-- متن درس Synthesise استاد است و جای کپی متن مرجع را نمی‌گیرد.
-- هر Fact متغیر با تاریخ کنترل ثبت می‌شود.
-- Domain/Context map بیرونی یک Hypothesis است، نه Fact سازمانی.
-- اطلاعات غیرعمومی Tech stack با `UNKNOWN` ثبت می‌شود؛ با حدس پر نمی‌شود.
+- منبع اصلی برای <bdi dir="ltr">Fact</bdi>های نسخه‌ای اولویت دارد.
+- متن درس <bdi dir="ltr">Synthesise</bdi> استاد است و جای کپی متن مرجع را نمی‌گیرد.
+- هر <bdi dir="ltr">Fact</bdi> متغیر با تاریخ کنترل ثبت می‌شود.
+- <bdi dir="ltr">Domain/Context map</bdi> بیرونی یک <bdi dir="ltr">Hypothesis</bdi> است، نه <bdi dir="ltr">Fact</bdi> سازمانی.
+- اطلاعات غیرعمومی <bdi dir="ltr">Tech stack</bdi> با <bdi dir="ltr">`UNKNOWN`</bdi> ثبت می‌شود؛ با حدس پر نمی‌شود.
 
+
+</div>
