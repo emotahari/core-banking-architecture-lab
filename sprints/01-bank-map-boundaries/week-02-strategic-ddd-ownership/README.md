@@ -1,7 +1,9 @@
 # Week 02 — Strategic DDD و مالکیت
 
 - Status: **Ready**
-- Time budget: **360 minutes**
+- Core time budget: **360 minutes — unchanged**
+- Expansion budget: **150 minutes — 105 Code Craft + 45 Case File**
+- Full expanded budget: **510 minutes**
 - Banking lens: اعطای تسهیلات، واریز به سپرده و مسدودی قضایی
 - Main question: هر مدل، داده و تصمیم در کدام Bounded Context معنا و مالک دارد؟
 - Technical outcome: شش Application Module قابل Verification در Spring Modulith
@@ -52,6 +54,26 @@
 
 ریزبودجهٔ پیشنهادی: روزهای ۱ تا ۴ شامل ۲۰ تا ۲۵ دقیقه درس، ۱۵ تا ۲۰ دقیقه تمرین و ۵ دقیقه آزمون/مرجع‌اند؛ روز ۵ شامل ۲۰ دقیقه درس، ۷۵ دقیقه کدنویسی و ۵ دقیقه آزمون است؛ روز ۶ شامل ۱۰ دقیقه مرور، ۳۰ دقیقه Verification و ۵ دقیقه آزمون است. دفاع استاد پس از Submission جزو بودجهٔ خودخوان ۳۶۰ دقیقه‌ای حساب نشده است.
 
+## مسیر افزودهٔ این هفته
+
+هفت روز و Gate بالا همان برنامهٔ اصلی‌اند و هیچ بخشی از آن‌ها با جلسات زیر جایگزین نمی‌شود. پس از Day 07، دو جلسهٔ افزوده را انجام بده:
+
+| جلسه | زمان | محتوا | تمرین و شاهد پایان | آزمون/دفاع |
+|---|---:|---|---|---|
+| ۸ | ۱۰۵ دقیقه | [Clean Code و Strategy/Factory روی Transfer Fee](lessons/day-08-clean-code-strategy-refactoring-fa.md) | [Runnable Refactoring Lab](exercises/day-08-transfer-fee-refactoring.md) + [Code Review Checklist](artifacts/day-08-code-review-checklist.md) | [Exit Ticket](quizzes/day-08-exit-ticket.md) |
+| ۹ | ۴۵ دقیقه | [پروندهٔ Monzo: از Mondo تا بانک ۳۰۰۰+ Microservice](case-studies/week-02-monzo-fa.md) | [Architecture Review](exercises/day-09-monzo-architecture-review.md) | دفاع پنج‌سؤالی داخل پرونده |
+
+Session 08 یک Baseline اجرایی در Test scope دارد تا ابتدا رفتار را تثبیت و سپس Refactor کنی:
+
+~~~text
+backend/banking-modulith/src/test/java/
+└── com/example/corebankinglab/craftsmanship/week02/
+    ├── LegacyTransferFeeCalculator.java
+    └── LegacyTransferFeeCalculatorCharacterizationTest.java
+~~~
+
+قواعد، بودجه و نقشهٔ این دو ریل برای همهٔ هفته‌های بعد در [الحاقیهٔ ثابت هفتگی](../../../docs/course/expanded-weekly-tracks.md) آمده است.
+
 ## خروجی‌های اجباری
 
 ### تحلیل و مدل
@@ -70,12 +92,16 @@
 - [Dependency Policy](artifacts/module-dependency-policy.md) با دلیل هر وابستگی
 - `ApplicationModules.verify()` سبز
 - یک آزمایش منفی برای Cycle یا دسترسی به Internal و ثبت شاهد شکست
+- Refactor کاتای Transfer Fee از Baseline سبز با Characterization Test
+- Pattern Decision برای Strategy/Factory و ثبت گزینهٔ ساده‌تر
+- Code Review شامل Complexity اضافه‌شده و Debt باقی‌مانده
 
 ### دفاع و گزارش
 
 - [Sprint 01 Gate Evidence](artifacts/sprint-01-gate-evidence-template.md)
 - [Week 02 Report](artifacts/week-02-report-template.md)
 - دفاع حداکثر ده‌دقیقه‌ای از Boundary و Ownership
+- Architecture Review پروندهٔ Monzo با تفکیک Fact، Inference و Unknown
 
 ## Definition of Done
 
@@ -90,6 +116,9 @@ Week 02 زمانی Done است که:
 - Dependencyهای مجاز صریح باشند و Cycle وجود نداشته باشد.
 - `mvn verify` سبز باشد.
 - Gate اسپرینت حداقل ۸ از ۱۰ بگیرد و هیچ Critical Error نداشته باشد.
+- Baseline و نسخهٔ Refactored کاتای Code Craft هر دو تست سبز و Edge Case صریح داشته باشند.
+- انتخاب یا رد Strategy/Factory با Forces و Cost دفاع شده باشد؛ صرف استفاده از Pattern کافی نیست.
+- پروندهٔ Monzo خوانده و Artifact پنج‌سؤالی آن در Workbook ثبت شده باشد.
 
 ## Critical Errorهای این هفته
 

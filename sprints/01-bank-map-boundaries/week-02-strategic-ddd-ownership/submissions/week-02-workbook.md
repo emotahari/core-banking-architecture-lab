@@ -204,6 +204,73 @@ Do not paste production data, real customer identifiers, internal credentials or
 
 Complete the separate [Sprint 01 Gate Response](sprint-01-gate-response.md). Do not place a polished replacement here.
 
+---
+
+## Day 08 — Code Craft: Transfer Fee Refactoring
+
+- Lesson: [Clean Code + Strategy/Factory](../lessons/day-08-clean-code-strategy-refactoring-fa.md)
+- Exercise: [Runnable Refactoring Kata](../exercises/day-08-transfer-fee-refactoring.md)
+- Review artifact: [Code Review Checklist](../artifacts/day-08-code-review-checklist.md)
+- Exit Ticket: [Quiz](../quizzes/day-08-exit-ticket.md)
+
+### EVIDENCE — Baseline
+
+- test command/result:
+- test count:
+- branch/commit:
+
+### RAW — Smell map
+
+
+### RAW — Pattern decision
+
+- Problem:
+- Forces:
+- Simpler alternative:
+- Decision:
+- Added cost:
+- Revisit trigger:
+
+### EVIDENCE — Refactor checkpoints and new edge test
+
+
+### EVIDENCE — Final `mvn verify`
+
+
+### RAW — Exit Ticket
+
+1.
+2.
+3.
+4.
+5.
+6.
+
+### REVIEW / REVISION / OPEN
+
+
+---
+
+## Day 09 — Core Banking Case File: Monzo
+
+- Case file: [Monzo — from Mondo to a 3000+ microservice bank](../case-studies/week-02-monzo-fa.md)
+- Exercise: [Architecture Review](../exercises/day-09-monzo-architecture-review.md)
+
+### RAW — Five-point timeline
+
+
+### RAW — Fact / Inference / Unknown
+
+
+### RAW — Financial Crime ownership analysis
+
+
+### RAW — ADR-lite: remain Modulith or copy Microservice-first?
+
+
+### REVIEW / REVISION / OPEN
+
+
 ## Week reflection
 
 1. Which boundary changed most from your Week 01 baseline?
@@ -211,6 +278,8 @@ Complete the separate [Sprint 01 Gate Response](sprint-01-gate-response.md). Do 
 3. Which Context Map relationship has the highest uncertainty?
 4. Which code dependency surprised you?
 5. What must be revisited in Sprint 02?
+6. Which Code Smell in Day 08 most directly threatened a domain rule?
+7. Which Monzo decision is useful only in its own scale/context and must not be copied now?
 
 ## Instructor final review
 
