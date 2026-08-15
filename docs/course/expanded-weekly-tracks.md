@@ -1,13 +1,13 @@
 # الحاقیهٔ ثابت هفتگی — Code Craft و پروندهٔ Core Banking
 
-- Effective from: Week 02
+- Effective from: Week 01
 - Core curriculum: preserved without reduction
 - Expanded weekly budget: 510 minutes
 - Review rule: Pattern بدون Forces و Test پذیرفته نیست؛ روایت شرکتی بدون Source و تفکیک Fact/Inference نیز پذیرفته نیست.
 
 ## 1. قرارداد عدم کاهش
 
-برنامهٔ اصلی معماری و Core Banking حذف، فشرده یا جایگزین نمی‌شود. از Week 02 به بعد هر هفته سه ریل هم‌زمان دارد:
+برنامهٔ اصلی معماری و Core Banking حذف، فشرده یا جایگزین نمی‌شود. از Week 01 به بعد هر هفته سه ریل هم‌زمان دارد:
 
 1. **Architecture & Banking Domain Core — 360 minutes:** همان درس‌ها، Artifactها، کد، Failure و Gate قبلی.
 2. **Code Craft Lab — 105 minutes:** Clean Code، Refactoring، Design Pattern، Unit Test و Code Review روی مسئلهٔ بانکی همان هفته.
@@ -75,12 +75,13 @@ running baseline
 | Case File | Timeline مستند، Current-state تاریخ‌دار، حداقل یک شکست واقعی، تفکیک Fact/Inference و انتقال درس به پروژه |
 | کل هفته | Gate اصلی قبلی + دو شرط بالا؛ هیچ‌کدام جای دیگری را پر نمی‌کند |
 
-## 5. نقشهٔ افزودهٔ Week 02 تا Week 24
+## 5. نقشهٔ افزودهٔ Week 01 تا Week 24
 
 این جدول موضوع را رزرو می‌کند؛ پروندهٔ هر هفته هنگام شروع همان هفته با منابع جاری دوباره اعتبارسنجی می‌شود.
 
 | هفته | Code Craft و Pattern | تمرکز Clean Code/Refactor | پروندهٔ پیشنهادی سامانهٔ بانکی |
 |---:|---|---|---|
+| 01 | Value Object + Static Factory روی Money و Typed IDs | Primitive Obsession، Data Clump، Long Parameter List و Validation پراکنده | UPI هند؛ Capability، نقش‌ها، API network و Failure amplification |
 | 02 | Strategy + Registry/Factory روی Fee Policy | Magic literal، Primitive Obsession، Flag Argument، نام‌گذاری دامینی | Monzo؛ مالکیت، Microservice scale و کنترل‌های بانکی |
 | 03 | Strategy، Specification و State روی Deposits | رفتار کنار داده، Tell-Don’t-Ask و Invariant | Thought Machine Vault Core |
 | 04 | Ports & Adapters، Repository و Mapper | Dependency Inversion و جداسازی Domain از Framework | Temenos Transact/T24 |
@@ -127,3 +128,4 @@ running baseline
 - `UNKNOWN`: اطلاعات عمومی کافی وجود ندارد
 
 کیفیت پرونده با تعداد فناوری‌ها سنجیده نمی‌شود؛ با توانایی اتصال **تصمیم، زمینه، پیامد و شواهد** سنجیده می‌شود.
+
