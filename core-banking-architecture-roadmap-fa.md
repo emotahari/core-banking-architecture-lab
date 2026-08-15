@@ -106,7 +106,7 @@
 4. شکستن عمدی راه‌حل با تست شکست یا هم‌زمانی
 5. Refactor، ثبت ADR و دفاع ده‌دقیقه‌ای
 
-### دو ریل افزوده از Week 02
+### دو ریل افزوده از Week 01
 
 پس از تکمیل چرخهٔ اصلی، هر هفته دو جلسهٔ مستقل اجرا می‌شود:
 
@@ -115,7 +115,7 @@
 | Code Craft Lab | ۱۰۵ دقیقه | Baseline، Smell Map، Characterization Test، Refactor، Pattern Decision، Edge Test و Self-review |
 | Core Banking Case File | ۴۵ دقیقه | Timeline، معماری/فناوری جاری، Domain hypothesis، شکست‌ها، دستاورد تازه و درس انتقالی |
 
-نقشهٔ Patternها و پرونده‌های پیشنهادی Week 02 تا Week 24 در [الحاقیهٔ ثابت هفتگی](docs/course/expanded-weekly-tracks.md) نگهداری می‌شود. موضوع هر پرونده هنگام شروع هفته با منابع جاری دوباره کنترل خواهد شد.
+نقشهٔ Patternها و پرونده‌های پیشنهادی Week 01 تا Week 24 در [الحاقیهٔ ثابت هفتگی](docs/course/expanded-weekly-tracks.md) نگهداری می‌شود. موضوع هر پرونده هنگام شروع هفته با منابع جاری دوباره کنترل خواهد شد.
 
 ## ۷. Definition of Done هفتگی
 
@@ -281,6 +281,12 @@ core-banking-lab/
 
 - هیچ Service Candidate بدون Capability و مالک کسب‌وکار معرفی نشده باشد.
 - بتوان تفاوت BIAN Service Domain با Deployable Microservice را روشن توضیح داد.
+
+**ریل‌های افزودهٔ Week 01**
+
+- Code Craft Lab: Refactor مرحله‌ای Primitive Transfer Request به Money و Typed ID با Characterization Test، Edge Test و تصمیم مستدل دربارهٔ Static Factory
+- Core Banking Case File: UPI هند؛ تفکیک Capability، App، PSP، شبکه، بانک و API Contract همراه با Timeline، Failure سال ۲۰۲۵ و Current state تاریخ‌دار
+- محتوای کامل، تمرین و Gate در [Week 01](sprints/01-bank-map-boundaries/week-01-capability-to-contract/README.md) قرار دارد.
 
 ### هفتهٔ ۲: Strategic DDD و مالکیت
 

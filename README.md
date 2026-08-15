@@ -2,7 +2,7 @@
 
 یک آزمایشگاه ۲۴ هفته‌ای و مستندمحور برای یادگیری عمیق معماری نرم‌افزار و معماری Core Banking؛ با Java، Spring، مدل‌سازی دامینی، داده، حسابداری، معماری رویدادمحور و دفاع معماری.
 
-> وضعیت فعلی: **Sprint 01 · Week 01 · Day 01 — Doing**
+> وضعیت فعلی: **Sprint 01 · Week 01 — محتوای کامل آماده؛ پاسخ Day 01 در انتظار تکمیل/Review**
 
 این مخزن کتابی برای ورق‌زدن نیست. هر مفهوم باید به یک Artifact، تصمیم، کد، تست یا دفاع کوتاه تبدیل شود.
 
@@ -11,8 +11,8 @@
 1. ابتدا [قرارداد آموزشی](TEACHING-CONTRACT.md) را بخوان.
 2. برنامهٔ کل دوره را در [نقشهٔ راه ۲۴ هفته‌ای](core-banking-architecture-roadmap-fa.md) ببین.
 3. وارد [Sprint 01](sprints/01-bank-map-boundaries/README.md) شو.
-4. برای شروع واقعی، دستور روز اول را در [Week 01 / Day 01](sprints/01-bank-map-boundaries/week-01-capability-to-contract/README.md) اجرا کن.
-5. قبل از خواندن درس، پاسخ خط پایه را در [قالب پاسخ روز اول](sprints/01-bank-map-boundaries/week-01-capability-to-contract/submissions/day-01-baseline-response.md) بنویس.
+4. برنامه، درس‌ها، تمرین‌ها و ترتیب اجرای کامل را در [Week 01](sprints/01-bank-map-boundaries/week-01-capability-to-contract/README.md) ببین.
+5. پاسخ خام Day 01 را پاک نکن؛ پرسش‌های باقی‌مانده را کامل و سپس از Day 02 ادامه بده.
 
 ## پروژهٔ ثابت دوره
 
@@ -50,7 +50,7 @@
 
 ## ساختار مخزن
 
-~~~text
+```text
 .
 ├── backend/                    کد Java/Spring
 ├── contracts/                  OpenAPI، AsyncAPI و Schemaها
@@ -60,11 +60,11 @@
 ├── sprints/                    محتوای آموزشی و خروجی هر اسپرینت
 ├── tests/                      E2E، Failure و Performance
 └── core-banking-architecture-roadmap-fa.md
-~~~
+```
 
 ## ریتم هفتگی
 
-هر هفته حداکثر شش ساعت و دقیقاً هفت نقطهٔ کنترل دارد. خواندن به‌تنهایی Done نیست:
+ریل اصلی هر هفته ۳۶۰ دقیقه و هفت نقطهٔ کنترل دارد. خواندن به‌تنهایی Done نیست:
 
 1. یادگیری هدایت‌شده
 2. تحلیل مسئلهٔ بانکی
@@ -74,14 +74,14 @@
 6. Refactor و ثبت تصمیم
 7. دفاع کوتاه و گزارش
 
-### مسیر توسعه‌یافته از Week 02
+### مسیر توسعه‌یافته از Week 01
 
 هفت نقطهٔ کنترل و ۳۶۰ دقیقهٔ بالا بدون کاهش حفظ می‌شوند. برای تقویت هم‌زمان مهارت کدنویسی و شناخت صنعت، دو جلسه به انتهای هر هفته افزوده شده است:
 
 8. **Code Craft Lab — ۱۰۵ دقیقه:** Clean Code، Refactoring، Design Pattern، تست و Code Review روی همان مسئلهٔ بانکی
 9. **Core Banking Case File — ۴۵ دقیقه:** داستان مستند یک Core Banking یا سامانهٔ بانکی واقعی از تولد تا معماری، خطاها و دستاوردهای جاری
 
-نسخهٔ کامل برنامه از Week 02 برابر ۵۱۰ دقیقه است. قرارداد، Definition of Done و نقشهٔ موضوعات در [الحاقیهٔ ثابت هفتگی](docs/course/expanded-weekly-tracks.md) آمده است.
+نسخهٔ کامل برنامه از Week 01 برابر ۵۱۰ دقیقه است. قرارداد، Definition of Done و نقشهٔ موضوعات در [الحاقیهٔ ثابت هفتگی](docs/course/expanded-weekly-tracks.md) آمده است.
 
 قواعد مشارکت، نام Branch و Commit و Definition of Done در [CONTRIBUTING.md](CONTRIBUTING.md) ثبت شده‌اند.
 
@@ -96,3 +96,4 @@
 - Kafka، Testcontainers، OpenTelemetry، React/Vite و Kubernetes در اسپرینت‌های مربوط
 
 نسخه‌ها هنگام شروع هر اسپرینت با مستندات رسمی دوباره کنترل می‌شوند.
+
