@@ -1,23 +1,23 @@
 <!-- bidi: rtl; code: ltr -->
 <div dir="rtl" align="right">
 
-# <bdi dir="ltr">Sprint 07</bdi> — <bdi dir="ltr">Accounting Facts</bdi>، <bdi dir="ltr">Ledger</bdi> و <bdi dir="ltr">GL</bdi>
+# <span dir="ltr">Sprint 07</span> — <span dir="ltr">Accounting Facts</span>، <span dir="ltr">Ledger</span> و <span dir="ltr">GL</span>
 
-- <bdi dir="ltr">Weeks: 13</bdi>–14
-- <bdi dir="ltr">Status: Backlog</bdi>
+- <span dir="ltr">Weeks: 13</span>–14
+- <span dir="ltr">Status: Backlog</span>
 
-## <bdi dir="ltr">Week 13</bdi>
+## <span dir="ltr">Week 13</span>
 
-<bdi dir="ltr">Domain Event</bdi> → <bdi dir="ltr">Accounting Translator</bdi> → <bdi dir="ltr">Accounting Fact</bdi> → <bdi dir="ltr">Rule Engine</bdi> → <bdi dir="ltr">Journal Entry.</bdi>
+<span dir="ltr">Domain Event</span> → <span dir="ltr">Accounting Translator</span> → <span dir="ltr">Accounting Fact</span> → <span dir="ltr">Rule Engine</span> → <span dir="ltr">Journal Entry.</span>
 
-## <bdi dir="ltr">Week 14</bdi>
+## <span dir="ltr">Week 14</span>
 
-<bdi dir="ltr">Double-entry</bdi>، <bdi dir="ltr">Chart of Accounts</bdi>، <bdi dir="ltr">Journal/Line</bdi>، <bdi dir="ltr">GL/SL/Auxiliary</bdi>، <bdi dir="ltr">Effective-dated Rules</bdi>، <bdi dir="ltr">Reversal</bdi> و <bdi dir="ltr">Correction.</bdi>
+<span dir="ltr">Double-entry</span>، <span dir="ltr">Chart of Accounts</span>، <span dir="ltr">Journal/Line</span>، <span dir="ltr">GL/SL/Auxiliary</span>، <span dir="ltr">Effective-dated Rules</span>، <span dir="ltr">Reversal</span> و <span dir="ltr">Correction.</span>
 
-## <bdi dir="ltr">Gate</bdi>
+## <span dir="ltr">Gate</span>
 
-توازن سند، حفظ جزئیات <bdi dir="ltr">Subledger</bdi> و <bdi dir="ltr">Version</bdi>پذیری قواعد حسابداری باید با تست اثبات شوند.
+توازن سند، حفظ جزئیات <span dir="ltr">Subledger</span> و <span dir="ltr">Version</span>پذیری قواعد حسابداری باید با تست اثبات شوند.
 
-محتوا و اینفوگرافیک روزانه هنگام ورود این <bdi dir="ltr">Sprint</bdi> تولید و <bdi dir="ltr">Version</bdi> می‌شوند.
+محتوا و اینفوگرافیک روزانه هنگام ورود این <span dir="ltr">Sprint</span> تولید و <span dir="ltr">Version</span> می‌شوند.
 
 </div>

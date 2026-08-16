@@ -5,7 +5,7 @@
 
 ## وضعیت‌ها
 
-<bdi dir="ltr">Board</bdi> دوره فقط این وضعیت‌ها را دارد:
+<span dir="ltr">Board</span> دوره فقط این وضعیت‌ها را دارد:
 
 
 </div>
@@ -21,43 +21,43 @@ Backlog → Ready → Doing → Review → Gate → Done
 <div dir="rtl" align="right">
 
 
-در هر زمان فقط یک روز در <bdi dir="ltr">Doing</bdi> است.
+در هر زمان فقط یک روز در <span dir="ltr">Doing</span> است.
 
-## نام‌گذاری <bdi dir="ltr">Branch</bdi> و <bdi dir="ltr">Commit</bdi>
+## نام‌گذاری <span dir="ltr">Branch</span> و <span dir="ltr">Commit</span>
 
-- <bdi dir="ltr">Branch</bdi> روزانه: <bdi dir="ltr">learning/s01-w01-d01</bdi>
-- <bdi dir="ltr">Commit</bdi> روزانه: <bdi dir="ltr">S01W01D01: architecture baseline</bdi>
-- پایان هفته: <bdi dir="ltr">tag</bdi> با الگوی <bdi dir="ltr">week-01-done</bdi>
-- پایان <bdi dir="ltr">Gate: tag</bdi> با الگوی <bdi dir="ltr">gate-01-passed</bdi>
+- <span dir="ltr">Branch</span> روزانه: <span dir="ltr">learning/s01-w01-d01</span>
+- <span dir="ltr">Commit</span> روزانه: <span dir="ltr">S01W01D01: architecture baseline</span>
+- پایان هفته: <span dir="ltr">tag</span> با الگوی <span dir="ltr">week-01-done</span>
+- پایان <span dir="ltr">Gate: tag</span> با الگوی <span dir="ltr">gate-01-passed</span>
 
-تا زمانی که تمرین روز بازبینی نشده، عبارت <bdi dir="ltr">done</bdi> در <bdi dir="ltr">Commit</bdi> استفاده نمی‌شود.
+تا زمانی که تمرین روز بازبینی نشده، عبارت <span dir="ltr">done</span> در <span dir="ltr">Commit</span> استفاده نمی‌شود.
 
 ## مسیر پاسخ‌ها
 
-پاسخ هر تمرین در پوشهٔ <bdi dir="ltr">submissions</bdi> همان هفته نوشته می‌شود. محتوای تولیدشده توسط استاد در <bdi dir="ltr">lessons</bdi> و پاسخ دانشجو در <bdi dir="ltr">submissions</bdi> می‌ماند تا تغییر مدل ذهنی در طول دوره قابل مشاهده باشد.
+پاسخ هر تمرین در پوشهٔ <span dir="ltr">submissions</span> همان هفته نوشته می‌شود. محتوای تولیدشده توسط استاد در <span dir="ltr">lessons</span> و پاسخ دانشجو در <span dir="ltr">submissions</span> می‌ماند تا تغییر مدل ذهنی در طول دوره قابل مشاهده باشد.
 
-## <bdi dir="ltr">Definition of Done</bdi> هفتگی
+## <span dir="ltr">Definition of Done</span> هفتگی
 
-- <bdi dir="ltr">Artifact</bdi> یا کد در <bdi dir="ltr">Git</bdi> ثبت شده باشد.
-- <bdi dir="ltr">mvn verify</bdi> موفق باشد.
-- قواعد دامینی جدید <bdi dir="ltr">Unit Test</bdi> داشته باشند.
-- مرزهای جدید با <bdi dir="ltr">Architecture Test</bdi> یا <bdi dir="ltr">Module Verification</bdi> کنترل شوند.
-- تغییر قرارداد در <bdi dir="ltr">OpenAPI</bdi> یا <bdi dir="ltr">AsyncAPI</bdi> ثبت شود.
-- دست‌کم یک <bdi dir="ltr">Edge Case</bdi> یا <bdi dir="ltr">Failure</bdi> آزموده شود.
-- تصمیم غیر بدیهی در <bdi dir="ltr">ADR</bdi> ثبت شود.
+- <span dir="ltr">Artifact</span> یا کد در <span dir="ltr">Git</span> ثبت شده باشد.
+- <span dir="ltr">mvn verify</span> موفق باشد.
+- قواعد دامینی جدید <span dir="ltr">Unit Test</span> داشته باشند.
+- مرزهای جدید با <span dir="ltr">Architecture Test</span> یا <span dir="ltr">Module Verification</span> کنترل شوند.
+- تغییر قرارداد در <span dir="ltr">OpenAPI</span> یا <span dir="ltr">AsyncAPI</span> ثبت شود.
+- دست‌کم یک <span dir="ltr">Edge Case</span> یا <span dir="ltr">Failure</span> آزموده شود.
+- تصمیم غیر بدیهی در <span dir="ltr">ADR</span> ثبت شود.
 - گزارش هفته تکمیل شود.
 - دفاع ده‌دقیقه‌ای قابل ارائه باشد.
-- از <bdi dir="ltr">Week 02</bdi>، <bdi dir="ltr">Code Craft Lab</bdi> شامل <bdi dir="ltr">Baseline</bdi>، <bdi dir="ltr">Characterization Test</bdi>، <bdi dir="ltr">Pattern Decision</bdi>، <bdi dir="ltr">Edge Test</bdi> و <bdi dir="ltr">Self-review</bdi> تکمیل شود.
-- از <bdi dir="ltr">Week 02</bdi>، <bdi dir="ltr">Core Banking Case File</bdi> با تفکیک <bdi dir="ltr">Fact/Inference/Unknown</bdi> و یک تصمیم قابل انتقال مرور شود.
+- از <span dir="ltr">Week 02</span>، <span dir="ltr">Code Craft Lab</span> شامل <span dir="ltr">Baseline</span>، <span dir="ltr">Characterization Test</span>، <span dir="ltr">Pattern Decision</span>، <span dir="ltr">Edge Test</span> و <span dir="ltr">Self-review</span> تکمیل شود.
+- از <span dir="ltr">Week 02</span>، <span dir="ltr">Core Banking Case File</span> با تفکیک <span dir="ltr">Fact/Inference/Unknown</span> و یک تصمیم قابل انتقال مرور شود.
 
-مورد نامرتبط با عبارت <bdi dir="ltr">Not Applicable</bdi> و دلیل ثبت می‌شود؛ خالی نمی‌ماند.
+مورد نامرتبط با عبارت <span dir="ltr">Not Applicable</span> و دلیل ثبت می‌شود؛ خالی نمی‌ماند.
 
-## قواعد <bdi dir="ltr">Review</bdi>
+## قواعد <span dir="ltr">Review</span>
 
-<bdi dir="ltr">Review</bdi> فقط به «درست/غلط» ختم نمی‌شود. برای هر ایراد باید ثبت شود:
+<span dir="ltr">Review</span> فقط به «درست/غلط» ختم نمی‌شود. برای هر ایراد باید ثبت شود:
 
 1. محل دقیق ایراد
-2. نوع ایراد: <bdi dir="ltr">Concept</bdi>، <bdi dir="ltr">Boundary</bdi>، <bdi dir="ltr">Domain</bdi>، <bdi dir="ltr">Code</bdi>، <bdi dir="ltr">Data</bdi>، <bdi dir="ltr">Test</bdi> یا <bdi dir="ltr">Documentation</bdi>
+2. نوع ایراد: <span dir="ltr">Concept</span>، <span dir="ltr">Boundary</span>، <span dir="ltr">Domain</span>، <span dir="ltr">Code</span>، <span dir="ltr">Data</span>، <span dir="ltr">Test</span> یا <span dir="ltr">Documentation</span>
 3. اثر بالقوه
 4. اصلاح حداقلی
 5. شاهد قبولی پس از اصلاح
@@ -65,10 +65,10 @@ Backlog → Ready → Doing → Review → Gate → Done
 ## زبان و قالب
 
 - متن آموزشی فارسی است؛ نام الگوها، قراردادها و اجزای کد به انگلیسی استاندارد می‌ماند.
-- فایل‌ها <bdi dir="ltr">UTF-8</bdi> و <bdi dir="ltr">LF</bdi> هستند و <bdi dir="ltr">Markdown</bdi>های دارای متن فارسی باید از [استاندارد <bdi dir="ltr">BiDi</bdi> مخزن](docs/course/markdown-bidi-style-guide.md) پیروی کنند.
-- نثر فارسی داخل ظرف <bdi dir="ltr">RTL</bdi>، اصطلاحات و <bdi dir="ltr">inline code</bdi> داخل <bdi dir="ltr">`bdi dir="ltr"`</bdi> و <bdi dir="ltr">fenced code block</bdi>ها داخل ظرف <bdi dir="ltr">LTR</bdi> قرار می‌گیرند.
-- نویسه‌های نامرئی کنترل جهت مجاز نیستند؛ پیش از <bdi dir="ltr">Commit</bdi>، <bdi dir="ltr">`python3 scripts/markdown_bidi.py --check`</bdi> باید موفق باشد.
-- <bdi dir="ltr">Diagram</bdi>ها باید <bdi dir="ltr">Version</bdi>، <bdi dir="ltr">Scope</bdi> و <bdi dir="ltr">Ownership</bdi> را نشان دهند.
+- فایل‌ها <span dir="ltr">UTF-8</span> و <span dir="ltr">LF</span> هستند و <span dir="ltr">Markdown</span>های دارای متن فارسی باید از [استاندارد <span dir="ltr">BiDi</span> مخزن](docs/course/markdown-bidi-style-guide.md) پیروی کنند.
+- نثر فارسی داخل ظرف <span dir="ltr">RTL</span>، اصطلاحات و <span dir="ltr">inline code</span> داخل <span dir="ltr">`span dir="ltr"`</span> و <span dir="ltr">fenced code block</span>ها داخل ظرف <span dir="ltr">LTR</span> قرار می‌گیرند.
+- نویسه‌های نامرئی کنترل جهت مجاز نیستند؛ پیش از <span dir="ltr">Commit</span>، <span dir="ltr">`python3 scripts/markdown_bidi.py --check`</span> باید موفق باشد.
+- <span dir="ltr">Diagram</span>ها باید <span dir="ltr">Version</span>، <span dir="ltr">Scope</span> و <span dir="ltr">Ownership</span> را نشان دهند.
 - دادهٔ واقعی بانک و کد تولیدی در مخزن قرار نمی‌گیرد.
 
 </div>

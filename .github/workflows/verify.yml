@@ -14,6 +14,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v7
+      - name: Test Markdown BiDi formatter
+        run: python3 -m unittest tests/test_markdown_bidi.py
       - name: Verify Persian Markdown direction
         run: python3 scripts/markdown_bidi.py --check
 

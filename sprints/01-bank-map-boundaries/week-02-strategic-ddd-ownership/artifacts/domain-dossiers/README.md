@@ -1,28 +1,28 @@
 <!-- bidi: rtl; code: ltr -->
 <div dir="rtl" align="right">
 
-# <bdi dir="ltr">Six Domain Dossiers</bdi> — <bdi dir="ltr">Sprint 01 Skeletons</bdi>
+# <span dir="ltr">Six Domain Dossiers</span> — <span dir="ltr">Sprint 01 Skeletons</span>
 
-این شش فایل پاسخ آماده نیستند. هرکدام یک پروندهٔ زنده‌اند که در طول ۲۴ هفته تکمیل می‌شوند. در <bdi dir="ltr">Week 02</bdi> فقط بخش‌های <bdi dir="ltr">Purpose</bdi>، <bdi dir="ltr">Scope</bdi>، <bdi dir="ltr">Language</bdi>، <bdi dir="ltr">Ownership</bdi>، <bdi dir="ltr">Context Relations</bdi> و <bdi dir="ltr">Module Hypothesis</bdi> را پر کن.
+این شش فایل پاسخ آماده نیستند. هرکدام یک پروندهٔ زنده‌اند که در طول ۲۴ هفته تکمیل می‌شوند. در <span dir="ltr">Week 02</span> فقط بخش‌های <span dir="ltr">Purpose</span>، <span dir="ltr">Scope</span>، <span dir="ltr">Language</span>، <span dir="ltr">Ownership</span>، <span dir="ltr">Context Relations</span> و <span dir="ltr">Module Hypothesis</span> را پر کن.
 
-1. [<bdi dir="ltr">Party</bdi> & <bdi dir="ltr">Customer</bdi>](party-customer.md)
-2. [<bdi dir="ltr">Product</bdi> & <bdi dir="ltr">Agreement</bdi>](product-agreement.md)
-3. [<bdi dir="ltr">Deposits</bdi>](deposits.md)
-4. [<bdi dir="ltr">Lending</bdi>](lending.md)
-5. [<bdi dir="ltr">Payments</bdi>](payments.md)
-6. [<bdi dir="ltr">Accounting</bdi>](accounting.md)
+1. [<span dir="ltr">Party</span> & <span dir="ltr">Customer</span>](party-customer.md)
+2. [<span dir="ltr">Product</span> & <span dir="ltr">Agreement</span>](product-agreement.md)
+3. [<span dir="ltr">Deposits</span>](deposits.md)
+4. [<span dir="ltr">Lending</span>](lending.md)
+5. [<span dir="ltr">Payments</span>](payments.md)
+6. [<span dir="ltr">Accounting</span>](accounting.md)
 
-از [قالب کامل پرونده](../domain-dossier-template.md) استفاده کن. هیچ ادعایی بدون برچسب <bdi dir="ltr">`Fact`</bdi>، <bdi dir="ltr">`Hypothesis`</bdi>، <bdi dir="ltr">`Decision`</bdi> یا <bdi dir="ltr">`Open Question`</bdi> پذیرفته نمی‌شود.
+از [قالب کامل پرونده](../domain-dossier-template.md) استفاده کن. هیچ ادعایی بدون برچسب <span dir="ltr">`Fact`</span>، <span dir="ltr">`Hypothesis`</span>، <span dir="ltr">`Decision`</span> یا <span dir="ltr">`Open Question`</span> پذیرفته نمی‌شود.
 
-## <bdi dir="ltr">Minimum content for Week 02</bdi>
+## <span dir="ltr">Minimum content for Week 02</span>
 
-- یک <bdi dir="ltr">Purpose</bdi> دقیق
-- حداقل سه مورد <bdi dir="ltr">In Scope</bdi> و سه مورد <bdi dir="ltr">Out of Scope</bdi>
-- پنج اصطلاح <bdi dir="ltr">Ubiquitous Language</bdi>
-- پنج <bdi dir="ltr">Fact/Decision</bdi> تحت مالکیت
-- سه موردی که <bdi dir="ltr">Domain</bdi> نباید مالک باشد
-- رابطه با حداقل دو <bdi dir="ltr">Context</bdi> دیگر
-- فرضیهٔ <bdi dir="ltr">Mapping</bdi> به <bdi dir="ltr">Spring Modulith</bdi>
-- حداقل سه <bdi dir="ltr">Open Question</bdi>
+- یک <span dir="ltr">Purpose</span> دقیق
+- حداقل سه مورد <span dir="ltr">In Scope</span> و سه مورد <span dir="ltr">Out of Scope</span>
+- پنج اصطلاح <span dir="ltr">Ubiquitous Language</span>
+- پنج <span dir="ltr">Fact/Decision</span> تحت مالکیت
+- سه موردی که <span dir="ltr">Domain</span> نباید مالک باشد
+- رابطه با حداقل دو <span dir="ltr">Context</span> دیگر
+- فرضیهٔ <span dir="ltr">Mapping</span> به <span dir="ltr">Spring Modulith</span>
+- حداقل سه <span dir="ltr">Open Question</span>
 
 </div>

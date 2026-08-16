@@ -1,60 +1,60 @@
 <!-- bidi: rtl; code: ltr -->
 <div dir="rtl" align="right">
 
-# <bdi dir="ltr">Data and Decision Ownership Matrix v1</bdi> — <bdi dir="ltr">Template</bdi>
+# <span dir="ltr">Data and Decision Ownership Matrix v1</span> — <span dir="ltr">Template</span>
 
-- <bdi dir="ltr">Version: 0.1</bdi>
-- <bdi dir="ltr">Status: Not started</bdi>
-- <bdi dir="ltr">Rule: one semantic Fact/Decision has exactly one authority</bdi>; <bdi dir="ltr">other copies must declare their role.</bdi>
+- <span dir="ltr">Version: 0.1</span>
+- <span dir="ltr">Status: Not started</span>
+- <span dir="ltr">Rule: one semantic Fact/Decision has exactly one authority</span>; <span dir="ltr">other copies must declare their role.</span>
 
-## <bdi dir="ltr">Allowed cell values</bdi>
+## <span dir="ltr">Allowed cell values</span>
 
-- <bdi dir="ltr">`Authority`</bdi>: تنها <bdi dir="ltr">Context</bdi> مجاز به ایجاد/تغییر <bdi dir="ltr">Fact</bdi> یا گرفتن <bdi dir="ltr">Decision</bdi>
-- <bdi dir="ltr">`Reference`</bdi>: فقط شناسه و رجوع به <bdi dir="ltr">Authority</bdi>
-- <bdi dir="ltr">`Snapshot`</bdi>: کپی تاریخیِ مؤثر در لحظهٔ تعهد
-- <bdi dir="ltr">`Derived`</bdi>: مقدار مشتق‌شده با <bdi dir="ltr">Source</bdi> و <bdi dir="ltr">Formula</bdi> مشخص
-- <bdi dir="ltr">`Projection`</bdi>: مدل خواندنی قابل بازسازی
-- <bdi dir="ltr">`Cache`</bdi>: کپی موقت با <bdi dir="ltr">Freshness/Expiry</bdi>
-- <bdi dir="ltr">`Consumer`</bdi>: دریافت‌کنندهٔ <bdi dir="ltr">Fact</bdi> بدون مالکیت
-- <bdi dir="ltr">`Not Allowed`</bdi>: نگهداری یا تغییر این داده در این <bdi dir="ltr">Context</bdi> ممنوع
-- <bdi dir="ltr">`N/A`</bdi>: ارتباطی ندارد
+- <span dir="ltr">`Authority`</span>: تنها <span dir="ltr">Context</span> مجاز به ایجاد/تغییر <span dir="ltr">Fact</span> یا گرفتن <span dir="ltr">Decision</span>
+- <span dir="ltr">`Reference`</span>: فقط شناسه و رجوع به <span dir="ltr">Authority</span>
+- <span dir="ltr">`Snapshot`</span>: کپی تاریخیِ مؤثر در لحظهٔ تعهد
+- <span dir="ltr">`Derived`</span>: مقدار مشتق‌شده با <span dir="ltr">Source</span> و <span dir="ltr">Formula</span> مشخص
+- <span dir="ltr">`Projection`</span>: مدل خواندنی قابل بازسازی
+- <span dir="ltr">`Cache`</span>: کپی موقت با <span dir="ltr">Freshness/Expiry</span>
+- <span dir="ltr">`Consumer`</span>: دریافت‌کنندهٔ <span dir="ltr">Fact</span> بدون مالکیت
+- <span dir="ltr">`Not Allowed`</span>: نگهداری یا تغییر این داده در این <span dir="ltr">Context</span> ممنوع
+- <span dir="ltr">`N/A`</span>: ارتباطی ندارد
 
-## <bdi dir="ltr">Matrix</bdi>
+## <span dir="ltr">Matrix</span>
 
-| <bdi dir="ltr">Data/Decision</bdi> | <bdi dir="ltr">Party</bdi> & <bdi dir="ltr">Customer</bdi> | <bdi dir="ltr">Product</bdi> & <bdi dir="ltr">Agreement</bdi> | <bdi dir="ltr">Deposits</bdi> | <bdi dir="ltr">Lending</bdi> | <bdi dir="ltr">Payments</bdi> | <bdi dir="ltr">Accounting</bdi> | <bdi dir="ltr">Authority</bdi> / <bdi dir="ltr">Source of Record</bdi> | <bdi dir="ltr">Freshness/history rule</bdi> | <bdi dir="ltr">Reconciliation owner</bdi> | <bdi dir="ltr">Notes</bdi> |
+| <span dir="ltr">Data/Decision</span> | <span dir="ltr">Party</span> & <span dir="ltr">Customer</span> | <span dir="ltr">Product</span> & <span dir="ltr">Agreement</span> | <span dir="ltr">Deposits</span> | <span dir="ltr">Lending</span> | <span dir="ltr">Payments</span> | <span dir="ltr">Accounting</span> | <span dir="ltr">Authority</span> / <span dir="ltr">Source of Record</span> | <span dir="ltr">Freshness/history rule</span> | <span dir="ltr">Reconciliation owner</span> | <span dir="ltr">Notes</span> |
 |---|---|---|---|---|---|---|---|---|---|---|
-| <bdi dir="ltr">Party identity</bdi> |  |  |  |  |  |  |  |  |  |  |
-| <bdi dir="ltr">Customer/KYC status</bdi> |  |  |  |  |  |  |  |  |  |  |
-| <bdi dir="ltr">Product definition/version</bdi> |  |  |  |  |  |  |  |  |  |  |
-| <bdi dir="ltr">Executed agreement terms</bdi> |  |  |  |  |  |  |  |  |  |  |
-| <bdi dir="ltr">Deposit account lifecycle</bdi> |  |  |  |  |  |  |  |  |  |  |
-| <bdi dir="ltr">Available deposit balance</bdi> |  |  |  |  |  |  |  |  |  |  |
-| <bdi dir="ltr">Operational deposit hold</bdi> |  |  |  |  |  |  |  |  |  |  |
-| <bdi dir="ltr">Loan principal outstanding</bdi> |  |  |  |  |  |  |  |  |  |  |
-| <bdi dir="ltr">Repayment schedule/state</bdi> |  |  |  |  |  |  |  |  |  |  |
-| <bdi dir="ltr">Payment order state</bdi> |  |  |  |  |  |  |  |  |  |  |
-| <bdi dir="ltr">Settlement state</bdi> |  |  |  |  |  |  |  |  |  |  |
-| <bdi dir="ltr">Journal Entry</bdi> |  |  |  |  |  |  |  |  |  |  |
-| <bdi dir="ltr">GL/Subledger balance</bdi> |  |  |  |  |  |  |  |  |  |  |
-| <bdi dir="ltr">Cross-domain process state</bdi> |  |  |  |  |  |  |  |  |  |  |
+| <span dir="ltr">Party identity</span> |  |  |  |  |  |  |  |  |  |  |
+| <span dir="ltr">Customer/KYC status</span> |  |  |  |  |  |  |  |  |  |  |
+| <span dir="ltr">Product definition/version</span> |  |  |  |  |  |  |  |  |  |  |
+| <span dir="ltr">Executed agreement terms</span> |  |  |  |  |  |  |  |  |  |  |
+| <span dir="ltr">Deposit account lifecycle</span> |  |  |  |  |  |  |  |  |  |  |
+| <span dir="ltr">Available deposit balance</span> |  |  |  |  |  |  |  |  |  |  |
+| <span dir="ltr">Operational deposit hold</span> |  |  |  |  |  |  |  |  |  |  |
+| <span dir="ltr">Loan principal outstanding</span> |  |  |  |  |  |  |  |  |  |  |
+| <span dir="ltr">Repayment schedule/state</span> |  |  |  |  |  |  |  |  |  |  |
+| <span dir="ltr">Payment order state</span> |  |  |  |  |  |  |  |  |  |  |
+| <span dir="ltr">Settlement state</span> |  |  |  |  |  |  |  |  |  |  |
+| <span dir="ltr">Journal Entry</span> |  |  |  |  |  |  |  |  |  |  |
+| <span dir="ltr">GL/Subledger balance</span> |  |  |  |  |  |  |  |  |  |  |
+| <span dir="ltr">Cross-domain process state</span> |  |  |  |  |  |  |  |  |  |  |
 
-## <bdi dir="ltr">Decision ownership</bdi>
+## <span dir="ltr">Decision ownership</span>
 
-| <bdi dir="ltr">Decision</bdi> | <bdi dir="ltr">Trigger owner</bdi> | <bdi dir="ltr">Decision authority</bdi> | <bdi dir="ltr">State owner</bdi> | <bdi dir="ltr">Evidence required</bdi> | <bdi dir="ltr">Resulting fact/event</bdi> | <bdi dir="ltr">Consumers</bdi> |
+| <span dir="ltr">Decision</span> | <span dir="ltr">Trigger owner</span> | <span dir="ltr">Decision authority</span> | <span dir="ltr">State owner</span> | <span dir="ltr">Evidence required</span> | <span dir="ltr">Resulting fact/event</span> | <span dir="ltr">Consumers</span> |
 |---|---|---|---|---|---|---|
-| <bdi dir="ltr">Is customer identity valid</bdi>? |  |  |  |  |  |  |
-| <bdi dir="ltr">Can this deposit accept a credit</bdi>? |  |  |  |  |  |  |
-| <bdi dir="ltr">Can this hold be placed now</bdi>? |  |  |  |  |  |  |
-| <bdi dir="ltr">Has the loan been granted</bdi>? |  |  |  |  |  |  |
-| <bdi dir="ltr">Which journal template applies</bdi>? |  |  |  |  |  |  |
+| <span dir="ltr">Is customer identity valid</span>? |  |  |  |  |  |  |
+| <span dir="ltr">Can this deposit accept a credit</span>? |  |  |  |  |  |  |
+| <span dir="ltr">Can this hold be placed now</span>? |  |  |  |  |  |  |
+| <span dir="ltr">Has the loan been granted</span>? |  |  |  |  |  |  |
+| <span dir="ltr">Which journal template applies</span>? |  |  |  |  |  |  |
 
-## <bdi dir="ltr">Quality checks</bdi>
+## <span dir="ltr">Quality checks</span>
 
-1. برای یک ردیف بیش از یک <bdi dir="ltr">`Authority`</bdi> ننویس.
-2. اگر دو مقدار هر دو «<bdi dir="ltr">Balance</bdi>» هستند، معنای آن‌ها را جدا کن؛ شاید دو <bdi dir="ltr">Fact</bdi> متفاوت باشند.
-3. <bdi dir="ltr">`Snapshot`</bdi> باید زمان مؤثر و <bdi dir="ltr">Provenance</bdi> داشته باشد.
-4. <bdi dir="ltr">`Derived`</bdi> باید <bdi dir="ltr">Source</bdi> و <bdi dir="ltr">Formula</bdi> داشته باشد.
-5. <bdi dir="ltr">Process Manager</bdi> فقط وضعیت هماهنگی را مالک است، نه <bdi dir="ltr">State</bdi> داخلی <bdi dir="ltr">Domain</bdi>ها.
-6. <bdi dir="ltr">Replication</bdi> فنی <bdi dir="ltr">Authority</bdi> جدید ایجاد نمی‌کند.
+1. برای یک ردیف بیش از یک <span dir="ltr">`Authority`</span> ننویس.
+2. اگر دو مقدار هر دو «<span dir="ltr">Balance</span>» هستند، معنای آن‌ها را جدا کن؛ شاید دو <span dir="ltr">Fact</span> متفاوت باشند.
+3. <span dir="ltr">`Snapshot`</span> باید زمان مؤثر و <span dir="ltr">Provenance</span> داشته باشد.
+4. <span dir="ltr">`Derived`</span> باید <span dir="ltr">Source</span> و <span dir="ltr">Formula</span> داشته باشد.
+5. <span dir="ltr">Process Manager</span> فقط وضعیت هماهنگی را مالک است، نه <span dir="ltr">State</span> داخلی <span dir="ltr">Domain</span>ها.
+6. <span dir="ltr">Replication</span> فنی <span dir="ltr">Authority</span> جدید ایجاد نمی‌کند.
 
 </div>

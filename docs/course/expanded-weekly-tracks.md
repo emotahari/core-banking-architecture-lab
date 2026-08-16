@@ -1,26 +1,26 @@
 <!-- bidi: rtl; code: ltr -->
 <div dir="rtl" align="right">
 
-# الحاقیهٔ ثابت هفتگی — <bdi dir="ltr">Code Craft</bdi> و پروندهٔ <bdi dir="ltr">Core Banking</bdi>
+# الحاقیهٔ ثابت هفتگی — <span dir="ltr">Code Craft</span> و پروندهٔ <span dir="ltr">Core Banking</span>
 
-- <bdi dir="ltr">Effective from: Week 01</bdi>
-- <bdi dir="ltr">Core curriculum: preserved without reduction</bdi>
-- <bdi dir="ltr">Expanded weekly budget: 510 minutes</bdi>
-- <bdi dir="ltr">Review rule: Pattern</bdi> بدون <bdi dir="ltr">Forces</bdi> و <bdi dir="ltr">Test</bdi> پذیرفته نیست؛ روایت شرکتی بدون <bdi dir="ltr">Source</bdi> و تفکیک <bdi dir="ltr">Fact/Inference</bdi> نیز پذیرفته نیست.
+- <span dir="ltr">Effective from: Week 01</span>
+- <span dir="ltr">Core curriculum: preserved without reduction</span>
+- <span dir="ltr">Expanded weekly budget: 510 minutes</span>
+- <span dir="ltr">Review rule: Pattern</span> بدون <span dir="ltr">Forces</span> و <span dir="ltr">Test</span> پذیرفته نیست؛ روایت شرکتی بدون <span dir="ltr">Source</span> و تفکیک <span dir="ltr">Fact/Inference</span> نیز پذیرفته نیست.
 
 ## 1. قرارداد عدم کاهش
 
-برنامهٔ اصلی معماری و <bdi dir="ltr">Core Banking</bdi> حذف، فشرده یا جایگزین نمی‌شود. از <bdi dir="ltr">Week 01</bdi> به بعد هر هفته سه ریل هم‌زمان دارد:
+برنامهٔ اصلی معماری و <span dir="ltr">Core Banking</span> حذف، فشرده یا جایگزین نمی‌شود. از <span dir="ltr">Week 01</span> به بعد هر هفته سه ریل هم‌زمان دارد:
 
-1. **<bdi dir="ltr">Architecture</bdi> & <bdi dir="ltr">Banking Domain Core</bdi> — <bdi dir="ltr">360 minutes:</bdi>** همان درس‌ها، <bdi dir="ltr">Artifact</bdi>ها، کد، <bdi dir="ltr">Failure</bdi> و <bdi dir="ltr">Gate</bdi> قبلی.
-2. **<bdi dir="ltr">Code Craft Lab</bdi> — <bdi dir="ltr">105 minutes:</bdi>** <bdi dir="ltr">Clean Code</bdi>، <bdi dir="ltr">Refactoring</bdi>، <bdi dir="ltr">Design Pattern</bdi>، <bdi dir="ltr">Unit Test</bdi> و <bdi dir="ltr">Code Review</bdi> روی مسئلهٔ بانکی همان هفته.
-3. **<bdi dir="ltr">Core Banking Case File</bdi> — <bdi dir="ltr">45 minutes:</bdi>** داستان یک <bdi dir="ltr">Core Banking</bdi>، بانک دیجیتال یا سامانهٔ بانکی واقعی با شواهد عمومی.
+1. **<span dir="ltr">Architecture</span> & <span dir="ltr">Banking Domain Core</span> — <span dir="ltr">360 minutes:</span>** همان درس‌ها، <span dir="ltr">Artifact</span>ها، کد، <span dir="ltr">Failure</span> و <span dir="ltr">Gate</span> قبلی.
+2. **<span dir="ltr">Code Craft Lab</span> — <span dir="ltr">105 minutes:</span>** <span dir="ltr">Clean Code</span>، <span dir="ltr">Refactoring</span>، <span dir="ltr">Design Pattern</span>، <span dir="ltr">Unit Test</span> و <span dir="ltr">Code Review</span> روی مسئلهٔ بانکی همان هفته.
+3. **<span dir="ltr">Core Banking Case File</span> — <span dir="ltr">45 minutes:</span>** داستان یک <span dir="ltr">Core Banking</span>، بانک دیجیتال یا سامانهٔ بانکی واقعی با شواهد عمومی.
 
-اگر در هفته‌ای فقط شش ساعت زمان وجود داشت، ریل اصلی اجرا می‌شود و دو ریل افزوده با وضعیت <bdi dir="ltr">`Extension Pending`</bdi> به اولین زمان آزاد منتقل می‌شوند؛ حذف خاموش یا کوچک‌کردن <bdi dir="ltr">Gate</bdi> اصلی مجاز نیست. وضعیت <bdi dir="ltr">`Week Done — Expanded`</bdi> فقط وقتی ثبت می‌شود که هر سه ریل تمام شده باشند.
+اگر در هفته‌ای فقط شش ساعت زمان وجود داشت، ریل اصلی اجرا می‌شود و دو ریل افزوده با وضعیت <span dir="ltr">`Extension Pending`</span> به اولین زمان آزاد منتقل می‌شوند؛ حذف خاموش یا کوچک‌کردن <span dir="ltr">Gate</span> اصلی مجاز نیست. وضعیت <span dir="ltr">`Week Done — Expanded`</span> فقط وقتی ثبت می‌شود که هر سه ریل تمام شده باشند.
 
-## 2. استاندارد <bdi dir="ltr">Code Craft Lab</bdi>
+## 2. استاندارد <span dir="ltr">Code Craft Lab</span>
 
-هر <bdi dir="ltr">Lab</bdi> باید این چرخه را طی کند:
+هر <span dir="ltr">Lab</span> باید این چرخه را طی کند:
 
 
 </div>
@@ -44,101 +44,101 @@ running baseline
 
 ### خروجی اجباری
 
-- کد <bdi dir="ltr">Baseline</bdi> قابل اجرا و نتیجهٔ تست قبل از تغییر
-- <bdi dir="ltr">Smell Map</bdi> با محل، نشانه و اثر هر <bdi dir="ltr">Smell</bdi>
-- <bdi dir="ltr">Commit</bdi>های کوچک یا دست‌کم <bdi dir="ltr">Diff</bdi> مرحله‌بندی‌شده
-- تست رفتار عادی و حداقل یک <bdi dir="ltr">Edge Case</bdi>
-- <bdi dir="ltr">Pattern Decision</bdi> شامل <bdi dir="ltr">`Problem / Forces / Options / Decision / Cost`</bdi>
-- نسخهٔ <bdi dir="ltr">Refactored</bdi> با نام‌های دامینی و <bdi dir="ltr">Dependency</bdi>های محدودتر
-- <bdi dir="ltr">Self-review</bdi> با ذکر یک بهبود و یک <bdi dir="ltr">Debt</bdi> باقی‌مانده
+- کد <span dir="ltr">Baseline</span> قابل اجرا و نتیجهٔ تست قبل از تغییر
+- <span dir="ltr">Smell Map</span> با محل، نشانه و اثر هر <span dir="ltr">Smell</span>
+- <span dir="ltr">Commit</span>های کوچک یا دست‌کم <span dir="ltr">Diff</span> مرحله‌بندی‌شده
+- تست رفتار عادی و حداقل یک <span dir="ltr">Edge Case</span>
+- <span dir="ltr">Pattern Decision</span> شامل <span dir="ltr">`Problem / Forces / Options / Decision / Cost`</span>
+- نسخهٔ <span dir="ltr">Refactored</span> با نام‌های دامینی و <span dir="ltr">Dependency</span>های محدودتر
+- <span dir="ltr">Self-review</span> با ذکر یک بهبود و یک <span dir="ltr">Debt</span> باقی‌مانده
 
 ### قواعد آموزشی
 
-- <bdi dir="ltr">Clean Code</bdi> مساوی «<bdi dir="ltr">Method</bdi> کوتاه به هر قیمت» نیست؛ خوانایی، <bdi dir="ltr">Cohesion</bdi>، <bdi dir="ltr">Encapsulation</bdi> و قابلیت تغییر معیارند.
-- <bdi dir="ltr">`Strategy`</bdi> جایگزین خودکار هر <bdi dir="ltr">`switch`</bdi> نیست. اگر <bdi dir="ltr">Variation</bdi> واقعی و مستقل وجود ندارد، <bdi dir="ltr">Conditional</bdi> ساده می‌تواند انتخاب تمیزتری باشد.
-- <bdi dir="ltr">`Factory`</bdi> نباید فقط <bdi dir="ltr">Constructor</bdi> را پنهان کند؛ باید <bdi dir="ltr">Creation decision</bdi> معناداری را متمرکز کند.
-- <bdi dir="ltr">Pattern</bdi> نام‌گذاری برای دفاع از <bdi dir="ltr">Complexity</bdi> نیست. اگر تعداد <bdi dir="ltr">Type</bdi>ها زیاد شد اما <bdi dir="ltr">Change coupling</bdi> کم نشد، <bdi dir="ltr">Refactor</bdi> شکست خورده است.
-- <bdi dir="ltr">Refactor</bdi> نباید رفتار را ناخواسته تغییر دهد؛ تغییر <bdi dir="ltr">Rule</bdi> دامینی و <bdi dir="ltr">Refactor</bdi> دو <bdi dir="ltr">Commit/</bdi>تصمیم جدا هستند.
-- مثال‌های بانکی این دوره آموزشی‌اند و نرخ‌ها، <bdi dir="ltr">Limits</bdi> و <bdi dir="ltr">Accounting rule</bdi>های آن‌ها تعرفه یا مقررات واقعی بانک محسوب نمی‌شوند.
+- <span dir="ltr">Clean Code</span> مساوی «<span dir="ltr">Method</span> کوتاه به هر قیمت» نیست؛ خوانایی، <span dir="ltr">Cohesion</span>، <span dir="ltr">Encapsulation</span> و قابلیت تغییر معیارند.
+- <span dir="ltr">`Strategy`</span> جایگزین خودکار هر <span dir="ltr">`switch`</span> نیست. اگر <span dir="ltr">Variation</span> واقعی و مستقل وجود ندارد، <span dir="ltr">Conditional</span> ساده می‌تواند انتخاب تمیزتری باشد.
+- <span dir="ltr">`Factory`</span> نباید فقط <span dir="ltr">Constructor</span> را پنهان کند؛ باید <span dir="ltr">Creation decision</span> معناداری را متمرکز کند.
+- <span dir="ltr">Pattern</span> نام‌گذاری برای دفاع از <span dir="ltr">Complexity</span> نیست. اگر تعداد <span dir="ltr">Type</span>ها زیاد شد اما <span dir="ltr">Change coupling</span> کم نشد، <span dir="ltr">Refactor</span> شکست خورده است.
+- <span dir="ltr">Refactor</span> نباید رفتار را ناخواسته تغییر دهد؛ تغییر <span dir="ltr">Rule</span> دامینی و <span dir="ltr">Refactor</span> دو <span dir="ltr">Commit/</span>تصمیم جدا هستند.
+- مثال‌های بانکی این دوره آموزشی‌اند و نرخ‌ها، <span dir="ltr">Limits</span> و <span dir="ltr">Accounting rule</span>های آن‌ها تعرفه یا مقررات واقعی بانک محسوب نمی‌شوند.
 
-## 3. استاندارد پروندهٔ هفتگی <bdi dir="ltr">Core Banking</bdi>
+## 3. استاندارد پروندهٔ هفتگی <span dir="ltr">Core Banking</span>
 
 هر پرونده باید دست‌کم این بخش‌ها را داشته باشد:
 
-1. هویت سامانه/بانک و <bdi dir="ltr">Scope</bdi> بررسی
+1. هویت سامانه/بانک و <span dir="ltr">Scope</span> بررسی
 2. مسئله‌ای که باعث تولد آن شد
-3. <bdi dir="ltr">Timeline</bdi> از تأسیس تا امروز
+3. <span dir="ltr">Timeline</span> از تأسیس تا امروز
 4. تحول محصول و مدل کسب‌وکار
 5. تحول معماری و فناوری
-6. معماری و <bdi dir="ltr">Technology stack</bdi> فعلی، فقط در حد اطلاعات عمومی قابل اثبات
-7. <bdi dir="ltr">Capability/Domain map</bdi> تحلیلی با برچسب صریح <bdi dir="ltr">`Fact`</bdi> یا <bdi dir="ltr">`Inference`</bdi>
-8. اشتباه‌ها، رخدادها، <bdi dir="ltr">Migration</bdi>های دشوار و شرط‌بندی‌های ناموفق
+6. معماری و <span dir="ltr">Technology stack</span> فعلی، فقط در حد اطلاعات عمومی قابل اثبات
+7. <span dir="ltr">Capability/Domain map</span> تحلیلی با برچسب صریح <span dir="ltr">`Fact`</span> یا <span dir="ltr">`Inference`</span>
+8. اشتباه‌ها، رخدادها، <span dir="ltr">Migration</span>های دشوار و شرط‌بندی‌های ناموفق
 9. دستاوردهای جدید با تاریخ کنترل منبع
-10. درس‌های قابل انتقال و غیرقابل انتقال برای <bdi dir="ltr">Core Banking Lab</bdi>
-11. پنج سؤال دفاعی و یک <bdi dir="ltr">Artifact</bdi> کوچک
-12. <bdi dir="ltr">Source register</bdi> با اولویت گزارش رسمی، رگولاتور، مستند فنی و سخنرانی سازندگان
+10. درس‌های قابل انتقال و غیرقابل انتقال برای <span dir="ltr">Core Banking Lab</span>
+11. پنج سؤال دفاعی و یک <span dir="ltr">Artifact</span> کوچک
+12. <span dir="ltr">Source register</span> با اولویت گزارش رسمی، رگولاتور، مستند فنی و سخنرانی سازندگان
 
-نباید از صفحهٔ محصول، نام تیم یا نام <bdi dir="ltr">Microservice</bdi> به‌تنهایی <bdi dir="ltr">Bounded Context</bdi> قطعی استنتاج شود. هر <bdi dir="ltr">Domain map</bdi> بیرونی که از اطلاعات عمومی ساخته می‌شود یک **فرضیهٔ تحلیلی** است، نه بازسازی نقشهٔ محرمانهٔ شرکت.
+نباید از صفحهٔ محصول، نام تیم یا نام <span dir="ltr">Microservice</span> به‌تنهایی <span dir="ltr">Bounded Context</span> قطعی استنتاج شود. هر <span dir="ltr">Domain map</span> بیرونی که از اطلاعات عمومی ساخته می‌شود یک **فرضیهٔ تحلیلی** است، نه بازسازی نقشهٔ محرمانهٔ شرکت.
 
-## <bdi dir="ltr">4. Definition of Done</bdi> افزوده
+## <span dir="ltr">4. Definition of Done</span> افزوده
 
 | ریل | شرط قبولی |
 |---|---|
-| <bdi dir="ltr">Code Craft</bdi> | <bdi dir="ltr">Baseline</bdi> سبز، تست <bdi dir="ltr">Characterization</bdi>، <bdi dir="ltr">Refactor</bdi> کوچک، <bdi dir="ltr">Edge Test</bdi>، <bdi dir="ltr">Pattern Decision</bdi> و <bdi dir="ltr">Self-review</bdi> |
-| <bdi dir="ltr">Case File</bdi> | <bdi dir="ltr">Timeline</bdi> مستند، <bdi dir="ltr">Current-state</bdi> تاریخ‌دار، حداقل یک شکست واقعی، تفکیک <bdi dir="ltr">Fact/Inference</bdi> و انتقال درس به پروژه |
-| کل هفته | <bdi dir="ltr">Gate</bdi> اصلی قبلی + دو شرط بالا؛ هیچ‌کدام جای دیگری را پر نمی‌کند |
+| <span dir="ltr">Code Craft</span> | <span dir="ltr">Baseline</span> سبز، تست <span dir="ltr">Characterization</span>، <span dir="ltr">Refactor</span> کوچک، <span dir="ltr">Edge Test</span>، <span dir="ltr">Pattern Decision</span> و <span dir="ltr">Self-review</span> |
+| <span dir="ltr">Case File</span> | <span dir="ltr">Timeline</span> مستند، <span dir="ltr">Current-state</span> تاریخ‌دار، حداقل یک شکست واقعی، تفکیک <span dir="ltr">Fact/Inference</span> و انتقال درس به پروژه |
+| کل هفته | <span dir="ltr">Gate</span> اصلی قبلی + دو شرط بالا؛ هیچ‌کدام جای دیگری را پر نمی‌کند |
 
-## 5. نقشهٔ افزودهٔ <bdi dir="ltr">Week 01</bdi> تا <bdi dir="ltr">Week 24</bdi>
+## 5. نقشهٔ افزودهٔ <span dir="ltr">Week 01</span> تا <span dir="ltr">Week 24</span>
 
 این جدول موضوع را رزرو می‌کند؛ پروندهٔ هر هفته هنگام شروع همان هفته با منابع جاری دوباره اعتبارسنجی می‌شود.
 
-| هفته | <bdi dir="ltr">Code Craft</bdi> و <bdi dir="ltr">Pattern</bdi> | تمرکز <bdi dir="ltr">Clean Code/Refactor</bdi> | پروندهٔ پیشنهادی سامانهٔ بانکی |
+| هفته | <span dir="ltr">Code Craft</span> و <span dir="ltr">Pattern</span> | تمرکز <span dir="ltr">Clean Code/Refactor</span> | پروندهٔ پیشنهادی سامانهٔ بانکی |
 |---:|---|---|---|
-| 01 | <bdi dir="ltr">Value Object</bdi> + <bdi dir="ltr">Static Factory</bdi> روی <bdi dir="ltr">Money</bdi> و <bdi dir="ltr">Typed IDs</bdi> | <bdi dir="ltr">Primitive Obsession</bdi>، <bdi dir="ltr">Data Clump</bdi>، <bdi dir="ltr">Long Parameter List</bdi> و <bdi dir="ltr">Validation</bdi> پراکنده | <bdi dir="ltr">UPI</bdi> هند؛ <bdi dir="ltr">Capability</bdi>، نقش‌ها، <bdi dir="ltr">API network</bdi> و <bdi dir="ltr">Failure amplification</bdi> |
-| 02 | <bdi dir="ltr">Strategy</bdi> + <bdi dir="ltr">Registry/Factory</bdi> روی <bdi dir="ltr">Fee Policy</bdi> | <bdi dir="ltr">Magic literal</bdi>، <bdi dir="ltr">Primitive Obsession</bdi>، <bdi dir="ltr">Flag Argument</bdi>، نام‌گذاری دامینی | <bdi dir="ltr">Monzo</bdi>؛ مالکیت، <bdi dir="ltr">Microservice scale</bdi> و کنترل‌های بانکی |
-| 03 | <bdi dir="ltr">Strategy</bdi>، <bdi dir="ltr">Specification</bdi> و <bdi dir="ltr">State</bdi> روی <bdi dir="ltr">Deposits</bdi> | رفتار کنار داده، <bdi dir="ltr">Tell-Don</bdi>’<bdi dir="ltr">t-Ask</bdi> و <bdi dir="ltr">Invariant</bdi> | <bdi dir="ltr">Thought Machine Vault Core</bdi> |
-| 04 | <bdi dir="ltr">Ports</bdi> & <bdi dir="ltr">Adapters</bdi>، <bdi dir="ltr">Repository</bdi> و <bdi dir="ltr">Mapper</bdi> | <bdi dir="ltr">Dependency Inversion</bdi> و جداسازی <bdi dir="ltr">Domain</bdi> از <bdi dir="ltr">Framework</bdi> | <bdi dir="ltr">Temenos Transact/T24</bdi> |
-| 05 | <bdi dir="ltr">Command</bdi>، <bdi dir="ltr">Query</bdi>، <bdi dir="ltr">DTO</bdi> و <bdi dir="ltr">Assembler</bdi> | <bdi dir="ltr">Contract surface</bdi> کوچک و خطای <bdi dir="ltr">Leakage</bdi> | <bdi dir="ltr">Oracle FLEXCUBE</bdi> |
-| 06 | <bdi dir="ltr">Decorator</bdi> و <bdi dir="ltr">Chain of Responsibility</bdi> برای <bdi dir="ltr">Policy</bdi> | <bdi dir="ltr">Composition</bdi>، خطای <bdi dir="ltr">Boolean explosion</bdi> و تست <bdi dir="ltr">Security rule</bdi> | <bdi dir="ltr">Infosys Finacle</bdi> |
-| 07 | <bdi dir="ltr">Transaction Script</bdi> در برابر <bdi dir="ltr">Domain Model</bdi>؛ <bdi dir="ltr">Unit of Work</bdi> | مرز <bdi dir="ltr">Transaction</bdi> و <bdi dir="ltr">Side effect</bdi> آشکار | <bdi dir="ltr">Mambu</bdi> |
-| 08 | <bdi dir="ltr">CQRS</bdi>، <bdi dir="ltr">Projection</bdi> و <bdi dir="ltr">Builder</bdi>های تست | <bdi dir="ltr">Readability</bdi> تست، <bdi dir="ltr">Immutability</bdi> و <bdi dir="ltr">Lag-aware naming</bdi> | <bdi dir="ltr">10x Banking</bdi> |
-| 09 | <bdi dir="ltr">Domain Event</bdi>، <bdi dir="ltr">Observer</bdi> و <bdi dir="ltr">Transactional Outbox</bdi> | <bdi dir="ltr">Event naming</bdi>، <bdi dir="ltr">Temporal coupling</bdi> و <bdi dir="ltr">Duplicate logic</bdi> | <bdi dir="ltr">Nubank</bdi> |
-| 10 | <bdi dir="ltr">Idempotent Consumer</bdi>، <bdi dir="ltr">Inbox</bdi> و <bdi dir="ltr">Retry Policy</bdi> | <bdi dir="ltr">Error handling</bdi> و رفتار صریح در <bdi dir="ltr">Duplicate</bdi> | <bdi dir="ltr">Starling Bank</bdi> و <bdi dir="ltr">Engine by Starling</bdi> |
-| 11 | <bdi dir="ltr">Process Manager/Saga</bdi> و <bdi dir="ltr">State Machine</bdi> | <bdi dir="ltr">Long method</bdi>، <bdi dir="ltr">Temporal coupling</bdi> و <bdi dir="ltr">Compensation clarity</bdi> | مهاجرت <bdi dir="ltr">TSB/Proteo</bdi> به‌عنوان پروندهٔ شکست |
-| 12 | <bdi dir="ltr">Circuit Breaker</bdi>، <bdi dir="ltr">Bulkhead</bdi>، <bdi dir="ltr">Timeout</bdi> و <bdi dir="ltr">Fallback</bdi> | <bdi dir="ltr">Failure semantics</bdi> و حذف <bdi dir="ltr">Catch-all</bdi> | <bdi dir="ltr">DBS transformation</bdi> |
-| 13 | <bdi dir="ltr">Accounting Entry</bdi>، <bdi dir="ltr">Composite</bdi> و <bdi dir="ltr">immutable journal</bdi> | نام‌گذاری <bdi dir="ltr">Debit/Credit</bdi> و جلوگیری از <bdi dir="ltr">setter-driven model</bdi> | <bdi dir="ltr">Avaloq Core Platform</bdi> |
-| 14 | <bdi dir="ltr">Posting Rule Strategy</bdi> و <bdi dir="ltr">Reconciliation pipeline</bdi> | <bdi dir="ltr">Separating policy from orchestration</bdi> | <bdi dir="ltr">FIS Modern Banking Platform</bdi> |
-| 15 | <bdi dir="ltr">Data Mapper</bdi>، <bdi dir="ltr">Repository</bdi> و <bdi dir="ltr">Optimistic Lock</bdi> | <bdi dir="ltr">Persistence ignorance</bdi> و <bdi dir="ltr">Exception translation</bdi> | <bdi dir="ltr">Santander Gravity</bdi> |
-| 16 | <bdi dir="ltr">Pipeline</bdi>، <bdi dir="ltr">Chunk</bdi> و <bdi dir="ltr">Template Method</bdi> در <bdi dir="ltr">EOD</bdi> | <bdi dir="ltr">Batch observability</bdi> و <bdi dir="ltr">restartable step</bdi> | <bdi dir="ltr">Commonwealth Bank core modernization</bdi> |
-| 17 | <bdi dir="ltr">Effective-dated Policy</bdi> و <bdi dir="ltr">Specification</bdi> | <bdi dir="ltr">Null handling</bdi>، <bdi dir="ltr">temporal names</bdi> و <bdi dir="ltr">valid-time tests</bdi> | <bdi dir="ltr">Fiserv DNA</bdi> |
-| 18 | <bdi dir="ltr">State</bdi> + <bdi dir="ltr">Policy</bdi> روی <bdi dir="ltr">Deposit lifecycle</bdi> | حذف <bdi dir="ltr">Anemic Model</bdi> و کنترل <bdi dir="ltr">transition</bdi> | <bdi dir="ltr">TCS BaNCS</bdi> |
-| 19 | <bdi dir="ltr">Factory</bdi> + <bdi dir="ltr">Strategy</bdi> + <bdi dir="ltr">Specification</bdi> روی <bdi dir="ltr">Lending</bdi> | <bdi dir="ltr">Rule composition</bdi> و پرهیز از <bdi dir="ltr">God Service</bdi> | <bdi dir="ltr">LendingClub banking platform</bdi> |
-| 20 | <bdi dir="ltr">Adapter</bdi>، <bdi dir="ltr">Command</bdi> و <bdi dir="ltr">Idempotency</bdi> روی <bdi dir="ltr">Payments</bdi> | <bdi dir="ltr">Boundary translation</bdi> و <bdi dir="ltr">audit-friendly code</bdi> | <bdi dir="ltr">Wise payments platform</bdi> |
-| 21 | <bdi dir="ltr">Plugin/Registry</bdi>، <bdi dir="ltr">Facade</bdi> و <bdi dir="ltr">Mediator</bdi> در <bdi dir="ltr">Micro-frontend</bdi> | <bdi dir="ltr">Stable interface</bdi> و جلوگیری از <bdi dir="ltr">shared mutable state</bdi> | <bdi dir="ltr">ING digital banking platform</bdi> |
-| 22 | <bdi dir="ltr">Sidecar/Gateway patterns</bdi> و <bdi dir="ltr">deployment policy</bdi> | <bdi dir="ltr">Configuration as code</bdi> و <bdi dir="ltr">operational ownership</bdi> | <bdi dir="ltr">Capital One cloud transformation</bdi> |
-| 23 | <bdi dir="ltr">Strangler Fig</bdi>، <bdi dir="ltr">ACL</bdi> و <bdi dir="ltr">Branch by Abstraction</bdi> | <bdi dir="ltr">Safe migration</bdi> و حذف <bdi dir="ltr">Big-bang rewrite</bdi> | <bdi dir="ltr">Lloyds Banking Group modernization</bdi> |
-| 24 | <bdi dir="ltr">Pattern synthesis</bdi> و <bdi dir="ltr">architecture-guided refactor</bdi> | حذف <bdi dir="ltr">Pattern</bdi>های بی‌دلیل و دفاع از کد نهایی | جمع‌بندی تطبیقی <bdi dir="ltr">Temenos</bdi>، <bdi dir="ltr">Vault</bdi>، <bdi dir="ltr">Mambu</bdi> و <bdi dir="ltr">Core</bdi> داخلی |
+| 01 | <span dir="ltr">Value Object</span> + <span dir="ltr">Static Factory</span> روی <span dir="ltr">Money</span> و <span dir="ltr">Typed IDs</span> | <span dir="ltr">Primitive Obsession</span>، <span dir="ltr">Data Clump</span>، <span dir="ltr">Long Parameter List</span> و <span dir="ltr">Validation</span> پراکنده | <span dir="ltr">UPI</span> هند؛ <span dir="ltr">Capability</span>، نقش‌ها، <span dir="ltr">API network</span> و <span dir="ltr">Failure amplification</span> |
+| 02 | <span dir="ltr">Strategy</span> + <span dir="ltr">Registry/Factory</span> روی <span dir="ltr">Fee Policy</span> | <span dir="ltr">Magic literal</span>، <span dir="ltr">Primitive Obsession</span>، <span dir="ltr">Flag Argument</span>، نام‌گذاری دامینی | <span dir="ltr">Monzo</span>؛ مالکیت، <span dir="ltr">Microservice scale</span> و کنترل‌های بانکی |
+| 03 | <span dir="ltr">Strategy</span>، <span dir="ltr">Specification</span> و <span dir="ltr">State</span> روی <span dir="ltr">Deposits</span> | رفتار کنار داده، <span dir="ltr">Tell-Don</span>’<span dir="ltr">t-Ask</span> و <span dir="ltr">Invariant</span> | <span dir="ltr">Thought Machine Vault Core</span> |
+| 04 | <span dir="ltr">Ports</span> & <span dir="ltr">Adapters</span>، <span dir="ltr">Repository</span> و <span dir="ltr">Mapper</span> | <span dir="ltr">Dependency Inversion</span> و جداسازی <span dir="ltr">Domain</span> از <span dir="ltr">Framework</span> | <span dir="ltr">Temenos Transact/T24</span> |
+| 05 | <span dir="ltr">Command</span>، <span dir="ltr">Query</span>، <span dir="ltr">DTO</span> و <span dir="ltr">Assembler</span> | <span dir="ltr">Contract surface</span> کوچک و خطای <span dir="ltr">Leakage</span> | <span dir="ltr">Oracle FLEXCUBE</span> |
+| 06 | <span dir="ltr">Decorator</span> و <span dir="ltr">Chain of Responsibility</span> برای <span dir="ltr">Policy</span> | <span dir="ltr">Composition</span>، خطای <span dir="ltr">Boolean explosion</span> و تست <span dir="ltr">Security rule</span> | <span dir="ltr">Infosys Finacle</span> |
+| 07 | <span dir="ltr">Transaction Script</span> در برابر <span dir="ltr">Domain Model</span>؛ <span dir="ltr">Unit of Work</span> | مرز <span dir="ltr">Transaction</span> و <span dir="ltr">Side effect</span> آشکار | <span dir="ltr">Mambu</span> |
+| 08 | <span dir="ltr">CQRS</span>، <span dir="ltr">Projection</span> و <span dir="ltr">Builder</span>های تست | <span dir="ltr">Readability</span> تست، <span dir="ltr">Immutability</span> و <span dir="ltr">Lag-aware naming</span> | <span dir="ltr">10x Banking</span> |
+| 09 | <span dir="ltr">Domain Event</span>، <span dir="ltr">Observer</span> و <span dir="ltr">Transactional Outbox</span> | <span dir="ltr">Event naming</span>، <span dir="ltr">Temporal coupling</span> و <span dir="ltr">Duplicate logic</span> | <span dir="ltr">Nubank</span> |
+| 10 | <span dir="ltr">Idempotent Consumer</span>، <span dir="ltr">Inbox</span> و <span dir="ltr">Retry Policy</span> | <span dir="ltr">Error handling</span> و رفتار صریح در <span dir="ltr">Duplicate</span> | <span dir="ltr">Starling Bank</span> و <span dir="ltr">Engine by Starling</span> |
+| 11 | <span dir="ltr">Process Manager/Saga</span> و <span dir="ltr">State Machine</span> | <span dir="ltr">Long method</span>، <span dir="ltr">Temporal coupling</span> و <span dir="ltr">Compensation clarity</span> | مهاجرت <span dir="ltr">TSB/Proteo</span> به‌عنوان پروندهٔ شکست |
+| 12 | <span dir="ltr">Circuit Breaker</span>، <span dir="ltr">Bulkhead</span>، <span dir="ltr">Timeout</span> و <span dir="ltr">Fallback</span> | <span dir="ltr">Failure semantics</span> و حذف <span dir="ltr">Catch-all</span> | <span dir="ltr">DBS transformation</span> |
+| 13 | <span dir="ltr">Accounting Entry</span>، <span dir="ltr">Composite</span> و <span dir="ltr">immutable journal</span> | نام‌گذاری <span dir="ltr">Debit/Credit</span> و جلوگیری از <span dir="ltr">setter-driven model</span> | <span dir="ltr">Avaloq Core Platform</span> |
+| 14 | <span dir="ltr">Posting Rule Strategy</span> و <span dir="ltr">Reconciliation pipeline</span> | <span dir="ltr">Separating policy from orchestration</span> | <span dir="ltr">FIS Modern Banking Platform</span> |
+| 15 | <span dir="ltr">Data Mapper</span>، <span dir="ltr">Repository</span> و <span dir="ltr">Optimistic Lock</span> | <span dir="ltr">Persistence ignorance</span> و <span dir="ltr">Exception translation</span> | <span dir="ltr">Santander Gravity</span> |
+| 16 | <span dir="ltr">Pipeline</span>، <span dir="ltr">Chunk</span> و <span dir="ltr">Template Method</span> در <span dir="ltr">EOD</span> | <span dir="ltr">Batch observability</span> و <span dir="ltr">restartable step</span> | <span dir="ltr">Commonwealth Bank core modernization</span> |
+| 17 | <span dir="ltr">Effective-dated Policy</span> و <span dir="ltr">Specification</span> | <span dir="ltr">Null handling</span>، <span dir="ltr">temporal names</span> و <span dir="ltr">valid-time tests</span> | <span dir="ltr">Fiserv DNA</span> |
+| 18 | <span dir="ltr">State</span> + <span dir="ltr">Policy</span> روی <span dir="ltr">Deposit lifecycle</span> | حذف <span dir="ltr">Anemic Model</span> و کنترل <span dir="ltr">transition</span> | <span dir="ltr">TCS BaNCS</span> |
+| 19 | <span dir="ltr">Factory</span> + <span dir="ltr">Strategy</span> + <span dir="ltr">Specification</span> روی <span dir="ltr">Lending</span> | <span dir="ltr">Rule composition</span> و پرهیز از <span dir="ltr">God Service</span> | <span dir="ltr">LendingClub banking platform</span> |
+| 20 | <span dir="ltr">Adapter</span>، <span dir="ltr">Command</span> و <span dir="ltr">Idempotency</span> روی <span dir="ltr">Payments</span> | <span dir="ltr">Boundary translation</span> و <span dir="ltr">audit-friendly code</span> | <span dir="ltr">Wise payments platform</span> |
+| 21 | <span dir="ltr">Plugin/Registry</span>، <span dir="ltr">Facade</span> و <span dir="ltr">Mediator</span> در <span dir="ltr">Micro-frontend</span> | <span dir="ltr">Stable interface</span> و جلوگیری از <span dir="ltr">shared mutable state</span> | <span dir="ltr">ING digital banking platform</span> |
+| 22 | <span dir="ltr">Sidecar/Gateway patterns</span> و <span dir="ltr">deployment policy</span> | <span dir="ltr">Configuration as code</span> و <span dir="ltr">operational ownership</span> | <span dir="ltr">Capital One cloud transformation</span> |
+| 23 | <span dir="ltr">Strangler Fig</span>، <span dir="ltr">ACL</span> و <span dir="ltr">Branch by Abstraction</span> | <span dir="ltr">Safe migration</span> و حذف <span dir="ltr">Big-bang rewrite</span> | <span dir="ltr">Lloyds Banking Group modernization</span> |
+| 24 | <span dir="ltr">Pattern synthesis</span> و <span dir="ltr">architecture-guided refactor</span> | حذف <span dir="ltr">Pattern</span>های بی‌دلیل و دفاع از کد نهایی | جمع‌بندی تطبیقی <span dir="ltr">Temenos</span>، <span dir="ltr">Vault</span>، <span dir="ltr">Mambu</span> و <span dir="ltr">Core</span> داخلی |
 
-## 6. روش ارزیابی <bdi dir="ltr">Pattern</bdi>
+## 6. روش ارزیابی <span dir="ltr">Pattern</span>
 
-برای هر <bdi dir="ltr">Pattern</bdi> پنج سؤال پاسخ داده می‌شود:
+برای هر <span dir="ltr">Pattern</span> پنج سؤال پاسخ داده می‌شود:
 
-1. چه <bdi dir="ltr">Variation</bdi> یا <bdi dir="ltr">Pressure</bdi> واقعی وجود دارد؟
-2. ساده‌ترین گزینهٔ بدون <bdi dir="ltr">Pattern</bdi> چیست؟
-3. <bdi dir="ltr">Pattern</bdi> کدام <bdi dir="ltr">Coupling</bdi> را کم و کدام <bdi dir="ltr">Complexity</bdi> را اضافه می‌کند؟
-4. با چه <bdi dir="ltr">Test</bdi> یا تغییر فرضی، ارزش آن را ثابت می‌کنیم؟
-5. چه <bdi dir="ltr">Revisit Trigger</bdi>ی باعث حذف یا جایگزینی آن می‌شود؟
+1. چه <span dir="ltr">Variation</span> یا <span dir="ltr">Pressure</span> واقعی وجود دارد؟
+2. ساده‌ترین گزینهٔ بدون <span dir="ltr">Pattern</span> چیست؟
+3. <span dir="ltr">Pattern</span> کدام <span dir="ltr">Coupling</span> را کم و کدام <span dir="ltr">Complexity</span> را اضافه می‌کند؟
+4. با چه <span dir="ltr">Test</span> یا تغییر فرضی، ارزش آن را ثابت می‌کنیم؟
+5. چه <span dir="ltr">Revisit Trigger</span>ی باعث حذف یا جایگزینی آن می‌شود؟
 
-پاسخ «چون <bdi dir="ltr">Best Practice</bdi> است» امتیاز صفر دارد.
+پاسخ «چون <span dir="ltr">Best Practice</span> است» امتیاز صفر دارد.
 
-## 7. روش ارزیابی <bdi dir="ltr">Case File</bdi>
+## 7. روش ارزیابی <span dir="ltr">Case File</span>
 
 برای هر ادعا یکی از برچسب‌های زیر استفاده می‌شود:
 
-- <bdi dir="ltr">`FACT — primary`</bdi>: گزارش رسمی، رگولاتور یا نوشتهٔ سازندگان
-- <bdi dir="ltr">`FACT — secondary`</bdi>: منبع معتبر مستقل، فقط وقتی منبع اصلی در دسترس نیست
-- <bdi dir="ltr">`INFERENCE`</bdi>: نتیجه‌گیری تحلیلی از چند <bdi dir="ltr">Fact</bdi>
-- <bdi dir="ltr">`UNKNOWN`</bdi>: اطلاعات عمومی کافی وجود ندارد
+- <span dir="ltr">`FACT — primary`</span>: گزارش رسمی، رگولاتور یا نوشتهٔ سازندگان
+- <span dir="ltr">`FACT — secondary`</span>: منبع معتبر مستقل، فقط وقتی منبع اصلی در دسترس نیست
+- <span dir="ltr">`INFERENCE`</span>: نتیجه‌گیری تحلیلی از چند <span dir="ltr">Fact</span>
+- <span dir="ltr">`UNKNOWN`</span>: اطلاعات عمومی کافی وجود ندارد
 
 کیفیت پرونده با تعداد فناوری‌ها سنجیده نمی‌شود؛ با توانایی اتصال **تصمیم، زمینه، پیامد و شواهد** سنجیده می‌شود.
 

@@ -1,23 +1,23 @@
 <!-- bidi: rtl; code: ltr -->
 <div dir="rtl" align="right">
 
-# <bdi dir="ltr">Sprint 08</bdi> — طراحی فیزیکی داده، <bdi dir="ltr">Performance</bdi> و <bdi dir="ltr">EOD</bdi>
+# <span dir="ltr">Sprint 08</span> — طراحی فیزیکی داده، <span dir="ltr">Performance</span> و <span dir="ltr">EOD</span>
 
-- <bdi dir="ltr">Weeks: 15</bdi>–16
-- <bdi dir="ltr">Status: Backlog</bdi>
+- <span dir="ltr">Weeks: 15</span>–16
+- <span dir="ltr">Status: Backlog</span>
 
-## <bdi dir="ltr">Week 15</bdi>
+## <span dir="ltr">Week 15</span>
 
-<bdi dir="ltr">Oracle/PostgreSQL</bdi>، <bdi dir="ltr">Query Pattern</bdi>، <bdi dir="ltr">Index</bdi>، <bdi dir="ltr">Partitioning</bdi>، <bdi dir="ltr">Reference Partitioning</bdi>، <bdi dir="ltr">Retention</bdi> و <bdi dir="ltr">Archive.</bdi>
+<span dir="ltr">Oracle/PostgreSQL</span>، <span dir="ltr">Query Pattern</span>، <span dir="ltr">Index</span>، <span dir="ltr">Partitioning</span>، <span dir="ltr">Reference Partitioning</span>، <span dir="ltr">Retention</span> و <span dir="ltr">Archive.</span>
 
-## <bdi dir="ltr">Week 16</bdi>
+## <span dir="ltr">Week 16</span>
 
-<bdi dir="ltr">Hot Row</bdi>، <bdi dir="ltr">Atomic Increment</bdi>، <bdi dir="ltr">Optimistic Retry</bdi>، <bdi dir="ltr">Snapshot/Rebuild</bdi>، <bdi dir="ltr">Batch</bdi>، <bdi dir="ltr">EOD</bdi> و <bdi dir="ltr">Load Test.</bdi>
+<span dir="ltr">Hot Row</span>، <span dir="ltr">Atomic Increment</span>، <span dir="ltr">Optimistic Retry</span>، <span dir="ltr">Snapshot/Rebuild</span>، <span dir="ltr">Batch</span>، <span dir="ltr">EOD</span> و <span dir="ltr">Load Test.</span>
 
-## <bdi dir="ltr">Gate</bdi>
+## <span dir="ltr">Gate</span>
 
-صحت مالی زیر بار صددرصد حفظ شود و بهبود <bdi dir="ltr">Performance</bdi> با عدد و <bdi dir="ltr">Query Plan</bdi> اثبات شود.
+صحت مالی زیر بار صددرصد حفظ شود و بهبود <span dir="ltr">Performance</span> با عدد و <span dir="ltr">Query Plan</span> اثبات شود.
 
-محتوا و اینفوگرافیک روزانه هنگام ورود این <bdi dir="ltr">Sprint</bdi> تولید و <bdi dir="ltr">Version</bdi> می‌شوند.
+محتوا و اینفوگرافیک روزانه هنگام ورود این <span dir="ltr">Sprint</span> تولید و <span dir="ltr">Version</span> می‌شوند.
 
 </div>

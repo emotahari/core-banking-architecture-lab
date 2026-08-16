@@ -1,23 +1,23 @@
 <!-- bidi: rtl; code: ltr -->
 <div dir="rtl" align="right">
 
-# <bdi dir="ltr">Sprint 03</bdi> — قرارداد، مرز سرویس و امنیت
+# <span dir="ltr">Sprint 03</span> — قرارداد، مرز سرویس و امنیت
 
-- <bdi dir="ltr">Weeks: 05</bdi>–06
-- <bdi dir="ltr">Status: Backlog</bdi>
+- <span dir="ltr">Weeks: 05</span>–06
+- <span dir="ltr">Status: Backlog</span>
 
-## <bdi dir="ltr">Week 05</bdi>
+## <span dir="ltr">Week 05</span>
 
-<bdi dir="ltr">Command/Query</bdi>، <bdi dir="ltr">OpenAPI</bdi>، <bdi dir="ltr">Idempotency</bdi>، <bdi dir="ltr">Versioning</bdi>، <bdi dir="ltr">Error Model</bdi>، <bdi dir="ltr">Temporal Data</bdi> و <bdi dir="ltr">Snapshot</bdi> قرارداد.
+<span dir="ltr">Command/Query</span>، <span dir="ltr">OpenAPI</span>، <span dir="ltr">Idempotency</span>، <span dir="ltr">Versioning</span>، <span dir="ltr">Error Model</span>، <span dir="ltr">Temporal Data</span> و <span dir="ltr">Snapshot</span> قرارداد.
 
-## <bdi dir="ltr">Week 06</bdi>
+## <span dir="ltr">Week 06</span>
 
-<bdi dir="ltr">Modular Monolith</bdi> در برابر <bdi dir="ltr">Microservice</bdi>، <bdi dir="ltr">Transactional Cohesion</bdi>، <bdi dir="ltr">Change Coupling</bdi>، <bdi dir="ltr">IAM</bdi> و <bdi dir="ltr">OWASP API Security.</bdi>
+<span dir="ltr">Modular Monolith</span> در برابر <span dir="ltr">Microservice</span>، <span dir="ltr">Transactional Cohesion</span>، <span dir="ltr">Change Coupling</span>، <span dir="ltr">IAM</span> و <span dir="ltr">OWASP API Security.</span>
 
-## <bdi dir="ltr">Gate</bdi>
+## <span dir="ltr">Gate</span>
 
 هر استخراج سرویس باید حداقل دو محرک مستقل، هزینه‌های توزیع و تست مرز داده را ثبت کند.
 
-محتوا و اینفوگرافیک روزانه هنگام ورود این <bdi dir="ltr">Sprint</bdi> تولید و <bdi dir="ltr">Version</bdi> می‌شوند.
+محتوا و اینفوگرافیک روزانه هنگام ورود این <span dir="ltr">Sprint</span> تولید و <span dir="ltr">Version</span> می‌شوند.
 
 </div>

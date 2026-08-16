@@ -1,12 +1,12 @@
 <!-- bidi: rtl; code: ltr -->
 <div dir="rtl" align="right">
 
-# <bdi dir="ltr">Tests</bdi>
+# <span dir="ltr">Tests</span>
 
-- <bdi dir="ltr">end-to-end:</bdi> سه برش عمودی نهایی
-- <bdi dir="ltr">failure: Duplicate</bdi>، <bdi dir="ltr">Timeout</bdi>، <bdi dir="ltr">Out-of-order</bdi> و شکست وابستگی
-- <bdi dir="ltr">performance: Throughput</bdi>، <bdi dir="ltr">Latency</bdi>، <bdi dir="ltr">Lock Wait</bdi> و <bdi dir="ltr">Hot Row</bdi>
+- <span dir="ltr">end-to-end:</span> سه برش عمودی نهایی
+- <span dir="ltr">failure: Duplicate</span>، <span dir="ltr">Timeout</span>، <span dir="ltr">Out-of-order</span> و شکست وابستگی
+- <span dir="ltr">performance: Throughput</span>، <span dir="ltr">Latency</span>، <span dir="ltr">Lock Wait</span> و <span dir="ltr">Hot Row</span>
 
-درصد <bdi dir="ltr">Coverage</bdi> هدف اصلی نیست؛ پوشش <bdi dir="ltr">Invariant</bdi>، <bdi dir="ltr">Contract</bdi>، <bdi dir="ltr">Failure</bdi> و <bdi dir="ltr">Financial Correctness</bdi> هدف است.
+درصد <span dir="ltr">Coverage</span> هدف اصلی نیست؛ پوشش <span dir="ltr">Invariant</span>، <span dir="ltr">Contract</span>، <span dir="ltr">Failure</span> و <span dir="ltr">Financial Correctness</span> هدف است.
 
 </div>

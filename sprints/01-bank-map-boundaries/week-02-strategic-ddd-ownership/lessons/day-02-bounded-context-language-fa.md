@@ -1,34 +1,34 @@
 <!-- bidi: rtl; code: ltr -->
 <div dir="rtl" align="right">
 
-# <bdi dir="ltr">Day 02</bdi> — <bdi dir="ltr">Bounded Context</bdi> و <bdi dir="ltr">Ubiquitous Language</bdi>
+# <span dir="ltr">Day 02</span> — <span dir="ltr">Bounded Context</span> و <span dir="ltr">Ubiquitous Language</span>
 
-- <bdi dir="ltr">Day budget: 45 minutes including exercise and exit ticket</bdi>
-- <bdi dir="ltr">Output: Language Conflicts v0.1</bdi> و <bdi dir="ltr">Boundary Hypotheses</bdi>
-- <bdi dir="ltr">Banking case:</bdi> تفاوت معنای <bdi dir="ltr">Account</bdi>، <bdi dir="ltr">Customer</bdi>، <bdi dir="ltr">Product</bdi>، <bdi dir="ltr">Contract</bdi> و <bdi dir="ltr">Balance</bdi>
+- <span dir="ltr">Day budget: 45 minutes including exercise and exit ticket</span>
+- <span dir="ltr">Output: Language Conflicts v0.1</span> و <span dir="ltr">Boundary Hypotheses</span>
+- <span dir="ltr">Banking case:</span> تفاوت معنای <span dir="ltr">Account</span>، <span dir="ltr">Customer</span>، <span dir="ltr">Product</span>، <span dir="ltr">Contract</span> و <span dir="ltr">Balance</span>
 
 ## 1. هدف قابل سنجش
 
 در پایان باید بتوانی:
 
-1. <bdi dir="ltr">Bounded Context</bdi> را به‌عنوان مرز اعتبار مدل و زبان تعریف کنی.
-2. آن را از <bdi dir="ltr">Domain</bdi>، <bdi dir="ltr">Subdomain</bdi>، <bdi dir="ltr">Application</bdi>، <bdi dir="ltr">Team</bdi>، <bdi dir="ltr">Module</bdi> و <bdi dir="ltr">Microservice</bdi> جدا کنی.
-3. <bdi dir="ltr">Homonym</bdi>، <bdi dir="ltr">Synonym</bdi>، <bdi dir="ltr">Rule Conflict</bdi> و <bdi dir="ltr">Lifecycle Conflict</bdi> را به‌عنوان سرنخ مرز کشف کنی.
-4. برای یک واژهٔ بانکی، معنای <bdi dir="ltr">Contextual</bdi> و ترجمهٔ لازم را بنویسی.
-5. یک <bdi dir="ltr">Boundary Hypothesis</bdi> بسازی و شواهد موافق و مخالف آن را ثبت کنی.
+1. <span dir="ltr">Bounded Context</span> را به‌عنوان مرز اعتبار مدل و زبان تعریف کنی.
+2. آن را از <span dir="ltr">Domain</span>، <span dir="ltr">Subdomain</span>، <span dir="ltr">Application</span>، <span dir="ltr">Team</span>، <span dir="ltr">Module</span> و <span dir="ltr">Microservice</span> جدا کنی.
+3. <span dir="ltr">Homonym</span>، <span dir="ltr">Synonym</span>، <span dir="ltr">Rule Conflict</span> و <span dir="ltr">Lifecycle Conflict</span> را به‌عنوان سرنخ مرز کشف کنی.
+4. برای یک واژهٔ بانکی، معنای <span dir="ltr">Contextual</span> و ترجمهٔ لازم را بنویسی.
+5. یک <span dir="ltr">Boundary Hypothesis</span> بسازی و شواهد موافق و مخالف آن را ثبت کنی.
 
 ## 2. مدل ذهنی
 
-در بانک، کلمات مشترک الزاماً مفهوم مشترک ندارند. مشکل وقتی شروع می‌شود که یک واژهٔ واحد را به یک <bdi dir="ltr">Entity</bdi> سازمانی عظیم تبدیل کنیم.
+در بانک، کلمات مشترک الزاماً مفهوم مشترک ندارند. مشکل وقتی شروع می‌شود که یک واژهٔ واحد را به یک <span dir="ltr">Entity</span> سازمانی عظیم تبدیل کنیم.
 
-واژهٔ <bdi dir="ltr">`Account`</bdi> را ببین:
+واژهٔ <span dir="ltr">`Account`</span> را ببین:
 
-- در <bdi dir="ltr">Deposits:</bdi> رابطهٔ عملیاتی نگهداری وجوه، وضعیت، مانده و محدودیت‌ها
-- در <bdi dir="ltr">Lending:</bdi> موقعیت بدهی یا <bdi dir="ltr">Facility</bdi> و برنامهٔ بازپرداخت
-- در <bdi dir="ltr">Accounting:</bdi> حساب دفتر کل، معین یا تفصیلی برای طبقه‌بندی آثار مالی
-- در <bdi dir="ltr">IAM:</bdi> حساب کاربری و دسترسی
+- در <span dir="ltr">Deposits:</span> رابطهٔ عملیاتی نگهداری وجوه، وضعیت، مانده و محدودیت‌ها
+- در <span dir="ltr">Lending:</span> موقعیت بدهی یا <span dir="ltr">Facility</span> و برنامهٔ بازپرداخت
+- در <span dir="ltr">Accounting:</span> حساب دفتر کل، معین یا تفصیلی برای طبقه‌بندی آثار مالی
+- در <span dir="ltr">IAM:</span> حساب کاربری و دسترسی
 
-این‌ها چهار <bdi dir="ltr">View</bdi> از یک <bdi dir="ltr">Entity</bdi> واحد نیستند. مدل، رفتار، شناسه، <bdi dir="ltr">Lifecycle</bdi> و <bdi dir="ltr">Invariant</bdi> آن‌ها متفاوت است.
+این‌ها چهار <span dir="ltr">View</span> از یک <span dir="ltr">Entity</span> واحد نیستند. مدل، رفتار، شناسه، <span dir="ltr">Lifecycle</span> و <span dir="ltr">Invariant</span> آن‌ها متفاوت است.
 
 مدل ذهنی درست:
 
@@ -52,28 +52,28 @@ translation through explicit contracts
 <div dir="rtl" align="right">
 
 
-## 3. تعریف دقیق <bdi dir="ltr">Bounded Context</bdi>
+## 3. تعریف دقیق <span dir="ltr">Bounded Context</span>
 
-<bdi dir="ltr">Bounded Context</bdi> مرزی صریح است که **درون آن یک مدل مشخص و <bdi dir="ltr">Ubiquitous Language</bdi> مرتبط با آن، معنای سازگار و معتبر دارد**.
+<span dir="ltr">Bounded Context</span> مرزی صریح است که **درون آن یک مدل مشخص و <span dir="ltr">Ubiquitous Language</span> مرتبط با آن، معنای سازگار و معتبر دارد**.
 
 سه کلمهٔ تعریف مهم‌اند:
 
-- <bdi dir="ltr">`Boundary`</bdi>: معلوم است مدل کجا معتبر است و کجا نیست.
-- <bdi dir="ltr">`Model`</bdi>: فقط <bdi dir="ltr">Vocabulary</bdi> نیست؛ مفاهیم، روابط، رفتارها و قواعد را دربر می‌گیرد.
-- <bdi dir="ltr">`Consistency`</bdi>: یک اصطلاح درون <bdi dir="ltr">Context</bdi> نباید چند معنای متناقض داشته باشد.
+- <span dir="ltr">`Boundary`</span>: معلوم است مدل کجا معتبر است و کجا نیست.
+- <span dir="ltr">`Model`</span>: فقط <span dir="ltr">Vocabulary</span> نیست؛ مفاهیم، روابط، رفتارها و قواعد را دربر می‌گیرد.
+- <span dir="ltr">`Consistency`</span>: یک اصطلاح درون <span dir="ltr">Context</span> نباید چند معنای متناقض داشته باشد.
 
-<bdi dir="ltr">Bounded Context</bdi> خودش «معنای یک واژه» نیست. مثلاً «معنای قرارداد در حسابداری» یک <bdi dir="ltr">Context</bdi> نیست؛ <bdi dir="ltr">`Financial Accounting Context`</bdi> مرزی است که در آن <bdi dir="ltr">Contract</bdi> ممکن است فقط <bdi dir="ltr">Reference</bdi> یا <bdi dir="ltr">Accounting Dimension</bdi> باشد.
+<span dir="ltr">Bounded Context</span> خودش «معنای یک واژه» نیست. مثلاً «معنای قرارداد در حسابداری» یک <span dir="ltr">Context</span> نیست؛ <span dir="ltr">`Financial Accounting Context`</span> مرزی است که در آن <span dir="ltr">Contract</span> ممکن است فقط <span dir="ltr">Reference</span> یا <span dir="ltr">Accounting Dimension</span> باشد.
 
-## <bdi dir="ltr">4. Ubiquitous Language</bdi> چیست؟
+## <span dir="ltr">4. Ubiquitous Language</span> چیست؟
 
-<bdi dir="ltr">Ubiquitous Language</bdi> زبانی دقیق است که <bdi dir="ltr">Domain Expert</bdi>، <bdi dir="ltr">Analyst</bdi>، <bdi dir="ltr">Developer</bdi>، <bdi dir="ltr">Test</bdi> و <bdi dir="ltr">Code</bdi> **درون یک <bdi dir="ltr">Context</bdi>** از آن استفاده می‌کنند.
+<span dir="ltr">Ubiquitous Language</span> زبانی دقیق است که <span dir="ltr">Domain Expert</span>، <span dir="ltr">Analyst</span>، <span dir="ltr">Developer</span>، <span dir="ltr">Test</span> و <span dir="ltr">Code</span> **درون یک <span dir="ltr">Context</span>** از آن استفاده می‌کنند.
 
 ویژگی‌های آن:
 
 - در گفت‌وگو و کد یکسان است.
-- از رفتار و <bdi dir="ltr">Rule</bdi> حرف می‌زند، نه صرفاً ستون و فرم.
+- از رفتار و <span dir="ltr">Rule</span> حرف می‌زند، نه صرفاً ستون و فرم.
 - مثال و ضد‌مثال دارد.
-- با کشف <bdi dir="ltr">Domain</bdi> تکامل می‌یابد.
+- با کشف <span dir="ltr">Domain</span> تکامل می‌یابد.
 - ابهام را پنهان نمی‌کند؛ آن را به سؤال تبدیل می‌کند.
 
 نمونهٔ ضعیف:
@@ -82,94 +82,94 @@ translation through explicit contracts
 
 پرسش‌های پنهان:
 
-- تراکنش سپرده، <bdi dir="ltr">Payment Order</bdi> یا <bdi dir="ltr">Journal Posting</bdi>؟
+- تراکنش سپرده، <span dir="ltr">Payment Order</span> یا <span dir="ltr">Journal Posting</span>؟
 - وضعیت از چه چیزی به چه چیزی؟
-- چه <bdi dir="ltr">Context</bdi>ی مجاز به این <bdi dir="ltr">Transition</bdi> است؟
-- رخداد <bdi dir="ltr">`Executed`</bdi>، <bdi dir="ltr">`Settled`</bdi> یا <bdi dir="ltr">`Posted`</bdi> است؟
+- چه <span dir="ltr">Context</span>ی مجاز به این <span dir="ltr">Transition</span> است؟
+- رخداد <span dir="ltr">`Executed`</span>، <span dir="ltr">`Settled`</span> یا <span dir="ltr">`Posted`</span> است؟
 
-نمونهٔ دقیق‌تر در <bdi dir="ltr">Payments:</bdi>
+نمونهٔ دقیق‌تر در <span dir="ltr">Payments:</span>
 
-> <bdi dir="ltr">Payment Order</bdi> پس از پذیرش شبکه از <bdi dir="ltr">`Submitted`</bdi> به <bdi dir="ltr">`AcceptedForClearing`</bdi> رفت؛ <bdi dir="ltr">Settlement</bdi> هنوز رخ نداده است.
+> <span dir="ltr">Payment Order</span> پس از پذیرش شبکه از <span dir="ltr">`Submitted`</span> به <span dir="ltr">`AcceptedForClearing`</span> رفت؛ <span dir="ltr">Settlement</span> هنوز رخ نداده است.
 
-نام <bdi dir="ltr">State</bdi> و <bdi dir="ltr">Event</bdi> اکنون قابل مدل‌سازی و آزمون است.
+نام <span dir="ltr">State</span> و <span dir="ltr">Event</span> اکنون قابل مدل‌سازی و آزمون است.
 
-## <bdi dir="ltr">5. Ubiquitous Language</bdi>، فرهنگ لغت سراسری نیست
+## <span dir="ltr">5. Ubiquitous Language</span>، فرهنگ لغت سراسری نیست
 
-بانک به واژه‌نامهٔ سازمانی برای هماهنگی نیاز دارد، اما یک <bdi dir="ltr">Enterprise Dictionary</bdi> نباید <bdi dir="ltr">Contextual Meaning</bdi> را حذف کند.
+بانک به واژه‌نامهٔ سازمانی برای هماهنگی نیاز دارد، اما یک <span dir="ltr">Enterprise Dictionary</span> نباید <span dir="ltr">Contextual Meaning</span> را حذف کند.
 
 روش درست:
 
 - اصطلاح مشترک و شناسهٔ مرجع در سطح سازمان ثبت می‌شود.
-- هر <bdi dir="ltr">Context</bdi> معنای دقیق، <bdi dir="ltr">Lifecycle</bdi> و <bdi dir="ltr">Rule</bdi> خودش را اعلام می‌کند.
-- تفاوت‌ها در <bdi dir="ltr">Translation Contract</bdi> آشکار می‌شوند.
+- هر <span dir="ltr">Context</span> معنای دقیق، <span dir="ltr">Lifecycle</span> و <span dir="ltr">Rule</span> خودش را اعلام می‌کند.
+- تفاوت‌ها در <span dir="ltr">Translation Contract</span> آشکار می‌شوند.
 
 روش نادرست:
 
-> چون همه از کلمهٔ <bdi dir="ltr">Customer</bdi> استفاده می‌کنند، یک <bdi dir="ltr">`CustomerEntity`</bdi> مشترک در همهٔ سرویس‌ها می‌سازیم.
+> چون همه از کلمهٔ <span dir="ltr">Customer</span> استفاده می‌کنند، یک <span dir="ltr">`CustomerEntity`</span> مشترک در همهٔ سرویس‌ها می‌سازیم.
 
 پیامد:
 
-- تغییر <bdi dir="ltr">KYC</bdi>، <bdi dir="ltr">Marketing Segment</bdi>، <bdi dir="ltr">Borrower Role</bdi> و <bdi dir="ltr">Accounting Party</bdi> به یک <bdi dir="ltr">Schema</bdi> واحد کاپل می‌شود.
-- <bdi dir="ltr">Context</bdi>ها فیلدهایی را حمل می‌کنند که معنای آن را نمی‌فهمند.
-- <bdi dir="ltr">Owner</bdi> واقعی گم می‌شود.
+- تغییر <span dir="ltr">KYC</span>، <span dir="ltr">Marketing Segment</span>، <span dir="ltr">Borrower Role</span> و <span dir="ltr">Accounting Party</span> به یک <span dir="ltr">Schema</span> واحد کاپل می‌شود.
+- <span dir="ltr">Context</span>ها فیلدهایی را حمل می‌کنند که معنای آن را نمی‌فهمند.
+- <span dir="ltr">Owner</span> واقعی گم می‌شود.
 
-معمولاً <bdi dir="ltr">Context</bdi>ها به <bdi dir="ltr">`PartyId`</bdi>، یک <bdi dir="ltr">Contract</bdi> و گاهی <bdi dir="ltr">Snapshot</bdi> نیاز دارند؛ نه <bdi dir="ltr">Entity</bdi> داخلی مشترک.
+معمولاً <span dir="ltr">Context</span>ها به <span dir="ltr">`PartyId`</span>، یک <span dir="ltr">Contract</span> و گاهی <span dir="ltr">Snapshot</span> نیاز دارند؛ نه <span dir="ltr">Entity</span> داخلی مشترک.
 
 ## 6. تفاوت مفاهیم مجاور
 
-| مفهوم | متعلق به | پرسش اصلی | نگاشت با <bdi dir="ltr">Bounded Context</bdi> |
+| مفهوم | متعلق به | پرسش اصلی | نگاشت با <span dir="ltr">Bounded Context</span> |
 |---|---|---|---|
-| <bdi dir="ltr">Domain</bdi> | <bdi dir="ltr">Problem Space</bdi> | حوزهٔ مسئله چیست؟ | می‌تواند چند <bdi dir="ltr">Context</bdi> داشته باشد |
-| <bdi dir="ltr">Subdomain</bdi> | <bdi dir="ltr">Problem Space</bdi> | کدام ناحیهٔ دانش/<bdi dir="ltr">Outcome</bdi> متمایز است؟ | هدف، <bdi dir="ltr">Alignment</bdi> مناسب با <bdi dir="ltr">Context</bdi> است |
-| <bdi dir="ltr">Bounded Context</bdi> | <bdi dir="ltr">Model/Solution boundary</bdi> | کجا این مدل و زبان معتبر است؟ | موضوع این درس |
-| <bdi dir="ltr">Application</bdi> | <bdi dir="ltr">Landscape</bdi> | کدام نرم‌افزار اکنون کار را انجام می‌دهد؟ | می‌تواند چند <bdi dir="ltr">Context</bdi> را مخلوط کند |
-| <bdi dir="ltr">Team</bdi> | <bdi dir="ltr">Organization</bdi> | چه کسانی تغییر را انجام می‌دهند؟ | بهتر است مالکیت روشن داشته باشد، ولی مساوی <bdi dir="ltr">Context</bdi> نیست |
-| <bdi dir="ltr">Module</bdi> | <bdi dir="ltr">Code</bdi> | کدام مسئولیت در کد محصور است؟ | می‌تواند <bdi dir="ltr">Context</bdi> را در <bdi dir="ltr">Runtime</bdi> واحد پیاده کند |
-| <bdi dir="ltr">Service</bdi> | <bdi dir="ltr">Runtime</bdi> | چه چیزی مستقل <bdi dir="ltr">Deploy/Operate</bdi> می‌شود؟ | تصمیم فیزیکی جداگانه است |
+| <span dir="ltr">Domain</span> | <span dir="ltr">Problem Space</span> | حوزهٔ مسئله چیست؟ | می‌تواند چند <span dir="ltr">Context</span> داشته باشد |
+| <span dir="ltr">Subdomain</span> | <span dir="ltr">Problem Space</span> | کدام ناحیهٔ دانش/<span dir="ltr">Outcome</span> متمایز است؟ | هدف، <span dir="ltr">Alignment</span> مناسب با <span dir="ltr">Context</span> است |
+| <span dir="ltr">Bounded Context</span> | <span dir="ltr">Model/Solution boundary</span> | کجا این مدل و زبان معتبر است؟ | موضوع این درس |
+| <span dir="ltr">Application</span> | <span dir="ltr">Landscape</span> | کدام نرم‌افزار اکنون کار را انجام می‌دهد؟ | می‌تواند چند <span dir="ltr">Context</span> را مخلوط کند |
+| <span dir="ltr">Team</span> | <span dir="ltr">Organization</span> | چه کسانی تغییر را انجام می‌دهند؟ | بهتر است مالکیت روشن داشته باشد، ولی مساوی <span dir="ltr">Context</span> نیست |
+| <span dir="ltr">Module</span> | <span dir="ltr">Code</span> | کدام مسئولیت در کد محصور است؟ | می‌تواند <span dir="ltr">Context</span> را در <span dir="ltr">Runtime</span> واحد پیاده کند |
+| <span dir="ltr">Service</span> | <span dir="ltr">Runtime</span> | چه چیزی مستقل <span dir="ltr">Deploy/Operate</span> می‌شود؟ | تصمیم فیزیکی جداگانه است |
 
-یک <bdi dir="ltr">Context</bdi> می‌تواند فعلاً <bdi dir="ltr">Module</bdi> باشد و بعداً <bdi dir="ltr">Service</bdi> شود. یک <bdi dir="ltr">Application Legacy</bdi> ممکن است چند <bdi dir="ltr">Context</bdi> نامنسجم را حمل کند. یک تیم می‌تواند موقتاً مالک چند <bdi dir="ltr">Context</bdi> باشد، ولی هر <bdi dir="ltr">Context</bdi> باید <bdi dir="ltr">Authority</bdi> روشن داشته باشد.
+یک <span dir="ltr">Context</span> می‌تواند فعلاً <span dir="ltr">Module</span> باشد و بعداً <span dir="ltr">Service</span> شود. یک <span dir="ltr">Application Legacy</span> ممکن است چند <span dir="ltr">Context</span> نامنسجم را حمل کند. یک تیم می‌تواند موقتاً مالک چند <span dir="ltr">Context</span> باشد، ولی هر <span dir="ltr">Context</span> باید <span dir="ltr">Authority</span> روشن داشته باشد.
 
-## 7. سرنخ‌های کشف <bdi dir="ltr">Boundary</bdi>
+## 7. سرنخ‌های کشف <span dir="ltr">Boundary</span>
 
-هیچ سرنخ به‌تنهایی اثبات نیست. چند <bdi dir="ltr">Force</bdi> باید کنار هم قرار گیرند.
+هیچ سرنخ به‌تنهایی اثبات نیست. چند <span dir="ltr">Force</span> باید کنار هم قرار گیرند.
 
-### <bdi dir="ltr">7.1 Homonym:</bdi> واژهٔ یکسان، معنای متفاوت
+### <span dir="ltr">7.1 Homonym:</span> واژهٔ یکسان، معنای متفاوت
 
-<bdi dir="ltr">`Balance`</bdi>:
+<span dir="ltr">`Balance`</span>:
 
-- <bdi dir="ltr">Available Balance</bdi> در <bdi dir="ltr">Deposits</bdi>
-- <bdi dir="ltr">Principal Outstanding</bdi> در <bdi dir="ltr">Lending</bdi>
-- <bdi dir="ltr">GL Balance</bdi> در <bdi dir="ltr">Accounting</bdi>
-- <bdi dir="ltr">Settlement Position</bdi> در <bdi dir="ltr">Payments</bdi>
+- <span dir="ltr">Available Balance</span> در <span dir="ltr">Deposits</span>
+- <span dir="ltr">Principal Outstanding</span> در <span dir="ltr">Lending</span>
+- <span dir="ltr">GL Balance</span> در <span dir="ltr">Accounting</span>
+- <span dir="ltr">Settlement Position</span> در <span dir="ltr">Payments</span>
 
-اگر همه را یک ستون <bdi dir="ltr">`BALANCE`</bdi> بدانیم، تصمیم‌های عملیاتی و مالی قاطی می‌شوند.
+اگر همه را یک ستون <span dir="ltr">`BALANCE`</span> بدانیم، تصمیم‌های عملیاتی و مالی قاطی می‌شوند.
 
-### <bdi dir="ltr">7.2 Synonym:</bdi> واژه‌های متفاوت، مفهوم یکسان
+### <span dir="ltr">7.2 Synonym:</span> واژه‌های متفاوت، مفهوم یکسان
 
-ممکن است دو تیم برای یک مفهوم از <bdi dir="ltr">`Loan Contract`</bdi> و <bdi dir="ltr">`Facility Agreement`</bdi> استفاده کنند. پیش از ساخت دو <bdi dir="ltr">Context</bdi> باید بررسی کنیم آیا واقعاً <bdi dir="ltr">Rule/Lifecycle</bdi> متفاوت است یا صرفاً اختلاف نام تاریخی است.
+ممکن است دو تیم برای یک مفهوم از <span dir="ltr">`Loan Contract`</span> و <span dir="ltr">`Facility Agreement`</span> استفاده کنند. پیش از ساخت دو <span dir="ltr">Context</span> باید بررسی کنیم آیا واقعاً <span dir="ltr">Rule/Lifecycle</span> متفاوت است یا صرفاً اختلاف نام تاریخی است.
 
-### <bdi dir="ltr">7.3 Rule Conflict</bdi>
+### <span dir="ltr">7.3 Rule Conflict</span>
 
-در <bdi dir="ltr">Deposits</bdi>، <bdi dir="ltr">Account</bdi> بسته نباید <bdi dir="ltr">Debit</bdi> عملیاتی جدید بپذیرد. در <bdi dir="ltr">Accounting</bdi>، یک حساب <bdi dir="ltr">GL</bdi> بسته‌شده در دوره ممکن است هنوز برای <bdi dir="ltr">Adjustment</bdi> کنترل‌شده نیاز به <bdi dir="ltr">Posting</bdi> خاص داشته باشد. واژهٔ <bdi dir="ltr">`closed account`</bdi> قواعد متفاوت دارد.
+در <span dir="ltr">Deposits</span>، <span dir="ltr">Account</span> بسته نباید <span dir="ltr">Debit</span> عملیاتی جدید بپذیرد. در <span dir="ltr">Accounting</span>، یک حساب <span dir="ltr">GL</span> بسته‌شده در دوره ممکن است هنوز برای <span dir="ltr">Adjustment</span> کنترل‌شده نیاز به <span dir="ltr">Posting</span> خاص داشته باشد. واژهٔ <span dir="ltr">`closed account`</span> قواعد متفاوت دارد.
 
-### <bdi dir="ltr">7.4 Lifecycle Conflict</bdi>
+### <span dir="ltr">7.4 Lifecycle Conflict</span>
 
-<bdi dir="ltr">Product Definition</bdi> می‌تواند <bdi dir="ltr">Version</bdi> جدید بگیرد. <bdi dir="ltr">Agreement</bdi> منعقدشده نباید با تغییر <bdi dir="ltr">Product</bdi> آینده خودکار عوض شود. تفاوت <bdi dir="ltr">Lifecycle</bdi> نشانهٔ قوی جدایی مدل <bdi dir="ltr">Product</bdi> و <bdi dir="ltr">Executed Agreement</bdi> است.
+<span dir="ltr">Product Definition</span> می‌تواند <span dir="ltr">Version</span> جدید بگیرد. <span dir="ltr">Agreement</span> منعقدشده نباید با تغییر <span dir="ltr">Product</span> آینده خودکار عوض شود. تفاوت <span dir="ltr">Lifecycle</span> نشانهٔ قوی جدایی مدل <span dir="ltr">Product</span> و <span dir="ltr">Executed Agreement</span> است.
 
-### <bdi dir="ltr">7.5 Authority Conflict</bdi>
+### <span dir="ltr">7.5 Authority Conflict</span>
 
-اگر <bdi dir="ltr">Lending</bdi> می‌گوید <bdi dir="ltr">Customer eligible</bdi> است و <bdi dir="ltr">Customer Context</bdi> می‌گوید <bdi dir="ltr">KYC</bdi> معتبر است، این‌ها شاید دو <bdi dir="ltr">Decision</bdi> متفاوت باشند:
+اگر <span dir="ltr">Lending</span> می‌گوید <span dir="ltr">Customer eligible</span> است و <span dir="ltr">Customer Context</span> می‌گوید <span dir="ltr">KYC</span> معتبر است، این‌ها شاید دو <span dir="ltr">Decision</span> متفاوت باشند:
 
-- <bdi dir="ltr">KYC validity</bdi> متعلق به <bdi dir="ltr">Customer/Compliance</bdi>
-- <bdi dir="ltr">Credit eligibility</bdi> متعلق به <bdi dir="ltr">Lending/Credit Decision</bdi>
+- <span dir="ltr">KYC validity</span> متعلق به <span dir="ltr">Customer/Compliance</span>
+- <span dir="ltr">Credit eligibility</span> متعلق به <span dir="ltr">Lending/Credit Decision</span>
 
-تلاش برای یک <bdi dir="ltr">Boolean</bdi> مشترک <bdi dir="ltr">`isValidCustomer`</bdi> دو معنای تصمیم را پنهان می‌کند.
+تلاش برای یک <span dir="ltr">Boolean</span> مشترک <span dir="ltr">`isValidCustomer`</span> دو معنای تصمیم را پنهان می‌کند.
 
-### <bdi dir="ltr">7.6 Change Coupling</bdi>
+### <span dir="ltr">7.6 Change Coupling</span>
 
-اگر تغییر یک <bdi dir="ltr">Rule</bdi> در <bdi dir="ltr">Product Pricing</bdi> همیشه مجبور است <bdi dir="ltr">Deposit Balance Model</bdi> را <bdi dir="ltr">Release</bdi> کند، <bdi dir="ltr">Boundary</bdi> یا <bdi dir="ltr">Contract</bdi> احتمالاً اطلاعات داخلی را نشت داده است.
+اگر تغییر یک <span dir="ltr">Rule</span> در <span dir="ltr">Product Pricing</span> همیشه مجبور است <span dir="ltr">Deposit Balance Model</span> را <span dir="ltr">Release</span> کند، <span dir="ltr">Boundary</span> یا <span dir="ltr">Contract</span> احتمالاً اطلاعات داخلی را نشت داده است.
 
-## 8. مثال بانکی: <bdi dir="ltr">Product</bdi> و <bdi dir="ltr">Agreement</bdi>
+## 8. مثال بانکی: <span dir="ltr">Product</span> و <span dir="ltr">Agreement</span>
 
 فرض کن محصول مرابحه نسخهٔ 7 این ویژگی‌ها را دارد:
 
@@ -183,129 +183,129 @@ translation through explicit contracts
 
 دو مدل داریم:
 
-### <bdi dir="ltr">Product Catalog Model</bdi>
+### <span dir="ltr">Product Catalog Model</span>
 
-- <bdi dir="ltr">Product</bdi> و <bdi dir="ltr">ProductVersion</bdi>
+- <span dir="ltr">Product</span> و <span dir="ltr">ProductVersion</span>
 - شرایط قابل عرضه
-- <bdi dir="ltr">Eligibility policy</bdi> عمومی
-- <bdi dir="ltr">Lifecycle</bdi> انتشار/بازنشستگی نسخه
+- <span dir="ltr">Eligibility policy</span> عمومی
+- <span dir="ltr">Lifecycle</span> انتشار/بازنشستگی نسخه
 
-### <bdi dir="ltr">Executed Agreement Model</bdi>
+### <span dir="ltr">Executed Agreement Model</span>
 
 - طرفین قرارداد
-- شرایط قطعی و <bdi dir="ltr">Snapshot</bdi>شده
+- شرایط قطعی و <span dir="ltr">Snapshot</span>شده
 - تاریخ مؤثر
 - تعهدات و وضعیت حقوقی
 - اصلاحیه‌های معتبر
 
-اگر <bdi dir="ltr">Agreement</bdi> فقط <bdi dir="ltr">`productId`</bdi> را نگه دارد و هر بار شرایط فعلی <bdi dir="ltr">Product</bdi> را <bdi dir="ltr">Query</bdi> کند، قرارداد گذشته با تغییر آینده عوض می‌شود. <bdi dir="ltr">Boundary</bdi> مناسب، تفاوت بین **<bdi dir="ltr">Reference</bdi>** و **<bdi dir="ltr">Snapshot</bdi>** را آشکار می‌کند.
+اگر <span dir="ltr">Agreement</span> فقط <span dir="ltr">`productId`</span> را نگه دارد و هر بار شرایط فعلی <span dir="ltr">Product</span> را <span dir="ltr">Query</span> کند، قرارداد گذشته با تغییر آینده عوض می‌شود. <span dir="ltr">Boundary</span> مناسب، تفاوت بین **<span dir="ltr">Reference</span>** و **<span dir="ltr">Snapshot</span>** را آشکار می‌کند.
 
-ممکن است این دو مدل فعلاً در یک <bdi dir="ltr">Deployable Application</bdi> یا حتی یک <bdi dir="ltr">Module</bdi> آموزشی باشند؛ اما زبان و <bdi dir="ltr">Lifecycle</bdi> آن‌ها باید جدا بماند. این مثال نشان می‌دهد <bdi dir="ltr">Mapping</bdi> میان <bdi dir="ltr">Context</bdi>، <bdi dir="ltr">Module</bdi> و <bdi dir="ltr">Service</bdi> الزاماً یک‌به‌یک نیست.
+ممکن است این دو مدل فعلاً در یک <span dir="ltr">Deployable Application</span> یا حتی یک <span dir="ltr">Module</span> آموزشی باشند؛ اما زبان و <span dir="ltr">Lifecycle</span> آن‌ها باید جدا بماند. این مثال نشان می‌دهد <span dir="ltr">Mapping</span> میان <span dir="ltr">Context</span>، <span dir="ltr">Module</span> و <span dir="ltr">Service</span> الزاماً یک‌به‌یک نیست.
 
-## 9. مثال بانکی: <bdi dir="ltr">Customer</bdi> در سه <bdi dir="ltr">Context</bdi>
+## 9. مثال بانکی: <span dir="ltr">Customer</span> در سه <span dir="ltr">Context</span>
 
-### <bdi dir="ltr">Party</bdi> & <bdi dir="ltr">Customer Context</bdi>
+### <span dir="ltr">Party</span> & <span dir="ltr">Customer Context</span>
 
-- هویت <bdi dir="ltr">Party</bdi>
+- هویت <span dir="ltr">Party</span>
 - نوع شخص حقیقی/حقوقی
 - اطلاعات پایه
-- وضعیت <bdi dir="ltr">KYC</bdi> و رابطهٔ مشتری
+- وضعیت <span dir="ltr">KYC</span> و رابطهٔ مشتری
 
-### <bdi dir="ltr">Lending Context</bdi>
+### <span dir="ltr">Lending Context</span>
 
-- <bdi dir="ltr">Borrower/Obligor role</bdi>
-- <bdi dir="ltr">Credit exposure</bdi>
-- <bdi dir="ltr">Eligibility</bdi> و <bdi dir="ltr">Risk attributes</bdi> موردنیاز تصمیم
-- <bdi dir="ltr">Snapshot</bdi> شواهد تصمیم در زمان اعطا
+- <span dir="ltr">Borrower/Obligor role</span>
+- <span dir="ltr">Credit exposure</span>
+- <span dir="ltr">Eligibility</span> و <span dir="ltr">Risk attributes</span> موردنیاز تصمیم
+- <span dir="ltr">Snapshot</span> شواهد تصمیم در زمان اعطا
 
-### <bdi dir="ltr">Accounting Context</bdi>
+### <span dir="ltr">Accounting Context</span>
 
-- <bdi dir="ltr">Party/Customer reference</bdi> برای تفصیل، گزارش یا <bdi dir="ltr">Audit</bdi>
-- نه مالک <bdi dir="ltr">KYC</bdi>
-- نه مالک <bdi dir="ltr">Credit Eligibility</bdi>
+- <span dir="ltr">Party/Customer reference</span> برای تفصیل، گزارش یا <span dir="ltr">Audit</span>
+- نه مالک <span dir="ltr">KYC</span>
+- نه مالک <span dir="ltr">Credit Eligibility</span>
 
-یک <bdi dir="ltr">`CustomerId`</bdi> مشترک می‌تواند <bdi dir="ltr">Correlation</bdi> ایجاد کند؛ اما مدل <bdi dir="ltr">Customer</bdi> در هر <bdi dir="ltr">Context</bdi> متفاوت است. <bdi dir="ltr">Lending</bdi> نباید اطلاعات هویتی را بدون <bdi dir="ltr">Contract</bdi> تغییر دهد و <bdi dir="ltr">Accounting</bdi> نباید از روی <bdi dir="ltr">Journal</bdi> تصمیم بگیرد <bdi dir="ltr">Customer</bdi> از نظر <bdi dir="ltr">KYC</bdi> معتبر است.
+یک <span dir="ltr">`CustomerId`</span> مشترک می‌تواند <span dir="ltr">Correlation</span> ایجاد کند؛ اما مدل <span dir="ltr">Customer</span> در هر <span dir="ltr">Context</span> متفاوت است. <span dir="ltr">Lending</span> نباید اطلاعات هویتی را بدون <span dir="ltr">Contract</span> تغییر دهد و <span dir="ltr">Accounting</span> نباید از روی <span dir="ltr">Journal</span> تصمیم بگیرد <span dir="ltr">Customer</span> از نظر <span dir="ltr">KYC</span> معتبر است.
 
-## <bdi dir="ltr">10. Boundary Hypothesis</bdi> چگونه نوشته می‌شود؟
+## <span dir="ltr">10. Boundary Hypothesis</span> چگونه نوشته می‌شود؟
 
-یک <bdi dir="ltr">Boundary</bdi> خوب از روی اسم انتخاب نمی‌شود. قالب:
+یک <span dir="ltr">Boundary</span> خوب از روی اسم انتخاب نمی‌شود. قالب:
 
-> به‌دلیل تفاوت در [<bdi dir="ltr">Language/Rules/Lifecycle/Authority/Change</bdi>]، فرض می‌کنیم مدل A و B در دو <bdi dir="ltr">Bounded Context</bdi> قرار گیرند. این فرض با [مصاحبه، مثال، تغییر واقعی، تست] اعتبارسنجی می‌شود. <bdi dir="ltr">Counter-evidence</bdi> فعلی [X] است.
+> به‌دلیل تفاوت در [<span dir="ltr">Language/Rules/Lifecycle/Authority/Change</span>]، فرض می‌کنیم مدل A و B در دو <span dir="ltr">Bounded Context</span> قرار گیرند. این فرض با [مصاحبه، مثال، تغییر واقعی، تست] اعتبارسنجی می‌شود. <span dir="ltr">Counter-evidence</span> فعلی [X] است.
 
 نمونه:
 
-> به‌دلیل تفاوت <bdi dir="ltr">Lifecycle</bdi> میان <bdi dir="ltr">ProductVersion</bdi> و <bdi dir="ltr">ExecutedAgreement</bdi> و نیاز به ثابت‌ماندن شروط قرارداد، فرض می‌کنیم <bdi dir="ltr">Product Catalog</bdi> و <bdi dir="ltr">Agreement Management</bdi> دو <bdi dir="ltr">Context</bdi> متمایزند. این فرض با بررسی سناریوی اصلاح محصول، الحاقیهٔ قرارداد و <bdi dir="ltr">Owner</bdi> تصمیم اعتبارسنجی می‌شود. <bdi dir="ltr">Counter-evidence:</bdi> در ساختار فعلی یک تیم و یک <bdi dir="ltr">Database</bdi> هر دو را نگه می‌دارند.
+> به‌دلیل تفاوت <span dir="ltr">Lifecycle</span> میان <span dir="ltr">ProductVersion</span> و <span dir="ltr">ExecutedAgreement</span> و نیاز به ثابت‌ماندن شروط قرارداد، فرض می‌کنیم <span dir="ltr">Product Catalog</span> و <span dir="ltr">Agreement Management</span> دو <span dir="ltr">Context</span> متمایزند. این فرض با بررسی سناریوی اصلاح محصول، الحاقیهٔ قرارداد و <span dir="ltr">Owner</span> تصمیم اعتبارسنجی می‌شود. <span dir="ltr">Counter-evidence:</span> در ساختار فعلی یک تیم و یک <span dir="ltr">Database</span> هر دو را نگه می‌دارند.
 
-ساختار فعلی <bdi dir="ltr">Counter-evidence</bdi> یا <bdi dir="ltr">Constraint</bdi> است؛ ولی به‌تنهایی مدل مسئله را رد نمی‌کند.
+ساختار فعلی <span dir="ltr">Counter-evidence</span> یا <span dir="ltr">Constraint</span> است؛ ولی به‌تنهایی مدل مسئله را رد نمی‌کند.
 
 ## 11. خطاهای رایج
 
-### <bdi dir="ltr">Context</bdi> را با <bdi dir="ltr">Namespace</bdi> یکی گرفتن
+### <span dir="ltr">Context</span> را با <span dir="ltr">Namespace</span> یکی گرفتن
 
-ساخت <bdi dir="ltr">Package</bdi> یک <bdi dir="ltr">Boundary</bdi> را <bdi dir="ltr">enforce</bdi> می‌کند، اما وجود <bdi dir="ltr">Package</bdi> دلیل دامینی آن نیست.
+ساخت <span dir="ltr">Package</span> یک <span dir="ltr">Boundary</span> را <span dir="ltr">enforce</span> می‌کند، اما وجود <span dir="ltr">Package</span> دلیل دامینی آن نیست.
 
-### <bdi dir="ltr">Context</bdi> را با تیم یکی گرفتن
+### <span dir="ltr">Context</span> را با تیم یکی گرفتن
 
-<bdi dir="ltr">Team Topology</bdi> مهم است، ولی چارت تاریخی نمی‌تواند تعریف مدل را به‌تنهایی تعیین کند.
+<span dir="ltr">Team Topology</span> مهم است، ولی چارت تاریخی نمی‌تواند تعریف مدل را به‌تنهایی تعیین کند.
 
-### یک مدل <bdi dir="ltr">Canonical</bdi> برای کل بانک
+### یک مدل <span dir="ltr">Canonical</span> برای کل بانک
 
-<bdi dir="ltr">Canonical Enterprise Model</bdi> اغلب تفاوت معناها را با فیلد <bdi dir="ltr">Optional</bdi> پنهان می‌کند. <bdi dir="ltr">Published Language</bdi> برای <bdi dir="ltr">Integration</bdi> با <bdi dir="ltr">Universal Domain Model</bdi> یکی نیست.
+<span dir="ltr">Canonical Enterprise Model</span> اغلب تفاوت معناها را با فیلد <span dir="ltr">Optional</span> پنهان می‌کند. <span dir="ltr">Published Language</span> برای <span dir="ltr">Integration</span> با <span dir="ltr">Universal Domain Model</span> یکی نیست.
 
-### مرز بر اساس <bdi dir="ltr">CRUD</bdi>
+### مرز بر اساس <span dir="ltr">CRUD</span>
 
-<bdi dir="ltr">`CustomerCRUDContext`</bdi> دربارهٔ رفتار و دانش چیزی نمی‌گوید. <bdi dir="ltr">Use Case</bdi> و <bdi dir="ltr">Rule</bdi> باید مرز را روشن کنند.
+<span dir="ltr">`CustomerCRUDContext`</span> دربارهٔ رفتار و دانش چیزی نمی‌گوید. <span dir="ltr">Use Case</span> و <span dir="ltr">Rule</span> باید مرز را روشن کنند.
 
-### هر تفاوت واژه یک <bdi dir="ltr">Context</bdi>
+### هر تفاوت واژه یک <span dir="ltr">Context</span>
 
-اختلاف نام ممکن است فقط <bdi dir="ltr">Synonym</bdi> باشد. <bdi dir="ltr">Context</bdi> جدید هزینهٔ ترجمه، <bdi dir="ltr">Governance</bdi> و <bdi dir="ltr">Integration</bdi> دارد و نیازمند چند شاهد است.
+اختلاف نام ممکن است فقط <span dir="ltr">Synonym</span> باشد. <span dir="ltr">Context</span> جدید هزینهٔ ترجمه، <span dir="ltr">Governance</span> و <span dir="ltr">Integration</span> دارد و نیازمند چند شاهد است.
 
-### یک <bdi dir="ltr">Context</bdi> برابر یک <bdi dir="ltr">Microservice</bdi>
+### یک <span dir="ltr">Context</span> برابر یک <span dir="ltr">Microservice</span>
 
-<bdi dir="ltr">Bounded Context</bdi> یک <bdi dir="ltr">Boundary</bdi> مدل است؛ <bdi dir="ltr">Microservice Boundary</bdi> علاوه بر آن به <bdi dir="ltr">Scale</bdi>، <bdi dir="ltr">Team Autonomy</bdi>، <bdi dir="ltr">Availability</bdi>، <bdi dir="ltr">Data</bdi> و <bdi dir="ltr">Operations</bdi> پاسخ می‌دهد.
+<span dir="ltr">Bounded Context</span> یک <span dir="ltr">Boundary</span> مدل است؛ <span dir="ltr">Microservice Boundary</span> علاوه بر آن به <span dir="ltr">Scale</span>، <span dir="ltr">Team Autonomy</span>، <span dir="ltr">Availability</span>، <span dir="ltr">Data</span> و <span dir="ltr">Operations</span> پاسخ می‌دهد.
 
 ## 12. تمرین هدایت‌شده
 
-برای واژهٔ <bdi dir="ltr">`Transaction`</bdi> سه معنا بنویس:
+برای واژهٔ <span dir="ltr">`Transaction`</span> سه معنا بنویس:
 
-1. <bdi dir="ltr">Deposits</bdi>
-2. <bdi dir="ltr">Payments</bdi>
-3. <bdi dir="ltr">Accounting</bdi>
+1. <span dir="ltr">Deposits</span>
+2. <span dir="ltr">Payments</span>
+3. <span dir="ltr">Accounting</span>
 
 برای هرکدام پاسخ بده:
 
-- <bdi dir="ltr">Trigger</bdi> چیست؟
-- <bdi dir="ltr">Lifecycle</bdi> چیست؟
-- <bdi dir="ltr">Completion</bdi> چه معنایی دارد؟
-- <bdi dir="ltr">Owner</bdi> وضعیت کیست؟
+- <span dir="ltr">Trigger</span> چیست؟
+- <span dir="ltr">Lifecycle</span> چیست؟
+- <span dir="ltr">Completion</span> چه معنایی دارد؟
+- <span dir="ltr">Owner</span> وضعیت کیست؟
 
-اگر پاسخ‌ها یکسان نیستند، یک <bdi dir="ltr">Entity</bdi> مشترک <bdi dir="ltr">`Transaction`</bdi> احتمالاً مدل ضعیفی است.
+اگر پاسخ‌ها یکسان نیستند، یک <span dir="ltr">Entity</span> مشترک <span dir="ltr">`Transaction`</span> احتمالاً مدل ضعیفی است.
 
 ## 13. تمرین مستقل
 
-[<bdi dir="ltr">Day 02 Exercise</bdi> — <bdi dir="ltr">Language Conflicts</bdi>](../exercises/day-02-language-conflicts.md) را انجام بده. حداقل پنج اصطلاح را در دو یا چند <bdi dir="ltr">Context</bdi> تحلیل کن و برای دو <bdi dir="ltr">Boundary Hypothesis</bdi> شواهد موافق و مخالف بنویس.
+[<span dir="ltr">Day 02 Exercise</span> — <span dir="ltr">Language Conflicts</span>](../exercises/day-02-language-conflicts.md) را انجام بده. حداقل پنج اصطلاح را در دو یا چند <span dir="ltr">Context</span> تحلیل کن و برای دو <span dir="ltr">Boundary Hypothesis</span> شواهد موافق و مخالف بنویس.
 
 ## 14. معیار ارزیابی
 
 | معیار | امتیاز |
 |---|---:|
-| تعریف دقیق <bdi dir="ltr">Bounded Context</bdi> | ۲ |
-| تشخیص معنای <bdi dir="ltr">Contextual</bdi> واژه‌ها | ۲ |
-| تفکیک <bdi dir="ltr">Context</bdi> از <bdi dir="ltr">Domain/System/Module/Service</bdi> | ۲ |
-| <bdi dir="ltr">Boundary Hypothesis</bdi> با چند <bdi dir="ltr">Force</bdi> | ۳ |
-| ثبت <bdi dir="ltr">Counter-evidence/Open Question</bdi> | ۱ |
+| تعریف دقیق <span dir="ltr">Bounded Context</span> | ۲ |
+| تشخیص معنای <span dir="ltr">Contextual</span> واژه‌ها | ۲ |
+| تفکیک <span dir="ltr">Context</span> از <span dir="ltr">Domain/System/Module/Service</span> | ۲ |
+| <span dir="ltr">Boundary Hypothesis</span> با چند <span dir="ltr">Force</span> | ۳ |
+| ثبت <span dir="ltr">Counter-evidence/Open Question</span> | ۱ |
 | **جمع** | **۱۰** |
 
 حد عبور: ۷ از ۱۰.
 
 ## 15. آزمون خروج
 
-درس را ببند و [<bdi dir="ltr">Day 02 Exit Ticket</bdi>](../quizzes/day-02-exit-ticket.md) را پاسخ بده.
+درس را ببند و [<span dir="ltr">Day 02 Exit Ticket</span>](../quizzes/day-02-exit-ticket.md) را پاسخ بده.
 
 ## 16. منبع اصلی
 
-- [<bdi dir="ltr">Domain-Driven Design Reference</bdi> — <bdi dir="ltr">Bounded Context and Ubiquitous Language</bdi>](https://www.domainlanguage.com/wp-content/uploads/2016/05/DDD_Reference_2015-03.pdf)
+- [<span dir="ltr">Domain-Driven Design Reference</span> — <span dir="ltr">Bounded Context and Ubiquitous Language</span>](https://www.domainlanguage.com/wp-content/uploads/2016/05/DDD_Reference_2015-03.pdf)
 
-تعریف‌ها از مرجع <bdi dir="ltr">DDD</bdi> گرفته شده‌اند؛ مثال‌ها و <bdi dir="ltr">Boundary</bdi>های بانکی این درس، مدل آموزشی و <bdi dir="ltr">Hypothesis</bdi> هستند.
+تعریف‌ها از مرجع <span dir="ltr">DDD</span> گرفته شده‌اند؛ مثال‌ها و <span dir="ltr">Boundary</span>های بانکی این درس، مدل آموزشی و <span dir="ltr">Hypothesis</span> هستند.
 
 </div>

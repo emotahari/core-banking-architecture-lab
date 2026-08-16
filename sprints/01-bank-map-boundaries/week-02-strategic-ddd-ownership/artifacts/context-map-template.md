@@ -1,55 +1,55 @@
 <!-- bidi: rtl; code: ltr -->
 <div dir="rtl" align="right">
 
-# <bdi dir="ltr">Context Map v1</bdi> — <bdi dir="ltr">Template</bdi>
+# <span dir="ltr">Context Map v1</span> — <span dir="ltr">Template</span>
 
-- <bdi dir="ltr">Version: 0.1</bdi>
-- <bdi dir="ltr">Status: Not started</bdi>
-- <bdi dir="ltr">Scope: Party/Customer</bdi>، <bdi dir="ltr">Product/Agreement</bdi>، <bdi dir="ltr">Deposits</bdi>، <bdi dir="ltr">Lending</bdi>، <bdi dir="ltr">Payments</bdi>، <bdi dir="ltr">Accounting</bdi> و <bdi dir="ltr">Context</bdi>های خارجی لازم
+- <span dir="ltr">Version: 0.1</span>
+- <span dir="ltr">Status: Not started</span>
+- <span dir="ltr">Scope: Party/Customer</span>، <span dir="ltr">Product/Agreement</span>، <span dir="ltr">Deposits</span>، <span dir="ltr">Lending</span>، <span dir="ltr">Payments</span>، <span dir="ltr">Accounting</span> و <span dir="ltr">Context</span>های خارجی لازم
 
-## <bdi dir="ltr">Context inventory</bdi>
+## <span dir="ltr">Context inventory</span>
 
-| <bdi dir="ltr">Bounded Context</bdi> | <bdi dir="ltr">Model purpose</bdi> | <bdi dir="ltr">Ubiquitous Language</bdi> | <bdi dir="ltr">In scope</bdi> | <bdi dir="ltr">Out of scope</bdi> | <bdi dir="ltr">Team/owner hypothesis</bdi> | <bdi dir="ltr">Confidence</bdi> |
+| <span dir="ltr">Bounded Context</span> | <span dir="ltr">Model purpose</span> | <span dir="ltr">Ubiquitous Language</span> | <span dir="ltr">In scope</span> | <span dir="ltr">Out of scope</span> | <span dir="ltr">Team/owner hypothesis</span> | <span dir="ltr">Confidence</span> |
 |---|---|---|---|---|---|---|
 |  |  |  |  |  |  |  |
 
-## <bdi dir="ltr">Relationships</bdi>
+## <span dir="ltr">Relationships</span>
 
-<bdi dir="ltr">For every relationship</bdi>, <bdi dir="ltr">record direction of model influence</bdi>—<bdi dir="ltr">not merely HTTP call direction.</bdi>
+<span dir="ltr">For every relationship</span>, <span dir="ltr">record direction of model influence</span>—<span dir="ltr">not merely HTTP call direction.</span>
 
-| <bdi dir="ltr">Upstream</bdi> | <bdi dir="ltr">Downstream</bdi> | <bdi dir="ltr">Pattern</bdi> | <bdi dir="ltr">Contract</bdi> | <bdi dir="ltr">Data/fact shared</bdi> | <bdi dir="ltr">Decision authority</bdi> | <bdi dir="ltr">Translation location</bdi> | <bdi dir="ltr">Failure impact</bdi> | <bdi dir="ltr">Evidence/status</bdi> |
+| <span dir="ltr">Upstream</span> | <span dir="ltr">Downstream</span> | <span dir="ltr">Pattern</span> | <span dir="ltr">Contract</span> | <span dir="ltr">Data/fact shared</span> | <span dir="ltr">Decision authority</span> | <span dir="ltr">Translation location</span> | <span dir="ltr">Failure impact</span> | <span dir="ltr">Evidence/status</span> |
 |---|---|---|---|---|---|---|---|---|
-|  |  | <bdi dir="ltr">Customer/Supplier</bdi> / <bdi dir="ltr">Conformist</bdi> / <bdi dir="ltr">ACL</bdi> / <bdi dir="ltr">OHS</bdi> + <bdi dir="ltr">Published Language</bdi> / <bdi dir="ltr">Partnership</bdi> / <bdi dir="ltr">Separate Ways</bdi> |  |  |  |  |  |  |
+|  |  | <span dir="ltr">Customer/Supplier</span> / <span dir="ltr">Conformist</span> / <span dir="ltr">ACL</span> / <span dir="ltr">OHS</span> + <span dir="ltr">Published Language</span> / <span dir="ltr">Partnership</span> / <span dir="ltr">Separate Ways</span> |  |  |  |  |  |  |
 
-## <bdi dir="ltr">Diagram legend</bdi>
+## <span dir="ltr">Diagram legend</span>
 
-- <bdi dir="ltr">`U`</bdi> = <bdi dir="ltr">Upstream</bdi>
-- <bdi dir="ltr">`D`</bdi> = <bdi dir="ltr">Downstream</bdi>
-- <bdi dir="ltr">`C/S`</bdi> = <bdi dir="ltr">Customer/Supplier</bdi>
-- <bdi dir="ltr">`CF`</bdi> = <bdi dir="ltr">Conformist</bdi>
-- <bdi dir="ltr">`ACL`</bdi> = <bdi dir="ltr">Anticorruption Layer</bdi>
-- <bdi dir="ltr">`OHS/PL`</bdi> = <bdi dir="ltr">Open Host Service</bdi> + <bdi dir="ltr">Published Language</bdi>
-- <bdi dir="ltr">Solid line</bdi> = <bdi dir="ltr">synchronous or immediate dependency only if transport is already decided</bdi>
-- <bdi dir="ltr">Dashed line</bdi> = <bdi dir="ltr">asynchronous only if transport is already decided</bdi>
+- <span dir="ltr">`U`</span> = <span dir="ltr">Upstream</span>
+- <span dir="ltr">`D`</span> = <span dir="ltr">Downstream</span>
+- <span dir="ltr">`C/S`</span> = <span dir="ltr">Customer/Supplier</span>
+- <span dir="ltr">`CF`</span> = <span dir="ltr">Conformist</span>
+- <span dir="ltr">`ACL`</span> = <span dir="ltr">Anticorruption Layer</span>
+- <span dir="ltr">`OHS/PL`</span> = <span dir="ltr">Open Host Service</span> + <span dir="ltr">Published Language</span>
+- <span dir="ltr">Solid line</span> = <span dir="ltr">synchronous or immediate dependency only if transport is already decided</span>
+- <span dir="ltr">Dashed line</span> = <span dir="ltr">asynchronous only if transport is already decided</span>
 
-<bdi dir="ltr">Transport line style is optional in Week 02. Direction</bdi>, <bdi dir="ltr">Pattern</bdi>, <bdi dir="ltr">Contract and Ownership are mandatory.</bdi>
+<span dir="ltr">Transport line style is optional in Week 02. Direction</span>, <span dir="ltr">Pattern</span>, <span dir="ltr">Contract and Ownership are mandatory.</span>
 
-## <bdi dir="ltr">Minimum map quality</bdi>
+## <span dir="ltr">Minimum map quality</span>
 
-- <bdi dir="ltr">at least six Bounded Context candidates</bdi>
-- <bdi dir="ltr">at least eight directional relationships</bdi>
-- <bdi dir="ltr">no context named after a table or Controller</bdi>
-- <bdi dir="ltr">no line without Pattern and Contract</bdi>
-- <bdi dir="ltr">no shared Owner for the same semantic Fact</bdi>
-- <bdi dir="ltr">at least one ACL decision defended</bdi>
-- <bdi dir="ltr">at least one relationship explicitly marked</bdi> <bdi dir="ltr">`Pattern undecided`</bdi> <bdi dir="ltr">with an Open Question if evidence is insufficient</bdi>
+- <span dir="ltr">at least six Bounded Context candidates</span>
+- <span dir="ltr">at least eight directional relationships</span>
+- <span dir="ltr">no context named after a table or Controller</span>
+- <span dir="ltr">no line without Pattern and Contract</span>
+- <span dir="ltr">no shared Owner for the same semantic Fact</span>
+- <span dir="ltr">at least one ACL decision defended</span>
+- <span dir="ltr">at least one relationship explicitly marked</span> <span dir="ltr">`Pattern undecided`</span> <span dir="ltr">with an Open Question if evidence is insufficient</span>
 
-## <bdi dir="ltr">Review questions</bdi>
+## <span dir="ltr">Review questions</span>
 
-1. آیا <bdi dir="ltr">Upstream</bdi> را با «کسی که <bdi dir="ltr">API</bdi> را صدا می‌زند» اشتباه کرده‌ای؟
-2. آیا <bdi dir="ltr">Conformist</bdi> را فقط برای کم‌کردن کدنویسی انتخاب کرده‌ای؟
-3. آیا <bdi dir="ltr">ACL</bdi> واقعاً از مدل <bdi dir="ltr">Core</bdi> محافظت می‌کند یا فقط <bdi dir="ltr">DTO Mapper</bdi> است؟
-4. آیا <bdi dir="ltr">Published Language Version</bdi> و <bdi dir="ltr">Compatibility Policy</bdi> دارد؟
-5. آیا یک رابطهٔ دوطرفه را بدون تفکیک دو <bdi dir="ltr">Dependency</bdi> متفاوت رسم کرده‌ای؟
+1. آیا <span dir="ltr">Upstream</span> را با «کسی که <span dir="ltr">API</span> را صدا می‌زند» اشتباه کرده‌ای؟
+2. آیا <span dir="ltr">Conformist</span> را فقط برای کم‌کردن کدنویسی انتخاب کرده‌ای؟
+3. آیا <span dir="ltr">ACL</span> واقعاً از مدل <span dir="ltr">Core</span> محافظت می‌کند یا فقط <span dir="ltr">DTO Mapper</span> است؟
+4. آیا <span dir="ltr">Published Language Version</span> و <span dir="ltr">Compatibility Policy</span> دارد؟
+5. آیا یک رابطهٔ دوطرفه را بدون تفکیک دو <span dir="ltr">Dependency</span> متفاوت رسم کرده‌ای؟
 
 </div>

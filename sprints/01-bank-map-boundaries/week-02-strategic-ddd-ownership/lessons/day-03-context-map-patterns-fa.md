@@ -1,119 +1,119 @@
 <!-- bidi: rtl; code: ltr -->
 <div dir="rtl" align="right">
 
-# <bdi dir="ltr">Day 03</bdi> — <bdi dir="ltr">Context Map</bdi> و الگوهای رابطه
+# <span dir="ltr">Day 03</span> — <span dir="ltr">Context Map</span> و الگوهای رابطه
 
-- <bdi dir="ltr">Day budget: 50 minutes including exercise and exit ticket</bdi>
-- <bdi dir="ltr">Output: Context Map relationships v0.1</bdi>
-- <bdi dir="ltr">Banking case:</bdi> اعطای تسهیلات و واریز به سپرده
+- <span dir="ltr">Day budget: 50 minutes including exercise and exit ticket</span>
+- <span dir="ltr">Output: Context Map relationships v0.1</span>
+- <span dir="ltr">Banking case:</span> اعطای تسهیلات و واریز به سپرده
 
 ## 1. هدف قابل سنجش
 
 در پایان باید بتوانی:
 
-1. <bdi dir="ltr">Context Map</bdi> را از <bdi dir="ltr">System Diagram</bdi>، <bdi dir="ltr">Sequence Diagram</bdi> و <bdi dir="ltr">Data Flow</bdi> جدا کنی.
-2. <bdi dir="ltr">Upstream</bdi> و <bdi dir="ltr">Downstream</bdi> را بر اساس وابستگی مدل و قدرت تغییر تشخیص بدهی؛ نه جهت فراخوانی <bdi dir="ltr">HTTP.</bdi>
-3. <bdi dir="ltr">Customer/Supplier</bdi>، <bdi dir="ltr">Conformist</bdi>، <bdi dir="ltr">Anticorruption Layer</bdi> و <bdi dir="ltr">Open Host Service/Published Language</bdi> را درست انتخاب کنی.
-4. برای هر رابطه <bdi dir="ltr">Contract</bdi>، <bdi dir="ltr">Translation</bdi>، <bdi dir="ltr">Owner</bdi> و <bdi dir="ltr">Failure Impact</bdi> ثبت کنی.
-5. توضیح بدهی چرا نوشتن <bdi dir="ltr">`REST`</bdi> یا <bdi dir="ltr">`Kafka`</bdi> <bdi dir="ltr">Pattern</bdi> رابطهٔ <bdi dir="ltr">Context</bdi>ها نیست.
+1. <span dir="ltr">Context Map</span> را از <span dir="ltr">System Diagram</span>، <span dir="ltr">Sequence Diagram</span> و <span dir="ltr">Data Flow</span> جدا کنی.
+2. <span dir="ltr">Upstream</span> و <span dir="ltr">Downstream</span> را بر اساس وابستگی مدل و قدرت تغییر تشخیص بدهی؛ نه جهت فراخوانی <span dir="ltr">HTTP.</span>
+3. <span dir="ltr">Customer/Supplier</span>، <span dir="ltr">Conformist</span>، <span dir="ltr">Anticorruption Layer</span> و <span dir="ltr">Open Host Service/Published Language</span> را درست انتخاب کنی.
+4. برای هر رابطه <span dir="ltr">Contract</span>، <span dir="ltr">Translation</span>، <span dir="ltr">Owner</span> و <span dir="ltr">Failure Impact</span> ثبت کنی.
+5. توضیح بدهی چرا نوشتن <span dir="ltr">`REST`</span> یا <span dir="ltr">`Kafka`</span> <span dir="ltr">Pattern</span> رابطهٔ <span dir="ltr">Context</span>ها نیست.
 
-## 2. چرا <bdi dir="ltr">Context Map</bdi> لازم است؟
+## 2. چرا <span dir="ltr">Context Map</span> لازم است؟
 
-مرزبندی <bdi dir="ltr">Context</bdi>ها فقط نیمی از <bdi dir="ltr">Strategic Design</bdi> است. هیچ <bdi dir="ltr">Context</bdi> مهم بانکی در خلأ کار نمی‌کند. <bdi dir="ltr">Customer facts</bdi> وارد <bdi dir="ltr">Lending</bdi> می‌شوند، <bdi dir="ltr">Lending</bdi> از <bdi dir="ltr">Deposits</bdi> واریز می‌خواهد، <bdi dir="ltr">Payments</bdi> وضعیت شبکه را نگه می‌دارد و <bdi dir="ltr">Accounting Fact</bdi>های کسب‌وکار را به <bdi dir="ltr">Journal</bdi> تبدیل می‌کند.
+مرزبندی <span dir="ltr">Context</span>ها فقط نیمی از <span dir="ltr">Strategic Design</span> است. هیچ <span dir="ltr">Context</span> مهم بانکی در خلأ کار نمی‌کند. <span dir="ltr">Customer facts</span> وارد <span dir="ltr">Lending</span> می‌شوند، <span dir="ltr">Lending</span> از <span dir="ltr">Deposits</span> واریز می‌خواهد، <span dir="ltr">Payments</span> وضعیت شبکه را نگه می‌دارد و <span dir="ltr">Accounting Fact</span>های کسب‌وکار را به <span dir="ltr">Journal</span> تبدیل می‌کند.
 
-اگر فقط <bdi dir="ltr">Box</bdi>ها را بکشیم و آن‌ها را با خط وصل کنیم، پرسش‌های اصلی پنهان می‌مانند:
+اگر فقط <span dir="ltr">Box</span>ها را بکشیم و آن‌ها را با خط وصل کنیم، پرسش‌های اصلی پنهان می‌مانند:
 
 - مدل کدام طرف بر دیگری اثر می‌گذارد؟
-- چه تیمی برای تغییر <bdi dir="ltr">Contract</bdi> قدرت بیشتری دارد؟
-- <bdi dir="ltr">Downstream</bdi> مدل <bdi dir="ltr">Upstream</bdi> را می‌پذیرد یا ترجمه می‌کند؟
-- <bdi dir="ltr">Contract</bdi> برای یک <bdi dir="ltr">Consumer</bdi> خاص طراحی شده یا عمومی و <bdi dir="ltr">Published</bdi> است؟
-- شکست یا تغییر <bdi dir="ltr">Upstream</bdi> چه اثری روی <bdi dir="ltr">Downstream</bdi> دارد؟
+- چه تیمی برای تغییر <span dir="ltr">Contract</span> قدرت بیشتری دارد؟
+- <span dir="ltr">Downstream</span> مدل <span dir="ltr">Upstream</span> را می‌پذیرد یا ترجمه می‌کند؟
+- <span dir="ltr">Contract</span> برای یک <span dir="ltr">Consumer</span> خاص طراحی شده یا عمومی و <span dir="ltr">Published</span> است؟
+- شکست یا تغییر <span dir="ltr">Upstream</span> چه اثری روی <span dir="ltr">Downstream</span> دارد؟
 
-<bdi dir="ltr">Context Map</bdi> نقشهٔ **روابط مدل و همکاری** میان <bdi dir="ltr">Bounded Context</bdi>هاست.
+<span dir="ltr">Context Map</span> نقشهٔ **روابط مدل و همکاری** میان <span dir="ltr">Bounded Context</span>هاست.
 
-## <bdi dir="ltr">3. Context Map</bdi> چه چیزی نیست؟
+## <span dir="ltr">3. Context Map</span> چه چیزی نیست؟
 
-| <bdi dir="ltr">Diagram/Artifact</bdi> | سؤال اصلی | چرا جای <bdi dir="ltr">Context Map</bdi> را نمی‌گیرد؟ |
+| <span dir="ltr">Diagram/Artifact</span> | سؤال اصلی | چرا جای <span dir="ltr">Context Map</span> را نمی‌گیرد؟ |
 |---|---|---|
-| <bdi dir="ltr">System Context Diagram</bdi> | چه سیستم‌ها و <bdi dir="ltr">Actor</bdi>هایی درگیرند؟ | مدل، زبان و رابطهٔ قدرت را الزاماً نشان نمی‌دهد |
-| <bdi dir="ltr">Sequence Diagram</bdi> | پیام‌ها با چه ترتیب زمانی ردوبدل می‌شوند؟ | <bdi dir="ltr">Upstream/Downstream</bdi> دامینی را از روی <bdi dir="ltr">Caller</bdi> نمی‌توان فهمید |
-| <bdi dir="ltr">Data Flow</bdi> | چه داده‌ای حرکت می‌کند؟ | <bdi dir="ltr">Authority</bdi> و <bdi dir="ltr">Translation Policy</bdi> ممکن است پنهان بماند |
-| <bdi dir="ltr">Deployment Diagram</bdi> | <bdi dir="ltr">Process/Node/Pod</bdi> کجاست؟ | <bdi dir="ltr">Boundary</bdi> مدل با <bdi dir="ltr">Deployment</bdi> یکی نیست |
-| <bdi dir="ltr">Organization Chart</bdi> | تیم‌ها کجا هستند؟ | رابطهٔ تاریخی سازمان الزاماً رابطهٔ مدل نیست |
+| <span dir="ltr">System Context Diagram</span> | چه سیستم‌ها و <span dir="ltr">Actor</span>هایی درگیرند؟ | مدل، زبان و رابطهٔ قدرت را الزاماً نشان نمی‌دهد |
+| <span dir="ltr">Sequence Diagram</span> | پیام‌ها با چه ترتیب زمانی ردوبدل می‌شوند؟ | <span dir="ltr">Upstream/Downstream</span> دامینی را از روی <span dir="ltr">Caller</span> نمی‌توان فهمید |
+| <span dir="ltr">Data Flow</span> | چه داده‌ای حرکت می‌کند؟ | <span dir="ltr">Authority</span> و <span dir="ltr">Translation Policy</span> ممکن است پنهان بماند |
+| <span dir="ltr">Deployment Diagram</span> | <span dir="ltr">Process/Node/Pod</span> کجاست؟ | <span dir="ltr">Boundary</span> مدل با <span dir="ltr">Deployment</span> یکی نیست |
+| <span dir="ltr">Organization Chart</span> | تیم‌ها کجا هستند؟ | رابطهٔ تاریخی سازمان الزاماً رابطهٔ مدل نیست |
 
-این <bdi dir="ltr">Artifact</bdi>ها مکمل یکدیگرند. <bdi dir="ltr">Context Map</bdi> به‌طور خاص می‌گوید <bdi dir="ltr">Context</bdi>ها چگونه با تفاوت مدل و قدرت تغییر کنار می‌آیند.
+این <span dir="ltr">Artifact</span>ها مکمل یکدیگرند. <span dir="ltr">Context Map</span> به‌طور خاص می‌گوید <span dir="ltr">Context</span>ها چگونه با تفاوت مدل و قدرت تغییر کنار می‌آیند.
 
-## <bdi dir="ltr">4. Upstream</bdi> و <bdi dir="ltr">Downstream</bdi>
+## <span dir="ltr">4. Upstream</span> و <span dir="ltr">Downstream</span>
 
 ### تعریف عملیاتی
 
-<bdi dir="ltr">`Upstream`</bdi> طرفی است که مدل یا <bdi dir="ltr">Contract</bdi> ارائه‌شدهٔ آن روی طرف دیگر اثر می‌گذارد و معمولاً اختیار بیشتری بر تکامل آن دارد.
+<span dir="ltr">`Upstream`</span> طرفی است که مدل یا <span dir="ltr">Contract</span> ارائه‌شدهٔ آن روی طرف دیگر اثر می‌گذارد و معمولاً اختیار بیشتری بر تکامل آن دارد.
 
-<bdi dir="ltr">`Downstream`</bdi> برای کارکرد خود به آن <bdi dir="ltr">Capability</bdi>، <bdi dir="ltr">Fact</bdi> یا <bdi dir="ltr">Contract</bdi> وابسته است و باید با تغییرات <bdi dir="ltr">Upstream</bdi> کنار بیاید.
+<span dir="ltr">`Downstream`</span> برای کارکرد خود به آن <span dir="ltr">Capability</span>، <span dir="ltr">Fact</span> یا <span dir="ltr">Contract</span> وابسته است و باید با تغییرات <span dir="ltr">Upstream</span> کنار بیاید.
 
-### دام رایج: <bdi dir="ltr">Caller</bdi> برابر <bdi dir="ltr">Upstream</bdi>
+### دام رایج: <span dir="ltr">Caller</span> برابر <span dir="ltr">Upstream</span>
 
-فرض کن <bdi dir="ltr">Lending</bdi> فرمان <bdi dir="ltr">`CreditDepositAccount`</bdi> را به <bdi dir="ltr">Deposits</bdi> می‌فرستد. <bdi dir="ltr">Lending Caller</bdi> است، اما دربارهٔ قواعد حساب، پذیرش واریز و مانده اختیار ندارد. <bdi dir="ltr">Deposits</bdi> قابلیت و مدل عملیاتی را ارائه می‌کند و <bdi dir="ltr">Lending</bdi> به آن وابسته است؛ بنابراین در این رابطه، <bdi dir="ltr">Deposits</bdi> می‌تواند <bdi dir="ltr">Upstream</bdi> و <bdi dir="ltr">Lending Downstream</bdi> باشد.
+فرض کن <span dir="ltr">Lending</span> فرمان <span dir="ltr">`CreditDepositAccount`</span> را به <span dir="ltr">Deposits</span> می‌فرستد. <span dir="ltr">Lending Caller</span> است، اما دربارهٔ قواعد حساب، پذیرش واریز و مانده اختیار ندارد. <span dir="ltr">Deposits</span> قابلیت و مدل عملیاتی را ارائه می‌کند و <span dir="ltr">Lending</span> به آن وابسته است؛ بنابراین در این رابطه، <span dir="ltr">Deposits</span> می‌تواند <span dir="ltr">Upstream</span> و <span dir="ltr">Lending Downstream</span> باشد.
 
-در مقابل، ممکن است <bdi dir="ltr">Deposit</bdi> تیم <bdi dir="ltr">Contract</bdi> خود را با نیازهای <bdi dir="ltr">Lending</bdi> تنظیم کند. این شیوهٔ همکاری <bdi dir="ltr">Customer/Supplier</bdi> است و <bdi dir="ltr">Lending</bdi> به‌عنوان <bdi dir="ltr">Downstream Customer</bdi> روی <bdi dir="ltr">Backlog Upstream</bdi> اثر می‌گذارد.
+در مقابل، ممکن است <span dir="ltr">Deposit</span> تیم <span dir="ltr">Contract</span> خود را با نیازهای <span dir="ltr">Lending</span> تنظیم کند. این شیوهٔ همکاری <span dir="ltr">Customer/Supplier</span> است و <span dir="ltr">Lending</span> به‌عنوان <span dir="ltr">Downstream Customer</span> روی <span dir="ltr">Backlog Upstream</span> اثر می‌گذارد.
 
-جهت <bdi dir="ltr">Event</bdi> نیز به‌تنهایی جهت مدل را ثابت نمی‌کند. <bdi dir="ltr">Context</bdi>ی که <bdi dir="ltr">Event</bdi> منتشر می‌کند معمولاً <bdi dir="ltr">Fact</bdi> خودش را منتشر می‌کند، اما <bdi dir="ltr">Governance</bdi> و <bdi dir="ltr">Pattern</bdi> باید جدا تحلیل شوند.
+جهت <span dir="ltr">Event</span> نیز به‌تنهایی جهت مدل را ثابت نمی‌کند. <span dir="ltr">Context</span>ی که <span dir="ltr">Event</span> منتشر می‌کند معمولاً <span dir="ltr">Fact</span> خودش را منتشر می‌کند، اما <span dir="ltr">Governance</span> و <span dir="ltr">Pattern</span> باید جدا تحلیل شوند.
 
-## <bdi dir="ltr">5. Pattern</bdi> اول: <bdi dir="ltr">Customer/Supplier</bdi>
+## <span dir="ltr">5. Pattern</span> اول: <span dir="ltr">Customer/Supplier</span>
 
 ### معنا
 
-دو تیم رابطهٔ <bdi dir="ltr">Upstream/Downstream</bdi> دارند و <bdi dir="ltr">Upstream</bdi> متعهد می‌شود نیازهای واقعی <bdi dir="ltr">Downstream</bdi> را در برنامه‌ریزی و <bdi dir="ltr">Contract</bdi> لحاظ کند. <bdi dir="ltr">Downstream</bdi> مشتری مدل/خدمت است، نه صرفاً مصرف‌کننده‌ای بی‌قدرت.
+دو تیم رابطهٔ <span dir="ltr">Upstream/Downstream</span> دارند و <span dir="ltr">Upstream</span> متعهد می‌شود نیازهای واقعی <span dir="ltr">Downstream</span> را در برنامه‌ریزی و <span dir="ltr">Contract</span> لحاظ کند. <span dir="ltr">Downstream</span> مشتری مدل/خدمت است، نه صرفاً مصرف‌کننده‌ای بی‌قدرت.
 
 ### چه زمانی مناسب است؟
 
 - تیم‌ها امکان مذاکره و برنامه‌ریزی مشترک دارند.
-- نیاز <bdi dir="ltr">Downstream</bdi> برای <bdi dir="ltr">Outcome</bdi> مهم است.
-- <bdi dir="ltr">Upstream</bdi> می‌تواند <bdi dir="ltr">Contract</bdi> هدفمند ارائه کند.
-- رابطه و <bdi dir="ltr">SLA</bdi> مالک روشن دارد.
+- نیاز <span dir="ltr">Downstream</span> برای <span dir="ltr">Outcome</span> مهم است.
+- <span dir="ltr">Upstream</span> می‌تواند <span dir="ltr">Contract</span> هدفمند ارائه کند.
+- رابطه و <span dir="ltr">SLA</span> مالک روشن دارد.
 
 ### مثال بانکی
 
-<bdi dir="ltr">Party</bdi> & <bdi dir="ltr">Customer</bdi>، اطلاعات هویتی معتبر را ارائه می‌کند و <bdi dir="ltr">Lending</bdi> برای تصمیم اعتباری به یک <bdi dir="ltr">Customer Reference</bdi> نیاز دارد. اگر تیم <bdi dir="ltr">Customer</bdi> نیازهای <bdi dir="ltr">Versioning</bdi>، <bdi dir="ltr">KYC evidence</bdi> و <bdi dir="ltr">Bulk/latency</bdi> موردنیاز <bdi dir="ltr">Lending</bdi> را در <bdi dir="ltr">Product Backlog</bdi> لحاظ کند، رابطه می‌تواند <bdi dir="ltr">Customer/Supplier</bdi> باشد.
+<span dir="ltr">Party</span> & <span dir="ltr">Customer</span>، اطلاعات هویتی معتبر را ارائه می‌کند و <span dir="ltr">Lending</span> برای تصمیم اعتباری به یک <span dir="ltr">Customer Reference</span> نیاز دارد. اگر تیم <span dir="ltr">Customer</span> نیازهای <span dir="ltr">Versioning</span>، <span dir="ltr">KYC evidence</span> و <span dir="ltr">Bulk/latency</span> موردنیاز <span dir="ltr">Lending</span> را در <span dir="ltr">Product Backlog</span> لحاظ کند، رابطه می‌تواند <span dir="ltr">Customer/Supplier</span> باشد.
 
 ### خطا
 
-نوشتن <bdi dir="ltr">C/S</bdi> روی <bdi dir="ltr">Diagram</bdi> بدون مکانیزم <bdi dir="ltr">Governance</bdi>، <bdi dir="ltr">Owner</bdi>، <bdi dir="ltr">Compatibility</bdi> و مسیر <bdi dir="ltr">Escalation</bdi> فقط برچسب است.
+نوشتن <span dir="ltr">C/S</span> روی <span dir="ltr">Diagram</span> بدون مکانیزم <span dir="ltr">Governance</span>، <span dir="ltr">Owner</span>، <span dir="ltr">Compatibility</span> و مسیر <span dir="ltr">Escalation</span> فقط برچسب است.
 
-## <bdi dir="ltr">6. Pattern</bdi> دوم: <bdi dir="ltr">Conformist</bdi>
+## <span dir="ltr">6. Pattern</span> دوم: <span dir="ltr">Conformist</span>
 
 ### معنا
 
-<bdi dir="ltr">Downstream</bdi> مدل <bdi dir="ltr">Upstream</bdi> را همان‌گونه که هست می‌پذیرد و مدل مستقل یا <bdi dir="ltr">Translation</bdi> قابل‌توجهی نمی‌سازد.
+<span dir="ltr">Downstream</span> مدل <span dir="ltr">Upstream</span> را همان‌گونه که هست می‌پذیرد و مدل مستقل یا <span dir="ltr">Translation</span> قابل‌توجهی نمی‌سازد.
 
 ### چه زمانی قابل دفاع است؟
 
-- <bdi dir="ltr">Downstream</bdi> قدرت یا امکان تغییر <bdi dir="ltr">Upstream</bdi> را ندارد.
-- مدل <bdi dir="ltr">Upstream</bdi> برای مسئلهٔ <bdi dir="ltr">Downstream</bdi> به‌اندازهٔ کافی مناسب است.
-- هزینهٔ <bdi dir="ltr">Translation</bdi> از ارزش مدل مستقل بیشتر است.
-- این بخش برای <bdi dir="ltr">Downstream Core</bdi> نیست یا خطر آلودگی مدل پایین است.
+- <span dir="ltr">Downstream</span> قدرت یا امکان تغییر <span dir="ltr">Upstream</span> را ندارد.
+- مدل <span dir="ltr">Upstream</span> برای مسئلهٔ <span dir="ltr">Downstream</span> به‌اندازهٔ کافی مناسب است.
+- هزینهٔ <span dir="ltr">Translation</span> از ارزش مدل مستقل بیشتر است.
+- این بخش برای <span dir="ltr">Downstream Core</span> نیست یا خطر آلودگی مدل پایین است.
 
 ### مثال محتمل
 
-یک ابزار گزارش‌گیری ساده ممکن است <bdi dir="ltr">Classification</bdi> و <bdi dir="ltr">Code</bdi>های رسمی <bdi dir="ltr">Accounting</bdi> را بدون مدل مستقل بپذیرد. اگر فقط نمایش می‌دهد و تصمیم دامینی متفاوتی ندارد، <bdi dir="ltr">Conformist</bdi> می‌تواند اقتصادی باشد.
+یک ابزار گزارش‌گیری ساده ممکن است <span dir="ltr">Classification</span> و <span dir="ltr">Code</span>های رسمی <span dir="ltr">Accounting</span> را بدون مدل مستقل بپذیرد. اگر فقط نمایش می‌دهد و تصمیم دامینی متفاوتی ندارد، <span dir="ltr">Conformist</span> می‌تواند اقتصادی باشد.
 
 ### خطر
 
-اگر <bdi dir="ltr">Lending</bdi> مدل <bdi dir="ltr">Customer Legacy</bdi> را با صدها <bdi dir="ltr">Flag</bdi> تاریخی وارد <bdi dir="ltr">Domain Model</bdi> خود کند، زبان و تصمیم اعتباری به <bdi dir="ltr">Upstream</bdi> آلوده می‌شود. کم‌شدن <bdi dir="ltr">Mapper</bdi> لزوماً کاهش <bdi dir="ltr">Coupling</bdi> نیست.
+اگر <span dir="ltr">Lending</span> مدل <span dir="ltr">Customer Legacy</span> را با صدها <span dir="ltr">Flag</span> تاریخی وارد <span dir="ltr">Domain Model</span> خود کند، زبان و تصمیم اعتباری به <span dir="ltr">Upstream</span> آلوده می‌شود. کم‌شدن <span dir="ltr">Mapper</span> لزوماً کاهش <span dir="ltr">Coupling</span> نیست.
 
-<bdi dir="ltr">Conformist</bdi> «<bdi dir="ltr">Pattern</bdi> بد» نیست؛ انتخابی آگاهانه با <bdi dir="ltr">Trade-off</bdi> است. برای <bdi dir="ltr">Core Subdomain</bdi> باید با احتیاط بیشتری استفاده شود.
+<span dir="ltr">Conformist</span> «<span dir="ltr">Pattern</span> بد» نیست؛ انتخابی آگاهانه با <span dir="ltr">Trade-off</span> است. برای <span dir="ltr">Core Subdomain</span> باید با احتیاط بیشتری استفاده شود.
 
-## <bdi dir="ltr">7. Pattern</bdi> سوم: <bdi dir="ltr">Anticorruption Layer</bdi>
+## <span dir="ltr">7. Pattern</span> سوم: <span dir="ltr">Anticorruption Layer</span>
 
 ### معنا
 
-<bdi dir="ltr">Downstream</bdi> یک لایهٔ ترجمه می‌سازد تا مدل <bdi dir="ltr">Upstream</bdi> وارد مدل داخلی آن نشود. <bdi dir="ltr">ACL</bdi> می‌تواند شامل <bdi dir="ltr">Adapter</bdi>، <bdi dir="ltr">Translator</bdi>، <bdi dir="ltr">Facade</bdi> و <bdi dir="ltr">Contract-specific Model</bdi> باشد.
+<span dir="ltr">Downstream</span> یک لایهٔ ترجمه می‌سازد تا مدل <span dir="ltr">Upstream</span> وارد مدل داخلی آن نشود. <span dir="ltr">ACL</span> می‌تواند شامل <span dir="ltr">Adapter</span>، <span dir="ltr">Translator</span>، <span dir="ltr">Facade</span> و <span dir="ltr">Contract-specific Model</span> باشد.
 
 ### هدف
 
-هدف <bdi dir="ltr">ACL</bdi> صرفاً تبدیل <bdi dir="ltr">JSON</bdi> یا <bdi dir="ltr">Rename</bdi> فیلد نیست. باید **معنا** را ترجمه و مدل <bdi dir="ltr">Downstream</bdi> را محافظت کند.
+هدف <span dir="ltr">ACL</span> صرفاً تبدیل <span dir="ltr">JSON</span> یا <span dir="ltr">Rename</span> فیلد نیست. باید **معنا** را ترجمه و مدل <span dir="ltr">Downstream</span> را محافظت کند.
 
-### مثال بانکی: <bdi dir="ltr">Legacy Deposits</bdi>
+### مثال بانکی: <span dir="ltr">Legacy Deposits</span>
 
 فرض کن سامانهٔ قدیمی سپرده پاسخ زیر را می‌دهد:
 
@@ -131,7 +131,7 @@ statusCode=17, accType=203, usableAmt=..., block1=..., block2=...
 <div dir="rtl" align="right">
 
 
-<bdi dir="ltr">Lending</bdi> نباید این <bdi dir="ltr">Code</bdi>ها و ساختار <bdi dir="ltr">Legacy</bdi> را در <bdi dir="ltr">Rule</bdi>های اعطا منتشر کند. <bdi dir="ltr">ACL</bdi> می‌تواند آن را به مدل محدود زیر ترجمه کند:
+<span dir="ltr">Lending</span> نباید این <span dir="ltr">Code</span>ها و ساختار <span dir="ltr">Legacy</span> را در <span dir="ltr">Rule</span>های اعطا منتشر کند. <span dir="ltr">ACL</span> می‌تواند آن را به مدل محدود زیر ترجمه کند:
 
 
 </div>
@@ -152,177 +152,177 @@ DisbursementAccountAssessment
 <div dir="rtl" align="right">
 
 
-<bdi dir="ltr">ACL</bdi> مالک <bdi dir="ltr">Available Balance</bdi> نمی‌شود. فقط معنای موردنیاز <bdi dir="ltr">Downstream</bdi> را از <bdi dir="ltr">Contract Upstream</bdi> ترجمه می‌کند و <bdi dir="ltr">Provenance</bdi> را نگه می‌دارد.
+<span dir="ltr">ACL</span> مالک <span dir="ltr">Available Balance</span> نمی‌شود. فقط معنای موردنیاز <span dir="ltr">Downstream</span> را از <span dir="ltr">Contract Upstream</span> ترجمه می‌کند و <span dir="ltr">Provenance</span> را نگه می‌دارد.
 
 ### چه زمانی لازم است؟
 
-- <bdi dir="ltr">Upstream Legacy</bdi> یا مدل نامتناسب دارد.
-- <bdi dir="ltr">Downstream Core</bdi> است و باید مدلش محافظت شود.
-- دو <bdi dir="ltr">Context</bdi> اصطلاح یا <bdi dir="ltr">Invariant</bdi> متفاوت دارند.
-- تغییر <bdi dir="ltr">Upstream</bdi> نباید در مدل <bdi dir="ltr">Downstream</bdi> موج ایجاد کند.
+- <span dir="ltr">Upstream Legacy</span> یا مدل نامتناسب دارد.
+- <span dir="ltr">Downstream Core</span> است و باید مدلش محافظت شود.
+- دو <span dir="ltr">Context</span> اصطلاح یا <span dir="ltr">Invariant</span> متفاوت دارند.
+- تغییر <span dir="ltr">Upstream</span> نباید در مدل <span dir="ltr">Downstream</span> موج ایجاد کند.
 
 ### هزینه
 
 - کد و تست ترجمه
-- <bdi dir="ltr">Mapping</bdi> خطا و <bdi dir="ltr">Version</bdi>
-- <bdi dir="ltr">Risk</bdi> از دست‌رفتن معنا
-- <bdi dir="ltr">Monitoring</bdi> و <bdi dir="ltr">Reconciliation</bdi>
+- <span dir="ltr">Mapping</span> خطا و <span dir="ltr">Version</span>
+- <span dir="ltr">Risk</span> از دست‌رفتن معنا
+- <span dir="ltr">Monitoring</span> و <span dir="ltr">Reconciliation</span>
 
-<bdi dir="ltr">ACL</bdi> را برای هر <bdi dir="ltr">DTO</bdi> کوچک نساز. باید خطری واقعی برای مدل وجود داشته باشد.
+<span dir="ltr">ACL</span> را برای هر <span dir="ltr">DTO</span> کوچک نساز. باید خطری واقعی برای مدل وجود داشته باشد.
 
-## <bdi dir="ltr">8. Pattern</bdi> چهارم: <bdi dir="ltr">Open Host Service</bdi> و <bdi dir="ltr">Published Language</bdi>
+## <span dir="ltr">8. Pattern</span> چهارم: <span dir="ltr">Open Host Service</span> و <span dir="ltr">Published Language</span>
 
-### <bdi dir="ltr">Open Host Service</bdi>
+### <span dir="ltr">Open Host Service</span>
 
-<bdi dir="ltr">Upstream</bdi> مجموعه‌ای مشخص و پایدار از خدمات/<bdi dir="ltr">Protocol</bdi> را برای چند مصرف‌کننده عرضه می‌کند، به‌جای ساخت <bdi dir="ltr">Integration</bdi> اختصاصی و متفاوت برای هرکدام.
+<span dir="ltr">Upstream</span> مجموعه‌ای مشخص و پایدار از خدمات/<span dir="ltr">Protocol</span> را برای چند مصرف‌کننده عرضه می‌کند، به‌جای ساخت <span dir="ltr">Integration</span> اختصاصی و متفاوت برای هرکدام.
 
-### <bdi dir="ltr">Published Language</bdi>
+### <span dir="ltr">Published Language</span>
 
-زبان <bdi dir="ltr">Contract</bdi> مستند، <bdi dir="ltr">Versioned</bdi> و قابل‌مصرفی است که دو یا چند <bdi dir="ltr">Context</bdi> برای تبادل از آن استفاده می‌کنند؛ مانند <bdi dir="ltr">Schema</bdi> یک <bdi dir="ltr">Business Event</bdi> یا <bdi dir="ltr">Semantic API.</bdi>
+زبان <span dir="ltr">Contract</span> مستند، <span dir="ltr">Versioned</span> و قابل‌مصرفی است که دو یا چند <span dir="ltr">Context</span> برای تبادل از آن استفاده می‌کنند؛ مانند <span dir="ltr">Schema</span> یک <span dir="ltr">Business Event</span> یا <span dir="ltr">Semantic API.</span>
 
-<bdi dir="ltr">Published Language</bdi> مدل داخلی <bdi dir="ltr">Upstream</bdi> یا یک <bdi dir="ltr">Canonical Model</bdi> برای کل بانک نیست. باید فقط معنای لازم در <bdi dir="ltr">Boundary</bdi> را منتقل کند.
+<span dir="ltr">Published Language</span> مدل داخلی <span dir="ltr">Upstream</span> یا یک <span dir="ltr">Canonical Model</span> برای کل بانک نیست. باید فقط معنای لازم در <span dir="ltr">Boundary</span> را منتقل کند.
 
 ### مثال بانکی
 
-<bdi dir="ltr">Deposits</bdi> می‌تواند <bdi dir="ltr">Contract</bdi> عمومی عملیات سپرده را با <bdi dir="ltr">Command/Result</bdi>های مشخص عرضه کند و <bdi dir="ltr">Event</bdi>های <bdi dir="ltr">Versioned</bdi> مانند <bdi dir="ltr">`DepositCredited`</bdi> منتشر کند. <bdi dir="ltr">Accounting</bdi>، <bdi dir="ltr">Notification</bdi> و <bdi dir="ltr">Reconciliation</bdi> ممکن است از <bdi dir="ltr">Published Language</bdi> رخداد استفاده کنند، ولی هرکدام آن را به مدل خود ترجمه می‌کنند.
+<span dir="ltr">Deposits</span> می‌تواند <span dir="ltr">Contract</span> عمومی عملیات سپرده را با <span dir="ltr">Command/Result</span>های مشخص عرضه کند و <span dir="ltr">Event</span>های <span dir="ltr">Versioned</span> مانند <span dir="ltr">`DepositCredited`</span> منتشر کند. <span dir="ltr">Accounting</span>، <span dir="ltr">Notification</span> و <span dir="ltr">Reconciliation</span> ممکن است از <span dir="ltr">Published Language</span> رخداد استفاده کنند، ولی هرکدام آن را به مدل خود ترجمه می‌کنند.
 
 ### کنترل‌های لازم
 
-- <bdi dir="ltr">Semantic naming</bdi>
-- <bdi dir="ltr">Schema/contract version</bdi>
-- <bdi dir="ltr">Compatibility policy</bdi>
-- <bdi dir="ltr">Error taxonomy</bdi>
-- <bdi dir="ltr">Idempotency/correlation semantics</bdi> در صورت نیاز
-- <bdi dir="ltr">Owner</bdi> و <bdi dir="ltr">deprecation path</bdi>
+- <span dir="ltr">Semantic naming</span>
+- <span dir="ltr">Schema/contract version</span>
+- <span dir="ltr">Compatibility policy</span>
+- <span dir="ltr">Error taxonomy</span>
+- <span dir="ltr">Idempotency/correlation semantics</span> در صورت نیاز
+- <span dir="ltr">Owner</span> و <span dir="ltr">deprecation path</span>
 
-وجود <bdi dir="ltr">OpenAPI</bdi> یا <bdi dir="ltr">AsyncAPI</bdi> به‌تنهایی <bdi dir="ltr">Published Language</bdi> خوب نمی‌سازد؛ <bdi dir="ltr">Contract</bdi> باید معنای دامینی پایدار داشته باشد.
+وجود <span dir="ltr">OpenAPI</span> یا <span dir="ltr">AsyncAPI</span> به‌تنهایی <span dir="ltr">Published Language</span> خوب نمی‌سازد؛ <span dir="ltr">Contract</span> باید معنای دامینی پایدار داشته باشد.
 
-## <bdi dir="ltr">9. Pattern</bdi>های مکمل
+## <span dir="ltr">9. Pattern</span>های مکمل
 
-تمرکز آزمون روی چهار <bdi dir="ltr">Pattern</bdi> بالاست، ولی <bdi dir="ltr">Context Map</bdi> واقعی ممکن است این‌ها را هم نیاز داشته باشد.
+تمرکز آزمون روی چهار <span dir="ltr">Pattern</span> بالاست، ولی <span dir="ltr">Context Map</span> واقعی ممکن است این‌ها را هم نیاز داشته باشد.
 
-### <bdi dir="ltr">Partnership</bdi>
+### <span dir="ltr">Partnership</span>
 
-دو <bdi dir="ltr">Context/Team</bdi> موفقیت مشترک و وابستگی متقابل قوی دارند و تغییرها را هماهنگ می‌کنند. این <bdi dir="ltr">Pattern Coordination Cost</bdi> بالایی دارد و استقلال <bdi dir="ltr">Release</bdi> را کاهش می‌دهد؛ باید آگاهانه باشد.
+دو <span dir="ltr">Context/Team</span> موفقیت مشترک و وابستگی متقابل قوی دارند و تغییرها را هماهنگ می‌کنند. این <span dir="ltr">Pattern Coordination Cost</span> بالایی دارد و استقلال <span dir="ltr">Release</span> را کاهش می‌دهد؛ باید آگاهانه باشد.
 
-### <bdi dir="ltr">Shared Kernel</bdi>
+### <span dir="ltr">Shared Kernel</span>
 
-بخش بسیار کوچک و صریحی از مدل/کد بین <bdi dir="ltr">Context</bdi>ها مشترک است و هر تغییر با هماهنگی انجام می‌شود. <bdi dir="ltr">Shared Kernel</bdi> نباید به <bdi dir="ltr">`common`</bdi> عظیم، <bdi dir="ltr">Entity</bdi>های <bdi dir="ltr">JPA</bdi> مشترک یا <bdi dir="ltr">Database</bdi> مشترک تبدیل شود.
+بخش بسیار کوچک و صریحی از مدل/کد بین <span dir="ltr">Context</span>ها مشترک است و هر تغییر با هماهنگی انجام می‌شود. <span dir="ltr">Shared Kernel</span> نباید به <span dir="ltr">`common`</span> عظیم، <span dir="ltr">Entity</span>های <span dir="ltr">JPA</span> مشترک یا <span dir="ltr">Database</span> مشترک تبدیل شود.
 
-### <bdi dir="ltr">Separate Ways</bdi>
+### <span dir="ltr">Separate Ways</span>
 
-ارزش <bdi dir="ltr">Integration</bdi> کمتر از هزینه و <bdi dir="ltr">Coupling</bdi> است؛ <bdi dir="ltr">Context</bdi>ها مستقل می‌مانند، حتی اگر مقداری <bdi dir="ltr">Duplication</bdi> وجود داشته باشد.
+ارزش <span dir="ltr">Integration</span> کمتر از هزینه و <span dir="ltr">Coupling</span> است؛ <span dir="ltr">Context</span>ها مستقل می‌مانند، حتی اگر مقداری <span dir="ltr">Duplication</span> وجود داشته باشد.
 
 ## 10. مثال هدایت‌شده: اعطای تسهیلات
 
-سناریو: پس از انعقاد قرارداد مرابحه، <bdi dir="ltr">Lending</bdi> مبلغ را به سپردهٔ مشتری واریز می‌کند و آثار مالی باید ثبت شوند.
+سناریو: پس از انعقاد قرارداد مرابحه، <span dir="ltr">Lending</span> مبلغ را به سپردهٔ مشتری واریز می‌کند و آثار مالی باید ثبت شوند.
 
-### رابطهٔ <bdi dir="ltr">Product Catalog</bdi> → <bdi dir="ltr">Lending</bdi>
+### رابطهٔ <span dir="ltr">Product Catalog</span> → <span dir="ltr">Lending</span>
 
-- <bdi dir="ltr">Upstream: Product/Agreement reference provider</bdi>
-- <bdi dir="ltr">Downstream: Lending</bdi>
-- <bdi dir="ltr">Fact: ProductVersion</bdi> و شروط لازم
-- نکته: <bdi dir="ltr">Lending</bdi> برای قرارداد منعقدشده به <bdi dir="ltr">Snapshot</bdi> مؤثر نیاز دارد، نه <bdi dir="ltr">Query</bdi> دائمی نسخهٔ جاری.
-- <bdi dir="ltr">Pattern candidate: OHS/Published Language</bdi> یا <bdi dir="ltr">Customer/Supplier</bdi>، بسته به <bdi dir="ltr">Governance</bdi>
+- <span dir="ltr">Upstream: Product/Agreement reference provider</span>
+- <span dir="ltr">Downstream: Lending</span>
+- <span dir="ltr">Fact: ProductVersion</span> و شروط لازم
+- نکته: <span dir="ltr">Lending</span> برای قرارداد منعقدشده به <span dir="ltr">Snapshot</span> مؤثر نیاز دارد، نه <span dir="ltr">Query</span> دائمی نسخهٔ جاری.
+- <span dir="ltr">Pattern candidate: OHS/Published Language</span> یا <span dir="ltr">Customer/Supplier</span>، بسته به <span dir="ltr">Governance</span>
 
-### رابطهٔ <bdi dir="ltr">Party</bdi> & <bdi dir="ltr">Customer</bdi> → <bdi dir="ltr">Lending</bdi>
+### رابطهٔ <span dir="ltr">Party</span> & <span dir="ltr">Customer</span> → <span dir="ltr">Lending</span>
 
-- <bdi dir="ltr">Upstream: Party</bdi> & <bdi dir="ltr">Customer</bdi>
-- <bdi dir="ltr">Downstream: Lending</bdi>
-- <bdi dir="ltr">Fact: Party identity</bdi> و <bdi dir="ltr">KYC evidence</bdi>
-- <bdi dir="ltr">Decision distinction: KYC validity</bdi> با <bdi dir="ltr">Credit Eligibility</bdi> یکی نیست.
-- <bdi dir="ltr">Pattern candidate: Customer/Supplier</bdi> + <bdi dir="ltr">Published Language</bdi>
+- <span dir="ltr">Upstream: Party</span> & <span dir="ltr">Customer</span>
+- <span dir="ltr">Downstream: Lending</span>
+- <span dir="ltr">Fact: Party identity</span> و <span dir="ltr">KYC evidence</span>
+- <span dir="ltr">Decision distinction: KYC validity</span> با <span dir="ltr">Credit Eligibility</span> یکی نیست.
+- <span dir="ltr">Pattern candidate: Customer/Supplier</span> + <span dir="ltr">Published Language</span>
 
-### رابطهٔ <bdi dir="ltr">Deposits</bdi> → <bdi dir="ltr">Lending</bdi>
+### رابطهٔ <span dir="ltr">Deposits</span> → <span dir="ltr">Lending</span>
 
-- <bdi dir="ltr">Upstream model authority: Deposits</bdi> برای عملیات واریز/حساب
-- <bdi dir="ltr">Downstream: Lending</bdi> که <bdi dir="ltr">Outcome</bdi> اعطا به واریز وابسته است
-- <bdi dir="ltr">Command direction: Lending</bdi> → <bdi dir="ltr">Deposits</bdi>
-- <bdi dir="ltr">Result/Event direction: Deposits</bdi> → <bdi dir="ltr">Lending/consumers</bdi>
-- <bdi dir="ltr">Pattern candidate: Customer/Supplier</bdi> اگر <bdi dir="ltr">Contract</bdi> با نیاز اعطا طراحی شود؛ <bdi dir="ltr">ACL</bdi> اگر مدل <bdi dir="ltr">Legacy Deposits</bdi> نامتناسب باشد.
+- <span dir="ltr">Upstream model authority: Deposits</span> برای عملیات واریز/حساب
+- <span dir="ltr">Downstream: Lending</span> که <span dir="ltr">Outcome</span> اعطا به واریز وابسته است
+- <span dir="ltr">Command direction: Lending</span> → <span dir="ltr">Deposits</span>
+- <span dir="ltr">Result/Event direction: Deposits</span> → <span dir="ltr">Lending/consumers</span>
+- <span dir="ltr">Pattern candidate: Customer/Supplier</span> اگر <span dir="ltr">Contract</span> با نیاز اعطا طراحی شود؛ <span dir="ltr">ACL</span> اگر مدل <span dir="ltr">Legacy Deposits</span> نامتناسب باشد.
 
-### رابطهٔ <bdi dir="ltr">Lending</bdi> → <bdi dir="ltr">Accounting</bdi>
+### رابطهٔ <span dir="ltr">Lending</span> → <span dir="ltr">Accounting</span>
 
-- <bdi dir="ltr">Upstream fact producer: Lending</bdi> برای <bdi dir="ltr">Fact</bdi>های خودش
-- <bdi dir="ltr">Downstream: Accounting</bdi> برای ترجمهٔ <bdi dir="ltr">Fact</bdi> به <bdi dir="ltr">Journal</bdi>
-- <bdi dir="ltr">Accounting</bdi> نباید <bdi dir="ltr">State</bdi> داخلی <bdi dir="ltr">Loan</bdi> را مالک شود.
-- <bdi dir="ltr">Pattern candidate: OHS/Published Language</bdi> در <bdi dir="ltr">Boundary</bdi> رخداد + <bdi dir="ltr">ACL/Translator</bdi> داخل <bdi dir="ltr">Accounting</bdi>
+- <span dir="ltr">Upstream fact producer: Lending</span> برای <span dir="ltr">Fact</span>های خودش
+- <span dir="ltr">Downstream: Accounting</span> برای ترجمهٔ <span dir="ltr">Fact</span> به <span dir="ltr">Journal</span>
+- <span dir="ltr">Accounting</span> نباید <span dir="ltr">State</span> داخلی <span dir="ltr">Loan</span> را مالک شود.
+- <span dir="ltr">Pattern candidate: OHS/Published Language</span> در <span dir="ltr">Boundary</span> رخداد + <span dir="ltr">ACL/Translator</span> داخل <span dir="ltr">Accounting</span>
 
-نکته: ممکن است برای یک <bdi dir="ltr">Pair</bdi> چند <bdi dir="ltr">Contract</bdi> با <bdi dir="ltr">Pattern</bdi>های متفاوت وجود داشته باشد. آن‌ها را در یک خط مبهم ادغام نکن.
+نکته: ممکن است برای یک <span dir="ltr">Pair</span> چند <span dir="ltr">Contract</span> با <span dir="ltr">Pattern</span>های متفاوت وجود داشته باشد. آن‌ها را در یک خط مبهم ادغام نکن.
 
-## 11. انتخاب <bdi dir="ltr">Pattern</bdi> با پنج سؤال
+## 11. انتخاب <span dir="ltr">Pattern</span> با پنج سؤال
 
 برای هر رابطه بپرس:
 
-1. چه کسی <bdi dir="ltr">Authority</bdi> مدل/<bdi dir="ltr">Fact</bdi> است؟
+1. چه کسی <span dir="ltr">Authority</span> مدل/<span dir="ltr">Fact</span> است؟
 2. کدام طرف از تغییر دیگری آسیب می‌بیند؟
-3. <bdi dir="ltr">Downstream</bdi> چقدر قدرت اثرگذاری بر <bdi dir="ltr">Roadmap Upstream</bdi> دارد؟
-4. مدل <bdi dir="ltr">Upstream</bdi> برای مسئلهٔ <bdi dir="ltr">Downstream</bdi> مناسب است یا باید ترجمه شود؟
-5. <bdi dir="ltr">Contract</bdi> یک <bdi dir="ltr">Consumer</bdi> خاص دارد یا باید برای چند مصرف‌کننده <bdi dir="ltr">Published</bdi> باشد؟
+3. <span dir="ltr">Downstream</span> چقدر قدرت اثرگذاری بر <span dir="ltr">Roadmap Upstream</span> دارد؟
+4. مدل <span dir="ltr">Upstream</span> برای مسئلهٔ <span dir="ltr">Downstream</span> مناسب است یا باید ترجمه شود؟
+5. <span dir="ltr">Contract</span> یک <span dir="ltr">Consumer</span> خاص دارد یا باید برای چند مصرف‌کننده <span dir="ltr">Published</span> باشد؟
 
-سپس <bdi dir="ltr">Pattern</bdi>، <bdi dir="ltr">Owner</bdi> قرارداد، <bdi dir="ltr">Translation location</bdi> و <bdi dir="ltr">Failure impact</bdi> را ثبت کن.
+سپس <span dir="ltr">Pattern</span>، <span dir="ltr">Owner</span> قرارداد، <span dir="ltr">Translation location</span> و <span dir="ltr">Failure impact</span> را ثبت کن.
 
 ## 12. خطاهای رایج
 
-### <bdi dir="ltr">`REST`</bdi> یا <bdi dir="ltr">`Kafka`</bdi> به‌عنوان <bdi dir="ltr">Pattern</bdi>
+### <span dir="ltr">`REST`</span> یا <span dir="ltr">`Kafka`</span> به‌عنوان <span dir="ltr">Pattern</span>
 
-این‌ها <bdi dir="ltr">Transport/Technology</bdi> هستند. <bdi dir="ltr">C/S</bdi>، <bdi dir="ltr">ACL</bdi> و <bdi dir="ltr">Conformist</bdi> دربارهٔ رابطهٔ مدل و تیم‌اند و می‌توانند روی <bdi dir="ltr">HTTP</bdi> یا <bdi dir="ltr">Messaging</bdi> اجرا شوند.
+این‌ها <span dir="ltr">Transport/Technology</span> هستند. <span dir="ltr">C/S</span>، <span dir="ltr">ACL</span> و <span dir="ltr">Conformist</span> دربارهٔ رابطهٔ مدل و تیم‌اند و می‌توانند روی <span dir="ltr">HTTP</span> یا <span dir="ltr">Messaging</span> اجرا شوند.
 
 ### فلش بدون جهت معنایی
 
-فلش باید بگوید <bdi dir="ltr">Upstream/Downstream</bdi> چیست. <bdi dir="ltr">Call direction</bdi> را جداگانه در <bdi dir="ltr">Sequence Diagram</bdi> نشان بده.
+فلش باید بگوید <span dir="ltr">Upstream/Downstream</span> چیست. <span dir="ltr">Call direction</span> را جداگانه در <span dir="ltr">Sequence Diagram</span> نشان بده.
 
-### <bdi dir="ltr">ACL</bdi> در <bdi dir="ltr">Upstream</bdi>
+### <span dir="ltr">ACL</span> در <span dir="ltr">Upstream</span>
 
-<bdi dir="ltr">ACL</bdi> معمولاً از مدل <bdi dir="ltr">Downstream</bdi> محافظت می‌کند و تحت کنترل <bdi dir="ltr">Downstream</bdi> است. اگر <bdi dir="ltr">Translator</bdi> را <bdi dir="ltr">Upstream</bdi> تحمیل کند، ممکن است باز هم مدل <bdi dir="ltr">Upstream</bdi> غالب بماند.
+<span dir="ltr">ACL</span> معمولاً از مدل <span dir="ltr">Downstream</span> محافظت می‌کند و تحت کنترل <span dir="ltr">Downstream</span> است. اگر <span dir="ltr">Translator</span> را <span dir="ltr">Upstream</span> تحمیل کند، ممکن است باز هم مدل <span dir="ltr">Upstream</span> غالب بماند.
 
-### <bdi dir="ltr">Published Language</bdi> برابر <bdi dir="ltr">Shared Entity</bdi>
+### <span dir="ltr">Published Language</span> برابر <span dir="ltr">Shared Entity</span>
 
-<bdi dir="ltr">Published Contract</bdi> باید <bdi dir="ltr">Boundary DTO/Event</bdi> باشد؛ <bdi dir="ltr">Entity</bdi> داخلی و <bdi dir="ltr">Schema</bdi> دیتابیس نیست.
+<span dir="ltr">Published Contract</span> باید <span dir="ltr">Boundary DTO/Event</span> باشد؛ <span dir="ltr">Entity</span> داخلی و <span dir="ltr">Schema</span> دیتابیس نیست.
 
-### <bdi dir="ltr">Conformist</bdi> بدون ثبت <bdi dir="ltr">Risk</bdi>
+### <span dir="ltr">Conformist</span> بدون ثبت <span dir="ltr">Risk</span>
 
-پذیرفتن مدل <bdi dir="ltr">Upstream</bdi> ممکن است اقتصادی باشد، اما <bdi dir="ltr">Coupling</bdi> و محدودیت تکامل باید ثبت شود.
+پذیرفتن مدل <span dir="ltr">Upstream</span> ممکن است اقتصادی باشد، اما <span dir="ltr">Coupling</span> و محدودیت تکامل باید ثبت شود.
 
 ### یک رابطهٔ دوطرفهٔ مبهم
 
-اگر <bdi dir="ltr">Payments</bdi> از <bdi dir="ltr">Deposits Debit</bdi> می‌خواهد و <bdi dir="ltr">Deposits</bdi> رخداد به <bdi dir="ltr">Payments</bdi> می‌دهد، <bdi dir="ltr">Intent</bdi>، <bdi dir="ltr">Fact</bdi> و <bdi dir="ltr">Authority</bdi> را جدا تحلیل کن؛ یک فلش دوسر اطلاعات کافی ندارد.
+اگر <span dir="ltr">Payments</span> از <span dir="ltr">Deposits Debit</span> می‌خواهد و <span dir="ltr">Deposits</span> رخداد به <span dir="ltr">Payments</span> می‌دهد، <span dir="ltr">Intent</span>، <span dir="ltr">Fact</span> و <span dir="ltr">Authority</span> را جدا تحلیل کن؛ یک فلش دوسر اطلاعات کافی ندارد.
 
 ## 13. تمرین هدایت‌شده
 
-رابطهٔ <bdi dir="ltr">`Legacy Customer → New Lending`</bdi> را در یک ردیف کامل کن:
+رابطهٔ <span dir="ltr">`Legacy Customer → New Lending`</span> را در یک ردیف کامل کن:
 
-| <bdi dir="ltr">Upstream</bdi> | <bdi dir="ltr">Downstream</bdi> | <bdi dir="ltr">Pattern</bdi> | <bdi dir="ltr">Contract</bdi> | <bdi dir="ltr">Translation</bdi> | <bdi dir="ltr">Failure impact</bdi> |
+| <span dir="ltr">Upstream</span> | <span dir="ltr">Downstream</span> | <span dir="ltr">Pattern</span> | <span dir="ltr">Contract</span> | <span dir="ltr">Translation</span> | <span dir="ltr">Failure impact</span> |
 |---|---|---|---|---|---|
-| <bdi dir="ltr">Legacy Customer</bdi> | <bdi dir="ltr">New Lending</bdi> | ؟ | ؟ | ؟ | ؟ |
+| <span dir="ltr">Legacy Customer</span> | <span dir="ltr">New Lending</span> | ؟ | ؟ | ؟ | ؟ |
 
-سپس یک <bdi dir="ltr">Alternative Pattern</bdi> بنویس و توضیح بده چه <bdi dir="ltr">Force</bdi>ای انتخاب را تغییر می‌دهد.
+سپس یک <span dir="ltr">Alternative Pattern</span> بنویس و توضیح بده چه <span dir="ltr">Force</span>ای انتخاب را تغییر می‌دهد.
 
 ## 14. تمرین مستقل
 
-[<bdi dir="ltr">Day 03 Exercise</bdi> — <bdi dir="ltr">Context Map</bdi>](../exercises/day-03-context-map.md) را انجام بده. حداقل شش رابطه بنویس و برای هرکدام <bdi dir="ltr">Pattern</bdi> را با <bdi dir="ltr">Forces</bdi> دفاع کن.
+[<span dir="ltr">Day 03 Exercise</span> — <span dir="ltr">Context Map</span>](../exercises/day-03-context-map.md) را انجام بده. حداقل شش رابطه بنویس و برای هرکدام <span dir="ltr">Pattern</span> را با <span dir="ltr">Forces</span> دفاع کن.
 
 ## 15. معیار ارزیابی
 
 | معیار | امتیاز |
 |---|---:|
-| تشخیص درست <bdi dir="ltr">Upstream/Downstream</bdi> | ۲ |
-| انتخاب <bdi dir="ltr">Pattern</bdi> با استدلال | ۳ |
-| <bdi dir="ltr">Contract</bdi> و <bdi dir="ltr">Translation</bdi> روشن | ۲ |
-| <bdi dir="ltr">Authority</bdi> و <bdi dir="ltr">Failure impact</bdi> | ۲ |
-| ثبت <bdi dir="ltr">Alternative/Open Question</bdi> | ۱ |
+| تشخیص درست <span dir="ltr">Upstream/Downstream</span> | ۲ |
+| انتخاب <span dir="ltr">Pattern</span> با استدلال | ۳ |
+| <span dir="ltr">Contract</span> و <span dir="ltr">Translation</span> روشن | ۲ |
+| <span dir="ltr">Authority</span> و <span dir="ltr">Failure impact</span> | ۲ |
+| ثبت <span dir="ltr">Alternative/Open Question</span> | ۱ |
 | **جمع** | **۱۰** |
 
-حد عبور: ۷ از ۱۰. خط بدون <bdi dir="ltr">Pattern</bdi> و <bdi dir="ltr">Contract</bdi> امتیاز ندارد.
+حد عبور: ۷ از ۱۰. خط بدون <span dir="ltr">Pattern</span> و <span dir="ltr">Contract</span> امتیاز ندارد.
 
 ## 16. آزمون خروج
 
-درس را ببند و [<bdi dir="ltr">Day 03 Exit Ticket</bdi>](../quizzes/day-03-exit-ticket.md) را پاسخ بده.
+درس را ببند و [<span dir="ltr">Day 03 Exit Ticket</span>](../quizzes/day-03-exit-ticket.md) را پاسخ بده.
 
 ## 17. منبع اصلی
 
-- [<bdi dir="ltr">Domain-Driven Design Reference</bdi> — <bdi dir="ltr">Context Mapping Patterns</bdi>](https://www.domainlanguage.com/wp-content/uploads/2016/05/DDD_Reference_2015-03.pdf)
+- [<span dir="ltr">Domain-Driven Design Reference</span> — <span dir="ltr">Context Mapping Patterns</span>](https://www.domainlanguage.com/wp-content/uploads/2016/05/DDD_Reference_2015-03.pdf)
 
-<bdi dir="ltr">Pattern</bdi>ها از مرجع <bdi dir="ltr">Eric Evans</bdi> گرفته شده‌اند؛ انتخاب هر <bdi dir="ltr">Pattern</bdi> در مثال بانکی یک <bdi dir="ltr">Design Hypothesis</bdi> وابسته به رابطهٔ واقعی تیم‌ها و <bdi dir="ltr">Contract</bdi>هاست.
+<span dir="ltr">Pattern</span>ها از مرجع <span dir="ltr">Eric Evans</span> گرفته شده‌اند؛ انتخاب هر <span dir="ltr">Pattern</span> در مثال بانکی یک <span dir="ltr">Design Hypothesis</span> وابسته به رابطهٔ واقعی تیم‌ها و <span dir="ltr">Contract</span>هاست.
 
 </div>

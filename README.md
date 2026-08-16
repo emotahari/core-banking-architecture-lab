@@ -1,32 +1,32 @@
 <!-- bidi: rtl; code: ltr -->
 <div dir="rtl" align="right">
 
-# <bdi dir="ltr">Core Banking Architecture Lab</bdi>
+# <span dir="ltr">Core Banking Architecture Lab</span>
 
-یک آزمایشگاه ۲۴ هفته‌ای و مستندمحور برای یادگیری عمیق معماری نرم‌افزار و معماری <bdi dir="ltr">Core Banking</bdi>؛ با <bdi dir="ltr">Java</bdi>، <bdi dir="ltr">Spring</bdi>، مدل‌سازی دامینی، داده، حسابداری، معماری رویدادمحور و دفاع معماری.
+یک آزمایشگاه ۲۴ هفته‌ای و مستندمحور برای یادگیری عمیق معماری نرم‌افزار و معماری <span dir="ltr">Core Banking</span>؛ با <span dir="ltr">Java</span>، <span dir="ltr">Spring</span>، مدل‌سازی دامینی، داده، حسابداری، معماری رویدادمحور و دفاع معماری.
 
-> وضعیت فعلی: **<bdi dir="ltr">Sprint 01</bdi> · <bdi dir="ltr">Week 01</bdi> — محتوای کامل آماده؛ پاسخ <bdi dir="ltr">Day 01</bdi> در انتظار تکمیل/<bdi dir="ltr">Review</bdi>**
+> وضعیت فعلی: **<span dir="ltr">Sprint 01</span> · <span dir="ltr">Week 01</span> — محتوای کامل آماده؛ پاسخ <span dir="ltr">Day 01</span> در انتظار تکمیل/<span dir="ltr">Review</span>**
 
-این مخزن کتابی برای ورق‌زدن نیست. هر مفهوم باید به یک <bdi dir="ltr">Artifact</bdi>، تصمیم، کد، تست یا دفاع کوتاه تبدیل شود.
+این مخزن کتابی برای ورق‌زدن نیست. هر مفهوم باید به یک <span dir="ltr">Artifact</span>، تصمیم، کد، تست یا دفاع کوتاه تبدیل شود.
 
 ## از کجا شروع کنم؟
 
 1. ابتدا [قرارداد آموزشی](TEACHING-CONTRACT.md) را بخوان.
 2. برنامهٔ کل دوره را در [نقشهٔ راه ۲۴ هفته‌ای](core-banking-architecture-roadmap-fa.md) ببین.
-3. وارد [<bdi dir="ltr">Sprint 01</bdi>](sprints/01-bank-map-boundaries/README.md) شو.
-4. برنامه، درس‌ها، تمرین‌ها و ترتیب اجرای کامل را در [<bdi dir="ltr">Week 01</bdi>](sprints/01-bank-map-boundaries/week-01-capability-to-contract/README.md) ببین.
-5. پاسخ خام <bdi dir="ltr">Day 01</bdi> را پاک نکن؛ پرسش‌های باقی‌مانده را کامل و سپس از <bdi dir="ltr">Day 02</bdi> ادامه بده.
+3. وارد [<span dir="ltr">Sprint 01</span>](sprints/01-bank-map-boundaries/README.md) شو.
+4. برنامه، درس‌ها، تمرین‌ها و ترتیب اجرای کامل را در [<span dir="ltr">Week 01</span>](sprints/01-bank-map-boundaries/week-01-capability-to-contract/README.md) ببین.
+5. پاسخ خام <span dir="ltr">Day 01</span> را پاک نکن؛ پرسش‌های باقی‌مانده را کامل و سپس از <span dir="ltr">Day 02</span> ادامه بده.
 
 ## پروژهٔ ثابت دوره
 
-یک <bdi dir="ltr">Core Banking</bdi> آموزشی با شش دامین اصلی:
+یک <span dir="ltr">Core Banking</span> آموزشی با شش دامین اصلی:
 
-- <bdi dir="ltr">Party</bdi> & <bdi dir="ltr">Customer</bdi>
-- <bdi dir="ltr">Product</bdi> & <bdi dir="ltr">Agreement</bdi>
-- <bdi dir="ltr">Deposits</bdi>
-- <bdi dir="ltr">Lending</bdi>
-- <bdi dir="ltr">Payments</bdi>
-- <bdi dir="ltr">Accounting</bdi>
+- <span dir="ltr">Party</span> & <span dir="ltr">Customer</span>
+- <span dir="ltr">Product</span> & <span dir="ltr">Agreement</span>
+- <span dir="ltr">Deposits</span>
+- <span dir="ltr">Lending</span>
+- <span dir="ltr">Payments</span>
+- <span dir="ltr">Accounting</span>
 
 سه برش عمودی تا انتهای دوره واقعاً پیاده‌سازی و آزمون می‌شوند:
 
@@ -38,18 +38,18 @@
 
 | اسپرینت | هفته‌ها | محور | وضعیت |
 |---|---:|---|---|
-| [01](sprints/01-bank-map-boundaries/README.md) | ۱–۲ | نقشهٔ بانک، زبان و مرزها | **<bdi dir="ltr">Doing</bdi>** |
-| [02](sprints/02-domain-model-code-architecture/README.md) | ۳–۴ | <bdi dir="ltr">Domain Model</bdi> و معماری داخلی کد | <bdi dir="ltr">Backlog</bdi> |
-| [03](sprints/03-contracts-services-security/README.md) | ۵–۶ | قرارداد، مرز سرویس و امنیت | <bdi dir="ltr">Backlog</bdi> |
-| [04](sprints/04-transactions-balances-cqrs/README.md) | ۷–۸ | تراکنش، مانده و <bdi dir="ltr">CQRS</bdi> | <bdi dir="ltr">Backlog</bdi> |
-| [05](sprints/05-events-kafka-outbox/README.md) | ۹–۱۰ | <bdi dir="ltr">Event</bdi>، <bdi dir="ltr">Kafka</bdi> و <bdi dir="ltr">Outbox/Inbox</bdi> | <bdi dir="ltr">Backlog</bdi> |
-| [06](sprints/06-saga-failure-observability/README.md) | ۱۱–۱۲ | <bdi dir="ltr">Saga</bdi>، شکست و <bdi dir="ltr">Observability</bdi> | <bdi dir="ltr">Backlog</bdi> |
-| [07](sprints/07-accounting-facts-ledger/README.md) | ۱۳–۱۴ | <bdi dir="ltr">Accounting Facts</bdi>، <bdi dir="ltr">Ledger</bdi> و <bdi dir="ltr">GL</bdi> | <bdi dir="ltr">Backlog</bdi> |
-| [08](sprints/08-data-performance-eod/README.md) | ۱۵–۱۶ | طراحی فیزیکی داده، <bdi dir="ltr">Performance</bdi> و <bdi dir="ltr">EOD</bdi> | <bdi dir="ltr">Backlog</bdi> |
-| [09](sprints/09-customer-product-deposits/README.md) | ۱۷–۱۸ | <bdi dir="ltr">Customer</bdi>، <bdi dir="ltr">Product</bdi>، <bdi dir="ltr">Deposits</bdi> و <bdi dir="ltr">Teller</bdi> | <bdi dir="ltr">Backlog</bdi> |
-| [10](sprints/10-lending-payments-near-core/README.md) | ۱۹–۲۰ | <bdi dir="ltr">Lending</bdi>، <bdi dir="ltr">Collections</bdi> و <bdi dir="ltr">Payments</bdi> | <bdi dir="ltr">Backlog</bdi> |
-| [11](sprints/11-microfrontend-production/README.md) | ۲۱–۲۲ | <bdi dir="ltr">Micro-frontend</bdi> و <bdi dir="ltr">Production Architecture</bdi> | <bdi dir="ltr">Backlog</bdi> |
-| [12](sprints/12-integration-migration-defense/README.md) | ۲۳–۲۴ | یکپارچه‌سازی، مهاجرت و دفاع نهایی | <bdi dir="ltr">Backlog</bdi> |
+| [01](sprints/01-bank-map-boundaries/README.md) | ۱–۲ | نقشهٔ بانک، زبان و مرزها | **<span dir="ltr">Doing</span>** |
+| [02](sprints/02-domain-model-code-architecture/README.md) | ۳–۴ | <span dir="ltr">Domain Model</span> و معماری داخلی کد | <span dir="ltr">Backlog</span> |
+| [03](sprints/03-contracts-services-security/README.md) | ۵–۶ | قرارداد، مرز سرویس و امنیت | <span dir="ltr">Backlog</span> |
+| [04](sprints/04-transactions-balances-cqrs/README.md) | ۷–۸ | تراکنش، مانده و <span dir="ltr">CQRS</span> | <span dir="ltr">Backlog</span> |
+| [05](sprints/05-events-kafka-outbox/README.md) | ۹–۱۰ | <span dir="ltr">Event</span>، <span dir="ltr">Kafka</span> و <span dir="ltr">Outbox/Inbox</span> | <span dir="ltr">Backlog</span> |
+| [06](sprints/06-saga-failure-observability/README.md) | ۱۱–۱۲ | <span dir="ltr">Saga</span>، شکست و <span dir="ltr">Observability</span> | <span dir="ltr">Backlog</span> |
+| [07](sprints/07-accounting-facts-ledger/README.md) | ۱۳–۱۴ | <span dir="ltr">Accounting Facts</span>، <span dir="ltr">Ledger</span> و <span dir="ltr">GL</span> | <span dir="ltr">Backlog</span> |
+| [08](sprints/08-data-performance-eod/README.md) | ۱۵–۱۶ | طراحی فیزیکی داده، <span dir="ltr">Performance</span> و <span dir="ltr">EOD</span> | <span dir="ltr">Backlog</span> |
+| [09](sprints/09-customer-product-deposits/README.md) | ۱۷–۱۸ | <span dir="ltr">Customer</span>، <span dir="ltr">Product</span>، <span dir="ltr">Deposits</span> و <span dir="ltr">Teller</span> | <span dir="ltr">Backlog</span> |
+| [10](sprints/10-lending-payments-near-core/README.md) | ۱۹–۲۰ | <span dir="ltr">Lending</span>، <span dir="ltr">Collections</span> و <span dir="ltr">Payments</span> | <span dir="ltr">Backlog</span> |
+| [11](sprints/11-microfrontend-production/README.md) | ۲۱–۲۲ | <span dir="ltr">Micro-frontend</span> و <span dir="ltr">Production Architecture</span> | <span dir="ltr">Backlog</span> |
+| [12](sprints/12-integration-migration-defense/README.md) | ۲۳–۲۴ | یکپارچه‌سازی، مهاجرت و دفاع نهایی | <span dir="ltr">Backlog</span> |
 
 ## ساختار مخزن
 
@@ -77,36 +77,36 @@
 
 ## ریتم هفتگی
 
-ریل اصلی هر هفته ۳۶۰ دقیقه و هفت نقطهٔ کنترل دارد. خواندن به‌تنهایی <bdi dir="ltr">Done</bdi> نیست:
+ریل اصلی هر هفته ۳۶۰ دقیقه و هفت نقطهٔ کنترل دارد. خواندن به‌تنهایی <span dir="ltr">Done</span> نیست:
 
 1. یادگیری هدایت‌شده
 2. تحلیل مسئلهٔ بانکی
 3. مدل‌سازی و تصمیم
 4. پیاده‌سازی
-5. تست منفی یا <bdi dir="ltr">Failure</bdi>
-6. <bdi dir="ltr">Refactor</bdi> و ثبت تصمیم
+5. تست منفی یا <span dir="ltr">Failure</span>
+6. <span dir="ltr">Refactor</span> و ثبت تصمیم
 7. دفاع کوتاه و گزارش
 
-### مسیر توسعه‌یافته از <bdi dir="ltr">Week 01</bdi>
+### مسیر توسعه‌یافته از <span dir="ltr">Week 01</span>
 
 هفت نقطهٔ کنترل و ۳۶۰ دقیقهٔ بالا بدون کاهش حفظ می‌شوند. برای تقویت هم‌زمان مهارت کدنویسی و شناخت صنعت، دو جلسه به انتهای هر هفته افزوده شده است:
 
-8. **<bdi dir="ltr">Code Craft Lab</bdi> — ۱۰۵ دقیقه:** <bdi dir="ltr">Clean Code</bdi>، <bdi dir="ltr">Refactoring</bdi>، <bdi dir="ltr">Design Pattern</bdi>، تست و <bdi dir="ltr">Code Review</bdi> روی همان مسئلهٔ بانکی
-9. **<bdi dir="ltr">Core Banking Case File</bdi> — ۴۵ دقیقه:** داستان مستند یک <bdi dir="ltr">Core Banking</bdi> یا سامانهٔ بانکی واقعی از تولد تا معماری، خطاها و دستاوردهای جاری
+8. **<span dir="ltr">Code Craft Lab</span> — ۱۰۵ دقیقه:** <span dir="ltr">Clean Code</span>، <span dir="ltr">Refactoring</span>، <span dir="ltr">Design Pattern</span>، تست و <span dir="ltr">Code Review</span> روی همان مسئلهٔ بانکی
+9. **<span dir="ltr">Core Banking Case File</span> — ۴۵ دقیقه:** داستان مستند یک <span dir="ltr">Core Banking</span> یا سامانهٔ بانکی واقعی از تولد تا معماری، خطاها و دستاوردهای جاری
 
-نسخهٔ کامل برنامه از <bdi dir="ltr">Week 01</bdi> برابر ۵۱۰ دقیقه است. قرارداد، <bdi dir="ltr">Definition of Done</bdi> و نقشهٔ موضوعات در [الحاقیهٔ ثابت هفتگی](docs/course/expanded-weekly-tracks.md) آمده است.
+نسخهٔ کامل برنامه از <span dir="ltr">Week 01</span> برابر ۵۱۰ دقیقه است. قرارداد، <span dir="ltr">Definition of Done</span> و نقشهٔ موضوعات در [الحاقیهٔ ثابت هفتگی](docs/course/expanded-weekly-tracks.md) آمده است.
 
-قواعد مشارکت، نام <bdi dir="ltr">Branch</bdi> و <bdi dir="ltr">Commit</bdi> و <bdi dir="ltr">Definition of Done</bdi> در [<bdi dir="ltr">CONTRIBUTING.md</bdi>](CONTRIBUTING.md) ثبت شده‌اند.
+قواعد مشارکت، نام <span dir="ltr">Branch</span> و <span dir="ltr">Commit</span> و <span dir="ltr">Definition of Done</span> در [<span dir="ltr">CONTRIBUTING.md</span>](CONTRIBUTING.md) ثبت شده‌اند.
 
 ## خط پایهٔ فنی
 
-- <bdi dir="ltr">Java 21 LTS</bdi>
-- <bdi dir="ltr">Spring Boot 4.1.0</bdi>
-- <bdi dir="ltr">Spring Modulith 2.1.0</bdi>
-- <bdi dir="ltr">Maven</bdi>
-- <bdi dir="ltr">PostgreSQL</bdi> برای اجرای روزانه
-- <bdi dir="ltr">Oracle</bdi> برای طراحی فیزیکی و آزمایش‌های بانکی
-- <bdi dir="ltr">Kafka</bdi>، <bdi dir="ltr">Testcontainers</bdi>، <bdi dir="ltr">OpenTelemetry</bdi>، <bdi dir="ltr">React/Vite</bdi> و <bdi dir="ltr">Kubernetes</bdi> در اسپرینت‌های مربوط
+- <span dir="ltr">Java 21 LTS</span>
+- <span dir="ltr">Spring Boot 4.1.0</span>
+- <span dir="ltr">Spring Modulith 2.1.0</span>
+- <span dir="ltr">Maven</span>
+- <span dir="ltr">PostgreSQL</span> برای اجرای روزانه
+- <span dir="ltr">Oracle</span> برای طراحی فیزیکی و آزمایش‌های بانکی
+- <span dir="ltr">Kafka</span>، <span dir="ltr">Testcontainers</span>، <span dir="ltr">OpenTelemetry</span>، <span dir="ltr">React/Vite</span> و <span dir="ltr">Kubernetes</span> در اسپرینت‌های مربوط
 
 نسخه‌ها هنگام شروع هر اسپرینت با مستندات رسمی دوباره کنترل می‌شوند.
 

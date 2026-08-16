@@ -1,25 +1,25 @@
 <!-- bidi: rtl; code: ltr -->
 <div dir="rtl" align="right">
 
-# <bdi dir="ltr">Day 06</bdi> — <bdi dir="ltr">Value Object</bdi>های بانکی و <bdi dir="ltr">Pipeline</bdi> قابل اعتماد
+# <span dir="ltr">Day 06</span> — <span dir="ltr">Value Object</span>های بانکی و <span dir="ltr">Pipeline</span> قابل اعتماد
 
-- <bdi dir="ltr">Day budget: 60 minutes</bdi> — <bdi dir="ltr">18 lesson</bdi> + <bdi dir="ltr">35 coding/test</bdi> + <bdi dir="ltr">7 exit ticket</bdi>
-- <bdi dir="ltr">Output:</bdi> <bdi dir="ltr">`Money`</bdi>، <bdi dir="ltr">`AccountId`</bdi>، <bdi dir="ltr">`CustomerId`</bdi>، <bdi dir="ltr">`BranchId`</bdi> و <bdi dir="ltr">`mvn verify`</bdi> سبز
-- <bdi dir="ltr">Code scope:</bdi> <bdi dir="ltr">`backend/banking-modulith`</bdi>
+- <span dir="ltr">Day budget: 60 minutes</span> — <span dir="ltr">18 lesson</span> + <span dir="ltr">35 coding/test</span> + <span dir="ltr">7 exit ticket</span>
+- <span dir="ltr">Output:</span> <span dir="ltr">`Money`</span>، <span dir="ltr">`AccountId`</span>، <span dir="ltr">`CustomerId`</span>، <span dir="ltr">`BranchId`</span> و <span dir="ltr">`mvn verify`</span> سبز
+- <span dir="ltr">Code scope:</span> <span dir="ltr">`backend/banking-modulith`</span>
 
 ## 1. هدف قابل سنجش
 
 در پایان باید بتوانی:
 
-1. <bdi dir="ltr">Primitive Obsession</bdi> را در مرزهای بانکی تشخیص بدهی.
-2. <bdi dir="ltr">Value Object</bdi> را بر اساس معنا، <bdi dir="ltr">Equality</bdi>، <bdi dir="ltr">Invariant</bdi> و <bdi dir="ltr">Immutability</bdi> طراحی کنی.
-3. <bdi dir="ltr">Money</bdi> را بدون <bdi dir="ltr">`double`</bdi>، <bdi dir="ltr">Rounding</bdi> پنهان یا <bdi dir="ltr">Equality</bdi> اشتباه بسازی.
-4. شناسهٔ داخلی را از شمارهٔ حساب، <bdi dir="ltr">CIF</bdi> و کد شعبه جدا نگه داری.
-5. تست‌های مثبت، منفی و <bdi dir="ltr">Edge</bdi> را در <bdi dir="ltr">Pipeline Maven</bdi> اجرا کنی.
+1. <span dir="ltr">Primitive Obsession</span> را در مرزهای بانکی تشخیص بدهی.
+2. <span dir="ltr">Value Object</span> را بر اساس معنا، <span dir="ltr">Equality</span>، <span dir="ltr">Invariant</span> و <span dir="ltr">Immutability</span> طراحی کنی.
+3. <span dir="ltr">Money</span> را بدون <span dir="ltr">`double`</span>، <span dir="ltr">Rounding</span> پنهان یا <span dir="ltr">Equality</span> اشتباه بسازی.
+4. شناسهٔ داخلی را از شمارهٔ حساب، <span dir="ltr">CIF</span> و کد شعبه جدا نگه داری.
+5. تست‌های مثبت، منفی و <span dir="ltr">Edge</span> را در <span dir="ltr">Pipeline Maven</span> اجرا کنی.
 
-## 2. چرا <bdi dir="ltr">Day 06</bdi> هنوز معماری است؟
+## 2. چرا <span dir="ltr">Day 06</span> هنوز معماری است؟
 
-اگر <bdi dir="ltr">Contract</bdi> بگوید همه‌چیز <bdi dir="ltr">`String`</bdi> و <bdi dir="ltr">`BigDecimal`</bdi> خام است، زبان دامین در مرز کد گم می‌شود:
+اگر <span dir="ltr">Contract</span> بگوید همه‌چیز <span dir="ltr">`String`</span> و <span dir="ltr">`BigDecimal`</span> خام است، زبان دامین در مرز کد گم می‌شود:
 
 
 </div>
@@ -35,47 +35,47 @@ transfer("1001", "1002", new BigDecimal("100000"), "IRR", "001");
 <div dir="rtl" align="right">
 
 
-از <bdi dir="ltr">Signature</bdi> معلوم نیست <bdi dir="ltr">`1001`</bdi> حساب، مشتری یا شعبه است؛ مبلغ مثبت بودن را چه کسی کنترل می‌کند؛ <bdi dir="ltr">Currency</bdi> با چه <bdi dir="ltr">Policy</bdi> مقایسه می‌شود؛ و <bdi dir="ltr">`001`</bdi> چه معنایی دارد. <bdi dir="ltr">Type</bdi>های دامینی بخشی از <bdi dir="ltr">Information Hiding</bdi> و <bdi dir="ltr">Error prevention</bdi> هستند.
+از <span dir="ltr">Signature</span> معلوم نیست <span dir="ltr">`1001`</span> حساب، مشتری یا شعبه است؛ مبلغ مثبت بودن را چه کسی کنترل می‌کند؛ <span dir="ltr">Currency</span> با چه <span dir="ltr">Policy</span> مقایسه می‌شود؛ و <span dir="ltr">`001`</span> چه معنایی دارد. <span dir="ltr">Type</span>های دامینی بخشی از <span dir="ltr">Information Hiding</span> و <span dir="ltr">Error prevention</span> هستند.
 
-## <bdi dir="ltr">3. Value Object</bdi> چیست؟
+## <span dir="ltr">3. Value Object</span> چیست؟
 
-<bdi dir="ltr">Value Object</bdi> شیئی است که هویتش با مقدار و معنا تعیین می‌شود، نه با <bdi dir="ltr">Identity</bdi> مستقل و <bdi dir="ltr">Lifecycle</bdi> قابل‌پیگیری.
+<span dir="ltr">Value Object</span> شیئی است که هویتش با مقدار و معنا تعیین می‌شود، نه با <span dir="ltr">Identity</span> مستقل و <span dir="ltr">Lifecycle</span> قابل‌پیگیری.
 
 ویژگی‌های مورد انتظار:
 
-- <bdi dir="ltr">Immutable</bdi>
-- <bdi dir="ltr">Equality</bdi> بر اساس اجزای معنادار
-- <bdi dir="ltr">Invariant</bdi> معتبر از لحظهٔ ساخت
-- <bdi dir="ltr">Operation</bdi>های بدون <bdi dir="ltr">Side effect</bdi> روی مقدار
-- نام و <bdi dir="ltr">API</bdi> دامینی
+- <span dir="ltr">Immutable</span>
+- <span dir="ltr">Equality</span> بر اساس اجزای معنادار
+- <span dir="ltr">Invariant</span> معتبر از لحظهٔ ساخت
+- <span dir="ltr">Operation</span>های بدون <span dir="ltr">Side effect</span> روی مقدار
+- نام و <span dir="ltr">API</span> دامینی
 
-<bdi dir="ltr">`Money(100, IRR)`</bdi> با <bdi dir="ltr">Money</bdi> دیگری با همان مقدار عددی و <bdi dir="ltr">Currency</bdi> برابر است؛ لازم نیست شناسهٔ مستقل داشته باشد.
+<span dir="ltr">`Money(100, IRR)`</span> با <span dir="ltr">Money</span> دیگری با همان مقدار عددی و <span dir="ltr">Currency</span> برابر است؛ لازم نیست شناسهٔ مستقل داشته باشد.
 
-## <bdi dir="ltr">4. Entity</bdi> در برابر <bdi dir="ltr">Value Object</bdi>
+## <span dir="ltr">4. Entity</span> در برابر <span dir="ltr">Value Object</span>
 
-| پرسش | <bdi dir="ltr">Entity</bdi> | <bdi dir="ltr">Value Object</bdi> |
+| پرسش | <span dir="ltr">Entity</span> | <span dir="ltr">Value Object</span> |
 |---|---|---|
 | هویت مستقل دارد؟ | بله | خیر |
-| تغییر <bdi dir="ltr">State</bdi> در زمان مهم است؟ | معمولاً بله | معمولاً با نمونهٔ جدید |
-| <bdi dir="ltr">Equality</bdi> | <bdi dir="ltr">Identity</bdi> | <bdi dir="ltr">Value/meaning</bdi> |
-| مثال | <bdi dir="ltr">DepositAccount</bdi>، <bdi dir="ltr">LoanAgreement</bdi> | <bdi dir="ltr">Money</bdi>، <bdi dir="ltr">AccountId</bdi>، <bdi dir="ltr">DateRange</bdi> |
+| تغییر <span dir="ltr">State</span> در زمان مهم است؟ | معمولاً بله | معمولاً با نمونهٔ جدید |
+| <span dir="ltr">Equality</span> | <span dir="ltr">Identity</span> | <span dir="ltr">Value/meaning</span> |
+| مثال | <span dir="ltr">DepositAccount</span>، <span dir="ltr">LoanAgreement</span> | <span dir="ltr">Money</span>، <span dir="ltr">AccountId</span>، <span dir="ltr">DateRange</span> |
 
-<bdi dir="ltr">Typed ID</bdi> خودش <bdi dir="ltr">Value Object</bdi> است اما به <bdi dir="ltr">Entity</bdi> دیگری اشاره می‌کند. <bdi dir="ltr">`AccountId`</bdi> با <bdi dir="ltr">`AccountNumber`</bdi> یکی نیست: اولی شناسهٔ داخلی پایدار، دومی <bdi dir="ltr">Identifier</bdi> کسب‌وکاری/نمایشی با قواعد و <bdi dir="ltr">Lifecycle</bdi> دیگر است.
+<span dir="ltr">Typed ID</span> خودش <span dir="ltr">Value Object</span> است اما به <span dir="ltr">Entity</span> دیگری اشاره می‌کند. <span dir="ltr">`AccountId`</span> با <span dir="ltr">`AccountNumber`</span> یکی نیست: اولی شناسهٔ داخلی پایدار، دومی <span dir="ltr">Identifier</span> کسب‌وکاری/نمایشی با قواعد و <span dir="ltr">Lifecycle</span> دیگر است.
 
-## 5. طراحی <bdi dir="ltr">Money</bdi>
+## 5. طراحی <span dir="ltr">Money</span>
 
 ### اجزای حداقلی
 
-- <bdi dir="ltr">`BigDecimal amount`</bdi>
-- <bdi dir="ltr">`Currency currency`</bdi>
+- <span dir="ltr">`BigDecimal amount`</span>
+- <span dir="ltr">`Currency currency`</span>
 
-### چرا <bdi dir="ltr">`double`</bdi> ممنوع است؟
+### چرا <span dir="ltr">`double`</span> ممنوع است؟
 
-اعداد ممیز شناور دودویی بسیاری از مقادیر ده‌دهی را دقیق نمایش نمی‌دهند. خطای کوچک برای پول، تجمیع و <bdi dir="ltr">Reconciliation</bdi> قابل‌قبول نیست. <bdi dir="ltr">`BigDecimal`</bdi> نمایش ده‌دهی کنترل‌شده می‌دهد، اما به‌تنهایی همهٔ مسائل را حل نمی‌کند.
+اعداد ممیز شناور دودویی بسیاری از مقادیر ده‌دهی را دقیق نمایش نمی‌دهند. خطای کوچک برای پول، تجمیع و <span dir="ltr">Reconciliation</span> قابل‌قبول نیست. <span dir="ltr">`BigDecimal`</span> نمایش ده‌دهی کنترل‌شده می‌دهد، اما به‌تنهایی همهٔ مسائل را حل نمی‌کند.
 
-### <bdi dir="ltr">Scale</bdi> و <bdi dir="ltr">Equality</bdi>
+### <span dir="ltr">Scale</span> و <span dir="ltr">Equality</span>
 
-در <bdi dir="ltr">Java:</bdi>
+در <span dir="ltr">Java:</span>
 
 
 </div>
@@ -92,19 +92,19 @@ new BigDecimal("100.0").compareTo(new BigDecimal("100.00")) // 0
 <div dir="rtl" align="right">
 
 
-اگر <bdi dir="ltr">Equality Money</bdi> باید عددی باشد، <bdi dir="ltr">Implementation</bdi> باید <bdi dir="ltr">Scale</bdi> ظاهری را <bdi dir="ltr">Normalise</bdi> یا با <bdi dir="ltr">`compareTo`</bdi> و <bdi dir="ltr">Hash</bdi> سازگار مدیریت کند. <bdi dir="ltr">`equals`</bdi> و <bdi dir="ltr">`hashCode`</bdi> باید <bdi dir="ltr">Contract</bdi> مشترک داشته باشند؛ فقط <bdi dir="ltr">Override</bdi> کردن <bdi dir="ltr">equals</bdi> کافی نیست.
+اگر <span dir="ltr">Equality Money</span> باید عددی باشد، <span dir="ltr">Implementation</span> باید <span dir="ltr">Scale</span> ظاهری را <span dir="ltr">Normalise</span> یا با <span dir="ltr">`compareTo`</span> و <span dir="ltr">Hash</span> سازگار مدیریت کند. <span dir="ltr">`equals`</span> و <span dir="ltr">`hashCode`</span> باید <span dir="ltr">Contract</span> مشترک داشته باشند؛ فقط <span dir="ltr">Override</span> کردن <span dir="ltr">equals</span> کافی نیست.
 
-### <bdi dir="ltr">Currency</bdi>
+### <span dir="ltr">Currency</span>
 
-جمع دو <bdi dir="ltr">Money</bdi> با <bdi dir="ltr">Currency</bdi> متفاوت باید <bdi dir="ltr">Fail-fast</bdi> شود. تبدیل ارز <bdi dir="ltr">Operation</bdi> جدا با <bdi dir="ltr">Rate</bdi>، <bdi dir="ltr">Source</bdi> و <bdi dir="ltr">Timestamp</bdi> است؛ <bdi dir="ltr">`add`</bdi> نباید <bdi dir="ltr">Conversion</bdi> پنهان انجام دهد.
+جمع دو <span dir="ltr">Money</span> با <span dir="ltr">Currency</span> متفاوت باید <span dir="ltr">Fail-fast</span> شود. تبدیل ارز <span dir="ltr">Operation</span> جدا با <span dir="ltr">Rate</span>، <span dir="ltr">Source</span> و <span dir="ltr">Timestamp</span> است؛ <span dir="ltr">`add`</span> نباید <span dir="ltr">Conversion</span> پنهان انجام دهد.
 
-### <bdi dir="ltr">Signed</bdi> یا <bdi dir="ltr">Positive</bdi>؟
+### <span dir="ltr">Signed</span> یا <span dir="ltr">Positive</span>؟
 
-<bdi dir="ltr">Money</bdi> عمومی می‌تواند منفی باشد، چون <bdi dir="ltr">Adjustment</bdi>، <bdi dir="ltr">Delta</bdi> و <bdi dir="ltr">Accounting amount</bdi> ممکن است <bdi dir="ltr">Signed</bdi> باشند. اما <bdi dir="ltr">`TransferAmount`</bdi> یا <bdi dir="ltr">Use Case</bdi> انتقال باید مثبت‌بودن را کنترل کند. اگر <bdi dir="ltr">Money</bdi> را همیشه مثبت کنی، شاید <bdi dir="ltr">Reuse</bdi> را محدود کنی؛ اگر همه‌جا <bdi dir="ltr">Signed</bdi> بگذاری، هر <bdi dir="ltr">Use Case</bdi> باید <bdi dir="ltr">Rule</bdi> خودش را اعمال کند. تصمیم را ثبت کن.
+<span dir="ltr">Money</span> عمومی می‌تواند منفی باشد، چون <span dir="ltr">Adjustment</span>، <span dir="ltr">Delta</span> و <span dir="ltr">Accounting amount</span> ممکن است <span dir="ltr">Signed</span> باشند. اما <span dir="ltr">`TransferAmount`</span> یا <span dir="ltr">Use Case</span> انتقال باید مثبت‌بودن را کنترل کند. اگر <span dir="ltr">Money</span> را همیشه مثبت کنی، شاید <span dir="ltr">Reuse</span> را محدود کنی؛ اگر همه‌جا <span dir="ltr">Signed</span> بگذاری، هر <span dir="ltr">Use Case</span> باید <span dir="ltr">Rule</span> خودش را اعمال کند. تصمیم را ثبت کن.
 
-### <bdi dir="ltr">Rounding</bdi>
+### <span dir="ltr">Rounding</span>
 
-هیچ <bdi dir="ltr">Factory</bdi> یا <bdi dir="ltr">Arithmetic</bdi> نباید بدون <bdi dir="ltr">Policy</bdi> مقدار را <bdi dir="ltr">Round</bdi> کند. <bdi dir="ltr">Operation</bdi> نیازمند <bdi dir="ltr">Rounding</bdi> باید <bdi dir="ltr">Scale</bdi> و <bdi dir="ltr">`RoundingMode`</bdi> یا یک <bdi dir="ltr">Policy</bdi> دامینی صریح دریافت کند.
+هیچ <span dir="ltr">Factory</span> یا <span dir="ltr">Arithmetic</span> نباید بدون <span dir="ltr">Policy</span> مقدار را <span dir="ltr">Round</span> کند. <span dir="ltr">Operation</span> نیازمند <span dir="ltr">Rounding</span> باید <span dir="ltr">Scale</span> و <span dir="ltr">`RoundingMode`</span> یا یک <span dir="ltr">Policy</span> دامینی صریح دریافت کند.
 
 
 </div>
@@ -120,11 +120,11 @@ money.roundedTo(0, RoundingMode.HALF_EVEN)
 <div dir="rtl" align="right">
 
 
-<bdi dir="ltr">Policy Scale</bdi> می‌تواند در <bdi dir="ltr">Product</bdi>، <bdi dir="ltr">Payments</bdi> یا <bdi dir="ltr">Accounting</bdi> متفاوت باشد؛ <bdi dir="ltr">Currency default</bdi> به‌تنهایی همیشه کافی نیست.
+<span dir="ltr">Policy Scale</span> می‌تواند در <span dir="ltr">Product</span>، <span dir="ltr">Payments</span> یا <span dir="ltr">Accounting</span> متفاوت باشد؛ <span dir="ltr">Currency default</span> به‌تنهایی همیشه کافی نیست.
 
-## <bdi dir="ltr">6. Typed ID</bdi>ها
+## <span dir="ltr">6. Typed ID</span>ها
 
-اگر همهٔ شناسه‌ها <bdi dir="ltr">`String`</bdi> باشند، <bdi dir="ltr">Compiler</bdi> نمی‌تواند این خطا را بگیرد:
+اگر همهٔ شناسه‌ها <span dir="ltr">`String`</span> باشند، <span dir="ltr">Compiler</span> نمی‌تواند این خطا را بگیرد:
 
 
 </div>
@@ -140,7 +140,7 @@ credit(customerId, accountId); // ترتیب اشتباه ولی compile می‌
 <div dir="rtl" align="right">
 
 
-با <bdi dir="ltr">Type</bdi>های مستقل:
+با <span dir="ltr">Type</span>های مستقل:
 
 
 </div>
@@ -160,55 +160,55 @@ credit(AccountId accountId, CustomerId customerId);
 
 ### قواعد طراحی
 
-- مقدار تهی و <bdi dir="ltr">Blank</bdi> رد شود.
-- <bdi dir="ltr">Format</bdi> فقط اگر <bdi dir="ltr">Contract</bdi> واقعی دارد <bdi dir="ltr">Validate</bdi> شود؛ <bdi dir="ltr">Regex</bdi> خیالی نساز.
-- <bdi dir="ltr">Parsing</bdi> و <bdi dir="ltr">Creation</bdi> معنای روشن داشته باشند.
-- <bdi dir="ltr">`toString`</bdi> نباید ناخواسته دادهٔ حساس را در <bdi dir="ltr">Log</bdi> افشا کند.
-- <bdi dir="ltr">ID</bdi> داخلی با شمارهٔ بانکی نمایش‌پذیر یکی نشود.
+- مقدار تهی و <span dir="ltr">Blank</span> رد شود.
+- <span dir="ltr">Format</span> فقط اگر <span dir="ltr">Contract</span> واقعی دارد <span dir="ltr">Validate</span> شود؛ <span dir="ltr">Regex</span> خیالی نساز.
+- <span dir="ltr">Parsing</span> و <span dir="ltr">Creation</span> معنای روشن داشته باشند.
+- <span dir="ltr">`toString`</span> نباید ناخواسته دادهٔ حساس را در <span dir="ltr">Log</span> افشا کند.
+- <span dir="ltr">ID</span> داخلی با شمارهٔ بانکی نمایش‌پذیر یکی نشود.
 
-<bdi dir="ltr">Java</bdi> <bdi dir="ltr">`record`</bdi> برای <bdi dir="ltr">Value Object</bdi> کوچک مناسب است، اما <bdi dir="ltr">Compact constructor</bdi> و <bdi dir="ltr">Equality</bdi> پیش‌فرض باید با <bdi dir="ltr">Rule</bdi> سازگار باشند. برای <bdi dir="ltr">Money</bdi>، <bdi dir="ltr">Equality</bdi> پیش‌فرض <bdi dir="ltr">`BigDecimal`</bdi> ممکن است کافی نباشد.
+<span dir="ltr">Java</span> <span dir="ltr">`record`</span> برای <span dir="ltr">Value Object</span> کوچک مناسب است، اما <span dir="ltr">Compact constructor</span> و <span dir="ltr">Equality</span> پیش‌فرض باید با <span dir="ltr">Rule</span> سازگار باشند. برای <span dir="ltr">Money</span>، <span dir="ltr">Equality</span> پیش‌فرض <span dir="ltr">`BigDecimal`</span> ممکن است کافی نباشد.
 
-## <bdi dir="ltr">7. Static Factory</bdi>؛ <bdi dir="ltr">Pattern</bdi> یا <bdi dir="ltr">API design</bdi>؟
+## <span dir="ltr">7. Static Factory</span>؛ <span dir="ltr">Pattern</span> یا <span dir="ltr">API design</span>؟
 
-<bdi dir="ltr">Factory</bdi>هایی مانند <bdi dir="ltr">`Money.of(amount, currency)`</bdi> یا <bdi dir="ltr">`AccountId.parse(text)`</bdi> می‌توانند <bdi dir="ltr">Intent</bdi> و <bdi dir="ltr">Validation</bdi> را روشن کنند. اما ایجاد <bdi dir="ltr">Class</bdi> به نام <bdi dir="ltr">`MoneyFactory`</bdi> بدون <bdi dir="ltr">Decision</bdi> واقعی فقط <bdi dir="ltr">Indirection</bdi> است.
+<span dir="ltr">Factory</span>هایی مانند <span dir="ltr">`Money.of(amount, currency)`</span> یا <span dir="ltr">`AccountId.parse(text)`</span> می‌توانند <span dir="ltr">Intent</span> و <span dir="ltr">Validation</span> را روشن کنند. اما ایجاد <span dir="ltr">Class</span> به نام <span dir="ltr">`MoneyFactory`</span> بدون <span dir="ltr">Decision</span> واقعی فقط <span dir="ltr">Indirection</span> است.
 
-از <bdi dir="ltr">Static Factory</bdi> وقتی استفاده کن که:
+از <span dir="ltr">Static Factory</span> وقتی استفاده کن که:
 
-- نام <bdi dir="ltr">Creation</bdi> معنا می‌دهد (<bdi dir="ltr">`parse`</bdi>, <bdi dir="ltr">`zero`</bdi>, <bdi dir="ltr">`ofMinorUnits`</bdi>)
-- <bdi dir="ltr">Canonicalisation</bdi> یا <bdi dir="ltr">Validation</bdi> لازم است
-- <bdi dir="ltr">Constructor</bdi> خام ممکن است <bdi dir="ltr">Contract</bdi> را مبهم کند
+- نام <span dir="ltr">Creation</span> معنا می‌دهد (<span dir="ltr">`parse`</span>, <span dir="ltr">`zero`</span>, <span dir="ltr">`ofMinorUnits`</span>)
+- <span dir="ltr">Canonicalisation</span> یا <span dir="ltr">Validation</span> لازم است
+- <span dir="ltr">Constructor</span> خام ممکن است <span dir="ltr">Contract</span> را مبهم کند
 
-از <bdi dir="ltr">Abstract Factory</bdi> یا <bdi dir="ltr">Registry</bdi> در <bdi dir="ltr">Week 01</bdi> استفاده نکن؛ <bdi dir="ltr">Variation</bdi> واقعی وجود ندارد.
+از <span dir="ltr">Abstract Factory</span> یا <span dir="ltr">Registry</span> در <span dir="ltr">Week 01</span> استفاده نکن؛ <span dir="ltr">Variation</span> واقعی وجود ندارد.
 
 ## 8. تست‌های لازم
 
-### <bdi dir="ltr">Happy path</bdi>
+### <span dir="ltr">Happy path</span>
 
-- ساخت <bdi dir="ltr">Money</bdi> معتبر
-- جمع و تفریق <bdi dir="ltr">Currency</bdi> یکسان
-- <bdi dir="ltr">Parse</bdi> شناسهٔ معتبر
+- ساخت <span dir="ltr">Money</span> معتبر
+- جمع و تفریق <span dir="ltr">Currency</span> یکسان
+- <span dir="ltr">Parse</span> شناسهٔ معتبر
 
-### <bdi dir="ltr">Equality</bdi>
+### <span dir="ltr">Equality</span>
 
-- <bdi dir="ltr">`100.0 IRR == 100.00 IRR`</bdi>
-- مبلغ برابر با <bdi dir="ltr">Currency</bdi> متفاوت، برابر نیست
-- <bdi dir="ltr">`hashCode`</bdi> برای <bdi dir="ltr">Money</bdi>های برابر یکسان است
+- <span dir="ltr">`100.0 IRR == 100.00 IRR`</span>
+- مبلغ برابر با <span dir="ltr">Currency</span> متفاوت، برابر نیست
+- <span dir="ltr">`hashCode`</span> برای <span dir="ltr">Money</span>های برابر یکسان است
 
-### <bdi dir="ltr">Negative/edge</bdi>
+### <span dir="ltr">Negative/edge</span>
 
-- <bdi dir="ltr">amount/currency null</bdi>
-- <bdi dir="ltr">Currency mismatch</bdi>
-- <bdi dir="ltr">ID null/blank</bdi>
-- نیاز به <bdi dir="ltr">Rounding</bdi> بدون <bdi dir="ltr">Policy</bdi>
-- مقدار بسیار بزرگ بدون <bdi dir="ltr">Overflow</bdi> عددی
+- <span dir="ltr">amount/currency null</span>
+- <span dir="ltr">Currency mismatch</span>
+- <span dir="ltr">ID null/blank</span>
+- نیاز به <span dir="ltr">Rounding</span> بدون <span dir="ltr">Policy</span>
+- مقدار بسیار بزرگ بدون <span dir="ltr">Overflow</span> عددی
 
-### <bdi dir="ltr">Compile-time evidence</bdi>
+### <span dir="ltr">Compile-time evidence</span>
 
-اینکه <bdi dir="ltr">`CustomerId`</bdi> را نمی‌توان جای <bdi dir="ltr">`AccountId`</bdi> داد، تست <bdi dir="ltr">Runtime</bdi> نیست. در <bdi dir="ltr">Workbook</bdi> با <bdi dir="ltr">Signature</bdi> یا <bdi dir="ltr">Compilation evidence</bdi> توضیح داده می‌شود؛ لازم نیست تستی بسازی که پروژه را عمداً <bdi dir="ltr">Fail</bdi> نگه دارد.
+اینکه <span dir="ltr">`CustomerId`</span> را نمی‌توان جای <span dir="ltr">`AccountId`</span> داد، تست <span dir="ltr">Runtime</span> نیست. در <span dir="ltr">Workbook</span> با <span dir="ltr">Signature</span> یا <span dir="ltr">Compilation evidence</span> توضیح داده می‌شود؛ لازم نیست تستی بسازی که پروژه را عمداً <span dir="ltr">Fail</span> نگه دارد.
 
-## 9. ساختار پیشنهادی <bdi dir="ltr">Package</bdi>
+## 9. ساختار پیشنهادی <span dir="ltr">Package</span>
 
-در <bdi dir="ltr">Week 01 Type</bdi>ها را در <bdi dir="ltr">Package</bdi> آموزشی کوچک نگه دار. آن‌ها را سریعاً در <bdi dir="ltr">`common`</bdi> یا <bdi dir="ltr">`shared-kernel`</bdi> سراسری قرار نده. <bdi dir="ltr">Money</bdi> در <bdi dir="ltr">Accounting</bdi> ممکن است <bdi dir="ltr">Policy</bdi> و معنای متفاوتی از <bdi dir="ltr">Payments</bdi> داشته باشد.
+در <span dir="ltr">Week 01 Type</span>ها را در <span dir="ltr">Package</span> آموزشی کوچک نگه دار. آن‌ها را سریعاً در <span dir="ltr">`common`</span> یا <span dir="ltr">`shared-kernel`</span> سراسری قرار نده. <span dir="ltr">Money</span> در <span dir="ltr">Accounting</span> ممکن است <span dir="ltr">Policy</span> و معنای متفاوتی از <span dir="ltr">Payments</span> داشته باشد.
 
 
 </div>
@@ -225,11 +225,11 @@ com.example.corebankinglab.foundation.identity
 <div dir="rtl" align="right">
 
 
-این فقط نقطهٔ شروع است. <bdi dir="ltr">Week 02</bdi> با کشف <bdi dir="ltr">Context</bdi>ها تصمیم <bdi dir="ltr">Shared Kernel</bdi> را نقد می‌کند.
+این فقط نقطهٔ شروع است. <span dir="ltr">Week 02</span> با کشف <span dir="ltr">Context</span>ها تصمیم <span dir="ltr">Shared Kernel</span> را نقد می‌کند.
 
-## <bdi dir="ltr">10. Pipeline</bdi> <bdi dir="ltr">`mvn verify`</bdi>
+## <span dir="ltr">10. Pipeline</span> <span dir="ltr">`mvn verify`</span>
 
-<bdi dir="ltr">Pipeline</bdi> این هفته باید حداقل این زنجیره را اجرا کند:
+<span dir="ltr">Pipeline</span> این هفته باید حداقل این زنجیره را اجرا کند:
 
 
 </div>
@@ -250,7 +250,7 @@ checkout
 <div dir="rtl" align="right">
 
 
-<bdi dir="ltr">Command</bdi> محلی:
+<span dir="ltr">Command</span> محلی:
 
 
 </div>
@@ -267,51 +267,51 @@ mvn -B -ntp verify
 <div dir="rtl" align="right">
 
 
-<bdi dir="ltr">`verify`</bdi> فقط سبزبودن فعلی را نشان می‌دهد؛ کیفیت تست و <bdi dir="ltr">Coverage</bdi> معنایی را تضمین نمی‌کند. یک تست که فقط <bdi dir="ltr">Getter</bdi> را می‌خواند شاهد <bdi dir="ltr">Rule</bdi> دامینی نیست.
+<span dir="ltr">`verify`</span> فقط سبزبودن فعلی را نشان می‌دهد؛ کیفیت تست و <span dir="ltr">Coverage</span> معنایی را تضمین نمی‌کند. یک تست که فقط <span dir="ltr">Getter</span> را می‌خواند شاهد <span dir="ltr">Rule</span> دامینی نیست.
 
 ## 11. ترتیب پیاده‌سازی سبز
 
-1. <bdi dir="ltr">Baseline</bdi> <bdi dir="ltr">`mvn verify`</bdi> را ثبت کن.
-2. ابتدا <bdi dir="ltr">`AccountId`</bdi> و <bdi dir="ltr">Test null/blank</bdi> را بساز.
-3. سه <bdi dir="ltr">Typed ID</bdi> را با <bdi dir="ltr">Duplication</bdi> کوچک و روشن بساز؛ زود <bdi dir="ltr">Abstract Base</bdi> نساز.
-4. <bdi dir="ltr">Money</bdi> را با <bdi dir="ltr">Null/Currency guard</bdi> ایجاد کن.
-5. <bdi dir="ltr">Equality</bdi> عددی و <bdi dir="ltr">hashCode</bdi> سازگار را تست کن.
-6. <bdi dir="ltr">`add/subtract`</bdi> با <bdi dir="ltr">Currency check</bdi> را اضافه کن.
-7. <bdi dir="ltr">Rounding</bdi> صریح و <bdi dir="ltr">Edge test</bdi> را اضافه کن.
-8. <bdi dir="ltr">`mvn verify`</bdi> نهایی را ثبت و <bdi dir="ltr">Diff</bdi> را مرور کن.
+1. <span dir="ltr">Baseline</span> <span dir="ltr">`mvn verify`</span> را ثبت کن.
+2. ابتدا <span dir="ltr">`AccountId`</span> و <span dir="ltr">Test null/blank</span> را بساز.
+3. سه <span dir="ltr">Typed ID</span> را با <span dir="ltr">Duplication</span> کوچک و روشن بساز؛ زود <span dir="ltr">Abstract Base</span> نساز.
+4. <span dir="ltr">Money</span> را با <span dir="ltr">Null/Currency guard</span> ایجاد کن.
+5. <span dir="ltr">Equality</span> عددی و <span dir="ltr">hashCode</span> سازگار را تست کن.
+6. <span dir="ltr">`add/subtract`</span> با <span dir="ltr">Currency check</span> را اضافه کن.
+7. <span dir="ltr">Rounding</span> صریح و <span dir="ltr">Edge test</span> را اضافه کن.
+8. <span dir="ltr">`mvn verify`</span> نهایی را ثبت و <span dir="ltr">Diff</span> را مرور کن.
 
-<bdi dir="ltr">Duplication</bdi> سه <bdi dir="ltr">ID</bdi> در این مرحله ارزان‌تر از <bdi dir="ltr">Hierarchy</bdi> اشتباه و <bdi dir="ltr">Coupling</bdi> سراسری است. بعد از مشاهدهٔ الگو می‌توان تصمیم گرفت.
+<span dir="ltr">Duplication</span> سه <span dir="ltr">ID</span> در این مرحله ارزان‌تر از <span dir="ltr">Hierarchy</span> اشتباه و <span dir="ltr">Coupling</span> سراسری است. بعد از مشاهدهٔ الگو می‌توان تصمیم گرفت.
 
 ## 12. خطاهای رایج
 
-- استفاده از <bdi dir="ltr">`double`</bdi> یا <bdi dir="ltr">`float`</bdi>
-- <bdi dir="ltr">Setter</bdi> روی <bdi dir="ltr">Money</bdi>
-- تبدیل ارز داخل <bdi dir="ltr">`add`</bdi>
-- <bdi dir="ltr">`setScale`</bdi> پنهان در <bdi dir="ltr">Constructor</bdi>
-- <bdi dir="ltr">Equality</bdi> ناسازگار با <bdi dir="ltr">hashCode</bdi>
-- <bdi dir="ltr">Validation</bdi> خیالی برای <bdi dir="ltr">Format ID</bdi>
-- استفاده از <bdi dir="ltr">Entity/JPA annotation</bdi> روی <bdi dir="ltr">Value Object</bdi> مستقل
-- ایجاد <bdi dir="ltr">`BaseId<T>`</bdi> پیچیده پیش از نیاز
-- قرار دادن همهٔ <bdi dir="ltr">Type</bdi>ها در <bdi dir="ltr">`common`</bdi> بدون <bdi dir="ltr">Context owner</bdi>
+- استفاده از <span dir="ltr">`double`</span> یا <span dir="ltr">`float`</span>
+- <span dir="ltr">Setter</span> روی <span dir="ltr">Money</span>
+- تبدیل ارز داخل <span dir="ltr">`add`</span>
+- <span dir="ltr">`setScale`</span> پنهان در <span dir="ltr">Constructor</span>
+- <span dir="ltr">Equality</span> ناسازگار با <span dir="ltr">hashCode</span>
+- <span dir="ltr">Validation</span> خیالی برای <span dir="ltr">Format ID</span>
+- استفاده از <span dir="ltr">Entity/JPA annotation</span> روی <span dir="ltr">Value Object</span> مستقل
+- ایجاد <span dir="ltr">`BaseId<T>`</span> پیچیده پیش از نیاز
+- قرار دادن همهٔ <span dir="ltr">Type</span>ها در <span dir="ltr">`common`</span> بدون <span dir="ltr">Context owner</span>
 
-## 13. تمرین و <bdi dir="ltr">Rubric</bdi>
+## 13. تمرین و <span dir="ltr">Rubric</span>
 
-[<bdi dir="ltr">Day 06 Exercise</bdi>](../exercises/day-06-value-objects.md) را اجرا کن.
+[<span dir="ltr">Day 06 Exercise</span>](../exercises/day-06-value-objects.md) را اجرا کن.
 
 | معیار | امتیاز |
 |---|---:|
-| <bdi dir="ltr">Immutability</bdi> و <bdi dir="ltr">invariant</bdi> ساخت | ۲ |
-| <bdi dir="ltr">Equality/hashCode</bdi> صحیح <bdi dir="ltr">Money</bdi> | ۲ |
-| <bdi dir="ltr">Currency</bdi> و <bdi dir="ltr">Rounding</bdi> صریح | ۲ |
-| <bdi dir="ltr">Typed IDs</bdi> و مرز معنایی | ۲ |
-| تست منفی و <bdi dir="ltr">`mvn verify`</bdi> | ۲ |
+| <span dir="ltr">Immutability</span> و <span dir="ltr">invariant</span> ساخت | ۲ |
+| <span dir="ltr">Equality/hashCode</span> صحیح <span dir="ltr">Money</span> | ۲ |
+| <span dir="ltr">Currency</span> و <span dir="ltr">Rounding</span> صریح | ۲ |
+| <span dir="ltr">Typed IDs</span> و مرز معنایی | ۲ |
+| تست منفی و <span dir="ltr">`mvn verify`</span> | ۲ |
 | **جمع** | **۱۰** |
 
-حد عبور: ۸ از ۱۰. استفاده از <bdi dir="ltr">`double`</bdi> یا <bdi dir="ltr">Rounding</bdi> پنهان <bdi dir="ltr">Critical Error</bdi> است.
+حد عبور: ۸ از ۱۰. استفاده از <span dir="ltr">`double`</span> یا <span dir="ltr">Rounding</span> پنهان <span dir="ltr">Critical Error</span> است.
 
 ## 14. آزمون خروج
 
-کد و درس را ببند و [<bdi dir="ltr">Exit Ticket</bdi>](../quizzes/day-06-exit-ticket.md) را پاسخ بده. <bdi dir="ltr">Day 08</bdi> همین <bdi dir="ltr">Type</bdi>ها را در یک <bdi dir="ltr">Refactor</bdi> واقعی به کار می‌گیرد؛ امروز می‌توانی <bdi dir="ltr">Implementation</bdi> خودت را بسازی، اما <bdi dir="ltr">Starter</bdi> روز هشتم راه‌حل کامل را تحمیل نمی‌کند.
+کد و درس را ببند و [<span dir="ltr">Exit Ticket</span>](../quizzes/day-06-exit-ticket.md) را پاسخ بده. <span dir="ltr">Day 08</span> همین <span dir="ltr">Type</span>ها را در یک <span dir="ltr">Refactor</span> واقعی به کار می‌گیرد؛ امروز می‌توانی <span dir="ltr">Implementation</span> خودت را بسازی، اما <span dir="ltr">Starter</span> روز هشتم راه‌حل کامل را تحمیل نمی‌کند.
 
 
 </div>

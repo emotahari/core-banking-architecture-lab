@@ -1,121 +1,121 @@
 <!-- bidi: rtl; code: ltr -->
 <div dir="rtl" align="right">
 
-# <bdi dir="ltr">Day 07</bdi> — تثبیت، گزارش و دفاع <bdi dir="ltr">Week 01</bdi>
+# <span dir="ltr">Day 07</span> — تثبیت، گزارش و دفاع <span dir="ltr">Week 01</span>
 
-- <bdi dir="ltr">Day budget: 20 minutes self-preparation</bdi>
-- <bdi dir="ltr">Output: Week Report</bdi>، <bdi dir="ltr">Evidence index</bdi> و دفاع ده‌دقیقه‌ای
-- <bdi dir="ltr">Gate:</bdi> حداقل 8 از 10 و بدون <bdi dir="ltr">Critical Error</bdi>
+- <span dir="ltr">Day budget: 20 minutes self-preparation</span>
+- <span dir="ltr">Output: Week Report</span>، <span dir="ltr">Evidence index</span> و دفاع ده‌دقیقه‌ای
+- <span dir="ltr">Gate:</span> حداقل 8 از 10 و بدون <span dir="ltr">Critical Error</span>
 
 ## 1. هدف روز
 
-<bdi dir="ltr">Day 07</bdi> درس تازه‌ای اضافه نمی‌کند. هدف تبدیل شش روز مطالعه به یک **استدلال معماری قابل دفاع** است. اگر نتوانی از <bdi dir="ltr">Map</bdi>، <bdi dir="ltr">Chain</bdi> و کد خودت دفاع کنی، خواندن متن‌ها <bdi dir="ltr">Week</bdi> را تمام نمی‌کند.
+<span dir="ltr">Day 07</span> درس تازه‌ای اضافه نمی‌کند. هدف تبدیل شش روز مطالعه به یک **استدلال معماری قابل دفاع** است. اگر نتوانی از <span dir="ltr">Map</span>، <span dir="ltr">Chain</span> و کد خودت دفاع کنی، خواندن متن‌ها <span dir="ltr">Week</span> را تمام نمی‌کند.
 
-## <bdi dir="ltr">2. Evidence</bdi>هایی که باید باز شوند
+## <span dir="ltr">2. Evidence</span>هایی که باید باز شوند
 
 پیش از دفاع، این موارد باید لینک یا مسیر معتبر داشته باشند:
 
-1. پاسخ خام <bdi dir="ltr">Day 01</bdi> و <bdi dir="ltr">Revision</bdi> جداگانه
-2. <bdi dir="ltr">Distinction Matrix</bdi>
-3. دو <bdi dir="ltr">Traceability Chain</bdi>
-4. <bdi dir="ltr">Coupling Review</bdi> قبل/بعد
-5. <bdi dir="ltr">Capability Map v1</bdi>
-6. <bdi dir="ltr">BIAN Gap Check</bdi>
-7. <bdi dir="ltr">Glossary</bdi> حداقل ۴۰ واژه
-8. کد و تست <bdi dir="ltr">Money/Typed IDs</bdi>
-9. خروجی <bdi dir="ltr">`mvn verify`</bdi>
-10. <bdi dir="ltr">Week 01 Report</bdi>
+1. پاسخ خام <span dir="ltr">Day 01</span> و <span dir="ltr">Revision</span> جداگانه
+2. <span dir="ltr">Distinction Matrix</span>
+3. دو <span dir="ltr">Traceability Chain</span>
+4. <span dir="ltr">Coupling Review</span> قبل/بعد
+5. <span dir="ltr">Capability Map v1</span>
+6. <span dir="ltr">BIAN Gap Check</span>
+7. <span dir="ltr">Glossary</span> حداقل ۴۰ واژه
+8. کد و تست <span dir="ltr">Money/Typed IDs</span>
+9. خروجی <span dir="ltr">`mvn verify`</span>
+10. <span dir="ltr">Week 01 Report</span>
 
-اگر <bdi dir="ltr">Artifact</bdi> خالی است، در <bdi dir="ltr">Report</bdi> آن را <bdi dir="ltr">`Missing`</bdi> ثبت کن؛ با جملهٔ کلی «انجام شد» پنهان نکن.
+اگر <span dir="ltr">Artifact</span> خالی است، در <span dir="ltr">Report</span> آن را <span dir="ltr">`Missing`</span> ثبت کن؛ با جملهٔ کلی «انجام شد» پنهان نکن.
 
 ## 3. ساختار دفاع ده‌دقیقه‌ای
 
-### دقیقه 0 تا 1 — مسئله و <bdi dir="ltr">Scope</bdi>
+### دقیقه 0 تا 1 — مسئله و <span dir="ltr">Scope</span>
 
-- <bdi dir="ltr">Scope Week</bdi> چیست؟
+- <span dir="ltr">Scope Week</span> چیست؟
 - چه چیزهایی عمداً هنوز تصمیم نگرفته‌ایم؟
 
-### دقیقه 1 تا 3 — <bdi dir="ltr">Capability Map</bdi>
+### دقیقه 1 تا 3 — <span dir="ltr">Capability Map</span>
 
-- چهار <bdi dir="ltr">Capability</bdi> اصلی را نشان بده.
-- یک موردی را که ابتدا <bdi dir="ltr">System/Process</bdi> فرض کرده بودی و اصلاح شد توضیح بده.
-- یک <bdi dir="ltr">Gap</bdi> یا <bdi dir="ltr">False Friend</bdi> حاصل از <bdi dir="ltr">BIAN</bdi> را بیان کن.
+- چهار <span dir="ltr">Capability</span> اصلی را نشان بده.
+- یک موردی را که ابتدا <span dir="ltr">System/Process</span> فرض کرده بودی و اصلاح شد توضیح بده.
+- یک <span dir="ltr">Gap</span> یا <span dir="ltr">False Friend</span> حاصل از <span dir="ltr">BIAN</span> را بیان کن.
 
-### دقیقه 3 تا 6 — <bdi dir="ltr">Traceability</bdi>
+### دقیقه 3 تا 6 — <span dir="ltr">Traceability</span>
 
-- زنجیرهٔ مسدودی قضایی را از <bdi dir="ltr">Outcome</bdi> تا <bdi dir="ltr">Contract</bdi> طی کن.
-- <bdi dir="ltr">Owner</bdi> حکم، <bdi dir="ltr">Hold</bdi>، <bdi dir="ltr">available balance</bdi> و <bdi dir="ltr">Journal</bdi> را جدا کن.
-- <bdi dir="ltr">Command</bdi> و <bdi dir="ltr">Event</bdi> را با نام و زمان دستوری مقایسه کن.
+- زنجیرهٔ مسدودی قضایی را از <span dir="ltr">Outcome</span> تا <span dir="ltr">Contract</span> طی کن.
+- <span dir="ltr">Owner</span> حکم، <span dir="ltr">Hold</span>، <span dir="ltr">available balance</span> و <span dir="ltr">Journal</span> را جدا کن.
+- <span dir="ltr">Command</span> و <span dir="ltr">Event</span> را با نام و زمان دستوری مقایسه کن.
 
-### دقیقه 6 تا 8 — <bdi dir="ltr">Design quality</bdi>
+### دقیقه 6 تا 8 — <span dir="ltr">Design quality</span>
 
-- یک <bdi dir="ltr">Coupling</bdi> خطرناک را با اثر تغییر یا شکست نشان بده.
-- توضیح بده <bdi dir="ltr">Encapsulation</bdi> و <bdi dir="ltr">Information Hiding</bdi> در <bdi dir="ltr">Redesign</bdi> چه فرقی داشتند.
+- یک <span dir="ltr">Coupling</span> خطرناک را با اثر تغییر یا شکست نشان بده.
+- توضیح بده <span dir="ltr">Encapsulation</span> و <span dir="ltr">Information Hiding</span> در <span dir="ltr">Redesign</span> چه فرقی داشتند.
 
-### دقیقه 8 تا 9 — <bdi dir="ltr">Code evidence</bdi>
+### دقیقه 8 تا 9 — <span dir="ltr">Code evidence</span>
 
-- یک <bdi dir="ltr">Invariant Money</bdi> و یک خطای <bdi dir="ltr">Typed ID</bdi> را نشان بده.
-- نتیجهٔ <bdi dir="ltr">`mvn verify`</bdi> را ارائه کن.
+- یک <span dir="ltr">Invariant Money</span> و یک خطای <span dir="ltr">Typed ID</span> را نشان بده.
+- نتیجهٔ <span dir="ltr">`mvn verify`</span> را ارائه کن.
 
-### دقیقه 9 تا 10 — <bdi dir="ltr">Unknown</bdi> و تصمیم بعدی
+### دقیقه 9 تا 10 — <span dir="ltr">Unknown</span> و تصمیم بعدی
 
-- مهم‌ترین <bdi dir="ltr">Unknown</bdi> را صریح بگو.
-- مشخص کن <bdi dir="ltr">Week 02</bdi> کدام <bdi dir="ltr">Boundary/Ownership hypothesis</bdi> را خواهد آزمود.
+- مهم‌ترین <span dir="ltr">Unknown</span> را صریح بگو.
+- مشخص کن <span dir="ltr">Week 02</span> کدام <span dir="ltr">Boundary/Ownership hypothesis</span> را خواهد آزمود.
 
 ## 4. پرسش‌های دفاعی محتمل
 
-1. چرا «سامانه تسهیلات» <bdi dir="ltr">Capability</bdi> نیست ولی «مدیریت تعهدات اعتباری» می‌تواند باشد؟
-2. چرا یک <bdi dir="ltr">Capability</bdi> می‌تواند چند <bdi dir="ltr">Bounded Context</bdi> داشته باشد؟
-3. چه <bdi dir="ltr">Evidence</bdi> دیگری غیر از <bdi dir="ltr">BIAN</bdi> برای <bdi dir="ltr">Service boundary</bdi> لازم است؟
-4. اگر <bdi dir="ltr">Legal Orders</bdi> و <bdi dir="ltr">Deposits</bdi> یک <bdi dir="ltr">Deployable</bdi> باشند، آیا هنوز دو <bdi dir="ltr">Context/Module</bdi> می‌توانند باشند؟
-5. چه کسی مالک <bdi dir="ltr">available balance</bdi> و چه کسی مالک <bdi dir="ltr">Journal</bdi> است؟
-6. <bdi dir="ltr">`PlaceFundsHold`</bdi> چرا <bdi dir="ltr">Command</bdi> و <bdi dir="ltr">`FundsHeld`</bdi> چرا <bdi dir="ltr">Event</bdi> است؟
-7. <bdi dir="ltr">HTTP</bdi> چگونه می‌تواند شدیداً <bdi dir="ltr">Coupled</bdi> باشد؟
-8. چرا <bdi dir="ltr">Money</bdi> منفی را مجاز یا ممنوع کردی؟
-9. چرا <bdi dir="ltr">`100.0`</bdi> و <bdi dir="ltr">`100.00`</bdi> باید یا نباید برابر باشند؟
-10. مهم‌ترین فرض اثبات‌نشدهٔ <bdi dir="ltr">Map</bdi> تو چیست؟
+1. چرا «سامانه تسهیلات» <span dir="ltr">Capability</span> نیست ولی «مدیریت تعهدات اعتباری» می‌تواند باشد؟
+2. چرا یک <span dir="ltr">Capability</span> می‌تواند چند <span dir="ltr">Bounded Context</span> داشته باشد؟
+3. چه <span dir="ltr">Evidence</span> دیگری غیر از <span dir="ltr">BIAN</span> برای <span dir="ltr">Service boundary</span> لازم است؟
+4. اگر <span dir="ltr">Legal Orders</span> و <span dir="ltr">Deposits</span> یک <span dir="ltr">Deployable</span> باشند، آیا هنوز دو <span dir="ltr">Context/Module</span> می‌توانند باشند؟
+5. چه کسی مالک <span dir="ltr">available balance</span> و چه کسی مالک <span dir="ltr">Journal</span> است؟
+6. <span dir="ltr">`PlaceFundsHold`</span> چرا <span dir="ltr">Command</span> و <span dir="ltr">`FundsHeld`</span> چرا <span dir="ltr">Event</span> است؟
+7. <span dir="ltr">HTTP</span> چگونه می‌تواند شدیداً <span dir="ltr">Coupled</span> باشد؟
+8. چرا <span dir="ltr">Money</span> منفی را مجاز یا ممنوع کردی؟
+9. چرا <span dir="ltr">`100.0`</span> و <span dir="ltr">`100.00`</span> باید یا نباید برابر باشند؟
+10. مهم‌ترین فرض اثبات‌نشدهٔ <span dir="ltr">Map</span> تو چیست؟
 
-## <bdi dir="ltr">5. Rubric Gate</bdi>
+## <span dir="ltr">5. Rubric Gate</span>
 
 | حوزه | امتیاز | شاهد |
 |---|---:|---|
-| زبان و تمایز مفاهیم | ۲ | <bdi dir="ltr">Distinction Matrix</bdi> + پاسخ شفاهی |
-| <bdi dir="ltr">Capability Map</bdi> و <bdi dir="ltr">BIAN</bdi> | ۲ | <bdi dir="ltr">Map v1</bdi> + <bdi dir="ltr">Gap Check</bdi> |
-| <bdi dir="ltr">Traceability</bdi> و <bdi dir="ltr">Ownership</bdi> | ۲ | دو <bdi dir="ltr">Chain</bdi> |
-| <bdi dir="ltr">Coupling/Encapsulation</bdi> | ۱.۵ | <bdi dir="ltr">Coupling Review</bdi> |
-| <bdi dir="ltr">Value Object</bdi> و تست | ۱.۵ | کد + <bdi dir="ltr">`mvn verify`</bdi> |
-| صداقت دربارهٔ <bdi dir="ltr">Unknown/Trade-off</bdi> | ۱ | <bdi dir="ltr">Report</bdi> و دفاع |
+| زبان و تمایز مفاهیم | ۲ | <span dir="ltr">Distinction Matrix</span> + پاسخ شفاهی |
+| <span dir="ltr">Capability Map</span> و <span dir="ltr">BIAN</span> | ۲ | <span dir="ltr">Map v1</span> + <span dir="ltr">Gap Check</span> |
+| <span dir="ltr">Traceability</span> و <span dir="ltr">Ownership</span> | ۲ | دو <span dir="ltr">Chain</span> |
+| <span dir="ltr">Coupling/Encapsulation</span> | ۱.۵ | <span dir="ltr">Coupling Review</span> |
+| <span dir="ltr">Value Object</span> و تست | ۱.۵ | کد + <span dir="ltr">`mvn verify`</span> |
+| صداقت دربارهٔ <span dir="ltr">Unknown/Trade-off</span> | ۱ | <span dir="ltr">Report</span> و دفاع |
 | **جمع** | **۱۰** |  |
 
-حد عبور ۸ است. امتیاز ۸ با <bdi dir="ltr">Critical Error</bdi> پذیرفته نمی‌شود.
+حد عبور ۸ است. امتیاز ۸ با <span dir="ltr">Critical Error</span> پذیرفته نمی‌شود.
 
-## <bdi dir="ltr">6. Critical Error</bdi>ها
+## <span dir="ltr">6. Critical Error</span>ها
 
-- <bdi dir="ltr">Application/API/Table</bdi> به‌عنوان <bdi dir="ltr">Capability</bdi>
-- <bdi dir="ltr">BIAN Service Domain</bdi> برابر <bdi dir="ltr">Microservice</bdi>
-- <bdi dir="ltr">Owner</bdi> مشترک و مبهم برای یک <bdi dir="ltr">Fact</bdi> واحد
-- <bdi dir="ltr">Event</bdi> امری یا بدون <bdi dir="ltr">Fact</bdi> روشن
-- دسترسی مستقیم به <bdi dir="ltr">State</bdi> داخلی <bdi dir="ltr">Context</bdi> دیگر به‌عنوان <bdi dir="ltr">Contract</bdi>
-- <bdi dir="ltr">`double`</bdi> یا <bdi dir="ltr">Rounding</bdi> پنهان برای <bdi dir="ltr">Money</bdi>
-- ادعای <bdi dir="ltr">`Done`</bdi> بدون <bdi dir="ltr">Evidence</bdi> قابل بازشدن
+- <span dir="ltr">Application/API/Table</span> به‌عنوان <span dir="ltr">Capability</span>
+- <span dir="ltr">BIAN Service Domain</span> برابر <span dir="ltr">Microservice</span>
+- <span dir="ltr">Owner</span> مشترک و مبهم برای یک <span dir="ltr">Fact</span> واحد
+- <span dir="ltr">Event</span> امری یا بدون <span dir="ltr">Fact</span> روشن
+- دسترسی مستقیم به <span dir="ltr">State</span> داخلی <span dir="ltr">Context</span> دیگر به‌عنوان <span dir="ltr">Contract</span>
+- <span dir="ltr">`double`</span> یا <span dir="ltr">Rounding</span> پنهان برای <span dir="ltr">Money</span>
+- ادعای <span dir="ltr">`Done`</span> بدون <span dir="ltr">Evidence</span> قابل بازشدن
 
 ## 7. روش اصلاح
 
-<bdi dir="ltr">Gate</bdi> ناموفق به معنی تکرار کل هفته نیست. <bdi dir="ltr">Critical Error</bdi> به کوچک‌ترین تمرین مربوط برمی‌گردد:
+<span dir="ltr">Gate</span> ناموفق به معنی تکرار کل هفته نیست. <span dir="ltr">Critical Error</span> به کوچک‌ترین تمرین مربوط برمی‌گردد:
 
-| ضعف | <bdi dir="ltr">Remediation</bdi> |
+| ضعف | <span dir="ltr">Remediation</span> |
 |---|---|
-| تمایز <bdi dir="ltr">Capability</bdi> | طبقه‌بندی ۵ مثال تازه |
-| <bdi dir="ltr">Traceability</bdi> | بازسازی یک <bdi dir="ltr">Chain</bdi> کوتاه |
-| <bdi dir="ltr">Ownership</bdi> | جدول <bdi dir="ltr">Fact/Authority</bdi> سه‌ردیفی |
-| <bdi dir="ltr">BIAN</bdi> | تحلیل یک <bdi dir="ltr">False Friend</bdi> |
-| <bdi dir="ltr">Money</bdi> | افزودن یک تست شکست و <bdi dir="ltr">Refactor</bdi> |
+| تمایز <span dir="ltr">Capability</span> | طبقه‌بندی ۵ مثال تازه |
+| <span dir="ltr">Traceability</span> | بازسازی یک <span dir="ltr">Chain</span> کوتاه |
+| <span dir="ltr">Ownership</span> | جدول <span dir="ltr">Fact/Authority</span> سه‌ردیفی |
+| <span dir="ltr">BIAN</span> | تحلیل یک <span dir="ltr">False Friend</span> |
+| <span dir="ltr">Money</span> | افزودن یک تست شکست و <span dir="ltr">Refactor</span> |
 
-پس از اصلاح، پاسخ قبلی پاک نمی‌شود؛ <bdi dir="ltr">`REVISION`</bdi> و <bdi dir="ltr">Evidence</bdi> تازه افزوده می‌شود.
+پس از اصلاح، پاسخ قبلی پاک نمی‌شود؛ <span dir="ltr">`REVISION`</span> و <span dir="ltr">Evidence</span> تازه افزوده می‌شود.
 
 ## 8. کار بعد
 
-[<bdi dir="ltr">Day 07 Exercise</bdi>](../exercises/day-07-week-defense.md) و [<bdi dir="ltr">Week Report</bdi>](../artifacts/week-01-report-template.md) را تکمیل کن. بعد از عبور هسته، برای وضعیت <bdi dir="ltr">`Done — Expanded`</bdi> باید <bdi dir="ltr">Day 08 Code Craft</bdi> و <bdi dir="ltr">Day 09 UPI</bdi> نیز تمام شوند.
+[<span dir="ltr">Day 07 Exercise</span>](../exercises/day-07-week-defense.md) و [<span dir="ltr">Week Report</span>](../artifacts/week-01-report-template.md) را تکمیل کن. بعد از عبور هسته، برای وضعیت <span dir="ltr">`Done — Expanded`</span> باید <span dir="ltr">Day 08 Code Craft</span> و <span dir="ltr">Day 09 UPI</span> نیز تمام شوند.
 
 
 </div>

@@ -1,18 +1,18 @@
 <!-- bidi: rtl; code: ltr -->
 <div dir="rtl" align="right">
 
-# <bdi dir="ltr">Day 08 Exercise</bdi> — <bdi dir="ltr">Primitive-to-Value-Object Refactoring Kata</bdi>
+# <span dir="ltr">Day 08 Exercise</span> — <span dir="ltr">Primitive-to-Value-Object Refactoring Kata</span>
 
-- <bdi dir="ltr">Timebox: 65 minutes coding</bdi> + <bdi dir="ltr">10 minutes self-review</bdi>
-- <bdi dir="ltr">Working directory:</bdi> <bdi dir="ltr">`backend/banking-modulith`</bdi>
-- <bdi dir="ltr">Starter package:</bdi> <bdi dir="ltr">`com.example.corebankinglab.craftsmanship.week01`</bdi>
-- <bdi dir="ltr">Output: Refactored code</bdi> + <bdi dir="ltr">tests</bdi> + [<bdi dir="ltr">Code Review Checklist</bdi>](../artifacts/day-08-code-review-checklist.md)
+- <span dir="ltr">Timebox: 65 minutes coding</span> + <span dir="ltr">10 minutes self-review</span>
+- <span dir="ltr">Working directory:</span> <span dir="ltr">`backend/banking-modulith`</span>
+- <span dir="ltr">Starter package:</span> <span dir="ltr">`com.example.corebankinglab.craftsmanship.week01`</span>
+- <span dir="ltr">Output: Refactored code</span> + <span dir="ltr">tests</span> + [<span dir="ltr">Code Review Checklist</span>](../artifacts/day-08-code-review-checklist.md)
 
 ## قانون تمرین
 
-رفتار ثبت‌شدهٔ <bdi dir="ltr">Baseline</bdi> را در <bdi dir="ltr">Refactor</bdi> ناخواسته تغییر نده. هر تغییر <bdi dir="ltr">Rule</bdi> را <bdi dir="ltr">`OPEN/RULE CHANGE`</bdi> ثبت و از <bdi dir="ltr">Commit Refactor</bdi> جدا کن.
+رفتار ثبت‌شدهٔ <span dir="ltr">Baseline</span> را در <span dir="ltr">Refactor</span> ناخواسته تغییر نده. هر تغییر <span dir="ltr">Rule</span> را <span dir="ltr">`OPEN/RULE CHANGE`</span> ثبت و از <span dir="ltr">Commit Refactor</span> جدا کن.
 
-## <bdi dir="ltr">Step 0</bdi> — <bdi dir="ltr">Baseline</bdi>
+## <span dir="ltr">Step 0</span> — <span dir="ltr">Baseline</span>
 
 
 </div>
@@ -32,54 +32,54 @@ mvn -Dtest=PrimitiveTransferRequestCharacterizationTest test
 
 - تعداد تست‌ها و نتیجه
 - زمان اجرا
-- <bdi dir="ltr">Branch/commit</bdi> یا <bdi dir="ltr">Worktree state</bdi>
-- خروجی <bdi dir="ltr">`mvn verify`</bdi> پیش از تغییر
+- <span dir="ltr">Branch/commit</span> یا <span dir="ltr">Worktree state</span>
+- خروجی <span dir="ltr">`mvn verify`</span> پیش از تغییر
 
-## <bdi dir="ltr">Step 1</bdi> — <bdi dir="ltr">Smell Map</bdi>
+## <span dir="ltr">Step 1</span> — <span dir="ltr">Smell Map</span>
 
-حداقل شش <bdi dir="ltr">Smell</bdi> با این قالب:
+حداقل شش <span dir="ltr">Smell</span> با این قالب:
 
-| <bdi dir="ltr">Symbol</bdi> | <bdi dir="ltr">Smell</bdi> | <bdi dir="ltr">Concrete risk</bdi> | <bdi dir="ltr">Smallest move</bdi> |
+| <span dir="ltr">Symbol</span> | <span dir="ltr">Smell</span> | <span dir="ltr">Concrete risk</span> | <span dir="ltr">Smallest move</span> |
 |---|---|---|---|
 |  |  |  |  |
 
-عبارت «<bdi dir="ltr">SOLID</bdi> رعایت نشده» بدون <bdi dir="ltr">Location</bdi> و <bdi dir="ltr">Risk</bdi> امتیاز ندارد.
+عبارت «<span dir="ltr">SOLID</span> رعایت نشده» بدون <span dir="ltr">Location</span> و <span dir="ltr">Risk</span> امتیاز ندارد.
 
-## <bdi dir="ltr">Step 2</bdi> — یک <bdi dir="ltr">Edge Test</bdi>
+## <span dir="ltr">Step 2</span> — یک <span dir="ltr">Edge Test</span>
 
 یکی را انتخاب کن:
 
-- <bdi dir="ltr">lowercase currency</bdi>
-- <bdi dir="ltr">whitespace around ID</bdi>
-- <bdi dir="ltr">amount</bdi> با <bdi dir="ltr">Scale</bdi> زیاد
-- <bdi dir="ltr">delimiter</bdi> داخل <bdi dir="ltr">ID</bdi> و اثر روی <bdi dir="ltr">audit key</bdi>
-- <bdi dir="ltr">source/target</bdi> با تفاوت ظاهری <bdi dir="ltr">whitespace</bdi>
+- <span dir="ltr">lowercase currency</span>
+- <span dir="ltr">whitespace around ID</span>
+- <span dir="ltr">amount</span> با <span dir="ltr">Scale</span> زیاد
+- <span dir="ltr">delimiter</span> داخل <span dir="ltr">ID</span> و اثر روی <span dir="ltr">audit key</span>
+- <span dir="ltr">source/target</span> با تفاوت ظاهری <span dir="ltr">whitespace</span>
 
-اگر <bdi dir="ltr">Expected behavior</bdi> معلوم نیست، <bdi dir="ltr">`OPEN`</bdi> ثبت کن و مورد دیگری را تست کن.
+اگر <span dir="ltr">Expected behavior</span> معلوم نیست، <span dir="ltr">`OPEN`</span> ثبت کن و مورد دیگری را تست کن.
 
-## <bdi dir="ltr">Step 3</bdi> — چهار <bdi dir="ltr">Checkpoint</bdi> سبز
+## <span dir="ltr">Step 3</span> — چهار <span dir="ltr">Checkpoint</span> سبز
 
-1. <bdi dir="ltr">`AccountId`</bdi> برای <bdi dir="ltr">source/target</bdi>
-2. <bdi dir="ltr">`CustomerId`</bdi> و <bdi dir="ltr">`BranchId`</bdi>
-3. <bdi dir="ltr">`Money`</bdi> برای <bdi dir="ltr">amount/currency</bdi>
-4. <bdi dir="ltr">Creation API</bdi> و <bdi dir="ltr">Request</bdi> نام‌دار
+1. <span dir="ltr">`AccountId`</span> برای <span dir="ltr">source/target</span>
+2. <span dir="ltr">`CustomerId`</span> و <span dir="ltr">`BranchId`</span>
+3. <span dir="ltr">`Money`</span> برای <span dir="ltr">amount/currency</span>
+4. <span dir="ltr">Creation API</span> و <span dir="ltr">Request</span> نام‌دار
 
-پس از هر <bdi dir="ltr">Checkpoint</bdi> تست هدفمند اجرا و نتیجه ثبت شود.
+پس از هر <span dir="ltr">Checkpoint</span> تست هدفمند اجرا و نتیجه ثبت شود.
 
-## <bdi dir="ltr">Step 4</bdi> — <bdi dir="ltr">Money Decision</bdi>
+## <span dir="ltr">Step 4</span> — <span dir="ltr">Money Decision</span>
 
 صریح تصمیم بگیر:
 
-- <bdi dir="ltr">Money</bdi> عمومی <bdi dir="ltr">Signed</bdi> است یا این <bdi dir="ltr">Type</bdi> فقط <bdi dir="ltr">TransferAmount</bdi> مثبت است؟
-- <bdi dir="ltr">Equality</bdi> عددی <bdi dir="ltr">Scale</bdi> را نادیده می‌گیرد یا نه؟
-- <bdi dir="ltr">Rounding</bdi> کجا و با چه <bdi dir="ltr">API</bdi> صریح می‌شود؟
-- <bdi dir="ltr">Currency</bdi> با <bdi dir="ltr">`java.util.Currency`</bdi> یا <bdi dir="ltr">Type</bdi> محدود دیگری نمایش داده می‌شود؟
+- <span dir="ltr">Money</span> عمومی <span dir="ltr">Signed</span> است یا این <span dir="ltr">Type</span> فقط <span dir="ltr">TransferAmount</span> مثبت است؟
+- <span dir="ltr">Equality</span> عددی <span dir="ltr">Scale</span> را نادیده می‌گیرد یا نه؟
+- <span dir="ltr">Rounding</span> کجا و با چه <span dir="ltr">API</span> صریح می‌شود؟
+- <span dir="ltr">Currency</span> با <span dir="ltr">`java.util.Currency`</span> یا <span dir="ltr">Type</span> محدود دیگری نمایش داده می‌شود؟
 
-<bdi dir="ltr">Rule</bdi> خیالی برای <bdi dir="ltr">Decimal</bdi>های <bdi dir="ltr">IRR</bdi> نساز.
+<span dir="ltr">Rule</span> خیالی برای <span dir="ltr">Decimal</span>های <span dir="ltr">IRR</span> نساز.
 
-## <bdi dir="ltr">Step 5</bdi> — <bdi dir="ltr">Factory Decision</bdi>
+## <span dir="ltr">Step 5</span> — <span dir="ltr">Factory Decision</span>
 
-سه گزینه را با <bdi dir="ltr">Forces</bdi> مقایسه کن:
+سه گزینه را با <span dir="ltr">Forces</span> مقایسه کن:
 
 
 </div>
@@ -95,13 +95,13 @@ public constructor | static factory | factory class
 <div dir="rtl" align="right">
 
 
-<bdi dir="ltr">Factory class</bdi> فقط وقتی معتبر است که <bdi dir="ltr">Creation decision</bdi> یا <bdi dir="ltr">Dependency</bdi> واقعی داشته باشد.
+<span dir="ltr">Factory class</span> فقط وقتی معتبر است که <span dir="ltr">Creation decision</span> یا <span dir="ltr">Dependency</span> واقعی داشته باشد.
 
-## <bdi dir="ltr">Step 6</bdi> — <bdi dir="ltr">Compatibility</bdi>
+## <span dir="ltr">Step 6</span> — <span dir="ltr">Compatibility</span>
 
-اگر <bdi dir="ltr">Constructor</bdi> یا <bdi dir="ltr">`auditKey`</bdi> قبلی را تغییر می‌دهی، رفتار <bdi dir="ltr">Characterization</bdi> را با <bdi dir="ltr">Adapter</bdi> یا <bdi dir="ltr">Test</bdi> روشن حفظ کن. حذف <bdi dir="ltr">API</bdi> قبلی باید تصمیم جدا باشد.
+اگر <span dir="ltr">Constructor</span> یا <span dir="ltr">`auditKey`</span> قبلی را تغییر می‌دهی، رفتار <span dir="ltr">Characterization</span> را با <span dir="ltr">Adapter</span> یا <span dir="ltr">Test</span> روشن حفظ کن. حذف <span dir="ltr">API</span> قبلی باید تصمیم جدا باشد.
 
-## <bdi dir="ltr">Step 7</bdi> — <bdi dir="ltr">Final verification</bdi>
+## <span dir="ltr">Step 7</span> — <span dir="ltr">Final verification</span>
 
 
 </div>
@@ -117,25 +117,25 @@ mvn -B -ntp verify
 <div dir="rtl" align="right">
 
 
-تمام تست‌های <bdi dir="ltr">Week 01</bdi> و <bdi dir="ltr">Week 02</bdi> و <bdi dir="ltr">Spring context</bdi> باید سبز بمانند.
+تمام تست‌های <span dir="ltr">Week 01</span> و <span dir="ltr">Week 02</span> و <span dir="ltr">Spring context</span> باید سبز بمانند.
 
-## <bdi dir="ltr">Step 8</bdi> — <bdi dir="ltr">Self-review</bdi>
+## <span dir="ltr">Step 8</span> — <span dir="ltr">Self-review</span>
 
-1. کدام خطا اکنون <bdi dir="ltr">Compile-time</bdi> یا <bdi dir="ltr">creation-time</bdi> متوقف می‌شود؟
-2. کدام <bdi dir="ltr">Coupling</bdi> کمتر شد؟
-3. چند <bdi dir="ltr">Type</bdi> تازه ساختی و هزینه‌شان چیست؟
-4. کدام <bdi dir="ltr">Rule</bdi> را عمداً تغییر ندادی؟
-5. چه <bdi dir="ltr">Debt/Unknown</bdi>ی باقی ماند؟
+1. کدام خطا اکنون <span dir="ltr">Compile-time</span> یا <span dir="ltr">creation-time</span> متوقف می‌شود؟
+2. کدام <span dir="ltr">Coupling</span> کمتر شد؟
+3. چند <span dir="ltr">Type</span> تازه ساختی و هزینه‌شان چیست؟
+4. کدام <span dir="ltr">Rule</span> را عمداً تغییر ندادی؟
+5. چه <span dir="ltr">Debt/Unknown</span>ی باقی ماند؟
 
-## <bdi dir="ltr">Acceptance criteria</bdi>
+## <span dir="ltr">Acceptance criteria</span>
 
-- <bdi dir="ltr">Baseline</bdi> و <bdi dir="ltr">Refactor</bdi> هر دو <bdi dir="ltr">Evidence</bdi> سبز دارند.
-- حداقل یک <bdi dir="ltr">Edge Test</bdi> تازه وجود دارد.
-- <bdi dir="ltr">amount/currency</bdi> به <bdi dir="ltr">Concept</bdi> منسجم تبدیل شده‌اند.
-- <bdi dir="ltr">Typed IDs</bdi> قابل‌جابه‌جایی نیستند.
-- <bdi dir="ltr">`double`</bdi>، <bdi dir="ltr">Setter</bdi>، <bdi dir="ltr">Rounding</bdi> پنهان و <bdi dir="ltr">Base hierarchy</bdi> غیرضروری وجود ندارد.
-- <bdi dir="ltr">Factory</bdi> یا رد آن با <bdi dir="ltr">Alternative</bdi>، <bdi dir="ltr">Cost</bdi> و <bdi dir="ltr">Revisit trigger</bdi> دفاع شده است.
-- <bdi dir="ltr">`mvn verify`</bdi> سبز است.
+- <span dir="ltr">Baseline</span> و <span dir="ltr">Refactor</span> هر دو <span dir="ltr">Evidence</span> سبز دارند.
+- حداقل یک <span dir="ltr">Edge Test</span> تازه وجود دارد.
+- <span dir="ltr">amount/currency</span> به <span dir="ltr">Concept</span> منسجم تبدیل شده‌اند.
+- <span dir="ltr">Typed IDs</span> قابل‌جابه‌جایی نیستند.
+- <span dir="ltr">`double`</span>، <span dir="ltr">Setter</span>، <span dir="ltr">Rounding</span> پنهان و <span dir="ltr">Base hierarchy</span> غیرضروری وجود ندارد.
+- <span dir="ltr">Factory</span> یا رد آن با <span dir="ltr">Alternative</span>، <span dir="ltr">Cost</span> و <span dir="ltr">Revisit trigger</span> دفاع شده است.
+- <span dir="ltr">`mvn verify`</span> سبز است.
 
 
 </div>

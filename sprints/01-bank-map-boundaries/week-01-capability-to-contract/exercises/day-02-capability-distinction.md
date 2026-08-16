@@ -1,15 +1,15 @@
 <!-- bidi: rtl; code: ltr -->
 <div dir="rtl" align="right">
 
-# <bdi dir="ltr">Day 02 Exercise</bdi> — <bdi dir="ltr">Capability Distinction Matrix</bdi>
+# <span dir="ltr">Day 02 Exercise</span> — <span dir="ltr">Capability Distinction Matrix</span>
 
-- <bdi dir="ltr">Timebox: 18 minutes</bdi>
-- <bdi dir="ltr">Output:</bdi> [<bdi dir="ltr">Distinction Matrix</bdi>](../artifacts/distinction-matrix-template.md)
-- <bdi dir="ltr">Rule:</bdi> برچسب بدون <bdi dir="ltr">Reason</bdi> امتیاز ندارد.
+- <span dir="ltr">Timebox: 18 minutes</span>
+- <span dir="ltr">Output:</span> [<span dir="ltr">Distinction Matrix</span>](../artifacts/distinction-matrix-template.md)
+- <span dir="ltr">Rule:</span> برچسب بدون <span dir="ltr">Reason</span> امتیاز ندارد.
 
 ## بخش A — طبقه‌بندی ۱۵ عبارت
 
-برای هر عبارت <bdi dir="ltr">`Primary type`</bdi>، دلیل، تفسیر جایگزین احتمالی و نسخهٔ اصلاح‌شده را ثبت کن:
+برای هر عبارت <span dir="ltr">`Primary type`</span>، دلیل، تفسیر جایگزین احتمالی و نسخهٔ اصلاح‌شده را ثبت کن:
 
 1. سامانهٔ تسهیلات
 2. مدیریت تعهدات اعتباری
@@ -20,8 +20,8 @@
 7. سپردهٔ قرض‌الحسنه جاری
 8. سامانهٔ سپرده
 9. اعمال مسدودی قضایی
-10. <bdi dir="ltr">`POST /accounts/{id}/holds`</bdi>
-11. <bdi dir="ltr">`FundsHeld`</bdi>
+10. <span dir="ltr">`POST /accounts/{id}/holds`</span>
+11. <span dir="ltr">`FundsHeld`</span>
 12. انتقال آنی وجه
 13. فرایند انتقال بین‌شعبه‌ای
 14. ادارهٔ چک
@@ -44,9 +44,9 @@ Organization Unit | System/Application | Use Case | API | Event | Ambiguous
 <div dir="rtl" align="right">
 
 
-## بخش B — سه <bdi dir="ltr">Capability</bdi> کامل
+## بخش B — سه <span dir="ltr">Capability</span> کامل
 
-سه موردی را که <bdi dir="ltr">Capability</bdi> دانستی با این کارت تکمیل کن:
+سه موردی را که <span dir="ltr">Capability</span> دانستی با این کارت تکمیل کن:
 
 
 </div>
@@ -69,9 +69,9 @@ Current systems (evidence only):
 <div dir="rtl" align="right">
 
 
-## بخش C — <bdi dir="ltr">Reverse test</bdi>
+## بخش C — <span dir="ltr">Reverse test</span>
 
-سه <bdi dir="ltr">System/API/Event</bdi> فهرست را به <bdi dir="ltr">Capability</bdi> بالادست برگردان. زنجیره را کوتاه بنویس:
+سه <span dir="ltr">System/API/Event</span> فهرست را به <span dir="ltr">Capability</span> بالادست برگردان. زنجیره را کوتاه بنویس:
 
 
 </div>
@@ -87,13 +87,13 @@ technical/current element → use/process → capability
 <div dir="rtl" align="right">
 
 
-## <bdi dir="ltr">Acceptance criteria</bdi>
+## <span dir="ltr">Acceptance criteria</span>
 
 - حداقل ۱۲ مورد درست و مستدل طبقه‌بندی شده باشد.
-- برای دست‌کم سه مورد <bdi dir="ltr">`Ambiguous`</bdi>، زاویهٔ دید توضیح داده شود.
-- هیچ نام سامانه، تیم یا <bdi dir="ltr">API</bdi> به‌تنهایی <bdi dir="ltr">Capability</bdi> پذیرفته نشود.
-- سه <bdi dir="ltr">Capability</bdi> دارای <bdi dir="ltr">Outcome</bdi>، <bdi dir="ltr">Owner</bdi> و <bdi dir="ltr">KPI</bdi> باشند.
-- از طبقه‌بندی، تعداد <bdi dir="ltr">Microservice</bdi> نتیجه گرفته نشود.
+- برای دست‌کم سه مورد <span dir="ltr">`Ambiguous`</span>، زاویهٔ دید توضیح داده شود.
+- هیچ نام سامانه، تیم یا <span dir="ltr">API</span> به‌تنهایی <span dir="ltr">Capability</span> پذیرفته نشود.
+- سه <span dir="ltr">Capability</span> دارای <span dir="ltr">Outcome</span>، <span dir="ltr">Owner</span> و <span dir="ltr">KPI</span> باشند.
+- از طبقه‌بندی، تعداد <span dir="ltr">Microservice</span> نتیجه گرفته نشود.
 
 
 </div>

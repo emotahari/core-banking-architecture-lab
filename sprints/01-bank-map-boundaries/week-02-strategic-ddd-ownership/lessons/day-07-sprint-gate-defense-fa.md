@@ -1,167 +1,167 @@
 <!-- bidi: rtl; code: ltr -->
 <div dir="rtl" align="right">
 
-# <bdi dir="ltr">Day 07</bdi> — <bdi dir="ltr">Gate</bdi> اسپرینت اول: دفاع معماری مسدودی قضایی
+# <span dir="ltr">Day 07</span> — <span dir="ltr">Gate</span> اسپرینت اول: دفاع معماری مسدودی قضایی
 
-- <bdi dir="ltr">Preparation timebox: 20 minutes</bdi>
-- <bdi dir="ltr">Oral/written review with instructor: maximum 10 minutes</bdi>, <bdi dir="ltr">outside the 360-minute self-study budget</bdi>
-- <bdi dir="ltr">Passing score: 8/10 with no Critical Error</bdi>
-- <bdi dir="ltr">Rule: lesson and prior artifacts may be used for preparation</bdi>; <bdi dir="ltr">model answer does not exist in the repository before submission.</bdi>
+- <span dir="ltr">Preparation timebox: 20 minutes</span>
+- <span dir="ltr">Oral/written review with instructor: maximum 10 minutes</span>, <span dir="ltr">outside the 360-minute self-study budget</span>
+- <span dir="ltr">Passing score: 8/10 with no Critical Error</span>
+- <span dir="ltr">Rule: lesson and prior artifacts may be used for preparation</span>; <span dir="ltr">model answer does not exist in the repository before submission.</span>
 
-## 1. هدف قابل سنجش <bdi dir="ltr">Gate</bdi>
+## 1. هدف قابل سنجش <span dir="ltr">Gate</span>
 
-این <bdi dir="ltr">Gate</bdi> بررسی نمی‌کند که تعریف‌ها را حفظ کرده‌ای. باید نشان بدهی می‌توانی روی یک سناریوی بانکی:
+این <span dir="ltr">Gate</span> بررسی نمی‌کند که تعریف‌ها را حفظ کرده‌ای. باید نشان بدهی می‌توانی روی یک سناریوی بانکی:
 
-- از <bdi dir="ltr">Capability</bdi> شروع کنی؛
-- <bdi dir="ltr">Domain/Subdomain</bdi> و <bdi dir="ltr">Bounded Context</bdi> را جدا کنی؛
-- <bdi dir="ltr">Ubiquitous Language</bdi> را دقیق کنی؛
-- <bdi dir="ltr">Data/Decision Authority</bdi> را تعیین کنی؛
-- رابطهٔ <bdi dir="ltr">Context</bdi>ها را با <bdi dir="ltr">Pattern</bdi> و <bdi dir="ltr">Contract</bdi> نشان بدهی؛
-- فرضیه را به <bdi dir="ltr">Module Boundary</bdi> قابل <bdi dir="ltr">Verification</bdi> وصل کنی؛
-- <bdi dir="ltr">Failure</bdi>های اولیه را بدون پریدن به <bdi dir="ltr">Technology</bdi> تشخیص بدهی.
+- از <span dir="ltr">Capability</span> شروع کنی؛
+- <span dir="ltr">Domain/Subdomain</span> و <span dir="ltr">Bounded Context</span> را جدا کنی؛
+- <span dir="ltr">Ubiquitous Language</span> را دقیق کنی؛
+- <span dir="ltr">Data/Decision Authority</span> را تعیین کنی؛
+- رابطهٔ <span dir="ltr">Context</span>ها را با <span dir="ltr">Pattern</span> و <span dir="ltr">Contract</span> نشان بدهی؛
+- فرضیه را به <span dir="ltr">Module Boundary</span> قابل <span dir="ltr">Verification</span> وصل کنی؛
+- <span dir="ltr">Failure</span>های اولیه را بدون پریدن به <span dir="ltr">Technology</span> تشخیص بدهی.
 
-## 2. سناریوی <bdi dir="ltr">Gate</bdi>
+## 2. سناریوی <span dir="ltr">Gate</span>
 
 بانک یک دستور قضایی معتبر دریافت می‌کند که بر اساس آن باید مبلغ مشخصی از سپردهٔ مشتری مسدود شود. ممکن است:
 
 - دستور تکراری دریافت شود؛
 - دستور بعداً اصلاح یا لغو شود؛
 - حساب هدف بسته، محدود یا فاقد شرایط لازم باشد؛
-- درخواست اعمال <bdi dir="ltr">Hold</bdi> موفق شود اما پاسخ به درخواست‌کننده نرسد؛
+- درخواست اعمال <span dir="ltr">Hold</span> موفق شود اما پاسخ به درخواست‌کننده نرسد؛
 - چند سپرده یا چند مشتری با مشخصات نزدیک وجود داشته باشند؛
 - واحدهای حقوقی، عملیات سپرده و حسابداری برداشت متفاوتی از واژهٔ «مسدودی» داشته باشند.
 
-در این مرحله دربارهٔ <bdi dir="ltr">REST</bdi>، <bdi dir="ltr">Kafka</bdi>، <bdi dir="ltr">Saga</bdi>، <bdi dir="ltr">Database</bdi> و ساختار <bdi dir="ltr">Deployment</bdi> تصمیم نگرفته‌ایم.
+در این مرحله دربارهٔ <span dir="ltr">REST</span>، <span dir="ltr">Kafka</span>، <span dir="ltr">Saga</span>، <span dir="ltr">Database</span> و ساختار <span dir="ltr">Deployment</span> تصمیم نگرفته‌ایم.
 
 ## 3. خروجی مورد انتظار
 
-[<bdi dir="ltr">Sprint 01 Gate Evidence</bdi>](../artifacts/sprint-01-gate-evidence-template.md) را کامل کن. خروجی باید این بخش‌ها را داشته باشد:
+[<span dir="ltr">Sprint 01 Gate Evidence</span>](../artifacts/sprint-01-gate-evidence-template.md) را کامل کن. خروجی باید این بخش‌ها را داشته باشد:
 
-1. <bdi dir="ltr">Problem statement</bdi> به زبان خودت
-2. <bdi dir="ltr">Traceability chain</bdi> کامل
-3. <bdi dir="ltr">Context-specific language</bdi>
-4. <bdi dir="ltr">Data and decision ownership</bdi>
-5. <bdi dir="ltr">Context Map relation</bdi> و <bdi dir="ltr">Pattern</bdi>
-6. <bdi dir="ltr">Command/Query/Event candidates</bdi>
-7. <bdi dir="ltr">Module boundary and verification evidence</bdi>
-8. <bdi dir="ltr">Failure expectations</bdi>
-9. <bdi dir="ltr">Assumptions/Open Questions</bdi>
+1. <span dir="ltr">Problem statement</span> به زبان خودت
+2. <span dir="ltr">Traceability chain</span> کامل
+3. <span dir="ltr">Context-specific language</span>
+4. <span dir="ltr">Data and decision ownership</span>
+5. <span dir="ltr">Context Map relation</span> و <span dir="ltr">Pattern</span>
+6. <span dir="ltr">Command/Query/Event candidates</span>
+7. <span dir="ltr">Module boundary and verification evidence</span>
+8. <span dir="ltr">Failure expectations</span>
+9. <span dir="ltr">Assumptions/Open Questions</span>
 10. خلاصهٔ دفاع حداکثر ۲۰۰ کلمه
 
 ## 4. ترتیب ۲۰ دقیقه‌ای
 
-### دقیقهٔ 0 تا 3 — مسئله و <bdi dir="ltr">Capability</bdi>
+### دقیقهٔ 0 تا 3 — مسئله و <span dir="ltr">Capability</span>
 
 - مسئله را بدون نام سامانه بازنویسی کن.
-- <bdi dir="ltr">Capability</bdi>ها و <bdi dir="ltr">Outcome</bdi> را مشخص کن.
-- <bdi dir="ltr">Scope</bdi> و <bdi dir="ltr">Out-of-scope</bdi> را بنویس.
+- <span dir="ltr">Capability</span>ها و <span dir="ltr">Outcome</span> را مشخص کن.
+- <span dir="ltr">Scope</span> و <span dir="ltr">Out-of-scope</span> را بنویس.
 
-### دقیقهٔ 3 تا 7 — <bdi dir="ltr">Domain</bdi>، <bdi dir="ltr">Context</bdi> و <bdi dir="ltr">Language</bdi>
+### دقیقهٔ 3 تا 7 — <span dir="ltr">Domain</span>، <span dir="ltr">Context</span> و <span dir="ltr">Language</span>
 
-- <bdi dir="ltr">Problem Space</bdi>ها و <bdi dir="ltr">Context candidates</bdi> را مشخص کن.
-- حداقل سه اصطلاح با معنای <bdi dir="ltr">Contextual</bdi> بنویس.
-- مرز را با <bdi dir="ltr">Rule/Lifecycle/Authority</bdi> دفاع کن.
+- <span dir="ltr">Problem Space</span>ها و <span dir="ltr">Context candidates</span> را مشخص کن.
+- حداقل سه اصطلاح با معنای <span dir="ltr">Contextual</span> بنویس.
+- مرز را با <span dir="ltr">Rule/Lifecycle/Authority</span> دفاع کن.
 
-### دقیقهٔ 7 تا 11 — <bdi dir="ltr">Ownership</bdi>
+### دقیقهٔ 7 تا 11 — <span dir="ltr">Ownership</span>
 
-- <bdi dir="ltr">Trigger</bdi>، <bdi dir="ltr">Decision</bdi> و <bdi dir="ltr">State owner</bdi> را جدا کن.
-- <bdi dir="ltr">Fact</bdi>ها را ریز و <bdi dir="ltr">Semantic-specific</bdi> بنویس.
-- <bdi dir="ltr">Reference/Snapshot/Consumer/Not Allowed</bdi> را مشخص کن.
+- <span dir="ltr">Trigger</span>، <span dir="ltr">Decision</span> و <span dir="ltr">State owner</span> را جدا کن.
+- <span dir="ltr">Fact</span>ها را ریز و <span dir="ltr">Semantic-specific</span> بنویس.
+- <span dir="ltr">Reference/Snapshot/Consumer/Not Allowed</span> را مشخص کن.
 
-### دقیقهٔ 11 تا 14 — <bdi dir="ltr">Context Map</bdi>
+### دقیقهٔ 11 تا 14 — <span dir="ltr">Context Map</span>
 
-- <bdi dir="ltr">Upstream</bdi> و <bdi dir="ltr">Downstream</bdi> را تعیین کن.
-- <bdi dir="ltr">Pattern</bdi> اصلی و یک <bdi dir="ltr">Alternative</bdi> را بنویس.
-- <bdi dir="ltr">Contract</bdi> و محل <bdi dir="ltr">Translation</bdi> را ثبت کن.
+- <span dir="ltr">Upstream</span> و <span dir="ltr">Downstream</span> را تعیین کن.
+- <span dir="ltr">Pattern</span> اصلی و یک <span dir="ltr">Alternative</span> را بنویس.
+- <span dir="ltr">Contract</span> و محل <span dir="ltr">Translation</span> را ثبت کن.
 
-### دقیقهٔ 14 تا 17 — <bdi dir="ltr">Contract</bdi> و <bdi dir="ltr">Failure</bdi>
+### دقیقهٔ 14 تا 17 — <span dir="ltr">Contract</span> و <span dir="ltr">Failure</span>
 
-- <bdi dir="ltr">Command/Query/Result/Event candidate</bdi>ها را نام‌گذاری کن.
-- رفتار <bdi dir="ltr">Duplicate</bdi>، <bdi dir="ltr">Lost Response</bdi>، <bdi dir="ltr">Revoke</bdi> و <bdi dir="ltr">Rejection</bdi> را در سطح انتظار کسب‌وکار بیان کن.
-- <bdi dir="ltr">Transport</bdi> انتخاب نکن.
+- <span dir="ltr">Command/Query/Result/Event candidate</span>ها را نام‌گذاری کن.
+- رفتار <span dir="ltr">Duplicate</span>، <span dir="ltr">Lost Response</span>، <span dir="ltr">Revoke</span> و <span dir="ltr">Rejection</span> را در سطح انتظار کسب‌وکار بیان کن.
+- <span dir="ltr">Transport</span> انتخاب نکن.
 
-### دقیقهٔ 17 تا 20 — <bdi dir="ltr">Module</bdi> و دفاع
+### دقیقهٔ 17 تا 20 — <span dir="ltr">Module</span> و دفاع
 
-- <bdi dir="ltr">Mapping</bdi> اولیه به <bdi dir="ltr">Module</bdi> را بنویس.
-- یک <bdi dir="ltr">Rule</bdi> قابل <bdi dir="ltr">Verification</bdi> پیشنهاد بده.
-- خلاصهٔ ۲۰۰ کلمه‌ای را تکمیل و <bdi dir="ltr">Critical Error</bdi>ها را کنترل کن.
+- <span dir="ltr">Mapping</span> اولیه به <span dir="ltr">Module</span> را بنویس.
+- یک <span dir="ltr">Rule</span> قابل <span dir="ltr">Verification</span> پیشنهاد بده.
+- خلاصهٔ ۲۰۰ کلمه‌ای را تکمیل و <span dir="ltr">Critical Error</span>ها را کنترل کن.
 
 ## 5. پرسش‌هایی که در دفاع از تو می‌پرسم
 
 برای این پرسش‌ها آماده باش:
 
-1. چرا عنوان <bdi dir="ltr">Capability</bdi> تو نام <bdi dir="ltr">Process</bdi> یا <bdi dir="ltr">Application</bdi> نیست؟
-2. چه شواهدی باعث شد دو <bdi dir="ltr">Context</bdi> بسازی؟
-3. کدام واژه در دو <bdi dir="ltr">Context</bdi> معنای متفاوت دارد؟
-4. <bdi dir="ltr">Trigger</bdi> درخواست با <bdi dir="ltr">Decision Authority</bdi> چه تفاوتی دارد؟
-5. دقیقاً چه کسی مجاز است <bdi dir="ltr">Operational Hold</bdi> را تغییر دهد و چرا؟
-6. <bdi dir="ltr">Context</bdi> حقوقی چه چیزی را مالک است و چه چیزی را نباید مالک شود؟
-7. <bdi dir="ltr">Upstream/Downstream</bdi> را بر چه مبنایی تعیین کردی؟
-8. چرا <bdi dir="ltr">Pattern</bdi> انتخابی بهتر از <bdi dir="ltr">Conformist</bdi> یا <bdi dir="ltr">ACL</bdi> جایگزین است؟
-9. اگر پاسخ گم شود، کدام <bdi dir="ltr">Fact</bdi> را از کدام <bdi dir="ltr">Authority</bdi> بررسی می‌کنی؟
-10. <bdi dir="ltr">Accounting</bdi> کدام <bdi dir="ltr">Fact</bdi> را مصرف/ثبت می‌کند و کدام <bdi dir="ltr">State</bdi> عملیاتی را نباید تصاحب کند؟
-11. چرا <bdi dir="ltr">Module</bdi> پیشنهادی هنوز <bdi dir="ltr">Microservice decision</bdi> نیست؟
-12. کدام بخش پاسخ تو <bdi dir="ltr">Hypothesis</bdi> است و چگونه اعتبارسنجی می‌شود؟
+1. چرا عنوان <span dir="ltr">Capability</span> تو نام <span dir="ltr">Process</span> یا <span dir="ltr">Application</span> نیست؟
+2. چه شواهدی باعث شد دو <span dir="ltr">Context</span> بسازی؟
+3. کدام واژه در دو <span dir="ltr">Context</span> معنای متفاوت دارد؟
+4. <span dir="ltr">Trigger</span> درخواست با <span dir="ltr">Decision Authority</span> چه تفاوتی دارد؟
+5. دقیقاً چه کسی مجاز است <span dir="ltr">Operational Hold</span> را تغییر دهد و چرا؟
+6. <span dir="ltr">Context</span> حقوقی چه چیزی را مالک است و چه چیزی را نباید مالک شود؟
+7. <span dir="ltr">Upstream/Downstream</span> را بر چه مبنایی تعیین کردی؟
+8. چرا <span dir="ltr">Pattern</span> انتخابی بهتر از <span dir="ltr">Conformist</span> یا <span dir="ltr">ACL</span> جایگزین است؟
+9. اگر پاسخ گم شود، کدام <span dir="ltr">Fact</span> را از کدام <span dir="ltr">Authority</span> بررسی می‌کنی؟
+10. <span dir="ltr">Accounting</span> کدام <span dir="ltr">Fact</span> را مصرف/ثبت می‌کند و کدام <span dir="ltr">State</span> عملیاتی را نباید تصاحب کند؟
+11. چرا <span dir="ltr">Module</span> پیشنهادی هنوز <span dir="ltr">Microservice decision</span> نیست؟
+12. کدام بخش پاسخ تو <span dir="ltr">Hypothesis</span> است و چگونه اعتبارسنجی می‌شود؟
 
-## 6. معیار ارزیابی و <bdi dir="ltr">Rubric</bdi>
+## 6. معیار ارزیابی و <span dir="ltr">Rubric</span>
 
 | حوزه | امتیاز | شاهد قبولی |
 |---|---:|---|
-| <bdi dir="ltr">Capability</bdi> و <bdi dir="ltr">Traceability</bdi> | ۱.۵ | زنجیره بدون شروع از <bdi dir="ltr">System/Table</bdi> |
-| <bdi dir="ltr">Domain/Context/Language</bdi> | ۱.۵ | مرز و معنای واژه‌ها با شواهد |
-| <bdi dir="ltr">Data and Decision Ownership</bdi> | ۲ | یک <bdi dir="ltr">Authority</bdi> برای هر <bdi dir="ltr">Fact/Decision</bdi> |
-| <bdi dir="ltr">Context Map Pattern</bdi> | ۱ | جهت، <bdi dir="ltr">Pattern</bdi>، <bdi dir="ltr">Contract</bdi>، <bdi dir="ltr">Translation</bdi> |
-| <bdi dir="ltr">Command/Query/Event semantics</bdi> | ۱ | <bdi dir="ltr">Intent</bdi> و <bdi dir="ltr">Fact</bdi> از هم جدا |
-| <bdi dir="ltr">Module boundary and verification</bdi> | ۱ | <bdi dir="ltr">API/Internal</bdi> و <bdi dir="ltr">Rule</bdi> قابل تست |
-| <bdi dir="ltr">Failure behavior</bdi> | ۱ | <bdi dir="ltr">Duplicate</bdi>، <bdi dir="ltr">lost response</bdi>، <bdi dir="ltr">revoke/reject</bdi> |
-| <bdi dir="ltr">Assumptions and defense quality</bdi> | ۱ | <bdi dir="ltr">Hypothesis/Open Question</bdi> صریح و قابل دفاع |
+| <span dir="ltr">Capability</span> و <span dir="ltr">Traceability</span> | ۱.۵ | زنجیره بدون شروع از <span dir="ltr">System/Table</span> |
+| <span dir="ltr">Domain/Context/Language</span> | ۱.۵ | مرز و معنای واژه‌ها با شواهد |
+| <span dir="ltr">Data and Decision Ownership</span> | ۲ | یک <span dir="ltr">Authority</span> برای هر <span dir="ltr">Fact/Decision</span> |
+| <span dir="ltr">Context Map Pattern</span> | ۱ | جهت، <span dir="ltr">Pattern</span>، <span dir="ltr">Contract</span>، <span dir="ltr">Translation</span> |
+| <span dir="ltr">Command/Query/Event semantics</span> | ۱ | <span dir="ltr">Intent</span> و <span dir="ltr">Fact</span> از هم جدا |
+| <span dir="ltr">Module boundary and verification</span> | ۱ | <span dir="ltr">API/Internal</span> و <span dir="ltr">Rule</span> قابل تست |
+| <span dir="ltr">Failure behavior</span> | ۱ | <span dir="ltr">Duplicate</span>، <span dir="ltr">lost response</span>، <span dir="ltr">revoke/reject</span> |
+| <span dir="ltr">Assumptions and defense quality</span> | ۱ | <span dir="ltr">Hypothesis/Open Question</span> صریح و قابل دفاع |
 | **جمع** | **۱۰** |  |
 
-## <bdi dir="ltr">7. Critical Error</bdi>ها
+## <span dir="ltr">7. Critical Error</span>ها
 
-وجود هر مورد <bdi dir="ltr">Gate</bdi> را متوقف می‌کند، حتی اگر جمع امتیاز ۸ یا بیشتر باشد:
+وجود هر مورد <span dir="ltr">Gate</span> را متوقف می‌کند، حتی اگر جمع امتیاز ۸ یا بیشتر باشد:
 
-1. شروع <bdi dir="ltr">Boundary</bdi> از نام جدول، <bdi dir="ltr">Controller</bdi>، سامانه یا <bdi dir="ltr">BIAN Service Domain</bdi>
-2. اعلام مالکیت مشترک برای یک <bdi dir="ltr">Fact</bdi> با <bdi dir="ltr">Semantic</bdi> یکسان
-3. مجازکردن <bdi dir="ltr">Context</bdi> خارجی به <bdi dir="ltr">Update</bdi> مستقیم <bdi dir="ltr">State/Database</bdi> داخلی <bdi dir="ltr">Context</bdi> دیگر
-4. قراردادن <bdi dir="ltr">Hold</bdi> یا <bdi dir="ltr">Available Balance</bdi> عملیاتی تحت <bdi dir="ltr">Authority</bdi> حسابداری
-5. یکی‌گرفتن <bdi dir="ltr">Command</bdi> با <bdi dir="ltr">Event</bdi>
-6. <bdi dir="ltr">Context Map</bdi> بدون جهت/<bdi dir="ltr">Pattern/Contract</bdi>
-7. اعلام «هر <bdi dir="ltr">Context</bdi> یک <bdi dir="ltr">Microservice</bdi>» بدون <bdi dir="ltr">Forces</bdi> فیزیکی
-8. دسترسی <bdi dir="ltr">Module</bdi> به <bdi dir="ltr">`internal`</bdi> <bdi dir="ltr">Module</bdi> دیگر به‌عنوان <bdi dir="ltr">Integration</bdi>
+1. شروع <span dir="ltr">Boundary</span> از نام جدول، <span dir="ltr">Controller</span>، سامانه یا <span dir="ltr">BIAN Service Domain</span>
+2. اعلام مالکیت مشترک برای یک <span dir="ltr">Fact</span> با <span dir="ltr">Semantic</span> یکسان
+3. مجازکردن <span dir="ltr">Context</span> خارجی به <span dir="ltr">Update</span> مستقیم <span dir="ltr">State/Database</span> داخلی <span dir="ltr">Context</span> دیگر
+4. قراردادن <span dir="ltr">Hold</span> یا <span dir="ltr">Available Balance</span> عملیاتی تحت <span dir="ltr">Authority</span> حسابداری
+5. یکی‌گرفتن <span dir="ltr">Command</span> با <span dir="ltr">Event</span>
+6. <span dir="ltr">Context Map</span> بدون جهت/<span dir="ltr">Pattern/Contract</span>
+7. اعلام «هر <span dir="ltr">Context</span> یک <span dir="ltr">Microservice</span>» بدون <span dir="ltr">Forces</span> فیزیکی
+8. دسترسی <span dir="ltr">Module</span> به <span dir="ltr">`internal`</span> <span dir="ltr">Module</span> دیگر به‌عنوان <span dir="ltr">Integration</span>
 
 ## 8. قواعد پاسخ
 
-- <bdi dir="ltr">Diagram</bdi> زیبا بدون جدول <bdi dir="ltr">Ownership</bdi> پذیرفته نیست.
-- برچسب <bdi dir="ltr">Pattern</bdi> بدون دلیل نصف امتیاز هم نمی‌گیرد.
-- می‌توانی بخشی را <bdi dir="ltr">`Open Question`</bdi> بگذاری، اگر <bdi dir="ltr">Risk</bdi> و <bdi dir="ltr">Validation owner</bdi> را مشخص کنی.
-- لازم نیست <bdi dir="ltr">Transport</bdi> یا <bdi dir="ltr">Schema</bdi> نهایی طراحی کنی.
-- لازم نیست سند حسابداری دقیق بسازی؛ باید نیاز یا عدم‌نیاز آن را با <bdi dir="ltr">Fact</bdi> و <bdi dir="ltr">Owner</bdi> تحلیل کنی.
+- <span dir="ltr">Diagram</span> زیبا بدون جدول <span dir="ltr">Ownership</span> پذیرفته نیست.
+- برچسب <span dir="ltr">Pattern</span> بدون دلیل نصف امتیاز هم نمی‌گیرد.
+- می‌توانی بخشی را <span dir="ltr">`Open Question`</span> بگذاری، اگر <span dir="ltr">Risk</span> و <span dir="ltr">Validation owner</span> را مشخص کنی.
+- لازم نیست <span dir="ltr">Transport</span> یا <span dir="ltr">Schema</span> نهایی طراحی کنی.
+- لازم نیست سند حسابداری دقیق بسازی؛ باید نیاز یا عدم‌نیاز آن را با <span dir="ltr">Fact</span> و <span dir="ltr">Owner</span> تحلیل کنی.
 - داده و نام واقعی بانک در پاسخ عمومی نگذار.
 
 ## 9. تمرین مستقل و آزمون خروج
 
-[<bdi dir="ltr">Day 07 Exercise</bdi> — <bdi dir="ltr">Sprint Gate</bdi>](../exercises/day-07-sprint-gate.md) همان تمرین مستقل و آزمون خروج این روز است. پاسخ خام را در [<bdi dir="ltr">Sprint 01 Gate Response</bdi>](../submissions/sprint-01-gate-response.md) ثبت کن.
+[<span dir="ltr">Day 07 Exercise</span> — <span dir="ltr">Sprint Gate</span>](../exercises/day-07-sprint-gate.md) همان تمرین مستقل و آزمون خروج این روز است. پاسخ خام را در [<span dir="ltr">Sprint 01 Gate Response</span>](../submissions/sprint-01-gate-response.md) ثبت کن.
 
-## 10. پس از <bdi dir="ltr">Submission</bdi>
+## 10. پس از <span dir="ltr">Submission</span>
 
-پاسخ را برای <bdi dir="ltr">Review</bdi> بفرست. <bdi dir="ltr">Review</bdi> در پنج دسته انجام می‌شود:
+پاسخ را برای <span dir="ltr">Review</span> بفرست. <span dir="ltr">Review</span> در پنج دسته انجام می‌شود:
 
-1. <bdi dir="ltr">Concept</bdi>
-2. <bdi dir="ltr">Boundary</bdi>
-3. <bdi dir="ltr">Ownership</bdi>
-4. <bdi dir="ltr">Contract/Failure</bdi>
-5. <bdi dir="ltr">Code/Verification</bdi>
+1. <span dir="ltr">Concept</span>
+2. <span dir="ltr">Boundary</span>
+3. <span dir="ltr">Ownership</span>
+4. <span dir="ltr">Contract/Failure</span>
+5. <span dir="ltr">Code/Verification</span>
 
-اگر <bdi dir="ltr">Gate</bdi> پاس نشود، کل هفته تکرار نمی‌شود. فقط ضعیف‌ترین <bdi dir="ltr">Boundary</bdi> با سناریوی کوچک‌تر بازطراحی و دوباره دفاع می‌شود.
+اگر <span dir="ltr">Gate</span> پاس نشود، کل هفته تکرار نمی‌شود. فقط ضعیف‌ترین <span dir="ltr">Boundary</span> با سناریوی کوچک‌تر بازطراحی و دوباره دفاع می‌شود.
 
-## 11. منابع اصلی و مجاز برای <bdi dir="ltr">Preparation</bdi>
+## 11. منابع اصلی و مجاز برای <span dir="ltr">Preparation</span>
 
-- <bdi dir="ltr">Artifact</bdi>های خودت در <bdi dir="ltr">Week 01</bdi> و <bdi dir="ltr">Week 02</bdi>
-- [<bdi dir="ltr">DDD Reference</bdi>](https://www.domainlanguage.com/wp-content/uploads/2016/05/DDD_Reference_2015-03.pdf)
-- [<bdi dir="ltr">Spring Modulith Verification</bdi>](https://docs.spring.io/spring-modulith/reference/verification.html)
-- [<bdi dir="ltr">BIAN Service Landscape 14.0</bdi>](https://bian.org/deliverables/service-landscape/) فقط برای <bdi dir="ltr">Gap Check</bdi>
+- <span dir="ltr">Artifact</span>های خودت در <span dir="ltr">Week 01</span> و <span dir="ltr">Week 02</span>
+- [<span dir="ltr">DDD Reference</span>](https://www.domainlanguage.com/wp-content/uploads/2016/05/DDD_Reference_2015-03.pdf)
+- [<span dir="ltr">Spring Modulith Verification</span>](https://docs.spring.io/spring-modulith/reference/verification.html)
+- [<span dir="ltr">BIAN Service Landscape 14.0</span>](https://bian.org/deliverables/service-landscape/) فقط برای <span dir="ltr">Gap Check</span>
 
-در زمان دفاع، پاسخ باید از مدل خودت بیاید؛ نقل نام <bdi dir="ltr">Pattern</bdi> بدون توضیح <bdi dir="ltr">Forces</bdi> کافی نیست.
+در زمان دفاع، پاسخ باید از مدل خودت بیاید؛ نقل نام <span dir="ltr">Pattern</span> بدون توضیح <span dir="ltr">Forces</span> کافی نیست.
 
 </div>

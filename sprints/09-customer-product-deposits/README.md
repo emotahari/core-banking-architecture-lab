@@ -1,23 +1,23 @@
 <!-- bidi: rtl; code: ltr -->
 <div dir="rtl" align="right">
 
-# <bdi dir="ltr">Sprint 09</bdi> — <bdi dir="ltr">Customer</bdi>، <bdi dir="ltr">Product</bdi>، <bdi dir="ltr">Deposits</bdi> و <bdi dir="ltr">Teller</bdi>
+# <span dir="ltr">Sprint 09</span> — <span dir="ltr">Customer</span>، <span dir="ltr">Product</span>، <span dir="ltr">Deposits</span> و <span dir="ltr">Teller</span>
 
-- <bdi dir="ltr">Weeks: 17</bdi>–18
-- <bdi dir="ltr">Status: Backlog</bdi>
+- <span dir="ltr">Weeks: 17</span>–18
+- <span dir="ltr">Status: Backlog</span>
 
-## <bdi dir="ltr">Week 17</bdi>
+## <span dir="ltr">Week 17</span>
 
-<bdi dir="ltr">Party/Customer</bdi>، <bdi dir="ltr">KYC</bdi>، <bdi dir="ltr">Product</bdi>، <bdi dir="ltr">Pricing</bdi>، <bdi dir="ltr">Eligibility</bdi>، <bdi dir="ltr">Agreement</bdi>، <bdi dir="ltr">Temporal Data</bdi> و <bdi dir="ltr">Immutable Snapshot.</bdi>
+<span dir="ltr">Party/Customer</span>، <span dir="ltr">KYC</span>، <span dir="ltr">Product</span>، <span dir="ltr">Pricing</span>، <span dir="ltr">Eligibility</span>، <span dir="ltr">Agreement</span>، <span dir="ltr">Temporal Data</span> و <span dir="ltr">Immutable Snapshot.</span>
 
-## <bdi dir="ltr">Week 18</bdi>
+## <span dir="ltr">Week 18</span>
 
-چرخهٔ کامل <bdi dir="ltr">Deposits</bdi>، سود، شکست سپرده، <bdi dir="ltr">Business Calendar</bdi>، <bdi dir="ltr">Teller Session</bdi>، <bdi dir="ltr">Cashbox</bdi> و <bdi dir="ltr">Vault.</bdi>
+چرخهٔ کامل <span dir="ltr">Deposits</span>، سود، شکست سپرده، <span dir="ltr">Business Calendar</span>، <span dir="ltr">Teller Session</span>، <span dir="ltr">Cashbox</span> و <span dir="ltr">Vault.</span>
 
-## <bdi dir="ltr">Gate</bdi>
+## <span dir="ltr">Gate</span>
 
-تغییر <bdi dir="ltr">Master Data</bdi> نباید تاریخچهٔ قرارداد را عوض کند و <bdi dir="ltr">Accounting</bdi> مالک وضعیت عملیاتی سپرده نیست.
+تغییر <span dir="ltr">Master Data</span> نباید تاریخچهٔ قرارداد را عوض کند و <span dir="ltr">Accounting</span> مالک وضعیت عملیاتی سپرده نیست.
 
-محتوا و اینفوگرافیک روزانه هنگام ورود این <bdi dir="ltr">Sprint</bdi> تولید و <bdi dir="ltr">Version</bdi> می‌شوند.
+محتوا و اینفوگرافیک روزانه هنگام ورود این <span dir="ltr">Sprint</span> تولید و <span dir="ltr">Version</span> می‌شوند.
 
 </div>

@@ -1,34 +1,34 @@
 <!-- bidi: rtl; code: ltr -->
 <div dir="rtl" align="right">
 
-# <bdi dir="ltr">Week 02</bdi> — <bdi dir="ltr">Strategic DDD</bdi> و مالکیت
+# <span dir="ltr">Week 02</span> — <span dir="ltr">Strategic DDD</span> و مالکیت
 
-- <bdi dir="ltr">Status:</bdi> **<bdi dir="ltr">Ready</bdi>**
-- <bdi dir="ltr">Core time budget:</bdi> **<bdi dir="ltr">360 minutes</bdi> — <bdi dir="ltr">unchanged</bdi>**
-- <bdi dir="ltr">Expansion budget:</bdi> **<bdi dir="ltr">150 minutes</bdi> — <bdi dir="ltr">105 Code Craft</bdi> + <bdi dir="ltr">45 Case File</bdi>**
-- <bdi dir="ltr">Full expanded budget:</bdi> **<bdi dir="ltr">510 minutes</bdi>**
-- <bdi dir="ltr">Banking lens:</bdi> اعطای تسهیلات، واریز به سپرده و مسدودی قضایی
-- <bdi dir="ltr">Main question:</bdi> هر مدل، داده و تصمیم در کدام <bdi dir="ltr">Bounded Context</bdi> معنا و مالک دارد؟
-- <bdi dir="ltr">Technical outcome:</bdi> شش <bdi dir="ltr">Application Module</bdi> قابل <bdi dir="ltr">Verification</bdi> در <bdi dir="ltr">Spring Modulith</bdi>
+- <span dir="ltr">Status:</span> **<span dir="ltr">Ready</span>**
+- <span dir="ltr">Core time budget:</span> **<span dir="ltr">360 minutes</span> — <span dir="ltr">unchanged</span>**
+- <span dir="ltr">Expansion budget:</span> **<span dir="ltr">150 minutes</span> — <span dir="ltr">105 Code Craft</span> + <span dir="ltr">45 Case File</span>**
+- <span dir="ltr">Full expanded budget:</span> **<span dir="ltr">510 minutes</span>**
+- <span dir="ltr">Banking lens:</span> اعطای تسهیلات، واریز به سپرده و مسدودی قضایی
+- <span dir="ltr">Main question:</span> هر مدل، داده و تصمیم در کدام <span dir="ltr">Bounded Context</span> معنا و مالک دارد؟
+- <span dir="ltr">Technical outcome:</span> شش <span dir="ltr">Application Module</span> قابل <span dir="ltr">Verification</span> در <span dir="ltr">Spring Modulith</span>
 
 ![برنامهٔ دقیق هفتهٔ دوم](week-02-plan.svg)
 
 ## چرا این هفته وجود دارد؟
 
-در <bdi dir="ltr">Week 01</bdi> یاد گرفتیم از <bdi dir="ltr">Capability</bdi> و مسئلهٔ کسب‌وکاری به <bdi dir="ltr">Contract</bdi> برسیم و نباید از جدول، سامانه یا <bdi dir="ltr">Microservice</bdi> شروع کنیم. <bdi dir="ltr">Week 02</bdi> پاسخ می‌دهد که **مرزهای مدل کجا هستند، رابطهٔ آن‌ها چیست و چه کسی حق تصمیم‌گیری و تغییر هر <bdi dir="ltr">Fact</bdi> را دارد**.
+در <span dir="ltr">Week 01</span> یاد گرفتیم از <span dir="ltr">Capability</span> و مسئلهٔ کسب‌وکاری به <span dir="ltr">Contract</span> برسیم و نباید از جدول، سامانه یا <span dir="ltr">Microservice</span> شروع کنیم. <span dir="ltr">Week 02</span> پاسخ می‌دهد که **مرزهای مدل کجا هستند، رابطهٔ آن‌ها چیست و چه کسی حق تصمیم‌گیری و تغییر هر <span dir="ltr">Fact</span> را دارد**.
 
-این هفته هنوز طراحی <bdi dir="ltr">Microservice</bdi> یا تراکنش توزیع‌شده نیست. شش ماژول <bdi dir="ltr">Java</bdi> یک **فرضیهٔ اجرایی و قابل‌آزمون دربارهٔ مرزها** هستند؛ نه اثبات اینکه بانک باید دقیقاً شش سرویس مستقل داشته باشد.
+این هفته هنوز طراحی <span dir="ltr">Microservice</span> یا تراکنش توزیع‌شده نیست. شش ماژول <span dir="ltr">Java</span> یک **فرضیهٔ اجرایی و قابل‌آزمون دربارهٔ مرزها** هستند؛ نه اثبات اینکه بانک باید دقیقاً شش سرویس مستقل داشته باشد.
 
 ## پیش‌نیاز واقعی
 
-پیش از شروع، باید بتوانی بدون مراجعه به <bdi dir="ltr">Week 01</bdi> توضیح بدهی:
+پیش از شروع، باید بتوانی بدون مراجعه به <span dir="ltr">Week 01</span> توضیح بدهی:
 
-1. <bdi dir="ltr">Capability</bdi> با <bdi dir="ltr">Process</bdi>، <bdi dir="ltr">Application</bdi> و <bdi dir="ltr">API</bdi> یکی نیست.
-2. <bdi dir="ltr">Domain</bdi>، <bdi dir="ltr">Bounded Context</bdi>، <bdi dir="ltr">Module</bdi> و <bdi dir="ltr">Deployable Service</bdi> چهار مفهوم متفاوت‌اند.
-3. <bdi dir="ltr">BIAN Service Domain</bdi> به‌طور خودکار <bdi dir="ltr">Microservice</bdi> نمی‌شود.
-4. <bdi dir="ltr">Command</bdi> قصد انجام کار و <bdi dir="ltr">Event</bdi> واقعیت رخ‌داده را بیان می‌کند.
+1. <span dir="ltr">Capability</span> با <span dir="ltr">Process</span>، <span dir="ltr">Application</span> و <span dir="ltr">API</span> یکی نیست.
+2. <span dir="ltr">Domain</span>، <span dir="ltr">Bounded Context</span>، <span dir="ltr">Module</span> و <span dir="ltr">Deployable Service</span> چهار مفهوم متفاوت‌اند.
+3. <span dir="ltr">BIAN Service Domain</span> به‌طور خودکار <span dir="ltr">Microservice</span> نمی‌شود.
+4. <span dir="ltr">Command</span> قصد انجام کار و <span dir="ltr">Event</span> واقعیت رخ‌داده را بیان می‌کند.
 
-اگر <bdi dir="ltr">Exit Ticket</bdi> روز اول <bdi dir="ltr">Week 01</bdi> هنوز <bdi dir="ltr">Review</bdi> نشده است، می‌توانی محتوای این هفته را ببینی، اما <bdi dir="ltr">Gate</bdi> اسپرینت را انجام نده.
+اگر <span dir="ltr">Exit Ticket</span> روز اول <span dir="ltr">Week 01</span> هنوز <span dir="ltr">Review</span> نشده است، می‌توانی محتوای این هفته را ببینی، اما <span dir="ltr">Gate</span> اسپرینت را انجام نده.
 
 ## قانون اجرای هفته
 
@@ -36,37 +36,37 @@
 
 1. درس همان روز را یک‌بار پیوسته بخوان.
 2. مثال هدایت‌شده را با کاغذ یا فایل بازسازی کن.
-3. تمرین مستقل را در <bdi dir="ltr">Workbook</bdi> انجام بده.
-4. درس را ببند و <bdi dir="ltr">Exit Ticket</bdi> را بدون مراجعه پاسخ بده.
-5. فقط پس از <bdi dir="ltr">Review</bdi> استاد، <bdi dir="ltr">Artifact</bdi> را <bdi dir="ltr">`Accepted`</bdi> یا روز را <bdi dir="ltr">`Done`</bdi> اعلام کن.
+3. تمرین مستقل را در <span dir="ltr">Workbook</span> انجام بده.
+4. درس را ببند و <span dir="ltr">Exit Ticket</span> را بدون مراجعه پاسخ بده.
+5. فقط پس از <span dir="ltr">Review</span> استاد، <span dir="ltr">Artifact</span> را <span dir="ltr">`Accepted`</span> یا روز را <span dir="ltr">`Done`</span> اعلام کن.
 
-پاسخ‌های مستقل را در [<bdi dir="ltr">Week 02 Workbook</bdi>](submissions/week-02-workbook.md) ثبت کن؛ پاسخ خام را بعد از <bdi dir="ltr">Review</bdi> پاک نکن.
+پاسخ‌های مستقل را در [<span dir="ltr">Week 02 Workbook</span>](submissions/week-02-workbook.md) ثبت کن؛ پاسخ خام را بعد از <span dir="ltr">Review</span> پاک نکن.
 
 ## ترتیب دقیق روزها
 
 | روز | زمان | درس | تمرین و شاهد پایان | آزمون خروج |
 |---|---:|---|---|---|
-| ۱ | ۵۰ دقیقه | [<bdi dir="ltr">Domain</bdi>، <bdi dir="ltr">Subdomain</bdi> و اهمیت راهبردی](lessons/day-01-domain-subdomain-strategy-fa.md) | [<bdi dir="ltr">Subdomain Matrix</bdi>](exercises/day-01-subdomain-matrix.md) | [<bdi dir="ltr">Exit Ticket</bdi>](quizzes/day-01-exit-ticket.md) |
-| ۲ | ۴۵ دقیقه | [<bdi dir="ltr">Bounded Context</bdi> و <bdi dir="ltr">Ubiquitous Language</bdi>](lessons/day-02-bounded-context-language-fa.md) | [<bdi dir="ltr">Language Conflicts</bdi>](exercises/day-02-language-conflicts.md) | [<bdi dir="ltr">Exit Ticket</bdi>](quizzes/day-02-exit-ticket.md) |
-| ۳ | ۵۰ دقیقه | [<bdi dir="ltr">Context Map</bdi> و الگوهای رابطه](lessons/day-03-context-map-patterns-fa.md) | [<bdi dir="ltr">Context Relations</bdi>](exercises/day-03-context-map.md) | [<bdi dir="ltr">Exit Ticket</bdi>](quizzes/day-03-exit-ticket.md) |
-| ۴ | ۵۰ دقیقه | [مالکیت داده و تصمیم](lessons/day-04-ownership-source-of-truth-fa.md) | [<bdi dir="ltr">Ownership Matrix v1</bdi>](exercises/day-04-ownership-matrix.md) | [<bdi dir="ltr">Exit Ticket</bdi>](quizzes/day-04-exit-ticket.md) |
-| ۵ | ۱۰۰ دقیقه | [تبدیل فرضیهٔ مرزها به <bdi dir="ltr">Spring Modulith</bdi>](lessons/day-05-spring-modulith-modules-fa.md) | [<bdi dir="ltr">Six-module Skeleton</bdi>](exercises/day-05-module-skeleton.md) | [<bdi dir="ltr">Exit Ticket</bdi>](quizzes/day-05-exit-ticket.md) |
-| ۶ | ۴۵ دقیقه | [<bdi dir="ltr">Architecture Fitness Test</bdi>](lessons/day-06-architecture-fitness-test-fa.md) | [<bdi dir="ltr">Module Verification</bdi>](exercises/day-06-module-verification.md) | [<bdi dir="ltr">Exit Ticket</bdi>](quizzes/day-06-exit-ticket.md) |
-| ۷ | ۲۰ دقیقه | [<bdi dir="ltr">Gate</bdi> اسپرینت اول](lessons/day-07-sprint-gate-defense-fa.md) | [دفاع مسدودی قضایی](exercises/day-07-sprint-gate.md) | <bdi dir="ltr">Rubric</bdi> داخل <bdi dir="ltr">Gate</bdi> |
+| ۱ | ۵۰ دقیقه | [<span dir="ltr">Domain</span>، <span dir="ltr">Subdomain</span> و اهمیت راهبردی](lessons/day-01-domain-subdomain-strategy-fa.md) | [<span dir="ltr">Subdomain Matrix</span>](exercises/day-01-subdomain-matrix.md) | [<span dir="ltr">Exit Ticket</span>](quizzes/day-01-exit-ticket.md) |
+| ۲ | ۴۵ دقیقه | [<span dir="ltr">Bounded Context</span> و <span dir="ltr">Ubiquitous Language</span>](lessons/day-02-bounded-context-language-fa.md) | [<span dir="ltr">Language Conflicts</span>](exercises/day-02-language-conflicts.md) | [<span dir="ltr">Exit Ticket</span>](quizzes/day-02-exit-ticket.md) |
+| ۳ | ۵۰ دقیقه | [<span dir="ltr">Context Map</span> و الگوهای رابطه](lessons/day-03-context-map-patterns-fa.md) | [<span dir="ltr">Context Relations</span>](exercises/day-03-context-map.md) | [<span dir="ltr">Exit Ticket</span>](quizzes/day-03-exit-ticket.md) |
+| ۴ | ۵۰ دقیقه | [مالکیت داده و تصمیم](lessons/day-04-ownership-source-of-truth-fa.md) | [<span dir="ltr">Ownership Matrix v1</span>](exercises/day-04-ownership-matrix.md) | [<span dir="ltr">Exit Ticket</span>](quizzes/day-04-exit-ticket.md) |
+| ۵ | ۱۰۰ دقیقه | [تبدیل فرضیهٔ مرزها به <span dir="ltr">Spring Modulith</span>](lessons/day-05-spring-modulith-modules-fa.md) | [<span dir="ltr">Six-module Skeleton</span>](exercises/day-05-module-skeleton.md) | [<span dir="ltr">Exit Ticket</span>](quizzes/day-05-exit-ticket.md) |
+| ۶ | ۴۵ دقیقه | [<span dir="ltr">Architecture Fitness Test</span>](lessons/day-06-architecture-fitness-test-fa.md) | [<span dir="ltr">Module Verification</span>](exercises/day-06-module-verification.md) | [<span dir="ltr">Exit Ticket</span>](quizzes/day-06-exit-ticket.md) |
+| ۷ | ۲۰ دقیقه | [<span dir="ltr">Gate</span> اسپرینت اول](lessons/day-07-sprint-gate-defense-fa.md) | [دفاع مسدودی قضایی](exercises/day-07-sprint-gate.md) | <span dir="ltr">Rubric</span> داخل <span dir="ltr">Gate</span> |
 | **جمع** | **۳۶۰ دقیقه** |  |  |  |
 
-ریزبودجهٔ پیشنهادی: روزهای ۱ تا ۴ شامل ۲۰ تا ۲۵ دقیقه درس، ۱۵ تا ۲۰ دقیقه تمرین و ۵ دقیقه آزمون/مرجع‌اند؛ روز ۵ شامل ۲۰ دقیقه درس، ۷۵ دقیقه کدنویسی و ۵ دقیقه آزمون است؛ روز ۶ شامل ۱۰ دقیقه مرور، ۳۰ دقیقه <bdi dir="ltr">Verification</bdi> و ۵ دقیقه آزمون است. دفاع استاد پس از <bdi dir="ltr">Submission</bdi> جزو بودجهٔ خودخوان ۳۶۰ دقیقه‌ای حساب نشده است.
+ریزبودجهٔ پیشنهادی: روزهای ۱ تا ۴ شامل ۲۰ تا ۲۵ دقیقه درس، ۱۵ تا ۲۰ دقیقه تمرین و ۵ دقیقه آزمون/مرجع‌اند؛ روز ۵ شامل ۲۰ دقیقه درس، ۷۵ دقیقه کدنویسی و ۵ دقیقه آزمون است؛ روز ۶ شامل ۱۰ دقیقه مرور، ۳۰ دقیقه <span dir="ltr">Verification</span> و ۵ دقیقه آزمون است. دفاع استاد پس از <span dir="ltr">Submission</span> جزو بودجهٔ خودخوان ۳۶۰ دقیقه‌ای حساب نشده است.
 
 ## مسیر افزودهٔ این هفته
 
-هفت روز و <bdi dir="ltr">Gate</bdi> بالا همان برنامهٔ اصلی‌اند و هیچ بخشی از آن‌ها با جلسات زیر جایگزین نمی‌شود. پس از <bdi dir="ltr">Day 07</bdi>، دو جلسهٔ افزوده را انجام بده:
+هفت روز و <span dir="ltr">Gate</span> بالا همان برنامهٔ اصلی‌اند و هیچ بخشی از آن‌ها با جلسات زیر جایگزین نمی‌شود. پس از <span dir="ltr">Day 07</span>، دو جلسهٔ افزوده را انجام بده:
 
 | جلسه | زمان | محتوا | تمرین و شاهد پایان | آزمون/دفاع |
 |---|---:|---|---|---|
-| ۸ | ۱۰۵ دقیقه | [<bdi dir="ltr">Clean Code</bdi> و <bdi dir="ltr">Strategy/Factory</bdi> روی <bdi dir="ltr">Transfer Fee</bdi>](lessons/day-08-clean-code-strategy-refactoring-fa.md) | [<bdi dir="ltr">Runnable Refactoring Lab</bdi>](exercises/day-08-transfer-fee-refactoring.md) + [<bdi dir="ltr">Code Review Checklist</bdi>](artifacts/day-08-code-review-checklist.md) | [<bdi dir="ltr">Exit Ticket</bdi>](quizzes/day-08-exit-ticket.md) |
-| ۹ | ۴۵ دقیقه | [پروندهٔ <bdi dir="ltr">Monzo:</bdi> از <bdi dir="ltr">Mondo</bdi> تا بانک ۳۰۰۰+ <bdi dir="ltr">Microservice</bdi>](case-studies/week-02-monzo-fa.md) | [<bdi dir="ltr">Architecture Review</bdi>](exercises/day-09-monzo-architecture-review.md) | دفاع پنج‌سؤالی داخل پرونده |
+| ۸ | ۱۰۵ دقیقه | [<span dir="ltr">Clean Code</span> و <span dir="ltr">Strategy/Factory</span> روی <span dir="ltr">Transfer Fee</span>](lessons/day-08-clean-code-strategy-refactoring-fa.md) | [<span dir="ltr">Runnable Refactoring Lab</span>](exercises/day-08-transfer-fee-refactoring.md) + [<span dir="ltr">Code Review Checklist</span>](artifacts/day-08-code-review-checklist.md) | [<span dir="ltr">Exit Ticket</span>](quizzes/day-08-exit-ticket.md) |
+| ۹ | ۴۵ دقیقه | [پروندهٔ <span dir="ltr">Monzo:</span> از <span dir="ltr">Mondo</span> تا بانک ۳۰۰۰+ <span dir="ltr">Microservice</span>](case-studies/week-02-monzo-fa.md) | [<span dir="ltr">Architecture Review</span>](exercises/day-09-monzo-architecture-review.md) | دفاع پنج‌سؤالی داخل پرونده |
 
-<bdi dir="ltr">Session 08</bdi> یک <bdi dir="ltr">Baseline</bdi> اجرایی در <bdi dir="ltr">Test scope</bdi> دارد تا ابتدا رفتار را تثبیت و سپس <bdi dir="ltr">Refactor</bdi> کنی:
+<span dir="ltr">Session 08</span> یک <span dir="ltr">Baseline</span> اجرایی در <span dir="ltr">Test scope</span> دارد تا ابتدا رفتار را تثبیت و سپس <span dir="ltr">Refactor</span> کنی:
 
 
 </div>
@@ -91,74 +91,74 @@ backend/banking-modulith/src/test/java/
 
 ### تحلیل و مدل
 
-- [<bdi dir="ltr">Subdomain Matrix working draft</bdi>](artifacts/subdomain-matrix-working-draft.md)
-- [<bdi dir="ltr">Language Conflicts working draft</bdi>](artifacts/language-conflicts-working-draft.md)
-- [<bdi dir="ltr">Domain Map v1</bdi>](artifacts/domain-map-working-draft.md)
-- [<bdi dir="ltr">Context Map v1</bdi>](artifacts/context-map-template.md)
-- [<bdi dir="ltr">Data/Decision Ownership Matrix v1</bdi>](artifacts/ownership-matrix-template.md)
-- شش [<bdi dir="ltr">Domain Dossier</bdi>](artifacts/domain-dossiers/README.md) اولیه
+- [<span dir="ltr">Subdomain Matrix working draft</span>](artifacts/subdomain-matrix-working-draft.md)
+- [<span dir="ltr">Language Conflicts working draft</span>](artifacts/language-conflicts-working-draft.md)
+- [<span dir="ltr">Domain Map v1</span>](artifacts/domain-map-working-draft.md)
+- [<span dir="ltr">Context Map v1</span>](artifacts/context-map-template.md)
+- [<span dir="ltr">Data/Decision Ownership Matrix v1</span>](artifacts/ownership-matrix-template.md)
+- شش [<span dir="ltr">Domain Dossier</span>](artifacts/domain-dossiers/README.md) اولیه
 
-### کد و <bdi dir="ltr">Verification</bdi>
+### کد و <span dir="ltr">Verification</span>
 
-- شش <bdi dir="ltr">Application Module</bdi> منطقی: <bdi dir="ltr">`partycustomer`</bdi>، <bdi dir="ltr">`productagreement`</bdi>، <bdi dir="ltr">`deposits`</bdi>، <bdi dir="ltr">`lending`</bdi>، <bdi dir="ltr">`payments`</bdi> و <bdi dir="ltr">`accounting`</bdi>
-- <bdi dir="ltr">API</bdi> آشکار و <bdi dir="ltr">Package</bdi> داخلی برای هر <bdi dir="ltr">Module</bdi>
-- [<bdi dir="ltr">Dependency Policy</bdi>](artifacts/module-dependency-policy.md) با دلیل هر وابستگی
-- <bdi dir="ltr">`ApplicationModules.verify()`</bdi> سبز
-- یک آزمایش منفی برای <bdi dir="ltr">Cycle</bdi> یا دسترسی به <bdi dir="ltr">Internal</bdi> و ثبت شاهد شکست
-- <bdi dir="ltr">Refactor</bdi> کاتای <bdi dir="ltr">Transfer Fee</bdi> از <bdi dir="ltr">Baseline</bdi> سبز با <bdi dir="ltr">Characterization Test</bdi>
-- <bdi dir="ltr">Pattern Decision</bdi> برای <bdi dir="ltr">Strategy/Factory</bdi> و ثبت گزینهٔ ساده‌تر
-- <bdi dir="ltr">Code Review</bdi> شامل <bdi dir="ltr">Complexity</bdi> اضافه‌شده و <bdi dir="ltr">Debt</bdi> باقی‌مانده
+- شش <span dir="ltr">Application Module</span> منطقی: <span dir="ltr">`partycustomer`</span>، <span dir="ltr">`productagreement`</span>، <span dir="ltr">`deposits`</span>، <span dir="ltr">`lending`</span>، <span dir="ltr">`payments`</span> و <span dir="ltr">`accounting`</span>
+- <span dir="ltr">API</span> آشکار و <span dir="ltr">Package</span> داخلی برای هر <span dir="ltr">Module</span>
+- [<span dir="ltr">Dependency Policy</span>](artifacts/module-dependency-policy.md) با دلیل هر وابستگی
+- <span dir="ltr">`ApplicationModules.verify()`</span> سبز
+- یک آزمایش منفی برای <span dir="ltr">Cycle</span> یا دسترسی به <span dir="ltr">Internal</span> و ثبت شاهد شکست
+- <span dir="ltr">Refactor</span> کاتای <span dir="ltr">Transfer Fee</span> از <span dir="ltr">Baseline</span> سبز با <span dir="ltr">Characterization Test</span>
+- <span dir="ltr">Pattern Decision</span> برای <span dir="ltr">Strategy/Factory</span> و ثبت گزینهٔ ساده‌تر
+- <span dir="ltr">Code Review</span> شامل <span dir="ltr">Complexity</span> اضافه‌شده و <span dir="ltr">Debt</span> باقی‌مانده
 
 ### دفاع و گزارش
 
-- [<bdi dir="ltr">Sprint 01 Gate Evidence</bdi>](artifacts/sprint-01-gate-evidence-template.md)
-- [<bdi dir="ltr">Week 02 Report</bdi>](artifacts/week-02-report-template.md)
-- دفاع حداکثر ده‌دقیقه‌ای از <bdi dir="ltr">Boundary</bdi> و <bdi dir="ltr">Ownership</bdi>
-- <bdi dir="ltr">Architecture Review</bdi> پروندهٔ <bdi dir="ltr">Monzo</bdi> با تفکیک <bdi dir="ltr">Fact</bdi>، <bdi dir="ltr">Inference</bdi> و <bdi dir="ltr">Unknown</bdi>
+- [<span dir="ltr">Sprint 01 Gate Evidence</span>](artifacts/sprint-01-gate-evidence-template.md)
+- [<span dir="ltr">Week 02 Report</span>](artifacts/week-02-report-template.md)
+- دفاع حداکثر ده‌دقیقه‌ای از <span dir="ltr">Boundary</span> و <span dir="ltr">Ownership</span>
+- <span dir="ltr">Architecture Review</span> پروندهٔ <span dir="ltr">Monzo</span> با تفکیک <span dir="ltr">Fact</span>، <span dir="ltr">Inference</span> و <span dir="ltr">Unknown</span>
 
-## <bdi dir="ltr">Definition of Done</bdi>
+## <span dir="ltr">Definition of Done</span>
 
-<bdi dir="ltr">Week 02</bdi> زمانی <bdi dir="ltr">Done</bdi> است که:
+<span dir="ltr">Week 02</span> زمانی <span dir="ltr">Done</span> است که:
 
-- هر <bdi dir="ltr">Subdomain</bdi> با شواهد و <bdi dir="ltr">Forces</bdi> طبقه‌بندی شده باشد؛ نه با سلیقه یا نام سامانه.
-- برای اصطلاحات مهم، <bdi dir="ltr">Context</bdi> و معنای دقیق ثبت شده باشد.
-- هر رابطه در <bdi dir="ltr">Context Map</bdi> جهت، <bdi dir="ltr">Pattern</bdi>، <bdi dir="ltr">Contract</bdi> و اثر شکست داشته باشد.
-- برای هر <bdi dir="ltr">Fact</bdi> یا <bdi dir="ltr">Decision</bdi> دقیقاً یک <bdi dir="ltr">Authority</bdi> مشخص باشد.
-- <bdi dir="ltr">Copy</bdi>، <bdi dir="ltr">Snapshot</bdi>، <bdi dir="ltr">Cache</bdi> و <bdi dir="ltr">Projection</bdi> با <bdi dir="ltr">Owner</bdi> اشتباه نشده باشند.
-- هیچ <bdi dir="ltr">Module</bdi> از <bdi dir="ltr">Package</bdi> داخلی <bdi dir="ltr">Module</bdi> دیگر استفاده نکند.
-- <bdi dir="ltr">Dependency</bdi>های مجاز صریح باشند و <bdi dir="ltr">Cycle</bdi> وجود نداشته باشد.
-- <bdi dir="ltr">`mvn verify`</bdi> سبز باشد.
-- <bdi dir="ltr">Gate</bdi> اسپرینت حداقل ۸ از ۱۰ بگیرد و هیچ <bdi dir="ltr">Critical Error</bdi> نداشته باشد.
-- <bdi dir="ltr">Baseline</bdi> و نسخهٔ <bdi dir="ltr">Refactored</bdi> کاتای <bdi dir="ltr">Code Craft</bdi> هر دو تست سبز و <bdi dir="ltr">Edge Case</bdi> صریح داشته باشند.
-- انتخاب یا رد <bdi dir="ltr">Strategy/Factory</bdi> با <bdi dir="ltr">Forces</bdi> و <bdi dir="ltr">Cost</bdi> دفاع شده باشد؛ صرف استفاده از <bdi dir="ltr">Pattern</bdi> کافی نیست.
-- پروندهٔ <bdi dir="ltr">Monzo</bdi> خوانده و <bdi dir="ltr">Artifact</bdi> پنج‌سؤالی آن در <bdi dir="ltr">Workbook</bdi> ثبت شده باشد.
+- هر <span dir="ltr">Subdomain</span> با شواهد و <span dir="ltr">Forces</span> طبقه‌بندی شده باشد؛ نه با سلیقه یا نام سامانه.
+- برای اصطلاحات مهم، <span dir="ltr">Context</span> و معنای دقیق ثبت شده باشد.
+- هر رابطه در <span dir="ltr">Context Map</span> جهت، <span dir="ltr">Pattern</span>، <span dir="ltr">Contract</span> و اثر شکست داشته باشد.
+- برای هر <span dir="ltr">Fact</span> یا <span dir="ltr">Decision</span> دقیقاً یک <span dir="ltr">Authority</span> مشخص باشد.
+- <span dir="ltr">Copy</span>، <span dir="ltr">Snapshot</span>، <span dir="ltr">Cache</span> و <span dir="ltr">Projection</span> با <span dir="ltr">Owner</span> اشتباه نشده باشند.
+- هیچ <span dir="ltr">Module</span> از <span dir="ltr">Package</span> داخلی <span dir="ltr">Module</span> دیگر استفاده نکند.
+- <span dir="ltr">Dependency</span>های مجاز صریح باشند و <span dir="ltr">Cycle</span> وجود نداشته باشد.
+- <span dir="ltr">`mvn verify`</span> سبز باشد.
+- <span dir="ltr">Gate</span> اسپرینت حداقل ۸ از ۱۰ بگیرد و هیچ <span dir="ltr">Critical Error</span> نداشته باشد.
+- <span dir="ltr">Baseline</span> و نسخهٔ <span dir="ltr">Refactored</span> کاتای <span dir="ltr">Code Craft</span> هر دو تست سبز و <span dir="ltr">Edge Case</span> صریح داشته باشند.
+- انتخاب یا رد <span dir="ltr">Strategy/Factory</span> با <span dir="ltr">Forces</span> و <span dir="ltr">Cost</span> دفاع شده باشد؛ صرف استفاده از <span dir="ltr">Pattern</span> کافی نیست.
+- پروندهٔ <span dir="ltr">Monzo</span> خوانده و <span dir="ltr">Artifact</span> پنج‌سؤالی آن در <span dir="ltr">Workbook</span> ثبت شده باشد.
 
-## <bdi dir="ltr">Critical Error</bdi>های این هفته
+## <span dir="ltr">Critical Error</span>های این هفته
 
-هرکدام از موارد زیر <bdi dir="ltr">Gate</bdi> را مستقل از جمع امتیاز متوقف می‌کند:
+هرکدام از موارد زیر <span dir="ltr">Gate</span> را مستقل از جمع امتیاز متوقف می‌کند:
 
-1. دو <bdi dir="ltr">Context</bdi> هم‌زمان <bdi dir="ltr">Owner</bdi> یک <bdi dir="ltr">Fact</bdi> با معنای یکسان معرفی شوند.
-2. <bdi dir="ltr">Accounting</bdi> مالک ماندهٔ قابل برداشت یا <bdi dir="ltr">Hold</bdi> عملیاتی سپرده معرفی شود.
-3. <bdi dir="ltr">Legal Orders</bdi> مجاز به <bdi dir="ltr">Update</bdi> مستقیم <bdi dir="ltr">Hold</bdi> یا ماندهٔ <bdi dir="ltr">Deposits</bdi> باشد.
-4. وجود جدول، <bdi dir="ltr">API</bdi>، تیم یا <bdi dir="ltr">BIAN Service Domain</bdi> به‌تنهایی دلیل <bdi dir="ltr">Boundary</bdi> دانسته شود.
-5. دسترسی مستقیم به <bdi dir="ltr">Package</bdi> داخلی یا دیتابیس مشترک به‌عنوان <bdi dir="ltr">Contract</bdi> پذیرفته شود.
-6. <bdi dir="ltr">Context Map</bdi> فقط چند خط بدون جهت، <bdi dir="ltr">Pattern</bdi> و <bdi dir="ltr">Contract</bdi> باشد.
+1. دو <span dir="ltr">Context</span> هم‌زمان <span dir="ltr">Owner</span> یک <span dir="ltr">Fact</span> با معنای یکسان معرفی شوند.
+2. <span dir="ltr">Accounting</span> مالک ماندهٔ قابل برداشت یا <span dir="ltr">Hold</span> عملیاتی سپرده معرفی شود.
+3. <span dir="ltr">Legal Orders</span> مجاز به <span dir="ltr">Update</span> مستقیم <span dir="ltr">Hold</span> یا ماندهٔ <span dir="ltr">Deposits</span> باشد.
+4. وجود جدول، <span dir="ltr">API</span>، تیم یا <span dir="ltr">BIAN Service Domain</span> به‌تنهایی دلیل <span dir="ltr">Boundary</span> دانسته شود.
+5. دسترسی مستقیم به <span dir="ltr">Package</span> داخلی یا دیتابیس مشترک به‌عنوان <span dir="ltr">Contract</span> پذیرفته شود.
+6. <span dir="ltr">Context Map</span> فقط چند خط بدون جهت، <span dir="ltr">Pattern</span> و <span dir="ltr">Contract</span> باشد.
 
 ## خارج از محدوده
 
 این موارد عمداً به هفته‌های بعد موکول شده‌اند:
 
-- طراحی <bdi dir="ltr">Aggregate</bdi> و <bdi dir="ltr">Invariant</bdi>های کامل <bdi dir="ltr">Deposits</bdi>
-- <bdi dir="ltr">Hexagonal Architecture</bdi> و <bdi dir="ltr">Port/Adapter</bdi>های <bdi dir="ltr">Lending</bdi>
-- انتخاب <bdi dir="ltr">REST</bdi> در برابر <bdi dir="ltr">Kafka</bdi>
-- <bdi dir="ltr">Saga</bdi>، <bdi dir="ltr">Outbox</bdi>، <bdi dir="ltr">Exactly-once</bdi> و <bdi dir="ltr">Reconciliation</bdi>
-- طراحی فیزیکی جدول، <bdi dir="ltr">Partitioning</bdi> و <bdi dir="ltr">Locking</bdi>
+- طراحی <span dir="ltr">Aggregate</span> و <span dir="ltr">Invariant</span>های کامل <span dir="ltr">Deposits</span>
+- <span dir="ltr">Hexagonal Architecture</span> و <span dir="ltr">Port/Adapter</span>های <span dir="ltr">Lending</span>
+- انتخاب <span dir="ltr">REST</span> در برابر <span dir="ltr">Kafka</span>
+- <span dir="ltr">Saga</span>، <span dir="ltr">Outbox</span>، <span dir="ltr">Exactly-once</span> و <span dir="ltr">Reconciliation</span>
+- طراحی فیزیکی جدول، <span dir="ltr">Partitioning</span> و <span dir="ltr">Locking</span>
 - سند حسابداری دقیق هر رویداد
 
-در <bdi dir="ltr">Week 02</bdi> فقط به‌اندازه‌ای از این موضوعات حرف می‌زنیم که <bdi dir="ltr">Boundary</bdi> و <bdi dir="ltr">Ownership</bdi> قابل دفاع شوند.
+در <span dir="ltr">Week 02</span> فقط به‌اندازه‌ای از این موضوعات حرف می‌زنیم که <span dir="ltr">Boundary</span> و <span dir="ltr">Ownership</span> قابل دفاع شوند.
 
 ## منابع
 
-مسیر مطالعهٔ محدود و هدفمند در [<bdi dir="ltr">References</bdi>](references/README.md) آمده است. خواندن کل کتاب <bdi dir="ltr">DDD</bdi> یا تمام مستند <bdi dir="ltr">Spring Modulith</bdi> پیش‌نیاز نیست.
+مسیر مطالعهٔ محدود و هدفمند در [<span dir="ltr">References</span>](references/README.md) آمده است. خواندن کل کتاب <span dir="ltr">DDD</span> یا تمام مستند <span dir="ltr">Spring Modulith</span> پیش‌نیاز نیست.
 
 </div>

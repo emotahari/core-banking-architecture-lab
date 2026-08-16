@@ -1,58 +1,58 @@
 <!-- bidi: rtl; code: ltr -->
 <div dir="rtl" align="right">
 
-# <bdi dir="ltr">Day 03 Artifact</bdi> — <bdi dir="ltr">Capability-to-Contract Traceability Chain</bdi>
+# <span dir="ltr">Day 03 Artifact</span> — <span dir="ltr">Capability-to-Contract Traceability Chain</span>
 
-- <bdi dir="ltr">Scenario:</bdi>
-- <bdi dir="ltr">Version:</bdi>
-- <bdi dir="ltr">Status: Working</bdi> / <bdi dir="ltr">Reviewed</bdi> / <bdi dir="ltr">Accepted</bdi>
-- <bdi dir="ltr">Author/date:</bdi>
+- <span dir="ltr">Scenario:</span>
+- <span dir="ltr">Version:</span>
+- <span dir="ltr">Status: Working</span> / <span dir="ltr">Reviewed</span> / <span dir="ltr">Accepted</span>
+- <span dir="ltr">Author/date:</span>
 
-## <bdi dir="ltr">Trigger and outcome</bdi>
+## <span dir="ltr">Trigger and outcome</span>
 
-- <bdi dir="ltr">Trigger:</bdi>
-- <bdi dir="ltr">Expected business outcome:</bdi>
-- <bdi dir="ltr">Safety property:</bdi>
-- <bdi dir="ltr">Out of scope:</bdi>
+- <span dir="ltr">Trigger:</span>
+- <span dir="ltr">Expected business outcome:</span>
+- <span dir="ltr">Safety property:</span>
+- <span dir="ltr">Out of scope:</span>
 
-## <bdi dir="ltr">Forward chain</bdi>
+## <span dir="ltr">Forward chain</span>
 
-| <bdi dir="ltr">Step</bdi> | <bdi dir="ltr">Element</bdi> | <bdi dir="ltr">Type</bdi> | <bdi dir="ltr">Owner/authority</bdi> | <bdi dir="ltr">Evidence</bdi> | <bdi dir="ltr">Boundary rule</bdi> | <bdi dir="ltr">Open question</bdi> |
+| <span dir="ltr">Step</span> | <span dir="ltr">Element</span> | <span dir="ltr">Type</span> | <span dir="ltr">Owner/authority</span> | <span dir="ltr">Evidence</span> | <span dir="ltr">Boundary rule</span> | <span dir="ltr">Open question</span> |
 |---:|---|---|---|---|---|---|
-| 1 |  | <bdi dir="ltr">Outcome/Driver</bdi> |  |  |  |  |
-| 2 |  | <bdi dir="ltr">Capability</bdi> |  |  |  |  |
-| 3 |  | <bdi dir="ltr">Domain/Subdomain</bdi> |  |  |  |  |
-| 4 |  | <bdi dir="ltr">Bounded Context hypothesis</bdi> |  |  |  |  |
-| 5 |  | <bdi dir="ltr">Module/Service candidate</bdi> |  |  |  |  |
-| 6 |  | <bdi dir="ltr">Use Case</bdi> |  |  |  |  |
-| 7 |  | <bdi dir="ltr">Command/Query</bdi> |  |  |  |  |
-| 8 |  | <bdi dir="ltr">Result/Event</bdi> |  |  |  |  |
+| 1 |  | <span dir="ltr">Outcome/Driver</span> |  |  |  |  |
+| 2 |  | <span dir="ltr">Capability</span> |  |  |  |  |
+| 3 |  | <span dir="ltr">Domain/Subdomain</span> |  |  |  |  |
+| 4 |  | <span dir="ltr">Bounded Context hypothesis</span> |  |  |  |  |
+| 5 |  | <span dir="ltr">Module/Service candidate</span> |  |  |  |  |
+| 6 |  | <span dir="ltr">Use Case</span> |  |  |  |  |
+| 7 |  | <span dir="ltr">Command/Query</span> |  |  |  |  |
+| 8 |  | <span dir="ltr">Result/Event</span> |  |  |  |  |
 
-## <bdi dir="ltr">Contract card</bdi>
+## <span dir="ltr">Contract card</span>
 
-- <bdi dir="ltr">Contract name:</bdi>
-- <bdi dir="ltr">Type: Command</bdi> / <bdi dir="ltr">Query</bdi> / <bdi dir="ltr">Event</bdi>
-- <bdi dir="ltr">Business intent/fact:</bdi>
-- <bdi dir="ltr">Producer/owner:</bdi>
-- <bdi dir="ltr">Consumer role:</bdi>
-- <bdi dir="ltr">Preconditions:</bdi>
-- <bdi dir="ltr">Required data and meaning:</bdi>
-- <bdi dir="ltr">Success outcome:</bdi>
-- <bdi dir="ltr">Business rejections:</bdi>
-- <bdi dir="ltr">Correlation/idempotency candidate:</bdi>
-- <bdi dir="ltr">Sensitive data:</bdi>
-- <bdi dir="ltr">Versioning concern:</bdi>
-- <bdi dir="ltr">Unknown:</bdi>
+- <span dir="ltr">Contract name:</span>
+- <span dir="ltr">Type: Command</span> / <span dir="ltr">Query</span> / <span dir="ltr">Event</span>
+- <span dir="ltr">Business intent/fact:</span>
+- <span dir="ltr">Producer/owner:</span>
+- <span dir="ltr">Consumer role:</span>
+- <span dir="ltr">Preconditions:</span>
+- <span dir="ltr">Required data and meaning:</span>
+- <span dir="ltr">Success outcome:</span>
+- <span dir="ltr">Business rejections:</span>
+- <span dir="ltr">Correlation/idempotency candidate:</span>
+- <span dir="ltr">Sensitive data:</span>
+- <span dir="ltr">Versioning concern:</span>
+- <span dir="ltr">Unknown:</span>
 
-## <bdi dir="ltr">Authority matrix</bdi>
+## <span dir="ltr">Authority matrix</span>
 
-| <bdi dir="ltr">Fact/decision</bdi> | <bdi dir="ltr">Single authority</bdi> | <bdi dir="ltr">Copy/projection elsewhere</bdi> | <bdi dir="ltr">Forbidden writer</bdi> |
+| <span dir="ltr">Fact/decision</span> | <span dir="ltr">Single authority</span> | <span dir="ltr">Copy/projection elsewhere</span> | <span dir="ltr">Forbidden writer</span> |
 |---|---|---|---|
 |  |  |  |  |
 |  |  |  |  |
 |  |  |  |  |
 
-## <bdi dir="ltr">Reverse trace</bdi>
+## <span dir="ltr">Reverse trace</span>
 
 
 </div>
@@ -68,13 +68,13 @@ contract → use case → context → capability → outcome
 <div dir="rtl" align="right">
 
 
-## <bdi dir="ltr">Review checks</bdi>
+## <span dir="ltr">Review checks</span>
 
-- [ ] هیچ پرش <bdi dir="ltr">Table/System</bdi> به <bdi dir="ltr">Service</bdi> وجود ندارد.
-- [ ] <bdi dir="ltr">Command</bdi> و <bdi dir="ltr">Event</bdi> از نظر <bdi dir="ltr">Intent/Fact</bdi> جدا هستند.
-- [ ] <bdi dir="ltr">Service candidate</bdi> تصمیم <bdi dir="ltr">Deployment</bdi> اعلام نشده است.
-- [ ] هر <bdi dir="ltr">Fact</bdi> یک <bdi dir="ltr">Authority</bdi> دارد.
-- [ ] <bdi dir="ltr">Unknown</bdi>ها صریح‌اند.
+- [ ] هیچ پرش <span dir="ltr">Table/System</span> به <span dir="ltr">Service</span> وجود ندارد.
+- [ ] <span dir="ltr">Command</span> و <span dir="ltr">Event</span> از نظر <span dir="ltr">Intent/Fact</span> جدا هستند.
+- [ ] <span dir="ltr">Service candidate</span> تصمیم <span dir="ltr">Deployment</span> اعلام نشده است.
+- [ ] هر <span dir="ltr">Fact</span> یک <span dir="ltr">Authority</span> دارد.
+- [ ] <span dir="ltr">Unknown</span>ها صریح‌اند.
 
 
 </div>

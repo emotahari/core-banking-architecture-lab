@@ -1,8 +1,8 @@
 <!-- bidi: rtl; code: ltr -->
 <div dir="rtl" align="right">
 
-# <bdi dir="ltr">Platform</bdi>
+# <span dir="ltr">Platform</span>
 
-محیط توسعه، <bdi dir="ltr">Observability</bdi> و <bdi dir="ltr">Kubernetes</bdi> در زمان مقرر اضافه می‌شوند. <bdi dir="ltr">Kafka</bdi> پیش از <bdi dir="ltr">Week 09</bdi> و <bdi dir="ltr">Kubernetes</bdi> پیش از <bdi dir="ltr">Week 22</bdi> وارد راه‌حل اصلی نمی‌شوند.
+محیط توسعه، <span dir="ltr">Observability</span> و <span dir="ltr">Kubernetes</span> در زمان مقرر اضافه می‌شوند. <span dir="ltr">Kafka</span> پیش از <span dir="ltr">Week 09</span> و <span dir="ltr">Kubernetes</span> پیش از <span dir="ltr">Week 22</span> وارد راه‌حل اصلی نمی‌شوند.
 
 </div>

@@ -1,81 +1,81 @@
 <!-- bidi: rtl; code: ltr -->
 <div dir="rtl" align="right">
 
-# واژه‌نامهٔ معماری و <bdi dir="ltr">Core Banking</bdi>
+# واژه‌نامهٔ معماری و <span dir="ltr">Core Banking</span>
 
-- <bdi dir="ltr">Version: 0.1</bdi>
-- <bdi dir="ltr">Target:</bdi> حداقل ۴۰ اصطلاح تا پایان <bdi dir="ltr">Week 01</bdi>
-- <bdi dir="ltr">Current entries:</bdi> ۵۴
+- <span dir="ltr">Version: 0.1</span>
+- <span dir="ltr">Target:</span> حداقل ۴۰ اصطلاح تا پایان <span dir="ltr">Week 01</span>
+- <span dir="ltr">Current entries:</span> ۵۴
 
 این تعریف‌ها آموزشی و عملیاتی‌اند. تعریف رسمی هر استاندارد در صورت تفاوت با منبع خودش تفسیر می‌شود.
 
 | # | اصطلاح | تعریف عملیاتی در این دوره |
 |---:|---|---|
-| ۱ | <bdi dir="ltr">Business Goal</bdi> | نتیجهٔ جهت‌دهنده‌ای که سازمان می‌خواهد به آن برسد؛ مانند کاهش زمان عرضهٔ محصول اعتباری. |
-| ۲ | <bdi dir="ltr">Business Outcome</bdi> | تغییر قابل مشاهده و سنجشی که تحقق <bdi dir="ltr">Goal</bdi> را نشان می‌دهد. |
-| ۳ | <bdi dir="ltr">Business Capability</bdi> | توان پایدار سازمان برای انجام یک کار کسب‌وکاری؛ می‌گوید چه کاری، نه با چه فرایند یا سامانه‌ای. |
-| ۴ | <bdi dir="ltr">Capability Map</bdi> | نمایش سلسله‌مراتبی <bdi dir="ltr">Capability</bdi>های سازمان، معمولاً از <bdi dir="ltr">L1</bdi> تا <bdi dir="ltr">L3</bdi>، مستقل از چارت و فناوری. |
-| ۵ | <bdi dir="ltr">Capability Owner</bdi> | نقش پاسخ‌گوی بلوغ، عملکرد و تحول یک <bdi dir="ltr">Capability</bdi>؛ لزوماً مدیر یک سامانه نیست. |
-| ۶ | <bdi dir="ltr">Value Stream</bdi> | توالی مراحل ارزش‌آفرینی از یک <bdi dir="ltr">Trigger</bdi> تا <bdi dir="ltr">Outcome</bdi> برای ذی‌نفع. |
-| ۷ | <bdi dir="ltr">Customer Journey</bdi> | تجربهٔ گام‌به‌گام مشتری در تعامل با بانک از نگاه مشتری، نه ساختار داخلی سامانه‌ها. |
-| ۸ | <bdi dir="ltr">Business Process</bdi> | نحوه و ترتیب اجرای فعالیت‌ها برای تولید یک <bdi dir="ltr">Outcome</bdi>؛ نسبت به <bdi dir="ltr">Capability</bdi> تغییرپذیرتر است. |
-| ۹ | <bdi dir="ltr">Business Function</bdi> | دسته‌ای از فعالیت‌های هم‌ماهیت که معمولاً به مسئولیت سازمانی نزدیک است. |
-| ۱۰ | <bdi dir="ltr">Business Service</bdi> | ارزشی که یک <bdi dir="ltr">Capability</bdi> از طریق <bdi dir="ltr">Interface</bdi> کسب‌وکاری به مصرف‌کننده ارائه می‌کند. |
-| ۱۱ | <bdi dir="ltr">System</bdi> | مجموعه‌ای از اجزای مرتبط با <bdi dir="ltr">Boundary</bdi> و هدف مشخص؛ می‌تواند انسانی، نرم‌افزاری یا ترکیبی باشد. |
-| ۱۲ | <bdi dir="ltr">Application</bdi> | نرم‌افزاری که بخشی از <bdi dir="ltr">Capability</bdi>ها و <bdi dir="ltr">Process</bdi>ها را پشتیبانی می‌کند؛ خود <bdi dir="ltr">Capability</bdi> نیست. |
-| ۱۳ | <bdi dir="ltr">Domain</bdi> | حوزهٔ مسئله و دانش کسب‌وکاری که مدل برای آن ساخته می‌شود؛ مانند <bdi dir="ltr">Lending.</bdi> |
-| ۱۴ | <bdi dir="ltr">Subdomain</bdi> | بخش مسئله‌ای متمایز در یک <bdi dir="ltr">Domain</bdi> با دانش، هدف و پیچیدگی خاص. |
-| ۱۵ | <bdi dir="ltr">Core Subdomain</bdi> | بخش متمایزکننده و راهبردی کسب‌وکار که مزیت یا ارزش کلیدی می‌سازد. |
-| ۱۶ | <bdi dir="ltr">Supporting Subdomain</bdi> | بخش اختصاصی لازم برای کسب‌وکار که مزیت اصلی نیست ولی راه‌حل عمومی کافی ندارد. |
-| ۱۷ | <bdi dir="ltr">Generic Subdomain</bdi> | مسئله‌ای عمومی که معمولاً خرید، استفاده از استاندارد یا برون‌سپاری برای آن منطقی است. |
-| ۱۸ | <bdi dir="ltr">Bounded Context</bdi> | مرزی که درون آن یک مدل و زبان مشخص، سازگار و معتبر است. |
-| ۱۹ | <bdi dir="ltr">Ubiquitous Language</bdi> | زبان مشترک و دقیق تیم فنی و خبرگان دامینی درون یک <bdi dir="ltr">Bounded Context.</bdi> |
-| ۲۰ | <bdi dir="ltr">Context Map</bdi> | نقشهٔ رابطه و جهت وابستگی میان <bdi dir="ltr">Bounded Context</bdi>ها، همراه با <bdi dir="ltr">Pattern</bdi> و <bdi dir="ltr">Contract.</bdi> |
-| ۲۱ | <bdi dir="ltr">Model</bdi> | ساده‌سازی هدفمند واقعیت برای پاسخ به پرسش‌ها و اجرای قواعد در یک <bdi dir="ltr">Context.</bdi> |
-| ۲۲ | <bdi dir="ltr">Entity</bdi> | شیء دامینی با هویت پایدار که حالت آن در طول زمان تغییر می‌کند. |
-| ۲۳ | <bdi dir="ltr">Value Object</bdi> | شیء بدون هویت مستقل که با مقدار و قواعدش تعریف می‌شود و ترجیحاً <bdi dir="ltr">Immutable</bdi> است. |
-| ۲۴ | <bdi dir="ltr">Aggregate</bdi> | مرز سازگاری دامینی برای گروهی از <bdi dir="ltr">Entity/Value Object</bdi>ها با یک <bdi dir="ltr">Aggregate Root.</bdi> |
-| ۲۵ | <bdi dir="ltr">Invariant</bdi> | قاعده‌ای که در تمام حالت‌های معتبر باید برقرار بماند. |
-| ۲۶ | <bdi dir="ltr">Module</bdi> | واحد منطقی کد با <bdi dir="ltr">API</bdi> آشکار، جزئیات داخلی پنهان و وابستگی کنترل‌شده. |
-| ۲۷ | <bdi dir="ltr">Service</bdi> | ارائه‌کنندهٔ یک <bdi dir="ltr">Contract</bdi>؛ بسته به سطح بحث می‌تواند <bdi dir="ltr">Business</bdi>، <bdi dir="ltr">Application</bdi>، <bdi dir="ltr">Domain</bdi> یا <bdi dir="ltr">Deployable Service</bdi> باشد. |
-| ۲۸ | <bdi dir="ltr">Microservice</bdi> | واحد نرم‌افزاری کوچک و قابل استقرار مستقل با مالکیت داده و هزینه‌های توزیع؛ مترادف <bdi dir="ltr">Module</bdi> نیست. |
-| ۲۹ | <bdi dir="ltr">API</bdi> | <bdi dir="ltr">Contract</bdi> قابل فراخوانی برای تعامل؛ <bdi dir="ltr">API</bdi> مرز را آشکار می‌کند ولی خود <bdi dir="ltr">Domain</bdi> یا <bdi dir="ltr">Capability</bdi> نیست. |
-| ۳۰ | <bdi dir="ltr">Command</bdi> | درخواست انجام عملی که قصد تغییر <bdi dir="ltr">State</bdi> دارد و ممکن است پذیرفته یا رد شود. |
-| ۳۱ | <bdi dir="ltr">Query</bdi> | درخواست اطلاعات بدون قصد تغییر <bdi dir="ltr">State</bdi> کسب‌وکاری. |
-| ۳۲ | <bdi dir="ltr">Domain Event</bdi> | <bdi dir="ltr">Fact</bdi> معناداری که در <bdi dir="ltr">Domain</bdi> رخ داده و نام آن گذشته‌نگر است. |
-| ۳۳ | <bdi dir="ltr">Integration Event</bdi> | <bdi dir="ltr">Contract</bdi> منتشرشده برای مصرف خارج از <bdi dir="ltr">Context</bdi>؛ ممکن است از <bdi dir="ltr">Domain Event</bdi> مشتق شود ولی همان شیء داخلی نیست. |
-| ۳۴ | <bdi dir="ltr">Contract</bdi> | توافق صریح دربارهٔ معنا، داده، قواعد، خطا، <bdi dir="ltr">Version</bdi> و انتظار تعامل. |
-| ۳۵ | <bdi dir="ltr">Coupling</bdi> | میزان دانشی که یک جزء برای کارکردن دربارهٔ جزء دیگر لازم دارد. |
-| ۳۶ | <bdi dir="ltr">Cohesion</bdi> | میزان تعلق مسئولیت‌های داخل یک جزء به یک هدف یا تغییر مشترک. |
-| ۳۷ | <bdi dir="ltr">Encapsulation</bdi> | قرار دادن <bdi dir="ltr">State</bdi> و رفتار مرتبط پشت یک <bdi dir="ltr">Interface</bdi> کنترل‌شده. |
-| ۳۸ | <bdi dir="ltr">Information Hiding</bdi> | پنهان‌کردن تصمیم‌های طراحیِ محتمل‌التغییر تا اثر تغییر به مصرف‌کنندگان نشت نکند. |
-| ۳۹ | <bdi dir="ltr">Data Owner</bdi> | <bdi dir="ltr">Context</bdi> مجاز به ایجاد، تغییر و تضمین معنای یک داده. |
-| ۴۰ | <bdi dir="ltr">Decision Owner</bdi> | <bdi dir="ltr">Context</bdi>ی که قاعده و اختیار تصمیم کسب‌وکاری را دارد؛ ممکن است دادهٔ ورودی را از دیگری بگیرد. |
-| ۴۱ | <bdi dir="ltr">Source of Truth</bdi> | مرجع معتبر برای یک <bdi dir="ltr">Fact</bdi> مشخص؛ مفهوم باید با نوع داده و زمان اعتبار تعریف شود. |
-| ۴۲ | <bdi dir="ltr">System of Record</bdi> | سامانهٔ رسمی ثبت و نگهداری یک <bdi dir="ltr">Record</bdi>؛ همیشه مالک همهٔ تصمیم‌های مرتبط با آن نیست. |
-| ۴۳ | <bdi dir="ltr">Derived Data</bdi> | داده‌ای که از <bdi dir="ltr">Source</bdi> دیگر محاسبه یا <bdi dir="ltr">Project</bdi> شده و باید قابلیت <bdi dir="ltr">Rebuild/Reconcile</bdi> داشته باشد. |
-| ۴۴ | <bdi dir="ltr">Consistency Boundary</bdi> | محدوده‌ای که <bdi dir="ltr">Invariant</bdi>ها باید درون یک تغییر اتمیک حفظ شوند. |
-| ۴۵ | <bdi dir="ltr">Transaction Boundary</bdi> | محدودهٔ اجرایی <bdi dir="ltr">Commit/Rollback</bdi> یک تراکنش؛ باید با <bdi dir="ltr">Invariant</bdi> توجیه شود. |
-| ۴۶ | <bdi dir="ltr">Upstream</bdi> | <bdi dir="ltr">Context</bdi>ی که <bdi dir="ltr">Contract</bdi> یا مدل مورد استفادهٔ <bdi dir="ltr">Context</bdi> دیگر را عرضه می‌کند و قدرت تغییر بیشتری دارد. |
-| ۴۷ | <bdi dir="ltr">Downstream</bdi> | <bdi dir="ltr">Context</bdi> مصرف‌کنندهٔ <bdi dir="ltr">Contract</bdi> یا مدل <bdi dir="ltr">Upstream.</bdi> |
-| ۴۸ | <bdi dir="ltr">Customer/Supplier</bdi> | رابطه‌ای که <bdi dir="ltr">Upstream</bdi> و <bdi dir="ltr">Downstream</bdi> برای نیازهای <bdi dir="ltr">Downstream</bdi> همکاری و مذاکره می‌کنند. |
-| ۴۹ | <bdi dir="ltr">Conformist</bdi> | <bdi dir="ltr">Downstream</bdi> مدل <bdi dir="ltr">Upstream</bdi> را بدون لایهٔ ترجمه می‌پذیرد، معمولاً به‌دلیل نبود قدرت یا ارزش ترجمه. |
-| ۵۰ | <bdi dir="ltr">Anti-Corruption Layer</bdi> | لایهٔ ترجمه‌ای که مدل داخلی را از نفوذ مدل بیرونی محافظت می‌کند. |
-| ۵۱ | <bdi dir="ltr">Published Language</bdi> | زبان و <bdi dir="ltr">Schema</bdi> مستند و مشترکی که برای تبادل میان <bdi dir="ltr">Context</bdi>ها منتشر می‌شود. |
-| ۵۲ | <bdi dir="ltr">BIAN Business Domain</bdi> | گروه‌بندی سطح بالای فعالیت‌های بانکی در <bdi dir="ltr">Reference Architecture BIAN.</bdi> |
-| ۵۳ | <bdi dir="ltr">BIAN Service Domain</bdi> | پارتیشن منطقی استانداردشدهٔ مسئولیت بانکی در <bdi dir="ltr">BIAN</bdi>؛ تصمیم استقرار فیزیکی سازمان ما نیست. |
-| ۵۴ | <bdi dir="ltr">BIAN Semantic API</bdi> | مشخصات <bdi dir="ltr">Interface</bdi> منطقی متناظر با <bdi dir="ltr">Service Domain</bdi>های دارای <bdi dir="ltr">Service Operation</bdi>؛ نقطهٔ شروع تطبیق است، نه <bdi dir="ltr">Contract</bdi> نهایی بدون <bdi dir="ltr">Context.</bdi> |
+| ۱ | <span dir="ltr">Business Goal</span> | نتیجهٔ جهت‌دهنده‌ای که سازمان می‌خواهد به آن برسد؛ مانند کاهش زمان عرضهٔ محصول اعتباری. |
+| ۲ | <span dir="ltr">Business Outcome</span> | تغییر قابل مشاهده و سنجشی که تحقق <span dir="ltr">Goal</span> را نشان می‌دهد. |
+| ۳ | <span dir="ltr">Business Capability</span> | توان پایدار سازمان برای انجام یک کار کسب‌وکاری؛ می‌گوید چه کاری، نه با چه فرایند یا سامانه‌ای. |
+| ۴ | <span dir="ltr">Capability Map</span> | نمایش سلسله‌مراتبی <span dir="ltr">Capability</span>های سازمان، معمولاً از <span dir="ltr">L1</span> تا <span dir="ltr">L3</span>، مستقل از چارت و فناوری. |
+| ۵ | <span dir="ltr">Capability Owner</span> | نقش پاسخ‌گوی بلوغ، عملکرد و تحول یک <span dir="ltr">Capability</span>؛ لزوماً مدیر یک سامانه نیست. |
+| ۶ | <span dir="ltr">Value Stream</span> | توالی مراحل ارزش‌آفرینی از یک <span dir="ltr">Trigger</span> تا <span dir="ltr">Outcome</span> برای ذی‌نفع. |
+| ۷ | <span dir="ltr">Customer Journey</span> | تجربهٔ گام‌به‌گام مشتری در تعامل با بانک از نگاه مشتری، نه ساختار داخلی سامانه‌ها. |
+| ۸ | <span dir="ltr">Business Process</span> | نحوه و ترتیب اجرای فعالیت‌ها برای تولید یک <span dir="ltr">Outcome</span>؛ نسبت به <span dir="ltr">Capability</span> تغییرپذیرتر است. |
+| ۹ | <span dir="ltr">Business Function</span> | دسته‌ای از فعالیت‌های هم‌ماهیت که معمولاً به مسئولیت سازمانی نزدیک است. |
+| ۱۰ | <span dir="ltr">Business Service</span> | ارزشی که یک <span dir="ltr">Capability</span> از طریق <span dir="ltr">Interface</span> کسب‌وکاری به مصرف‌کننده ارائه می‌کند. |
+| ۱۱ | <span dir="ltr">System</span> | مجموعه‌ای از اجزای مرتبط با <span dir="ltr">Boundary</span> و هدف مشخص؛ می‌تواند انسانی، نرم‌افزاری یا ترکیبی باشد. |
+| ۱۲ | <span dir="ltr">Application</span> | نرم‌افزاری که بخشی از <span dir="ltr">Capability</span>ها و <span dir="ltr">Process</span>ها را پشتیبانی می‌کند؛ خود <span dir="ltr">Capability</span> نیست. |
+| ۱۳ | <span dir="ltr">Domain</span> | حوزهٔ مسئله و دانش کسب‌وکاری که مدل برای آن ساخته می‌شود؛ مانند <span dir="ltr">Lending.</span> |
+| ۱۴ | <span dir="ltr">Subdomain</span> | بخش مسئله‌ای متمایز در یک <span dir="ltr">Domain</span> با دانش، هدف و پیچیدگی خاص. |
+| ۱۵ | <span dir="ltr">Core Subdomain</span> | بخش متمایزکننده و راهبردی کسب‌وکار که مزیت یا ارزش کلیدی می‌سازد. |
+| ۱۶ | <span dir="ltr">Supporting Subdomain</span> | بخش اختصاصی لازم برای کسب‌وکار که مزیت اصلی نیست ولی راه‌حل عمومی کافی ندارد. |
+| ۱۷ | <span dir="ltr">Generic Subdomain</span> | مسئله‌ای عمومی که معمولاً خرید، استفاده از استاندارد یا برون‌سپاری برای آن منطقی است. |
+| ۱۸ | <span dir="ltr">Bounded Context</span> | مرزی که درون آن یک مدل و زبان مشخص، سازگار و معتبر است. |
+| ۱۹ | <span dir="ltr">Ubiquitous Language</span> | زبان مشترک و دقیق تیم فنی و خبرگان دامینی درون یک <span dir="ltr">Bounded Context.</span> |
+| ۲۰ | <span dir="ltr">Context Map</span> | نقشهٔ رابطه و جهت وابستگی میان <span dir="ltr">Bounded Context</span>ها، همراه با <span dir="ltr">Pattern</span> و <span dir="ltr">Contract.</span> |
+| ۲۱ | <span dir="ltr">Model</span> | ساده‌سازی هدفمند واقعیت برای پاسخ به پرسش‌ها و اجرای قواعد در یک <span dir="ltr">Context.</span> |
+| ۲۲ | <span dir="ltr">Entity</span> | شیء دامینی با هویت پایدار که حالت آن در طول زمان تغییر می‌کند. |
+| ۲۳ | <span dir="ltr">Value Object</span> | شیء بدون هویت مستقل که با مقدار و قواعدش تعریف می‌شود و ترجیحاً <span dir="ltr">Immutable</span> است. |
+| ۲۴ | <span dir="ltr">Aggregate</span> | مرز سازگاری دامینی برای گروهی از <span dir="ltr">Entity/Value Object</span>ها با یک <span dir="ltr">Aggregate Root.</span> |
+| ۲۵ | <span dir="ltr">Invariant</span> | قاعده‌ای که در تمام حالت‌های معتبر باید برقرار بماند. |
+| ۲۶ | <span dir="ltr">Module</span> | واحد منطقی کد با <span dir="ltr">API</span> آشکار، جزئیات داخلی پنهان و وابستگی کنترل‌شده. |
+| ۲۷ | <span dir="ltr">Service</span> | ارائه‌کنندهٔ یک <span dir="ltr">Contract</span>؛ بسته به سطح بحث می‌تواند <span dir="ltr">Business</span>، <span dir="ltr">Application</span>، <span dir="ltr">Domain</span> یا <span dir="ltr">Deployable Service</span> باشد. |
+| ۲۸ | <span dir="ltr">Microservice</span> | واحد نرم‌افزاری کوچک و قابل استقرار مستقل با مالکیت داده و هزینه‌های توزیع؛ مترادف <span dir="ltr">Module</span> نیست. |
+| ۲۹ | <span dir="ltr">API</span> | <span dir="ltr">Contract</span> قابل فراخوانی برای تعامل؛ <span dir="ltr">API</span> مرز را آشکار می‌کند ولی خود <span dir="ltr">Domain</span> یا <span dir="ltr">Capability</span> نیست. |
+| ۳۰ | <span dir="ltr">Command</span> | درخواست انجام عملی که قصد تغییر <span dir="ltr">State</span> دارد و ممکن است پذیرفته یا رد شود. |
+| ۳۱ | <span dir="ltr">Query</span> | درخواست اطلاعات بدون قصد تغییر <span dir="ltr">State</span> کسب‌وکاری. |
+| ۳۲ | <span dir="ltr">Domain Event</span> | <span dir="ltr">Fact</span> معناداری که در <span dir="ltr">Domain</span> رخ داده و نام آن گذشته‌نگر است. |
+| ۳۳ | <span dir="ltr">Integration Event</span> | <span dir="ltr">Contract</span> منتشرشده برای مصرف خارج از <span dir="ltr">Context</span>؛ ممکن است از <span dir="ltr">Domain Event</span> مشتق شود ولی همان شیء داخلی نیست. |
+| ۳۴ | <span dir="ltr">Contract</span> | توافق صریح دربارهٔ معنا، داده، قواعد، خطا، <span dir="ltr">Version</span> و انتظار تعامل. |
+| ۳۵ | <span dir="ltr">Coupling</span> | میزان دانشی که یک جزء برای کارکردن دربارهٔ جزء دیگر لازم دارد. |
+| ۳۶ | <span dir="ltr">Cohesion</span> | میزان تعلق مسئولیت‌های داخل یک جزء به یک هدف یا تغییر مشترک. |
+| ۳۷ | <span dir="ltr">Encapsulation</span> | قرار دادن <span dir="ltr">State</span> و رفتار مرتبط پشت یک <span dir="ltr">Interface</span> کنترل‌شده. |
+| ۳۸ | <span dir="ltr">Information Hiding</span> | پنهان‌کردن تصمیم‌های طراحیِ محتمل‌التغییر تا اثر تغییر به مصرف‌کنندگان نشت نکند. |
+| ۳۹ | <span dir="ltr">Data Owner</span> | <span dir="ltr">Context</span> مجاز به ایجاد، تغییر و تضمین معنای یک داده. |
+| ۴۰ | <span dir="ltr">Decision Owner</span> | <span dir="ltr">Context</span>ی که قاعده و اختیار تصمیم کسب‌وکاری را دارد؛ ممکن است دادهٔ ورودی را از دیگری بگیرد. |
+| ۴۱ | <span dir="ltr">Source of Truth</span> | مرجع معتبر برای یک <span dir="ltr">Fact</span> مشخص؛ مفهوم باید با نوع داده و زمان اعتبار تعریف شود. |
+| ۴۲ | <span dir="ltr">System of Record</span> | سامانهٔ رسمی ثبت و نگهداری یک <span dir="ltr">Record</span>؛ همیشه مالک همهٔ تصمیم‌های مرتبط با آن نیست. |
+| ۴۳ | <span dir="ltr">Derived Data</span> | داده‌ای که از <span dir="ltr">Source</span> دیگر محاسبه یا <span dir="ltr">Project</span> شده و باید قابلیت <span dir="ltr">Rebuild/Reconcile</span> داشته باشد. |
+| ۴۴ | <span dir="ltr">Consistency Boundary</span> | محدوده‌ای که <span dir="ltr">Invariant</span>ها باید درون یک تغییر اتمیک حفظ شوند. |
+| ۴۵ | <span dir="ltr">Transaction Boundary</span> | محدودهٔ اجرایی <span dir="ltr">Commit/Rollback</span> یک تراکنش؛ باید با <span dir="ltr">Invariant</span> توجیه شود. |
+| ۴۶ | <span dir="ltr">Upstream</span> | <span dir="ltr">Context</span>ی که <span dir="ltr">Contract</span> یا مدل مورد استفادهٔ <span dir="ltr">Context</span> دیگر را عرضه می‌کند و قدرت تغییر بیشتری دارد. |
+| ۴۷ | <span dir="ltr">Downstream</span> | <span dir="ltr">Context</span> مصرف‌کنندهٔ <span dir="ltr">Contract</span> یا مدل <span dir="ltr">Upstream.</span> |
+| ۴۸ | <span dir="ltr">Customer/Supplier</span> | رابطه‌ای که <span dir="ltr">Upstream</span> و <span dir="ltr">Downstream</span> برای نیازهای <span dir="ltr">Downstream</span> همکاری و مذاکره می‌کنند. |
+| ۴۹ | <span dir="ltr">Conformist</span> | <span dir="ltr">Downstream</span> مدل <span dir="ltr">Upstream</span> را بدون لایهٔ ترجمه می‌پذیرد، معمولاً به‌دلیل نبود قدرت یا ارزش ترجمه. |
+| ۵۰ | <span dir="ltr">Anti-Corruption Layer</span> | لایهٔ ترجمه‌ای که مدل داخلی را از نفوذ مدل بیرونی محافظت می‌کند. |
+| ۵۱ | <span dir="ltr">Published Language</span> | زبان و <span dir="ltr">Schema</span> مستند و مشترکی که برای تبادل میان <span dir="ltr">Context</span>ها منتشر می‌شود. |
+| ۵۲ | <span dir="ltr">BIAN Business Domain</span> | گروه‌بندی سطح بالای فعالیت‌های بانکی در <span dir="ltr">Reference Architecture BIAN.</span> |
+| ۵۳ | <span dir="ltr">BIAN Service Domain</span> | پارتیشن منطقی استانداردشدهٔ مسئولیت بانکی در <span dir="ltr">BIAN</span>؛ تصمیم استقرار فیزیکی سازمان ما نیست. |
+| ۵۴ | <span dir="ltr">BIAN Semantic API</span> | مشخصات <span dir="ltr">Interface</span> منطقی متناظر با <span dir="ltr">Service Domain</span>های دارای <span dir="ltr">Service Operation</span>؛ نقطهٔ شروع تطبیق است، نه <span dir="ltr">Contract</span> نهایی بدون <span dir="ltr">Context.</span> |
 
-## واژه‌های ممنوع بدون <bdi dir="ltr">Qualifier</bdi>
+## واژه‌های ممنوع بدون <span dir="ltr">Qualifier</span>
 
 در اسناد معماری این واژه‌ها بدون مشخص‌کردن سطح مبهم‌اند:
 
-- <bdi dir="ltr">Service: Business Service</bdi>، <bdi dir="ltr">Domain Service</bdi>، <bdi dir="ltr">Application Service</bdi> یا <bdi dir="ltr">Deployable Service</bdi>؟
-- <bdi dir="ltr">Account: Deposit Account</bdi>، <bdi dir="ltr">Loan Account</bdi>، <bdi dir="ltr">Ledger Account</bdi> یا <bdi dir="ltr">User Account</bdi>؟
-- <bdi dir="ltr">Transaction: Business Transaction</bdi>، <bdi dir="ltr">Database Transaction</bdi> یا <bdi dir="ltr">Accounting Transaction</bdi>؟
-- <bdi dir="ltr">Customer: Party</bdi>، <bdi dir="ltr">Prospect</bdi>، <bdi dir="ltr">Legal Customer</bdi> یا <bdi dir="ltr">Contract Holder</bdi>؟
-- <bdi dir="ltr">Product: Product Definition</bdi>، <bdi dir="ltr">Product Version</bdi>، <bdi dir="ltr">Offer</bdi> یا <bdi dir="ltr">Agreement Terms</bdi>؟
+- <span dir="ltr">Service: Business Service</span>، <span dir="ltr">Domain Service</span>، <span dir="ltr">Application Service</span> یا <span dir="ltr">Deployable Service</span>؟
+- <span dir="ltr">Account: Deposit Account</span>، <span dir="ltr">Loan Account</span>، <span dir="ltr">Ledger Account</span> یا <span dir="ltr">User Account</span>؟
+- <span dir="ltr">Transaction: Business Transaction</span>، <span dir="ltr">Database Transaction</span> یا <span dir="ltr">Accounting Transaction</span>؟
+- <span dir="ltr">Customer: Party</span>، <span dir="ltr">Prospect</span>، <span dir="ltr">Legal Customer</span> یا <span dir="ltr">Contract Holder</span>؟
+- <span dir="ltr">Product: Product Definition</span>، <span dir="ltr">Product Version</span>، <span dir="ltr">Offer</span> یا <span dir="ltr">Agreement Terms</span>؟
 
-هر بار که یکی از این واژه‌ها به‌کار می‌رود، <bdi dir="ltr">Context</bdi> و معنای دقیق باید روشن باشد.
+هر بار که یکی از این واژه‌ها به‌کار می‌رود، <span dir="ltr">Context</span> و معنای دقیق باید روشن باشد.
 
 </div>

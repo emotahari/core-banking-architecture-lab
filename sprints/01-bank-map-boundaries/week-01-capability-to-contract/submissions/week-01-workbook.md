@@ -1,53 +1,53 @@
 <!-- bidi: rtl; code: ltr -->
 <div dir="rtl" align="right">
 
-# <bdi dir="ltr">Week 01 Workbook</bdi> — <bdi dir="ltr">Student Submission</bdi>
+# <span dir="ltr">Week 01 Workbook</span> — <span dir="ltr">Student Submission</span>
 
-- <bdi dir="ltr">Student:</bdi>
-- <bdi dir="ltr">Start date:</bdi>
-- <bdi dir="ltr">Status: Day 01 attempt exists</bdi>; <bdi dir="ltr">Day 02 not started</bdi>
-- <bdi dir="ltr">Rule:</bdi> پاسخ خام را پاک نکن؛ <bdi dir="ltr">Review</bdi> و <bdi dir="ltr">Revision</bdi> را زیر آن اضافه کن.
+- <span dir="ltr">Student:</span>
+- <span dir="ltr">Start date:</span>
+- <span dir="ltr">Status: Day 01 attempt exists</span>; <span dir="ltr">Day 02 not started</span>
+- <span dir="ltr">Rule:</span> پاسخ خام را پاک نکن؛ <span dir="ltr">Review</span> و <span dir="ltr">Revision</span> را زیر آن اضافه کن.
 
-## <bdi dir="ltr">Evidence convention</bdi>
+## <span dir="ltr">Evidence convention</span>
 
-- <bdi dir="ltr">`RAW`</bdi>: پاسخ مستقل پیش از <bdi dir="ltr">Review</bdi>
-- <bdi dir="ltr">`REVIEW`</bdi>: بازخورد استاد
-- <bdi dir="ltr">`REVISION`</bdi>: پاسخ اصلاح‌شده پس از فهم بازخورد
-- <bdi dir="ltr">`EVIDENCE`</bdi>: فایل، خروجی تست یا <bdi dir="ltr">Commit</bdi>
-- <bdi dir="ltr">`OPEN`</bdi>: پرسش حل‌نشده
+- <span dir="ltr">`RAW`</span>: پاسخ مستقل پیش از <span dir="ltr">Review</span>
+- <span dir="ltr">`REVIEW`</span>: بازخورد استاد
+- <span dir="ltr">`REVISION`</span>: پاسخ اصلاح‌شده پس از فهم بازخورد
+- <span dir="ltr">`EVIDENCE`</span>: فایل، خروجی تست یا <span dir="ltr">Commit</span>
+- <span dir="ltr">`OPEN`</span>: پرسش حل‌نشده
 
-دادهٔ واقعی مشتری، <bdi dir="ltr">Credential</bdi>، کد محرمانهٔ بانک یا جزئیات <bdi dir="ltr">Production</bdi> را وارد نکن.
-
----
-
-## <bdi dir="ltr">Day 01</bdi> — <bdi dir="ltr">Architecture Language and Baseline</bdi>
-
-- <bdi dir="ltr">Lesson:</bdi> [<bdi dir="ltr">Day 01</bdi>](../lessons/day-01-architecture-language-fa.md)
-- <bdi dir="ltr">Exercise:</bdi> [<bdi dir="ltr">Baseline</bdi>](../exercises/day-01-baseline.md)
-- <bdi dir="ltr">Existing response:</bdi> [<bdi dir="ltr">Day 01 Submission</bdi>](day-01-baseline-response.md)
-- <bdi dir="ltr">Existing quiz/answers:</bdi> [<bdi dir="ltr">Exit Ticket</bdi>](../quizzes/day-01-exit-ticket.md)
-
-### <bdi dir="ltr">REVIEW</bdi>
-
-
-### <bdi dir="ltr">REVISION</bdi> — پاسخ خام قبلی پاک نشود
-
-
-### <bdi dir="ltr">OPEN</bdi>
-
+دادهٔ واقعی مشتری، <span dir="ltr">Credential</span>، کد محرمانهٔ بانک یا جزئیات <span dir="ltr">Production</span> را وارد نکن.
 
 ---
 
-## <bdi dir="ltr">Day 02</bdi> — <bdi dir="ltr">Capability Distinctions</bdi>
+## <span dir="ltr">Day 01</span> — <span dir="ltr">Architecture Language and Baseline</span>
 
-- <bdi dir="ltr">Lesson:</bdi> [<bdi dir="ltr">Day 02</bdi>](../lessons/day-02-capability-distinction-fa.md)
-- <bdi dir="ltr">Exercise:</bdi> [<bdi dir="ltr">Distinction Matrix</bdi>](../exercises/day-02-capability-distinction.md)
-- <bdi dir="ltr">Exit Ticket:</bdi> [<bdi dir="ltr">Quiz</bdi>](../quizzes/day-02-exit-ticket.md)
+- <span dir="ltr">Lesson:</span> [<span dir="ltr">Day 01</span>](../lessons/day-01-architecture-language-fa.md)
+- <span dir="ltr">Exercise:</span> [<span dir="ltr">Baseline</span>](../exercises/day-01-baseline.md)
+- <span dir="ltr">Existing response:</span> [<span dir="ltr">Day 01 Submission</span>](day-01-baseline-response.md)
+- <span dir="ltr">Existing quiz/answers:</span> [<span dir="ltr">Exit Ticket</span>](../quizzes/day-01-exit-ticket.md)
 
-### <bdi dir="ltr">RAW</bdi> — <bdi dir="ltr">Exercise</bdi>
+### <span dir="ltr">REVIEW</span>
 
 
-### <bdi dir="ltr">RAW</bdi> — <bdi dir="ltr">Exit Ticket</bdi>
+### <span dir="ltr">REVISION</span> — پاسخ خام قبلی پاک نشود
+
+
+### <span dir="ltr">OPEN</span>
+
+
+---
+
+## <span dir="ltr">Day 02</span> — <span dir="ltr">Capability Distinctions</span>
+
+- <span dir="ltr">Lesson:</span> [<span dir="ltr">Day 02</span>](../lessons/day-02-capability-distinction-fa.md)
+- <span dir="ltr">Exercise:</span> [<span dir="ltr">Distinction Matrix</span>](../exercises/day-02-capability-distinction.md)
+- <span dir="ltr">Exit Ticket:</span> [<span dir="ltr">Quiz</span>](../quizzes/day-02-exit-ticket.md)
+
+### <span dir="ltr">RAW</span> — <span dir="ltr">Exercise</span>
+
+
+### <span dir="ltr">RAW</span> — <span dir="ltr">Exit Ticket</span>
 
 1.
 2.
@@ -56,48 +56,24 @@
 5.
 6.
 
-### <bdi dir="ltr">REVIEW</bdi> / <bdi dir="ltr">REVISION</bdi> / <bdi dir="ltr">OPEN</bdi>
+### <span dir="ltr">REVIEW</span> / <span dir="ltr">REVISION</span> / <span dir="ltr">OPEN</span>
 
 
 ---
 
-## <bdi dir="ltr">Day 03</bdi> — <bdi dir="ltr">Traceability Chains</bdi>
+## <span dir="ltr">Day 03</span> — <span dir="ltr">Traceability Chains</span>
 
-- <bdi dir="ltr">Lesson:</bdi> [<bdi dir="ltr">Day 03</bdi>](../lessons/day-03-traceability-chain-fa.md)
-- <bdi dir="ltr">Exercise:</bdi> [<bdi dir="ltr">Two Chains</bdi>](../exercises/day-03-traceability-chain.md)
-- <bdi dir="ltr">Exit Ticket:</bdi> [<bdi dir="ltr">Quiz</bdi>](../quizzes/day-03-exit-ticket.md)
+- <span dir="ltr">Lesson:</span> [<span dir="ltr">Day 03</span>](../lessons/day-03-traceability-chain-fa.md)
+- <span dir="ltr">Exercise:</span> [<span dir="ltr">Two Chains</span>](../exercises/day-03-traceability-chain.md)
+- <span dir="ltr">Exit Ticket:</span> [<span dir="ltr">Quiz</span>](../quizzes/day-03-exit-ticket.md)
 
-### <bdi dir="ltr">RAW</bdi> — <bdi dir="ltr">Legal hold chain</bdi>
-
-
-### <bdi dir="ltr">RAW</bdi> — <bdi dir="ltr">Loan disbursement chain</bdi>
+### <span dir="ltr">RAW</span> — <span dir="ltr">Legal hold chain</span>
 
 
-### <bdi dir="ltr">RAW</bdi> — <bdi dir="ltr">Exit Ticket</bdi>
-
-1.
-2.
-3.
-4.
-5.
-6.
-7.
-
-### <bdi dir="ltr">REVIEW</bdi> / <bdi dir="ltr">REVISION</bdi> / <bdi dir="ltr">OPEN</bdi>
+### <span dir="ltr">RAW</span> — <span dir="ltr">Loan disbursement chain</span>
 
 
----
-
-## <bdi dir="ltr">Day 04</bdi> — <bdi dir="ltr">Coupling and Boundary Review</bdi>
-
-- <bdi dir="ltr">Lesson:</bdi> [<bdi dir="ltr">Day 04</bdi>](../lessons/day-04-design-forces-boundary-fa.md)
-- <bdi dir="ltr">Exercise:</bdi> [<bdi dir="ltr">Coupling Review</bdi>](../exercises/day-04-coupling-review.md)
-- <bdi dir="ltr">Exit Ticket:</bdi> [<bdi dir="ltr">Quiz</bdi>](../quizzes/day-04-exit-ticket.md)
-
-### <bdi dir="ltr">RAW</bdi> — <bdi dir="ltr">Coupling map and redesign</bdi>
-
-
-### <bdi dir="ltr">RAW</bdi> — <bdi dir="ltr">Exit Ticket</bdi>
+### <span dir="ltr">RAW</span> — <span dir="ltr">Exit Ticket</span>
 
 1.
 2.
@@ -107,67 +83,21 @@
 6.
 7.
 
-### <bdi dir="ltr">REVIEW</bdi> / <bdi dir="ltr">REVISION</bdi> / <bdi dir="ltr">OPEN</bdi>
+### <span dir="ltr">REVIEW</span> / <span dir="ltr">REVISION</span> / <span dir="ltr">OPEN</span>
 
 
 ---
 
-## <bdi dir="ltr">Day 05</bdi> — <bdi dir="ltr">Capability Map and BIAN</bdi>
+## <span dir="ltr">Day 04</span> — <span dir="ltr">Coupling and Boundary Review</span>
 
-- <bdi dir="ltr">Lesson:</bdi> [<bdi dir="ltr">Day 05</bdi>](../lessons/day-05-banking-capability-map-bian-fa.md)
-- <bdi dir="ltr">Exercise:</bdi> [<bdi dir="ltr">Map</bdi> + <bdi dir="ltr">Gap Check</bdi>](../exercises/day-05-capability-map-bian-gap-check.md)
-- <bdi dir="ltr">Exit Ticket:</bdi> [<bdi dir="ltr">Quiz</bdi>](../quizzes/day-05-exit-ticket.md)
+- <span dir="ltr">Lesson:</span> [<span dir="ltr">Day 04</span>](../lessons/day-04-design-forces-boundary-fa.md)
+- <span dir="ltr">Exercise:</span> [<span dir="ltr">Coupling Review</span>](../exercises/day-04-coupling-review.md)
+- <span dir="ltr">Exit Ticket:</span> [<span dir="ltr">Quiz</span>](../quizzes/day-04-exit-ticket.md)
 
-### <bdi dir="ltr">EVIDENCE</bdi> — <bdi dir="ltr">Capability Map v1</bdi>
-
-- <bdi dir="ltr">path/commit:</bdi>
-- <bdi dir="ltr">version/status:</bdi>
-- <bdi dir="ltr">largest change from draft:</bdi>
-
-### <bdi dir="ltr">RAW</bdi> — <bdi dir="ltr">BIAN Gap Check findings</bdi>
-
-- <bdi dir="ltr">useful match:</bdi>
-- <bdi dir="ltr">partial match:</bdi>
-- <bdi dir="ltr">false friend:</bdi>
-- <bdi dir="ltr">gap in our map:</bdi>
-- <bdi dir="ltr">local gap/not applicable:</bdi>
-
-### <bdi dir="ltr">RAW</bdi> — <bdi dir="ltr">Exit Ticket</bdi>
-
-1.
-2.
-3.
-4.
-5.
-6.
-
-### <bdi dir="ltr">REVIEW</bdi> / <bdi dir="ltr">REVISION</bdi> / <bdi dir="ltr">OPEN</bdi>
+### <span dir="ltr">RAW</span> — <span dir="ltr">Coupling map and redesign</span>
 
 
----
-
-## <bdi dir="ltr">Day 06</bdi> — <bdi dir="ltr">Value Objects and Pipeline</bdi>
-
-- <bdi dir="ltr">Lesson:</bdi> [<bdi dir="ltr">Day 06</bdi>](../lessons/day-06-value-objects-pipeline-fa.md)
-- <bdi dir="ltr">Exercise:</bdi> [<bdi dir="ltr">Money and Typed IDs</bdi>](../exercises/day-06-value-objects.md)
-- <bdi dir="ltr">Exit Ticket:</bdi> [<bdi dir="ltr">Quiz</bdi>](../quizzes/day-06-exit-ticket.md)
-
-### <bdi dir="ltr">RAW</bdi> — <bdi dir="ltr">Design decisions</bdi>
-
-- <bdi dir="ltr">Money signed/positive:</bdi>
-- <bdi dir="ltr">equality/scale:</bdi>
-- <bdi dir="ltr">rounding policy:</bdi>
-- <bdi dir="ltr">ID format assumptions:</bdi>
-- <bdi dir="ltr">constructor/static factory:</bdi>
-
-### <bdi dir="ltr">EVIDENCE</bdi>
-
-- <bdi dir="ltr">baseline</bdi> <bdi dir="ltr">`mvn verify`</bdi>:
-- <bdi dir="ltr">targeted tests:</bdi>
-- <bdi dir="ltr">final</bdi> <bdi dir="ltr">`mvn verify`</bdi>:
-- <bdi dir="ltr">branch/commit:</bdi>
-
-### <bdi dir="ltr">RAW</bdi> — <bdi dir="ltr">Exit Ticket</bdi>
+### <span dir="ltr">RAW</span> — <span dir="ltr">Exit Ticket</span>
 
 1.
 2.
@@ -176,66 +106,68 @@
 5.
 6.
 7.
-8.
 
-### <bdi dir="ltr">REVIEW</bdi> / <bdi dir="ltr">REVISION</bdi> / <bdi dir="ltr">OPEN</bdi>
-
-
----
-
-## <bdi dir="ltr">Day 07</bdi> — <bdi dir="ltr">Core Week Defense</bdi>
-
-- <bdi dir="ltr">Lesson:</bdi> [<bdi dir="ltr">Day 07</bdi>](../lessons/day-07-week-defense-fa.md)
-- <bdi dir="ltr">Exercise:</bdi> [<bdi dir="ltr">Defense</bdi>](../exercises/day-07-week-defense.md)
-- <bdi dir="ltr">Report:</bdi> [<bdi dir="ltr">Template</bdi>](../artifacts/week-01-report-template.md)
-
-### <bdi dir="ltr">EVIDENCE</bdi> — <bdi dir="ltr">Gate</bdi>
-
-- <bdi dir="ltr">evidence index:</bdi>
-- <bdi dir="ltr">duration:</bdi>
-- <bdi dir="ltr">self-score:</bdi>
-- <bdi dir="ltr">instructor score:</bdi>
-- <bdi dir="ltr">critical errors:</bdi>
-- <bdi dir="ltr">remediation:</bdi>
-
-### <bdi dir="ltr">REVIEW</bdi> / <bdi dir="ltr">REVISION</bdi> / <bdi dir="ltr">OPEN</bdi>
+### <span dir="ltr">REVIEW</span> / <span dir="ltr">REVISION</span> / <span dir="ltr">OPEN</span>
 
 
 ---
 
-## <bdi dir="ltr">Day 08</bdi> — <bdi dir="ltr">Code Craft: Primitive to Value Object</bdi>
+## <span dir="ltr">Day 05</span> — <span dir="ltr">Capability Map and BIAN</span>
 
-- <bdi dir="ltr">Lesson:</bdi> [<bdi dir="ltr">Clean Code</bdi> + <bdi dir="ltr">Value Object Refactoring</bdi>](../lessons/day-08-clean-code-value-object-refactoring-fa.md)
-- <bdi dir="ltr">Exercise:</bdi> [<bdi dir="ltr">Runnable Kata</bdi>](../exercises/day-08-money-refactoring-kata.md)
-- <bdi dir="ltr">Review:</bdi> [<bdi dir="ltr">Checklist</bdi>](../artifacts/day-08-code-review-checklist.md)
-- <bdi dir="ltr">Exit Ticket:</bdi> [<bdi dir="ltr">Quiz</bdi>](../quizzes/day-08-exit-ticket.md)
+- <span dir="ltr">Lesson:</span> [<span dir="ltr">Day 05</span>](../lessons/day-05-banking-capability-map-bian-fa.md)
+- <span dir="ltr">Exercise:</span> [<span dir="ltr">Map</span> + <span dir="ltr">Gap Check</span>](../exercises/day-05-capability-map-bian-gap-check.md)
+- <span dir="ltr">Exit Ticket:</span> [<span dir="ltr">Quiz</span>](../quizzes/day-05-exit-ticket.md)
 
-### <bdi dir="ltr">EVIDENCE</bdi> — <bdi dir="ltr">Baseline</bdi>
+### <span dir="ltr">EVIDENCE</span> — <span dir="ltr">Capability Map v1</span>
 
-- <bdi dir="ltr">command/result:</bdi>
-- <bdi dir="ltr">test count:</bdi>
-- <bdi dir="ltr">branch/commit:</bdi>
+- <span dir="ltr">path/commit:</span>
+- <span dir="ltr">version/status:</span>
+- <span dir="ltr">largest change from draft:</span>
 
-### <bdi dir="ltr">RAW</bdi> — <bdi dir="ltr">Smell Map</bdi>
+### <span dir="ltr">RAW</span> — <span dir="ltr">BIAN Gap Check findings</span>
+
+- <span dir="ltr">useful match:</span>
+- <span dir="ltr">partial match:</span>
+- <span dir="ltr">false friend:</span>
+- <span dir="ltr">gap in our map:</span>
+- <span dir="ltr">local gap/not applicable:</span>
+
+### <span dir="ltr">RAW</span> — <span dir="ltr">Exit Ticket</span>
+
+1.
+2.
+3.
+4.
+5.
+6.
+
+### <span dir="ltr">REVIEW</span> / <span dir="ltr">REVISION</span> / <span dir="ltr">OPEN</span>
 
 
-### <bdi dir="ltr">RAW</bdi> — <bdi dir="ltr">Pattern Decision</bdi>
+---
 
-- <bdi dir="ltr">Problem:</bdi>
-- <bdi dir="ltr">Forces:</bdi>
-- <bdi dir="ltr">Simplest alternative:</bdi>
-- <bdi dir="ltr">Options:</bdi>
-- <bdi dir="ltr">Decision:</bdi>
-- <bdi dir="ltr">Cost:</bdi>
-- <bdi dir="ltr">Revisit trigger:</bdi>
+## <span dir="ltr">Day 06</span> — <span dir="ltr">Value Objects and Pipeline</span>
 
-### <bdi dir="ltr">EVIDENCE</bdi> — <bdi dir="ltr">Checkpoints and Edge Test</bdi>
+- <span dir="ltr">Lesson:</span> [<span dir="ltr">Day 06</span>](../lessons/day-06-value-objects-pipeline-fa.md)
+- <span dir="ltr">Exercise:</span> [<span dir="ltr">Money and Typed IDs</span>](../exercises/day-06-value-objects.md)
+- <span dir="ltr">Exit Ticket:</span> [<span dir="ltr">Quiz</span>](../quizzes/day-06-exit-ticket.md)
 
+### <span dir="ltr">RAW</span> — <span dir="ltr">Design decisions</span>
 
-### <bdi dir="ltr">EVIDENCE</bdi> — <bdi dir="ltr">Final</bdi> <bdi dir="ltr">`mvn verify`</bdi>
+- <span dir="ltr">Money signed/positive:</span>
+- <span dir="ltr">equality/scale:</span>
+- <span dir="ltr">rounding policy:</span>
+- <span dir="ltr">ID format assumptions:</span>
+- <span dir="ltr">constructor/static factory:</span>
 
+### <span dir="ltr">EVIDENCE</span>
 
-### <bdi dir="ltr">RAW</bdi> — <bdi dir="ltr">Exit Ticket</bdi>
+- <span dir="ltr">baseline</span> <span dir="ltr">`mvn verify`</span>:
+- <span dir="ltr">targeted tests:</span>
+- <span dir="ltr">final</span> <span dir="ltr">`mvn verify`</span>:
+- <span dir="ltr">branch/commit:</span>
+
+### <span dir="ltr">RAW</span> — <span dir="ltr">Exit Ticket</span>
 
 1.
 2.
@@ -246,53 +178,121 @@
 7.
 8.
 
-### <bdi dir="ltr">REVIEW</bdi> / <bdi dir="ltr">REVISION</bdi> / <bdi dir="ltr">OPEN</bdi>
+### <span dir="ltr">REVIEW</span> / <span dir="ltr">REVISION</span> / <span dir="ltr">OPEN</span>
 
 
 ---
 
-## <bdi dir="ltr">Day 09</bdi> — <bdi dir="ltr">Banking System Case: UPI</bdi>
+## <span dir="ltr">Day 07</span> — <span dir="ltr">Core Week Defense</span>
 
-- <bdi dir="ltr">Case:</bdi> [<bdi dir="ltr">UPI</bdi> — <bdi dir="ltr">capability to API network</bdi>](../case-studies/week-01-upi-fa.md)
-- <bdi dir="ltr">Exercise:</bdi> [<bdi dir="ltr">Capability/Contract Review</bdi>](../exercises/day-09-upi-capability-contract-review.md)
+- <span dir="ltr">Lesson:</span> [<span dir="ltr">Day 07</span>](../lessons/day-07-week-defense-fa.md)
+- <span dir="ltr">Exercise:</span> [<span dir="ltr">Defense</span>](../exercises/day-07-week-defense.md)
+- <span dir="ltr">Report:</span> [<span dir="ltr">Template</span>](../artifacts/week-01-report-template.md)
 
-### <bdi dir="ltr">RAW</bdi> — <bdi dir="ltr">Five-point timeline</bdi>
+### <span dir="ltr">EVIDENCE</span> — <span dir="ltr">Gate</span>
 
+- <span dir="ltr">evidence index:</span>
+- <span dir="ltr">duration:</span>
+- <span dir="ltr">self-score:</span>
+- <span dir="ltr">instructor score:</span>
+- <span dir="ltr">critical errors:</span>
+- <span dir="ltr">remediation:</span>
 
-### <bdi dir="ltr">RAW</bdi> — <bdi dir="ltr">Fact</bdi> / <bdi dir="ltr">Inference</bdi> / <bdi dir="ltr">Unknown</bdi>
-
-
-### <bdi dir="ltr">RAW</bdi> — <bdi dir="ltr">Ownership map</bdi>
-
-
-### <bdi dir="ltr">RAW</bdi> — <bdi dir="ltr">Retry amplification</bdi>
-
-
-### <bdi dir="ltr">RAW</bdi> — <bdi dir="ltr">ADR-lite</bdi>
+### <span dir="ltr">REVIEW</span> / <span dir="ltr">REVISION</span> / <span dir="ltr">OPEN</span>
 
 
-### <bdi dir="ltr">REVIEW</bdi> / <bdi dir="ltr">REVISION</bdi> / <bdi dir="ltr">OPEN</bdi>
+---
+
+## <span dir="ltr">Day 08</span> — <span dir="ltr">Code Craft: Primitive to Value Object</span>
+
+- <span dir="ltr">Lesson:</span> [<span dir="ltr">Clean Code</span> + <span dir="ltr">Value Object Refactoring</span>](../lessons/day-08-clean-code-value-object-refactoring-fa.md)
+- <span dir="ltr">Exercise:</span> [<span dir="ltr">Runnable Kata</span>](../exercises/day-08-money-refactoring-kata.md)
+- <span dir="ltr">Review:</span> [<span dir="ltr">Checklist</span>](../artifacts/day-08-code-review-checklist.md)
+- <span dir="ltr">Exit Ticket:</span> [<span dir="ltr">Quiz</span>](../quizzes/day-08-exit-ticket.md)
+
+### <span dir="ltr">EVIDENCE</span> — <span dir="ltr">Baseline</span>
+
+- <span dir="ltr">command/result:</span>
+- <span dir="ltr">test count:</span>
+- <span dir="ltr">branch/commit:</span>
+
+### <span dir="ltr">RAW</span> — <span dir="ltr">Smell Map</span>
 
 
-## <bdi dir="ltr">Week reflection</bdi>
+### <span dir="ltr">RAW</span> — <span dir="ltr">Pattern Decision</span>
 
-1. کدام پاسخ <bdi dir="ltr">Day 01</bdi> بیشترین تغییر را کرد و چرا؟
-2. کدام عبارت را قبلاً <bdi dir="ltr">Capability</bdi> می‌دانستی ولی اکنون <bdi dir="ltr">System/Process</bdi> می‌دانی؟
-3. در زنجیرهٔ مسدودی، کدام <bdi dir="ltr">Ownership</bdi> هنوز نامطمئن است؟
-4. کدام <bdi dir="ltr">Coupling</bdi> در پروژه‌های واقعی تو بیشترین خطر را دارد؟
-5. <bdi dir="ltr">BIAN</bdi> چه <bdi dir="ltr">Gap</bdi> مفیدی نشان داد و کجا <bdi dir="ltr">False Friend</bdi> بود؟
-6. کدام <bdi dir="ltr">Rule Money</bdi> را عمداً به <bdi dir="ltr">Week/Context</bdi> بعد موکول کردی؟
-7. <bdi dir="ltr">Refactor</bdi> روز هشتم چه <bdi dir="ltr">Complexity</bdi> تازه‌ای ساخت؟
-8. از <bdi dir="ltr">UPI</bdi> چه چیزی را انتقال می‌دهی و چه چیزی را <bdi dir="ltr">Copy</bdi> نمی‌کنی؟
-9. یک سؤال که باید در <bdi dir="ltr">Week 02</bdi> پاسخ داده شود چیست؟
+- <span dir="ltr">Problem:</span>
+- <span dir="ltr">Forces:</span>
+- <span dir="ltr">Simplest alternative:</span>
+- <span dir="ltr">Options:</span>
+- <span dir="ltr">Decision:</span>
+- <span dir="ltr">Cost:</span>
+- <span dir="ltr">Revisit trigger:</span>
 
-## <bdi dir="ltr">Instructor final review</bdi>
+### <span dir="ltr">EVIDENCE</span> — <span dir="ltr">Checkpoints and Edge Test</span>
 
-- <bdi dir="ltr">Core score/status:</bdi>
-- <bdi dir="ltr">Expansion score/status:</bdi>
-- <bdi dir="ltr">Critical errors:</bdi>
-- <bdi dir="ltr">Required remediation:</bdi>
-- <bdi dir="ltr">Week status: Review</bdi> / <bdi dir="ltr">Gate</bdi> / <bdi dir="ltr">Done Core</bdi> / <bdi dir="ltr">Done Expanded</bdi>
+
+### <span dir="ltr">EVIDENCE</span> — <span dir="ltr">Final</span> <span dir="ltr">`mvn verify`</span>
+
+
+### <span dir="ltr">RAW</span> — <span dir="ltr">Exit Ticket</span>
+
+1.
+2.
+3.
+4.
+5.
+6.
+7.
+8.
+
+### <span dir="ltr">REVIEW</span> / <span dir="ltr">REVISION</span> / <span dir="ltr">OPEN</span>
+
+
+---
+
+## <span dir="ltr">Day 09</span> — <span dir="ltr">Banking System Case: UPI</span>
+
+- <span dir="ltr">Case:</span> [<span dir="ltr">UPI</span> — <span dir="ltr">capability to API network</span>](../case-studies/week-01-upi-fa.md)
+- <span dir="ltr">Exercise:</span> [<span dir="ltr">Capability/Contract Review</span>](../exercises/day-09-upi-capability-contract-review.md)
+
+### <span dir="ltr">RAW</span> — <span dir="ltr">Five-point timeline</span>
+
+
+### <span dir="ltr">RAW</span> — <span dir="ltr">Fact</span> / <span dir="ltr">Inference</span> / <span dir="ltr">Unknown</span>
+
+
+### <span dir="ltr">RAW</span> — <span dir="ltr">Ownership map</span>
+
+
+### <span dir="ltr">RAW</span> — <span dir="ltr">Retry amplification</span>
+
+
+### <span dir="ltr">RAW</span> — <span dir="ltr">ADR-lite</span>
+
+
+### <span dir="ltr">REVIEW</span> / <span dir="ltr">REVISION</span> / <span dir="ltr">OPEN</span>
+
+
+## <span dir="ltr">Week reflection</span>
+
+1. کدام پاسخ <span dir="ltr">Day 01</span> بیشترین تغییر را کرد و چرا؟
+2. کدام عبارت را قبلاً <span dir="ltr">Capability</span> می‌دانستی ولی اکنون <span dir="ltr">System/Process</span> می‌دانی؟
+3. در زنجیرهٔ مسدودی، کدام <span dir="ltr">Ownership</span> هنوز نامطمئن است؟
+4. کدام <span dir="ltr">Coupling</span> در پروژه‌های واقعی تو بیشترین خطر را دارد؟
+5. <span dir="ltr">BIAN</span> چه <span dir="ltr">Gap</span> مفیدی نشان داد و کجا <span dir="ltr">False Friend</span> بود؟
+6. کدام <span dir="ltr">Rule Money</span> را عمداً به <span dir="ltr">Week/Context</span> بعد موکول کردی؟
+7. <span dir="ltr">Refactor</span> روز هشتم چه <span dir="ltr">Complexity</span> تازه‌ای ساخت؟
+8. از <span dir="ltr">UPI</span> چه چیزی را انتقال می‌دهی و چه چیزی را <span dir="ltr">Copy</span> نمی‌کنی؟
+9. یک سؤال که باید در <span dir="ltr">Week 02</span> پاسخ داده شود چیست؟
+
+## <span dir="ltr">Instructor final review</span>
+
+- <span dir="ltr">Core score/status:</span>
+- <span dir="ltr">Expansion score/status:</span>
+- <span dir="ltr">Critical errors:</span>
+- <span dir="ltr">Required remediation:</span>
+- <span dir="ltr">Week status: Review</span> / <span dir="ltr">Gate</span> / <span dir="ltr">Done Core</span> / <span dir="ltr">Done Expanded</span>
 
 
 </div>

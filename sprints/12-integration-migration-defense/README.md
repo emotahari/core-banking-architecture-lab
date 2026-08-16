@@ -1,23 +1,23 @@
 <!-- bidi: rtl; code: ltr -->
 <div dir="rtl" align="right">
 
-# <bdi dir="ltr">Sprint 12</bdi> — یکپارچه‌سازی، مهاجرت و دفاع نهایی
+# <span dir="ltr">Sprint 12</span> — یکپارچه‌سازی، مهاجرت و دفاع نهایی
 
-- <bdi dir="ltr">Weeks: 23</bdi>–24
-- <bdi dir="ltr">Status: Backlog</bdi>
+- <span dir="ltr">Weeks: 23</span>–24
+- <span dir="ltr">Status: Backlog</span>
 
-## <bdi dir="ltr">Week 23</bdi>
+## <span dir="ltr">Week 23</span>
 
-سه سناریوی <bdi dir="ltr">End-to-End</bdi>، <bdi dir="ltr">Evidence Pack</bdi>، <bdi dir="ltr">Failure/Load Test</bdi> و <bdi dir="ltr">Migration Roadmap</bdi> با <bdi dir="ltr">Parallel Run</bdi> و <bdi dir="ltr">Cutover.</bdi>
+سه سناریوی <span dir="ltr">End-to-End</span>، <span dir="ltr">Evidence Pack</span>، <span dir="ltr">Failure/Load Test</span> و <span dir="ltr">Migration Roadmap</span> با <span dir="ltr">Parallel Run</span> و <span dir="ltr">Cutover.</span>
 
-## <bdi dir="ltr">Week 24</bdi>
+## <span dir="ltr">Week 24</span>
 
-دفاع ۹۰ دقیقه‌ای معماری از <bdi dir="ltr">Capability</bdi> تا <bdi dir="ltr">Runtime</bdi>، <bdi dir="ltr">Ownership</bdi>، <bdi dir="ltr">Accounting</bdi>، <bdi dir="ltr">Failure</bdi> و <bdi dir="ltr">Migration.</bdi>
+دفاع ۹۰ دقیقه‌ای معماری از <span dir="ltr">Capability</span> تا <span dir="ltr">Runtime</span>، <span dir="ltr">Ownership</span>، <span dir="ltr">Accounting</span>، <span dir="ltr">Failure</span> و <span dir="ltr">Migration.</span>
 
-## <bdi dir="ltr">Gate</bdi>
+## <span dir="ltr">Gate</span>
 
-حداقل ۷۵ از ۱۰۰، عبور از کف چهار حوزهٔ حیاتی و اجرای واقعی هر سه <bdi dir="ltr">Vertical Slice.</bdi>
+حداقل ۷۵ از ۱۰۰، عبور از کف چهار حوزهٔ حیاتی و اجرای واقعی هر سه <span dir="ltr">Vertical Slice.</span>
 
-محتوا و اینفوگرافیک روزانه هنگام ورود این <bdi dir="ltr">Sprint</bdi> تولید و <bdi dir="ltr">Version</bdi> می‌شوند.
+محتوا و اینفوگرافیک روزانه هنگام ورود این <span dir="ltr">Sprint</span> تولید و <span dir="ltr">Version</span> می‌شوند.
 
 </div>

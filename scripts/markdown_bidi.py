@@ -12,8 +12,10 @@ MARKER = "<!-- bidi: rtl; code: ltr -->"
 RTL_OPEN = '<div dir="rtl" align="right">'
 LTR_OPEN = '<div dir="ltr" align="left">'
 DIV_CLOSE = "</div>"
-BDI_OPEN = '<bdi dir="ltr">'
-BDI_CLOSE = "</bdi>"
+LTR_SPAN_OPEN = '<span dir="ltr">'
+LTR_SPAN_CLOSE = "</span>"
+LEGACY_BDI_OPEN = '<bdi dir="ltr">'
+LEGACY_BDI_CLOSE = "</bdi>"
 PREFIX = f"{MARKER}\n{RTL_OPEN}\n\n"
 SUFFIX = f"\n{DIV_CLOSE}\n"
 TO_LTR = f"\n{DIV_CLOSE}\n\n{LTR_OPEN}\n\n"
@@ -23,10 +25,10 @@ PERSIAN_RE = re.compile(r"[\u0600-\u06ff]")
 UNSAFE_BIDI_RE = re.compile(r"[\u061c\u200e\u200f\u202a-\u202e\u2066-\u2069]")
 FENCE_RE = re.compile(r"^( {0,3})(`{3,}|~{3,})(.*?)(?:\n)?$")
 INLINE_CODE_RE = re.compile(r"(?<!`)`[^`\n]+`(?!`)")
-BDI_RE = re.compile(r'(<bdi dir="ltr">.*?</bdi>)')
+LTR_SPAN_RE = re.compile(r'(<span dir="ltr">.*?</span>)')
 MARKDOWN_LIST_PREFIX_RE = re.compile(r"^(\s*(?:>\s*)*(?:\d+[.)]|[-+*])\s+)")
-ORDERED_PREFIX_IN_BDI_RE = re.compile(
-    r'^(\s*)<bdi dir="ltr">(\d+[.)])\s+([^<]*?)</bdi>(.*)$'
+ORDERED_PREFIX_IN_LTR_SPAN_RE = re.compile(
+    r'^(\s*)<span dir="ltr">(\d+[.)])\s+([^<]*?)</span>(.*)$'
 )
 ASCII_RUN_RE = re.compile(
     r"(?<![A-Za-z0-9])"
@@ -35,7 +37,7 @@ ASCII_RUN_RE = re.compile(
     r"(?![A-Za-z0-9])"
 )
 PROTECTED_RE = re.compile(
-    r"(<bdi dir=\"ltr\">.*?</bdi>"
+    r"(<span dir=\"ltr\">.*?</span>"
     r"|<!--.*?-->"
     r"|</?[A-Za-z][^>]*>"
     r"|\]\([^\n)]*\)"
@@ -61,10 +63,11 @@ def fence_token(line: str) -> tuple[str, int, str] | None:
 
 
 def isolate_inline_code(text: str) -> str:
-    parts = BDI_RE.split(text)
+    parts = LTR_SPAN_RE.split(text)
     for index in range(0, len(parts), 2):
         parts[index] = INLINE_CODE_RE.sub(
-            lambda match: f"{BDI_OPEN}{match.group(0)}{BDI_CLOSE}", parts[index]
+            lambda match: f"{LTR_SPAN_OPEN}{match.group(0)}{LTR_SPAN_CLOSE}",
+            parts[index],
         )
     return "".join(parts)
 
@@ -81,7 +84,7 @@ def isolate_ltr_terms(text: str) -> str:
         has_digit = any(character.isdigit() for character in value)
         if letters < 2 and not (letters == 1 and has_digit):
             return value
-        return f"{BDI_OPEN}{value}{BDI_CLOSE}"
+        return f"{LTR_SPAN_OPEN}{value}{LTR_SPAN_CLOSE}"
 
     for index in range(0, len(parts), 2):
         parts[index] = ASCII_RUN_RE.sub(wrap, parts[index])
@@ -108,10 +111,16 @@ def repair_formatted_markdown(text: str) -> str:
 
         newline = "\n" if line.endswith("\n") else ""
         content = line[:-1] if newline else line
-        match = ORDERED_PREFIX_IN_BDI_RE.match(content)
+        content = content.replace(LEGACY_BDI_OPEN, LTR_SPAN_OPEN).replace(
+            LEGACY_BDI_CLOSE, LTR_SPAN_CLOSE
+        )
+        match = ORDERED_PREFIX_IN_LTR_SPAN_RE.match(content)
         if match:
             indent, marker, value, remainder = match.groups()
-            content = f"{indent}{marker} {BDI_OPEN}{value}{BDI_CLOSE}{remainder}"
+            content = (
+                f"{indent}{marker} "
+                f"{LTR_SPAN_OPEN}{value}{LTR_SPAN_CLOSE}{remainder}"
+            )
         output.append(content + newline)
 
     return "".join(output)
@@ -181,8 +190,14 @@ def validate_markdown(text: str) -> list[str]:
 
         if stripped == MARKER:
             continue
-        if ORDERED_PREFIX_IN_BDI_RE.match(line.rstrip("\n")):
-            errors.append(f"line {number}: ordered-list marker must remain outside bdi")
+        if LEGACY_BDI_OPEN in line or LEGACY_BDI_CLOSE in line:
+            errors.append(
+                f"line {number}: bdi is stripped by GitHub; use span with dir instead"
+            )
+        if ORDERED_PREFIX_IN_LTR_SPAN_RE.match(line.rstrip("\n")):
+            errors.append(
+                f"line {number}: ordered-list marker must remain outside LTR span"
+            )
         if stripped == RTL_OPEN:
             if direction is not None:
                 errors.append(f"line {number}: nested direction wrapper")

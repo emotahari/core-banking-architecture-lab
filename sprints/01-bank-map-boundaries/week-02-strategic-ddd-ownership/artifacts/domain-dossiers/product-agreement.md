@@ -1,44 +1,44 @@
 <!-- bidi: rtl; code: ltr -->
 <div dir="rtl" align="right">
 
-# <bdi dir="ltr">Domain Dossier</bdi> — <bdi dir="ltr">Product</bdi> & <bdi dir="ltr">Agreement</bdi>
+# <span dir="ltr">Domain Dossier</span> — <span dir="ltr">Product</span> & <span dir="ltr">Agreement</span>
 
-- <bdi dir="ltr">Version: 0.1</bdi>
-- <bdi dir="ltr">Status: Not started</bdi>
-- <bdi dir="ltr">Claim type: Hypothesis until reviewed</bdi>
-- <bdi dir="ltr">Full structure:</bdi> [<bdi dir="ltr">Domain Dossier Template</bdi>](../domain-dossier-template.md)
+- <span dir="ltr">Version: 0.1</span>
+- <span dir="ltr">Status: Not started</span>
+- <span dir="ltr">Claim type: Hypothesis until reviewed</span>
+- <span dir="ltr">Full structure:</span> [<span dir="ltr">Domain Dossier Template</span>](../domain-dossier-template.md)
 
-## <bdi dir="ltr">Purpose and outcome</bdi>
+## <span dir="ltr">Purpose and outcome</span>
 
 
-## <bdi dir="ltr">In scope</bdi> / <bdi dir="ltr">out of scope</bdi>
+## <span dir="ltr">In scope</span> / <span dir="ltr">out of scope</span>
 
-| <bdi dir="ltr">In scope</bdi> | <bdi dir="ltr">Out of scope</bdi> | <bdi dir="ltr">Boundary reason</bdi> |
+| <span dir="ltr">In scope</span> | <span dir="ltr">Out of scope</span> | <span dir="ltr">Boundary reason</span> |
 |---|---|---|
 |  |  |  |
 
-## <bdi dir="ltr">Ubiquitous Language</bdi>
+## <span dir="ltr">Ubiquitous Language</span>
 
-| <bdi dir="ltr">Term</bdi> | <bdi dir="ltr">Meaning here</bdi> | <bdi dir="ltr">Not the same as</bdi> |
+| <span dir="ltr">Term</span> | <span dir="ltr">Meaning here</span> | <span dir="ltr">Not the same as</span> |
 |---|---|---|
-| <bdi dir="ltr">Product</bdi> |  |  |
-| <bdi dir="ltr">Product version</bdi> |  |  |
-| <bdi dir="ltr">Offering</bdi> |  |  |
-| <bdi dir="ltr">Agreement</bdi> |  |  |
-| <bdi dir="ltr">Effective terms</bdi> |  |  |
+| <span dir="ltr">Product</span> |  |  |
+| <span dir="ltr">Product version</span> |  |  |
+| <span dir="ltr">Offering</span> |  |  |
+| <span dir="ltr">Agreement</span> |  |  |
+| <span dir="ltr">Effective terms</span> |  |  |
 
-## <bdi dir="ltr">Ownership and non-ownership</bdi>
+## <span dir="ltr">Ownership and non-ownership</span>
 
-| <bdi dir="ltr">Fact/Decision</bdi> | <bdi dir="ltr">Owns</bdi> / <bdi dir="ltr">must not own</bdi> | <bdi dir="ltr">Authority if external</bdi> | <bdi dir="ltr">Copy type</bdi> |
+| <span dir="ltr">Fact/Decision</span> | <span dir="ltr">Owns</span> / <span dir="ltr">must not own</span> | <span dir="ltr">Authority if external</span> | <span dir="ltr">Copy type</span> |
 |---|---|---|---|
 |  |  |  |  |
 
-## <bdi dir="ltr">Context relationships and module hypothesis</bdi>
+## <span dir="ltr">Context relationships and module hypothesis</span>
 
 
-## <bdi dir="ltr">Open questions</bdi>
+## <span dir="ltr">Open questions</span>
 
-1. آیا <bdi dir="ltr">Product</bdi> و <bdi dir="ltr">Agreement</bdi> واقعاً یک <bdi dir="ltr">Bounded Context</bdi> هستند یا فقط برای <bdi dir="ltr">Lab</bdi> در یک <bdi dir="ltr">Module</bdi> قرار گرفته‌اند؟
+1. آیا <span dir="ltr">Product</span> و <span dir="ltr">Agreement</span> واقعاً یک <span dir="ltr">Bounded Context</span> هستند یا فقط برای <span dir="ltr">Lab</span> در یک <span dir="ltr">Module</span> قرار گرفته‌اند؟
 2. 
 3. 
 

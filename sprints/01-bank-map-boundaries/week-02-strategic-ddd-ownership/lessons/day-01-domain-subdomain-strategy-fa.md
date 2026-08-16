@@ -1,37 +1,37 @@
 <!-- bidi: rtl; code: ltr -->
 <div dir="rtl" align="right">
 
-# <bdi dir="ltr">Day 01</bdi> — <bdi dir="ltr">Domain</bdi>، <bdi dir="ltr">Subdomain</bdi> و اهمیت راهبردی
+# <span dir="ltr">Day 01</span> — <span dir="ltr">Domain</span>، <span dir="ltr">Subdomain</span> و اهمیت راهبردی
 
-- <bdi dir="ltr">Day budget: 50 minutes including exercise and exit ticket</bdi>
-- <bdi dir="ltr">Level: intermediate</bdi>
-- <bdi dir="ltr">Output: Subdomain Matrix v0.1</bdi>
-- <bdi dir="ltr">Banking case:</bdi> زنجیرهٔ اعتبار از طراحی محصول تا وصول
+- <span dir="ltr">Day budget: 50 minutes including exercise and exit ticket</span>
+- <span dir="ltr">Level: intermediate</span>
+- <span dir="ltr">Output: Subdomain Matrix v0.1</span>
+- <span dir="ltr">Banking case:</span> زنجیرهٔ اعتبار از طراحی محصول تا وصول
 
 ## 1. هدف قابل سنجش
 
 در پایان این درس باید بتوانی:
 
-1. <bdi dir="ltr">Domain</bdi> را از <bdi dir="ltr">Capability</bdi>، <bdi dir="ltr">Application</bdi>، <bdi dir="ltr">Department</bdi> و <bdi dir="ltr">Bounded Context</bdi> جدا کنی.
-2. یک حوزهٔ بزرگ بانکی را بر اساس دانش، قواعد و <bdi dir="ltr">Outcome</bdi> به <bdi dir="ltr">Subdomain</bdi>های معنادار بشکنی.
-3. <bdi dir="ltr">Core</bdi>، <bdi dir="ltr">Supporting</bdi> و <bdi dir="ltr">Generic</bdi> را با شواهد راهبردی طبقه‌بندی کنی.
+1. <span dir="ltr">Domain</span> را از <span dir="ltr">Capability</span>، <span dir="ltr">Application</span>، <span dir="ltr">Department</span> و <span dir="ltr">Bounded Context</span> جدا کنی.
+2. یک حوزهٔ بزرگ بانکی را بر اساس دانش، قواعد و <span dir="ltr">Outcome</span> به <span dir="ltr">Subdomain</span>های معنادار بشکنی.
+3. <span dir="ltr">Core</span>، <span dir="ltr">Supporting</span> و <span dir="ltr">Generic</span> را با شواهد راهبردی طبقه‌بندی کنی.
 4. توضیح بدهی چرا این طبقه‌بندی برای دو بانک یا دو مقطع زمانی می‌تواند متفاوت باشد.
-5. پیامد طبقه‌بندی را برای سرمایه‌گذاری، تیم، <bdi dir="ltr">Build/Buy</bdi> و کیفیت مدل بیان کنی.
+5. پیامد طبقه‌بندی را برای سرمایه‌گذاری، تیم، <span dir="ltr">Build/Buy</span> و کیفیت مدل بیان کنی.
 
 ## 2. پیش‌نیاز
 
-از <bdi dir="ltr">Week 01</bdi> باید به یاد داشته باشی:
+از <span dir="ltr">Week 01</span> باید به یاد داشته باشی:
 
-- <bdi dir="ltr">Capability</bdi> می‌گوید بانک چه کاری باید بتواند انجام دهد.
-- <bdi dir="ltr">Domain</bdi> محل دانش و مسئله است.
-- <bdi dir="ltr">Bounded Context</bdi> مرز اعتبار یک مدل و زبان است.
-- هیچ‌کدام به‌طور خودکار <bdi dir="ltr">Deployable Service</bdi> نیستند.
+- <span dir="ltr">Capability</span> می‌گوید بانک چه کاری باید بتواند انجام دهد.
+- <span dir="ltr">Domain</span> محل دانش و مسئله است.
+- <span dir="ltr">Bounded Context</span> مرز اعتبار یک مدل و زبان است.
+- هیچ‌کدام به‌طور خودکار <span dir="ltr">Deployable Service</span> نیستند.
 
-اگر هنوز می‌گویی «سامانهٔ تسهیلات یک <bdi dir="ltr">Domain</bdi> است چون یک <bdi dir="ltr">Database</bdi> دارد»، این درس دقیقاً همان مدل ذهنی را اصلاح می‌کند.
+اگر هنوز می‌گویی «سامانهٔ تسهیلات یک <span dir="ltr">Domain</span> است چون یک <span dir="ltr">Database</span> دارد»، این درس دقیقاً همان مدل ذهنی را اصلاح می‌کند.
 
 ## 3. مدل ذهنی اصلی
 
-بانک را یک <bdi dir="ltr">Problem Space</bdi> بزرگ فرض کن. درون آن نواحی‌ای وجود دارند که:
+بانک را یک <span dir="ltr">Problem Space</span> بزرگ فرض کن. درون آن نواحی‌ای وجود دارند که:
 
 - هدف‌های متفاوت دارند؛
 - از واژگان و خبرگان متفاوت استفاده می‌کنند؛
@@ -39,7 +39,7 @@
 - با سرعت و دلیل متفاوت تغییر می‌کنند؛
 - ارزش و ریسک متفاوتی برای راهبرد بانک دارند.
 
-<bdi dir="ltr">Strategic DDD</bdi> پیش از آنکه دربارهٔ کلاس و <bdi dir="ltr">Aggregate</bdi> حرف بزند، می‌پرسد:
+<span dir="ltr">Strategic DDD</span> پیش از آنکه دربارهٔ کلاس و <span dir="ltr">Aggregate</span> حرف بزند، می‌پرسد:
 
 > کدام قسمت مسئله برای ما مهم‌تر است، مرز دانش آن کجاست و بهترین انرژی طراحی را کجا خرج کنیم؟
 
@@ -65,57 +65,57 @@ Bounded Context hypotheses
 <div dir="rtl" align="right">
 
 
-فلش آخر یک نگاشت یک‌به‌یک نیست. یک <bdi dir="ltr">Subdomain</bdi> می‌تواند در یک یا چند <bdi dir="ltr">Bounded Context</bdi> مدل شود و یک <bdi dir="ltr">Context</bdi> ممکن است در گذار <bdi dir="ltr">Legacy</bdi> بخشی از چند <bdi dir="ltr">Subdomain</bdi> را حمل کند؛ هرچند این اختلاط معمولاً نیازمند ثبت <bdi dir="ltr">Debt</bdi> و برنامهٔ اصلاح است.
+فلش آخر یک نگاشت یک‌به‌یک نیست. یک <span dir="ltr">Subdomain</span> می‌تواند در یک یا چند <span dir="ltr">Bounded Context</span> مدل شود و یک <span dir="ltr">Context</span> ممکن است در گذار <span dir="ltr">Legacy</span> بخشی از چند <span dir="ltr">Subdomain</span> را حمل کند؛ هرچند این اختلاط معمولاً نیازمند ثبت <span dir="ltr">Debt</span> و برنامهٔ اصلاح است.
 
 ## 4. تعریف‌های دقیق
 
-### <bdi dir="ltr">4.1 Domain</bdi>
+### <span dir="ltr">4.1 Domain</span>
 
-<bdi dir="ltr">Domain</bdi> حوزه‌ای از مسئله، دانش و فعالیت است که سازمان در آن ارزش ایجاد می‌کند یا تعهدی را انجام می‌دهد.
+<span dir="ltr">Domain</span> حوزه‌ای از مسئله، دانش و فعالیت است که سازمان در آن ارزش ایجاد می‌کند یا تعهدی را انجام می‌دهد.
 
 مثال‌ها در بانک:
 
-- <bdi dir="ltr">Lending</bdi>
-- <bdi dir="ltr">Deposits</bdi>
-- <bdi dir="ltr">Payments</bdi>
-- <bdi dir="ltr">Accounting</bdi>
-- <bdi dir="ltr">Customer Management</bdi>
+- <span dir="ltr">Lending</span>
+- <span dir="ltr">Deposits</span>
+- <span dir="ltr">Payments</span>
+- <span dir="ltr">Accounting</span>
+- <span dir="ltr">Customer Management</span>
 
-این نام‌ها هنوز اندازهٔ دقیق یا <bdi dir="ltr">Boundary</bdi> نهایی را ثابت نمی‌کنند. <bdi dir="ltr">`Lending`</bdi> می‌تواند برای یک بحث <bdi dir="ltr">Executive</bdi> یک <bdi dir="ltr">Domain</bdi> مناسب باشد، ولی برای طراحی مدل بسیار بزرگ است.
+این نام‌ها هنوز اندازهٔ دقیق یا <span dir="ltr">Boundary</span> نهایی را ثابت نمی‌کنند. <span dir="ltr">`Lending`</span> می‌تواند برای یک بحث <span dir="ltr">Executive</span> یک <span dir="ltr">Domain</span> مناسب باشد، ولی برای طراحی مدل بسیار بزرگ است.
 
-### <bdi dir="ltr">4.2 Subdomain</bdi>
+### <span dir="ltr">4.2 Subdomain</span>
 
-<bdi dir="ltr">Subdomain</bdi> بخشی متمایز از <bdi dir="ltr">Domain</bdi> است که <bdi dir="ltr">Outcome</bdi>، قواعد، زبان یا تخصص نسبتاً منسجم دارد.
+<span dir="ltr">Subdomain</span> بخشی متمایز از <span dir="ltr">Domain</span> است که <span dir="ltr">Outcome</span>، قواعد، زبان یا تخصص نسبتاً منسجم دارد.
 
-برای <bdi dir="ltr">Lending</bdi> می‌توان <bdi dir="ltr">Candidate</bdi>های زیر را کشف کرد:
+برای <span dir="ltr">Lending</span> می‌توان <span dir="ltr">Candidate</span>های زیر را کشف کرد:
 
-- <bdi dir="ltr">Loan Origination</bdi>
-- <bdi dir="ltr">Credit Assessment/Decision</bdi>
-- <bdi dir="ltr">Product</bdi> & <bdi dir="ltr">Pricing</bdi>
-- <bdi dir="ltr">Agreement Formation</bdi>
-- <bdi dir="ltr">Loan Servicing</bdi>
-- <bdi dir="ltr">Repayment</bdi>
-- <bdi dir="ltr">Delinquency/Collections</bdi>
+- <span dir="ltr">Loan Origination</span>
+- <span dir="ltr">Credit Assessment/Decision</span>
+- <span dir="ltr">Product</span> & <span dir="ltr">Pricing</span>
+- <span dir="ltr">Agreement Formation</span>
+- <span dir="ltr">Loan Servicing</span>
+- <span dir="ltr">Repayment</span>
+- <span dir="ltr">Delinquency/Collections</span>
 
-این فهرست نسخهٔ جهانی نیست. در یک بانک، <bdi dir="ltr">Credit Decision</bdi> ممکن است <bdi dir="ltr">Rule Engine</bdi> مرکزیِ چند محصول باشد؛ در بانک دیگر بخشی از <bdi dir="ltr">Lending Corporate</bdi> با دانش اختصاصی باشد. مرز باید از واقعیت کسب‌وکار کشف شود.
+این فهرست نسخهٔ جهانی نیست. در یک بانک، <span dir="ltr">Credit Decision</span> ممکن است <span dir="ltr">Rule Engine</span> مرکزیِ چند محصول باشد؛ در بانک دیگر بخشی از <span dir="ltr">Lending Corporate</span> با دانش اختصاصی باشد. مرز باید از واقعیت کسب‌وکار کشف شود.
 
-### <bdi dir="ltr">4.3 Core Subdomain</bdi>
+### <span dir="ltr">4.3 Core Subdomain</span>
 
-<bdi dir="ltr">Core Subdomain</bdi> جایی است که بانک در مقطع فعلی می‌خواهد از طریق دانش، مدل یا شیوهٔ اجرای متمایز، مزیت راهبردی بسازد.
+<span dir="ltr">Core Subdomain</span> جایی است که بانک در مقطع فعلی می‌خواهد از طریق دانش، مدل یا شیوهٔ اجرای متمایز، مزیت راهبردی بسازد.
 
 نشانه‌ها:
 
-- مستقیماً به <bdi dir="ltr">Strategy</bdi> و <bdi dir="ltr">Outcome</bdi> کلیدی وصل است.
+- مستقیماً به <span dir="ltr">Strategy</span> و <span dir="ltr">Outcome</span> کلیدی وصل است.
 - قواعد آن برای بانک متمایز یا بسیار ارزشمندند.
 - تغییر سریع و یادگیری مستمر در آن رخ می‌دهد.
 - واگذاری کامل مدل آن، مزیت یا اختیار مهمی را از بانک می‌گیرد.
 - خبرگان و تیم قوی‌تر باید در آن متمرکز شوند.
 
-<bdi dir="ltr">`Core`</bdi> به معنی «هر چیز حیاتی» نیست. برق دیتاسنتر حیاتی است، ولی لزوماً <bdi dir="ltr">Core Subdomain</bdi> کسب‌وکار بانک نیست.
+<span dir="ltr">`Core`</span> به معنی «هر چیز حیاتی» نیست. برق دیتاسنتر حیاتی است، ولی لزوماً <span dir="ltr">Core Subdomain</span> کسب‌وکار بانک نیست.
 
-### <bdi dir="ltr">4.4 Supporting Subdomain</bdi>
+### <span dir="ltr">4.4 Supporting Subdomain</span>
 
-<bdi dir="ltr">Supporting Subdomain</bdi> برای تحقق <bdi dir="ltr">Core</bdi> یا عملیات بانک لازم و دارای قواعد تخصصی است، ولی منبع اصلی تمایز راهبردی نیست.
+<span dir="ltr">Supporting Subdomain</span> برای تحقق <span dir="ltr">Core</span> یا عملیات بانک لازم و دارای قواعد تخصصی است، ولی منبع اصلی تمایز راهبردی نیست.
 
 ممکن است:
 
@@ -124,188 +124,188 @@ Bounded Context hypotheses
 - به مدل دقیق و تیم متخصص نیاز داشته باشد؛
 - با این حال مزیت رقابتی اصلی بانک نباشد.
 
-برای بسیاری از بانک‌ها، <bdi dir="ltr">Accounting</bdi> عملیاتی دقیق و حیاتی است، اما الزاماً محلی نیست که بانک از طریق مدل منحصربه‌فرد آن با رقبا تفاوت بسازد. بنابراین می‌تواند <bdi dir="ltr">Supporting</bdi> باشد؛ اما این یک <bdi dir="ltr">Hypothesis</bdi> است، نه حکم جهانی.
+برای بسیاری از بانک‌ها، <span dir="ltr">Accounting</span> عملیاتی دقیق و حیاتی است، اما الزاماً محلی نیست که بانک از طریق مدل منحصربه‌فرد آن با رقبا تفاوت بسازد. بنابراین می‌تواند <span dir="ltr">Supporting</span> باشد؛ اما این یک <span dir="ltr">Hypothesis</span> است، نه حکم جهانی.
 
-### <bdi dir="ltr">4.5 Generic Subdomain</bdi>
+### <span dir="ltr">4.5 Generic Subdomain</span>
 
-<bdi dir="ltr">Generic Subdomain</bdi> مسئله‌ای است که راه‌حل استاندارد و قابل‌خرید/استفادهٔ مجدد برای آن وجود دارد و مدل اختصاصی بانک معمولاً مزیت ایجاد نمی‌کند.
+<span dir="ltr">Generic Subdomain</span> مسئله‌ای است که راه‌حل استاندارد و قابل‌خرید/استفادهٔ مجدد برای آن وجود دارد و مدل اختصاصی بانک معمولاً مزیت ایجاد نمی‌کند.
 
 نمونهٔ محتمل:
 
-- عمومی‌ترین بخش‌های <bdi dir="ltr">IAM</bdi>
-- ارسال <bdi dir="ltr">Email/SMS</bdi>
+- عمومی‌ترین بخش‌های <span dir="ltr">IAM</span>
+- ارسال <span dir="ltr">Email/SMS</span>
 - مدیریت فایل عمومی
-- <bdi dir="ltr">Scheduler</bdi> فنی
+- <span dir="ltr">Scheduler</span> فنی
 
-<bdi dir="ltr">Generic</bdi> به معنی بی‌اهمیت، کم‌ریسک یا بدون <bdi dir="ltr">Owner</bdi> نیست. <bdi dir="ltr">IAM</bdi> می‌تواند <bdi dir="ltr">Generic</bdi> باشد و هم‌زمان امنیتی و حیاتی باشد.
+<span dir="ltr">Generic</span> به معنی بی‌اهمیت، کم‌ریسک یا بدون <span dir="ltr">Owner</span> نیست. <span dir="ltr">IAM</span> می‌تواند <span dir="ltr">Generic</span> باشد و هم‌زمان امنیتی و حیاتی باشد.
 
 ## 5. چهار تمایز ضروری
 
-### <bdi dir="ltr">5.1 Subdomain</bdi> با <bdi dir="ltr">Capability</bdi> یکی نیست
+### <span dir="ltr">5.1 Subdomain</span> با <span dir="ltr">Capability</span> یکی نیست
 
-<bdi dir="ltr">Capability</bdi> نمای توان سازمان است؛ <bdi dir="ltr">Subdomain</bdi> نمای ناحیهٔ دانش و مسئله. ممکن است <bdi dir="ltr">Capability</bdi> «اعطای اعتبار» به چند <bdi dir="ltr">Subdomain</bdi> مانند <bdi dir="ltr">Credit Decision</bdi>، <bdi dir="ltr">Agreement</bdi> و <bdi dir="ltr">Loan Servicing</bdi> وابسته باشد.
+<span dir="ltr">Capability</span> نمای توان سازمان است؛ <span dir="ltr">Subdomain</span> نمای ناحیهٔ دانش و مسئله. ممکن است <span dir="ltr">Capability</span> «اعطای اعتبار» به چند <span dir="ltr">Subdomain</span> مانند <span dir="ltr">Credit Decision</span>، <span dir="ltr">Agreement</span> و <span dir="ltr">Loan Servicing</span> وابسته باشد.
 
-### <bdi dir="ltr">5.2 Subdomain</bdi> با <bdi dir="ltr">Bounded Context</bdi> یکی نیست
+### <span dir="ltr">5.2 Subdomain</span> با <span dir="ltr">Bounded Context</span> یکی نیست
 
-<bdi dir="ltr">Subdomain</bdi> در <bdi dir="ltr">Problem Space</bdi> است. <bdi dir="ltr">Bounded Context</bdi> یک مرز مدل در <bdi dir="ltr">Solution Space</bdi> است. هدف مطلوب، <bdi dir="ltr">Alignment</bdi> خوب میان آن‌هاست؛ اما <bdi dir="ltr">Legacy</bdi>، ساختار تیم و <bdi dir="ltr">Migration</bdi> ممکن است <bdi dir="ltr">Mapping</bdi> را پیچیده کند.
+<span dir="ltr">Subdomain</span> در <span dir="ltr">Problem Space</span> است. <span dir="ltr">Bounded Context</span> یک مرز مدل در <span dir="ltr">Solution Space</span> است. هدف مطلوب، <span dir="ltr">Alignment</span> خوب میان آن‌هاست؛ اما <span dir="ltr">Legacy</span>، ساختار تیم و <span dir="ltr">Migration</span> ممکن است <span dir="ltr">Mapping</span> را پیچیده کند.
 
-### <bdi dir="ltr">5.3 Subdomain</bdi> با سامانه یکی نیست
+### <span dir="ltr">5.3 Subdomain</span> با سامانه یکی نیست
 
-یک سامانهٔ <bdi dir="ltr">Legacy</bdi> ممکن است <bdi dir="ltr">Customer</bdi>، <bdi dir="ltr">Product</bdi>، <bdi dir="ltr">Lending</bdi> و <bdi dir="ltr">Accounting</bdi> را در یک <bdi dir="ltr">Database</bdi> مخلوط کرده باشد. این فقط وضع موجود را نشان می‌دهد، نه مرز دانش را.
+یک سامانهٔ <span dir="ltr">Legacy</span> ممکن است <span dir="ltr">Customer</span>، <span dir="ltr">Product</span>، <span dir="ltr">Lending</span> و <span dir="ltr">Accounting</span> را در یک <span dir="ltr">Database</span> مخلوط کرده باشد. این فقط وضع موجود را نشان می‌دهد، نه مرز دانش را.
 
-### <bdi dir="ltr">5.4 Core</bdi> با <bdi dir="ltr">Main Core</bdi> زیرساختی یکی نیست
+### <span dir="ltr">5.4 Core</span> با <span dir="ltr">Main Core</span> زیرساختی یکی نیست
 
-در ادبیات سازمانی ممکن است <bdi dir="ltr">`Main Core`</bdi> نام مجموعه‌ای از سامانه‌های مرکزی باشد. <bdi dir="ltr">`Core Subdomain`</bdi> در <bdi dir="ltr">Strategic DDD</bdi> دربارهٔ مزیت راهبردی و تمرکز مدل‌سازی است. تشابه واژه نباید این دو را یکی کند.
+در ادبیات سازمانی ممکن است <span dir="ltr">`Main Core`</span> نام مجموعه‌ای از سامانه‌های مرکزی باشد. <span dir="ltr">`Core Subdomain`</span> در <span dir="ltr">Strategic DDD</span> دربارهٔ مزیت راهبردی و تمرکز مدل‌سازی است. تشابه واژه نباید این دو را یکی کند.
 
 ## 6. طبقه‌بندی یک ویژگی ذاتی و ابدی نیست
 
 فرض کن راهبرد بانک در سال اول «رشد وام خرد دیجیتال با تصمیم زیر پنج دقیقه» است. در این مقطع:
 
-- <bdi dir="ltr">Credit Decision</bdi> و <bdi dir="ltr">Digital Origination</bdi> احتمالاً <bdi dir="ltr">Core</bdi> هستند.
-- <bdi dir="ltr">Loan Servicing</bdi> ممکن است <bdi dir="ltr">Supporting</bdi> باشد.
-- <bdi dir="ltr">Email Notification</bdi> احتمالاً <bdi dir="ltr">Generic</bdi> است.
+- <span dir="ltr">Credit Decision</span> و <span dir="ltr">Digital Origination</span> احتمالاً <span dir="ltr">Core</span> هستند.
+- <span dir="ltr">Loan Servicing</span> ممکن است <span dir="ltr">Supporting</span> باشد.
+- <span dir="ltr">Email Notification</span> احتمالاً <span dir="ltr">Generic</span> است.
 
-اگر دو سال بعد <bdi dir="ltr">Strategy</bdi> به «تأمین مالی زنجیرهٔ تأمین شرکت‌ها» تغییر کند، مدل <bdi dir="ltr">Exposure</bdi>، <bdi dir="ltr">Limit</bdi>، <bdi dir="ltr">Covenant</bdi> و <bdi dir="ltr">Relationship Pricing</bdi> ممکن است <bdi dir="ltr">Core</bdi> شود. همان <bdi dir="ltr">Subdomain</bdi> قبلی می‌تواند اهمیت متفاوتی پیدا کند.
+اگر دو سال بعد <span dir="ltr">Strategy</span> به «تأمین مالی زنجیرهٔ تأمین شرکت‌ها» تغییر کند، مدل <span dir="ltr">Exposure</span>، <span dir="ltr">Limit</span>، <span dir="ltr">Covenant</span> و <span dir="ltr">Relationship Pricing</span> ممکن است <span dir="ltr">Core</span> شود. همان <span dir="ltr">Subdomain</span> قبلی می‌تواند اهمیت متفاوتی پیدا کند.
 
-پس در <bdi dir="ltr">Artifact</bdi> باید بنویسی:
+پس در <span dir="ltr">Artifact</span> باید بنویسی:
 
-- <bdi dir="ltr">Classification</bdi>
-- <bdi dir="ltr">Evidence</bdi>
-- <bdi dir="ltr">Confidence</bdi>
-- <bdi dir="ltr">Review trigger/date</bdi>
+- <span dir="ltr">Classification</span>
+- <span dir="ltr">Evidence</span>
+- <span dir="ltr">Confidence</span>
+- <span dir="ltr">Review trigger/date</span>
 
-نوشتن فقط یک رنگ روی <bdi dir="ltr">Domain Map</bdi>، تصمیم معماری قابل دفاع نیست.
+نوشتن فقط یک رنگ روی <span dir="ltr">Domain Map</span>، تصمیم معماری قابل دفاع نیست.
 
-## <bdi dir="ltr">7. Forces</bdi> طبقه‌بندی
+## <span dir="ltr">7. Forces</span> طبقه‌بندی
 
-برای هر <bdi dir="ltr">Candidate</bdi> حداقل این شش <bdi dir="ltr">Force</bdi> را بررسی کن:
+برای هر <span dir="ltr">Candidate</span> حداقل این شش <span dir="ltr">Force</span> را بررسی کن:
 
-| <bdi dir="ltr">Force</bdi> | سؤال |
+| <span dir="ltr">Force</span> | سؤال |
 |---|---|
-| <bdi dir="ltr">Strategic differentiation</bdi> | آیا بهترشدن این مدل <bdi dir="ltr">Outcome</bdi> راهبردی و تمایز بانک را بالا می‌برد؟ |
-| <bdi dir="ltr">Domain specificity</bdi> | قواعد چقدر بانکی و مختص مدل کسب‌وکار ما هستند؟ |
-| <bdi dir="ltr">Change and learning</bdi> | چندبار و به چه دلیل تغییر می‌کند؟ |
-| <bdi dir="ltr">Risk</bdi> | خطا چه اثر مالی، حقوقی، اعتباری یا عملیاتی دارد؟ |
-| <bdi dir="ltr">Scarce knowledge</bdi> | آیا فهم عمیق و کمیاب خبرگان لازم است؟ |
-| <bdi dir="ltr">Control/build-buy</bdi> | کدام بخش باید تحت کنترل بانک بماند و چرا؟ |
+| <span dir="ltr">Strategic differentiation</span> | آیا بهترشدن این مدل <span dir="ltr">Outcome</span> راهبردی و تمایز بانک را بالا می‌برد؟ |
+| <span dir="ltr">Domain specificity</span> | قواعد چقدر بانکی و مختص مدل کسب‌وکار ما هستند؟ |
+| <span dir="ltr">Change and learning</span> | چندبار و به چه دلیل تغییر می‌کند؟ |
+| <span dir="ltr">Risk</span> | خطا چه اثر مالی، حقوقی، اعتباری یا عملیاتی دارد؟ |
+| <span dir="ltr">Scarce knowledge</span> | آیا فهم عمیق و کمیاب خبرگان لازم است؟ |
+| <span dir="ltr">Control/build-buy</span> | کدام بخش باید تحت کنترل بانک بماند و چرا؟ |
 
-پیچیدگی به‌تنهایی <bdi dir="ltr">Core</bdi> بودن را ثابت نمی‌کند. یک مسئله ممکن است بسیار پیچیده ولی <bdi dir="ltr">Commodity</bdi> باشد. همچنین تعداد <bdi dir="ltr">Transaction</bdi> بالا به‌تنهایی <bdi dir="ltr">Classification</bdi> راهبردی نیست؛ آن یک <bdi dir="ltr">Force</bdi> فنی/<bdi dir="ltr">NFR</bdi> است.
+پیچیدگی به‌تنهایی <span dir="ltr">Core</span> بودن را ثابت نمی‌کند. یک مسئله ممکن است بسیار پیچیده ولی <span dir="ltr">Commodity</span> باشد. همچنین تعداد <span dir="ltr">Transaction</span> بالا به‌تنهایی <span dir="ltr">Classification</span> راهبردی نیست؛ آن یک <span dir="ltr">Force</span> فنی/<span dir="ltr">NFR</span> است.
 
 ## 8. مثال هدایت‌شده: «وام خرد دیجیتال»
 
-### مرحلهٔ اول: <bdi dir="ltr">Outcome</bdi>
+### مرحلهٔ اول: <span dir="ltr">Outcome</span>
 
-<bdi dir="ltr">Outcome</bdi> فرضی بانک:
+<span dir="ltr">Outcome</span> فرضی بانک:
 
 > مشتری واجد شرایط بتواند با کنترل ریسک مصوب، وام خرد را در کمتر از پنج دقیقه دریافت کند.
 
-### مرحلهٔ دوم: <bdi dir="ltr">Candidate Subdomain</bdi>ها
+### مرحلهٔ دوم: <span dir="ltr">Candidate Subdomain</span>ها
 
-- <bdi dir="ltr">Customer Identification/KYC</bdi>
-- <bdi dir="ltr">Eligibility and Credit Decision</bdi>
-- <bdi dir="ltr">Product/Pricing</bdi>
-- <bdi dir="ltr">Agreement Formation</bdi>
-- <bdi dir="ltr">Disbursement</bdi>
-- <bdi dir="ltr">Deposit Credit</bdi>
-- <bdi dir="ltr">Loan Servicing</bdi>
-- <bdi dir="ltr">Accounting</bdi>
-- <bdi dir="ltr">Notification</bdi>
+- <span dir="ltr">Customer Identification/KYC</span>
+- <span dir="ltr">Eligibility and Credit Decision</span>
+- <span dir="ltr">Product/Pricing</span>
+- <span dir="ltr">Agreement Formation</span>
+- <span dir="ltr">Disbursement</span>
+- <span dir="ltr">Deposit Credit</span>
+- <span dir="ltr">Loan Servicing</span>
+- <span dir="ltr">Accounting</span>
+- <span dir="ltr">Notification</span>
 
 ### مرحلهٔ سوم: تحلیل، نه اعلام حکم
 
-<bdi dir="ltr">`Eligibility and Credit Decision`</bdi> ممکن است <bdi dir="ltr">Core</bdi> باشد، اگر بانک مدل داده و قواعد ریسک متمایزی دارد و <bdi dir="ltr">Strategy</bdi> روی سرعت/کیفیت تصمیم استوار است.
+<span dir="ltr">`Eligibility and Credit Decision`</span> ممکن است <span dir="ltr">Core</span> باشد، اگر بانک مدل داده و قواعد ریسک متمایزی دارد و <span dir="ltr">Strategy</span> روی سرعت/کیفیت تصمیم استوار است.
 
-<bdi dir="ltr">`Notification`</bdi> احتمالاً <bdi dir="ltr">Generic</bdi> است، چون تفاوت در موتور ارسال پیام مزیت اصلی وام را نمی‌سازد؛ ولی محتوای حقوقی پیام ممکن است بخشی از <bdi dir="ltr">Supporting policy</bdi> باشد.
+<span dir="ltr">`Notification`</span> احتمالاً <span dir="ltr">Generic</span> است، چون تفاوت در موتور ارسال پیام مزیت اصلی وام را نمی‌سازد؛ ولی محتوای حقوقی پیام ممکن است بخشی از <span dir="ltr">Supporting policy</span> باشد.
 
-<bdi dir="ltr">`Accounting`</bdi> حیاتی و تخصصی است. شاید <bdi dir="ltr">Supporting</bdi> باشد، زیرا صحت و تطابق می‌خواهد اما مدل اختصاصی آن مزیت بازاری تولید نمی‌کند. بااین‌حال اگر بانک یک <bdi dir="ltr">Accounting Product/Platform</bdi> به دیگر مؤسسات عرضه کند، <bdi dir="ltr">Classification</bdi> می‌تواند تغییر کند.
+<span dir="ltr">`Accounting`</span> حیاتی و تخصصی است. شاید <span dir="ltr">Supporting</span> باشد، زیرا صحت و تطابق می‌خواهد اما مدل اختصاصی آن مزیت بازاری تولید نمی‌کند. بااین‌حال اگر بانک یک <span dir="ltr">Accounting Product/Platform</span> به دیگر مؤسسات عرضه کند، <span dir="ltr">Classification</span> می‌تواند تغییر کند.
 
-<bdi dir="ltr">`Deposit Credit`</bdi> را نباید صرفاً زیر <bdi dir="ltr">Lending</bdi> قرار داد. دانش مانده، پذیرش واریز، محدودیت حساب و <bdi dir="ltr">Idempotency</bdi> عملیات متعلق به <bdi dir="ltr">Deposits</bdi> است. یک <bdi dir="ltr">Value Stream</bdi> می‌تواند چند <bdi dir="ltr">Subdomain</bdi> را عبور کند.
+<span dir="ltr">`Deposit Credit`</span> را نباید صرفاً زیر <span dir="ltr">Lending</span> قرار داد. دانش مانده، پذیرش واریز، محدودیت حساب و <span dir="ltr">Idempotency</span> عملیات متعلق به <span dir="ltr">Deposits</span> است. یک <span dir="ltr">Value Stream</span> می‌تواند چند <span dir="ltr">Subdomain</span> را عبور کند.
 
 ### مرحلهٔ چهارم: پیامد سرمایه‌گذاری
 
-اگر <bdi dir="ltr">Credit Decision</bdi> واقعاً <bdi dir="ltr">Core</bdi> باشد:
+اگر <span dir="ltr">Credit Decision</span> واقعاً <span dir="ltr">Core</span> باشد:
 
-- بهترین خبرگان <bdi dir="ltr">Domain</bdi> و <bdi dir="ltr">Engineer</bdi>ها باید روی آن متمرکز شوند.
+- بهترین خبرگان <span dir="ltr">Domain</span> و <span dir="ltr">Engineer</span>ها باید روی آن متمرکز شوند.
 - مدل و آزمایش‌های آن باید غنی‌تر باشند.
-- واگذاری <bdi dir="ltr">Black-box</bdi> تصمیم ممکن است <bdi dir="ltr">Strategy</bdi> را تضعیف کند.
-- چرخهٔ یادگیری و اندازه‌گیری <bdi dir="ltr">Outcome</bdi> مهم‌تر از تعداد <bdi dir="ltr">Feature</bdi> است.
+- واگذاری <span dir="ltr">Black-box</span> تصمیم ممکن است <span dir="ltr">Strategy</span> را تضعیف کند.
+- چرخهٔ یادگیری و اندازه‌گیری <span dir="ltr">Outcome</span> مهم‌تر از تعداد <span dir="ltr">Feature</span> است.
 
-اگر <bdi dir="ltr">Notification Generic</bdi> باشد:
+اگر <span dir="ltr">Notification Generic</span> باشد:
 
-- <bdi dir="ltr">Buy/Reuse</bdi> گزینهٔ قوی‌تری است.
-- <bdi dir="ltr">Customization</bdi> باید حداقلی و در <bdi dir="ltr">Boundary</bdi> باشد.
-- تیم <bdi dir="ltr">Core</bdi> نباید انرژی اصلی را صرف بازنویسی موتور پیام کند.
+- <span dir="ltr">Buy/Reuse</span> گزینهٔ قوی‌تری است.
+- <span dir="ltr">Customization</span> باید حداقلی و در <span dir="ltr">Boundary</span> باشد.
+- تیم <span dir="ltr">Core</span> نباید انرژی اصلی را صرف بازنویسی موتور پیام کند.
 
-## <bdi dir="ltr">9. BIAN</bdi> در این مرحله
+## <span dir="ltr">9. BIAN</span> در این مرحله
 
-[<bdi dir="ltr">BIAN Service Landscape 14.0</bdi>](https://bian.org/deliverables/service-landscape/) یک <bdi dir="ltr">Reference Structure</bdi> برای مشاهدهٔ پوشش مسئولیت‌های بانکی است. روش استفاده:
+[<span dir="ltr">BIAN Service Landscape 14.0</span>](https://bian.org/deliverables/service-landscape/) یک <span dir="ltr">Reference Structure</span> برای مشاهدهٔ پوشش مسئولیت‌های بانکی است. روش استفاده:
 
-1. ابتدا <bdi dir="ltr">Candidate</bdi>های خودت را از <bdi dir="ltr">Strategy</bdi> و <bdi dir="ltr">Discovery</bdi> بساز.
-2. سپس نام و <bdi dir="ltr">Scope</bdi> را با <bdi dir="ltr">BIAN</bdi> مقایسه کن.
-3. <bdi dir="ltr">Gap</bdi> را به سه دسته تقسیم کن: شکاف واقعی، تفاوت نام/<bdi dir="ltr">Granularity</bdi>، خارج از <bdi dir="ltr">Scope.</bdi>
-4. هیچ <bdi dir="ltr">Service Domain</bdi> را خودکار <bdi dir="ltr">Subdomain</bdi>، <bdi dir="ltr">Context</bdi> یا <bdi dir="ltr">Microservice</bdi> اعلام نکن.
+1. ابتدا <span dir="ltr">Candidate</span>های خودت را از <span dir="ltr">Strategy</span> و <span dir="ltr">Discovery</span> بساز.
+2. سپس نام و <span dir="ltr">Scope</span> را با <span dir="ltr">BIAN</span> مقایسه کن.
+3. <span dir="ltr">Gap</span> را به سه دسته تقسیم کن: شکاف واقعی، تفاوت نام/<span dir="ltr">Granularity</span>، خارج از <span dir="ltr">Scope.</span>
+4. هیچ <span dir="ltr">Service Domain</span> را خودکار <span dir="ltr">Subdomain</span>، <span dir="ltr">Context</span> یا <span dir="ltr">Microservice</span> اعلام نکن.
 
-<bdi dir="ltr">BIAN</bdi> نمی‌داند بانک تو در این مقطع با چه چیزی متمایز می‌شود؛ بنابراین <bdi dir="ltr">Core/Supporting/Generic</bdi> را به‌جای تو تعیین نمی‌کند.
+<span dir="ltr">BIAN</span> نمی‌داند بانک تو در این مقطع با چه چیزی متمایز می‌شود؛ بنابراین <span dir="ltr">Core/Supporting/Generic</span> را به‌جای تو تعیین نمی‌کند.
 
 ## 10. ضد‌مثال‌ها
 
-### «همهٔ <bdi dir="ltr">Core Banking</bdi>، <bdi dir="ltr">Core Subdomain</bdi> است»
+### «همهٔ <span dir="ltr">Core Banking</span>، <span dir="ltr">Core Subdomain</span> است»
 
-این جمله واژهٔ سازمانی <bdi dir="ltr">Core</bdi> را با <bdi dir="ltr">Strategic Core</bdi> مخلوط می‌کند و امکان تمرکز سرمایه را از بین می‌برد.
+این جمله واژهٔ سازمانی <span dir="ltr">Core</span> را با <span dir="ltr">Strategic Core</span> مخلوط می‌کند و امکان تمرکز سرمایه را از بین می‌برد.
 
-### «هر چیز پیچیده <bdi dir="ltr">Core</bdi> است»
+### «هر چیز پیچیده <span dir="ltr">Core</span> است»
 
-پیچیدگی می‌تواند دلیل استفاده از محصول استاندارد یا تیم <bdi dir="ltr">Platform</bdi> باشد؛ نه الزاماً دلیل تمایز راهبردی.
+پیچیدگی می‌تواند دلیل استفاده از محصول استاندارد یا تیم <span dir="ltr">Platform</span> باشد؛ نه الزاماً دلیل تمایز راهبردی.
 
-### «<bdi dir="ltr">Generic</bdi> را به تیم ضعیف بدهیم»
+### «<span dir="ltr">Generic</span> را به تیم ضعیف بدهیم»
 
-<bdi dir="ltr">Generic</bdi> بودن مجوز کیفیت پایین نیست. <bdi dir="ltr">Security</bdi>، <bdi dir="ltr">Availability</bdi> و <bdi dir="ltr">Vendor Management</bdi> هنوز جدی‌اند.
+<span dir="ltr">Generic</span> بودن مجوز کیفیت پایین نیست. <span dir="ltr">Security</span>، <span dir="ltr">Availability</span> و <span dir="ltr">Vendor Management</span> هنوز جدی‌اند.
 
-### «یک جدول مستقل یعنی یک <bdi dir="ltr">Subdomain</bdi>»
+### «یک جدول مستقل یعنی یک <span dir="ltr">Subdomain</span>»
 
-جدول واحد ذخیره‌سازی است. <bdi dir="ltr">Subdomain</bdi> باید با <bdi dir="ltr">Outcome</bdi>، زبان و قواعد دفاع شود.
+جدول واحد ذخیره‌سازی است. <span dir="ltr">Subdomain</span> باید با <span dir="ltr">Outcome</span>، زبان و قواعد دفاع شود.
 
-### «<bdi dir="ltr">BIAN</bdi> گفته، پس <bdi dir="ltr">Boundary</bdi> نهایی است»
+### «<span dir="ltr">BIAN</span> گفته، پس <span dir="ltr">Boundary</span> نهایی است»
 
-<bdi dir="ltr">Reference Model</bdi> برای <bdi dir="ltr">Gap Check</bdi> است؛ <bdi dir="ltr">Boundary</bdi> محلی به <bdi dir="ltr">Strategy</bdi>، تیم، <bdi dir="ltr">Legacy</bdi>، <bdi dir="ltr">Transaction</bdi> و <bdi dir="ltr">NFR</bdi> وابسته است.
+<span dir="ltr">Reference Model</span> برای <span dir="ltr">Gap Check</span> است؛ <span dir="ltr">Boundary</span> محلی به <span dir="ltr">Strategy</span>، تیم، <span dir="ltr">Legacy</span>، <span dir="ltr">Transaction</span> و <span dir="ltr">NFR</span> وابسته است.
 
 ## 11. تمرین هدایت‌شدهٔ پنج‌دقیقه‌ای
 
-برای <bdi dir="ltr">`Loan Servicing`</bdi> این چهار خط را بنویس:
+برای <span dir="ltr">`Loan Servicing`</span> این چهار خط را بنویس:
 
-1. <bdi dir="ltr">Outcome</bdi> آن چیست؟
+1. <span dir="ltr">Outcome</span> آن چیست؟
 2. سه قاعدهٔ متمایز آن چیست؟
-3. اگر بانک <bdi dir="ltr">Strategy</bdi> وام خرد دیجیتال دارد، <bdi dir="ltr">Core/Supporting/Generic</bdi> کدام است؟
-4. چه شاهدی می‌تواند <bdi dir="ltr">Classification</bdi> تو را رد کند؟
+3. اگر بانک <span dir="ltr">Strategy</span> وام خرد دیجیتال دارد، <span dir="ltr">Core/Supporting/Generic</span> کدام است؟
+4. چه شاهدی می‌تواند <span dir="ltr">Classification</span> تو را رد کند؟
 
-اگر در پاسخ فقط نام <bdi dir="ltr">Function</bdi> یا <bdi dir="ltr">Table</bdi> نوشتی، هنوز <bdi dir="ltr">Subdomain</bdi> را تحلیل نکرده‌ای.
+اگر در پاسخ فقط نام <span dir="ltr">Function</span> یا <span dir="ltr">Table</span> نوشتی، هنوز <span dir="ltr">Subdomain</span> را تحلیل نکرده‌ای.
 
 ## 12. تمرین مستقل
 
-[<bdi dir="ltr">Day 01 Exercise</bdi> — <bdi dir="ltr">Subdomain Matrix</bdi>](../exercises/day-01-subdomain-matrix.md) را انجام بده و پاسخ را در <bdi dir="ltr">Workbook</bdi> ثبت کن. هدف «درست حدس‌زدن برچسب» نیست؛ هدف دفاع از <bdi dir="ltr">Classification</bdi> با <bdi dir="ltr">Forces</bdi> و <bdi dir="ltr">Evidence</bdi> است.
+[<span dir="ltr">Day 01 Exercise</span> — <span dir="ltr">Subdomain Matrix</span>](../exercises/day-01-subdomain-matrix.md) را انجام بده و پاسخ را در <span dir="ltr">Workbook</span> ثبت کن. هدف «درست حدس‌زدن برچسب» نیست؛ هدف دفاع از <span dir="ltr">Classification</span> با <span dir="ltr">Forces</span> و <span dir="ltr">Evidence</span> است.
 
 ## 13. معیار ارزیابی
 
 | معیار | امتیاز |
 |---|---:|
-| تفکیک <bdi dir="ltr">Domain/Subdomain</bdi> از <bdi dir="ltr">System/Capability/Context</bdi> | ۲ |
-| تجزیه بر مبنای <bdi dir="ltr">Outcome</bdi>، زبان و قواعد | ۲ |
+| تفکیک <span dir="ltr">Domain/Subdomain</span> از <span dir="ltr">System/Capability/Context</span> | ۲ |
+| تجزیه بر مبنای <span dir="ltr">Outcome</span>، زبان و قواعد | ۲ |
 | طبقه‌بندی راهبردی با شواهد | ۳ |
-| بیان پیامد سرمایه‌گذاری و امکان تغییر <bdi dir="ltr">Classification</bdi> | ۲ |
-| ثبت <bdi dir="ltr">Confidence/Open Question</bdi> | ۱ |
+| بیان پیامد سرمایه‌گذاری و امکان تغییر <span dir="ltr">Classification</span> | ۲ |
+| ثبت <span dir="ltr">Confidence/Open Question</span> | ۱ |
 | **جمع** | **۱۰** |
 
 حد عبور روز: ۷ از ۱۰. برچسب درست بدون استدلال حداکثر نصف امتیاز می‌گیرد.
 
 ## 14. آزمون خروج
 
-درس را ببند و [<bdi dir="ltr">Day 01 Exit Ticket</bdi>](../quizzes/day-01-exit-ticket.md) را در پنج دقیقه پاسخ بده.
+درس را ببند و [<span dir="ltr">Day 01 Exit Ticket</span>](../quizzes/day-01-exit-ticket.md) را در پنج دقیقه پاسخ بده.
 
 ## 15. منابع اصلی
 
-- [<bdi dir="ltr">Domain-Driven Design Reference</bdi>](https://www.domainlanguage.com/wp-content/uploads/2016/05/DDD_Reference_2015-03.pdf): زبان و الگوهای رسمی <bdi dir="ltr">Strategic DDD</bdi>
-- [<bdi dir="ltr">BIAN Service Landscape 14.0</bdi>](https://bian.org/deliverables/service-landscape/): <bdi dir="ltr">Gap Check</bdi> مسئولیت‌های بانکی
+- [<span dir="ltr">Domain-Driven Design Reference</span>](https://www.domainlanguage.com/wp-content/uploads/2016/05/DDD_Reference_2015-03.pdf): زبان و الگوهای رسمی <span dir="ltr">Strategic DDD</span>
+- [<span dir="ltr">BIAN Service Landscape 14.0</span>](https://bian.org/deliverables/service-landscape/): <span dir="ltr">Gap Check</span> مسئولیت‌های بانکی
 
-این درس <bdi dir="ltr">Classification</bdi> بانک خاصی را <bdi dir="ltr">Fact</bdi> اعلام نمی‌کند. تمام برچسب‌های بانکی مثال، <bdi dir="ltr">Hypothesis</bdi> هستند و باید با <bdi dir="ltr">Strategy</bdi> و خبرگان همان بانک اعتبارسنجی شوند.
+این درس <span dir="ltr">Classification</span> بانک خاصی را <span dir="ltr">Fact</span> اعلام نمی‌کند. تمام برچسب‌های بانکی مثال، <span dir="ltr">Hypothesis</span> هستند و باید با <span dir="ltr">Strategy</span> و خبرگان همان بانک اعتبارسنجی شوند.
 
 </div>
