@@ -1,30 +1,30 @@
 <!-- bidi: rtl; code: ltr -->
 <div dir="rtl" align="right">
 
-# <bdi dir="ltr">Day 06 Exit Ticket</bdi>
+# <span dir="ltr">Day 06 Exit Ticket</span>
 
-- <bdi dir="ltr">Timebox: 7 minutes</bdi>
+- <span dir="ltr">Timebox: 7 minutes</span>
 - کد و درس بسته باشد.
 
 ## پرسش‌ها
 
-1. <bdi dir="ltr">Value Object</bdi> را با چهار ویژگی تعریف کن.
-2. چرا <bdi dir="ltr">`double`</bdi> برای <bdi dir="ltr">Money</bdi> رد می‌شود؟
-3. در <bdi dir="ltr">Java</bdi> چرا <bdi dir="ltr">`100.0`</bdi> و <bdi dir="ltr">`100.00`</bdi> برای <bdi dir="ltr">`BigDecimal.equals`</bdi> برابر نیستند و <bdi dir="ltr">Money</bdi> چه تصمیمی باید بگیرد؟
-4. چرا <bdi dir="ltr">`equals`</bdi> بدون <bdi dir="ltr">`hashCode`</bdi> سازگار خطرناک است؟
-5. <bdi dir="ltr">Currency mismatch</bdi> در <bdi dir="ltr">`add`</bdi> چه رفتاری باید داشته باشد؟
-6. مثبت‌بودن مبلغ متعلق به <bdi dir="ltr">Money</bdi> عمومی است یا <bdi dir="ltr">Use Case</bdi>؟ پاسخ واحد ندارد؛ تصمیم و <bdi dir="ltr">Trade-off</bdi> خودت را بگو.
-7. <bdi dir="ltr">`AccountId`</bdi> با <bdi dir="ltr">Account Number</bdi> چه تفاوتی دارد؟
-8. چه زمانی <bdi dir="ltr">Static Factory</bdi> مفید و چه زمانی <bdi dir="ltr">Factory class</bdi> نمایشی است؟
+1. <span dir="ltr">Value Object</span> را با چهار ویژگی تعریف کن.
+2. چرا <span dir="ltr">`double`</span> برای <span dir="ltr">Money</span> رد می‌شود؟
+3. در <span dir="ltr">Java</span> چرا <span dir="ltr">`100.0`</span> و <span dir="ltr">`100.00`</span> برای <span dir="ltr">`BigDecimal.equals`</span> برابر نیستند و <span dir="ltr">Money</span> چه تصمیمی باید بگیرد؟
+4. چرا <span dir="ltr">`equals`</span> بدون <span dir="ltr">`hashCode`</span> سازگار خطرناک است؟
+5. <span dir="ltr">Currency mismatch</span> در <span dir="ltr">`add`</span> چه رفتاری باید داشته باشد؟
+6. مثبت‌بودن مبلغ متعلق به <span dir="ltr">Money</span> عمومی است یا <span dir="ltr">Use Case</span>؟ پاسخ واحد ندارد؛ تصمیم و <span dir="ltr">Trade-off</span> خودت را بگو.
+7. <span dir="ltr">`AccountId`</span> با <span dir="ltr">Account Number</span> چه تفاوتی دارد؟
+8. چه زمانی <span dir="ltr">Static Factory</span> مفید و چه زمانی <span dir="ltr">Factory class</span> نمایشی است؟
 
-## <bdi dir="ltr">Rubric</bdi>
+## <span dir="ltr">Rubric</span>
 
 | حوزه | امتیاز |
 |---|---:|
-| <bdi dir="ltr">Value Object/immutability</bdi> | ۲ |
-| <bdi dir="ltr">Money precision/equality</bdi> | ۳ |
-| <bdi dir="ltr">Currency/rounding/rule boundary</bdi> | ۲ |
-| <bdi dir="ltr">Typed ID</bdi> و <bdi dir="ltr">Factory decision</bdi> | ۲ |
+| <span dir="ltr">Value Object/immutability</span> | ۲ |
+| <span dir="ltr">Money precision/equality</span> | ۳ |
+| <span dir="ltr">Currency/rounding/rule boundary</span> | ۲ |
+| <span dir="ltr">Typed ID</span> و <span dir="ltr">Factory decision</span> | ۲ |
 | **جمع** | **۹** |
 
 حد عبور: ۷ از ۹.

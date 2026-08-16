@@ -1,32 +1,32 @@
 <!-- bidi: rtl; code: ltr -->
 <div dir="rtl" align="right">
 
-# <bdi dir="ltr">Day 07 Exercise</bdi> — <bdi dir="ltr">Week 01 Defense</bdi>
+# <span dir="ltr">Day 07 Exercise</span> — <span dir="ltr">Week 01 Defense</span>
 
-- <bdi dir="ltr">Timebox: 20 minutes preparation</bdi>
-- <bdi dir="ltr">Output: Evidence index</bdi> + ده دقیقه دفاع
-- <bdi dir="ltr">Report:</bdi> [<bdi dir="ltr">Week 01 Report Template</bdi>](../artifacts/week-01-report-template.md)
+- <span dir="ltr">Timebox: 20 minutes preparation</span>
+- <span dir="ltr">Output: Evidence index</span> + ده دقیقه دفاع
+- <span dir="ltr">Report:</span> [<span dir="ltr">Week 01 Report Template</span>](../artifacts/week-01-report-template.md)
 
-## <bdi dir="ltr">1. Evidence index</bdi>
+## <span dir="ltr">1. Evidence index</span>
 
-جدول را با <bdi dir="ltr">Link/Path</bdi> واقعی کامل کن:
+جدول را با <span dir="ltr">Link/Path</span> واقعی کامل کن:
 
-| <bdi dir="ltr">Evidence</bdi> | <bdi dir="ltr">Path/commit</bdi> | <bdi dir="ltr">Status</bdi> | <bdi dir="ltr">One-line finding</bdi> |
+| <span dir="ltr">Evidence</span> | <span dir="ltr">Path/commit</span> | <span dir="ltr">Status</span> | <span dir="ltr">One-line finding</span> |
 |---|---|---|---|
-| <bdi dir="ltr">Day 01 raw baseline</bdi> |  |  |  |
-| <bdi dir="ltr">Distinction Matrix</bdi> |  |  |  |
-| <bdi dir="ltr">Two Traceability Chains</bdi> |  |  |  |
-| <bdi dir="ltr">Coupling Review</bdi> |  |  |  |
-| <bdi dir="ltr">Capability Map v1</bdi> |  |  |  |
-| <bdi dir="ltr">BIAN Gap Check</bdi> |  |  |  |
-| <bdi dir="ltr">Glossary 40+</bdi> |  |  |  |
-| <bdi dir="ltr">Money/Typed IDs</bdi> |  |  |  |
-| <bdi dir="ltr">`mvn verify`</bdi> |  |  |  |
-| <bdi dir="ltr">Week report</bdi> |  |  |  |
+| <span dir="ltr">Day 01 raw baseline</span> |  |  |  |
+| <span dir="ltr">Distinction Matrix</span> |  |  |  |
+| <span dir="ltr">Two Traceability Chains</span> |  |  |  |
+| <span dir="ltr">Coupling Review</span> |  |  |  |
+| <span dir="ltr">Capability Map v1</span> |  |  |  |
+| <span dir="ltr">BIAN Gap Check</span> |  |  |  |
+| <span dir="ltr">Glossary 40+</span> |  |  |  |
+| <span dir="ltr">Money/Typed IDs</span> |  |  |  |
+| <span dir="ltr">`mvn verify`</span> |  |  |  |
+| <span dir="ltr">Week report</span> |  |  |  |
 
 ## 2. کارت دفاع
 
-فقط <bdi dir="ltr">Bullet</bdi>های کوتاه بنویس؛ متن حفظی آماده نکن:
+فقط <span dir="ltr">Bullet</span>های کوتاه بنویس؛ متن حفظی آماده نکن:
 
 
 </div>
@@ -54,21 +54,21 @@ What Week 02 must validate:
 
 به‌صورت شفاهی و بدون متن پاسخ بده:
 
-1. اگر همهٔ <bdi dir="ltr">Module</bdi>ها در یک <bdi dir="ltr">JVM</bdi> باشند، <bdi dir="ltr">Boundary</bdi> چه ارزشی دارد؟
-2. اگر <bdi dir="ltr">BIAN</bdi> نام دقیقی برای یک <bdi dir="ltr">Capability</bdi> دارد، چرا همان نام <bdi dir="ltr">Service</bdi> کافی نیست؟
-3. اگر <bdi dir="ltr">Accounting</bdi> شماره سند را دیر تولید کند، آیا اعطا/واریز باید ناموفق شود؟ فقط <bdi dir="ltr">Trade-off</bdi> و <bdi dir="ltr">Unknown</bdi> را بگو؛ راه‌حل آینده را قطعی نکن.
+1. اگر همهٔ <span dir="ltr">Module</span>ها در یک <span dir="ltr">JVM</span> باشند، <span dir="ltr">Boundary</span> چه ارزشی دارد؟
+2. اگر <span dir="ltr">BIAN</span> نام دقیقی برای یک <span dir="ltr">Capability</span> دارد، چرا همان نام <span dir="ltr">Service</span> کافی نیست؟
+3. اگر <span dir="ltr">Accounting</span> شماره سند را دیر تولید کند، آیا اعطا/واریز باید ناموفق شود؟ فقط <span dir="ltr">Trade-off</span> و <span dir="ltr">Unknown</span> را بگو؛ راه‌حل آینده را قطعی نکن.
 
-## <bdi dir="ltr">4. Self-score</bdi>
+## <span dir="ltr">4. Self-score</span>
 
-از <bdi dir="ltr">Rubric</bdi> داخل [درس <bdi dir="ltr">Day 07</bdi>](../lessons/day-07-week-defense-fa.md) استفاده کن. برای هر امتیاز <bdi dir="ltr">Evidence</bdi> بده. <bdi dir="ltr">Self-score</bdi> بدون <bdi dir="ltr">Evidence</bdi> صفر محسوب می‌شود.
+از <span dir="ltr">Rubric</span> داخل [درس <span dir="ltr">Day 07</span>](../lessons/day-07-week-defense-fa.md) استفاده کن. برای هر امتیاز <span dir="ltr">Evidence</span> بده. <span dir="ltr">Self-score</span> بدون <span dir="ltr">Evidence</span> صفر محسوب می‌شود.
 
-## <bdi dir="ltr">Acceptance criteria</bdi>
+## <span dir="ltr">Acceptance criteria</span>
 
 - دفاع حداکثر ۱۰ دقیقه باشد.
-- حداقل یک پاسخ خامِ اشتباه و <bdi dir="ltr">Revision</bdi> آن نشان داده شود.
-- <bdi dir="ltr">Unknown</bdi> صریح وجود داشته باشد.
-- <bdi dir="ltr">Critical Error</bdi> وجود نداشته باشد.
-- <bdi dir="ltr">Gate score</bdi> حداقل ۸ از ۱۰ باشد.
+- حداقل یک پاسخ خامِ اشتباه و <span dir="ltr">Revision</span> آن نشان داده شود.
+- <span dir="ltr">Unknown</span> صریح وجود داشته باشد.
+- <span dir="ltr">Critical Error</span> وجود نداشته باشد.
+- <span dir="ltr">Gate score</span> حداقل ۸ از ۱۰ باشد.
 
 
 </div>

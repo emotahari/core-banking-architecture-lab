@@ -1,18 +1,18 @@
 <!-- bidi: rtl; code: ltr -->
 <div dir="rtl" align="right">
 
-# <bdi dir="ltr">Day 08 Exercise</bdi> — <bdi dir="ltr">Transfer Fee Refactoring Kata</bdi>
+# <span dir="ltr">Day 08 Exercise</span> — <span dir="ltr">Transfer Fee Refactoring Kata</span>
 
-- <bdi dir="ltr">Timebox: 65 minutes coding</bdi> + <bdi dir="ltr">10 minutes self-review</bdi>
-- <bdi dir="ltr">Working directory:</bdi> <bdi dir="ltr">`backend/banking-modulith`</bdi>
-- <bdi dir="ltr">Starter package:</bdi> <bdi dir="ltr">`com.example.corebankinglab.craftsmanship.week02`</bdi>
-- <bdi dir="ltr">Output: refactored code</bdi> + <bdi dir="ltr">tests</bdi> + [<bdi dir="ltr">Code Review Checklist</bdi>](../artifacts/day-08-code-review-checklist.md)
+- <span dir="ltr">Timebox: 65 minutes coding</span> + <span dir="ltr">10 minutes self-review</span>
+- <span dir="ltr">Working directory:</span> <span dir="ltr">`backend/banking-modulith`</span>
+- <span dir="ltr">Starter package:</span> <span dir="ltr">`com.example.corebankinglab.craftsmanship.week02`</span>
+- <span dir="ltr">Output: refactored code</span> + <span dir="ltr">tests</span> + [<span dir="ltr">Code Review Checklist</span>](../artifacts/day-08-code-review-checklist.md)
 
-## <bdi dir="ltr">Rule of the exercise</bdi>
+## <span dir="ltr">Rule of the exercise</span>
 
-قواعد عددی <bdi dir="ltr">Baseline</bdi> را در <bdi dir="ltr">Refactor</bdi> تغییر نده. نرخ‌ها ساختگی‌اند، اما <bdi dir="ltr">Characterization behavior</bdi> باید ثابت بماند. هر <bdi dir="ltr">Rule change</bdi> پیشنهادی را فقط در بخش <bdi dir="ltr">`OPEN`</bdi> ثبت کن.
+قواعد عددی <span dir="ltr">Baseline</span> را در <span dir="ltr">Refactor</span> تغییر نده. نرخ‌ها ساختگی‌اند، اما <span dir="ltr">Characterization behavior</span> باید ثابت بماند. هر <span dir="ltr">Rule change</span> پیشنهادی را فقط در بخش <span dir="ltr">`OPEN`</span> ثبت کن.
 
-## <bdi dir="ltr">Step 0</bdi> — <bdi dir="ltr">Record the baseline</bdi>
+## <span dir="ltr">Step 0</span> — <span dir="ltr">Record the baseline</span>
 
 
 </div>
@@ -30,69 +30,69 @@ mvn -Dtest=LegacyTransferFeeCalculatorCharacterizationTest test
 
 ثبت کن:
 
-- تعداد <bdi dir="ltr">Test</bdi>ها
+- تعداد <span dir="ltr">Test</span>ها
 - نتیجه
 - مدت اجرا
-- <bdi dir="ltr">Commit/SHA</bdi> یا وضعیت <bdi dir="ltr">Worktree</bdi>
+- <span dir="ltr">Commit/SHA</span> یا وضعیت <span dir="ltr">Worktree</span>
 
-## <bdi dir="ltr">Step 1</bdi> — <bdi dir="ltr">Create your smell map</bdi>
+## <span dir="ltr">Step 1</span> — <span dir="ltr">Create your smell map</span>
 
-حداقل پنج <bdi dir="ltr">Smell</bdi> را با این قالب بنویس:
+حداقل پنج <span dir="ltr">Smell</span> را با این قالب بنویس:
 
-| <bdi dir="ltr">File:line or symbol</bdi> | <bdi dir="ltr">Smell</bdi> | <bdi dir="ltr">Concrete change risk</bdi> | <bdi dir="ltr">Proposed smallest move</bdi> |
+| <span dir="ltr">File:line or symbol</span> | <span dir="ltr">Smell</span> | <span dir="ltr">Concrete change risk</span> | <span dir="ltr">Proposed smallest move</span> |
 |---|---|---|---|
 |  |  |  |  |
 
-عبارت‌هایی مانند «کد کثیف است» یا «<bdi dir="ltr">SOLID</bdi> رعایت نشده» بدون محل و اثر امتیاز ندارد.
+عبارت‌هایی مانند «کد کثیف است» یا «<span dir="ltr">SOLID</span> رعایت نشده» بدون محل و اثر امتیاز ندارد.
 
-## <bdi dir="ltr">Step 2</bdi> — <bdi dir="ltr">Add one characterization/edge test</bdi>
+## <span dir="ltr">Step 2</span> — <span dir="ltr">Add one characterization/edge test</span>
 
-یکی از <bdi dir="ltr">Unknown</bdi>های زیر را انتخاب کن یا مورد بهتری پیدا کن:
+یکی از <span dir="ltr">Unknown</span>های زیر را انتخاب کن یا مورد بهتری پیدا کن:
 
-- <bdi dir="ltr">Blank rail</bdi>
-- <bdi dir="ltr">Case sensitivity</bdi>
-- <bdi dir="ltr">discount on zero-fee rail</bdi>
-- <bdi dir="ltr">overflow boundary</bdi>
-- <bdi dir="ltr">ordering of cap and discount</bdi>
+- <span dir="ltr">Blank rail</span>
+- <span dir="ltr">Case sensitivity</span>
+- <span dir="ltr">discount on zero-fee rail</span>
+- <span dir="ltr">overflow boundary</span>
+- <span dir="ltr">ordering of cap and discount</span>
 
-اگر <bdi dir="ltr">Expected behavior</bdi> از <bdi dir="ltr">Fixture</bdi> قابل استنتاج نیست، آن را به‌عنوان <bdi dir="ltr">`OPEN`</bdi> نگه دار و یک <bdi dir="ltr">Edge Case</bdi> دیگر را <bdi dir="ltr">Test</bdi> کن. <bdi dir="ltr">Rule</bdi> بانکی را حدس نزن.
+اگر <span dir="ltr">Expected behavior</span> از <span dir="ltr">Fixture</span> قابل استنتاج نیست، آن را به‌عنوان <span dir="ltr">`OPEN`</span> نگه دار و یک <span dir="ltr">Edge Case</span> دیگر را <span dir="ltr">Test</span> کن. <span dir="ltr">Rule</span> بانکی را حدس نزن.
 
-## <bdi dir="ltr">Step 3</bdi> — <bdi dir="ltr">Refactor in green steps</bdi>
+## <span dir="ltr">Step 3</span> — <span dir="ltr">Refactor in green steps</span>
 
-حداقل چهار <bdi dir="ltr">Checkpoint</bdi> داشته باش:
+حداقل چهار <span dir="ltr">Checkpoint</span> داشته باش:
 
-1. <bdi dir="ltr">type-safe Rail</bdi>
-2. <bdi dir="ltr">named pricing constants/rules</bdi>
-3. <bdi dir="ltr">separated selection and calculation</bdi>
-4. <bdi dir="ltr">explicit customer pricing meaning</bdi>
+1. <span dir="ltr">type-safe Rail</span>
+2. <span dir="ltr">named pricing constants/rules</span>
+3. <span dir="ltr">separated selection and calculation</span>
+4. <span dir="ltr">explicit customer pricing meaning</span>
 
-پس از هر <bdi dir="ltr">Checkpoint</bdi> تست را اجرا کن. اگر <bdi dir="ltr">Git</bdi> در دسترس است، <bdi dir="ltr">Commit</bdi> کوچک بساز؛ در غیر این صورت <bdi dir="ltr">Diff/</bdi>زمان <bdi dir="ltr">Checkpoint</bdi> را ثبت کن.
+پس از هر <span dir="ltr">Checkpoint</span> تست را اجرا کن. اگر <span dir="ltr">Git</span> در دسترس است، <span dir="ltr">Commit</span> کوچک بساز؛ در غیر این صورت <span dir="ltr">Diff/</span>زمان <span dir="ltr">Checkpoint</span> را ثبت کن.
 
-## <bdi dir="ltr">Step 4</bdi> — <bdi dir="ltr">Make the pattern decision</bdi>
+## <span dir="ltr">Step 4</span> — <span dir="ltr">Make the pattern decision</span>
 
 یکی از این دو خروجی هر دو معتبر است:
 
-### <bdi dir="ltr">Option A</bdi> — <bdi dir="ltr">Keep an explicit switch</bdi>
+### <span dir="ltr">Option A</span> — <span dir="ltr">Keep an explicit switch</span>
 
-اگر سه حالت بسته و ساده‌اند، یک <bdi dir="ltr">`switch`</bdi> خوانا با <bdi dir="ltr">Method</bdi>های کوچک نگه دار. توضیح بده چه <bdi dir="ltr">Revisit Trigger</bdi>ی <bdi dir="ltr">Strategy</bdi> را لازم می‌کند.
+اگر سه حالت بسته و ساده‌اند، یک <span dir="ltr">`switch`</span> خوانا با <span dir="ltr">Method</span>های کوچک نگه دار. توضیح بده چه <span dir="ltr">Revisit Trigger</span>ی <span dir="ltr">Strategy</span> را لازم می‌کند.
 
-### <bdi dir="ltr">Option B</bdi> — <bdi dir="ltr">Introduce Strategy</bdi> + <bdi dir="ltr">Registry/Factory</bdi>
+### <span dir="ltr">Option B</span> — <span dir="ltr">Introduce Strategy</span> + <span dir="ltr">Registry/Factory</span>
 
-اگر <bdi dir="ltr">Variation</bdi> مستقل را کافی می‌دانی:
+اگر <span dir="ltr">Variation</span> مستقل را کافی می‌دانی:
 
-- <bdi dir="ltr">Contract</bdi> کوچک و دامینی بساز.
-- هر <bdi dir="ltr">Policy</bdi> را مستقل تست کن.
-- <bdi dir="ltr">Selection</bdi> را در <bdi dir="ltr">Registry/Factory</bdi> متمرکز کن.
-- <bdi dir="ltr">Missing/Duplicate policy</bdi> را <bdi dir="ltr">Fail-fast</bdi> کن.
-- <bdi dir="ltr">Discount</bdi> را آگاهانه قبل یا بعد از <bdi dir="ltr">Base fee</bdi> اعمال کن؛ رفتار موجود را حفظ کن.
+- <span dir="ltr">Contract</span> کوچک و دامینی بساز.
+- هر <span dir="ltr">Policy</span> را مستقل تست کن.
+- <span dir="ltr">Selection</span> را در <span dir="ltr">Registry/Factory</span> متمرکز کن.
+- <span dir="ltr">Missing/Duplicate policy</span> را <span dir="ltr">Fail-fast</span> کن.
+- <span dir="ltr">Discount</span> را آگاهانه قبل یا بعد از <span dir="ltr">Base fee</span> اعمال کن؛ رفتار موجود را حفظ کن.
 
-در هیچ گزینه‌ای <bdi dir="ltr">Reflection</bdi>، <bdi dir="ltr">Annotation scanning</bdi>، <bdi dir="ltr">Spring Context</bdi> یا <bdi dir="ltr">Database</bdi> لازم نیست.
+در هیچ گزینه‌ای <span dir="ltr">Reflection</span>، <span dir="ltr">Annotation scanning</span>، <span dir="ltr">Spring Context</span> یا <span dir="ltr">Database</span> لازم نیست.
 
-## <bdi dir="ltr">Step 5</bdi> — <bdi dir="ltr">Remove the flag meaningfully</bdi>
+## <span dir="ltr">Step 5</span> — <span dir="ltr">Remove the flag meaningfully</span>
 
-<bdi dir="ltr">`boolean preferredCustomer`</bdi> را با یک مفهوم صریح جایگزین کن. فقط تغییر نام پارامتر <bdi dir="ltr">Boolean</bdi> کافی نیست. <bdi dir="ltr">Signature</bdi> جدید باید بدون خواندن <bdi dir="ltr">Implementation</bdi> قابل فهم باشد.
+<span dir="ltr">`boolean preferredCustomer`</span> را با یک مفهوم صریح جایگزین کن. فقط تغییر نام پارامتر <span dir="ltr">Boolean</span> کافی نیست. <span dir="ltr">Signature</span> جدید باید بدون خواندن <span dir="ltr">Implementation</span> قابل فهم باشد.
 
-## <bdi dir="ltr">Step 6</bdi> — <bdi dir="ltr">Final verification</bdi>
+## <span dir="ltr">Step 6</span> — <span dir="ltr">Final verification</span>
 
 
 </div>
@@ -108,37 +108,37 @@ mvn verify
 <div dir="rtl" align="right">
 
 
-<bdi dir="ltr">Baseline</bdi> اصلی <bdi dir="ltr">Week 02</bdi> نیز باید سبز بماند. <bdi dir="ltr">Refactor</bdi> محلی نباید <bdi dir="ltr">Module Verification</bdi> یا <bdi dir="ltr">Spring context</bdi> را بشکند.
+<span dir="ltr">Baseline</span> اصلی <span dir="ltr">Week 02</span> نیز باید سبز بماند. <span dir="ltr">Refactor</span> محلی نباید <span dir="ltr">Module Verification</span> یا <span dir="ltr">Spring context</span> را بشکند.
 
-## <bdi dir="ltr">Step 7</bdi> — <bdi dir="ltr">Self-review</bdi>
+## <span dir="ltr">Step 7</span> — <span dir="ltr">Self-review</span>
 
-[<bdi dir="ltr">Code Review Checklist</bdi>](../artifacts/day-08-code-review-checklist.md) را کامل کن و به این سه سؤال پاسخ بده:
+[<span dir="ltr">Code Review Checklist</span>](../artifacts/day-08-code-review-checklist.md) را کامل کن و به این سه سؤال پاسخ بده:
 
-1. کدام <bdi dir="ltr">Change coupling</bdi> واقعاً کمتر شد؟
-2. <bdi dir="ltr">Pattern</bdi> انتخابی چه <bdi dir="ltr">Complexity</bdi> تازه‌ای ایجاد کرد؟
-3. اگر فقط یک <bdi dir="ltr">Rail</bdi> داشتیم، کدام <bdi dir="ltr">Type</bdi>ها را حذف می‌کردی؟
+1. کدام <span dir="ltr">Change coupling</span> واقعاً کمتر شد؟
+2. <span dir="ltr">Pattern</span> انتخابی چه <span dir="ltr">Complexity</span> تازه‌ای ایجاد کرد؟
+3. اگر فقط یک <span dir="ltr">Rail</span> داشتیم، کدام <span dir="ltr">Type</span>ها را حذف می‌کردی؟
 
-## <bdi dir="ltr">Acceptance criteria</bdi>
+## <span dir="ltr">Acceptance criteria</span>
 
-- همهٔ <bdi dir="ltr">Characterization test</bdi>های قبلی سبزند.
-- حداقل یک <bdi dir="ltr">Edge Test</bdi> جدید وجود دارد.
-- <bdi dir="ltr">String rail</bdi> از <bdi dir="ltr">Core calculation</bdi> حذف شده است.
-- <bdi dir="ltr">Magic literal</bdi>ها نام و <bdi dir="ltr">Scope</bdi> معنادار دارند.
-- <bdi dir="ltr">Flag argument</bdi> با <bdi dir="ltr">Concept</bdi> صریح جایگزین شده است.
-- <bdi dir="ltr">Strategy</bdi> یا رد آن با <bdi dir="ltr">Forces</bdi> دفاع شده است.
-- هیچ <bdi dir="ltr">`common`</bdi>, <bdi dir="ltr">`utils`</bdi>, <bdi dir="ltr">`BaseStrategy`</bdi>, <bdi dir="ltr">`AbstractFactoryFactory`</bdi> یا <bdi dir="ltr">Spring Bean</bdi> غیرضروری ایجاد نشده است.
-- <bdi dir="ltr">`mvn verify`</bdi> سبز است.
+- همهٔ <span dir="ltr">Characterization test</span>های قبلی سبزند.
+- حداقل یک <span dir="ltr">Edge Test</span> جدید وجود دارد.
+- <span dir="ltr">String rail</span> از <span dir="ltr">Core calculation</span> حذف شده است.
+- <span dir="ltr">Magic literal</span>ها نام و <span dir="ltr">Scope</span> معنادار دارند.
+- <span dir="ltr">Flag argument</span> با <span dir="ltr">Concept</span> صریح جایگزین شده است.
+- <span dir="ltr">Strategy</span> یا رد آن با <span dir="ltr">Forces</span> دفاع شده است.
+- هیچ <span dir="ltr">`common`</span>, <span dir="ltr">`utils`</span>, <span dir="ltr">`BaseStrategy`</span>, <span dir="ltr">`AbstractFactoryFactory`</span> یا <span dir="ltr">Spring Bean</span> غیرضروری ایجاد نشده است.
+- <span dir="ltr">`mvn verify`</span> سبز است.
 
-## <bdi dir="ltr">Required evidence in Workbook</bdi>
+## <span dir="ltr">Required evidence in Workbook</span>
 
-1. <bdi dir="ltr">Baseline output</bdi>
-2. <bdi dir="ltr">Smell Map</bdi>
-3. <bdi dir="ltr">Pattern Decision</bdi>
-4. فهرست <bdi dir="ltr">Checkpoint</bdi>ها
-5. <bdi dir="ltr">Test</bdi> جدید
-6. <bdi dir="ltr">Final test output</bdi>
-7. <bdi dir="ltr">Self-review</bdi> و <bdi dir="ltr">Debt</bdi> باقی‌مانده
+1. <span dir="ltr">Baseline output</span>
+2. <span dir="ltr">Smell Map</span>
+3. <span dir="ltr">Pattern Decision</span>
+4. فهرست <span dir="ltr">Checkpoint</span>ها
+5. <span dir="ltr">Test</span> جدید
+6. <span dir="ltr">Final test output</span>
+7. <span dir="ltr">Self-review</span> و <span dir="ltr">Debt</span> باقی‌مانده
 
-راه‌حل کامل در مخزن قرار نگرفته است. هدف این تمرین مشاهدهٔ تصمیم و <bdi dir="ltr">Refactor</bdi> توست، نه مقایسهٔ ظاهری با یک <bdi dir="ltr">Class diagram</bdi> آماده.
+راه‌حل کامل در مخزن قرار نگرفته است. هدف این تمرین مشاهدهٔ تصمیم و <span dir="ltr">Refactor</span> توست، نه مقایسهٔ ظاهری با یک <span dir="ltr">Class diagram</span> آماده.
 
 </div>

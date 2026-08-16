@@ -1,34 +1,34 @@
 <!-- bidi: rtl; code: ltr -->
 <div dir="rtl" align="right">
 
-# <bdi dir="ltr">Day 05 Exercise</bdi> — <bdi dir="ltr">Capability Map v1 and BIAN Gap Check</bdi>
+# <span dir="ltr">Day 05 Exercise</span> — <span dir="ltr">Capability Map v1 and BIAN Gap Check</span>
 
-- <bdi dir="ltr">Timebox: 40 minutes</bdi> — <bdi dir="ltr">20 map</bdi> + <bdi dir="ltr">20 gap check</bdi>
-- <bdi dir="ltr">Inputs:</bdi> [<bdi dir="ltr">Working Draft</bdi>](../artifacts/capability-map-working-draft.md) و [<bdi dir="ltr">BIAN Gap Template</bdi>](../artifacts/bian-gap-check-template.md)
-- <bdi dir="ltr">Output: Capability Map v1</bdi> با <bdi dir="ltr">Change log</bdi>
+- <span dir="ltr">Timebox: 40 minutes</span> — <span dir="ltr">20 map</span> + <span dir="ltr">20 gap check</span>
+- <span dir="ltr">Inputs:</span> [<span dir="ltr">Working Draft</span>](../artifacts/capability-map-working-draft.md) و [<span dir="ltr">BIAN Gap Template</span>](../artifacts/bian-gap-check-template.md)
+- <span dir="ltr">Output: Capability Map v1</span> با <span dir="ltr">Change log</span>
 
-## بخش A — تثبیت <bdi dir="ltr">L1</bdi>
+## بخش A — تثبیت <span dir="ltr">L1</span>
 
-1. <bdi dir="ltr">Scope</bdi> و <bdi dir="ltr">Audience</bdi> را بنویس.
-2. برای هر <bdi dir="ltr">Node</bdi> سطح <bdi dir="ltr">L1</bdi>، <bdi dir="ltr">Definition</bdi> یک‌جمله‌ای بساز.
-3. برای پنج <bdi dir="ltr">Node</bdi> مهم <bdi dir="ltr">`Includes/Excludes`</bdi> ثبت کن.
-4. موارد ناهم‌سطح، نام سامانه/<bdi dir="ltr">Vendor/Team</bdi> و عبارت‌های مبهم را علامت بزن.
-5. حداکثر دو <bdi dir="ltr">L1</bdi> را برای نمایش روش به <bdi dir="ltr">L2</bdi> بشکن؛ کل بانک را این هفته به <bdi dir="ltr">L3</bdi> نبر.
+1. <span dir="ltr">Scope</span> و <span dir="ltr">Audience</span> را بنویس.
+2. برای هر <span dir="ltr">Node</span> سطح <span dir="ltr">L1</span>، <span dir="ltr">Definition</span> یک‌جمله‌ای بساز.
+3. برای پنج <span dir="ltr">Node</span> مهم <span dir="ltr">`Includes/Excludes`</span> ثبت کن.
+4. موارد ناهم‌سطح، نام سامانه/<span dir="ltr">Vendor/Team</span> و عبارت‌های مبهم را علامت بزن.
+5. حداکثر دو <span dir="ltr">L1</span> را برای نمایش روش به <span dir="ltr">L2</span> بشکن؛ کل بانک را این هفته به <span dir="ltr">L3</span> نبر.
 
 ## بخش B — چهارلایه
 
-هر <bdi dir="ltr">L1</bdi> را موقتاً در یکی از این <bdi dir="ltr">Lens</bdi>ها قرار بده:
+هر <span dir="ltr">L1</span> را موقتاً در یکی از این <span dir="ltr">Lens</span>ها قرار بده:
 
 - هستهٔ بانکداری
 - عملیات و خدمات بانکداری
 - توانمندی سازمانی
 - اکوسیستم دیجیتال
 
-برای دو مورد مرزی توضیح بده چرا طبقه‌بندی وابسته به <bdi dir="ltr">Strategy</bdi> بانک است و <bdi dir="ltr">Boundary</bdi> قطعی نیست.
+برای دو مورد مرزی توضیح بده چرا طبقه‌بندی وابسته به <span dir="ltr">Strategy</span> بانک است و <span dir="ltr">Boundary</span> قطعی نیست.
 
-## بخش C — <bdi dir="ltr">BIAN Gap Check</bdi>
+## بخش C — <span dir="ltr">BIAN Gap Check</span>
 
-پس از تکمیل <bdi dir="ltr">Map</bdi> خودت، حداقل ۱۰ مورد را در <bdi dir="ltr">BIAN 14</bdi> بررسی کن. وضعیت فقط یکی از این‌ها باشد:
+پس از تکمیل <span dir="ltr">Map</span> خودت، حداقل ۱۰ مورد را در <span dir="ltr">BIAN 14</span> بررسی کن. وضعیت فقط یکی از این‌ها باشد:
 
 
 </div>
@@ -44,29 +44,29 @@ MATCH | PARTIAL | GAP-LOCAL | GAP-OUR-MAP | FALSE-FRIEND | NOT-APPLICABLE
 <div dir="rtl" align="right">
 
 
-برای هر مورد <bdi dir="ltr">Source link</bdi>، <bdi dir="ltr">Scope difference</bdi> و تصمیم محلی بنویس.
+برای هر مورد <span dir="ltr">Source link</span>، <span dir="ltr">Scope difference</span> و تصمیم محلی بنویس.
 
 حداقل این سه مورد را حتماً بررسی کن:
 
-1. <bdi dir="ltr">Current Account</bdi>
-2. <bdi dir="ltr">Customer Relationship Management</bdi>
-3. <bdi dir="ltr">Financial Accounting</bdi>
+1. <span dir="ltr">Current Account</span>
+2. <span dir="ltr">Customer Relationship Management</span>
+3. <span dir="ltr">Financial Accounting</span>
 
-## بخش D — <bdi dir="ltr">Change log</bdi>
+## بخش D — <span dir="ltr">Change log</span>
 
-هر تغییر <bdi dir="ltr">Working Draft:</bdi>
+هر تغییر <span dir="ltr">Working Draft:</span>
 
-| <bdi dir="ltr">Change</bdi> | <bdi dir="ltr">Before</bdi> | <bdi dir="ltr">After</bdi> | <bdi dir="ltr">Evidence</bdi> | <bdi dir="ltr">Consequence</bdi> |
+| <span dir="ltr">Change</span> | <span dir="ltr">Before</span> | <span dir="ltr">After</span> | <span dir="ltr">Evidence</span> | <span dir="ltr">Consequence</span> |
 |---|---|---|---|---|
 |  |  |  |  |  |
 
-## <bdi dir="ltr">Acceptance criteria</bdi>
+## <span dir="ltr">Acceptance criteria</span>
 
-- <bdi dir="ltr">L1</bdi>ها تقریباً هم‌سطح و <bdi dir="ltr">Outcome-oriented</bdi> باشند.
-- حداقل یک <bdi dir="ltr">`FALSE-FRIEND`</bdi> و یک <bdi dir="ltr">`GAP-OUR-MAP`</bdi> یا دلیل نبود آن ثبت شود.
-- <bdi dir="ltr">BIAN Mapping</bdi> باعث ایجاد خودکار <bdi dir="ltr">Service/Microservice</bdi> نشود.
+- <span dir="ltr">L1</span>ها تقریباً هم‌سطح و <span dir="ltr">Outcome-oriented</span> باشند.
+- حداقل یک <span dir="ltr">`FALSE-FRIEND`</span> و یک <span dir="ltr">`GAP-OUR-MAP`</span> یا دلیل نبود آن ثبت شود.
+- <span dir="ltr">BIAN Mapping</span> باعث ایجاد خودکار <span dir="ltr">Service/Microservice</span> نشود.
 - آمار نسخه و تاریخ بررسی ثبت شود.
-- <bdi dir="ltr">Map Version</bdi> به <bdi dir="ltr">`1.0`</bdi> و <bdi dir="ltr">Status</bdi> به <bdi dir="ltr">`Candidate for Week 02 review`</bdi> تغییر کند.
+- <span dir="ltr">Map Version</span> به <span dir="ltr">`1.0`</span> و <span dir="ltr">Status</span> به <span dir="ltr">`Candidate for Week 02 review`</span> تغییر کند.
 
 
 </div>

@@ -1,23 +1,23 @@
 <!-- bidi: rtl; code: ltr -->
 <div dir="rtl" align="right">
 
-# <bdi dir="ltr">Sprint 04</bdi> — تراکنش، مانده و <bdi dir="ltr">CQRS</bdi>
+# <span dir="ltr">Sprint 04</span> — تراکنش، مانده و <span dir="ltr">CQRS</span>
 
-- <bdi dir="ltr">Weeks: 07</bdi>–08
-- <bdi dir="ltr">Status: Backlog</bdi>
+- <span dir="ltr">Weeks: 07</span>–08
+- <span dir="ltr">Status: Backlog</span>
 
-## <bdi dir="ltr">Week 07</bdi>
+## <span dir="ltr">Week 07</span>
 
-<bdi dir="ltr">ACID</bdi>، <bdi dir="ltr">Isolation</bdi>، <bdi dir="ltr">Lost Update</bdi>، <bdi dir="ltr">Locking</bdi>، <bdi dir="ltr">Deadlock</bdi>، <bdi dir="ltr">Transaction Boundary</bdi> و <bdi dir="ltr">Concurrency Test.</bdi>
+<span dir="ltr">ACID</span>، <span dir="ltr">Isolation</span>، <span dir="ltr">Lost Update</span>، <span dir="ltr">Locking</span>، <span dir="ltr">Deadlock</span>، <span dir="ltr">Transaction Boundary</span> و <span dir="ltr">Concurrency Test.</span>
 
-## <bdi dir="ltr">Week 08</bdi>
+## <span dir="ltr">Week 08</span>
 
-<bdi dir="ltr">Operational Balance</bdi>، <bdi dir="ltr">Ledger/Subledger/GL</bdi>، <bdi dir="ltr">Command/Read Model</bdi>، <bdi dir="ltr">Projection Lag</bdi>، <bdi dir="ltr">Rebuild</bdi> و <bdi dir="ltr">Reconciliation.</bdi>
+<span dir="ltr">Operational Balance</span>، <span dir="ltr">Ledger/Subledger/GL</span>، <span dir="ltr">Command/Read Model</span>، <span dir="ltr">Projection Lag</span>، <span dir="ltr">Rebuild</span> و <span dir="ltr">Reconciliation.</span>
 
-## <bdi dir="ltr">Gate</bdi>
+## <span dir="ltr">Gate</span>
 
-مالکیت مانده و <bdi dir="ltr">Consistency Boundary</bdi> باید روشن باشد و <bdi dir="ltr">Accounting</bdi> جای سامانهٔ عملیاتی ننشیند.
+مالکیت مانده و <span dir="ltr">Consistency Boundary</span> باید روشن باشد و <span dir="ltr">Accounting</span> جای سامانهٔ عملیاتی ننشیند.
 
-محتوا و اینفوگرافیک روزانه هنگام ورود این <bdi dir="ltr">Sprint</bdi> تولید و <bdi dir="ltr">Version</bdi> می‌شوند.
+محتوا و اینفوگرافیک روزانه هنگام ورود این <span dir="ltr">Sprint</span> تولید و <span dir="ltr">Version</span> می‌شوند.
 
 </div>

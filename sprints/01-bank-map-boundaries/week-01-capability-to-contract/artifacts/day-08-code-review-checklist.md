@@ -1,67 +1,67 @@
 <!-- bidi: rtl; code: ltr -->
 <div dir="rtl" align="right">
 
-# <bdi dir="ltr">Day 08 Artifact</bdi> — <bdi dir="ltr">Code Review Checklist</bdi>
+# <span dir="ltr">Day 08 Artifact</span> — <span dir="ltr">Code Review Checklist</span>
 
-- <bdi dir="ltr">Baseline commit/state:</bdi>
-- <bdi dir="ltr">Refactored commit/state:</bdi>
-- <bdi dir="ltr">Reviewer/date:</bdi>
+- <span dir="ltr">Baseline commit/state:</span>
+- <span dir="ltr">Refactored commit/state:</span>
+- <span dir="ltr">Reviewer/date:</span>
 
-## <bdi dir="ltr">Baseline evidence</bdi>
+## <span dir="ltr">Baseline evidence</span>
 
-- <bdi dir="ltr">Command:</bdi>
-- <bdi dir="ltr">Test count/result:</bdi>
-- <bdi dir="ltr">Full</bdi> <bdi dir="ltr">`mvn verify`</bdi> <bdi dir="ltr">result:</bdi>
+- <span dir="ltr">Command:</span>
+- <span dir="ltr">Test count/result:</span>
+- <span dir="ltr">Full</span> <span dir="ltr">`mvn verify`</span> <span dir="ltr">result:</span>
 
-## <bdi dir="ltr">Smell map</bdi>
+## <span dir="ltr">Smell map</span>
 
-| <bdi dir="ltr">Symbol</bdi> | <bdi dir="ltr">Smell</bdi> | <bdi dir="ltr">Concrete change/defect risk</bdi> | <bdi dir="ltr">Smallest move</bdi> | <bdi dir="ltr">Done</bdi>? |
+| <span dir="ltr">Symbol</span> | <span dir="ltr">Smell</span> | <span dir="ltr">Concrete change/defect risk</span> | <span dir="ltr">Smallest move</span> | <span dir="ltr">Done</span>? |
 |---|---|---|---|---:|
 |  |  |  |  |  |
 
-## <bdi dir="ltr">Refactor checkpoints</bdi>
+## <span dir="ltr">Refactor checkpoints</span>
 
-| # | <bdi dir="ltr">Change</bdi> | <bdi dir="ltr">Test command/result</bdi> | <bdi dir="ltr">Behavior preserved</bdi>? | <bdi dir="ltr">Notes</bdi> |
+| # | <span dir="ltr">Change</span> | <span dir="ltr">Test command/result</span> | <span dir="ltr">Behavior preserved</span>? | <span dir="ltr">Notes</span> |
 |---:|---|---|---:|---|
-| 1 | <bdi dir="ltr">AccountId</bdi> |  |  |  |
-| 2 | <bdi dir="ltr">CustomerId/BranchId</bdi> |  |  |  |
-| 3 | <bdi dir="ltr">Money</bdi> |  |  |  |
-| 4 | <bdi dir="ltr">Creation API</bdi> |  |  |  |
+| 1 | <span dir="ltr">AccountId</span> |  |  |  |
+| 2 | <span dir="ltr">CustomerId/BranchId</span> |  |  |  |
+| 3 | <span dir="ltr">Money</span> |  |  |  |
+| 4 | <span dir="ltr">Creation API</span> |  |  |  |
 
-## <bdi dir="ltr">Pattern decision</bdi>
+## <span dir="ltr">Pattern decision</span>
 
-- <bdi dir="ltr">Problem:</bdi>
-- <bdi dir="ltr">Forces:</bdi>
-- <bdi dir="ltr">Simplest no-pattern option:</bdi>
-- <bdi dir="ltr">Options considered:</bdi>
-- <bdi dir="ltr">Decision:</bdi>
-- <bdi dir="ltr">Coupling reduced:</bdi>
-- <bdi dir="ltr">Complexity added:</bdi>
-- <bdi dir="ltr">Revisit trigger:</bdi>
+- <span dir="ltr">Problem:</span>
+- <span dir="ltr">Forces:</span>
+- <span dir="ltr">Simplest no-pattern option:</span>
+- <span dir="ltr">Options considered:</span>
+- <span dir="ltr">Decision:</span>
+- <span dir="ltr">Coupling reduced:</span>
+- <span dir="ltr">Complexity added:</span>
+- <span dir="ltr">Revisit trigger:</span>
 
-## <bdi dir="ltr">Money decisions</bdi>
+## <span dir="ltr">Money decisions</span>
 
-- <bdi dir="ltr">Signed/positive policy and owner:</bdi>
-- <bdi dir="ltr">Equality/scale policy:</bdi>
-- <bdi dir="ltr">Rounding policy:</bdi>
-- <bdi dir="ltr">Currency representation:</bdi>
+- <span dir="ltr">Signed/positive policy and owner:</span>
+- <span dir="ltr">Equality/scale policy:</span>
+- <span dir="ltr">Rounding policy:</span>
+- <span dir="ltr">Currency representation:</span>
 
-## <bdi dir="ltr">Safety</bdi>
+## <span dir="ltr">Safety</span>
 
-- [ ] <bdi dir="ltr">Refactor</bdi> و <bdi dir="ltr">Rule change</bdi> جدا شده‌اند.
-- [ ] حداقل یک <bdi dir="ltr">Edge Test</bdi> تازه وجود دارد.
-- [ ] <bdi dir="ltr">`equals/hashCode`</bdi> سازگارند.
-- [ ] <bdi dir="ltr">`double`</bdi> یا <bdi dir="ltr">Rounding</bdi> پنهان وجود ندارد.
-- [ ] <bdi dir="ltr">Framework annotation</bdi> وارد <bdi dir="ltr">Value Object</bdi> نشده است.
-- [ ] <bdi dir="ltr">Base hierarchy/Factory</bdi> نمایشی اضافه نشده است.
-- [ ] <bdi dir="ltr">`mvn verify`</bdi> نهایی سبز است.
+- [ ] <span dir="ltr">Refactor</span> و <span dir="ltr">Rule change</span> جدا شده‌اند.
+- [ ] حداقل یک <span dir="ltr">Edge Test</span> تازه وجود دارد.
+- [ ] <span dir="ltr">`equals/hashCode`</span> سازگارند.
+- [ ] <span dir="ltr">`double`</span> یا <span dir="ltr">Rounding</span> پنهان وجود ندارد.
+- [ ] <span dir="ltr">Framework annotation</span> وارد <span dir="ltr">Value Object</span> نشده است.
+- [ ] <span dir="ltr">Base hierarchy/Factory</span> نمایشی اضافه نشده است.
+- [ ] <span dir="ltr">`mvn verify`</span> نهایی سبز است.
 
-## <bdi dir="ltr">Self-review</bdi>
+## <span dir="ltr">Self-review</span>
 
-- <bdi dir="ltr">Most valuable improvement:</bdi>
-- <bdi dir="ltr">Most questionable abstraction:</bdi>
-- <bdi dir="ltr">Debt/unknown left:</bdi>
-- <bdi dir="ltr">What I would remove if only one use case existed:</bdi>
+- <span dir="ltr">Most valuable improvement:</span>
+- <span dir="ltr">Most questionable abstraction:</span>
+- <span dir="ltr">Debt/unknown left:</span>
+- <span dir="ltr">What I would remove if only one use case existed:</span>
 
 
 </div>

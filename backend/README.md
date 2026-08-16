@@ -1,11 +1,11 @@
 <!-- bidi: rtl; code: ltr -->
 <div dir="rtl" align="right">
 
-# <bdi dir="ltr">Backend</bdi>
+# <span dir="ltr">Backend</span>
 
-نقطهٔ شروع پروژه یک <bdi dir="ltr">Modular Monolith</bdi> است. تا زمانی که <bdi dir="ltr">ADR</bdi> و شواهد مستقل‌بودن استقرار وجود ندارد، پوشه‌های <bdi dir="ltr">service</bdi> به معنی تصمیم قطعی <bdi dir="ltr">Microservice</bdi> نیستند.
+نقطهٔ شروع پروژه یک <span dir="ltr">Modular Monolith</span> است. تا زمانی که <span dir="ltr">ADR</span> و شواهد مستقل‌بودن استقرار وجود ندارد، پوشه‌های <span dir="ltr">service</span> به معنی تصمیم قطعی <span dir="ltr">Microservice</span> نیستند.
 
-- <bdi dir="ltr">banking-modulith:</bdi> برنامهٔ اصلی در اسپرینت‌های آغازین
+- <span dir="ltr">banking-modulith:</span> برنامهٔ اصلی در اسپرینت‌های آغازین
 - سرویس‌های مستقل: فقط در زمان استخراج موجه ایجاد می‌شوند
 
 </div>

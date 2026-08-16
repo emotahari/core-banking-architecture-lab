@@ -1,23 +1,23 @@
 <!-- bidi: rtl; code: ltr -->
 <div dir="rtl" align="right">
 
-# <bdi dir="ltr">Sprint 02</bdi> — <bdi dir="ltr">Domain Model</bdi> و معماری داخلی کد
+# <span dir="ltr">Sprint 02</span> — <span dir="ltr">Domain Model</span> و معماری داخلی کد
 
-- <bdi dir="ltr">Weeks: 03</bdi>–04
-- <bdi dir="ltr">Status: Backlog</bdi>
+- <span dir="ltr">Weeks: 03</span>–04
+- <span dir="ltr">Status: Backlog</span>
 
-## <bdi dir="ltr">Week 03</bdi>
+## <span dir="ltr">Week 03</span>
 
-<bdi dir="ltr">Tactical DDD</bdi> روی <bdi dir="ltr">Deposits: Entity</bdi>، <bdi dir="ltr">Value Object</bdi>، <bdi dir="ltr">Aggregate</bdi>، <bdi dir="ltr">Invariant</bdi>، <bdi dir="ltr">Repository</bdi>، <bdi dir="ltr">Domain Service</bdi>، <bdi dir="ltr">SOLID</bdi> و <bdi dir="ltr">Pattern</bdi>های موجه.
+<span dir="ltr">Tactical DDD</span> روی <span dir="ltr">Deposits: Entity</span>، <span dir="ltr">Value Object</span>، <span dir="ltr">Aggregate</span>، <span dir="ltr">Invariant</span>، <span dir="ltr">Repository</span>، <span dir="ltr">Domain Service</span>، <span dir="ltr">SOLID</span> و <span dir="ltr">Pattern</span>های موجه.
 
-## <bdi dir="ltr">Week 04</bdi>
+## <span dir="ltr">Week 04</span>
 
-<bdi dir="ltr">Hexagonal Architecture</bdi> روی <bdi dir="ltr">Lending: Ports/Adapters</bdi>، <bdi dir="ltr">Dependency Inversion</bdi>، <bdi dir="ltr">Refactoring</bdi>، <bdi dir="ltr">PostgreSQL</bdi> و <bdi dir="ltr">Testcontainers.</bdi>
+<span dir="ltr">Hexagonal Architecture</span> روی <span dir="ltr">Lending: Ports/Adapters</span>، <span dir="ltr">Dependency Inversion</span>، <span dir="ltr">Refactoring</span>، <span dir="ltr">PostgreSQL</span> و <span dir="ltr">Testcontainers.</span>
 
-## <bdi dir="ltr">Gate</bdi>
+## <span dir="ltr">Gate</span>
 
-<bdi dir="ltr">Domain</bdi> بدون <bdi dir="ltr">Spring Context</bdi> آزموده شود، <bdi dir="ltr">Invariant</bdi>ها <bdi dir="ltr">Unit Test</bdi> داشته باشند و وابستگی <bdi dir="ltr">Domain</bdi> به <bdi dir="ltr">Spring/JPA/Kafka</bdi> ممنوع باشد.
+<span dir="ltr">Domain</span> بدون <span dir="ltr">Spring Context</span> آزموده شود، <span dir="ltr">Invariant</span>ها <span dir="ltr">Unit Test</span> داشته باشند و وابستگی <span dir="ltr">Domain</span> به <span dir="ltr">Spring/JPA/Kafka</span> ممنوع باشد.
 
-محتوا و اینفوگرافیک روزانه هنگام ورود این <bdi dir="ltr">Sprint</bdi> تولید و <bdi dir="ltr">Version</bdi> می‌شوند.
+محتوا و اینفوگرافیک روزانه هنگام ورود این <span dir="ltr">Sprint</span> تولید و <span dir="ltr">Version</span> می‌شوند.
 
 </div>

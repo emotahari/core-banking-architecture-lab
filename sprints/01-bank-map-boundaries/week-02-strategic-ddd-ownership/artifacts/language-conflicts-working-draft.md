@@ -1,40 +1,40 @@
 <!-- bidi: rtl; code: ltr -->
 <div dir="rtl" align="right">
 
-# <bdi dir="ltr">Ubiquitous Language Conflicts</bdi> — <bdi dir="ltr">Working Draft</bdi>
+# <span dir="ltr">Ubiquitous Language Conflicts</span> — <span dir="ltr">Working Draft</span>
 
-- <bdi dir="ltr">Version: 0.1</bdi>
-- <bdi dir="ltr">Status: Not started</bdi>
-- <bdi dir="ltr">Goal: turn ambiguous enterprise words into context-specific</bdi>, <bdi dir="ltr">testable meanings.</bdi>
+- <span dir="ltr">Version: 0.1</span>
+- <span dir="ltr">Status: Not started</span>
+- <span dir="ltr">Goal: turn ambiguous enterprise words into context-specific</span>, <span dir="ltr">testable meanings.</span>
 
-## <bdi dir="ltr">Conflict table</bdi>
+## <span dir="ltr">Conflict table</span>
 
-| <bdi dir="ltr">Term</bdi> | <bdi dir="ltr">Context A</bdi> / <bdi dir="ltr">meaning</bdi> | <bdi dir="ltr">Context B</bdi> / <bdi dir="ltr">meaning</bdi> | <bdi dir="ltr">Different lifecycle</bdi>? | <bdi dir="ltr">Different invariant</bdi>? | <bdi dir="ltr">Same identity</bdi>? | <bdi dir="ltr">Translation needed</bdi>? | <bdi dir="ltr">Boundary signal</bdi> |
+| <span dir="ltr">Term</span> | <span dir="ltr">Context A</span> / <span dir="ltr">meaning</span> | <span dir="ltr">Context B</span> / <span dir="ltr">meaning</span> | <span dir="ltr">Different lifecycle</span>? | <span dir="ltr">Different invariant</span>? | <span dir="ltr">Same identity</span>? | <span dir="ltr">Translation needed</span>? | <span dir="ltr">Boundary signal</span> |
 |---|---|---|---|---|---|---|---|
-| <bdi dir="ltr">Customer</bdi> |  |  |  |  |  |  |  |
-| <bdi dir="ltr">Account</bdi> |  |  |  |  |  |  |  |
-| <bdi dir="ltr">Product</bdi> |  |  |  |  |  |  |  |
-| <bdi dir="ltr">Agreement</bdi> / <bdi dir="ltr">Contract</bdi> |  |  |  |  |  |  |  |
-| <bdi dir="ltr">Balance</bdi> |  |  |  |  |  |  |  |
-| <bdi dir="ltr">Transaction</bdi> |  |  |  |  |  |  |  |
-| <bdi dir="ltr">Hold</bdi> / <bdi dir="ltr">Block</bdi> |  |  |  |  |  |  |  |
-| <bdi dir="ltr">Posting</bdi> |  |  |  |  |  |  |  |
-| <bdi dir="ltr">Settlement</bdi> |  |  |  |  |  |  |  |
+| <span dir="ltr">Customer</span> |  |  |  |  |  |  |  |
+| <span dir="ltr">Account</span> |  |  |  |  |  |  |  |
+| <span dir="ltr">Product</span> |  |  |  |  |  |  |  |
+| <span dir="ltr">Agreement</span> / <span dir="ltr">Contract</span> |  |  |  |  |  |  |  |
+| <span dir="ltr">Balance</span> |  |  |  |  |  |  |  |
+| <span dir="ltr">Transaction</span> |  |  |  |  |  |  |  |
+| <span dir="ltr">Hold</span> / <span dir="ltr">Block</span> |  |  |  |  |  |  |  |
+| <span dir="ltr">Posting</span> |  |  |  |  |  |  |  |
+| <span dir="ltr">Settlement</span> |  |  |  |  |  |  |  |
 
-## <bdi dir="ltr">Context glossary template</bdi>
+## <span dir="ltr">Context glossary template</span>
 
-<bdi dir="ltr">For each candidate context</bdi>, <bdi dir="ltr">define terms with examples and forbidden synonyms.</bdi>
+<span dir="ltr">For each candidate context</span>, <span dir="ltr">define terms with examples and forbidden synonyms.</span>
 
-| <bdi dir="ltr">Context</bdi> | <bdi dir="ltr">Preferred term</bdi> | <bdi dir="ltr">Exact meaning</bdi> | <bdi dir="ltr">Example</bdi> | <bdi dir="ltr">Not the same as</bdi> | <bdi dir="ltr">Owner of definition</bdi> |
+| <span dir="ltr">Context</span> | <span dir="ltr">Preferred term</span> | <span dir="ltr">Exact meaning</span> | <span dir="ltr">Example</span> | <span dir="ltr">Not the same as</span> | <span dir="ltr">Owner of definition</span> |
 |---|---|---|---|---|---|
 |  |  |  |  |  |  |
 
-## <bdi dir="ltr">Boundary hypotheses</bdi>
+## <span dir="ltr">Boundary hypotheses</span>
 
-| <bdi dir="ltr">Hypothesis ID</bdi> | <bdi dir="ltr">Language conflict</bdi> | <bdi dir="ltr">Proposed contexts</bdi> | <bdi dir="ltr">Evidence</bdi> | <bdi dir="ltr">Counter-evidence</bdi> | <bdi dir="ltr">Validation interview/test</bdi> | <bdi dir="ltr">Status</bdi> |
+| <span dir="ltr">Hypothesis ID</span> | <span dir="ltr">Language conflict</span> | <span dir="ltr">Proposed contexts</span> | <span dir="ltr">Evidence</span> | <span dir="ltr">Counter-evidence</span> | <span dir="ltr">Validation interview/test</span> | <span dir="ltr">Status</span> |
 |---|---|---|---|---|---|---|
-| <bdi dir="ltr">H-01</bdi> |  |  |  |  |  | <bdi dir="ltr">Open</bdi> |
+| <span dir="ltr">H-01</span> |  |  |  |  |  | <span dir="ltr">Open</span> |
 
-<bdi dir="ltr">`Language conflict`</bdi> فقط سرنخ <bdi dir="ltr">Boundary</bdi> است. تفاوت اصطلاح به‌تنهایی ساخت <bdi dir="ltr">Bounded Context</bdi> جدید را اثبات نمی‌کند.
+<span dir="ltr">`Language conflict`</span> فقط سرنخ <span dir="ltr">Boundary</span> است. تفاوت اصطلاح به‌تنهایی ساخت <span dir="ltr">Bounded Context</span> جدید را اثبات نمی‌کند.
 
 </div>

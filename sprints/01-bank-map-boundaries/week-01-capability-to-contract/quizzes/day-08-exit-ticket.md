@@ -1,30 +1,30 @@
 <!-- bidi: rtl; code: ltr -->
 <div dir="rtl" align="right">
 
-# <bdi dir="ltr">Day 08 Exit Ticket</bdi> — <bdi dir="ltr">Code Craft</bdi>
+# <span dir="ltr">Day 08 Exit Ticket</span> — <span dir="ltr">Code Craft</span>
 
-- <bdi dir="ltr">Timebox: 5 minutes</bdi>
-- بدون مراجعه به درس، کد یا <bdi dir="ltr">Smell Map</bdi>
+- <span dir="ltr">Timebox: 5 minutes</span>
+- بدون مراجعه به درس، کد یا <span dir="ltr">Smell Map</span>
 
 ## پرسش‌ها
 
-1. تفاوت <bdi dir="ltr">Code Smell</bdi> و <bdi dir="ltr">Defect</bdi> چیست؟
-2. <bdi dir="ltr">Characterization Test</bdi> چه چیزی را ثابت می‌کند و چه چیزی را ثابت نمی‌کند؟
-3. چرا <bdi dir="ltr">Refactor</bdi> و تغییر <bdi dir="ltr">Rule</bdi> بانکی باید جدا باشند؟
-4. <bdi dir="ltr">Primitive Obsession</bdi> این <bdi dir="ltr">Kata</bdi> چه دو <bdi dir="ltr">Risk</bdi> مشخص داشت؟
-5. چرا سه <bdi dir="ltr">Typed ID</bdi> مشابه الزاماً <bdi dir="ltr">`BaseId<T>`</bdi> را توجیه نمی‌کنند؟
-6. <bdi dir="ltr">Static Factory</bdi> چه زمانی بهتر از <bdi dir="ltr">Factory class</bdi> مستقل است؟
-7. <bdi dir="ltr">Pattern Decision</bdi> تو چه <bdi dir="ltr">Complexity</bdi> تازه‌ای افزود؟
-8. یک <bdi dir="ltr">Revisit trigger</bdi> برای <bdi dir="ltr">Creation design</bdi> بنویس.
+1. تفاوت <span dir="ltr">Code Smell</span> و <span dir="ltr">Defect</span> چیست؟
+2. <span dir="ltr">Characterization Test</span> چه چیزی را ثابت می‌کند و چه چیزی را ثابت نمی‌کند؟
+3. چرا <span dir="ltr">Refactor</span> و تغییر <span dir="ltr">Rule</span> بانکی باید جدا باشند؟
+4. <span dir="ltr">Primitive Obsession</span> این <span dir="ltr">Kata</span> چه دو <span dir="ltr">Risk</span> مشخص داشت؟
+5. چرا سه <span dir="ltr">Typed ID</span> مشابه الزاماً <span dir="ltr">`BaseId<T>`</span> را توجیه نمی‌کنند؟
+6. <span dir="ltr">Static Factory</span> چه زمانی بهتر از <span dir="ltr">Factory class</span> مستقل است؟
+7. <span dir="ltr">Pattern Decision</span> تو چه <span dir="ltr">Complexity</span> تازه‌ای افزود؟
+8. یک <span dir="ltr">Revisit trigger</span> برای <span dir="ltr">Creation design</span> بنویس.
 
-## <bdi dir="ltr">Rubric</bdi>
+## <span dir="ltr">Rubric</span>
 
 | حوزه | امتیاز |
 |---|---:|
-| <bdi dir="ltr">Refactor/characterization</bdi> | ۲ |
-| <bdi dir="ltr">Smell</bdi> و <bdi dir="ltr">Risk concrete</bdi> | ۲ |
-| <bdi dir="ltr">Value Object/abstraction judgment</bdi> | ۲ |
-| <bdi dir="ltr">Pattern Cost/Revisit</bdi> | ۲ |
+| <span dir="ltr">Refactor/characterization</span> | ۲ |
+| <span dir="ltr">Smell</span> و <span dir="ltr">Risk concrete</span> | ۲ |
+| <span dir="ltr">Value Object/abstraction judgment</span> | ۲ |
+| <span dir="ltr">Pattern Cost/Revisit</span> | ۲ |
 | **جمع** | **۸** |
 
 حد عبور: ۶ از ۸.

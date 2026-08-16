@@ -1,15 +1,15 @@
 <!-- bidi: rtl; code: ltr -->
 <div dir="rtl" align="right">
 
-# <bdi dir="ltr">Day 05 Artifact</bdi> — <bdi dir="ltr">BIAN 14 Gap Check</bdi>
+# <span dir="ltr">Day 05 Artifact</span> — <span dir="ltr">BIAN 14 Gap Check</span>
 
-- <bdi dir="ltr">Local map version:</bdi>
-- <bdi dir="ltr">BIAN version: 14.0</bdi>
-- <bdi dir="ltr">Check date:</bdi>
-- <bdi dir="ltr">Reviewer:</bdi>
-- <bdi dir="ltr">Rule: Local map first</bdi>; <bdi dir="ltr">BIAN second.</bdi>
+- <span dir="ltr">Local map version:</span>
+- <span dir="ltr">BIAN version: 14.0</span>
+- <span dir="ltr">Check date:</span>
+- <span dir="ltr">Reviewer:</span>
+- <span dir="ltr">Rule: Local map first</span>; <span dir="ltr">BIAN second.</span>
 
-## <bdi dir="ltr">Status vocabulary</bdi>
+## <span dir="ltr">Status vocabulary</span>
 
 
 </div>
@@ -25,9 +25,9 @@ MATCH | PARTIAL | GAP-LOCAL | GAP-OUR-MAP | FALSE-FRIEND | NOT-APPLICABLE
 <div dir="rtl" align="right">
 
 
-## <bdi dir="ltr">Mapping</bdi>
+## <span dir="ltr">Mapping</span>
 
-| <bdi dir="ltr">Local capability</bdi> | <bdi dir="ltr">Local definition</bdi> | <bdi dir="ltr">BIAN element/link</bdi> | <bdi dir="ltr">Status</bdi> | <bdi dir="ltr">Scope difference</bdi> | <bdi dir="ltr">Local decision</bdi> | <bdi dir="ltr">Evidence/date</bdi> |
+| <span dir="ltr">Local capability</span> | <span dir="ltr">Local definition</span> | <span dir="ltr">BIAN element/link</span> | <span dir="ltr">Status</span> | <span dir="ltr">Scope difference</span> | <span dir="ltr">Local decision</span> | <span dir="ltr">Evidence/date</span> |
 |---|---|---|---|---|---|---|
 |  |  |  |  |  |  |  |
 |  |  |  |  |  |  |  |
@@ -40,37 +40,37 @@ MATCH | PARTIAL | GAP-LOCAL | GAP-OUR-MAP | FALSE-FRIEND | NOT-APPLICABLE
 |  |  |  |  |  |  |  |
 |  |  |  |  |  |  |  |
 
-## <bdi dir="ltr">Mandatory false-friend review</bdi>
+## <span dir="ltr">Mandatory false-friend review</span>
 
-| <bdi dir="ltr">Candidate</bdi> | <bdi dir="ltr">Similar name</bdi> | <bdi dir="ltr">Why it may differ</bdi> | <bdi dir="ltr">Decision</bdi> |
+| <span dir="ltr">Candidate</span> | <span dir="ltr">Similar name</span> | <span dir="ltr">Why it may differ</span> | <span dir="ltr">Decision</span> |
 |---|---|---|---|
-| <bdi dir="ltr">Current Account</bdi> |  |  |  |
-| <bdi dir="ltr">Customer Relationship Management</bdi> |  |  |  |
-| <bdi dir="ltr">Financial Accounting</bdi> |  |  |  |
+| <span dir="ltr">Current Account</span> |  |  |  |
+| <span dir="ltr">Customer Relationship Management</span> |  |  |  |
+| <span dir="ltr">Financial Accounting</span> |  |  |  |
 
-## <bdi dir="ltr">Gaps and changes</bdi>
+## <span dir="ltr">Gaps and changes</span>
 
-| <bdi dir="ltr">Change to local map</bdi> | <bdi dir="ltr">Triggered by</bdi> | <bdi dir="ltr">Before</bdi> | <bdi dir="ltr">After</bdi> | <bdi dir="ltr">Consequence</bdi> |
+| <span dir="ltr">Change to local map</span> | <span dir="ltr">Triggered by</span> | <span dir="ltr">Before</span> | <span dir="ltr">After</span> | <span dir="ltr">Consequence</span> |
 |---|---|---|---|---|
 |  |  |  |  |  |
 
-## <bdi dir="ltr">Deployment disclaimer</bdi>
+## <span dir="ltr">Deployment disclaimer</span>
 
-برای هر <bdi dir="ltr">BIAN Service Domain</bdi> که بعدها <bdi dir="ltr">Service Candidate</bdi> می‌شود، این <bdi dir="ltr">Evidence</bdi>ها هنوز لازم‌اند:
+برای هر <span dir="ltr">BIAN Service Domain</span> که بعدها <span dir="ltr">Service Candidate</span> می‌شود، این <span dir="ltr">Evidence</span>ها هنوز لازم‌اند:
 
 - [ ] مدل و زبان محلی مستقل
-- [ ] <bdi dir="ltr">Transaction/aggregate boundary</bdi>
-- [ ] <bdi dir="ltr">Team/change ownership</bdi>
-- [ ] <bdi dir="ltr">Scaling/availability profile</bdi>
-- [ ] <bdi dir="ltr">Contract</bdi> و <bdi dir="ltr">failure semantics</bdi>
-- [ ] <bdi dir="ltr">Cost/benefit</bdi> استقرار مستقل
+- [ ] <span dir="ltr">Transaction/aggregate boundary</span>
+- [ ] <span dir="ltr">Team/change ownership</span>
+- [ ] <span dir="ltr">Scaling/availability profile</span>
+- [ ] <span dir="ltr">Contract</span> و <span dir="ltr">failure semantics</span>
+- [ ] <span dir="ltr">Cost/benefit</span> استقرار مستقل
 
-## <bdi dir="ltr">Conclusion</bdi>
+## <span dir="ltr">Conclusion</span>
 
-- <bdi dir="ltr">Most useful BIAN match:</bdi>
-- <bdi dir="ltr">Most important missing capability:</bdi>
-- <bdi dir="ltr">Most dangerous false friend:</bdi>
-- <bdi dir="ltr">What remains unknown:</bdi>
+- <span dir="ltr">Most useful BIAN match:</span>
+- <span dir="ltr">Most important missing capability:</span>
+- <span dir="ltr">Most dangerous false friend:</span>
+- <span dir="ltr">What remains unknown:</span>
 
 
 </div>

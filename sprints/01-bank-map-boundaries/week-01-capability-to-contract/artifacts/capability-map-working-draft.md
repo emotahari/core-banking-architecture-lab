@@ -1,15 +1,15 @@
 <!-- bidi: rtl; code: ltr -->
 <div dir="rtl" align="right">
 
-# <bdi dir="ltr">Banking Capability Map</bdi> — <bdi dir="ltr">Working Draft</bdi>
+# <span dir="ltr">Banking Capability Map</span> — <span dir="ltr">Working Draft</span>
 
-- <bdi dir="ltr">Version: 0.1</bdi>
-- <bdi dir="ltr">Status: Working Draft</bdi>
-- <bdi dir="ltr">Scope:</bdi> بانک جامع؛ سطح <bdi dir="ltr">L1</bdi>
-- <bdi dir="ltr">Owner: Business Architecture</bdi>
-- <bdi dir="ltr">Review date: Day 05</bdi>
+- <span dir="ltr">Version: 0.1</span>
+- <span dir="ltr">Status: Working Draft</span>
+- <span dir="ltr">Scope:</span> بانک جامع؛ سطح <span dir="ltr">L1</span>
+- <span dir="ltr">Owner: Business Architecture</span>
+- <span dir="ltr">Review date: Day 05</span>
 
-این <bdi dir="ltr">Map</bdi> پاسخ نهایی نیست. در <bdi dir="ltr">Day 05</bdi> باید با مسئله‌های واقعی و سپس <bdi dir="ltr">BIAN 14 Gap Check</bdi> شود.
+این <span dir="ltr">Map</span> پاسخ نهایی نیست. در <span dir="ltr">Day 05</span> باید با مسئله‌های واقعی و سپس <span dir="ltr">BIAN 14 Gap Check</span> شود.
 
 
 </div>
@@ -51,26 +51,26 @@ flowchart TB
 <div dir="rtl" align="right">
 
 
-## آزمون کیفیت <bdi dir="ltr">L1</bdi>
+## آزمون کیفیت <span dir="ltr">L1</span>
 
-برای هر <bdi dir="ltr">Capability</bdi> بررسی شود:
+برای هر <span dir="ltr">Capability</span> بررسی شود:
 
 - آیا «چه کاری باید بتوانیم انجام دهیم» را می‌گوید، نه چگونه؟
-- آیا نام واحد سازمانی، نرم‌افزار، <bdi dir="ltr">Vendor</bdi> یا فناوری در آن نیامده است؟
-- آیا نسبتاً پایدارتر از <bdi dir="ltr">Process</bdi> و <bdi dir="ltr">System</bdi> است؟
-- آیا <bdi dir="ltr">Owner</bdi> کسب‌وکاری قابل تعیین دارد؟
-- آیا می‌توان <bdi dir="ltr">Outcome</bdi> و <bdi dir="ltr">KPI</bdi> برای آن تعریف کرد؟
-- آیا با <bdi dir="ltr">Capability</bdi> دیگر هم‌پوشانی مبهم ندارد؟
+- آیا نام واحد سازمانی، نرم‌افزار، <span dir="ltr">Vendor</span> یا فناوری در آن نیامده است؟
+- آیا نسبتاً پایدارتر از <span dir="ltr">Process</span> و <span dir="ltr">System</span> است؟
+- آیا <span dir="ltr">Owner</span> کسب‌وکاری قابل تعیین دارد؟
+- آیا می‌توان <span dir="ltr">Outcome</span> و <span dir="ltr">KPI</span> برای آن تعریف کرد؟
+- آیا با <span dir="ltr">Capability</span> دیگر هم‌پوشانی مبهم ندارد؟
 
 ## طبقه‌بندی چهارلایهٔ موقت
 
-| لایه | نمونهٔ <bdi dir="ltr">Capability</bdi> | نکته |
+| لایه | نمونهٔ <span dir="ltr">Capability</span> | نکته |
 |---|---|---|
 | هستهٔ بانکداری | مشتری، محصول/قرارداد، سپرده، اعتبار، ثبت مالی پایه | مبنای وضعیت و تعهدات بانکی |
-| عملیات و خدمات بانکداری | پرداخت، کارت، کانال، شعبه، <bdi dir="ltr">Teller</bdi>، چک، وصول | اجرای خدمت و اتصال هسته به شبکه‌ها و عملیات |
+| عملیات و خدمات بانکداری | پرداخت، کارت، کانال، شعبه، <span dir="ltr">Teller</span>، چک، وصول | اجرای خدمت و اتصال هسته به شبکه‌ها و عملیات |
 | سامانه‌های سازمانی | منابع انسانی، تدارکات، املاک، ناوگان، بودجهٔ سازمانی | ادارهٔ بنگاه، نه نگهداری تعهد بانکی مشتری |
-| اکوسیستم دیجیتال | <bdi dir="ltr">Open Banking</bdi>، <bdi dir="ltr">Partner/Fintech</bdi>، <bdi dir="ltr">Marketplace</bdi> و <bdi dir="ltr">Embedded Finance</bdi> | گسترش خدمت خارج از مرز سنتی بانک |
+| اکوسیستم دیجیتال | <span dir="ltr">Open Banking</span>، <span dir="ltr">Partner/Fintech</span>، <span dir="ltr">Marketplace</span> و <span dir="ltr">Embedded Finance</span> | گسترش خدمت خارج از مرز سنتی بانک |
 
-این چهار لایه برای <bdi dir="ltr">Portfolio</bdi> و <bdi dir="ltr">Operating Model</bdi> مفیدند، اما <bdi dir="ltr">Bounded Context</bdi> یا <bdi dir="ltr">Deployment Boundary</bdi> نیستند.
+این چهار لایه برای <span dir="ltr">Portfolio</span> و <span dir="ltr">Operating Model</span> مفیدند، اما <span dir="ltr">Bounded Context</span> یا <span dir="ltr">Deployment Boundary</span> نیستند.
 
 </div>

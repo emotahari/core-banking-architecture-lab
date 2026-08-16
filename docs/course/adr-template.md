@@ -1,45 +1,45 @@
 <!-- bidi: rtl; code: ltr -->
 <div dir="rtl" align="right">
 
-# <bdi dir="ltr">ADR-NNNN:</bdi> عنوان تصمیم
+# <span dir="ltr">ADR-NNNN:</span> عنوان تصمیم
 
-- <bdi dir="ltr">Status: Proposed</bdi>
-- <bdi dir="ltr">Date:</bdi>
-- <bdi dir="ltr">Owners:</bdi>
-- <bdi dir="ltr">Scope:</bdi>
+- <span dir="ltr">Status: Proposed</span>
+- <span dir="ltr">Date:</span>
+- <span dir="ltr">Owners:</span>
+- <span dir="ltr">Scope:</span>
 
-## <bdi dir="ltr">Context</bdi>
+## <span dir="ltr">Context</span>
 
 مسئله و محدودیت‌هایی که تصمیم را ضروری کرده‌اند.
 
-## <bdi dir="ltr">Forces</bdi>
+## <span dir="ltr">Forces</span>
 
 - نیروی تصمیم اول
 - نیروی تصمیم دوم
 
-## <bdi dir="ltr">Options</bdi>
+## <span dir="ltr">Options</span>
 
-### <bdi dir="ltr">Option A</bdi>
-
-شرح، مزیت، هزینه و ریسک.
-
-### <bdi dir="ltr">Option B</bdi>
+### <span dir="ltr">Option A</span>
 
 شرح، مزیت، هزینه و ریسک.
 
-## <bdi dir="ltr">Decision</bdi>
+### <span dir="ltr">Option B</span>
+
+شرح، مزیت، هزینه و ریسک.
+
+## <span dir="ltr">Decision</span>
 
 انتخاب و دلیل.
 
-## <bdi dir="ltr">Consequences</bdi>
+## <span dir="ltr">Consequences</span>
 
 پیامدهای مثبت، منفی و بدهی پذیرفته‌شده.
 
-## <bdi dir="ltr">Verification</bdi>
+## <span dir="ltr">Verification</span>
 
-کدام تست، <bdi dir="ltr">Metric</bdi>، <bdi dir="ltr">Prototype</bdi> یا <bdi dir="ltr">Review</bdi> نشان می‌دهد تصمیم درست کار می‌کند؟
+کدام تست، <span dir="ltr">Metric</span>، <span dir="ltr">Prototype</span> یا <span dir="ltr">Review</span> نشان می‌دهد تصمیم درست کار می‌کند؟
 
-## <bdi dir="ltr">Revisit Trigger</bdi>
+## <span dir="ltr">Revisit Trigger</span>
 
 با وقوع چه تغییر یا مشاهده‌ای تصمیم باید دوباره بررسی شود؟
 

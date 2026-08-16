@@ -1,23 +1,23 @@
 <!-- bidi: rtl; code: ltr -->
 <div dir="rtl" align="right">
 
-# <bdi dir="ltr">Sprint 10</bdi> — <bdi dir="ltr">Lending</bdi>، <bdi dir="ltr">Collections</bdi> و <bdi dir="ltr">Payments</bdi>
+# <span dir="ltr">Sprint 10</span> — <span dir="ltr">Lending</span>، <span dir="ltr">Collections</span> و <span dir="ltr">Payments</span>
 
-- <bdi dir="ltr">Weeks: 19</bdi>–20
-- <bdi dir="ltr">Status: Backlog</bdi>
+- <span dir="ltr">Weeks: 19</span>–20
+- <span dir="ltr">Status: Backlog</span>
 
-## <bdi dir="ltr">Week 19</bdi>
+## <span dir="ltr">Week 19</span>
 
-چرخهٔ <bdi dir="ltr">Lending</bdi>، <bdi dir="ltr">Schedule</bdi>، <bdi dir="ltr">Collateral</bdi>، <bdi dir="ltr">Delinquency</bdi>، <bdi dir="ltr">Collections</bdi>، <bdi dir="ltr">Restructuring</bdi> و <bdi dir="ltr">Recovery.</bdi>
+چرخهٔ <span dir="ltr">Lending</span>، <span dir="ltr">Schedule</span>، <span dir="ltr">Collateral</span>، <span dir="ltr">Delinquency</span>، <span dir="ltr">Collections</span>، <span dir="ltr">Restructuring</span> و <span dir="ltr">Recovery.</span>
 
-## <bdi dir="ltr">Week 20</bdi>
+## <span dir="ltr">Week 20</span>
 
-<bdi dir="ltr">Payment Order</bdi>، <bdi dir="ltr">Clearing/Settlement</bdi>، <bdi dir="ltr">Reversal/Refund/Return</bdi>، <bdi dir="ltr">Card</bdi>، <bdi dir="ltr">Channel</bdi>، <bdi dir="ltr">Cheque</bdi> و <bdi dir="ltr">ISO 20022 ACL.</bdi>
+<span dir="ltr">Payment Order</span>، <span dir="ltr">Clearing/Settlement</span>، <span dir="ltr">Reversal/Refund/Return</span>، <span dir="ltr">Card</span>، <span dir="ltr">Channel</span>، <span dir="ltr">Cheque</span> و <span dir="ltr">ISO 20022 ACL.</span>
 
-## <bdi dir="ltr">Gate</bdi>
+## <span dir="ltr">Gate</span>
 
-هر <bdi dir="ltr">State</bdi>، داده و تصمیم دقیقاً یک مالک دارد؛ <bdi dir="ltr">Channel</bdi> مالک مانده و <bdi dir="ltr">Collections</bdi> مالک بدهی نیست.
+هر <span dir="ltr">State</span>، داده و تصمیم دقیقاً یک مالک دارد؛ <span dir="ltr">Channel</span> مالک مانده و <span dir="ltr">Collections</span> مالک بدهی نیست.
 
-محتوا و اینفوگرافیک روزانه هنگام ورود این <bdi dir="ltr">Sprint</bdi> تولید و <bdi dir="ltr">Version</bdi> می‌شوند.
+محتوا و اینفوگرافیک روزانه هنگام ورود این <span dir="ltr">Sprint</span> تولید و <span dir="ltr">Version</span> می‌شوند.
 
 </div>

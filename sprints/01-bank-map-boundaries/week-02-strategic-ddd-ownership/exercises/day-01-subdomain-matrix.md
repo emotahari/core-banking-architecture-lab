@@ -1,60 +1,60 @@
 <!-- bidi: rtl; code: ltr -->
 <div dir="rtl" align="right">
 
-# <bdi dir="ltr">Day 01 Exercise</bdi> — <bdi dir="ltr">Subdomain Matrix</bdi>
+# <span dir="ltr">Day 01 Exercise</span> — <span dir="ltr">Subdomain Matrix</span>
 
-- <bdi dir="ltr">Timebox: 15 minutes</bdi>
-- <bdi dir="ltr">Resources during exercise: lesson closed</bdi>
-- <bdi dir="ltr">Output: rows in</bdi> <bdi dir="ltr">`artifacts/subdomain-matrix-working-draft.md`</bdi>
+- <span dir="ltr">Timebox: 15 minutes</span>
+- <span dir="ltr">Resources during exercise: lesson closed</span>
+- <span dir="ltr">Output: rows in</span> <span dir="ltr">`artifacts/subdomain-matrix-working-draft.md`</span>
 
-## <bdi dir="ltr">Scenario</bdi>
+## <span dir="ltr">Scenario</span>
 
-<bdi dir="ltr">Bank strategy hypothesis A:</bdi>
+<span dir="ltr">Bank strategy hypothesis A:</span>
 
 > رشد وام خرد دیجیتال با تصمیم اعتباری زیر پنج دقیقه، کنترل نکول و عرضهٔ سریع محصول.
 
-<bdi dir="ltr">For each candidate below</bdi>, <bdi dir="ltr">decide whether it is a coherent Subdomain candidate</bdi>, <bdi dir="ltr">needs splitting/merging</bdi>, <bdi dir="ltr">and classify it as Core/Supporting/Generic</bdi> **<bdi dir="ltr">for this strategy</bdi>**.
+<span dir="ltr">For each candidate below</span>, <span dir="ltr">decide whether it is a coherent Subdomain candidate</span>, <span dir="ltr">needs splitting/merging</span>, <span dir="ltr">and classify it as Core/Supporting/Generic</span> **<span dir="ltr">for this strategy</span>**.
 
-1. <bdi dir="ltr">Party identity</bdi>
-2. <bdi dir="ltr">KYC status</bdi>
-3. <bdi dir="ltr">Customer notification</bdi>
-4. <bdi dir="ltr">Product definition/versioning</bdi>
-5. <bdi dir="ltr">Credit decision</bdi>
-6. <bdi dir="ltr">Agreement formation</bdi>
-7. <bdi dir="ltr">Deposit account servicing</bdi>
-8. <bdi dir="ltr">Loan disbursement coordination</bdi>
-9. <bdi dir="ltr">Loan servicing/repayment</bdi>
-10. <bdi dir="ltr">Delinquency and collections</bdi>
-11. <bdi dir="ltr">Journal posting</bdi>
-12. <bdi dir="ltr">IAM</bdi>
+1. <span dir="ltr">Party identity</span>
+2. <span dir="ltr">KYC status</span>
+3. <span dir="ltr">Customer notification</span>
+4. <span dir="ltr">Product definition/versioning</span>
+5. <span dir="ltr">Credit decision</span>
+6. <span dir="ltr">Agreement formation</span>
+7. <span dir="ltr">Deposit account servicing</span>
+8. <span dir="ltr">Loan disbursement coordination</span>
+9. <span dir="ltr">Loan servicing/repayment</span>
+10. <span dir="ltr">Delinquency and collections</span>
+11. <span dir="ltr">Journal posting</span>
+12. <span dir="ltr">IAM</span>
 
-## <bdi dir="ltr">Required answer per row</bdi>
+## <span dir="ltr">Required answer per row</span>
 
-- <bdi dir="ltr">Outcome</bdi>
-- <bdi dir="ltr">two distinctive rules or reasons it is not coherent</bdi>
-- <bdi dir="ltr">classification</bdi>
-- <bdi dir="ltr">at least two Forces</bdi>
-- <bdi dir="ltr">confidence: Low/Medium/High</bdi>
-- <bdi dir="ltr">one counter-evidence or open question</bdi>
-- <bdi dir="ltr">business owner hypothesis</bdi>
+- <span dir="ltr">Outcome</span>
+- <span dir="ltr">two distinctive rules or reasons it is not coherent</span>
+- <span dir="ltr">classification</span>
+- <span dir="ltr">at least two Forces</span>
+- <span dir="ltr">confidence: Low/Medium/High</span>
+- <span dir="ltr">one counter-evidence or open question</span>
+- <span dir="ltr">business owner hypothesis</span>
 
-## <bdi dir="ltr">Strategy change challenge</bdi>
+## <span dir="ltr">Strategy change challenge</span>
 
-<bdi dir="ltr">Now replace strategy A with:</bdi>
+<span dir="ltr">Now replace strategy A with:</span>
 
-> تمرکز بر تأمین مالی زنجیرهٔ تأمین شرکت‌های بزرگ و مدیریت <bdi dir="ltr">Exposure/Covenant.</bdi>
+> تمرکز بر تأمین مالی زنجیرهٔ تأمین شرکت‌های بزرگ و مدیریت <span dir="ltr">Exposure/Covenant.</span>
 
-<bdi dir="ltr">Choose three rows whose classification or boundary might change. Explain exactly why.</bdi>
+<span dir="ltr">Choose three rows whose classification or boundary might change. Explain exactly why.</span>
 
-## <bdi dir="ltr">Forbidden shortcuts</bdi>
+## <span dir="ltr">Forbidden shortcuts</span>
 
 - «چون سامانهٔ مستقل دارد»
-- «چون پیچیده است، <bdi dir="ltr">Core</bdi> است»
-- «چون <bdi dir="ltr">BIAN Service Domain</bdi> دارد»
-- «چون مهم است، <bdi dir="ltr">Core</bdi> است»
+- «چون پیچیده است، <span dir="ltr">Core</span> است»
+- «چون <span dir="ltr">BIAN Service Domain</span> دارد»
+- «چون مهم است، <span dir="ltr">Core</span> است»
 
-## <bdi dir="ltr">Submission</bdi>
+## <span dir="ltr">Submission</span>
 
-<bdi dir="ltr">Paste the raw answer under</bdi> <bdi dir="ltr">`Day 01`</bdi> <bdi dir="ltr">in</bdi> [<bdi dir="ltr">Week 02 Workbook</bdi>](../submissions/week-02-workbook.md). <bdi dir="ltr">Do not rewrite it after review</bdi>; <bdi dir="ltr">append correction separately.</bdi>
+<span dir="ltr">Paste the raw answer under</span> <span dir="ltr">`Day 01`</span> <span dir="ltr">in</span> [<span dir="ltr">Week 02 Workbook</span>](../submissions/week-02-workbook.md). <span dir="ltr">Do not rewrite it after review</span>; <span dir="ltr">append correction separately.</span>
 
 </div>

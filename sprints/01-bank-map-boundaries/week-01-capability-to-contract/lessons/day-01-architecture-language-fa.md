@@ -1,23 +1,23 @@
 <!-- bidi: rtl; code: ltr -->
 <div dir="rtl" align="right">
 
-# <bdi dir="ltr">Day 01</bdi> — زبان مشترک معماری: از توانمندی بانک تا <bdi dir="ltr">Contract</bdi>
+# <span dir="ltr">Day 01</span> — زبان مشترک معماری: از توانمندی بانک تا <span dir="ltr">Contract</span>
 
 - زمان مطالعه: ۲۵ دقیقه
 - سطح: میانی رو به پیشرفته
 - مسئلهٔ نمونه: مسدودی قضایی سپرده
-- خروجی: توانایی تشخیص سطح هر تصمیم و ساخت <bdi dir="ltr">Traceability Chain</bdi>
+- خروجی: توانایی تشخیص سطح هر تصمیم و ساخت <span dir="ltr">Traceability Chain</span>
 
 > اگر تمرین خط پایه را هنوز انجام نداده‌ای، این فایل را ببند. ابتدا ۱۲ دقیقه به
-> [<bdi dir="ltr">Architecture Baseline</bdi>](../exercises/day-01-baseline.md) پاسخ بده. هدف ثبت مدل ذهنی واقعی تو پیش از آموزش است.
+> [<span dir="ltr">Architecture Baseline</span>](../exercises/day-01-baseline.md) پاسخ بده. هدف ثبت مدل ذهنی واقعی تو پیش از آموزش است.
 
 ## ۱. امروز دقیقاً چه چیزی باید یاد بگیری؟
 
 در پایان روز باید بتوانی:
 
-1. <bdi dir="ltr">Business Architecture</bdi>، <bdi dir="ltr">Solution Architecture</bdi> و <bdi dir="ltr">Software Architecture</bdi> را از هم جدا کنی.
-2. <bdi dir="ltr">Capability</bdi> را با <bdi dir="ltr">Process</bdi>، <bdi dir="ltr">Business Service</bdi>، <bdi dir="ltr">Application</bdi> و <bdi dir="ltr">API</bdi> اشتباه نگیری.
-3. تفاوت <bdi dir="ltr">System</bdi>، <bdi dir="ltr">Domain</bdi>، <bdi dir="ltr">Subdomain</bdi>، <bdi dir="ltr">Bounded Context</bdi>، <bdi dir="ltr">Module</bdi> و <bdi dir="ltr">Deployable Service</bdi> را توضیح بدهی.
+1. <span dir="ltr">Business Architecture</span>، <span dir="ltr">Solution Architecture</span> و <span dir="ltr">Software Architecture</span> را از هم جدا کنی.
+2. <span dir="ltr">Capability</span> را با <span dir="ltr">Process</span>، <span dir="ltr">Business Service</span>، <span dir="ltr">Application</span> و <span dir="ltr">API</span> اشتباه نگیری.
+3. تفاوت <span dir="ltr">System</span>، <span dir="ltr">Domain</span>، <span dir="ltr">Subdomain</span>، <span dir="ltr">Bounded Context</span>، <span dir="ltr">Module</span> و <span dir="ltr">Deployable Service</span> را توضیح بدهی.
 4. از یک نیاز بانکی این زنجیره را بسازی:
 
 
@@ -41,9 +41,9 @@ Capability
 
 
 5. توضیح بدهی چرا این زنجیره «نگاشت یک‌به‌یک» نیست.
-6. <bdi dir="ltr">BIAN</bdi> را به‌عنوان <bdi dir="ltr">Reference Architecture</bdi> به‌کار ببری، نه دستگاه تولید خودکار <bdi dir="ltr">Microservice.</bdi>
+6. <span dir="ltr">BIAN</span> را به‌عنوان <span dir="ltr">Reference Architecture</span> به‌کار ببری، نه دستگاه تولید خودکار <span dir="ltr">Microservice.</span>
 
-موضوع امروز انتخاب <bdi dir="ltr">Kafka</bdi>، دیتابیس، <bdi dir="ltr">REST</bdi> یا معماری <bdi dir="ltr">Microservice</bdi> نیست. اگر پیش از روشن‌شدن <bdi dir="ltr">Capability</bdi> و <bdi dir="ltr">Ownership</bdi> سراغ این انتخاب‌ها برویم، ممکن است پاسخ فنی خوبی برای مسئلهٔ اشتباه بسازیم.
+موضوع امروز انتخاب <span dir="ltr">Kafka</span>، دیتابیس، <span dir="ltr">REST</span> یا معماری <span dir="ltr">Microservice</span> نیست. اگر پیش از روشن‌شدن <span dir="ltr">Capability</span> و <span dir="ltr">Ownership</span> سراغ این انتخاب‌ها برویم، ممکن است پاسخ فنی خوبی برای مسئلهٔ اشتباه بسازیم.
 
 ---
 
@@ -60,10 +60,10 @@ Capability
 | مرز | چه چیزی داخل این جزء است و چه چیزی بیرون آن؟ |
 | مالکیت | چه کسی مجاز است این داده یا تصمیم را ایجاد و تغییر دهد؟ |
 | وابستگی | این جزء برای کارکردن چه دانشی از دیگری دارد؟ |
-| قواعد حیاتی | چه <bdi dir="ltr">Invariant</bdi>هایی حتی هنگام خطا و هم‌زمانی نباید شکسته شوند؟ |
+| قواعد حیاتی | چه <span dir="ltr">Invariant</span>هایی حتی هنگام خطا و هم‌زمانی نباید شکسته شوند؟ |
 | تغییر ایمن | تغییر در یک قاعده تا کجا موج ایجاد می‌کند؟ |
 
-<bdi dir="ltr">Diagram</bdi>، <bdi dir="ltr">Framework</bdi>، <bdi dir="ltr">Cloud</bdi> و <bdi dir="ltr">Microservice</bdi> می‌توانند ابزار یا نتیجهٔ تصمیم معماری باشند؛ خود معماری نیستند. دو تیم ممکن است <bdi dir="ltr">Diagram</bdi> مشابه داشته باشند، ولی یکی مالکیت دادهٔ روشن و <bdi dir="ltr">Contract</bdi> پایدار داشته باشد و دیگری از دیتابیس مشترک، دانش پنهان و <bdi dir="ltr">Release</bdi> هماهنگ رنج ببرد. ظاهر آن‌ها یکی است، معماری آن‌ها نه.
+<span dir="ltr">Diagram</span>، <span dir="ltr">Framework</span>، <span dir="ltr">Cloud</span> و <span dir="ltr">Microservice</span> می‌توانند ابزار یا نتیجهٔ تصمیم معماری باشند؛ خود معماری نیستند. دو تیم ممکن است <span dir="ltr">Diagram</span> مشابه داشته باشند، ولی یکی مالکیت دادهٔ روشن و <span dir="ltr">Contract</span> پایدار داشته باشد و دیگری از دیتابیس مشترک، دانش پنهان و <span dir="ltr">Release</span> هماهنگ رنج ببرد. ظاهر آن‌ها یکی است، معماری آن‌ها نه.
 
 ### سه نشانهٔ یک تصمیم معماری
 
@@ -73,94 +73,94 @@ Capability
 - چند جزء یا تیم باید آن را رعایت کنند.
 - روی صحت مالی، امنیت، دسترس‌پذیری یا امکان تحول اثر جدی دارد.
 
-نام‌گذاری یک متغیر معمولاً تصمیم معماری نیست. اینکه ماندهٔ قابل برداشت سپرده را <bdi dir="ltr">Deposits</bdi> مالک باشد یا <bdi dir="ltr">Accounting</bdi>، تصمیم معماری و دامینی است؛ چون روی تراکنش، <bdi dir="ltr">Locking</bdi>، <bdi dir="ltr">API</bdi>، عملیات و پاسخ‌گویی سازمانی اثر می‌گذارد.
+نام‌گذاری یک متغیر معمولاً تصمیم معماری نیست. اینکه ماندهٔ قابل برداشت سپرده را <span dir="ltr">Deposits</span> مالک باشد یا <span dir="ltr">Accounting</span>، تصمیم معماری و دامینی است؛ چون روی تراکنش، <span dir="ltr">Locking</span>، <span dir="ltr">API</span>، عملیات و پاسخ‌گویی سازمانی اثر می‌گذارد.
 
 ---
 
-## ۳. سه سطحی که نباید در یک <bdi dir="ltr">Diagram</bdi> مخلوط شوند
+## ۳. سه سطحی که نباید در یک <span dir="ltr">Diagram</span> مخلوط شوند
 
-### ۳.۱ <bdi dir="ltr">Business Architecture</bdi>
+### ۳.۱ <span dir="ltr">Business Architecture</span>
 
-<bdi dir="ltr">Business Architecture</bdi> توضیح می‌دهد بانک برای تحقق راهبردش **چه توانمندی‌هایی** لازم دارد، چگونه ارزش تولید می‌کند و اطلاعات و مسئولیت‌های کلیدی چگونه سازمان می‌یابند.
+<span dir="ltr">Business Architecture</span> توضیح می‌دهد بانک برای تحقق راهبردش **چه توانمندی‌هایی** لازم دارد، چگونه ارزش تولید می‌کند و اطلاعات و مسئولیت‌های کلیدی چگونه سازمان می‌یابند.
 
 واحدهای معمول تحلیل:
 
-- <bdi dir="ltr">Goal</bdi> و <bdi dir="ltr">Outcome</bdi>
-- <bdi dir="ltr">Capability</bdi> و <bdi dir="ltr">Capability Map</bdi>
-- <bdi dir="ltr">Value Stream</bdi>
-- <bdi dir="ltr">Business Information</bdi>
-- <bdi dir="ltr">Stakeholder</bdi> و <bdi dir="ltr">Responsibility</bdi>
+- <span dir="ltr">Goal</span> و <span dir="ltr">Outcome</span>
+- <span dir="ltr">Capability</span> و <span dir="ltr">Capability Map</span>
+- <span dir="ltr">Value Stream</span>
+- <span dir="ltr">Business Information</span>
+- <span dir="ltr">Stakeholder</span> و <span dir="ltr">Responsibility</span>
 
 نمونه پرسش‌ها:
 
 - بانک برای اعطای اعتبار چه توانمندی‌هایی لازم دارد؟
-- کدام <bdi dir="ltr">Capability</bdi> برای بانک راهبردی و کدام عمومی است؟
+- کدام <span dir="ltr">Capability</span> برای بانک راهبردی و کدام عمومی است؟
 - مالک بلوغ «مدیریت سپرده» چه نقشی است؟
-- کدام <bdi dir="ltr">Capability</bdi>ها مانع عرضهٔ سریع محصول جدیدند؟
+- کدام <span dir="ltr">Capability</span>ها مانع عرضهٔ سریع محصول جدیدند؟
 
-<bdi dir="ltr">Business Architecture</bdi> نباید به نسخهٔ <bdi dir="ltr">Spring Boot</bdi>، نام جدول یا تعداد <bdi dir="ltr">Pod</bdi>ها پاسخ بدهد.
+<span dir="ltr">Business Architecture</span> نباید به نسخهٔ <span dir="ltr">Spring Boot</span>، نام جدول یا تعداد <span dir="ltr">Pod</span>ها پاسخ بدهد.
 
-### ۳.۲ <bdi dir="ltr">Solution Architecture</bdi>
+### ۳.۲ <span dir="ltr">Solution Architecture</span>
 
-<bdi dir="ltr">Solution Architecture</bdi> برای یک مسئله یا تغییر مشخص، همکاری چند <bdi dir="ltr">Domain</bdi>، <bdi dir="ltr">Application</bdi>، <bdi dir="ltr">Data Store</bdi> و <bdi dir="ltr">Integration</bdi> را طراحی می‌کند.
+<span dir="ltr">Solution Architecture</span> برای یک مسئله یا تغییر مشخص، همکاری چند <span dir="ltr">Domain</span>، <span dir="ltr">Application</span>، <span dir="ltr">Data Store</span> و <span dir="ltr">Integration</span> را طراحی می‌کند.
 
 واحدهای معمول تحلیل:
 
-- <bdi dir="ltr">System/Context Boundary</bdi>
-- <bdi dir="ltr">Component</bdi> یا <bdi dir="ltr">Service Candidate</bdi>
-- <bdi dir="ltr">Data Flow</bdi> و <bdi dir="ltr">Contract</bdi>
-- <bdi dir="ltr">Quality Attribute</bdi>
-- <bdi dir="ltr">Integration</bdi>، <bdi dir="ltr">Security</bdi> و <bdi dir="ltr">Deployment Constraint</bdi>
+- <span dir="ltr">System/Context Boundary</span>
+- <span dir="ltr">Component</span> یا <span dir="ltr">Service Candidate</span>
+- <span dir="ltr">Data Flow</span> و <span dir="ltr">Contract</span>
+- <span dir="ltr">Quality Attribute</span>
+- <span dir="ltr">Integration</span>، <span dir="ltr">Security</span> و <span dir="ltr">Deployment Constraint</span>
 
 نمونه پرسش‌ها:
 
-- فرایند اعطای تسهیلات چگونه با <bdi dir="ltr">Deposits</bdi> و <bdi dir="ltr">Accounting</bdi> همکاری می‌کند؟
+- فرایند اعطای تسهیلات چگونه با <span dir="ltr">Deposits</span> و <span dir="ltr">Accounting</span> همکاری می‌کند؟
 - پاسخ گم‌شده پس از واریز موفق چگونه مدیریت می‌شود؟
 - مرز تراکنش محلی کجاست؟
-- چه داده‌ای <bdi dir="ltr">Snapshot</bdi> و چه داده‌ای <bdi dir="ltr">Reference</bdi> است؟
+- چه داده‌ای <span dir="ltr">Snapshot</span> و چه داده‌ای <span dir="ltr">Reference</span> است؟
 
-<bdi dir="ltr">Solution Architecture</bdi> پل میان مسئلهٔ کسب‌وکار و چند سیستم درگیر است.
+<span dir="ltr">Solution Architecture</span> پل میان مسئلهٔ کسب‌وکار و چند سیستم درگیر است.
 
-### ۳.۳ <bdi dir="ltr">Software Architecture</bdi>
+### ۳.۳ <span dir="ltr">Software Architecture</span>
 
-<bdi dir="ltr">Software Architecture</bdi> ساختار درونی یک نرم‌افزار یا سرویس را تعیین می‌کند.
+<span dir="ltr">Software Architecture</span> ساختار درونی یک نرم‌افزار یا سرویس را تعیین می‌کند.
 
 واحدهای معمول تحلیل:
 
-- <bdi dir="ltr">Package</bdi> و <bdi dir="ltr">Module</bdi>
-- <bdi dir="ltr">Layer</bdi>، <bdi dir="ltr">Port</bdi> و <bdi dir="ltr">Adapter</bdi>
-- <bdi dir="ltr">Aggregate</bdi> و <bdi dir="ltr">Repository</bdi>
-- <bdi dir="ltr">Interface</bdi> و <bdi dir="ltr">Dependency Rule</bdi>
-- <bdi dir="ltr">Thread</bdi>، <bdi dir="ltr">Transaction</bdi> و <bdi dir="ltr">Runtime Component</bdi>
+- <span dir="ltr">Package</span> و <span dir="ltr">Module</span>
+- <span dir="ltr">Layer</span>، <span dir="ltr">Port</span> و <span dir="ltr">Adapter</span>
+- <span dir="ltr">Aggregate</span> و <span dir="ltr">Repository</span>
+- <span dir="ltr">Interface</span> و <span dir="ltr">Dependency Rule</span>
+- <span dir="ltr">Thread</span>، <span dir="ltr">Transaction</span> و <span dir="ltr">Runtime Component</span>
 
 نمونه پرسش‌ها:
 
-- <bdi dir="ltr">Domain Model</bdi> به <bdi dir="ltr">Spring</bdi> یا <bdi dir="ltr">JPA</bdi> وابسته است؟
-- <bdi dir="ltr">Use Case</bdi> اعطای تسهیلات در <bdi dir="ltr">Application Layer</bdi> چگونه اجرا می‌شود؟
-- چه <bdi dir="ltr">Package</bdi>هایی <bdi dir="ltr">Public API</bdi> ماژول‌اند و چه <bdi dir="ltr">Package</bdi>هایی <bdi dir="ltr">Internal</bdi>؟
-- <bdi dir="ltr">Invariant</bdi> قرارداد تسهیلات کجا آزمون می‌شود؟
+- <span dir="ltr">Domain Model</span> به <span dir="ltr">Spring</span> یا <span dir="ltr">JPA</span> وابسته است؟
+- <span dir="ltr">Use Case</span> اعطای تسهیلات در <span dir="ltr">Application Layer</span> چگونه اجرا می‌شود؟
+- چه <span dir="ltr">Package</span>هایی <span dir="ltr">Public API</span> ماژول‌اند و چه <span dir="ltr">Package</span>هایی <span dir="ltr">Internal</span>؟
+- <span dir="ltr">Invariant</span> قرارداد تسهیلات کجا آزمون می‌شود؟
 
 ### جدول کنترل
 
 | گزاره | سطح غالب |
 |---|---|
-| بانک باید توانایی مدیریت مسدودی وجوه را داشته باشد. | <bdi dir="ltr">Business Architecture</bdi> |
-| <bdi dir="ltr">Legal Orders</bdi> و <bdi dir="ltr">Deposits</bdi> با <bdi dir="ltr">Contract</bdi> مشخص همکاری می‌کنند. | <bdi dir="ltr">Solution Architecture</bdi> |
-| کلاس <bdi dir="ltr">DepositAccount</bdi> فقط از متد <bdi dir="ltr">placeHold</bdi> تغییر می‌کند. | <bdi dir="ltr">Software Architecture</bdi> |
-| نرخ خطای عملیات مسدودی باید کمتر از حد مصوب باشد. | <bdi dir="ltr">Solution/Runtime Architecture</bdi> |
-| واحد حقوقی زیرمجموعهٔ کدام معاونت باشد؟ | <bdi dir="ltr">Operating Model</bdi> / <bdi dir="ltr">Organization Design</bdi> |
+| بانک باید توانایی مدیریت مسدودی وجوه را داشته باشد. | <span dir="ltr">Business Architecture</span> |
+| <span dir="ltr">Legal Orders</span> و <span dir="ltr">Deposits</span> با <span dir="ltr">Contract</span> مشخص همکاری می‌کنند. | <span dir="ltr">Solution Architecture</span> |
+| کلاس <span dir="ltr">DepositAccount</span> فقط از متد <span dir="ltr">placeHold</span> تغییر می‌کند. | <span dir="ltr">Software Architecture</span> |
+| نرخ خطای عملیات مسدودی باید کمتر از حد مصوب باشد. | <span dir="ltr">Solution/Runtime Architecture</span> |
+| واحد حقوقی زیرمجموعهٔ کدام معاونت باشد؟ | <span dir="ltr">Operating Model</span> / <span dir="ltr">Organization Design</span> |
 
-<bdi dir="ltr">Enterprise Architecture</bdi> چتر بزرگ‌تری است که <bdi dir="ltr">Business</bdi>، <bdi dir="ltr">Data</bdi>، <bdi dir="ltr">Application</bdi> و <bdi dir="ltr">Technology Architecture</bdi> را در سطح بنگاه هم‌راستا می‌کند. در این دوره به‌اندازه‌ای از آن استفاده می‌کنیم که تصمیم نرم‌افزاری از <bdi dir="ltr">Portfolio</bdi>، <bdi dir="ltr">Capability</bdi> و <bdi dir="ltr">Operating Model</bdi> جدا نیفتد.
+<span dir="ltr">Enterprise Architecture</span> چتر بزرگ‌تری است که <span dir="ltr">Business</span>، <span dir="ltr">Data</span>، <span dir="ltr">Application</span> و <span dir="ltr">Technology Architecture</span> را در سطح بنگاه هم‌راستا می‌کند. در این دوره به‌اندازه‌ای از آن استفاده می‌کنیم که تصمیم نرم‌افزاری از <span dir="ltr">Portfolio</span>، <span dir="ltr">Capability</span> و <span dir="ltr">Operating Model</span> جدا نیفتد.
 
 ---
 
-## ۴. <bdi dir="ltr">Capability</bdi>؛ نقطهٔ شروع پایدار
+## ۴. <span dir="ltr">Capability</span>؛ نقطهٔ شروع پایدار
 
 ### تعریف عملیاتی
 
-<bdi dir="ltr">Business Capability</bdi> یعنی **توان سازمان برای انجام یک کار کسب‌وکاری و تولید یک <bdi dir="ltr">Outcome</bdi>**.
+<span dir="ltr">Business Capability</span> یعنی **توان سازمان برای انجام یک کار کسب‌وکاری و تولید یک <span dir="ltr">Outcome</span>**.
 
-<bdi dir="ltr">Capability</bdi> می‌گوید «چه کاری باید بتوانیم انجام دهیم؟» و عمداً دربارهٔ اینکه کدام واحد، فرایند، نرم‌افزار یا فناوری آن را انجام می‌دهد سکوت می‌کند.
+<span dir="ltr">Capability</span> می‌گوید «چه کاری باید بتوانیم انجام دهیم؟» و عمداً دربارهٔ اینکه کدام واحد، فرایند، نرم‌افزار یا فناوری آن را انجام می‌دهد سکوت می‌کند.
 
 نمونه‌های مناسب:
 
@@ -174,142 +174,142 @@ Capability
 
 نمونه‌های نامناسب:
 
-- اجرای فرایند افتتاح حساب در <bdi dir="ltr">BPM</bdi>
+- اجرای فرایند افتتاح حساب در <span dir="ltr">BPM</span>
 - سامانهٔ سپرده
 - تیم تسهیلات یک
-- <bdi dir="ltr">API</bdi> واریز
-- <bdi dir="ltr">Kafka Event Processing</bdi>
+- <span dir="ltr">API</span> واریز
+- <span dir="ltr">Kafka Event Processing</span>
 
-موارد نامناسب یا <bdi dir="ltr">Process</bdi> هستند، یا <bdi dir="ltr">Application/Organization/Technology.</bdi> ممکن است همگی برای تحقق <bdi dir="ltr">Capability</bdi> لازم باشند، ولی خود <bdi dir="ltr">Capability</bdi> نیستند.
+موارد نامناسب یا <span dir="ltr">Process</span> هستند، یا <span dir="ltr">Application/Organization/Technology.</span> ممکن است همگی برای تحقق <span dir="ltr">Capability</span> لازم باشند، ولی خود <span dir="ltr">Capability</span> نیستند.
 
-### <bdi dir="ltr">Capability</bdi> در برابر <bdi dir="ltr">Process</bdi>
+### <span dir="ltr">Capability</span> در برابر <span dir="ltr">Process</span>
 
-فرض کن بانک <bdi dir="ltr">Capability</bdi> «مدیریت مسدودی وجوه» را دارد.
+فرض کن بانک <span dir="ltr">Capability</span> «مدیریت مسدودی وجوه» را دارد.
 
-این <bdi dir="ltr">Capability</bdi> ممکن است با <bdi dir="ltr">Process</bdi>های مختلف اجرا شود:
+این <span dir="ltr">Capability</span> ممکن است با <span dir="ltr">Process</span>های مختلف اجرا شود:
 
 - مسدودی قضایی با دریافت نامه و تأیید حقوقی
 - مسدودی وثیقه‌ای هنگام اعطای تسهیلات
-- <bdi dir="ltr">Hold</bdi> کوتاه‌مدت هنگام پرداخت کارت
+- <span dir="ltr">Hold</span> کوتاه‌مدت هنگام پرداخت کارت
 - مسدودی سیستمی به‌دلیل کنترل تقلب
 
-<bdi dir="ltr">Capability</bdi> نسبتاً پایدار است؛ <bdi dir="ltr">Process</bdi> با مقررات، کانال و اتوماسیون تغییر می‌کند.
+<span dir="ltr">Capability</span> نسبتاً پایدار است؛ <span dir="ltr">Process</span> با مقررات، کانال و اتوماسیون تغییر می‌کند.
 
-### <bdi dir="ltr">Capability</bdi> در برابر <bdi dir="ltr">Business Service</bdi>
+### <span dir="ltr">Capability</span> در برابر <span dir="ltr">Business Service</span>
 
-<bdi dir="ltr">Capability</bdi> توان داخلی بانک است. <bdi dir="ltr">Business Service</bdi> شکل ارزش قابل‌مصرفی است که از آن توان ارائه می‌شود.
+<span dir="ltr">Capability</span> توان داخلی بانک است. <span dir="ltr">Business Service</span> شکل ارزش قابل‌مصرفی است که از آن توان ارائه می‌شود.
 
 مثلاً:
 
-- <bdi dir="ltr">Capability:</bdi> مدیریت پرداخت
-- <bdi dir="ltr">Business Service:</bdi> انتقال وجه داخلی برای مشتری
+- <span dir="ltr">Capability:</span> مدیریت پرداخت
+- <span dir="ltr">Business Service:</span> انتقال وجه داخلی برای مشتری
 
-یک <bdi dir="ltr">Capability</bdi> می‌تواند چند <bdi dir="ltr">Business Service</bdi> عرضه کند و یک <bdi dir="ltr">Business Service</bdi> ممکن است به چند <bdi dir="ltr">Capability</bdi> وابسته باشد.
+یک <span dir="ltr">Capability</span> می‌تواند چند <span dir="ltr">Business Service</span> عرضه کند و یک <span dir="ltr">Business Service</span> ممکن است به چند <span dir="ltr">Capability</span> وابسته باشد.
 
-### <bdi dir="ltr">Capability</bdi> در برابر <bdi dir="ltr">Application</bdi>
+### <span dir="ltr">Capability</span> در برابر <span dir="ltr">Application</span>
 
-ممکن است امروز سه سامانه بخشی از «مدیریت مشتری» را انجام دهند و فردا در یک <bdi dir="ltr">Platform</bdi> ادغام شوند. <bdi dir="ltr">Capability</bdi> باقی است، <bdi dir="ltr">Application Landscape</bdi> تغییر می‌کند.
+ممکن است امروز سه سامانه بخشی از «مدیریت مشتری» را انجام دهند و فردا در یک <span dir="ltr">Platform</span> ادغام شوند. <span dir="ltr">Capability</span> باقی است، <span dir="ltr">Application Landscape</span> تغییر می‌کند.
 
-اگر <bdi dir="ltr">Capability Map</bdi> را از روی فهرست سامانه‌ها بسازیم، وضع موجود را با ماهیت کسب‌وکار اشتباه گرفته‌ایم و <bdi dir="ltr">Legacy</bdi> را به مدل هدف تحمیل کرده‌ایم.
+اگر <span dir="ltr">Capability Map</span> را از روی فهرست سامانه‌ها بسازیم، وضع موجود را با ماهیت کسب‌وکار اشتباه گرفته‌ایم و <span dir="ltr">Legacy</span> را به مدل هدف تحمیل کرده‌ایم.
 
-### آزمون شش‌گانهٔ <bdi dir="ltr">Capability</bdi>
+### آزمون شش‌گانهٔ <span dir="ltr">Capability</span>
 
 برای هر عنوان پیشنهادی بپرس:
 
 1. آیا می‌گوید بانک چه کاری می‌تواند انجام دهد؟
-2. آیا مستقل از فناوری و <bdi dir="ltr">Vendor</bdi> است؟
+2. آیا مستقل از فناوری و <span dir="ltr">Vendor</span> است؟
 3. آیا مستقل از چارت سازمانی است؟
-4. آیا از <bdi dir="ltr">Process</bdi>های اجرای آن پایدارتر است؟
-5. آیا <bdi dir="ltr">Outcome</bdi> یا <bdi dir="ltr">KPI</bdi> برای آن قابل تصور است؟
-6. آیا می‌توان <bdi dir="ltr">Owner</bdi> کسب‌وکاری برای بلوغ آن تعیین کرد؟
+4. آیا از <span dir="ltr">Process</span>های اجرای آن پایدارتر است؟
+5. آیا <span dir="ltr">Outcome</span> یا <span dir="ltr">KPI</span> برای آن قابل تصور است؟
+6. آیا می‌توان <span dir="ltr">Owner</span> کسب‌وکاری برای بلوغ آن تعیین کرد؟
 
-پاسخ منفی به چند سؤال نشانهٔ آن است که عنوان احتمالاً <bdi dir="ltr">Capability</bdi> نیست.
+پاسخ منفی به چند سؤال نشانهٔ آن است که عنوان احتمالاً <span dir="ltr">Capability</span> نیست.
 
 ---
 
-## ۵. از <bdi dir="ltr">Problem Space</bdi> تا <bdi dir="ltr">Solution Space</bdi>
+## ۵. از <span dir="ltr">Problem Space</span> تا <span dir="ltr">Solution Space</span>
 
 بزرگ‌ترین خطای معماری سازمانی این است که عناصر سطوح مختلف را هم‌معنا فرض کنیم. برای جلوگیری از آن، هر مفهوم را دقیق در جای خود می‌گذاریم.
 
-### <bdi dir="ltr">System</bdi>
+### <span dir="ltr">System</span>
 
-<bdi dir="ltr">System</bdi> مجموعه‌ای از اجزای مرتبط با یک هدف و <bdi dir="ltr">Boundary</bdi> مشخص است. تعریف <bdi dir="ltr">System</bdi> به «<bdi dir="ltr">System of Interest</bdi>» وابسته است.
+<span dir="ltr">System</span> مجموعه‌ای از اجزای مرتبط با یک هدف و <span dir="ltr">Boundary</span> مشخص است. تعریف <span dir="ltr">System</span> به «<span dir="ltr">System of Interest</span>» وابسته است.
 
-- کل بانک می‌تواند یک <bdi dir="ltr">System</bdi> باشد.
-- <bdi dir="ltr">Core Banking Platform</bdi> می‌تواند <bdi dir="ltr">System</bdi> باشد.
-- سرویس <bdi dir="ltr">Deposits</bdi> نیز در یک بررسی محدود می‌تواند <bdi dir="ltr">System</bdi> باشد.
+- کل بانک می‌تواند یک <span dir="ltr">System</span> باشد.
+- <span dir="ltr">Core Banking Platform</span> می‌تواند <span dir="ltr">System</span> باشد.
+- سرویس <span dir="ltr">Deposits</span> نیز در یک بررسی محدود می‌تواند <span dir="ltr">System</span> باشد.
 
-پس «<bdi dir="ltr">System</bdi>» به‌تنهایی اندازه یا نوع معماری را تعیین نمی‌کند؛ <bdi dir="ltr">Boundary</bdi> بررسی را مشخص می‌کند.
+پس «<span dir="ltr">System</span>» به‌تنهایی اندازه یا نوع معماری را تعیین نمی‌کند؛ <span dir="ltr">Boundary</span> بررسی را مشخص می‌کند.
 
-### <bdi dir="ltr">Domain</bdi>
+### <span dir="ltr">Domain</span>
 
-<bdi dir="ltr">Domain</bdi> حوزهٔ مسئله، دانش و فعالیتی است که می‌خواهیم برایش مدل بسازیم؛ مانند <bdi dir="ltr">Lending</bdi> یا <bdi dir="ltr">Payments.</bdi>
+<span dir="ltr">Domain</span> حوزهٔ مسئله، دانش و فعالیتی است که می‌خواهیم برایش مدل بسازیم؛ مانند <span dir="ltr">Lending</span> یا <span dir="ltr">Payments.</span>
 
-<bdi dir="ltr">Domain</bdi> به مسئله تعلق دارد، نه به <bdi dir="ltr">Repository</bdi> کد. ممکن است امروز هیچ سامانهٔ مناسبی برای <bdi dir="ltr">Domain</bdi> وجود نداشته باشد، ولی <bdi dir="ltr">Domain</bdi> همچنان واقعی است.
+<span dir="ltr">Domain</span> به مسئله تعلق دارد، نه به <span dir="ltr">Repository</span> کد. ممکن است امروز هیچ سامانهٔ مناسبی برای <span dir="ltr">Domain</span> وجود نداشته باشد، ولی <span dir="ltr">Domain</span> همچنان واقعی است.
 
-### <bdi dir="ltr">Subdomain</bdi>
+### <span dir="ltr">Subdomain</span>
 
-<bdi dir="ltr">Domain</bdi> بزرگ به <bdi dir="ltr">Subdomain</bdi>های متمایز شکسته می‌شود. <bdi dir="ltr">Lending</bdi> می‌تواند شامل بخش‌هایی مانند:
+<span dir="ltr">Domain</span> بزرگ به <span dir="ltr">Subdomain</span>های متمایز شکسته می‌شود. <span dir="ltr">Lending</span> می‌تواند شامل بخش‌هایی مانند:
 
-- <bdi dir="ltr">Loan Origination</bdi>
-- <bdi dir="ltr">Credit Decision</bdi>
-- <bdi dir="ltr">Loan Servicing</bdi>
-- <bdi dir="ltr">Repayment</bdi>
-- <bdi dir="ltr">Delinquency Management</bdi>
+- <span dir="ltr">Loan Origination</span>
+- <span dir="ltr">Credit Decision</span>
+- <span dir="ltr">Loan Servicing</span>
+- <span dir="ltr">Repayment</span>
+- <span dir="ltr">Delinquency Management</span>
 
-باشد. مرز دقیق برای هر بانک با مدل کسب‌وکار، مقررات و تمایز راهبردی آن تعیین می‌شود؛ فهرست آماده جای <bdi dir="ltr">Discovery</bdi> را نمی‌گیرد.
+باشد. مرز دقیق برای هر بانک با مدل کسب‌وکار، مقررات و تمایز راهبردی آن تعیین می‌شود؛ فهرست آماده جای <span dir="ltr">Discovery</span> را نمی‌گیرد.
 
-### <bdi dir="ltr">Bounded Context</bdi>
+### <span dir="ltr">Bounded Context</span>
 
-<bdi dir="ltr">Bounded Context</bdi> مرزی است که درون آن یک <bdi dir="ltr">Model</bdi> و <bdi dir="ltr">Ubiquitous Language</bdi> مشخص معتبر است.
+<span dir="ltr">Bounded Context</span> مرزی است که درون آن یک <span dir="ltr">Model</span> و <span dir="ltr">Ubiquitous Language</span> مشخص معتبر است.
 
-واژهٔ <bdi dir="ltr">Account</bdi> مثال مهمی است:
+واژهٔ <span dir="ltr">Account</span> مثال مهمی است:
 
-- در <bdi dir="ltr">Deposits:</bdi> قرارداد نگهداری وجوه و ماندهٔ عملیاتی
-- در <bdi dir="ltr">Lending:</bdi> موقعیت بدهی و برنامهٔ بازپرداخت
-- در <bdi dir="ltr">Accounting:</bdi> حساب دفتر کل یا معین
-- در <bdi dir="ltr">IAM:</bdi> حساب کاربری
+- در <span dir="ltr">Deposits:</span> قرارداد نگهداری وجوه و ماندهٔ عملیاتی
+- در <span dir="ltr">Lending:</span> موقعیت بدهی و برنامهٔ بازپرداخت
+- در <span dir="ltr">Accounting:</span> حساب دفتر کل یا معین
+- در <span dir="ltr">IAM:</span> حساب کاربری
 
-اگر همهٔ این معناها را در یک مدل مشترک <bdi dir="ltr">Account</bdi> ادغام کنیم، مدل مبهم و تغییرها کاپل می‌شوند. <bdi dir="ltr">Bounded Context</bdi> اجازه می‌دهد هر معنا در مرز خودش دقیق بماند و ترجمه در <bdi dir="ltr">Contract</bdi> رخ دهد.
+اگر همهٔ این معناها را در یک مدل مشترک <span dir="ltr">Account</span> ادغام کنیم، مدل مبهم و تغییرها کاپل می‌شوند. <span dir="ltr">Bounded Context</span> اجازه می‌دهد هر معنا در مرز خودش دقیق بماند و ترجمه در <span dir="ltr">Contract</span> رخ دهد.
 
-### <bdi dir="ltr">Module</bdi>
+### <span dir="ltr">Module</span>
 
-<bdi dir="ltr">Module</bdi> واحد منطقی کد با:
+<span dir="ltr">Module</span> واحد منطقی کد با:
 
-- <bdi dir="ltr">API</bdi> آشکار
-- جزئیات <bdi dir="ltr">Internal</bdi>
+- <span dir="ltr">API</span> آشکار
+- جزئیات <span dir="ltr">Internal</span>
 - مسئولیت منسجم
-- <bdi dir="ltr">Dependency</bdi> کنترل‌شده
+- <span dir="ltr">Dependency</span> کنترل‌شده
 
-است. <bdi dir="ltr">Module</bdi> می‌تواند همراه چند <bdi dir="ltr">Module</bdi> دیگر در یک <bdi dir="ltr">Process</bdi> و یک <bdi dir="ltr">Deployment</bdi> اجرا شود.
+است. <span dir="ltr">Module</span> می‌تواند همراه چند <span dir="ltr">Module</span> دیگر در یک <span dir="ltr">Process</span> و یک <span dir="ltr">Deployment</span> اجرا شود.
 
-### <bdi dir="ltr">Deployable Service</bdi>
+### <span dir="ltr">Deployable Service</span>
 
-<bdi dir="ltr">Deployable Service</bdi> واحد <bdi dir="ltr">Runtime</bdi> قابل استقرار است. وقتی آن را <bdi dir="ltr">Microservice</bdi> می‌نامیم، معمولاً انتظار داریم:
+<span dir="ltr">Deployable Service</span> واحد <span dir="ltr">Runtime</span> قابل استقرار است. وقتی آن را <span dir="ltr">Microservice</span> می‌نامیم، معمولاً انتظار داریم:
 
-- <bdi dir="ltr">Lifecycle</bdi> استقرار مستقل داشته باشد.
-- <bdi dir="ltr">Boundary</bdi> مسئولیت روشن باشد.
-- داده و تغییرات <bdi dir="ltr">Schema</bdi> تحت مالکیت آن باشد.
+- <span dir="ltr">Lifecycle</span> استقرار مستقل داشته باشد.
+- <span dir="ltr">Boundary</span> مسئولیت روشن باشد.
+- داده و تغییرات <span dir="ltr">Schema</span> تحت مالکیت آن باشد.
 - خرابی و عملیات مستقل مدیریت شود.
-- هزینهٔ <bdi dir="ltr">Network</bdi>، <bdi dir="ltr">Observability</bdi> و <bdi dir="ltr">Consistency</bdi> توزیع‌شده پذیرفته شود.
+- هزینهٔ <span dir="ltr">Network</span>، <span dir="ltr">Observability</span> و <span dir="ltr">Consistency</span> توزیع‌شده پذیرفته شود.
 
-هر <bdi dir="ltr">Module</bdi> خوب <bdi dir="ltr">Microservice</bdi> نیست. ابتدا <bdi dir="ltr">Module</bdi> خوب می‌سازیم؛ فقط اگر محرک‌های کسب‌وکاری و عملیاتی کافی وجود داشتند، استخراج فیزیکی را بررسی می‌کنیم.
+هر <span dir="ltr">Module</span> خوب <span dir="ltr">Microservice</span> نیست. ابتدا <span dir="ltr">Module</span> خوب می‌سازیم؛ فقط اگر محرک‌های کسب‌وکاری و عملیاتی کافی وجود داشتند، استخراج فیزیکی را بررسی می‌کنیم.
 
-### <bdi dir="ltr">API</bdi> و <bdi dir="ltr">Event</bdi>
+### <span dir="ltr">API</span> و <span dir="ltr">Event</span>
 
-<bdi dir="ltr">API</bdi> و <bdi dir="ltr">Event</bdi> شکل <bdi dir="ltr">Contract</bdi> در <bdi dir="ltr">Boundary</bdi> هستند، نه جایگزین <bdi dir="ltr">Boundary.</bdi>
+<span dir="ltr">API</span> و <span dir="ltr">Event</span> شکل <span dir="ltr">Contract</span> در <span dir="ltr">Boundary</span> هستند، نه جایگزین <span dir="ltr">Boundary.</span>
 
-- <bdi dir="ltr">Command</bdi> قصد انجام تغییر دارد: <bdi dir="ltr">PlaceLegalHold</bdi>
-- <bdi dir="ltr">Query</bdi> اطلاعات می‌خواهد: <bdi dir="ltr">GetAvailableBalance</bdi>
-- <bdi dir="ltr">Event</bdi> وقوع <bdi dir="ltr">Fact</bdi> را اعلام می‌کند: <bdi dir="ltr">LegalHoldPlaced</bdi>
+- <span dir="ltr">Command</span> قصد انجام تغییر دارد: <span dir="ltr">PlaceLegalHold</span>
+- <span dir="ltr">Query</span> اطلاعات می‌خواهد: <span dir="ltr">GetAvailableBalance</span>
+- <span dir="ltr">Event</span> وقوع <span dir="ltr">Fact</span> را اعلام می‌کند: <span dir="ltr">LegalHoldPlaced</span>
 
-نام <bdi dir="ltr">Event</bdi> باید رخداد گذشته را بگوید. <bdi dir="ltr">LoanGrantRequest</bdi> یک درخواست است، نه <bdi dir="ltr">Event. LoanGranted</bdi> یک <bdi dir="ltr">Fact</bdi> رخ‌داده است.
+نام <span dir="ltr">Event</span> باید رخداد گذشته را بگوید. <span dir="ltr">LoanGrantRequest</span> یک درخواست است، نه <span dir="ltr">Event. LoanGranted</span> یک <span dir="ltr">Fact</span> رخ‌داده است.
 
 ---
 
-## ۶. زنجیرهٔ <bdi dir="ltr">Capability</bdi> تا <bdi dir="ltr">Contract</bdi>
+## ۶. زنجیرهٔ <span dir="ltr">Capability</span> تا <span dir="ltr">Contract</span>
 
-این زنجیره ابزار <bdi dir="ltr">Traceability</bdi> است:
+این زنجیره ابزار <span dir="ltr">Traceability</span> است:
 
 
 </div>
@@ -339,26 +339,26 @@ Capability
 
 | پله | سؤال اصلی | خطای رایج |
 |---|---|---|
-| <bdi dir="ltr">Capability</bdi> | بانک چه کاری باید بتواند انجام دهد؟ | نام‌گذاری با سامانه یا واحد |
-| <bdi dir="ltr">Domain/Subdomain</bdi> | این دانش و قواعد متعلق به کدام <bdi dir="ltr">Problem Space</bdi> است؟ | شروع از جدول |
-| <bdi dir="ltr">Bounded Context</bdi> | این مدل و واژه‌ها در کدام مرز معتبرند؟ | مدل مشترک عظیم |
-| <bdi dir="ltr">Module/Service Candidate</bdi> | کدام واحد منطقی تغییر و مسئولیت را محصور می‌کند؟ | <bdi dir="ltr">Microservice</bdi> پیش‌فرض |
-| <bdi dir="ltr">Use Case</bdi> | چه قصد یا <bdi dir="ltr">Outcome</bdi> مشخصی اجرا می‌شود؟ | <bdi dir="ltr">CRUD</bdi> به‌جای رفتار |
-| <bdi dir="ltr">Command/Query</bdi> | مصرف‌کننده چه قصدی را بیان می‌کند؟ | نام فنی و مبهم |
-| <bdi dir="ltr">API/Event</bdi> | <bdi dir="ltr">Contract</bdi> بیرونی چگونه معنا، خطا و <bdi dir="ltr">Version</bdi> را منتقل می‌کند؟ | افشای <bdi dir="ltr">Entity</bdi> و <bdi dir="ltr">Schema</bdi> داخلی |
+| <span dir="ltr">Capability</span> | بانک چه کاری باید بتواند انجام دهد؟ | نام‌گذاری با سامانه یا واحد |
+| <span dir="ltr">Domain/Subdomain</span> | این دانش و قواعد متعلق به کدام <span dir="ltr">Problem Space</span> است؟ | شروع از جدول |
+| <span dir="ltr">Bounded Context</span> | این مدل و واژه‌ها در کدام مرز معتبرند؟ | مدل مشترک عظیم |
+| <span dir="ltr">Module/Service Candidate</span> | کدام واحد منطقی تغییر و مسئولیت را محصور می‌کند؟ | <span dir="ltr">Microservice</span> پیش‌فرض |
+| <span dir="ltr">Use Case</span> | چه قصد یا <span dir="ltr">Outcome</span> مشخصی اجرا می‌شود؟ | <span dir="ltr">CRUD</span> به‌جای رفتار |
+| <span dir="ltr">Command/Query</span> | مصرف‌کننده چه قصدی را بیان می‌کند؟ | نام فنی و مبهم |
+| <span dir="ltr">API/Event</span> | <span dir="ltr">Contract</span> بیرونی چگونه معنا، خطا و <span dir="ltr">Version</span> را منتقل می‌کند؟ | افشای <span dir="ltr">Entity</span> و <span dir="ltr">Schema</span> داخلی |
 
 ### این نگاشت یک‌به‌یک نیست
 
 قواعد مهم:
 
-- یک <bdi dir="ltr">Capability</bdi> می‌تواند به چند <bdi dir="ltr">Domain</bdi> وابسته باشد.
-- یک <bdi dir="ltr">Domain</bdi> می‌تواند چند <bdi dir="ltr">Subdomain</bdi> و چند <bdi dir="ltr">Bounded Context</bdi> داشته باشد.
-- یک <bdi dir="ltr">Bounded Context</bdi> می‌تواند ابتدا یک <bdi dir="ltr">Module</bdi> باشد و بعداً یک یا چند <bdi dir="ltr">Deployable Service</bdi> شود.
-- یک <bdi dir="ltr">Service</bdi> می‌تواند چند <bdi dir="ltr">Use Case</bdi> عرضه کند.
-- یک <bdi dir="ltr">Use Case</bdi> می‌تواند یک <bdi dir="ltr">Command</bdi> ورودی و چند <bdi dir="ltr">Event</bdi> خروجی داشته باشد.
-- یک <bdi dir="ltr">API</bdi> می‌تواند بخشی از چند جریان کسب‌وکاری باشد.
+- یک <span dir="ltr">Capability</span> می‌تواند به چند <span dir="ltr">Domain</span> وابسته باشد.
+- یک <span dir="ltr">Domain</span> می‌تواند چند <span dir="ltr">Subdomain</span> و چند <span dir="ltr">Bounded Context</span> داشته باشد.
+- یک <span dir="ltr">Bounded Context</span> می‌تواند ابتدا یک <span dir="ltr">Module</span> باشد و بعداً یک یا چند <span dir="ltr">Deployable Service</span> شود.
+- یک <span dir="ltr">Service</span> می‌تواند چند <span dir="ltr">Use Case</span> عرضه کند.
+- یک <span dir="ltr">Use Case</span> می‌تواند یک <span dir="ltr">Command</span> ورودی و چند <span dir="ltr">Event</span> خروجی داشته باشد.
+- یک <span dir="ltr">API</span> می‌تواند بخشی از چند جریان کسب‌وکاری باشد.
 
-هدف زنجیره این نیست که برای هر <bdi dir="ltr">Capability</bdi> یک <bdi dir="ltr">Microservice</bdi> بسازیم. هدف این است که هر جزء نرم‌افزاری دلیل کسب‌وکاری و مالکیت قابل ردیابی داشته باشد.
+هدف زنجیره این نیست که برای هر <span dir="ltr">Capability</span> یک <span dir="ltr">Microservice</span> بسازیم. هدف این است که هر جزء نرم‌افزاری دلیل کسب‌وکاری و مالکیت قابل ردیابی داشته باشد.
 
 ---
 
@@ -368,54 +368,54 @@ Capability
 
 ### صورت مسئله
 
-بانک یک حکم معتبر دریافت می‌کند که باید مبلغ معینی از سپردهٔ مشتری مسدود شود. وضعیت حکم ممکن است بعداً لغو یا اصلاح شود. ماندهٔ قابل برداشت باید بلافاصله اثر <bdi dir="ltr">Hold</bdi> را نشان دهد.
+بانک یک حکم معتبر دریافت می‌کند که باید مبلغ معینی از سپردهٔ مشتری مسدود شود. وضعیت حکم ممکن است بعداً لغو یا اصلاح شود. ماندهٔ قابل برداشت باید بلافاصله اثر <span dir="ltr">Hold</span> را نشان دهد.
 
-### گام اول: <bdi dir="ltr">Capability</bdi>
+### گام اول: <span dir="ltr">Capability</span>
 
-حداقل دو <bdi dir="ltr">Capability</bdi> قابل تشخیص است:
+حداقل دو <span dir="ltr">Capability</span> قابل تشخیص است:
 
 1. مدیریت دستورهای حقوقی/نظارتی
-2. مدیریت محدودیت و <bdi dir="ltr">Hold</bdi> وجوه سپرده
+2. مدیریت محدودیت و <span dir="ltr">Hold</span> وجوه سپرده
 
-«سامانه نامه‌های قضایی» <bdi dir="ltr">Capability</bdi> نیست؛ نام راه‌حل یا <bdi dir="ltr">Application</bdi> است.
+«سامانه نامه‌های قضایی» <span dir="ltr">Capability</span> نیست؛ نام راه‌حل یا <span dir="ltr">Application</span> است.
 
-### گام دوم: <bdi dir="ltr">Domain/Subdomain</bdi>
+### گام دوم: <span dir="ltr">Domain/Subdomain</span>
 
-- <bdi dir="ltr">Legal/Compliance:</bdi> اعتبار، مرجع، دامنه و چرخهٔ عمر حکم
-- <bdi dir="ltr">Deposits:</bdi> اعمال و رفع <bdi dir="ltr">Hold</bdi> و محاسبهٔ ماندهٔ قابل برداشت
+- <span dir="ltr">Legal/Compliance:</span> اعتبار، مرجع، دامنه و چرخهٔ عمر حکم
+- <span dir="ltr">Deposits:</span> اعمال و رفع <span dir="ltr">Hold</span> و محاسبهٔ ماندهٔ قابل برداشت
 
-ممکن است <bdi dir="ltr">Customer/Party</bdi> برای تطبیق هویت مشارکت کند، ولی مالک حکم یا <bdi dir="ltr">Hold</bdi> نمی‌شود.
+ممکن است <span dir="ltr">Customer/Party</span> برای تطبیق هویت مشارکت کند، ولی مالک حکم یا <span dir="ltr">Hold</span> نمی‌شود.
 
-### گام سوم: <bdi dir="ltr">Bounded Context</bdi>
+### گام سوم: <span dir="ltr">Bounded Context</span>
 
-- <bdi dir="ltr">Legal Orders Context</bdi>
-- <bdi dir="ltr">Deposit Accounts Context</bdi>
+- <span dir="ltr">Legal Orders Context</span>
+- <span dir="ltr">Deposit Accounts Context</span>
 
-واژهٔ <bdi dir="ltr">Restriction</bdi> در <bdi dir="ltr">Context</bdi> حقوقی به الزام قانونی اشاره دارد؛ <bdi dir="ltr">Hold</bdi> در <bdi dir="ltr">Deposits</bdi> یک وضعیت عملیاتی روی حساب است. این دو مرتبط‌اند ولی یک مدل نیستند.
+واژهٔ <span dir="ltr">Restriction</span> در <span dir="ltr">Context</span> حقوقی به الزام قانونی اشاره دارد؛ <span dir="ltr">Hold</span> در <span dir="ltr">Deposits</span> یک وضعیت عملیاتی روی حساب است. این دو مرتبط‌اند ولی یک مدل نیستند.
 
-### گام چهارم: <bdi dir="ltr">Module/Service Candidate</bdi>
+### گام چهارم: <span dir="ltr">Module/Service Candidate</span>
 
-در شروع <bdi dir="ltr">Lab:</bdi>
+در شروع <span dir="ltr">Lab:</span>
 
-- <bdi dir="ltr">legalorders module</bdi>
-- <bdi dir="ltr">deposits module</bdi>
+- <span dir="ltr">legalorders module</span>
+- <span dir="ltr">deposits module</span>
 
-هر دو می‌توانند در یک <bdi dir="ltr">Modular Monolith</bdi> باشند. هنوز دلیل کافی برای دو <bdi dir="ltr">Microservice</bdi> مستقل نداریم.
+هر دو می‌توانند در یک <span dir="ltr">Modular Monolith</span> باشند. هنوز دلیل کافی برای دو <span dir="ltr">Microservice</span> مستقل نداریم.
 
-### گام پنجم: <bdi dir="ltr">Use Case</bdi>
+### گام پنجم: <span dir="ltr">Use Case</span>
 
-- <bdi dir="ltr">RegisterLegalOrder</bdi>
-- <bdi dir="ltr">PlaceLegalHold</bdi>
-- <bdi dir="ltr">RevokeLegalOrder</bdi>
-- <bdi dir="ltr">ReleaseLegalHold</bdi>
+- <span dir="ltr">RegisterLegalOrder</span>
+- <span dir="ltr">PlaceLegalHold</span>
+- <span dir="ltr">RevokeLegalOrder</span>
+- <span dir="ltr">ReleaseLegalHold</span>
 
-### گام ششم: <bdi dir="ltr">Command/Query</bdi>
+### گام ششم: <span dir="ltr">Command/Query</span>
 
-<bdi dir="ltr">Legal Orders</bdi> پس از تأیید حکم، قصد اعمال <bdi dir="ltr">Hold</bdi> را با <bdi dir="ltr">Command</bdi> بیان می‌کند. <bdi dir="ltr">Contract</bdi> باید دست‌کم مرجع حکم، حساب هدف، مبلغ/دامنه، تاریخ مؤثر و شناسهٔ <bdi dir="ltr">Idempotency</bdi> را حمل کند.
+<span dir="ltr">Legal Orders</span> پس از تأیید حکم، قصد اعمال <span dir="ltr">Hold</span> را با <span dir="ltr">Command</span> بیان می‌کند. <span dir="ltr">Contract</span> باید دست‌کم مرجع حکم، حساب هدف، مبلغ/دامنه، تاریخ مؤثر و شناسهٔ <span dir="ltr">Idempotency</span> را حمل کند.
 
-<bdi dir="ltr">Deposits</bdi> تصمیم می‌گیرد آیا عملیات با وضعیت حساب و قواعد خودش سازگار است. <bdi dir="ltr">Legal Orders</bdi> نباید مستقیم جدول <bdi dir="ltr">Hold</bdi> یا ماندهٔ <bdi dir="ltr">Deposits</bdi> را تغییر دهد.
+<span dir="ltr">Deposits</span> تصمیم می‌گیرد آیا عملیات با وضعیت حساب و قواعد خودش سازگار است. <span dir="ltr">Legal Orders</span> نباید مستقیم جدول <span dir="ltr">Hold</span> یا ماندهٔ <span dir="ltr">Deposits</span> را تغییر دهد.
 
-### گام هفتم: <bdi dir="ltr">API/Event</bdi>
+### گام هفتم: <span dir="ltr">API/Event</span>
 
 نمونهٔ معنایی:
 
@@ -436,95 +436,95 @@ Event: LegalHoldPlacementRejected
 <div dir="rtl" align="right">
 
 
-نام <bdi dir="ltr">Transport</bdi> هنوز تعیین نشده است. <bdi dir="ltr">Command</bdi> می‌تواند از طریق <bdi dir="ltr">API</bdi> همگام یا پیام پردازش شود. انتخاب آن به نیاز <bdi dir="ltr">Latency</bdi>، <bdi dir="ltr">Coupling</bdi>، <bdi dir="ltr">Failure Handling</bdi> و فرایند کسب‌وکاری بستگی دارد.
+نام <span dir="ltr">Transport</span> هنوز تعیین نشده است. <span dir="ltr">Command</span> می‌تواند از طریق <span dir="ltr">API</span> همگام یا پیام پردازش شود. انتخاب آن به نیاز <span dir="ltr">Latency</span>، <span dir="ltr">Coupling</span>، <span dir="ltr">Failure Handling</span> و فرایند کسب‌وکاری بستگی دارد.
 
 ### مالکیت
 
 | داده/تصمیم | مالک |
 |---|---|
-| اعتبار و چرخهٔ عمر حکم | <bdi dir="ltr">Legal Orders</bdi> |
-| نگاشت حکم به حساب هدف | نیازمند <bdi dir="ltr">Contract</bdi> روشن؛ تصمیم مشترک مبهم ممنوع |
-| <bdi dir="ltr">Hold</bdi> عملیاتی روی سپرده | <bdi dir="ltr">Deposits</bdi> |
-| ماندهٔ قابل برداشت | <bdi dir="ltr">Deposits</bdi> |
-| ثبت مالی ناشی از جابه‌جایی وجه | <bdi dir="ltr">Accounting</bdi> |
+| اعتبار و چرخهٔ عمر حکم | <span dir="ltr">Legal Orders</span> |
+| نگاشت حکم به حساب هدف | نیازمند <span dir="ltr">Contract</span> روشن؛ تصمیم مشترک مبهم ممنوع |
+| <span dir="ltr">Hold</span> عملیاتی روی سپرده | <span dir="ltr">Deposits</span> |
+| ماندهٔ قابل برداشت | <span dir="ltr">Deposits</span> |
+| ثبت مالی ناشی از جابه‌جایی وجه | <span dir="ltr">Accounting</span> |
 
-خود <bdi dir="ltr">Hold</bdi> الزاماً جابه‌جایی وجه و <bdi dir="ltr">Journal Entry</bdi> ایجاد نمی‌کند. ممکن است گزارش آماری یا ثبت کنترلی لازم باشد، اما <bdi dir="ltr">Accounting</bdi> نباید برای نمایش ماندهٔ قابل برداشت، مالک <bdi dir="ltr">Hold</bdi> شود.
+خود <span dir="ltr">Hold</span> الزاماً جابه‌جایی وجه و <span dir="ltr">Journal Entry</span> ایجاد نمی‌کند. ممکن است گزارش آماری یا ثبت کنترلی لازم باشد، اما <span dir="ltr">Accounting</span> نباید برای نمایش ماندهٔ قابل برداشت، مالک <span dir="ltr">Hold</span> شود.
 
-این مثال نشان می‌دهد «مالک <bdi dir="ltr">Trigger</bdi>»، «مالک تصمیم» و «مالک <bdi dir="ltr">State</bdi>» همیشه یک <bdi dir="ltr">Context</bdi> نیستند.
+این مثال نشان می‌دهد «مالک <span dir="ltr">Trigger</span>»، «مالک تصمیم» و «مالک <span dir="ltr">State</span>» همیشه یک <span dir="ltr">Context</span> نیستند.
 
 ---
 
-## ۸. <bdi dir="ltr">BIAN</bdi> دقیقاً چه نقشی دارد؟
+## ۸. <span dir="ltr">BIAN</span> دقیقاً چه نقشی دارد؟
 
-<bdi dir="ltr">BIAN</bdi> یک <bdi dir="ltr">Reference Architecture</bdi> تخصصی صنعت بانکداری است. در نسخهٔ 14.0، <bdi dir="ltr">Release Notes</bdi> رسمی ۳۲۲ <bdi dir="ltr">Service Domain</bdi>، ۳۸ <bdi dir="ltr">Business Domain</bdi>، ۵۸۶ <bdi dir="ltr">Business Capability</bdi> و ۲۴۲ <bdi dir="ltr">Semantic API</bdi> را گزارش می‌کند.
+<span dir="ltr">BIAN</span> یک <span dir="ltr">Reference Architecture</span> تخصصی صنعت بانکداری است. در نسخهٔ 14.0، <span dir="ltr">Release Notes</span> رسمی ۳۲۲ <span dir="ltr">Service Domain</span>، ۳۸ <span dir="ltr">Business Domain</span>، ۵۸۶ <span dir="ltr">Business Capability</span> و ۲۴۲ <span dir="ltr">Semantic API</span> را گزارش می‌کند.
 
-<bdi dir="ltr">BIAN</bdi> برای ما سه کاربرد اصلی دارد:
+<span dir="ltr">BIAN</span> برای ما سه کاربرد اصلی دارد:
 
 1. **زبان مشترک:** مقایسهٔ اصطلاحات سازمان با واژگان شناخته‌شدهٔ بانکی
-2. **<bdi dir="ltr">Completeness Check:</bdi>** کشف <bdi dir="ltr">Capability</bdi> یا مسئولیت جاافتاده
-3. **<bdi dir="ltr">Reference Contract:</bdi>** استفاده از <bdi dir="ltr">Service Operation</bdi>، <bdi dir="ltr">Business Object</bdi> و <bdi dir="ltr">Semantic API</bdi> به‌عنوان ورودی طراحی
+2. **<span dir="ltr">Completeness Check:</span>** کشف <span dir="ltr">Capability</span> یا مسئولیت جاافتاده
+3. **<span dir="ltr">Reference Contract:</span>** استفاده از <span dir="ltr">Service Operation</span>، <span dir="ltr">Business Object</span> و <span dir="ltr">Semantic API</span> به‌عنوان ورودی طراحی
 
-<bdi dir="ltr">BIAN</bdi> برای ما این کارها را انجام نمی‌دهد:
+<span dir="ltr">BIAN</span> برای ما این کارها را انجام نمی‌دهد:
 
 - مرز تیم‌ها را خودکار تعیین نمی‌کند.
-- هر <bdi dir="ltr">Service Domain</bdi> را به <bdi dir="ltr">Microservice</bdi> تبدیل نمی‌کند.
-- مقررات، <bdi dir="ltr">Product Model</bdi> و <bdi dir="ltr">Legacy Constraints</bdi> بانک ما را کشف نمی‌کند.
-- <bdi dir="ltr">Transaction Boundary</bdi> و <bdi dir="ltr">Data Ownership</bdi> نهایی را بدون تحلیل محلی تعیین نمی‌کند.
-- جای مصاحبه با خبرگان و <bdi dir="ltr">Event/Domain Discovery</bdi> را نمی‌گیرد.
+- هر <span dir="ltr">Service Domain</span> را به <span dir="ltr">Microservice</span> تبدیل نمی‌کند.
+- مقررات، <span dir="ltr">Product Model</span> و <span dir="ltr">Legacy Constraints</span> بانک ما را کشف نمی‌کند.
+- <span dir="ltr">Transaction Boundary</span> و <span dir="ltr">Data Ownership</span> نهایی را بدون تحلیل محلی تعیین نمی‌کند.
+- جای مصاحبه با خبرگان و <span dir="ltr">Event/Domain Discovery</span> را نمی‌گیرد.
 
-### چرا <bdi dir="ltr">Service Domain</bdi> مساوی <bdi dir="ltr">Microservice</bdi> نیست؟
+### چرا <span dir="ltr">Service Domain</span> مساوی <span dir="ltr">Microservice</span> نیست؟
 
-<bdi dir="ltr">Service Domain</bdi> در <bdi dir="ltr">BIAN</bdi> یک پارتیشن منطقی استانداردشده از مسئولیت بانکی است. <bdi dir="ltr">Deployment Boundary</bdi> علاوه بر مسئولیت منطقی به نیروهای دیگری وابسته است:
+<span dir="ltr">Service Domain</span> در <span dir="ltr">BIAN</span> یک پارتیشن منطقی استانداردشده از مسئولیت بانکی است. <span dir="ltr">Deployment Boundary</span> علاوه بر مسئولیت منطقی به نیروهای دیگری وابسته است:
 
-- <bdi dir="ltr">Transactional Cohesion</bdi>
-- <bdi dir="ltr">Change Coupling</bdi>
+- <span dir="ltr">Transactional Cohesion</span>
+- <span dir="ltr">Change Coupling</span>
 - نیاز استقرار و مقیاس مستقل
 - ساختار و بلوغ تیم
-- <bdi dir="ltr">Latency</bdi> و <bdi dir="ltr">Availability</bdi>
-- <bdi dir="ltr">Data Ownership</bdi>
+- <span dir="ltr">Latency</span> و <span dir="ltr">Availability</span>
+- <span dir="ltr">Data Ownership</span>
 - هزینهٔ عملیات توزیع‌شده
 
-ممکن است چند <bdi dir="ltr">Service Domain</bdi> در یک <bdi dir="ltr">Module</bdi> یا <bdi dir="ltr">Service</bdi> عملیاتی شوند؛ یا یک مسئولیت بزرگ برای مقیاس و تیم به چند <bdi dir="ltr">Deployable Component</bdi> شکسته شود. این تصمیم باید <bdi dir="ltr">ADR</bdi> و <bdi dir="ltr">Verification</bdi> داشته باشد.
+ممکن است چند <span dir="ltr">Service Domain</span> در یک <span dir="ltr">Module</span> یا <span dir="ltr">Service</span> عملیاتی شوند؛ یا یک مسئولیت بزرگ برای مقیاس و تیم به چند <span dir="ltr">Deployable Component</span> شکسته شود. این تصمیم باید <span dir="ltr">ADR</span> و <span dir="ltr">Verification</span> داشته باشد.
 
-### روش درست استفاده در <bdi dir="ltr">Day 05</bdi>
+### روش درست استفاده در <span dir="ltr">Day 05</span>
 
-1. ابتدا بر اساس کسب‌وکار خودمان <bdi dir="ltr">Capability Map L1</bdi> را می‌سازیم.
-2. نام‌ها، <bdi dir="ltr">Scope</bdi> و <bdi dir="ltr">Owner</bdi> را نقد می‌کنیم.
-3. سپس با <bdi dir="ltr">BIAN 14 Gap Check</bdi> می‌کنیم.
+1. ابتدا بر اساس کسب‌وکار خودمان <span dir="ltr">Capability Map L1</span> را می‌سازیم.
+2. نام‌ها، <span dir="ltr">Scope</span> و <span dir="ltr">Owner</span> را نقد می‌کنیم.
+3. سپس با <span dir="ltr">BIAN 14 Gap Check</span> می‌کنیم.
 4. تفاوت‌ها را به سه گروه تقسیم می‌کنیم:
-   - <bdi dir="ltr">Gap</bdi> واقعی
+   - <span dir="ltr">Gap</span> واقعی
    - تفاوت نام/سطح تجزیه
-   - <bdi dir="ltr">Capability</bdi> نامرتبط با <bdi dir="ltr">Scope</bdi>
+   - <span dir="ltr">Capability</span> نامرتبط با <span dir="ltr">Scope</span>
 
-اگر از <bdi dir="ltr">BIAN</bdi> شروع و همهٔ خانه‌ها را کپی کنیم، یک <bdi dir="ltr">Reference Landscape</bdi> داریم، نه معماری بانک خودمان.
+اگر از <span dir="ltr">BIAN</span> شروع و همهٔ خانه‌ها را کپی کنیم، یک <span dir="ltr">Reference Landscape</span> داریم، نه معماری بانک خودمان.
 
 ---
 
 ## ۹. چهار نیروی طراحی که این هفته عمیق‌تر می‌شوند
 
-### <bdi dir="ltr">Cohesion</bdi>
+### <span dir="ltr">Cohesion</span>
 
 چیزهایی که به یک دلیل تغییر می‌کنند، بهتر است کنار هم باشند.
 
-اگر منطق اعتبار حکم قضایی، محاسبهٔ ماندهٔ قابل برداشت و ثبت دفتر کل در یک کلاس باشد، آن کلاس سه دلیل مستقل برای تغییر دارد و <bdi dir="ltr">Cohesion</bdi> ضعیف است.
+اگر منطق اعتبار حکم قضایی، محاسبهٔ ماندهٔ قابل برداشت و ثبت دفتر کل در یک کلاس باشد، آن کلاس سه دلیل مستقل برای تغییر دارد و <span dir="ltr">Cohesion</span> ضعیف است.
 
-### <bdi dir="ltr">Coupling</bdi>
+### <span dir="ltr">Coupling</span>
 
 هرچه یک جزء برای کارکردن جزئیات بیشتری از دیگری بداند، تغییرها بیشتر منتشر می‌شوند.
 
-<bdi dir="ltr">Deposits</bdi> که جدول <bdi dir="ltr">Legal Orders</bdi> را مستقیم <bdi dir="ltr">Query</bdi> می‌کند، به <bdi dir="ltr">Schema</bdi> و معنای داخلی <bdi dir="ltr">Context</bdi> حقوقی کاپل شده است.
+<span dir="ltr">Deposits</span> که جدول <span dir="ltr">Legal Orders</span> را مستقیم <span dir="ltr">Query</span> می‌کند، به <span dir="ltr">Schema</span> و معنای داخلی <span dir="ltr">Context</span> حقوقی کاپل شده است.
 
-### <bdi dir="ltr">Encapsulation</bdi>
+### <span dir="ltr">Encapsulation</span>
 
-<bdi dir="ltr">State</bdi> و رفتار مرتبط از مسیر <bdi dir="ltr">Interface</bdi> کنترل می‌شوند.
+<span dir="ltr">State</span> و رفتار مرتبط از مسیر <span dir="ltr">Interface</span> کنترل می‌شوند.
 
-اگر هر <bdi dir="ltr">Service</bdi> بتواند ستون <bdi dir="ltr">blocked_amount</bdi> را <bdi dir="ltr">Update</bdi> کند، <bdi dir="ltr">Deposits</bdi> مانده و <bdi dir="ltr">Hold</bdi> را <bdi dir="ltr">Encapsulate</bdi> نکرده است.
+اگر هر <span dir="ltr">Service</span> بتواند ستون <span dir="ltr">blocked_amount</span> را <span dir="ltr">Update</span> کند، <span dir="ltr">Deposits</span> مانده و <span dir="ltr">Hold</span> را <span dir="ltr">Encapsulate</span> نکرده است.
 
-### <bdi dir="ltr">Information Hiding</bdi>
+### <span dir="ltr">Information Hiding</span>
 
-تصمیم طراحیِ محتمل‌التغییر پشت <bdi dir="ltr">Boundary</bdi> پنهان می‌شود.
+تصمیم طراحیِ محتمل‌التغییر پشت <span dir="ltr">Boundary</span> پنهان می‌شود.
 
-مصرف‌کنندهٔ <bdi dir="ltr">PlaceLegalHold</bdi> نباید بداند <bdi dir="ltr">Hold</bdi> در یک جدول، چند <bdi dir="ltr">Ledger Entry</bdi> یا <bdi dir="ltr">State Machine</bdi> داخلی نگهداری می‌شود. <bdi dir="ltr">Contract</bdi> باید معنای کسب‌وکاری را بدهد، نه روش پیاده‌سازی را.
+مصرف‌کنندهٔ <span dir="ltr">PlaceLegalHold</span> نباید بداند <span dir="ltr">Hold</span> در یک جدول، چند <span dir="ltr">Ledger Entry</span> یا <span dir="ltr">State Machine</span> داخلی نگهداری می‌شود. <span dir="ltr">Contract</span> باید معنای کسب‌وکاری را بدهد، نه روش پیاده‌سازی را.
 
 روز چهارم این مفاهیم را روی یک طراحی عمداً بد باز می‌کنیم.
 
@@ -534,35 +534,35 @@ Event: LegalHoldPlacementRejected
 
 ### خطای ۱: شروع از جدول
 
-«جدول <bdi dir="ltr">LOAN</bdi> داریم، پس <bdi dir="ltr">LoanService</bdi> می‌سازیم.»
+«جدول <span dir="ltr">LOAN</span> داریم، پس <span dir="ltr">LoanService</span> می‌سازیم.»
 
-جدول شاهد وضع موجود است، نه اثبات <bdi dir="ltr">Boundary.</bdi> یک جدول ممکن است چند مفهوم را مخلوط کرده باشد یا فقط <bdi dir="ltr">Projection</bdi> باشد.
+جدول شاهد وضع موجود است، نه اثبات <span dir="ltr">Boundary.</span> یک جدول ممکن است چند مفهوم را مخلوط کرده باشد یا فقط <span dir="ltr">Projection</span> باشد.
 
 ### خطای ۲: شروع از چارت
 
-«چون یک ادارهٔ چک داریم، <bdi dir="ltr">Check</bdi> یک <bdi dir="ltr">Bounded Context</bdi> مستقل است.»
+«چون یک ادارهٔ چک داریم، <span dir="ltr">Check</span> یک <span dir="ltr">Bounded Context</span> مستقل است.»
 
-ساختار سازمان می‌تواند سرنخ باشد، ولی ممکن است تاریخی، سیاسی یا مبتنی بر سامانهٔ <bdi dir="ltr">Legacy</bdi> باشد.
+ساختار سازمان می‌تواند سرنخ باشد، ولی ممکن است تاریخی، سیاسی یا مبتنی بر سامانهٔ <span dir="ltr">Legacy</span> باشد.
 
-### خطای ۳: هر اسم کسب‌وکاری یک <bdi dir="ltr">Microservice</bdi>
+### خطای ۳: هر اسم کسب‌وکاری یک <span dir="ltr">Microservice</span>
 
 داشتن نام دامینی شرط لازم برای مرز خوب است، نه شرط کافی برای استقرار مستقل.
 
-### خطای ۴: اشتراک <bdi dir="ltr">Entity</bdi>
+### خطای ۴: اشتراک <span dir="ltr">Entity</span>
 
-<bdi dir="ltr">CustomerEntity</bdi> مشترک میان همهٔ سرویس‌ها ظاهراً <bdi dir="ltr">Duplicate</bdi> را کم می‌کند، ولی مدل و <bdi dir="ltr">Release</bdi> را کاپل می‌کند. <bdi dir="ltr">Context</bdi>ها معمولاً به <bdi dir="ltr">Contract</bdi> و شناسهٔ مشترک نیاز دارند، نه <bdi dir="ltr">Entity</bdi> داخلی مشترک.
+<span dir="ltr">CustomerEntity</span> مشترک میان همهٔ سرویس‌ها ظاهراً <span dir="ltr">Duplicate</span> را کم می‌کند، ولی مدل و <span dir="ltr">Release</span> را کاپل می‌کند. <span dir="ltr">Context</span>ها معمولاً به <span dir="ltr">Contract</span> و شناسهٔ مشترک نیاز دارند، نه <span dir="ltr">Entity</span> داخلی مشترک.
 
 ### خطای ۵: مالکیت مشترک
 
-عبارت «<bdi dir="ltr">Lending</bdi> و <bdi dir="ltr">Accounting</bdi> هر دو مالک ماندهٔ تسهیلات‌اند» مسئولیت را مبهم می‌کند. باید نوع مانده را تفکیک کنیم: ماندهٔ عملیاتی اصل در <bdi dir="ltr">Lending</bdi>، ماندهٔ دفتر معین/کل در <bdi dir="ltr">Accounting</bdi> و <bdi dir="ltr">Projection</bdi> گزارش‌گری در <bdi dir="ltr">Data.</bdi>
+عبارت «<span dir="ltr">Lending</span> و <span dir="ltr">Accounting</span> هر دو مالک ماندهٔ تسهیلات‌اند» مسئولیت را مبهم می‌کند. باید نوع مانده را تفکیک کنیم: ماندهٔ عملیاتی اصل در <span dir="ltr">Lending</span>، ماندهٔ دفتر معین/کل در <span dir="ltr">Accounting</span> و <span dir="ltr">Projection</span> گزارش‌گری در <span dir="ltr">Data.</span>
 
-### خطای ۶: <bdi dir="ltr">API</bdi> به‌جای <bdi dir="ltr">Capability</bdi>
+### خطای ۶: <span dir="ltr">API</span> به‌جای <span dir="ltr">Capability</span>
 
-<bdi dir="ltr">API</bdi> افتتاح حساب توانمندی نیست؛ <bdi dir="ltr">Interface</bdi> یک <bdi dir="ltr">Use Case</bdi> است که <bdi dir="ltr">Capability</bdi> مدیریت سپرده را محقق می‌کند.
+<span dir="ltr">API</span> افتتاح حساب توانمندی نیست؛ <span dir="ltr">Interface</span> یک <span dir="ltr">Use Case</span> است که <span dir="ltr">Capability</span> مدیریت سپرده را محقق می‌کند.
 
-### خطای ۷: <bdi dir="ltr">Event</bdi> به‌جای <bdi dir="ltr">Fact</bdi>
+### خطای ۷: <span dir="ltr">Event</span> به‌جای <span dir="ltr">Fact</span>
 
-<bdi dir="ltr">Event</bdi> با نام مبهم <bdi dir="ltr">ProcessLoan</bdi> یا <bdi dir="ltr">DoAccounting</bdi> نمی‌گوید چه <bdi dir="ltr">Fact</bdi>ی رخ داده است. نام، مالک، زمان و معنای <bdi dir="ltr">Event</bdi> باید روشن باشد.
+<span dir="ltr">Event</span> با نام مبهم <span dir="ltr">ProcessLoan</span> یا <span dir="ltr">DoAccounting</span> نمی‌گوید چه <span dir="ltr">Fact</span>ی رخ داده است. نام، مالک، زمان و معنای <span dir="ltr">Event</span> باید روشن باشد.
 
 ---
 
@@ -572,21 +572,21 @@ Event: LegalHoldPlacementRejected
 
 | مرحله | پاسخ تو | چرا؟ |
 |---|---|---|
-| <bdi dir="ltr">Capability</bdi> |  |  |
-| <bdi dir="ltr">Domain/Subdomain</bdi> |  |  |
-| <bdi dir="ltr">Bounded Context</bdi> |  |  |
-| <bdi dir="ltr">Module/Service Candidate</bdi> |  |  |
-| <bdi dir="ltr">Use Case</bdi> |  |  |
-| <bdi dir="ltr">Command/Query</bdi> |  |  |
-| <bdi dir="ltr">API/Event</bdi> |  |  |
-| <bdi dir="ltr">Data Owner</bdi> |  |  |
-| <bdi dir="ltr">Decision Owner</bdi> |  |  |
+| <span dir="ltr">Capability</span> |  |  |
+| <span dir="ltr">Domain/Subdomain</span> |  |  |
+| <span dir="ltr">Bounded Context</span> |  |  |
+| <span dir="ltr">Module/Service Candidate</span> |  |  |
+| <span dir="ltr">Use Case</span> |  |  |
+| <span dir="ltr">Command/Query</span> |  |  |
+| <span dir="ltr">API/Event</span> |  |  |
+| <span dir="ltr">Data Owner</span> |  |  |
+| <span dir="ltr">Decision Owner</span> |  |  |
 
 سپس سه کنترل انجام بده:
 
 1. آیا جایی نام سامانه یا جدول را به‌جای مفهوم کسب‌وکاری گذاشته‌ای؟
-2. آیا یک <bdi dir="ltr">Context</bdi> را به‌دلیل وجود یک <bdi dir="ltr">API</bdi>، <bdi dir="ltr">Microservice</bdi> فرض کرده‌ای؟
-3. آیا برای یک داده یا تصمیم بیش از یک <bdi dir="ltr">Owner</bdi> نوشته‌ای؟
+2. آیا یک <span dir="ltr">Context</span> را به‌دلیل وجود یک <span dir="ltr">API</span>، <span dir="ltr">Microservice</span> فرض کرده‌ای؟
+3. آیا برای یک داده یا تصمیم بیش از یک <span dir="ltr">Owner</span> نوشته‌ای؟
 
 ---
 
@@ -617,16 +617,16 @@ API/Event قرارداد تعامل در مرز است.
 
 این عناصر مرتبط‌اند ولی مساوی نیستند و نگاشت یک‌به‌یک ندارند.
 
-<bdi dir="ltr">BIAN</bdi> برای نام‌گذاری، <bdi dir="ltr">Gap Check</bdi> و <bdi dir="ltr">Reference Contract</bdi> ارزشمند است. <bdi dir="ltr">BIAN</bdi> جای طراحی محلی <bdi dir="ltr">Boundary</bdi>، <bdi dir="ltr">Ownership</bdi>، <bdi dir="ltr">Transaction</bdi> و <bdi dir="ltr">Team</bdi> را نمی‌گیرد.
+<span dir="ltr">BIAN</span> برای نام‌گذاری، <span dir="ltr">Gap Check</span> و <span dir="ltr">Reference Contract</span> ارزشمند است. <span dir="ltr">BIAN</span> جای طراحی محلی <span dir="ltr">Boundary</span>، <span dir="ltr">Ownership</span>، <span dir="ltr">Transaction</span> و <span dir="ltr">Team</span> را نمی‌گیرد.
 
 ## کار بعد از درس
 
-1. به <bdi dir="ltr">Submission</bdi> برگرد.
+1. به <span dir="ltr">Submission</span> برگرد.
 2. پاسخ خام را پاک نکن.
-3. بخش «بازنگری پس از درس» و جدول <bdi dir="ltr">Traceability</bdi> را کامل کن.
-4. <bdi dir="ltr">Exit Ticket</bdi> را بدون مراجعه به متن پاسخ بده.
-5. فایل را برای <bdi dir="ltr">Review</bdi> ارائه کن.
+3. بخش «بازنگری پس از درس» و جدول <span dir="ltr">Traceability</span> را کامل کن.
+4. <span dir="ltr">Exit Ticket</span> را بدون مراجعه به متن پاسخ بده.
+5. فایل را برای <span dir="ltr">Review</span> ارائه کن.
 
-منابع رسمی و زمان مطالعه در [<bdi dir="ltr">References</bdi>](../references/README.md) آمده است.
+منابع رسمی و زمان مطالعه در [<span dir="ltr">References</span>](../references/README.md) آمده است.
 
 </div>

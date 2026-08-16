@@ -1,21 +1,21 @@
 <!-- bidi: rtl; code: ltr -->
 <div dir="rtl" align="right">
 
-# <bdi dir="ltr">Day 04</bdi> — مالکیت داده، تصمیم و <bdi dir="ltr">Source of Truth</bdi>
+# <span dir="ltr">Day 04</span> — مالکیت داده، تصمیم و <span dir="ltr">Source of Truth</span>
 
-- <bdi dir="ltr">Day budget: 50 minutes including exercise and exit ticket</bdi>
-- <bdi dir="ltr">Output: Data/Decision Ownership Matrix v1</bdi>
-- <bdi dir="ltr">Banking case:</bdi> اعطای تسهیلات، واریز به سپرده و ثبت مالی
+- <span dir="ltr">Day budget: 50 minutes including exercise and exit ticket</span>
+- <span dir="ltr">Output: Data/Decision Ownership Matrix v1</span>
+- <span dir="ltr">Banking case:</span> اعطای تسهیلات، واریز به سپرده و ثبت مالی
 
 ## 1. هدف قابل سنجش
 
 در پایان باید بتوانی:
 
-1. <bdi dir="ltr">Data Authority</bdi>، <bdi dir="ltr">Decision Authority</bdi>، <bdi dir="ltr">State Owner</bdi> و <bdi dir="ltr">Process Owner</bdi> را جدا کنی.
-2. برای هر <bdi dir="ltr">Fact</bdi> با معنای دقیق، یک <bdi dir="ltr">Authority</bdi> مشخص کنی.
-3. <bdi dir="ltr">Reference</bdi>، <bdi dir="ltr">Snapshot</bdi>، <bdi dir="ltr">Cache</bdi>، <bdi dir="ltr">Projection</bdi> و <bdi dir="ltr">Derived Data</bdi> را از مالکیت جدا کنی.
-4. دو <bdi dir="ltr">Balance</bdi> ظاهراً مشابه را با <bdi dir="ltr">Semantic</bdi> و <bdi dir="ltr">Purpose</bdi> متفاوت تفکیک کنی.
-5. <bdi dir="ltr">Freshness</bdi>، <bdi dir="ltr">History</bdi>، <bdi dir="ltr">Correction</bdi> و <bdi dir="ltr">Reconciliation</bdi> را در <bdi dir="ltr">Ownership Matrix</bdi> ثبت کنی.
+1. <span dir="ltr">Data Authority</span>، <span dir="ltr">Decision Authority</span>، <span dir="ltr">State Owner</span> و <span dir="ltr">Process Owner</span> را جدا کنی.
+2. برای هر <span dir="ltr">Fact</span> با معنای دقیق، یک <span dir="ltr">Authority</span> مشخص کنی.
+3. <span dir="ltr">Reference</span>، <span dir="ltr">Snapshot</span>، <span dir="ltr">Cache</span>، <span dir="ltr">Projection</span> و <span dir="ltr">Derived Data</span> را از مالکیت جدا کنی.
+4. دو <span dir="ltr">Balance</span> ظاهراً مشابه را با <span dir="ltr">Semantic</span> و <span dir="ltr">Purpose</span> متفاوت تفکیک کنی.
+5. <span dir="ltr">Freshness</span>، <span dir="ltr">History</span>، <span dir="ltr">Correction</span> و <span dir="ltr">Reconciliation</span> را در <span dir="ltr">Ownership Matrix</span> ثبت کنی.
 
 ## 2. چرا عبارت «مالک داده» کافی نیست؟
 
@@ -23,17 +23,17 @@
 
 > اطلاعات مشتری مال سامانهٔ مشتریان است.
 
-این جمله جهت خوبی دارد، اما برای <bdi dir="ltr">Contract</bdi> و <bdi dir="ltr">Failure</bdi> کافی نیست. باید روشن کنیم:
+این جمله جهت خوبی دارد، اما برای <span dir="ltr">Contract</span> و <span dir="ltr">Failure</span> کافی نیست. باید روشن کنیم:
 
-- کدام اطلاعات؟ هویت <bdi dir="ltr">Party</bdi>، <bdi dir="ltr">KYC</bdi>، <bdi dir="ltr">Segment</bdi> یا <bdi dir="ltr">Credit Exposure</bdi>؟
-- چه کسی تعریف <bdi dir="ltr">Semantic</bdi> را تعیین می‌کند؟
+- کدام اطلاعات؟ هویت <span dir="ltr">Party</span>، <span dir="ltr">KYC</span>، <span dir="ltr">Segment</span> یا <span dir="ltr">Credit Exposure</span>؟
+- چه کسی تعریف <span dir="ltr">Semantic</span> را تعیین می‌کند؟
 - چه کسی مجاز به ایجاد و اصلاح است؟
 - چه کسی تاریخچه را نگه می‌دارد؟
-- <bdi dir="ltr">Context</bdi> دیگر <bdi dir="ltr">Reference</bdi>، <bdi dir="ltr">Snapshot</bdi> یا <bdi dir="ltr">Cache</bdi> دارد؟
-- اگر دو نسخه متفاوت شدند، چه کسی <bdi dir="ltr">Reconcile</bdi> می‌کند؟
-- چه <bdi dir="ltr">Decision</bdi>ی از این <bdi dir="ltr">Fact</bdi> ساخته می‌شود و <bdi dir="ltr">Authority</bdi> آن کیست؟
+- <span dir="ltr">Context</span> دیگر <span dir="ltr">Reference</span>، <span dir="ltr">Snapshot</span> یا <span dir="ltr">Cache</span> دارد؟
+- اگر دو نسخه متفاوت شدند، چه کسی <span dir="ltr">Reconcile</span> می‌کند؟
+- چه <span dir="ltr">Decision</span>ی از این <span dir="ltr">Fact</span> ساخته می‌شود و <span dir="ltr">Authority</span> آن کیست؟
 
-<bdi dir="ltr">Ownership</bdi> یک <bdi dir="ltr">Label</bdi> روی <bdi dir="ltr">Box</bdi> نیست؛ مجموعه‌ای از حقوق و مسئولیت‌های قابل‌آزمون است.
+<span dir="ltr">Ownership</span> یک <span dir="ltr">Label</span> روی <span dir="ltr">Box</span> نیست؛ مجموعه‌ای از حقوق و مسئولیت‌های قابل‌آزمون است.
 
 ## 3. مدل ذهنی
 
@@ -63,302 +63,302 @@ freshness + reconciliation
 <div dir="rtl" align="right">
 
 
-اگر عبارت <bdi dir="ltr">`Customer Data`</bdi> یا <bdi dir="ltr">`Balance`</bdi> آن‌قدر کلی است که چند معنای مستقل را پوشش می‌دهد، ابتدا ردیف را تجزیه کن. <bdi dir="ltr">Ownership</bdi> فقط پس از <bdi dir="ltr">Semantic</bdi> دقیق قابل تعیین است.
+اگر عبارت <span dir="ltr">`Customer Data`</span> یا <span dir="ltr">`Balance`</span> آن‌قدر کلی است که چند معنای مستقل را پوشش می‌دهد، ابتدا ردیف را تجزیه کن. <span dir="ltr">Ownership</span> فقط پس از <span dir="ltr">Semantic</span> دقیق قابل تعیین است.
 
-## 4. انواع <bdi dir="ltr">Authority</bdi> و <bdi dir="ltr">Ownership</bdi>
+## 4. انواع <span dir="ltr">Authority</span> و <span dir="ltr">Ownership</span>
 
-### <bdi dir="ltr">4.1 Data/Fact Authority</bdi>
+### <span dir="ltr">4.1 Data/Fact Authority</span>
 
-<bdi dir="ltr">Context</bdi>ی که معنای <bdi dir="ltr">Fact</bdi>، <bdi dir="ltr">Lifecycle</bdi> و تغییر معتبر آن را کنترل می‌کند.
+<span dir="ltr">Context</span>ی که معنای <span dir="ltr">Fact</span>، <span dir="ltr">Lifecycle</span> و تغییر معتبر آن را کنترل می‌کند.
 
-مثال: <bdi dir="ltr">Deposits</bdi> برای <bdi dir="ltr">`AvailableDepositBalance`</bdi> تصمیم‌گیر و <bdi dir="ltr">State Owner</bdi> است. <bdi dir="ltr">Accounting</bdi> ممکن است اثر مالی متناظر داشته باشد، اما نمی‌تواند <bdi dir="ltr">Available Balance</bdi> را <bdi dir="ltr">Update</bdi> کند.
+مثال: <span dir="ltr">Deposits</span> برای <span dir="ltr">`AvailableDepositBalance`</span> تصمیم‌گیر و <span dir="ltr">State Owner</span> است. <span dir="ltr">Accounting</span> ممکن است اثر مالی متناظر داشته باشد، اما نمی‌تواند <span dir="ltr">Available Balance</span> را <span dir="ltr">Update</span> کند.
 
-### <bdi dir="ltr">4.2 Decision Authority</bdi>
+### <span dir="ltr">4.2 Decision Authority</span>
 
-<bdi dir="ltr">Context</bdi>ی که با شواهد ورودی و <bdi dir="ltr">Rule</bdi>های خودش مجاز است تصمیم بگیرد.
+<span dir="ltr">Context</span>ی که با شواهد ورودی و <span dir="ltr">Rule</span>های خودش مجاز است تصمیم بگیرد.
 
 مثال:
 
-- <bdi dir="ltr">Customer/Compliance:</bdi> آیا <bdi dir="ltr">KYC</bdi> معتبر است؟
-- <bdi dir="ltr">Lending/Credit Decision:</bdi> آیا این متقاضی برای این محصول و مبلغ واجد شرایط است؟
-- <bdi dir="ltr">Deposits:</bdi> آیا این حساب در وضعیت فعلی واریز را می‌پذیرد؟
+- <span dir="ltr">Customer/Compliance:</span> آیا <span dir="ltr">KYC</span> معتبر است؟
+- <span dir="ltr">Lending/Credit Decision:</span> آیا این متقاضی برای این محصول و مبلغ واجد شرایط است؟
+- <span dir="ltr">Deposits:</span> آیا این حساب در وضعیت فعلی واریز را می‌پذیرد؟
 
-این سه <bdi dir="ltr">Decision</bdi> به هم وابسته‌اند، ولی یک <bdi dir="ltr">Boolean</bdi> عمومی <bdi dir="ltr">`isValid`</bdi> نیستند.
+این سه <span dir="ltr">Decision</span> به هم وابسته‌اند، ولی یک <span dir="ltr">Boolean</span> عمومی <span dir="ltr">`isValid`</span> نیستند.
 
-### <bdi dir="ltr">4.3 State Owner</bdi>
+### <span dir="ltr">4.3 State Owner</span>
 
-<bdi dir="ltr">Context</bdi>ی که <bdi dir="ltr">State Machine</bdi> و <bdi dir="ltr">Transition</bdi>های معتبر را نگه می‌دارد.
+<span dir="ltr">Context</span>ی که <span dir="ltr">State Machine</span> و <span dir="ltr">Transition</span>های معتبر را نگه می‌دارد.
 
-مثال: <bdi dir="ltr">Payment Order State</bdi> متعلق به <bdi dir="ltr">Payments</bdi> است؛ <bdi dir="ltr">Channel</bdi> درخواست می‌دهد و نمایش می‌دهد، ولی نباید <bdi dir="ltr">Order</bdi> را از <bdi dir="ltr">`Submitted`</bdi> به <bdi dir="ltr">`Settled`</bdi> ببرد.
+مثال: <span dir="ltr">Payment Order State</span> متعلق به <span dir="ltr">Payments</span> است؛ <span dir="ltr">Channel</span> درخواست می‌دهد و نمایش می‌دهد، ولی نباید <span dir="ltr">Order</span> را از <span dir="ltr">`Submitted`</span> به <span dir="ltr">`Settled`</span> ببرد.
 
-### <bdi dir="ltr">4.4 Trigger Owner</bdi>
+### <span dir="ltr">4.4 Trigger Owner</span>
 
-<bdi dir="ltr">Context</bdi> یا <bdi dir="ltr">Actor</bdi>ی که یک <bdi dir="ltr">Intent</bdi> را آغاز می‌کند. <bdi dir="ltr">Trigger</bdi> بودن <bdi dir="ltr">Authority</bdi> تصمیم را منتقل نمی‌کند.
+<span dir="ltr">Context</span> یا <span dir="ltr">Actor</span>ی که یک <span dir="ltr">Intent</span> را آغاز می‌کند. <span dir="ltr">Trigger</span> بودن <span dir="ltr">Authority</span> تصمیم را منتقل نمی‌کند.
 
-<bdi dir="ltr">Lending</bdi> می‌تواند واریز مبلغ اعطا را درخواست کند، اما <bdi dir="ltr">Deposits</bdi> دربارهٔ اجرای <bdi dir="ltr">Credit</bdi> روی حساب خودش تصمیم می‌گیرد.
+<span dir="ltr">Lending</span> می‌تواند واریز مبلغ اعطا را درخواست کند، اما <span dir="ltr">Deposits</span> دربارهٔ اجرای <span dir="ltr">Credit</span> روی حساب خودش تصمیم می‌گیرد.
 
-### <bdi dir="ltr">4.5 Process Owner/Process Manager</bdi>
+### <span dir="ltr">4.5 Process Owner/Process Manager</span>
 
-در جریان چنددامینی، یک <bdi dir="ltr">Process Manager</bdi> می‌تواند <bdi dir="ltr">Correlation</bdi>، <bdi dir="ltr">Step Status</bdi>، <bdi dir="ltr">Timeout</bdi> و <bdi dir="ltr">Next Action</bdi> را نگه دارد. این جزء نباید <bdi dir="ltr">State</bdi> داخلی <bdi dir="ltr">Domain</bdi>ها را تصاحب کند.
+در جریان چنددامینی، یک <span dir="ltr">Process Manager</span> می‌تواند <span dir="ltr">Correlation</span>، <span dir="ltr">Step Status</span>، <span dir="ltr">Timeout</span> و <span dir="ltr">Next Action</span> را نگه دارد. این جزء نباید <span dir="ltr">State</span> داخلی <span dir="ltr">Domain</span>ها را تصاحب کند.
 
-مثلاً وضعیت <bdi dir="ltr">`DisbursementProcess = WAITING_FOR_DEPOSIT_CREDIT`</bdi> متعلق به <bdi dir="ltr">Process</bdi> است؛ ولی <bdi dir="ltr">`DepositTransaction = POSTED`</bdi> متعلق به <bdi dir="ltr">Deposits</bdi> و <bdi dir="ltr">`Journal = POSTED`</bdi> متعلق به <bdi dir="ltr">Accounting</bdi> است.
+مثلاً وضعیت <span dir="ltr">`DisbursementProcess = WAITING_FOR_DEPOSIT_CREDIT`</span> متعلق به <span dir="ltr">Process</span> است؛ ولی <span dir="ltr">`DepositTransaction = POSTED`</span> متعلق به <span dir="ltr">Deposits</span> و <span dir="ltr">`Journal = POSTED`</span> متعلق به <span dir="ltr">Accounting</span> است.
 
-## <bdi dir="ltr">5. Source of Truth</bdi> را دقیق‌تر کنیم
+## <span dir="ltr">5. Source of Truth</span> را دقیق‌تر کنیم
 
-عبارت <bdi dir="ltr">`Single Source of Truth`</bdi> اغلب باعث دو خطا می‌شود:
+عبارت <span dir="ltr">`Single Source of Truth`</span> اغلب باعث دو خطا می‌شود:
 
-1. تصور می‌کنیم برای تمام معناهای یک کلمه فقط یک <bdi dir="ltr">Database</bdi> باید وجود داشته باشد.
-2. <bdi dir="ltr">Replica</bdi> یا <bdi dir="ltr">Report</bdi> را به‌دلیل داشتن داده، <bdi dir="ltr">Owner</bdi> می‌نامیم.
+1. تصور می‌کنیم برای تمام معناهای یک کلمه فقط یک <span dir="ltr">Database</span> باید وجود داشته باشد.
+2. <span dir="ltr">Replica</span> یا <span dir="ltr">Report</span> را به‌دلیل داشتن داده، <span dir="ltr">Owner</span> می‌نامیم.
 
 در این دوره از اصطلاح دقیق‌تر استفاده می‌کنیم:
 
-> برای هر <bdi dir="ltr">Fact</bdi> با <bdi dir="ltr">Semantic</bdi> مشخص، یک <bdi dir="ltr">Authoritative Context</bdi> و یک <bdi dir="ltr">Source of Record</bdi> تعریف می‌شود.
+> برای هر <span dir="ltr">Fact</span> با <span dir="ltr">Semantic</span> مشخص، یک <span dir="ltr">Authoritative Context</span> و یک <span dir="ltr">Source of Record</span> تعریف می‌شود.
 
-### <bdi dir="ltr">Authoritative Context</bdi>
+### <span dir="ltr">Authoritative Context</span>
 
-قواعد، معنای <bdi dir="ltr">Business</bdi> و تغییر معتبر را مالک است.
+قواعد، معنای <span dir="ltr">Business</span> و تغییر معتبر را مالک است.
 
-### <bdi dir="ltr">Source of Record</bdi>
+### <span dir="ltr">Source of Record</span>
 
-رکورد پایدار و قابل استناد آن <bdi dir="ltr">Fact</bdi> را نگه می‌دارد. در طراحی ساده معمولاً داخل همان <bdi dir="ltr">Context</bdi> است؛ ولی <bdi dir="ltr">Migration</bdi> یا <bdi dir="ltr">Legacy</bdi> می‌تواند موقتاً پیچیدگی ایجاد کند و باید صریح ثبت شود.
+رکورد پایدار و قابل استناد آن <span dir="ltr">Fact</span> را نگه می‌دارد. در طراحی ساده معمولاً داخل همان <span dir="ltr">Context</span> است؛ ولی <span dir="ltr">Migration</span> یا <span dir="ltr">Legacy</span> می‌تواند موقتاً پیچیدگی ایجاد کند و باید صریح ثبت شود.
 
 ### نکتهٔ مهم
 
-ممکن است چند «<bdi dir="ltr">Balance</bdi>» معتبر داشته باشیم، چون معنا متفاوت است:
+ممکن است چند «<span dir="ltr">Balance</span>» معتبر داشته باشیم، چون معنا متفاوت است:
 
-- <bdi dir="ltr">Operational Principal Outstanding</bdi> در <bdi dir="ltr">Lending</bdi>
-- <bdi dir="ltr">Accounting Receivable Balance</bdi> در <bdi dir="ltr">Subledger/Accounting</bdi>
-- <bdi dir="ltr">Analytical Exposure Projection</bdi> در <bdi dir="ltr">Data Platform</bdi>
+- <span dir="ltr">Operational Principal Outstanding</span> در <span dir="ltr">Lending</span>
+- <span dir="ltr">Accounting Receivable Balance</span> در <span dir="ltr">Subledger/Accounting</span>
+- <span dir="ltr">Analytical Exposure Projection</span> در <span dir="ltr">Data Platform</span>
 
-این‌ها سه <bdi dir="ltr">Owner</bdi> برای یک <bdi dir="ltr">Fact</bdi> نیستند؛ سه <bdi dir="ltr">Fact</bdi> با <bdi dir="ltr">Purpose</bdi>، زمان و <bdi dir="ltr">Rule</bdi> متفاوت‌اند. باید نام و <bdi dir="ltr">Reconciliation</bdi> آن‌ها دقیق باشد.
+این‌ها سه <span dir="ltr">Owner</span> برای یک <span dir="ltr">Fact</span> نیستند؛ سه <span dir="ltr">Fact</span> با <span dir="ltr">Purpose</span>، زمان و <span dir="ltr">Rule</span> متفاوت‌اند. باید نام و <span dir="ltr">Reconciliation</span> آن‌ها دقیق باشد.
 
-## 6. نقش <bdi dir="ltr">Copy</bdi>ها
+## 6. نقش <span dir="ltr">Copy</span>ها
 
-داشتن یک مقدار در چند <bdi dir="ltr">Context</bdi> لزوماً <bdi dir="ltr">Ownership</bdi> مشترک نیست. نوع <bdi dir="ltr">Copy</bdi> را ثبت کن.
+داشتن یک مقدار در چند <span dir="ltr">Context</span> لزوماً <span dir="ltr">Ownership</span> مشترک نیست. نوع <span dir="ltr">Copy</span> را ثبت کن.
 
-### <bdi dir="ltr">Reference</bdi>
+### <span dir="ltr">Reference</span>
 
-فقط شناسهٔ <bdi dir="ltr">Fact</bdi> بیرونی را نگه می‌دارد.
+فقط شناسهٔ <span dir="ltr">Fact</span> بیرونی را نگه می‌دارد.
 
-مثال: <bdi dir="ltr">Lending</bdi> یک <bdi dir="ltr">`CustomerId`</bdi> نگه می‌دارد و هویت <bdi dir="ltr">Party</bdi> را مالک نمی‌شود.
+مثال: <span dir="ltr">Lending</span> یک <span dir="ltr">`CustomerId`</span> نگه می‌دارد و هویت <span dir="ltr">Party</span> را مالک نمی‌شود.
 
-### <bdi dir="ltr">Snapshot</bdi>
+### <span dir="ltr">Snapshot</span>
 
-کپی تاریخی از <bdi dir="ltr">Fact</bdi>ها در زمان یک تعهد/تصمیم است و تغییر آیندهٔ <bdi dir="ltr">Upstream</bdi> نباید آن را خودکار تغییر دهد.
+کپی تاریخی از <span dir="ltr">Fact</span>ها در زمان یک تعهد/تصمیم است و تغییر آیندهٔ <span dir="ltr">Upstream</span> نباید آن را خودکار تغییر دهد.
 
-مثال: نرخ، مدت و شروط مؤثر قرارداد اعطاشده از <bdi dir="ltr">ProductVersion Snapshot</bdi> می‌شوند.
+مثال: نرخ، مدت و شروط مؤثر قرارداد اعطاشده از <span dir="ltr">ProductVersion Snapshot</span> می‌شوند.
 
-<bdi dir="ltr">Snapshot</bdi> باید داشته باشد:
+<span dir="ltr">Snapshot</span> باید داشته باشد:
 
-- <bdi dir="ltr">effective time</bdi>
-- <bdi dir="ltr">source/version</bdi>
-- <bdi dir="ltr">reason/use case</bdi>
-- <bdi dir="ltr">correction policy</bdi>
+- <span dir="ltr">effective time</span>
+- <span dir="ltr">source/version</span>
+- <span dir="ltr">reason/use case</span>
+- <span dir="ltr">correction policy</span>
 
-### <bdi dir="ltr">Cache</bdi>
+### <span dir="ltr">Cache</span>
 
-کپی موقت برای <bdi dir="ltr">Performance/Availability</bdi> با <bdi dir="ltr">TTL</bdi> یا <bdi dir="ltr">Invalidation Policy. Cache Fact</bdi> جدیدی ایجاد نمی‌کند.
+کپی موقت برای <span dir="ltr">Performance/Availability</span> با <span dir="ltr">TTL</span> یا <span dir="ltr">Invalidation Policy. Cache Fact</span> جدیدی ایجاد نمی‌کند.
 
-مثال: <bdi dir="ltr">Channel</bdi> ممکن است <bdi dir="ltr">Customer Display Name</bdi> را <bdi dir="ltr">Cache</bdi> کند، ولی اصلاح نام در <bdi dir="ltr">Master</bdi> را انجام نمی‌دهد.
+مثال: <span dir="ltr">Channel</span> ممکن است <span dir="ltr">Customer Display Name</span> را <span dir="ltr">Cache</span> کند، ولی اصلاح نام در <span dir="ltr">Master</span> را انجام نمی‌دهد.
 
-### <bdi dir="ltr">Projection</bdi>
+### <span dir="ltr">Projection</span>
 
-مدل <bdi dir="ltr">Read</bdi> که از <bdi dir="ltr">Fact/Event</bdi>های <bdi dir="ltr">Authority</bdi> ساخته و قابل بازسازی است.
+مدل <span dir="ltr">Read</span> که از <span dir="ltr">Fact/Event</span>های <span dir="ltr">Authority</span> ساخته و قابل بازسازی است.
 
-مثال: داشبورد یکپارچهٔ تعهدات مشتری از <bdi dir="ltr">Lending</bdi>، <bdi dir="ltr">Deposits</bdi> و <bdi dir="ltr">Accounting Projection</bdi> می‌سازد؛ <bdi dir="ltr">Owner</bdi> عملیات پایه نیست.
+مثال: داشبورد یکپارچهٔ تعهدات مشتری از <span dir="ltr">Lending</span>، <span dir="ltr">Deposits</span> و <span dir="ltr">Accounting Projection</span> می‌سازد؛ <span dir="ltr">Owner</span> عملیات پایه نیست.
 
-### <bdi dir="ltr">Derived Data</bdi>
+### <span dir="ltr">Derived Data</span>
 
-مقداری که از <bdi dir="ltr">Source</bdi>ها و <bdi dir="ltr">Formula</bdi> مشخص محاسبه می‌شود.
+مقداری که از <span dir="ltr">Source</span>ها و <span dir="ltr">Formula</span> مشخص محاسبه می‌شود.
 
-مثال: <bdi dir="ltr">`TotalCustomerExposure`</bdi> ممکن است <bdi dir="ltr">Derived</bdi> باشد. باید <bdi dir="ltr">Owner Formula</bdi>، <bdi dir="ltr">Source versions</bdi>، <bdi dir="ltr">as-of time</bdi> و <bdi dir="ltr">Recalculation</bdi> مشخص باشد.
+مثال: <span dir="ltr">`TotalCustomerExposure`</span> ممکن است <span dir="ltr">Derived</span> باشد. باید <span dir="ltr">Owner Formula</span>، <span dir="ltr">Source versions</span>، <span dir="ltr">as-of time</span> و <span dir="ltr">Recalculation</span> مشخص باشد.
 
-### <bdi dir="ltr">Replica</bdi>
+### <span dir="ltr">Replica</span>
 
-کپی فنی برای <bdi dir="ltr">Availability/Read scale</bdi> است. <bdi dir="ltr">Replica</bdi> حتی اگر <bdi dir="ltr">Read</bdi> از آن انجام شود، <bdi dir="ltr">Authority</bdi> دامینی جدید نیست.
+کپی فنی برای <span dir="ltr">Availability/Read scale</span> است. <span dir="ltr">Replica</span> حتی اگر <span dir="ltr">Read</span> از آن انجام شود، <span dir="ltr">Authority</span> دامینی جدید نیست.
 
-## 7. جدول کنترل <bdi dir="ltr">Copy</bdi>
+## 7. جدول کنترل <span dir="ltr">Copy</span>
 
-| <bdi dir="ltr">Copy type</bdi> | <bdi dir="ltr">Can change source fact</bdi>? | <bdi dir="ltr">Must have provenance</bdi>? | <bdi dir="ltr">Freshness rule</bdi> | <bdi dir="ltr">Historical role</bdi> |
+| <span dir="ltr">Copy type</span> | <span dir="ltr">Can change source fact</span>? | <span dir="ltr">Must have provenance</span>? | <span dir="ltr">Freshness rule</span> | <span dir="ltr">Historical role</span> |
 |---|---:|---:|---|---|
-| <bdi dir="ltr">Reference</bdi> | <bdi dir="ltr">no</bdi> | <bdi dir="ltr">yes</bdi> | <bdi dir="ltr">resolve policy</bdi> | <bdi dir="ltr">points to authority</bdi> |
-| <bdi dir="ltr">Snapshot</bdi> | <bdi dir="ltr">no</bdi> | <bdi dir="ltr">yes</bdi> | <bdi dir="ltr">fixed at effective time</bdi> | <bdi dir="ltr">preserves past commitment</bdi> |
-| <bdi dir="ltr">Cache</bdi> | <bdi dir="ltr">no</bdi> | <bdi dir="ltr">yes</bdi> | <bdi dir="ltr">TTL/invalidation</bdi> | <bdi dir="ltr">usually not authoritative history</bdi> |
-| <bdi dir="ltr">Projection</bdi> | <bdi dir="ltr">no</bdi> | <bdi dir="ltr">yes</bdi> | <bdi dir="ltr">lag/rebuild policy</bdi> | <bdi dir="ltr">read history as designed</bdi> |
-| <bdi dir="ltr">Derived</bdi> | <bdi dir="ltr">no</bdi>, <bdi dir="ltr">but owns formula/result</bdi> | <bdi dir="ltr">yes</bdi> | <bdi dir="ltr">recompute policy</bdi> | <bdi dir="ltr">as-of/version required</bdi> |
-| <bdi dir="ltr">Replica</bdi> | <bdi dir="ltr">no</bdi> | <bdi dir="ltr">technical lineage</bdi> | <bdi dir="ltr">replication lag</bdi> | <bdi dir="ltr">same record technically</bdi> |
+| <span dir="ltr">Reference</span> | <span dir="ltr">no</span> | <span dir="ltr">yes</span> | <span dir="ltr">resolve policy</span> | <span dir="ltr">points to authority</span> |
+| <span dir="ltr">Snapshot</span> | <span dir="ltr">no</span> | <span dir="ltr">yes</span> | <span dir="ltr">fixed at effective time</span> | <span dir="ltr">preserves past commitment</span> |
+| <span dir="ltr">Cache</span> | <span dir="ltr">no</span> | <span dir="ltr">yes</span> | <span dir="ltr">TTL/invalidation</span> | <span dir="ltr">usually not authoritative history</span> |
+| <span dir="ltr">Projection</span> | <span dir="ltr">no</span> | <span dir="ltr">yes</span> | <span dir="ltr">lag/rebuild policy</span> | <span dir="ltr">read history as designed</span> |
+| <span dir="ltr">Derived</span> | <span dir="ltr">no</span>, <span dir="ltr">but owns formula/result</span> | <span dir="ltr">yes</span> | <span dir="ltr">recompute policy</span> | <span dir="ltr">as-of/version required</span> |
+| <span dir="ltr">Replica</span> | <span dir="ltr">no</span> | <span dir="ltr">technical lineage</span> | <span dir="ltr">replication lag</span> | <span dir="ltr">same record technically</span> |
 
 ## 8. مثال هدایت‌شده: اعطای تسهیلات مرابحه
 
-### <bdi dir="ltr">Fact 1: Party Identity</bdi>
+### <span dir="ltr">Fact 1: Party Identity</span>
 
-- <bdi dir="ltr">Authority: Party</bdi> & <bdi dir="ltr">Customer</bdi>
-- <bdi dir="ltr">Lending: Reference</bdi> و <bdi dir="ltr">Snapshot</bdi> شواهد لازم تصمیم
-- <bdi dir="ltr">Accounting: Reference</bdi> برای تفصیل/<bdi dir="ltr">Audit</bdi> در صورت نیاز
-- <bdi dir="ltr">Forbidden: Lending</bdi> یا <bdi dir="ltr">Accounting</bdi> اصلاح نام و هویت <bdi dir="ltr">Master</bdi> را انجام دهند.
+- <span dir="ltr">Authority: Party</span> & <span dir="ltr">Customer</span>
+- <span dir="ltr">Lending: Reference</span> و <span dir="ltr">Snapshot</span> شواهد لازم تصمیم
+- <span dir="ltr">Accounting: Reference</span> برای تفصیل/<span dir="ltr">Audit</span> در صورت نیاز
+- <span dir="ltr">Forbidden: Lending</span> یا <span dir="ltr">Accounting</span> اصلاح نام و هویت <span dir="ltr">Master</span> را انجام دهند.
 
-### <bdi dir="ltr">Fact 2: Product Definition</bdi>
+### <span dir="ltr">Fact 2: Product Definition</span>
 
-- <bdi dir="ltr">Authority: Product Catalog</bdi>
-- <bdi dir="ltr">Agreement/Lending: Snapshot</bdi> نسخه و شروط مؤثر
-- نکته: تغییر <bdi dir="ltr">ProductVersion</bdi> آینده قرارداد گذشته را تغییر نمی‌دهد.
+- <span dir="ltr">Authority: Product Catalog</span>
+- <span dir="ltr">Agreement/Lending: Snapshot</span> نسخه و شروط مؤثر
+- نکته: تغییر <span dir="ltr">ProductVersion</span> آینده قرارداد گذشته را تغییر نمی‌دهد.
 
-### <bdi dir="ltr">Fact 3: Loan Grant State</bdi>
+### <span dir="ltr">Fact 3: Loan Grant State</span>
 
-- <bdi dir="ltr">Authority: Lending</bdi>
-- <bdi dir="ltr">Deposits: Consumer</bdi> درخواست/<bdi dir="ltr">Reference</bdi> اعطا به‌اندازهٔ لازم
-- <bdi dir="ltr">Accounting: Consumer Business Fact</bdi> برای ثبت مالی
-- <bdi dir="ltr">Forbidden: Accounting</bdi> از روی وجود <bdi dir="ltr">Journal</bdi>، <bdi dir="ltr">State</bdi> اعطا را در <bdi dir="ltr">Lending</bdi> تغییر دهد.
+- <span dir="ltr">Authority: Lending</span>
+- <span dir="ltr">Deposits: Consumer</span> درخواست/<span dir="ltr">Reference</span> اعطا به‌اندازهٔ لازم
+- <span dir="ltr">Accounting: Consumer Business Fact</span> برای ثبت مالی
+- <span dir="ltr">Forbidden: Accounting</span> از روی وجود <span dir="ltr">Journal</span>، <span dir="ltr">State</span> اعطا را در <span dir="ltr">Lending</span> تغییر دهد.
 
-### <bdi dir="ltr">Fact 4: Operational Loan Principal Outstanding</bdi>
+### <span dir="ltr">Fact 4: Operational Loan Principal Outstanding</span>
 
-- <bdi dir="ltr">Authority: Lending</bdi>
-- <bdi dir="ltr">Accounting:</bdi> ماندهٔ مالی متناظر با <bdi dir="ltr">Semantic</bdi> حسابداری، نه کپی قابل‌تغییر از <bdi dir="ltr">Operational State</bdi>
-- <bdi dir="ltr">Reconciliation:</bdi> اختلاف باید کشف و با <bdi dir="ltr">Owner</bdi> مشترک فرایند رسیدگی شود، اما هر سیستم اصلاح <bdi dir="ltr">State</bdi> خودش را طبق کنترل انجام می‌دهد.
+- <span dir="ltr">Authority: Lending</span>
+- <span dir="ltr">Accounting:</span> ماندهٔ مالی متناظر با <span dir="ltr">Semantic</span> حسابداری، نه کپی قابل‌تغییر از <span dir="ltr">Operational State</span>
+- <span dir="ltr">Reconciliation:</span> اختلاف باید کشف و با <span dir="ltr">Owner</span> مشترک فرایند رسیدگی شود، اما هر سیستم اصلاح <span dir="ltr">State</span> خودش را طبق کنترل انجام می‌دهد.
 
-### <bdi dir="ltr">Fact 5: Deposit Credit Transaction</bdi> و <bdi dir="ltr">Available Balance</bdi>
+### <span dir="ltr">Fact 5: Deposit Credit Transaction</span> و <span dir="ltr">Available Balance</span>
 
-- <bdi dir="ltr">Authority: Deposits</bdi>
-- <bdi dir="ltr">Lending: Result/Fact</bdi> و <bdi dir="ltr">Process status</bdi>
-- <bdi dir="ltr">Accounting:</bdi> رویداد لازم برای <bdi dir="ltr">Journal</bdi> مربوط به اثر سپرده
-- <bdi dir="ltr">Forbidden: Orchestrator</bdi> یا <bdi dir="ltr">Lending</bdi> مستقیماً ماندهٔ سپرده را <bdi dir="ltr">Update</bdi> کند.
+- <span dir="ltr">Authority: Deposits</span>
+- <span dir="ltr">Lending: Result/Fact</span> و <span dir="ltr">Process status</span>
+- <span dir="ltr">Accounting:</span> رویداد لازم برای <span dir="ltr">Journal</span> مربوط به اثر سپرده
+- <span dir="ltr">Forbidden: Orchestrator</span> یا <span dir="ltr">Lending</span> مستقیماً ماندهٔ سپرده را <span dir="ltr">Update</span> کند.
 
-### <bdi dir="ltr">Fact 6: Journal Entry</bdi>
+### <span dir="ltr">Fact 6: Journal Entry</span>
 
-- <bdi dir="ltr">Authority: Accounting</bdi>
-- <bdi dir="ltr">Business domains: Reference</bdi> به <bdi dir="ltr">`JournalId`</bdi> یا <bdi dir="ltr">Status</bdi> در صورت نیاز
-- <bdi dir="ltr">Accounting</bdi> تصمیم می‌گیرد کدام <bdi dir="ltr">Template/Rules</bdi> حسابداری روی <bdi dir="ltr">Fact</bdi> معتبر اعمال شود.
-- <bdi dir="ltr">Accounting</bdi> مالک این نیست که آیا <bdi dir="ltr">Deposit</bdi> واقعاً <bdi dir="ltr">available</bdi> است یا <bdi dir="ltr">Loan</bdi> قابل وصول است.
+- <span dir="ltr">Authority: Accounting</span>
+- <span dir="ltr">Business domains: Reference</span> به <span dir="ltr">`JournalId`</span> یا <span dir="ltr">Status</span> در صورت نیاز
+- <span dir="ltr">Accounting</span> تصمیم می‌گیرد کدام <span dir="ltr">Template/Rules</span> حسابداری روی <span dir="ltr">Fact</span> معتبر اعمال شود.
+- <span dir="ltr">Accounting</span> مالک این نیست که آیا <span dir="ltr">Deposit</span> واقعاً <span dir="ltr">available</span> است یا <span dir="ltr">Loan</span> قابل وصول است.
 
-## 9. دو ماندهٔ تسهیلات: تناقض یا دو <bdi dir="ltr">Semantic</bdi>؟
+## 9. دو ماندهٔ تسهیلات: تناقض یا دو <span dir="ltr">Semantic</span>؟
 
 سؤال دقیق:
 
-> اگر <bdi dir="ltr">Lending</bdi> ماندهٔ اصل را نگه می‌دارد و <bdi dir="ltr">Accounting</bdi> نیز ماندهٔ حساب تسهیلات را دارد، آیا دو <bdi dir="ltr">Source of Truth</bdi> داریم؟
+> اگر <span dir="ltr">Lending</span> ماندهٔ اصل را نگه می‌دارد و <span dir="ltr">Accounting</span> نیز ماندهٔ حساب تسهیلات را دارد، آیا دو <span dir="ltr">Source of Truth</span> داریم؟
 
-پاسخ: ابتدا <bdi dir="ltr">Semantic</bdi> را جدا کن.
+پاسخ: ابتدا <span dir="ltr">Semantic</span> را جدا کن.
 
-### <bdi dir="ltr">Lending Principal Outstanding</bdi>
+### <span dir="ltr">Lending Principal Outstanding</span>
 
-- برای برنامهٔ اقساط، وصول، وضعیت <bdi dir="ltr">Loan</bdi> و تصمیم عملیاتی
-- از عملیات دامینی <bdi dir="ltr">Loan</bdi> تغییر می‌کند
-- <bdi dir="ltr">Invariant</bdi>های قرارداد و بازپرداخت را اعمال می‌کند
+- برای برنامهٔ اقساط، وصول، وضعیت <span dir="ltr">Loan</span> و تصمیم عملیاتی
+- از عملیات دامینی <span dir="ltr">Loan</span> تغییر می‌کند
+- <span dir="ltr">Invariant</span>های قرارداد و بازپرداخت را اعمال می‌کند
 
-### <bdi dir="ltr">Accounting Receivable/Subledger Balance</bdi>
+### <span dir="ltr">Accounting Receivable/Subledger Balance</span>
 
-- برای گزارش مالی، <bdi dir="ltr">Journal</bdi>، <bdi dir="ltr">Trial Balance</bdi> و تطبیق
-- از <bdi dir="ltr">Posting</bdi>های معتبر تغییر می‌کند
+- برای گزارش مالی، <span dir="ltr">Journal</span>، <span dir="ltr">Trial Balance</span> و تطبیق
+- از <span dir="ltr">Posting</span>های معتبر تغییر می‌کند
 - قواعد دورهٔ مالی و حسابداری را اعمال می‌کند
 
-این دو باید از نظر اقتصادی قابل <bdi dir="ltr">Reconcile</bdi> باشند، ولی الزاماً در هر لحظه و هر <bdi dir="ltr">State</bdi> فنی دقیقاً یک مقدار ندارند؛ <bdi dir="ltr">Latency</bdi>، <bdi dir="ltr">Pending</bdi>، <bdi dir="ltr">Adjustment</bdi> و <bdi dir="ltr">Closing</bdi> ممکن است تفاوت کنترل‌شده بسازد. معماری باید:
+این دو باید از نظر اقتصادی قابل <span dir="ltr">Reconcile</span> باشند، ولی الزاماً در هر لحظه و هر <span dir="ltr">State</span> فنی دقیقاً یک مقدار ندارند؛ <span dir="ltr">Latency</span>، <span dir="ltr">Pending</span>، <span dir="ltr">Adjustment</span> و <span dir="ltr">Closing</span> ممکن است تفاوت کنترل‌شده بسازد. معماری باید:
 
 - معنای هر مانده را نام‌گذاری کند؛
-- <bdi dir="ltr">Event/Contract</bdi> اتصال را روشن کند؛
-- <bdi dir="ltr">Expected lag</bdi> را تعیین کند؛
-- <bdi dir="ltr">Reconciliation</bdi> و <bdi dir="ltr">Correction path</bdi> داشته باشد.
+- <span dir="ltr">Event/Contract</span> اتصال را روشن کند؛
+- <span dir="ltr">Expected lag</span> را تعیین کند؛
+- <span dir="ltr">Reconciliation</span> و <span dir="ltr">Correction path</span> داشته باشد.
 
-راه‌حل اشتباه این است که هر دو سیستم یک جدول <bdi dir="ltr">Balance</bdi> مشترک را <bdi dir="ltr">Update</bdi> کنند تا «همیشه یکی» باشند. این کار <bdi dir="ltr">Authority</bdi> و <bdi dir="ltr">Transaction Boundary</bdi> را نابود می‌کند.
+راه‌حل اشتباه این است که هر دو سیستم یک جدول <span dir="ltr">Balance</span> مشترک را <span dir="ltr">Update</span> کنند تا «همیشه یکی» باشند. این کار <span dir="ltr">Authority</span> و <span dir="ltr">Transaction Boundary</span> را نابود می‌کند.
 
-## <bdi dir="ltr">10. Trigger</bdi>، <bdi dir="ltr">Decision</bdi> و <bdi dir="ltr">Fact</bdi> را جدا کن
+## <span dir="ltr">10. Trigger</span>، <span dir="ltr">Decision</span> و <span dir="ltr">Fact</span> را جدا کن
 
 نمونهٔ عملیات واریز اعطا:
 
-| <bdi dir="ltr">Role</bdi> | <bdi dir="ltr">Example</bdi> |
+| <span dir="ltr">Role</span> | <span dir="ltr">Example</span> |
 |---|---|
-| <bdi dir="ltr">Trigger owner</bdi> | <bdi dir="ltr">Lending process decides it is time to request disbursement</bdi> |
-| <bdi dir="ltr">Command</bdi> | <bdi dir="ltr">`CreditDepositAccount`</bdi> |
-| <bdi dir="ltr">Decision authority</bdi> | <bdi dir="ltr">Deposits decides whether account can accept credit now</bdi> |
-| <bdi dir="ltr">State owner</bdi> | <bdi dir="ltr">Deposits records transaction and updates its balance</bdi> |
-| <bdi dir="ltr">Resulting fact</bdi> | <bdi dir="ltr">`DepositCredited`</bdi> <bdi dir="ltr">or explicit rejection fact/result</bdi> |
-| <bdi dir="ltr">Process observer</bdi> | <bdi dir="ltr">Lending/Process Manager advances its own status</bdi> |
-| <bdi dir="ltr">Financial consumer</bdi> | <bdi dir="ltr">Accounting produces relevant Journal from valid facts</bdi> |
+| <span dir="ltr">Trigger owner</span> | <span dir="ltr">Lending process decides it is time to request disbursement</span> |
+| <span dir="ltr">Command</span> | <span dir="ltr">`CreditDepositAccount`</span> |
+| <span dir="ltr">Decision authority</span> | <span dir="ltr">Deposits decides whether account can accept credit now</span> |
+| <span dir="ltr">State owner</span> | <span dir="ltr">Deposits records transaction and updates its balance</span> |
+| <span dir="ltr">Resulting fact</span> | <span dir="ltr">`DepositCredited`</span> <span dir="ltr">or explicit rejection fact/result</span> |
+| <span dir="ltr">Process observer</span> | <span dir="ltr">Lending/Process Manager advances its own status</span> |
+| <span dir="ltr">Financial consumer</span> | <span dir="ltr">Accounting produces relevant Journal from valid facts</span> |
 
-این تفکیک مانع آن می‌شود که <bdi dir="ltr">Orchestrator</bdi> به <bdi dir="ltr">Super-Domain</bdi> و مالک همه‌چیز تبدیل شود.
+این تفکیک مانع آن می‌شود که <span dir="ltr">Orchestrator</span> به <span dir="ltr">Super-Domain</span> و مالک همه‌چیز تبدیل شود.
 
-## <bdi dir="ltr">11. Correction</bdi> و <bdi dir="ltr">Reconciliation</bdi> بخشی از <bdi dir="ltr">Ownership</bdi> است
+## <span dir="ltr">11. Correction</span> و <span dir="ltr">Reconciliation</span> بخشی از <span dir="ltr">Ownership</span> است
 
-<bdi dir="ltr">Owner</bdi> فقط <bdi dir="ltr">Happy Path</bdi> را مالک نیست. باید روشن باشد:
+<span dir="ltr">Owner</span> فقط <span dir="ltr">Happy Path</span> را مالک نیست. باید روشن باشد:
 
 - چه کسی خطا را تشخیص می‌دهد؟
-- چه کسی مجاز به <bdi dir="ltr">Correction</bdi> است؟
-- <bdi dir="ltr">Correction</bdi> با <bdi dir="ltr">Update</bdi>، <bdi dir="ltr">Reversal</bdi> یا <bdi dir="ltr">Compensating Fact</bdi> انجام می‌شود؟
-- <bdi dir="ltr">Audit trail</bdi> کجاست؟
-- چه کسی اختلاف میان <bdi dir="ltr">Operational</bdi> و <bdi dir="ltr">Accounting Projection</bdi> را پیگیری می‌کند؟
+- چه کسی مجاز به <span dir="ltr">Correction</span> است؟
+- <span dir="ltr">Correction</span> با <span dir="ltr">Update</span>، <span dir="ltr">Reversal</span> یا <span dir="ltr">Compensating Fact</span> انجام می‌شود؟
+- <span dir="ltr">Audit trail</span> کجاست؟
+- چه کسی اختلاف میان <span dir="ltr">Operational</span> و <span dir="ltr">Accounting Projection</span> را پیگیری می‌کند؟
 
-جزئیات <bdi dir="ltr">Accounting/Reversal</bdi> در <bdi dir="ltr">Sprint</bdi>های بعد می‌آید، اما در <bdi dir="ltr">Matrix</bdi> حداقل <bdi dir="ltr">`Reconciliation owner`</bdi> و <bdi dir="ltr">`Open Question`</bdi> باید ثبت شود.
+جزئیات <span dir="ltr">Accounting/Reversal</span> در <span dir="ltr">Sprint</span>های بعد می‌آید، اما در <span dir="ltr">Matrix</span> حداقل <span dir="ltr">`Reconciliation owner`</span> و <span dir="ltr">`Open Question`</span> باید ثبت شود.
 
 ## 12. خطاهای رایج
 
 ### مالکیت مشترک
 
-«<bdi dir="ltr">Lending</bdi> و <bdi dir="ltr">Accounting</bdi> هر دو مالک ماندهٔ تسهیلات‌اند» ابهام <bdi dir="ltr">Semantic</bdi> را پنهان می‌کند. دو مانده را نام‌گذاری کن.
+«<span dir="ltr">Lending</span> و <span dir="ltr">Accounting</span> هر دو مالک ماندهٔ تسهیلات‌اند» ابهام <span dir="ltr">Semantic</span> را پنهان می‌کند. دو مانده را نام‌گذاری کن.
 
-### <bdi dir="ltr">Database</bdi> برابر <bdi dir="ltr">Owner</bdi>
+### <span dir="ltr">Database</span> برابر <span dir="ltr">Owner</span>
 
-داشتن جدول یا <bdi dir="ltr">Replica</bdi> به معنی <bdi dir="ltr">Authority</bdi> نیست. در <bdi dir="ltr">Migration</bdi> ممکن است رکورد فیزیکی موقتاً جای دیگری باشد.
+داشتن جدول یا <span dir="ltr">Replica</span> به معنی <span dir="ltr">Authority</span> نیست. در <span dir="ltr">Migration</span> ممکن است رکورد فیزیکی موقتاً جای دیگری باشد.
 
-### <bdi dir="ltr">Event Consumer</bdi> برابر <bdi dir="ltr">Owner</bdi>
+### <span dir="ltr">Event Consumer</span> برابر <span dir="ltr">Owner</span>
 
-<bdi dir="ltr">Accounting</bdi> با مصرف <bdi dir="ltr">`LoanGranted`</bdi> مالک <bdi dir="ltr">Loan</bdi> نمی‌شود. <bdi dir="ltr">Projection</bdi> نیز <bdi dir="ltr">Authority</bdi> نمی‌سازد.
+<span dir="ltr">Accounting</span> با مصرف <span dir="ltr">`LoanGranted`</span> مالک <span dir="ltr">Loan</span> نمی‌شود. <span dir="ltr">Projection</span> نیز <span dir="ltr">Authority</span> نمی‌سازد.
 
-### <bdi dir="ltr">Orchestrator</bdi> برابر <bdi dir="ltr">Owner</bdi>
+### <span dir="ltr">Orchestrator</span> برابر <span dir="ltr">Owner</span>
 
-<bdi dir="ltr">Process Manager Step Status</bdi> را نگه می‌دارد؛ <bdi dir="ltr">Fact</bdi>های <bdi dir="ltr">Domain</bdi> را جعل یا تصاحب نمی‌کند.
+<span dir="ltr">Process Manager Step Status</span> را نگه می‌دارد؛ <span dir="ltr">Fact</span>های <span dir="ltr">Domain</span> را جعل یا تصاحب نمی‌کند.
 
-### <bdi dir="ltr">Snapshot</bdi> بدون زمان و <bdi dir="ltr">Version</bdi>
+### <span dir="ltr">Snapshot</span> بدون زمان و <span dir="ltr">Version</span>
 
-کپی بدون <bdi dir="ltr">Provenance</bdi> به‌سرعت به <bdi dir="ltr">Master</bdi> پنهان و متناقض تبدیل می‌شود.
+کپی بدون <span dir="ltr">Provenance</span> به‌سرعت به <span dir="ltr">Master</span> پنهان و متناقض تبدیل می‌شود.
 
-### «همه‌چیز را همگام <bdi dir="ltr">Query</bdi> کنیم»
+### «همه‌چیز را همگام <span dir="ltr">Query</span> کنیم»
 
-<bdi dir="ltr">Query</bdi> زنده برای <bdi dir="ltr">Product terms</bdi> قرارداد گذشته یا شواهد تصمیم می‌تواند تاریخچه را خراب کند. <bdi dir="ltr">Reference</bdi>، <bdi dir="ltr">Snapshot</bdi> و <bdi dir="ltr">Cache</bdi> باید بر اساس <bdi dir="ltr">Use Case</bdi> انتخاب شوند.
+<span dir="ltr">Query</span> زنده برای <span dir="ltr">Product terms</span> قرارداد گذشته یا شواهد تصمیم می‌تواند تاریخچه را خراب کند. <span dir="ltr">Reference</span>، <span dir="ltr">Snapshot</span> و <span dir="ltr">Cache</span> باید بر اساس <span dir="ltr">Use Case</span> انتخاب شوند.
 
-### <bdi dir="ltr">RACI</bdi> به‌جای <bdi dir="ltr">Data Authority</bdi>
+### <span dir="ltr">RACI</span> به‌جای <span dir="ltr">Data Authority</span>
 
-<bdi dir="ltr">RACI</bdi> سازمانی مفید است، ولی نمی‌گوید کدام <bdi dir="ltr">Context</bdi> مجاز به <bdi dir="ltr">Transition State</bdi> و انتشار <bdi dir="ltr">Fact</bdi> است. هر دو <bdi dir="ltr">Artifact</bdi> ممکن است لازم باشند.
+<span dir="ltr">RACI</span> سازمانی مفید است، ولی نمی‌گوید کدام <span dir="ltr">Context</span> مجاز به <span dir="ltr">Transition State</span> و انتشار <span dir="ltr">Fact</span> است. هر دو <span dir="ltr">Artifact</span> ممکن است لازم باشند.
 
-## 13. روش تکمیل <bdi dir="ltr">Ownership Matrix</bdi>
+## 13. روش تکمیل <span dir="ltr">Ownership Matrix</span>
 
 برای هر ردیف:
 
-1. <bdi dir="ltr">Semantic</bdi> را آن‌قدر دقیق کن که یک <bdi dir="ltr">Fact</bdi> باشد.
-2. <bdi dir="ltr">Context Authority</bdi> را انتخاب کن.
-3. دیگر <bdi dir="ltr">Context</bdi>ها را <bdi dir="ltr">`Reference/Snapshot/Projection/Cache/Consumer/Not Allowed`</bdi> علامت بزن.
-4. <bdi dir="ltr">Freshness</bdi> و <bdi dir="ltr">History rule</bdi> را ثبت کن.
-5. <bdi dir="ltr">Decision</bdi>های وابسته را جدا بنویس.
-6. <bdi dir="ltr">Reconciliation owner</bdi> و <bdi dir="ltr">Correction path</bdi> را مشخص یا <bdi dir="ltr">Open Question</bdi> کن.
-7. با یک <bdi dir="ltr">Failure</bdi> یا <bdi dir="ltr">Change</bdi> واقعی تصمیم را آزمایش کن.
+1. <span dir="ltr">Semantic</span> را آن‌قدر دقیق کن که یک <span dir="ltr">Fact</span> باشد.
+2. <span dir="ltr">Context Authority</span> را انتخاب کن.
+3. دیگر <span dir="ltr">Context</span>ها را <span dir="ltr">`Reference/Snapshot/Projection/Cache/Consumer/Not Allowed`</span> علامت بزن.
+4. <span dir="ltr">Freshness</span> و <span dir="ltr">History rule</span> را ثبت کن.
+5. <span dir="ltr">Decision</span>های وابسته را جدا بنویس.
+6. <span dir="ltr">Reconciliation owner</span> و <span dir="ltr">Correction path</span> را مشخص یا <span dir="ltr">Open Question</span> کن.
+7. با یک <span dir="ltr">Failure</span> یا <span dir="ltr">Change</span> واقعی تصمیم را آزمایش کن.
 
 ## 14. تمرین هدایت‌شده
 
-برای <bdi dir="ltr">`Product Definition`</bdi> و <bdi dir="ltr">`Executed Agreement Terms`</bdi> دو ردیف مستقل بساز. اگر <bdi dir="ltr">Owner</bdi> و <bdi dir="ltr">Lifecycle</bdi> هر دو را یکی نوشتی، سناریوی انتشار <bdi dir="ltr">ProductVersion</bdi> جدید پس از انعقاد قرارداد را اجرا کن و پاسخ را بازبینی کن.
+برای <span dir="ltr">`Product Definition`</span> و <span dir="ltr">`Executed Agreement Terms`</span> دو ردیف مستقل بساز. اگر <span dir="ltr">Owner</span> و <span dir="ltr">Lifecycle</span> هر دو را یکی نوشتی، سناریوی انتشار <span dir="ltr">ProductVersion</span> جدید پس از انعقاد قرارداد را اجرا کن و پاسخ را بازبینی کن.
 
 ## 15. تمرین مستقل
 
-[<bdi dir="ltr">Day 04 Exercise</bdi> — <bdi dir="ltr">Ownership Matrix</bdi>](../exercises/day-04-ownership-matrix.md) را انجام بده. حداقل ۱۲ <bdi dir="ltr">Fact</bdi> و پنج <bdi dir="ltr">Decision</bdi> را تحلیل کن.
+[<span dir="ltr">Day 04 Exercise</span> — <span dir="ltr">Ownership Matrix</span>](../exercises/day-04-ownership-matrix.md) را انجام بده. حداقل ۱۲ <span dir="ltr">Fact</span> و پنج <span dir="ltr">Decision</span> را تحلیل کن.
 
 ## 16. معیار ارزیابی
 
 | معیار | امتیاز |
 |---|---:|
-| <bdi dir="ltr">Semantic</bdi> دقیق و یک <bdi dir="ltr">Authority</bdi> | ۳ |
-| تفکیک <bdi dir="ltr">Data/Decision/Process ownership</bdi> | ۲ |
-| استفادهٔ درست از <bdi dir="ltr">Copy types</bdi> | ۲ |
-| <bdi dir="ltr">Freshness/History/Reconciliation</bdi> | ۲ |
-| تشخیص <bdi dir="ltr">Forbidden ownership</bdi> | ۱ |
+| <span dir="ltr">Semantic</span> دقیق و یک <span dir="ltr">Authority</span> | ۳ |
+| تفکیک <span dir="ltr">Data/Decision/Process ownership</span> | ۲ |
+| استفادهٔ درست از <span dir="ltr">Copy types</span> | ۲ |
+| <span dir="ltr">Freshness/History/Reconciliation</span> | ۲ |
+| تشخیص <span dir="ltr">Forbidden ownership</span> | ۱ |
 | **جمع** | **۱۰** |
 
-حد عبور: ۷ از ۱۰. وجود <bdi dir="ltr">Authority</bdi> مشترک برای یک <bdi dir="ltr">Fact</bdi> با معنای یکسان <bdi dir="ltr">Critical Error</bdi> است.
+حد عبور: ۷ از ۱۰. وجود <span dir="ltr">Authority</span> مشترک برای یک <span dir="ltr">Fact</span> با معنای یکسان <span dir="ltr">Critical Error</span> است.
 
 ## 17. آزمون خروج
 
-درس را ببند و [<bdi dir="ltr">Day 04 Exit Ticket</bdi>](../quizzes/day-04-exit-ticket.md) را پاسخ بده.
+درس را ببند و [<span dir="ltr">Day 04 Exit Ticket</span>](../quizzes/day-04-exit-ticket.md) را پاسخ بده.
 
 ## 18. منابع
 
-- [<bdi dir="ltr">DDD Reference</bdi> — <bdi dir="ltr">Bounded Context and Context Map</bdi>](https://www.domainlanguage.com/wp-content/uploads/2016/05/DDD_Reference_2015-03.pdf)
-- [<bdi dir="ltr">BIAN Service Landscape 14.0</bdi>](https://bian.org/deliverables/service-landscape/) برای <bdi dir="ltr">Gap Check</bdi> مسئولیت‌ها، نه واگذاری <bdi dir="ltr">Ownership</bdi> محلی
+- [<span dir="ltr">DDD Reference</span> — <span dir="ltr">Bounded Context and Context Map</span>](https://www.domainlanguage.com/wp-content/uploads/2016/05/DDD_Reference_2015-03.pdf)
+- [<span dir="ltr">BIAN Service Landscape 14.0</span>](https://bian.org/deliverables/service-landscape/) برای <span dir="ltr">Gap Check</span> مسئولیت‌ها، نه واگذاری <span dir="ltr">Ownership</span> محلی
 
-الگوی <bdi dir="ltr">Copy</bdi> و ماتریس <bdi dir="ltr">Authority</bdi> در این درس یک <bdi dir="ltr">Synthesis</bdi> معماری برای <bdi dir="ltr">Lab</bdi> است و باید با مقررات، خبرگان و <bdi dir="ltr">Operating Model</bdi> بانک اعتبارسنجی شود.
+الگوی <span dir="ltr">Copy</span> و ماتریس <span dir="ltr">Authority</span> در این درس یک <span dir="ltr">Synthesis</span> معماری برای <span dir="ltr">Lab</span> است و باید با مقررات، خبرگان و <span dir="ltr">Operating Model</span> بانک اعتبارسنجی شود.
 
 </div>

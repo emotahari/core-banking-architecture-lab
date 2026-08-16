@@ -1,15 +1,15 @@
 <!-- bidi: rtl; code: ltr -->
 <div dir="rtl" align="right">
 
-# <bdi dir="ltr">Day 01 Submission</bdi> — <bdi dir="ltr">Architecture Baseline</bdi>
+# <span dir="ltr">Day 01 Submission</span> — <span dir="ltr">Architecture Baseline</span>
 
-- <bdi dir="ltr">Status: Not submitted</bdi>
-- <bdi dir="ltr">Started at:</bdi>
-- <bdi dir="ltr">Time spent:</bdi>
+- <span dir="ltr">Status: Not submitted</span>
+- <span dir="ltr">Started at:</span>
+- <span dir="ltr">Time spent:</span>
 
 ## پاسخ خام؛ قبل از درس
 
-### <bdi dir="ltr">1. Capability</bdi>ها
+### <span dir="ltr">1. Capability</span>ها
 
 امکان تعریف مشتری جدید و واکشی اطلاعات مشتری فراهم باشد سامانه تسهیلات امکان تعریف محصول مرابحه را داشته باشد، ورک فلو تصویب تا دریافت اقساط را پشتیبانی کند، امکان تولید قرارداد برای تسیلات با مشتری فراهم باشد، امکان انتقال وجه از سرفصل به حساب سپرده قابل انجام و رهگیری باشد، بتواند اسناد حسابداری اعطا را ثبت کند.
 
@@ -29,7 +29,7 @@
 
 درخواست انجام تراکنش انجام تراکنش و متاثر کردن مانده ثبت اسناد
 
-### <bdi dir="ltr">6. API/Command</bdi> و <bdi dir="ltr">Event</bdi>
+### <span dir="ltr">6. API/Command</span> و <span dir="ltr">Event</span>
 
 درخواست تولید قرارداد و ثبت اسناد حسابداری ایونت، این سوال رو درست متوجه نشدم
 
@@ -37,11 +37,11 @@
 
 امکان استعلام واریز بر اساس کد یکتا و ادامه فرایند بر اساس نتیجه استعلام
 
-### 8. زمان و نحوهٔ درگیری <bdi dir="ltr">Accounting</bdi>
+### 8. زمان و نحوهٔ درگیری <span dir="ltr">Accounting</span>
 
 ارکسترتور انجام تراکنش بعد انجام انتقال وجه به سپرده
 
-### <bdi dir="ltr">9. Diagram</bdi>
+### <span dir="ltr">9. Diagram</span>
 
 
 </div>
@@ -59,9 +59,9 @@
 
 ### 10. فرض‌های پنهان
 
-1. <bdi dir="ltr">TODO</bdi>
-2. <bdi dir="ltr">TODO</bdi>
-3. <bdi dir="ltr">TODO</bdi>
+1. <span dir="ltr">TODO</span>
+2. <span dir="ltr">TODO</span>
+3. <span dir="ltr">TODO</span>
 
 ---
 
@@ -73,18 +73,18 @@
 
 توانمندی ها رو به چیزی شبیه توانایی مدیریت تسهیلات و  توانایی مدیریت سپرده تغییر میدم، اجزای منطقس میشه تسهیلات و سپرده
 
-### زنجیرهٔ <bdi dir="ltr">Traceability</bdi>
+### زنجیرهٔ <span dir="ltr">Traceability</span>
 
-| <bdi dir="ltr">Capability</bdi> | <bdi dir="ltr">Domain/Subdomain</bdi> | <bdi dir="ltr">Bounded Context</bdi> | <bdi dir="ltr">Module/Service Candidate</bdi> | <bdi dir="ltr">Use Case</bdi> | <bdi dir="ltr">Command/Query</bdi> | <bdi dir="ltr">API/Event</bdi> |
+| <span dir="ltr">Capability</span> | <span dir="ltr">Domain/Subdomain</span> | <span dir="ltr">Bounded Context</span> | <span dir="ltr">Module/Service Candidate</span> | <span dir="ltr">Use Case</span> | <span dir="ltr">Command/Query</span> | <span dir="ltr">API/Event</span> |
 |---|---|---|---|---|---|---|
 | توانایی مدیریت تسهیلات | تسهیلات | به روزرسانی مانده تسهیلات | سرویس  | سرویس مسدودسازی مانده سپردخ | درخواست تغییر وضعیت مانده سپرده | مانده سپرده مسدود گردید |
 
-### کدام بخش هنوز <bdi dir="ltr">Hypothesis</bdi> است؟
+### کدام بخش هنوز <span dir="ltr">Hypothesis</span> است؟
 
-<bdi dir="ltr">TODO</bdi>
+<span dir="ltr">TODO</span>
 
 ### پرسش‌هایی که باید در هفته‌های بعد پاسخ داده شوند
 
-<bdi dir="ltr">TODO</bdi>
+<span dir="ltr">TODO</span>
 
 </div>

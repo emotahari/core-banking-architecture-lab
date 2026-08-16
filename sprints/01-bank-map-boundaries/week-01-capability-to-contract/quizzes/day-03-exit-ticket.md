@@ -1,28 +1,28 @@
 <!-- bidi: rtl; code: ltr -->
 <div dir="rtl" align="right">
 
-# <bdi dir="ltr">Day 03 Exit Ticket</bdi>
+# <span dir="ltr">Day 03 Exit Ticket</span>
 
-- <bdi dir="ltr">Timebox: 5 minutes</bdi>
+- <span dir="ltr">Timebox: 5 minutes</span>
 - بدون مراجعه به درس
 
 ## پرسش‌ها
 
-1. <bdi dir="ltr">Traceability</bdi> دوطرفه یعنی چه؟
-2. بین <bdi dir="ltr">Capability</bdi> و <bdi dir="ltr">API</bdi> حداقل چهار مرحلهٔ میانی نام ببر.
-3. تفاوت <bdi dir="ltr">`PlaceFundsHold`</bdi> و <bdi dir="ltr">`FundsHeld`</bdi> چیست؟
-4. چرا <bdi dir="ltr">`ProcessLoan`</bdi> نام ضعیفی برای <bdi dir="ltr">Event</bdi> است؟
-5. در مسدودی قضایی، <bdi dir="ltr">Owner</bdi> اعتبار حکم و <bdi dir="ltr">Owner available balance</bdi> را مشخص کن.
+1. <span dir="ltr">Traceability</span> دوطرفه یعنی چه؟
+2. بین <span dir="ltr">Capability</span> و <span dir="ltr">API</span> حداقل چهار مرحلهٔ میانی نام ببر.
+3. تفاوت <span dir="ltr">`PlaceFundsHold`</span> و <span dir="ltr">`FundsHeld`</span> چیست؟
+4. چرا <span dir="ltr">`ProcessLoan`</span> نام ضعیفی برای <span dir="ltr">Event</span> است؟
+5. در مسدودی قضایی، <span dir="ltr">Owner</span> اعتبار حکم و <span dir="ltr">Owner available balance</span> را مشخص کن.
 6. دو نگاشت یک‌به‌یک ممنوع این درس را بنویس.
-7. یک <bdi dir="ltr">Contract Card</bdi> حداقل چه چهار فیلد معنایی نیاز دارد؟
+7. یک <span dir="ltr">Contract Card</span> حداقل چه چهار فیلد معنایی نیاز دارد؟
 
-## <bdi dir="ltr">Rubric</bdi>
+## <span dir="ltr">Rubric</span>
 
 | حوزه | امتیاز |
 |---|---:|
-| <bdi dir="ltr">Chain</bdi> و <bdi dir="ltr">Reverse trace</bdi> | ۲ |
-| <bdi dir="ltr">Command/Query/Event</bdi> | ۲ |
-| <bdi dir="ltr">Ownership</bdi> | ۲ |
+| <span dir="ltr">Chain</span> و <span dir="ltr">Reverse trace</span> | ۲ |
+| <span dir="ltr">Command/Query/Event</span> | ۲ |
+| <span dir="ltr">Ownership</span> | ۲ |
 | تشخیص پرش و نگاشت غلط | ۲ |
 | **جمع** | **۸** |
 

@@ -1,21 +1,21 @@
 <!-- bidi: rtl; code: ltr -->
 <div dir="rtl" align="right">
 
-# <bdi dir="ltr">Day 02</bdi> — <bdi dir="ltr">Capability</bdi> در برابر <bdi dir="ltr">Process</bdi>، <bdi dir="ltr">Business Service</bdi> و <bdi dir="ltr">System</bdi>
+# <span dir="ltr">Day 02</span> — <span dir="ltr">Capability</span> در برابر <span dir="ltr">Process</span>، <span dir="ltr">Business Service</span> و <span dir="ltr">System</span>
 
-- <bdi dir="ltr">Day budget: 45 minutes</bdi> — <bdi dir="ltr">22 lesson</bdi> + <bdi dir="ltr">18 exercise</bdi> + <bdi dir="ltr">5 exit ticket</bdi>
-- <bdi dir="ltr">Output: Distinction Matrix</bdi> برای ۱۵ مثال بانکی
-- <bdi dir="ltr">Banking case:</bdi> افتتاح سپرده، اعطای تسهیلات، انتقال وجه و مسدودی قضایی
+- <span dir="ltr">Day budget: 45 minutes</span> — <span dir="ltr">22 lesson</span> + <span dir="ltr">18 exercise</span> + <span dir="ltr">5 exit ticket</span>
+- <span dir="ltr">Output: Distinction Matrix</span> برای ۱۵ مثال بانکی
+- <span dir="ltr">Banking case:</span> افتتاح سپرده، اعطای تسهیلات، انتقال وجه و مسدودی قضایی
 
 ## 1. هدف قابل سنجش
 
 در پایان باید بتوانی:
 
-1. <bdi dir="ltr">Business Capability</bdi> را بدون استفاده از نام سامانه یا فناوری تعریف کنی.
-2. <bdi dir="ltr">Capability</bdi> را از <bdi dir="ltr">Process</bdi>، <bdi dir="ltr">Value Stream</bdi>، <bdi dir="ltr">Business Service</bdi>، <bdi dir="ltr">Product</bdi>، <bdi dir="ltr">System</bdi>، <bdi dir="ltr">Organization Unit</bdi> و <bdi dir="ltr">API</bdi> جدا کنی.
+1. <span dir="ltr">Business Capability</span> را بدون استفاده از نام سامانه یا فناوری تعریف کنی.
+2. <span dir="ltr">Capability</span> را از <span dir="ltr">Process</span>، <span dir="ltr">Value Stream</span>، <span dir="ltr">Business Service</span>، <span dir="ltr">Product</span>، <span dir="ltr">System</span>، <span dir="ltr">Organization Unit</span> و <span dir="ltr">API</span> جدا کنی.
 3. یک عبارت مبهم بانکی را با آزمون‌های مشخص طبقه‌بندی کنی.
-4. برای هر <bdi dir="ltr">Capability</bdi>، <bdi dir="ltr">Outcome</bdi>، <bdi dir="ltr">Owner</bdi> و <bdi dir="ltr">KPI</bdi> اولیه پیشنهاد بدهی.
-5. تشخیص بدهی چه زمانی یک نام ظاهراً دامینی هنوز فقط نام <bdi dir="ltr">Legacy Application</bdi> است.
+4. برای هر <span dir="ltr">Capability</span>، <span dir="ltr">Outcome</span>، <span dir="ltr">Owner</span> و <span dir="ltr">KPI</span> اولیه پیشنهاد بدهی.
+5. تشخیص بدهی چه زمانی یک نام ظاهراً دامینی هنوز فقط نام <span dir="ltr">Legacy Application</span> است.
 
 ## 2. مسئلهٔ واقعی
 
@@ -24,15 +24,15 @@
 - سامانهٔ تسهیلات
 - ادارهٔ چک
 - سرویس افتتاح حساب
-- <bdi dir="ltr">API</bdi> استعلام مانده
+- <span dir="ltr">API</span> استعلام مانده
 - فرایند انتقال وجه
 - محصول سپردهٔ کوتاه‌مدت
 
-اگر همهٔ این موارد را در یک سطح از <bdi dir="ltr">Diagram</bdi> بگذاریم، <bdi dir="ltr">Map</bdi> از همان ابتدا چند نوع چیز متفاوت را مخلوط کرده است. نتیجه این می‌شود که تیم‌ها از روی نام‌های موجود <bdi dir="ltr">Service</bdi> می‌سازند، مالکیت تصمیم مبهم می‌ماند و تغییر یک <bdi dir="ltr">Capability</bdi> به چند سامانهٔ بدون مرز پخش می‌شود.
+اگر همهٔ این موارد را در یک سطح از <span dir="ltr">Diagram</span> بگذاریم، <span dir="ltr">Map</span> از همان ابتدا چند نوع چیز متفاوت را مخلوط کرده است. نتیجه این می‌شود که تیم‌ها از روی نام‌های موجود <span dir="ltr">Service</span> می‌سازند، مالکیت تصمیم مبهم می‌ماند و تغییر یک <span dir="ltr">Capability</span> به چند سامانهٔ بدون مرز پخش می‌شود.
 
-## 3. تعریف عملیاتی <bdi dir="ltr">Business Capability</bdi>
+## 3. تعریف عملیاتی <span dir="ltr">Business Capability</span>
 
-<bdi dir="ltr">Business Capability</bdi> بیان می‌کند **سازمان چه توانایی نسبتاً پایداری باید داشته باشد تا <bdi dir="ltr">Outcome</bdi> کسب‌وکاری تولید کند**؛ مستقل از اینکه امروز این توانایی با کدام فرایند، تیم، نرم‌افزار، <bdi dir="ltr">Vendor</bdi> یا فناوری اجرا می‌شود.
+<span dir="ltr">Business Capability</span> بیان می‌کند **سازمان چه توانایی نسبتاً پایداری باید داشته باشد تا <span dir="ltr">Outcome</span> کسب‌وکاری تولید کند**؛ مستقل از اینکه امروز این توانایی با کدام فرایند، تیم، نرم‌افزار، <span dir="ltr">Vendor</span> یا فناوری اجرا می‌شود.
 
 نمونه‌های مناسب:
 
@@ -45,19 +45,19 @@
 
 نمونه‌های نامناسب:
 
-- <bdi dir="ltr">`LoanSystem`</bdi>؛ نام راه‌حل یا <bdi dir="ltr">Application</bdi> است.
-- «بررسی درخواست در سه مرحله»؛ <bdi dir="ltr">Process</bdi> است.
-- <bdi dir="ltr">`POST /loans`</bdi>؛ <bdi dir="ltr">Contract</bdi> فنی است.
+- <span dir="ltr">`LoanSystem`</span>؛ نام راه‌حل یا <span dir="ltr">Application</span> است.
+- «بررسی درخواست در سه مرحله»؛ <span dir="ltr">Process</span> است.
+- <span dir="ltr">`POST /loans`</span>؛ <span dir="ltr">Contract</span> فنی است.
 - «ادارهٔ اعتبارات»؛ واحد سازمانی است.
-- «وام مرابحهٔ فرهنگیان»؛ <bdi dir="ltr">Product/Offering</bdi> است.
+- «وام مرابحهٔ فرهنگیان»؛ <span dir="ltr">Product/Offering</span> است.
 
-<bdi dir="ltr">Capability</bdi> پاسخ <bdi dir="ltr">`what`</bdi> سازمانی است، نه <bdi dir="ltr">`how`</bdi> اجرایی.
+<span dir="ltr">Capability</span> پاسخ <span dir="ltr">`what`</span> سازمانی است، نه <span dir="ltr">`how`</span> اجرایی.
 
 ## 4. هفت مفهوم مجاور
 
-### <bdi dir="ltr">4.1 Process</bdi>
+### <span dir="ltr">4.1 Process</span>
 
-<bdi dir="ltr">Process</bdi> توالی فعالیت‌ها، تصمیم‌ها و <bdi dir="ltr">Hand-off</bdi>ها برای رسیدن به نتیجه است. <bdi dir="ltr">Process</bdi> تغییرپذیرتر از <bdi dir="ltr">Capability</bdi> است.
+<span dir="ltr">Process</span> توالی فعالیت‌ها، تصمیم‌ها و <span dir="ltr">Hand-off</span>ها برای رسیدن به نتیجه است. <span dir="ltr">Process</span> تغییرپذیرتر از <span dir="ltr">Capability</span> است.
 
 
 </div>
@@ -74,83 +74,83 @@ Process: دریافت درخواست → احراز هویت → کنترل مح
 <div dir="rtl" align="right">
 
 
-با حذف امضای کاغذی و افزودن <bdi dir="ltr">Video KYC</bdi>، <bdi dir="ltr">Process</bdi> تغییر می‌کند؛ <bdi dir="ltr">Capability</bdi> افتتاح و نگهداری رابطهٔ سپرده باقی می‌ماند.
+با حذف امضای کاغذی و افزودن <span dir="ltr">Video KYC</span>، <span dir="ltr">Process</span> تغییر می‌کند؛ <span dir="ltr">Capability</span> افتتاح و نگهداری رابطهٔ سپرده باقی می‌ماند.
 
-### <bdi dir="ltr">4.2 Value Stream</bdi>
+### <span dir="ltr">4.2 Value Stream</span>
 
-<bdi dir="ltr">Value Stream</bdi> جریان ایجاد ارزش برای ذی‌نفع از <bdi dir="ltr">Trigger</bdi> تا <bdi dir="ltr">Outcome</bdi> است و می‌تواند چند <bdi dir="ltr">Capability</bdi> و چند <bdi dir="ltr">Process</bdi> را درگیر کند. «از درخواست تسهیلات تا دریافت وجه» یک <bdi dir="ltr">Value Stream</bdi> است، نه یک <bdi dir="ltr">Capability</bdi> منفرد.
+<span dir="ltr">Value Stream</span> جریان ایجاد ارزش برای ذی‌نفع از <span dir="ltr">Trigger</span> تا <span dir="ltr">Outcome</span> است و می‌تواند چند <span dir="ltr">Capability</span> و چند <span dir="ltr">Process</span> را درگیر کند. «از درخواست تسهیلات تا دریافت وجه» یک <span dir="ltr">Value Stream</span> است، نه یک <span dir="ltr">Capability</span> منفرد.
 
-### <bdi dir="ltr">4.3 Business Service</bdi>
+### <span dir="ltr">4.3 Business Service</span>
 
-<bdi dir="ltr">Business Service</bdi> نمای قابل‌مصرف یک یا چند <bdi dir="ltr">Capability</bdi> برای مشتری یا شریک است. «خدمت انتقال آنی وجه» چیزی است که مصرف‌کننده دریافت می‌کند؛ پشت آن <bdi dir="ltr">Capability</bdi>های ثبت دستور پرداخت، کنترل ریسک، جابه‌جایی وجه، تسویه و رسیدگی به مغایرت قرار دارند.
+<span dir="ltr">Business Service</span> نمای قابل‌مصرف یک یا چند <span dir="ltr">Capability</span> برای مشتری یا شریک است. «خدمت انتقال آنی وجه» چیزی است که مصرف‌کننده دریافت می‌کند؛ پشت آن <span dir="ltr">Capability</span>های ثبت دستور پرداخت، کنترل ریسک، جابه‌جایی وجه، تسویه و رسیدگی به مغایرت قرار دارند.
 
-<bdi dir="ltr">Business Service</bdi> با <bdi dir="ltr">`REST service`</bdi> یا <bdi dir="ltr">Microservice</bdi> یکی نیست.
+<span dir="ltr">Business Service</span> با <span dir="ltr">`REST service`</span> یا <span dir="ltr">Microservice</span> یکی نیست.
 
-### <bdi dir="ltr">4.4 Product/Offering</bdi>
+### <span dir="ltr">4.4 Product/Offering</span>
 
-<bdi dir="ltr">Product</bdi> بسته‌ای از ویژگی، قیمت، شرایط و تعهد قابل‌عرضه به بازار است. «سپردهٔ بلندمدت یک‌ساله» محصول است. <bdi dir="ltr">Capability</bdi> «طراحی و مدیریت محصول» یا «نگهداری سپرده» است.
+<span dir="ltr">Product</span> بسته‌ای از ویژگی، قیمت، شرایط و تعهد قابل‌عرضه به بازار است. «سپردهٔ بلندمدت یک‌ساله» محصول است. <span dir="ltr">Capability</span> «طراحی و مدیریت محصول» یا «نگهداری سپرده» است.
 
-### <bdi dir="ltr">4.5 Organization Unit/Team</bdi>
+### <span dir="ltr">4.5 Organization Unit/Team</span>
 
-واحد سازمانی پاسخ می‌دهد چه کسانی مسئول کارند. <bdi dir="ltr">Capability</bdi> پاسخ می‌دهد سازمان چه توانایی‌ای لازم دارد. یک تیم ممکن است چند <bdi dir="ltr">Capability</bdi> را پوشش دهد و یک <bdi dir="ltr">Capability</bdi> ممکن است میان چند واحد پراکنده باشد؛ این پراکندگی خود یک <bdi dir="ltr">Risk</bdi> برای <bdi dir="ltr">Ownership</bdi> است.
+واحد سازمانی پاسخ می‌دهد چه کسانی مسئول کارند. <span dir="ltr">Capability</span> پاسخ می‌دهد سازمان چه توانایی‌ای لازم دارد. یک تیم ممکن است چند <span dir="ltr">Capability</span> را پوشش دهد و یک <span dir="ltr">Capability</span> ممکن است میان چند واحد پراکنده باشد؛ این پراکندگی خود یک <span dir="ltr">Risk</span> برای <span dir="ltr">Ownership</span> است.
 
-### <bdi dir="ltr">4.6 Application/System</bdi>
+### <span dir="ltr">4.6 Application/System</span>
 
-<bdi dir="ltr">System</bdi> پیاده‌سازی فعلی بخشی از توانمندی‌هاست. «سامانه سپرده» ممکن است افتتاح، مانده، سود، <bdi dir="ltr">Hold</bdi> و گزارش را یکجا انجام دهد. این واقعیت <bdi dir="ltr">Legacy</bdi> نه اثبات می‌کند همهٔ آن‌ها یک <bdi dir="ltr">Capability</bdi> هستند و نه اثبات می‌کند باید یک <bdi dir="ltr">Bounded Context</bdi> بمانند.
+<span dir="ltr">System</span> پیاده‌سازی فعلی بخشی از توانمندی‌هاست. «سامانه سپرده» ممکن است افتتاح، مانده، سود، <span dir="ltr">Hold</span> و گزارش را یکجا انجام دهد. این واقعیت <span dir="ltr">Legacy</span> نه اثبات می‌کند همهٔ آن‌ها یک <span dir="ltr">Capability</span> هستند و نه اثبات می‌کند باید یک <span dir="ltr">Bounded Context</span> بمانند.
 
-### <bdi dir="ltr">4.7 API/Event</bdi>
+### <span dir="ltr">4.7 API/Event</span>
 
-<bdi dir="ltr">API</bdi> و <bdi dir="ltr">Event</bdi> قرارداد تعامل‌اند. <bdi dir="ltr">`GET /accounts/{id}/balance`</bdi> یک <bdi dir="ltr">Query Contract</bdi> است؛ <bdi dir="ltr">`FundsHeld`</bdi> یک <bdi dir="ltr">Fact</bdi> منتشرشده است. هیچ‌کدام به‌تنهایی <bdi dir="ltr">Capability</bdi> نیستند.
+<span dir="ltr">API</span> و <span dir="ltr">Event</span> قرارداد تعامل‌اند. <span dir="ltr">`GET /accounts/{id}/balance`</span> یک <span dir="ltr">Query Contract</span> است؛ <span dir="ltr">`FundsHeld`</span> یک <span dir="ltr">Fact</span> منتشرشده است. هیچ‌کدام به‌تنهایی <span dir="ltr">Capability</span> نیستند.
 
 ## 5. جدول تشخیص سریع
 
 | نوع | پرسش تشخیصی | نسبت پایداری | مثال بانکی |
 |---|---|---|---|
-| <bdi dir="ltr">Capability</bdi> | بانک باید چه کاری بتواند انجام دهد؟ | زیاد | مدیریت تعهدات اعتباری |
-| <bdi dir="ltr">Value Stream</bdi> | ارزش از چه <bdi dir="ltr">Trigger</bdi> تا چه <bdi dir="ltr">Outcome</bdi> ایجاد می‌شود؟ | متوسط | از درخواست وام تا دریافت وجه |
-| <bdi dir="ltr">Process</bdi> | کار با چه توالی انجام می‌شود؟ | متوسط/کم | فرایند افتتاح سپرده |
-| <bdi dir="ltr">Business Service</bdi> | چه خدمتی به مصرف‌کننده عرضه می‌شود؟ | متوسط | انتقال آنی وجه |
-| <bdi dir="ltr">Product</bdi> | چه بستهٔ شرایطی عرضه می‌شود؟ | متوسط | سپردهٔ یک‌ساله |
-| <bdi dir="ltr">Org Unit</bdi> | چه گروهی پاسخ‌گوست؟ | کم/متوسط | ادارهٔ اعتبارات |
-| <bdi dir="ltr">System</bdi> | اکنون با چه راه‌حلی اجرا می‌شود؟ | کم | سامانهٔ تسهیلات |
-| <bdi dir="ltr">API/Event</bdi> | تعامل با چه <bdi dir="ltr">Contract</bdi>ی انجام می‌شود؟ | کم | <bdi dir="ltr">`LoanDisbursed`</bdi> |
+| <span dir="ltr">Capability</span> | بانک باید چه کاری بتواند انجام دهد؟ | زیاد | مدیریت تعهدات اعتباری |
+| <span dir="ltr">Value Stream</span> | ارزش از چه <span dir="ltr">Trigger</span> تا چه <span dir="ltr">Outcome</span> ایجاد می‌شود؟ | متوسط | از درخواست وام تا دریافت وجه |
+| <span dir="ltr">Process</span> | کار با چه توالی انجام می‌شود؟ | متوسط/کم | فرایند افتتاح سپرده |
+| <span dir="ltr">Business Service</span> | چه خدمتی به مصرف‌کننده عرضه می‌شود؟ | متوسط | انتقال آنی وجه |
+| <span dir="ltr">Product</span> | چه بستهٔ شرایطی عرضه می‌شود؟ | متوسط | سپردهٔ یک‌ساله |
+| <span dir="ltr">Org Unit</span> | چه گروهی پاسخ‌گوست؟ | کم/متوسط | ادارهٔ اعتبارات |
+| <span dir="ltr">System</span> | اکنون با چه راه‌حلی اجرا می‌شود؟ | کم | سامانهٔ تسهیلات |
+| <span dir="ltr">API/Event</span> | تعامل با چه <span dir="ltr">Contract</span>ی انجام می‌شود؟ | کم | <span dir="ltr">`LoanDisbursed`</span> |
 
-## 6. آزمون شش‌گانهٔ <bdi dir="ltr">Capability</bdi>
+## 6. آزمون شش‌گانهٔ <span dir="ltr">Capability</span>
 
 برای هر نام پیشنهادی شش سؤال بپرس:
 
-1. آیا <bdi dir="ltr">Outcome</bdi> کسب‌وکاری قابل تعریف دارد؟
+1. آیا <span dir="ltr">Outcome</span> کسب‌وکاری قابل تعریف دارد؟
 2. آیا بدون اشاره به فناوری یا نرم‌افزار قابل بیان است؟
-3. آیا با تغییر <bdi dir="ltr">Process</bdi> هنوز باقی می‌ماند؟
-4. آیا <bdi dir="ltr">Business Owner</bdi> قابل تعیین دارد؟
-5. آیا <bdi dir="ltr">KPI</bdi> یا سطح بلوغ برای آن قابل سنجش است؟
+3. آیا با تغییر <span dir="ltr">Process</span> هنوز باقی می‌ماند؟
+4. آیا <span dir="ltr">Business Owner</span> قابل تعیین دارد؟
+5. آیا <span dir="ltr">KPI</span> یا سطح بلوغ برای آن قابل سنجش است؟
 6. آیا نام آن «توانایی» را می‌رساند، نه یک شیء، کانال یا واحد؟
 
-اگر پاسخ چند سؤال منفی است، مورد احتمالاً <bdi dir="ltr">Capability</bdi> نیست یا نام‌گذاری آن ضعیف است.
+اگر پاسخ چند سؤال منفی است، مورد احتمالاً <span dir="ltr">Capability</span> نیست یا نام‌گذاری آن ضعیف است.
 
 ## 7. پانزده مثال طبقه‌بندی‌شده
 
 | عبارت | نوع غالب | دلیل کوتاه |
 |---|---|---|
-| مدیریت هویت و رابطهٔ مشتری | <bdi dir="ltr">Capability</bdi> | توانایی پایدار و <bdi dir="ltr">Outcome</bdi> محور |
-| افتتاح حساب غیرحضوری | <bdi dir="ltr">Business Service/Process</bdi> | خدمت قابل‌عرضه با جریان اجرایی مشخص |
-| سپردهٔ قرض‌الحسنه جاری | <bdi dir="ltr">Product</bdi> | بستهٔ شرایط و تعهد |
-| سامانهٔ سپرده | <bdi dir="ltr">System</bdi> | راه‌حل نرم‌افزاری موجود |
-| محاسبهٔ سود روزشمار | <bdi dir="ltr">Domain Rule/Process step</bdi> | قاعده یا فعالیت در <bdi dir="ltr">Capability</bdi> بزرگ‌تر |
-| نگهداری وجوه مشتری | <bdi dir="ltr">Capability</bdi> | توانایی بنیادی بانک |
-| ادارهٔ شعب | <bdi dir="ltr">Organization Unit</bdi> | ساختار پاسخ‌گویی |
-| خدمت مسدودی قضایی | <bdi dir="ltr">Business Service</bdi> | نمای خدمت برای مرجع/عملیات |
-| اعمال <bdi dir="ltr">Hold</bdi> روی ماندهٔ قابل برداشت | <bdi dir="ltr">Use Case</bdi> | قصد مشخص در یک <bdi dir="ltr">Context</bdi> |
-| <bdi dir="ltr">`POST /holds`</bdi> | <bdi dir="ltr">API Operation</bdi> | <bdi dir="ltr">Contract</bdi> فنی |
-| <bdi dir="ltr">`FundsHeld`</bdi> | <bdi dir="ltr">Event</bdi> | <bdi dir="ltr">Fact</bdi> رخ‌داده |
-| از درخواست وام تا واریز | <bdi dir="ltr">Value Stream</bdi> | جریان <bdi dir="ltr">End-to-end</bdi> ارزش |
-| ارزیابی اهلیت اعتباری | <bdi dir="ltr">Capability</bdi> | توانایی تصمیم‌گیری اعتباری |
-| کمیتهٔ اعتباری | <bdi dir="ltr">Organization/Decision mechanism</bdi> | سازوکار تصمیم فعلی |
-| <bdi dir="ltr">Core Banking</bdi> | <bdi dir="ltr">Portfolio/System landscape label</bdi> | برچسب سبد؛ نه <bdi dir="ltr">Capability</bdi> منفرد |
+| مدیریت هویت و رابطهٔ مشتری | <span dir="ltr">Capability</span> | توانایی پایدار و <span dir="ltr">Outcome</span> محور |
+| افتتاح حساب غیرحضوری | <span dir="ltr">Business Service/Process</span> | خدمت قابل‌عرضه با جریان اجرایی مشخص |
+| سپردهٔ قرض‌الحسنه جاری | <span dir="ltr">Product</span> | بستهٔ شرایط و تعهد |
+| سامانهٔ سپرده | <span dir="ltr">System</span> | راه‌حل نرم‌افزاری موجود |
+| محاسبهٔ سود روزشمار | <span dir="ltr">Domain Rule/Process step</span> | قاعده یا فعالیت در <span dir="ltr">Capability</span> بزرگ‌تر |
+| نگهداری وجوه مشتری | <span dir="ltr">Capability</span> | توانایی بنیادی بانک |
+| ادارهٔ شعب | <span dir="ltr">Organization Unit</span> | ساختار پاسخ‌گویی |
+| خدمت مسدودی قضایی | <span dir="ltr">Business Service</span> | نمای خدمت برای مرجع/عملیات |
+| اعمال <span dir="ltr">Hold</span> روی ماندهٔ قابل برداشت | <span dir="ltr">Use Case</span> | قصد مشخص در یک <span dir="ltr">Context</span> |
+| <span dir="ltr">`POST /holds`</span> | <span dir="ltr">API Operation</span> | <span dir="ltr">Contract</span> فنی |
+| <span dir="ltr">`FundsHeld`</span> | <span dir="ltr">Event</span> | <span dir="ltr">Fact</span> رخ‌داده |
+| از درخواست وام تا واریز | <span dir="ltr">Value Stream</span> | جریان <span dir="ltr">End-to-end</span> ارزش |
+| ارزیابی اهلیت اعتباری | <span dir="ltr">Capability</span> | توانایی تصمیم‌گیری اعتباری |
+| کمیتهٔ اعتباری | <span dir="ltr">Organization/Decision mechanism</span> | سازوکار تصمیم فعلی |
+| <span dir="ltr">Core Banking</span> | <span dir="ltr">Portfolio/System landscape label</span> | برچسب سبد؛ نه <span dir="ltr">Capability</span> منفرد |
 
-طبقه‌بندی همیشه فقط یک برچسب ندارد. «افتتاح حساب غیرحضوری» از دید مشتری <bdi dir="ltr">Business Service</bdi> و از دید عملیات یک <bdi dir="ltr">Process</bdi> است. نکته این است که سطح مورد استفاده در <bdi dir="ltr">Diagram</bdi> صریح باشد.
+طبقه‌بندی همیشه فقط یک برچسب ندارد. «افتتاح حساب غیرحضوری» از دید مشتری <span dir="ltr">Business Service</span> و از دید عملیات یک <span dir="ltr">Process</span> است. نکته این است که سطح مورد استفاده در <span dir="ltr">Diagram</span> صریح باشد.
 
-## 8. نام‌گذاری <bdi dir="ltr">Capability</bdi>
+## 8. نام‌گذاری <span dir="ltr">Capability</span>
 
 نام خوب معمولاً از یک فعل/توانایی پایدار و یک موضوع کسب‌وکاری تشکیل می‌شود:
 
@@ -176,26 +176,26 @@ Control Financial Position
 
 ### نشانه‌های نام بد
 
-- پسوند <bdi dir="ltr">`System`</bdi>، <bdi dir="ltr">`Platform`</bdi>، <bdi dir="ltr">`Portal`</bdi> یا نام <bdi dir="ltr">Vendor</bdi>
-- نام جدول یا <bdi dir="ltr">Entity</bdi> فنی
-- نام کانال مانند <bdi dir="ltr">Mobile/Branch</bdi> در <bdi dir="ltr">L1</bdi>
+- پسوند <span dir="ltr">`System`</span>، <span dir="ltr">`Platform`</span>، <span dir="ltr">`Portal`</span> یا نام <span dir="ltr">Vendor</span>
+- نام جدول یا <span dir="ltr">Entity</span> فنی
+- نام کانال مانند <span dir="ltr">Mobile/Branch</span> در <span dir="ltr">L1</span>
 - عبارت بسیار ریز و عملیاتی مانند «چاپ رسید»
 - عبارت بسیار کلان مانند «بانکداری»
-- ترکیب چند توانایی با «و» بدون <bdi dir="ltr">Outcome</bdi> مشترک
+- ترکیب چند توانایی با «و» بدون <span dir="ltr">Outcome</span> مشترک
 
-## <bdi dir="ltr">9. Capability</bdi> با <bdi dir="ltr">Bounded Context</bdi> یکی نیست
+## <span dir="ltr">9. Capability</span> با <span dir="ltr">Bounded Context</span> یکی نیست
 
-<bdi dir="ltr">Capability</bdi> از منظر <bdi dir="ltr">Business Architecture</bdi> توانایی سازمان را بیان می‌کند. <bdi dir="ltr">Bounded Context</bdi> از منظر مدل‌سازی، مرز اعتبار یک مدل و زبان را تعیین می‌کند. نگاشت آن‌ها ممکن است:
+<span dir="ltr">Capability</span> از منظر <span dir="ltr">Business Architecture</span> توانایی سازمان را بیان می‌کند. <span dir="ltr">Bounded Context</span> از منظر مدل‌سازی، مرز اعتبار یک مدل و زبان را تعیین می‌کند. نگاشت آن‌ها ممکن است:
 
-- یک <bdi dir="ltr">Capability</bdi> در چند <bdi dir="ltr">Context</bdi> پیاده شود.
-- چند <bdi dir="ltr">Capability</bdi> در یک <bdi dir="ltr">Context</bdi> منسجم پیاده شوند.
-- یک <bdi dir="ltr">Context</bdi> بخشی از یک <bdi dir="ltr">Capability</bdi> را برای چند کانال ارائه کند.
+- یک <span dir="ltr">Capability</span> در چند <span dir="ltr">Context</span> پیاده شود.
+- چند <span dir="ltr">Capability</span> در یک <span dir="ltr">Context</span> منسجم پیاده شوند.
+- یک <span dir="ltr">Context</span> بخشی از یک <span dir="ltr">Capability</span> را برای چند کانال ارائه کند.
 
-پس از <bdi dir="ltr">Capability Map</bdi> نمی‌توان مستقیم تعداد <bdi dir="ltr">Microservice</bdi>ها را شمرد.
+پس از <span dir="ltr">Capability Map</span> نمی‌توان مستقیم تعداد <span dir="ltr">Microservice</span>ها را شمرد.
 
 ## 10. مثال هدایت‌شده: «سامانهٔ تسهیلات»
 
-عبارت <bdi dir="ltr">Legacy</bdi> را باز کن:
+عبارت <span dir="ltr">Legacy</span> را باز کن:
 
 
 </div>
@@ -218,70 +218,70 @@ Control Financial Position
 <div dir="rtl" align="right">
 
 
-این فهرست هنوز مرز نهایی نیست، اما نشان می‌دهد یک <bdi dir="ltr">Application</bdi> می‌تواند چند <bdi dir="ltr">Capability</bdi> و چند <bdi dir="ltr">Subdomain</bdi> را در خود فشرده کرده باشد. اسم <bdi dir="ltr">Application</bdi> نباید جای تحلیل را بگیرد.
+این فهرست هنوز مرز نهایی نیست، اما نشان می‌دهد یک <span dir="ltr">Application</span> می‌تواند چند <span dir="ltr">Capability</span> و چند <span dir="ltr">Subdomain</span> را در خود فشرده کرده باشد. اسم <span dir="ltr">Application</span> نباید جای تحلیل را بگیرد.
 
-برای <bdi dir="ltr">`اعطای تسهیلات`</bdi>:
+برای <span dir="ltr">`اعطای تسهیلات`</span>:
 
-- <bdi dir="ltr">Capability:</bdi> مدیریت تعهدات و پرداخت اعتباری
-- <bdi dir="ltr">Outcome:</bdi> قرارداد مصوب به تعهد اجرایی و پرداخت قابل‌رهگیری تبدیل شود.
-- <bdi dir="ltr">Owner</bdi> اولیه: کسب‌وکار اعتبارات/<bdi dir="ltr">Lending</bdi>
-- <bdi dir="ltr">KPI</bdi> نمونه: زمان اعطا، نرخ خطای پرداخت، درصد اعطای تکراری صفر
-- <bdi dir="ltr">Process</bdi> فعلی: ممکن است دستی، <bdi dir="ltr">Workflow</bdi> یا <bdi dir="ltr">Event-driven</bdi> باشد.
-- <bdi dir="ltr">Systems</bdi> فعلی: ممکن است چند <bdi dir="ltr">Legacy</bdi> و <bdi dir="ltr">Core</bdi> را درگیر کند.
+- <span dir="ltr">Capability:</span> مدیریت تعهدات و پرداخت اعتباری
+- <span dir="ltr">Outcome:</span> قرارداد مصوب به تعهد اجرایی و پرداخت قابل‌رهگیری تبدیل شود.
+- <span dir="ltr">Owner</span> اولیه: کسب‌وکار اعتبارات/<span dir="ltr">Lending</span>
+- <span dir="ltr">KPI</span> نمونه: زمان اعطا، نرخ خطای پرداخت، درصد اعطای تکراری صفر
+- <span dir="ltr">Process</span> فعلی: ممکن است دستی، <span dir="ltr">Workflow</span> یا <span dir="ltr">Event-driven</span> باشد.
+- <span dir="ltr">Systems</span> فعلی: ممکن است چند <span dir="ltr">Legacy</span> و <span dir="ltr">Core</span> را درگیر کند.
 
 ## 11. خطاهای رایج
 
-### «هر چیزی که <bdi dir="ltr">Business</bdi> نام دارد <bdi dir="ltr">Capability</bdi> است»
+### «هر چیزی که <span dir="ltr">Business</span> نام دارد <span dir="ltr">Capability</span> است»
 
-خیر. <bdi dir="ltr">Product</bdi>، <bdi dir="ltr">Process</bdi>، <bdi dir="ltr">Rule</bdi> و <bdi dir="ltr">Business Service</bdi> هم <bdi dir="ltr">Business</bdi> هستند ولی نوعشان متفاوت است.
+خیر. <span dir="ltr">Product</span>، <span dir="ltr">Process</span>، <span dir="ltr">Rule</span> و <span dir="ltr">Business Service</span> هم <span dir="ltr">Business</span> هستند ولی نوعشان متفاوت است.
 
-### «<bdi dir="ltr">Capability</bdi> را تیم مالک است، پس <bdi dir="ltr">Team</bdi> همان <bdi dir="ltr">Capability</bdi> است»
+### «<span dir="ltr">Capability</span> را تیم مالک است، پس <span dir="ltr">Team</span> همان <span dir="ltr">Capability</span> است»
 
-<bdi dir="ltr">Owner</bdi> و موضوع مالکیت یکی نیستند. ساختار تیم می‌تواند تغییر کند.
+<span dir="ltr">Owner</span> و موضوع مالکیت یکی نیستند. ساختار تیم می‌تواند تغییر کند.
 
-### «یک <bdi dir="ltr">Capability</bdi> یک <bdi dir="ltr">API</bdi> دارد»
+### «یک <span dir="ltr">Capability</span> یک <span dir="ltr">API</span> دارد»
 
-یک <bdi dir="ltr">Capability</bdi> معمولاً با چند <bdi dir="ltr">Use Case</bdi> و <bdi dir="ltr">Contract</bdi> محقق می‌شود و یک <bdi dir="ltr">API</bdi> ممکن است بخشی از چند <bdi dir="ltr">Capability</bdi> را در یک <bdi dir="ltr">Facade</bdi> پنهان کند.
+یک <span dir="ltr">Capability</span> معمولاً با چند <span dir="ltr">Use Case</span> و <span dir="ltr">Contract</span> محقق می‌شود و یک <span dir="ltr">API</span> ممکن است بخشی از چند <span dir="ltr">Capability</span> را در یک <span dir="ltr">Facade</span> پنهان کند.
 
-### «<bdi dir="ltr">Capability Map</bdi> همان <bdi dir="ltr">Application Portfolio</bdi> است»
+### «<span dir="ltr">Capability Map</span> همان <span dir="ltr">Application Portfolio</span> است»
 
-<bdi dir="ltr">Application Portfolio</bdi> می‌گوید چه سیستم‌هایی داریم؛ <bdi dir="ltr">Capability Map</bdi> می‌گوید چه توانایی‌هایی لازم داریم. <bdi dir="ltr">Overlay</bdi> این دو برای کشف <bdi dir="ltr">Duplicate</bdi> و <bdi dir="ltr">Gap</bdi> مفید است، اما یکی نیستند.
+<span dir="ltr">Application Portfolio</span> می‌گوید چه سیستم‌هایی داریم؛ <span dir="ltr">Capability Map</span> می‌گوید چه توانایی‌هایی لازم داریم. <span dir="ltr">Overlay</span> این دو برای کشف <span dir="ltr">Duplicate</span> و <span dir="ltr">Gap</span> مفید است، اما یکی نیستند.
 
 ## 12. تمرین هدایت‌شده
 
 عبارت «کارمزد» را بررسی کن:
 
-1. «محاسبهٔ کارمزد انتقال» احتمالاً <bdi dir="ltr">Rule/Use Case</bdi> است.
-2. «سامانهٔ کارمزد» <bdi dir="ltr">Application</bdi> است.
-3. «مدیریت قیمت‌گذاری و کارمزد» می‌تواند <bdi dir="ltr">Capability</bdi> باشد، اگر <bdi dir="ltr">Outcome</bdi> و <bdi dir="ltr">Owner</bdi> روشن داشته باشد.
-4. <bdi dir="ltr">`FeeCalculated`</bdi> <bdi dir="ltr">Event</bdi> است.
-5. «کارمزد پل» <bdi dir="ltr">Product pricing term</bdi> است.
+1. «محاسبهٔ کارمزد انتقال» احتمالاً <span dir="ltr">Rule/Use Case</span> است.
+2. «سامانهٔ کارمزد» <span dir="ltr">Application</span> است.
+3. «مدیریت قیمت‌گذاری و کارمزد» می‌تواند <span dir="ltr">Capability</span> باشد، اگر <span dir="ltr">Outcome</span> و <span dir="ltr">Owner</span> روشن داشته باشد.
+4. <span dir="ltr">`FeeCalculated`</span> <span dir="ltr">Event</span> است.
+5. «کارمزد پل» <span dir="ltr">Product pricing term</span> است.
 
 همین واژه در پنج سطح ظاهر می‌شود. نام مشترک دلیل هم‌نوع‌بودن نیست.
 
 ## 13. تمرین مستقل و قبولی
 
-[<bdi dir="ltr">Day 02 Exercise</bdi>](../exercises/day-02-capability-distinction.md) را انجام بده. برای ۱۵ مثال فقط برچسب نزن؛ <bdi dir="ltr">`Reason`</bdi> و در موارد مبهم <bdi dir="ltr">`Alternative interpretation`</bdi> را نیز ثبت کن.
+[<span dir="ltr">Day 02 Exercise</span>](../exercises/day-02-capability-distinction.md) را انجام بده. برای ۱۵ مثال فقط برچسب نزن؛ <span dir="ltr">`Reason`</span> و در موارد مبهم <span dir="ltr">`Alternative interpretation`</span> را نیز ثبت کن.
 
 | معیار | امتیاز |
 |---|---:|
-| تعریف <bdi dir="ltr">Capability</bdi> و استقلال از راه‌حل | ۲ |
+| تعریف <span dir="ltr">Capability</span> و استقلال از راه‌حل | ۲ |
 | تمایز هشت نوع مفهوم | ۳ |
-| تحلیل ابهام و <bdi dir="ltr">Context</bdi> دیدگاه | ۲ |
-| <bdi dir="ltr">Outcome/Owner/KPI</bdi> برای سه <bdi dir="ltr">Capability</bdi> | ۲ |
-| پرهیز از تبدیل مستقیم به <bdi dir="ltr">Service</bdi> | ۱ |
+| تحلیل ابهام و <span dir="ltr">Context</span> دیدگاه | ۲ |
+| <span dir="ltr">Outcome/Owner/KPI</span> برای سه <span dir="ltr">Capability</span> | ۲ |
+| پرهیز از تبدیل مستقیم به <span dir="ltr">Service</span> | ۱ |
 | **جمع** | **۱۰** |
 
 حد عبور: ۷ از ۱۰.
 
 ## 14. آزمون خروج و منابع
 
-درس را ببند و [<bdi dir="ltr">Exit Ticket</bdi>](../quizzes/day-02-exit-ticket.md) را پاسخ بده.
+درس را ببند و [<span dir="ltr">Exit Ticket</span>](../quizzes/day-02-exit-ticket.md) را پاسخ بده.
 
 منابع هدفمند:
 
-- [<bdi dir="ltr">TOGAF</bdi> — <bdi dir="ltr">Business Capabilities</bdi>](https://pubs.opengroup.org/togaf-standard/business-architecture/business-capabilities.html)
-- [<bdi dir="ltr">BIAN Service Landscape</bdi>](https://bian.org/deliverables/service-landscape/)
+- [<span dir="ltr">TOGAF</span> — <span dir="ltr">Business Capabilities</span>](https://pubs.opengroup.org/togaf-standard/business-architecture/business-capabilities.html)
+- [<span dir="ltr">BIAN Service Landscape</span>](https://bian.org/deliverables/service-landscape/)
 
 تعریف‌ها از منابع معماری استخراج شده‌اند؛ مثال‌ها و طبقه‌بندی‌های بانکی این درس مدل آموزشی و قابل‌نقد هستند.
 

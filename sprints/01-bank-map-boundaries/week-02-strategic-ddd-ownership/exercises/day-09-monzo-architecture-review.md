@@ -1,62 +1,62 @@
 <!-- bidi: rtl; code: ltr -->
 <div dir="rtl" align="right">
 
-# <bdi dir="ltr">Day 09 Exercise</bdi> — <bdi dir="ltr">Monzo Architecture Review</bdi>
+# <span dir="ltr">Day 09 Exercise</span> — <span dir="ltr">Monzo Architecture Review</span>
 
-- <bdi dir="ltr">Timebox: 15 minutes after reading the case file</bdi>
-- <bdi dir="ltr">Output: one-page review in Week 02 Workbook</bdi>
-- <bdi dir="ltr">Rule:</bdi> فقط از شواهد پرونده استفاده کن؛ حدس را با <bdi dir="ltr">`INFERENCE`</bdi> یا <bdi dir="ltr">`UNKNOWN`</bdi> برچسب بزن.
+- <span dir="ltr">Timebox: 15 minutes after reading the case file</span>
+- <span dir="ltr">Output: one-page review in Week 02 Workbook</span>
+- <span dir="ltr">Rule:</span> فقط از شواهد پرونده استفاده کن؛ حدس را با <span dir="ltr">`INFERENCE`</span> یا <span dir="ltr">`UNKNOWN`</span> برچسب بزن.
 
-## <bdi dir="ltr">Part 1</bdi> — <bdi dir="ltr">Five-point timeline</bdi>
+## <span dir="ltr">Part 1</span> — <span dir="ltr">Five-point timeline</span>
 
-پنج نقطه‌ای را انتخاب کن که تغییر <bdi dir="ltr">Capability</bdi> و <bdi dir="ltr">Architecture</bdi> را هم‌زمان نشان می‌دهند:
+پنج نقطه‌ای را انتخاب کن که تغییر <span dir="ltr">Capability</span> و <span dir="ltr">Architecture</span> را هم‌زمان نشان می‌دهند:
 
-| <bdi dir="ltr">Date/phase</bdi> | <bdi dir="ltr">Business/domain change</bdi> | <bdi dir="ltr">Architecture/technology response</bdi> | <bdi dir="ltr">New risk</bdi> |
+| <span dir="ltr">Date/phase</span> | <span dir="ltr">Business/domain change</span> | <span dir="ltr">Architecture/technology response</span> | <span dir="ltr">New risk</span> |
 |---|---|---|---|
 |  |  |  |  |
 
-## <bdi dir="ltr">Part 2</bdi> — <bdi dir="ltr">Fact</bdi> / <bdi dir="ltr">Inference</bdi> / <bdi dir="ltr">Unknown</bdi>
+## <span dir="ltr">Part 2</span> — <span dir="ltr">Fact</span> / <span dir="ltr">Inference</span> / <span dir="ltr">Unknown</span>
 
 شش ادعا بنویس؛ حداقل دو مورد از هر نوع:
 
-| <bdi dir="ltr">Claim</bdi> | <bdi dir="ltr">FACT</bdi> / <bdi dir="ltr">INFERENCE</bdi> / <bdi dir="ltr">UNKNOWN</bdi> | <bdi dir="ltr">Evidence or reason</bdi> |
+| <span dir="ltr">Claim</span> | <span dir="ltr">FACT</span> / <span dir="ltr">INFERENCE</span> / <span dir="ltr">UNKNOWN</span> | <span dir="ltr">Evidence or reason</span> |
 |---|---|---|
 |  |  |  |
 
-حداقل یکی از ادعاها باید دربارهٔ <bdi dir="ltr">Domain/Bounded Context</bdi> و یکی دربارهٔ <bdi dir="ltr">Technology stack</bdi> فعلی باشد.
+حداقل یکی از ادعاها باید دربارهٔ <span dir="ltr">Domain/Bounded Context</span> و یکی دربارهٔ <span dir="ltr">Technology stack</span> فعلی باشد.
 
-## <bdi dir="ltr">Part 3</bdi> — <bdi dir="ltr">Ownership analysis</bdi>
+## <span dir="ltr">Part 3</span> — <span dir="ltr">Ownership analysis</span>
 
-برای <bdi dir="ltr">Failure</bdi> کنترل‌های <bdi dir="ltr">Financial Crime</bdi> پاسخ بده:
+برای <span dir="ltr">Failure</span> کنترل‌های <span dir="ltr">Financial Crime</span> پاسخ بده:
 
-1. کدام <bdi dir="ltr">Business decision</bdi>ها <bdi dir="ltr">Owner</bdi> لازم داشتند؟
-2. کدام داده‌ها برای <bdi dir="ltr">Onboarding/Risk/Monitoring Authority</bdi> لازم داشتند؟
-3. چرا یک <bdi dir="ltr">Microservice</bdi> جدید به‌تنهایی راه‌حل نبود؟
-4. چه <bdi dir="ltr">Fitness Function</bdi> یا <bdi dir="ltr">Control evidence</bdi> می‌توانست هشدار زودتری بدهد؟
+1. کدام <span dir="ltr">Business decision</span>ها <span dir="ltr">Owner</span> لازم داشتند؟
+2. کدام داده‌ها برای <span dir="ltr">Onboarding/Risk/Monitoring Authority</span> لازم داشتند؟
+3. چرا یک <span dir="ltr">Microservice</span> جدید به‌تنهایی راه‌حل نبود؟
+4. چه <span dir="ltr">Fitness Function</span> یا <span dir="ltr">Control evidence</span> می‌توانست هشدار زودتری بدهد؟
 
-## <bdi dir="ltr">Part 4</bdi> — <bdi dir="ltr">ADR-lite</bdi>
+## <span dir="ltr">Part 4</span> — <span dir="ltr">ADR-lite</span>
 
-### <bdi dir="ltr">Decision question</bdi>
+### <span dir="ltr">Decision question</span>
 
-آیا <bdi dir="ltr">`banking-modulith`</bdi> ما باید با استناد به <bdi dir="ltr">Monzo</bdi> از همین حالا <bdi dir="ltr">Microservice-first</bdi> شود؟
+آیا <span dir="ltr">`banking-modulith`</span> ما باید با استناد به <span dir="ltr">Monzo</span> از همین حالا <span dir="ltr">Microservice-first</span> شود؟
 
-### <bdi dir="ltr">Required format</bdi>
+### <span dir="ltr">Required format</span>
 
-- <bdi dir="ltr">Context:</bdi>
-- <bdi dir="ltr">Forces:</bdi>
-- <bdi dir="ltr">Option A</bdi> — <bdi dir="ltr">retain Modular Monolith:</bdi>
-- <bdi dir="ltr">Option B</bdi> — <bdi dir="ltr">Microservice-first:</bdi>
-- <bdi dir="ltr">Decision:</bdi>
-- <bdi dir="ltr">Consequences:</bdi>
-- <bdi dir="ltr">Verification:</bdi>
-- <bdi dir="ltr">Revisit trigger:</bdi>
+- <span dir="ltr">Context:</span>
+- <span dir="ltr">Forces:</span>
+- <span dir="ltr">Option A</span> — <span dir="ltr">retain Modular Monolith:</span>
+- <span dir="ltr">Option B</span> — <span dir="ltr">Microservice-first:</span>
+- <span dir="ltr">Decision:</span>
+- <span dir="ltr">Consequences:</span>
+- <span dir="ltr">Verification:</span>
+- <span dir="ltr">Revisit trigger:</span>
 
-## <bdi dir="ltr">Acceptance criteria</bdi>
+## <span dir="ltr">Acceptance criteria</span>
 
-- <bdi dir="ltr">Timeline</bdi> فقط <bdi dir="ltr">Feature list</bdi> نیست و <bdi dir="ltr">Risk</bdi> را نشان می‌دهد.
-- <bdi dir="ltr">Fact</bdi> و <bdi dir="ltr">Inference</bdi> مخلوط نشده‌اند.
-- <bdi dir="ltr">Architecture</bdi> جاری از <bdi dir="ltr">Architecture</bdi> تاریخی تفکیک شده است.
-- <bdi dir="ltr">FCA finding</bdi> به «یک <bdi dir="ltr">Bug</bdi>» تقلیل داده نشده است.
-- <bdi dir="ltr">ADR-lite</bdi> از <bdi dir="ltr">Monzo</bdi> درس می‌گیرد، اما <bdi dir="ltr">Stack</bdi> و <bdi dir="ltr">Scale</bdi> آن را <bdi dir="ltr">Copy</bdi> نمی‌کند.
+- <span dir="ltr">Timeline</span> فقط <span dir="ltr">Feature list</span> نیست و <span dir="ltr">Risk</span> را نشان می‌دهد.
+- <span dir="ltr">Fact</span> و <span dir="ltr">Inference</span> مخلوط نشده‌اند.
+- <span dir="ltr">Architecture</span> جاری از <span dir="ltr">Architecture</span> تاریخی تفکیک شده است.
+- <span dir="ltr">FCA finding</span> به «یک <span dir="ltr">Bug</span>» تقلیل داده نشده است.
+- <span dir="ltr">ADR-lite</span> از <span dir="ltr">Monzo</span> درس می‌گیرد، اما <span dir="ltr">Stack</span> و <span dir="ltr">Scale</span> آن را <span dir="ltr">Copy</span> نمی‌کند.
 
 </div>

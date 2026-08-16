@@ -1,15 +1,15 @@
 <!-- bidi: rtl; code: ltr -->
 <div dir="rtl" align="right">
 
-# <bdi dir="ltr">Day 02 Artifact</bdi> — <bdi dir="ltr">Distinction Matrix</bdi>
+# <span dir="ltr">Day 02 Artifact</span> — <span dir="ltr">Distinction Matrix</span>
 
-- <bdi dir="ltr">Version: 0.1</bdi>
-- <bdi dir="ltr">Status: Working</bdi>
-- <bdi dir="ltr">Scope:</bdi> ۱۵ عبارت بانکی <bdi dir="ltr">Week 01</bdi>
+- <span dir="ltr">Version: 0.1</span>
+- <span dir="ltr">Status: Working</span>
+- <span dir="ltr">Scope:</span> ۱۵ عبارت بانکی <span dir="ltr">Week 01</span>
 
-## <bdi dir="ltr">Matrix</bdi>
+## <span dir="ltr">Matrix</span>
 
-| # | <bdi dir="ltr">Phrase</bdi> | <bdi dir="ltr">Primary type</bdi> | <bdi dir="ltr">Why</bdi> | <bdi dir="ltr">Alternative interpretation</bdi> | <bdi dir="ltr">Better name/next question</bdi> |
+| # | <span dir="ltr">Phrase</span> | <span dir="ltr">Primary type</span> | <span dir="ltr">Why</span> | <span dir="ltr">Alternative interpretation</span> | <span dir="ltr">Better name/next question</span> |
 |---:|---|---|---|---|---|
 | 1 |  |  |  |  |  |
 | 2 |  |  |  |  |  |
@@ -27,58 +27,58 @@
 | 14 |  |  |  |  |  |
 | 15 |  |  |  |  |  |
 
-## <bdi dir="ltr">Capability cards</bdi>
+## <span dir="ltr">Capability cards</span>
 
-### <bdi dir="ltr">Capability 1</bdi>
+### <span dir="ltr">Capability 1</span>
 
-- <bdi dir="ltr">Name:</bdi>
-- <bdi dir="ltr">Definition:</bdi>
-- <bdi dir="ltr">Outcome:</bdi>
-- <bdi dir="ltr">Includes:</bdi>
-- <bdi dir="ltr">Excludes:</bdi>
-- <bdi dir="ltr">Proposed business owner:</bdi>
-- <bdi dir="ltr">KPI candidate:</bdi>
-- <bdi dir="ltr">Current systems as evidence:</bdi>
-- <bdi dir="ltr">Open question:</bdi>
+- <span dir="ltr">Name:</span>
+- <span dir="ltr">Definition:</span>
+- <span dir="ltr">Outcome:</span>
+- <span dir="ltr">Includes:</span>
+- <span dir="ltr">Excludes:</span>
+- <span dir="ltr">Proposed business owner:</span>
+- <span dir="ltr">KPI candidate:</span>
+- <span dir="ltr">Current systems as evidence:</span>
+- <span dir="ltr">Open question:</span>
 
-### <bdi dir="ltr">Capability 2</bdi>
+### <span dir="ltr">Capability 2</span>
 
-- <bdi dir="ltr">Name:</bdi>
-- <bdi dir="ltr">Definition:</bdi>
-- <bdi dir="ltr">Outcome:</bdi>
-- <bdi dir="ltr">Includes:</bdi>
-- <bdi dir="ltr">Excludes:</bdi>
-- <bdi dir="ltr">Proposed business owner:</bdi>
-- <bdi dir="ltr">KPI candidate:</bdi>
-- <bdi dir="ltr">Current systems as evidence:</bdi>
-- <bdi dir="ltr">Open question:</bdi>
+- <span dir="ltr">Name:</span>
+- <span dir="ltr">Definition:</span>
+- <span dir="ltr">Outcome:</span>
+- <span dir="ltr">Includes:</span>
+- <span dir="ltr">Excludes:</span>
+- <span dir="ltr">Proposed business owner:</span>
+- <span dir="ltr">KPI candidate:</span>
+- <span dir="ltr">Current systems as evidence:</span>
+- <span dir="ltr">Open question:</span>
 
-### <bdi dir="ltr">Capability 3</bdi>
+### <span dir="ltr">Capability 3</span>
 
-- <bdi dir="ltr">Name:</bdi>
-- <bdi dir="ltr">Definition:</bdi>
-- <bdi dir="ltr">Outcome:</bdi>
-- <bdi dir="ltr">Includes:</bdi>
-- <bdi dir="ltr">Excludes:</bdi>
-- <bdi dir="ltr">Proposed business owner:</bdi>
-- <bdi dir="ltr">KPI candidate:</bdi>
-- <bdi dir="ltr">Current systems as evidence:</bdi>
-- <bdi dir="ltr">Open question:</bdi>
+- <span dir="ltr">Name:</span>
+- <span dir="ltr">Definition:</span>
+- <span dir="ltr">Outcome:</span>
+- <span dir="ltr">Includes:</span>
+- <span dir="ltr">Excludes:</span>
+- <span dir="ltr">Proposed business owner:</span>
+- <span dir="ltr">KPI candidate:</span>
+- <span dir="ltr">Current systems as evidence:</span>
+- <span dir="ltr">Open question:</span>
 
-## <bdi dir="ltr">Reverse trace</bdi>
+## <span dir="ltr">Reverse trace</span>
 
-| <bdi dir="ltr">Technical/current element</bdi> | <bdi dir="ltr">Use case/process</bdi> | <bdi dir="ltr">Parent capability</bdi> | <bdi dir="ltr">Evidence</bdi> |
+| <span dir="ltr">Technical/current element</span> | <span dir="ltr">Use case/process</span> | <span dir="ltr">Parent capability</span> | <span dir="ltr">Evidence</span> |
 |---|---|---|---|
 |  |  |  |  |
 |  |  |  |  |
 |  |  |  |  |
 
-## <bdi dir="ltr">Review</bdi>
+## <span dir="ltr">Review</span>
 
-- <bdi dir="ltr">Most ambiguous phrase:</bdi>
-- <bdi dir="ltr">Most important correction:</bdi>
-- <bdi dir="ltr">Remaining disagreement:</bdi>
-- <bdi dir="ltr">Reviewer/status/date:</bdi>
+- <span dir="ltr">Most ambiguous phrase:</span>
+- <span dir="ltr">Most important correction:</span>
+- <span dir="ltr">Remaining disagreement:</span>
+- <span dir="ltr">Reviewer/status/date:</span>
 
 
 </div>
